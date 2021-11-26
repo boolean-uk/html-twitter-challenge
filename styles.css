@@ -1,0 +1,25 @@
+#body {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+}
+body div nav {
+    height: 800px
+}
+nav img {
+    max-height: 40px;
+    max-width: 40px;
+}
+#menu {
+background-color: blueviolet;
+}
+#main {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    background-color: white;
+}
+#suggested {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+background-color: rgb(147, 62, 187);
+}
