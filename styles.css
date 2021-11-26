@@ -1,0 +1,86 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+
+ /* REMOVE SECTION */
+
+.left-menu,
+.left-menu div,
+.main,
+.main div,
+.right-menu,
+.right-menu div {
+    border: solid 1px;
+}
+
+/* END OF REMOVE SECTION */
+
+
+/* WHOLE GRID LAYOUT */
+
+.container {
+
+    display: grid;
+    grid-template-columns: 0.25fr 0.5fr 0.25fr;
+    min-height: 100vh;
+    background-color: white;
+}
+
+/* LEFT COLUMN */
+
+.left-menu {
+    display: grid;
+    grid-template-rows: 0.1fr 0.8fr 0.1fr;
+}
+
+
+.viking-icon,
+.navigation-bar-left,
+#viking-button-left {
+    margin: 10px;
+}
+
+.navigation-bar-left {
+
+    display: grid;
+    grid-template-columns: 0.3fr 0.7fr;
+    /* grid-template-columns: 20px; */
+    
+
+
+}
+.icon-bar-left li {
+    list-style: none;
+    padding: 5px;
+}
+
+
+.left-nav-text li {
+    list-style: none;
+    font-size: 0.5em;
+    padding: 10px;
+    font-weight: bold;
+
+}
+
+/* MIDDLE COLUMN */
+
+
+.main {
+    display: grid;
+    grid-template-rows: 0.2fr 0.8fr;
+
+}
+
+
+/* RIGHT COLUMN */
+
+.right-menu {
+
+    display: grid;
+    grid-template-rows: 0.1fr 0.45fr 0.45fr; 
+}
