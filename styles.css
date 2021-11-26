@@ -27,7 +27,8 @@
   --left-margin-1: 10px;
 }
 
-.lf-menu,
+/* border aid */
+/* .lf-menu,
 .tweet-feed,
 .rh-sidebar,
 .tweet-feed__user,
@@ -37,7 +38,7 @@
 .box-container--right,
 .box-container--bottom {
   border: var(--border-styling);
-}
+} */
 
 /* CSS Reset */
 *,
@@ -47,6 +48,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+/* SVG stylings */
 
 /* CSS GRID - wrapper*/
 .wrapper {
@@ -198,6 +201,7 @@ textarea {
 }
 
 /* News Subgrid */
+
 .news-subgrid {
   display: grid;
   grid-template-columns: 0.7fr 0.3fr;
@@ -295,11 +299,115 @@ textarea {
 }
 
 .fa-twitter {
-  color: var(--first-color);
+  fill: var(--first-color);
+  height: 1rem;
+  width: 1rem;
 }
 
 .fa-home {
   color: var(--first-color);
+}
+
+.fa-home,
+.fa-hashtag,
+.fa-bell,
+.fa-envelope,
+.fa-bookmark,
+.fa-list-alt,
+.fa-user,
+.fa-ellipsis-h {
+  fill: black;
+  height: 1rem;
+  width: 1rem;
+}
+
+/* Nav Subgrid */
+
+/* .lf-menu__nav-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(10, 0.1fr);
+  gap: 0px 0rem;
+  grid-template-areas:
+    "twitter ."
+    "home li-child-2"
+    "hashtag li-child-3."
+    "bell li-child-4."
+    "envelope li-child-5."
+    "bookmark li-child-6."
+    "list li-child-7."
+    "user li-child-8."
+    "ellipsis-h li-child-9."
+    "btn_tweet .";
+} */
+
+.fa-twitter {
+  grid-area: twitter;
+}
+
+.fa-home {
+  grid-area: home;
+}
+
+.fa-hashtag {
+  grid-area: hashtag;
+}
+
+.fa-bell {
+  grid-area: bell;
+}
+
+.fa-envelope {
+  grid-area: envelope;
+}
+
+.fa-bookmark {
+  grid-area: bookmark;
+}
+
+.fa-list-alt {
+  grid-area: list;
+}
+
+.fa-ellipsis-h {
+  grid-area: ellipsis-h;
+}
+
+.btn_tweet {
+  grid-area: btn_tweet;
+}
+
+.lf-menu .list:nth-child(2) {
+  grid-area: li-child-2;
+}
+
+.lf-menu .list:nth-child(3) {
+  grid-area: li-child-3;
+}
+
+.lf-menu .list:nth-child(4) {
+  grid-area: li-child-4;
+}
+
+.lf-menu .list:nth-child(5) {
+  grid-area: li-child-5;
+}
+
+.lf-menu .list:nth-child(6) {
+  grid-area: li-child-6;
+}
+
+.lf-menu .list:nth-child(7) {
+  grid-area: li-child-7;
+}
+
+.lf-menu .list:nth-child(8) {
+  grid-area: li-child-8;
+}
+
+.lf-menu .list:nth-child(9) {
+  grid-area: li-child-9;
 }
 
 /* Media Queries */
