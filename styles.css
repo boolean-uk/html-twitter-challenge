@@ -1,54 +1,107 @@
 * {
     margin:0;
     border:0;
+    padding:0;
     color: white;
     font-family:Helvetica, sans-serif
 }
-.body {
+.container {
     display: grid;
     height: 100vh;
     grid-template-columns: repeat(3, 1fr);
 }
-
+nav {
+    display: grid;
+    grid-template-rows: repeat(8, 60px)
+}
 nav img {
     max-height: 40px;
     max-width: 40px;
 }
-nav div h1 a {
+.menulink {
     background-color: black;
 }
-nav div h1 a:hover {
+.menulink:hover {
     background-color: lightgray;
 }
-nav div h1 a::selection {
+.menulink::selection {
     color:rgb(147, 62, 187);
     }
 h1 {
     font-size: 20pt;
     }
-h1,h2 {
+h1,
+h2 {
     font-weight: bold;
 }
-h2,p {
+h2,
+p,
+h3 {
     font-size: 15pt
+}
+h3 {
+    color: rgb(29, 126, 192);
+}
+h4 {
+    color: rgb(29, 126, 192);
+    font-size: 13pt
+}
+a {
+    text-decoration: none
 }
 #menu {
     display: grid;
-    grid-template-rows: 800px 50px auto;
+    grid-template-rows: 600px 1fr auto;
     background-color: rgb(147, 62, 187);
+}
+#menu img,
+#menu div {
+    margin-left: 300px
 }
 #main {
     display: grid;
     grid-template-rows: repeat(auto-fit, minmax(50px 1fr));
+    
     background-color: rgb(147, 62, 187);
 }
 #tweets {
     display: grid;
     grid-auto-rows: minmax(50px auto);
-    gap:5px
+    gap:.5px
+}
+#tweets article {
+    border: 1px solid black
 }
 #suggested {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: auto 1fr 1fr;
     background-color: rgb(147, 62, 187);
+}
+#happening {
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+}
+#happening article {
+    display: grid;
+    grid-template: "about img  " auto
+                   "main  blank" auto
+                   "stats blank" auto /
+                    auto auto;
+}
+.h-about {
+    grid-area: about
+}
+.h-main {
+    grid-area: main
+}
+.h-stats {
+    grid-area:stats
+}
+.h-blank {
+    grid-area:blank
+}
+.h-img {
+    grid-area: img;
+    max-height: 40px;
+    max-width: 40px
 }
