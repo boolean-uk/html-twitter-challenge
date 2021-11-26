@@ -100,9 +100,8 @@
 /* rh-sidebar Grid */
 .rh-sidebar {
   display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(2, 1fr);
-  grid-auto-columns: 1fr;
+  /* grid-template-rows: repeat(2, 1fr); */
+  grid-template-rows: 0.1fr 0.9fr;
   grid-auto-rows: 1fr;
   gap: 0px 0px;
   grid-template-areas:
@@ -202,7 +201,37 @@ textarea {
 
 /* Media Queries */
 
+@media screen and (max-width: 575px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 0.3fr auto;
+    gap: 0px 0px;
+    grid-template-areas: "lf-menu tweet-feed";
+    height: 100vh;
+  }
+
+  .lf-menu {
+    grid-area: lf-menu;
+  }
+
+  .tweet-feed {
+    grid-area: tweet-feed;
+  }
+
+  .rh-sidebar {
+    display: none;
+  }
+}
+
 @media screen and (max-width: 500px) {
+  .wrapper {
+    display: grid;
+    grid-template-columns: 0.1fr auto;
+    gap: 0px 0px;
+    grid-template-areas: "lf-menu tweet-feed";
+    height: 100vh;
+  }
+
   .lf-menu > ul > li {
     font-size: 0px;
   }
@@ -210,30 +239,113 @@ textarea {
   .fas {
     font-size: 1rem;
   }
-
-  /* .lf-menu > ul > li > i {
-    font-size: 1em;
-  } */
 }
 
-/* <div class="box-container box-container__feed">
-<img
-  class="avatar"
-  src="../boolean-uk-html-twitter/images/avatar-one.jpg"
-  alt=""
-/>
-<div class="box-container__feed--abs">
-  <span id="twitter-name">Anon</span>
-  <span id="twitter-handler">@Anonymous</span>
-</div>
-</div> */
-
 #twitter-name {
-  font-size: 0.8em;
+  font-size: 0.8rem;
   font-weight: bold;
 }
 
 #twitter-handler {
-  font-size: 0.5em;
+  font-size: 0.5rem;
   color: gray;
+}
+
+#text-pink {
+  font-size: 0.7rem;
+  font-weight: lighter;
+  color: pink;
+}
+
+#tweet-message {
+  font-size: 0.6rem;
+}
+
+.box-container__feed {
+  position: relative;
+}
+
+.box-container__feed--abs-1 {
+  position: absolute;
+  top: 0;
+  left: 2em;
+}
+
+#tweet-second {
+  margin-top: 2rem;
+}
+
+.tweet-feed__main {
+  overflow: scroll;
+}
+
+/* RH Side */
+
+/* RH Side */
+#search-twitter {
+  /* border: solid; */
+  color: grey;
+  fill: grey;
+  resize: none;
+  font-size: 1rem;
+}
+
+/* .search-twitter {
+  border: none;
+} */
+
+/* .search-logo-container,
+.search-twitter-container {
+  display: inline-block;
+} */
+
+.search-parent-container {
+  background-color: transparent;
+  border: 0.1rem solid black;
+  border-radius: 25px;
+  /* margin-top: 5rem; */
+  /* margin-left: 1rem; */
+  position: relative;
+  /* margin-right: 2em; */
+  background-color: grey;
+}
+
+.search-twitter {
+  background-color: grey;
+  border: none;
+}
+
+.what-happens {
+  margin-top: 1rem;
+  margin-left: 1rem;
+}
+
+/* Stylings */
+.rh-sidebar__news {
+  background-color: grey;
+  border-radius: 15px;
+  /* border-color: red; */
+}
+
+.what-happens {
+  border-bottom: 2px solid green;
+  display: block;
+  position: relative;
+}
+
+.what-happens__news-item > p {
+  font-weight: bold;
+  font-size: 0.5rem;
+  max-width: 40ch;
+}
+
+.image-container {
+  position: absolute;
+  display: block;
+  right: 1em;
+  top: -0.1em;
+}
+
+.boolean-logo {
+  border-radius: 20%;
 }
