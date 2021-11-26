@@ -14,6 +14,7 @@
 }
 
 
+
 .left-menu {
     grid-area: left-menu;
     background-color: white;
@@ -57,8 +58,8 @@
 
 .main {
     grid-area: main;
-    background-color: greenyellow;
-    grid-template-rows: 50px 50px 50px 100px 100px 1fr;
+    background-color:white;
+    grid-template-rows:50px 50px 50px 200px 1fr;
     display: grid;
     padding:10px;
 }
@@ -66,9 +67,8 @@
 .main .home,
 .main .happening,
 .main .logos,
-.main .flam,
 .main .eric,
-.main .group{
+.main .group-docs {
     border:1px dashed black;
 }
 
@@ -95,7 +95,7 @@
 
 .main .logos{
     display: grid;
-    grid-template-columns: 40px 40px 40px 40px 40px 1fr 150px;
+    grid-template-columns: 60px 40px 40px 40px 40px 1fr 150px;
     padding:3px;
     gap:5px;
 }
@@ -125,8 +125,43 @@
     background-color: skyblue;
 }
 
+.main .eric{
+    display:grid;
+    grid-template-columns: 100px 1fr;
+    padding:10px;
+    gap:5px;
+}
+
+.eric .pics,
+.eric .wordings {
+    border:1px dashed black;
+}
+
+.eric .wordings{
+    padding:10px;
+}
+
+.main .group-docs {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    padding:10px;
+    gap:5px;
+}
+
+.group-docs .picss2,
+.group-docs .wordings2 {
+    border:1px dashed black;
+
+}
+
+.group-docs .wordings2{
+    padding:10px;
+}
+
+
+
 .right-menu{
     grid-area: right-menu;
-    background-color: grey;
+    background-color: pink;
 }
 
