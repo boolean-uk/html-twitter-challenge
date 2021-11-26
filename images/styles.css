@@ -55,12 +55,74 @@
     color:white;
 }
 
-
-
-
 .main {
     grid-area: main;
     background-color: greenyellow;
+    grid-template-rows: 50px 50px 50px 100px 100px 1fr;
+    display: grid;
+    padding:10px;
+}
+
+.main .home,
+.main .happening,
+.main .logos,
+.main .flam,
+.main .eric,
+.main .group{
+    border:1px dashed black;
+}
+
+.main .home{
+    padding:10px;
+}
+
+.main .happening {
+    display:grid;
+    grid-template-columns: 60px 1fr;
+    padding:2px;
+    gap:5px;
+}
+
+.happening .logo,
+.happening .whats-happening{
+    border:1px dashed black;
+}
+
+.whats-happening{
+    padding:5px;
+    color:grey;
+}
+
+.main .logos{
+    display: grid;
+    grid-template-columns: 40px 40px 40px 40px 40px 1fr 150px;
+    padding:3px;
+    gap:5px;
+}
+.logos .icon1,
+.logos .icon2,
+.logos .icon3,
+.logos .icon4,
+.logos .icon5,
+.logos .icon6,
+.logos .icon7 {
+    border:1px dashed black;
+}
+
+.logos .icon7{
+    display:grid;
+    place-items:center;
+    /* background-color: skyblue; */
+}
+
+.logos .icon7 a{
+    border: 1px blue solid;
+    text-decoration:none;
+    padding:5px 30px;
+    border-radius:10px;
+    font-weight:bold;
+    color:white;
+    background-color: skyblue;
 }
 
 .right-menu{
