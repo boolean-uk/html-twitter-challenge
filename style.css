@@ -12,12 +12,27 @@
     grid-template-columns: 300px 600px 400px;
     justify-content: center;
 }
-img {
+
+.bold {
+    font-weight: bold;
+}
+nav ul img {
     height: 30px;
     width: 30px;
+    border-radius: 50%;
 }
+
+.pin {
+    position:fixed;
+    width: 300px;
+
+    display: grid;
+    grid-template-rows: 92vh 8vh;
+}
+
 nav {
     background-color: lightblue;
+    height: 100vh;
 }
 
 nav ul {
@@ -28,11 +43,12 @@ nav ul {
 nav li {
     padding: 10px;
     margin-bottom: 10px;
+    font-size: 20px;
 }
 nav a {
     text-decoration: none;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 15px 20px;
+    border-radius: 50px;
     color: inherit
 }
 
@@ -46,22 +62,39 @@ nav p {
 
 nav p a {
     padding: 20px 80px;
-    background-color: blue;
+    background-color: #1A8CD8;
     color: white;
     border-radius: 50px;
 }
+.bottom-div {
+    display: grid;
+    justify-content: center;
+}
 
+.bottom-icon {
+    border-radius: 50px;
+}
 .main {
     background-color: lightpink;
 }
 
 .home {
     height: 60px;
-    width: 1fr;
     background-color: khaki;
+    position: fixed;
+    width:600px;
+    border-bottom: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
 
     display: grid;
     grid-template-columns: 90% 10%;
+}
+
+.home img {
+    height: 50px;
+    width: auto;
+    border-radius: 50%;
 }
 
 .home__header {
@@ -78,14 +111,76 @@ nav p a {
 
 .post {
     height: 150px;
+    margin-top: 60px;
     background-color: lightcoral;
+    border-bottom: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+
+    display: grid;
+    grid-template-columns: 80px 1fr;
 }
+
+.post img {
+    height: 80px;
+    width: auto;
+    border-radius: 50%;
+}
+
+.person-image {
+    background-color: violet;
+}
+
+.post-box {
+
+}
+
 
 .feed {
     height: 150vh;
-    background-color: lightslategray;
+    height:150vh;
+    border-bottom: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
 }
 
 .right {
     background-color: lightgoldenrodyellow;
+    padding-left: 20px;
+
+    display: grid;
+    grid-template-rows: 60px 1fr;
+}
+
+.search-bar {
+    background-color: white;
+    position: fixed;
+    width: 400px;
+}
+
+.search {
+    background-color: lightgrey;
+    margin: 10px;
+    border-radius: 50px;
+    height: 40px;
+
+}
+
+.happening {
+    background-color: lightgrey;
+    margin: 70px 10px 10px 10px;
+    border-radius: 10px;
+    height: 500px;
+}
+
+.follow {
+    background-color: lightgrey;
+    margin: 10px;
+    border-radius: 10px;
+    height: 400px;
+}
+
+.right p {
+    color: lightgrey;
+    margin-left: 25px;
 }
