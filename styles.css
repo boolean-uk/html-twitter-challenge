@@ -3,6 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    /* font-family: "Lucida Console", "Courier New", monospace; */
 }
 
 
@@ -34,15 +35,24 @@
 
 .left-menu {
     display: grid;
-    grid-template-rows: 0.1fr 0.8fr 0.1fr;
+    grid-template-rows: 0.1fr 0.3fr 0.6fr;
+    border-right-style: groove;
+}
+
+#viking-icon {
+    display: grid;
+    margin-top: 30px;
+    padding: 5px;
+
 }
 
 
-.viking-icon,
+#viking-icon,
 .navigation-bar-left,
-#viking-button-left {
-    margin: 10px;
-}
+.viking-button{
+    margin-left: 35px;
+    
+} 
 
 .navigation-bar-left {
 
@@ -50,8 +60,6 @@
     grid-template-columns: 0.3fr 0.7fr;
     /* grid-template-columns: 20px; */
     
-
-
 }
 .icon-bar-left li {
     list-style: none;
@@ -61,11 +69,43 @@
 
 .left-nav-text li {
     list-style: none;
-    font-size: 0.5em;
+    font-size: 0.35em;
     padding: 10px;
     font-weight: bold;
-
+    
 }
+.left-nav-text ul a {
+    text-decoration: none;
+}
+
+.left-nav-text ul li a h2 { 
+    color: black
+}
+
+.hover:hover {
+    color: blue;
+}
+
+.viking-button {
+    justify-content: center;
+    padding-left: 29px;
+}
+
+
+
+#viking-button-bottom-left {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 7px 31px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    border-radius: 17px;
+  }
+
+#viking-button-bottom-left:hover {background-color: #3e8e41}
 
 /* MIDDLE COLUMN */
 
@@ -74,6 +114,12 @@
     display: grid;
     grid-template-rows: 0.2fr 0.8fr;
 
+}
+
+.main-top {
+
+    display: grid;
+    grid-template-rows: 0.3fr 0.4fr 0.3fr;
 }
 
 
