@@ -12,8 +12,18 @@ nav img {
     max-height: 40px;
     max-width: 40px;
 }
+nav div h1 a {
+    background-color: black;
+}
+nav div h1 a:hover {
+    background-color: lightgray;
+}
+nav div h1 a::selection {
+    text-decoration: bolder;
+    }
 h1 {
     font-size: 20pt;
+    color: white;
 }
 h1,h2 {
     font-weight: bold;
@@ -28,8 +38,13 @@ h2,p {
 }
 #main {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(auto-fit, minmax(50px 1fr));
     background-color: white;
+}
+#tweets {
+    display: grid;
+    grid-auto-rows: minmax(50px auto);
+    gap:5px
 }
 #suggested {
     display: grid;
