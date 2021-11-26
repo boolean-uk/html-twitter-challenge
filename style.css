@@ -47,7 +47,7 @@ hr.solid {
     /* align-self:start; */
 }
 
-input[type=submit] {
+/* input[type=submit] {
     background-color: #1da1f2;
     border: none;
     border-radius: 8px;
@@ -57,11 +57,34 @@ input[type=submit] {
     font-weight: bold;
     margin: 1px 1px;
     cursor: pointer;
-}
-
+} */
 
 input.right {
     float: right;
+    background-color: #1da1f2;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    padding: 7px 9px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 1px 1px;
+    cursor: pointer;
+
+}
+
+input.center {
+    float: center;
+    background-color: #1da1f2;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 7px 50px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 1px 1px;
+    cursor: pointer;
+
 }
 
 .comment {
@@ -93,6 +116,8 @@ input.right {
     overflow: scroll;
     -ms-overflow-style: none;  /*Hide scrollbar for IE and Edge */
     scrollbar-width: none;  /* Hide scrollbar for Firefox */
+    display:grid;
+    grid-template-rows: repeat(3, minmax(300px, auto));
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -100,7 +125,12 @@ input.right {
     display: none;
   }
 
+  .feed > div {
+    border: lightgray 2px solid;
+    padding: 1em;
+  }
+
 .happening {
     grid-column: 3;
-    grid-row: 2/6;
+    grid-row: 1/6;
 }
