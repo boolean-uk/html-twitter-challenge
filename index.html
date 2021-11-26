@@ -10,14 +10,17 @@
 <body>
     <div class=layout>
         <div class="box logo"></div>
-        <div class="box home">Home <br>
+        <div class="box home">
+            <div>Home <br></div>
+            <div>
             <form action="/form/submit" method="POST">
                 <textarea class="comment">What's happening?</textarea>
                 <br>
                 <input type="submit" name="submit" value="Tweet" class="right">
-              </form></div>
+            </form></div>
+        </div>
         <div class="box search">
-        <!-- <input type="text" placeholder="Search Twitter"> -->
+            <!-- <input type="text" placeholder="Search Twitter"> -->
         </div>
         <div class="box nav">
             <ul>
@@ -50,8 +53,14 @@
             <div></div>
         </div>
         <div class="box happening">
-            <input type="text" placeholder="Search Twitter"><br><br>
-            What's happening</div>      
+            <input type="text" placeholder="Search Twitter" class="search-twitter">
+            <br><br>
+            <div class="trending">What's happening</div>
+            <div class="trending">2</div>
+            <div class="trending">3</div>
+            <div class="trending">4</div>
+            <div class="trending">5</div>
+        </div>     
         
         <!-- <div class ="happening">
             <div>What's happening</div>
