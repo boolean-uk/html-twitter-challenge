@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: rgb(7, 124, 170);
+    --primary-color-darker: rgb(22, 117, 155);
+    --secondary-color: rgb(247, 123, 8);
+    --white: rgba(255, 255, 255, 0.95);
+}
+
+body {
+    background-color: var(--secondary-color);
+    display: grid;
+    grid-template-columns: 2fr 5fr 2fr;
+
+  
+    font-family: sans-serif;
+}
+
+#left-menu {
+   font-weight: 700;
+   gap: 10px
+   var(--primary-color)
+}
+
+.nav {
+    padding-top: 60px;
+    padding-left: 40px;
+    display: grid;
+    gap: 10px;
+    list-style: none;
+}
+
+.bite-bt {
+    display: grid;
+    padding-left: 20px;
+    gap: 10px;
+    padding-top: 20px;
+
+}
+
+.bt {
+    text-align: center;
+    gap: 10px;
+    border-radius: 12px;
+}
