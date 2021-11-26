@@ -1,6 +1,8 @@
 * {
     margin:0;
     border:0;
+    color: white;
+    font-family:Helvetica, sans-serif
 }
 .body {
     display: grid;
@@ -19,12 +21,11 @@ nav div h1 a:hover {
     background-color: lightgray;
 }
 nav div h1 a::selection {
-    text-decoration: bolder;
+    color:rgb(147, 62, 187);
     }
 h1 {
     font-size: 20pt;
-    color: white;
-}
+    }
 h1,h2 {
     font-weight: bold;
 }
@@ -34,12 +35,12 @@ h2,p {
 #menu {
     display: grid;
     grid-template-rows: 800px 50px auto;
-    background-color: blueviolet;
+    background-color: rgb(147, 62, 187);
 }
 #main {
     display: grid;
     grid-template-rows: repeat(auto-fit, minmax(50px 1fr));
-    background-color: white;
+    background-color: rgb(147, 62, 187);
 }
 #tweets {
     display: grid;
