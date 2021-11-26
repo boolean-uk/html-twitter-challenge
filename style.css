@@ -17,8 +17,8 @@
     font-weight: bold;
 }
 nav ul img {
-    height: 30px;
-    width: 30px;
+    height: 40px;
+    width: 40px;
     border-radius: 50%;
 }
 
@@ -31,7 +31,7 @@ nav ul img {
 }
 
 nav {
-    background-color: lightblue;
+    /* background-color: lightblue;*/
     height: 100vh;
 }
 
@@ -42,14 +42,15 @@ nav ul {
 
 nav li {
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     font-size: 20px;
 }
+
 nav a {
     text-decoration: none;
     padding: 15px 20px;
     border-radius: 50px;
-    color: inherit
+    color: inherit;
 }
 
 nav a:hover {
@@ -75,12 +76,12 @@ nav p a {
     border-radius: 50px;
 }
 .main {
-    background-color: lightpink;
+    /* background-color: lightpink; */
 }
 
 .home {
     height: 60px;
-    background-color: khaki;
+    background-color: white; 
     position: fixed;
     width:600px;
     border-bottom: 1px solid lightgray;
@@ -106,19 +107,22 @@ nav p a {
 }
 
 .top-tweets {
-    background-color: lime;
+    /* background-color: lime; */
 }
 
 .post {
     height: 150px;
     margin-top: 60px;
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
     border-bottom: 1px solid lightgray;
     border-left: 1px solid lightgray;
     border-right: 1px solid lightgray;
 
     display: grid;
-    grid-template-columns: 80px 1fr;
+    grid-template:
+    "person-image post-box post-box" 80px
+    "person-image post-icons tweet" 70px /
+    80px 1fr 100px;
 }
 
 .post img {
@@ -128,13 +132,37 @@ nav p a {
 }
 
 .person-image {
-    background-color: violet;
+    grid-area: person-image;
+    /* background-color: violet;*/
 }
 
+input {
+    height: 80px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 20px;
+    color: rgb(192, 189, 189);
+}
 .post-box {
-
+    grid-area: post-box;
 }
 
+.post-icons {
+    grid-area: post-icons;
+}
+
+.tweet {
+    grid-area: tweet;
+}
+
+.tweet span {
+    padding: 10px 10px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 50px;
+}
 
 .feed {
     height: 150vh;
@@ -145,7 +173,7 @@ nav p a {
 }
 
 .right {
-    background-color: lightgoldenrodyellow;
+    /* background-color: lightgoldenrodyellow;*/
     padding-left: 20px;
 
     display: grid;
@@ -159,7 +187,7 @@ nav p a {
 }
 
 .search {
-    background-color: lightgrey;
+    background-color: #EFF3F4;
     margin: 10px;
     border-radius: 50px;
     height: 40px;
@@ -167,20 +195,89 @@ nav p a {
 }
 
 .happening {
-    background-color: lightgrey;
+    background-color:#F7F9F9;
     margin: 70px 10px 10px 10px;
+    padding: 10px;
     border-radius: 10px;
     height: 500px;
 }
 
+.happening a {
+    text-decoration: none;
+}
+
+.happening h3,
+.follow h3 {
+    font-weight: bold; 
+}
+
+.happening__link {
+    min-height: 60px;
+    display: grid;
+    margin:10px;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+
+    font-size: 12px;
+    color:black;
+    text-decoration: none;
+
+}
+
+.happening__link:hover {
+    background-color: gray;
+}
+
+.happening img {
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;;
+}
+
 .follow {
-    background-color: lightgrey;
+    background-color:#F7F9F9;
     margin: 10px;
+    padding:10px;
     border-radius: 10px;
     height: 400px;
+}
+
+.follow a {
+    text-decoration: none;
+    color:black;
+}
+
+.follow img {
+    height:50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.follow__link {
+    height: 70px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    gap: 5px;
+}
+
+.follow__link:hover {
+    background-color: gray;
+}
+
+.follow__button {
+    padding: 10px 15px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 50px;
 }
 
 .right p {
     color: lightgrey;
     margin-left: 25px;
+}
+
+.center {
+    display:grid;
+    align-items: center;
 }
