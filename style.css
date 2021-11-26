@@ -76,14 +76,19 @@ nav p a:hover {
     /* background-color: lightpink; */
 }
 
+.home,
+.post,
+.feed {
+    border-bottom: 0.5px solid rgb(233, 228, 228, 0.5);
+    border-left: 0.5px solid rgb(233, 228, 228, 0.5);
+    border-right: 0.5px solid rgb(233, 228, 228, 0.5);
+}
+
 .home {
     height: 55px;
     background-color: white; 
     position: fixed;
-    width:600px;
-    border-bottom: 0.5px solid rgb(233, 228, 228);
-    border-left: 0.5px solid rgb(233, 228, 228);
-    border-right: 0.5px solid rgb(233, 228, 228);
+    width:600px;;
 
     display: grid;
     grid-template-columns: 90% 10%;
@@ -103,39 +108,34 @@ nav p a:hover {
     padding-left: 15px;
 }
 
-.top-tweets {
-    /* background-color: lime; */
+.top-tweets img:hover {
+    border:lightslategrey 1px solid;
 }
 
 .post {
-    height: 150px;
+    height: 120px;
     margin-top: 60px;
-    /* background-color: lightcoral; */
-    border-bottom: 0.5px solid rgb(233, 228, 228);
-    border-left: 0.5px solid rgb(233, 228, 228);
-    border-right: 0.5px solid rgb(233, 228, 228);
 
     display: grid;
     grid-template:
-    "person-image post-box post-box" 80px
-    "person-image post-icons tweet" 70px /
+    "person-image post-box post-box" 65px
+    "person-image post-icons tweet" 55px /
     80px 1fr 100px;
 }
 
 .post img {
     height: 60px;
     width: auto;
-    margin:10px;
+    margin:3px 10px;
     border-radius: 50%;
 }
 
 .person-image {
     grid-area: person-image;
-    /* background-color: violet;*/
 }
 
 input {
-    height: 80px;
+    height: 65px;
     width: 100%;
     padding: 10px;
     border: none;
@@ -150,28 +150,35 @@ input {
     grid-area: post-icons;
 }
 
+.post-icons img {
+    height: inherit;
+    margin:0;
+    border-radius: 50%;
+    margin:1px;
+}
+
+.post-icons img:hover {
+    border: #1A8CD8 1px solid;
+}
+
 .tweet {
     grid-area: tweet;
 }
 
-.tweet span {
-    padding: 10px 10px;
+.tweet a {
+    padding: 7px 15px;
     background-color:#1A8CD8;
     color: white;
     font-weight: bold;
-    border-radius: 50px;
+    border-radius: 40px;
+    text-decoration: none;
 }
 
 .feed {
-    height: 150vh;
-    height:150vh;
-    border-bottom: 0.5px solid rgb(233, 228, 228);
-    border-left: 0.5px solid rgb(233, 228, 228);
-    border-right: 0.5px solid rgb(233, 228, 228);
+    height: auto;
 }
 
 .right {
-    /* background-color: lightgoldenrodyellow;*/
     padding-left: 20px;
 
     display: grid;
@@ -190,6 +197,11 @@ input {
     border-radius: 50px;
     height: 40px;
 
+}
+
+.rest {
+    position: fixed;
+    width: 400px;
 }
 
 .happening {
@@ -223,6 +235,15 @@ input {
 
 .happening__link:hover {
     background-color: lightgray;
+}
+
+.happening__link p {
+    font-size: 14px;
+    color:grey;
+}
+
+.happening__link h4 {
+    font-size: 15px;
 }
 
 .happening img {
@@ -263,7 +284,7 @@ input {
     height: 70px;
     padding:10px;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 60px 2fr 1fr;
     gap: 5px;
 }
 
@@ -272,17 +293,18 @@ input {
 }
 
 .follow__button {
-    padding: 10px 15px;
+    padding: 7px 18px;
     background-color: black;
     color: white;
+    font-size:13px;
     font-weight: bold;
-    border-radius: 50px;
+    border-radius: 40px;
 }
 
-.right p {
+.follow p {
     color: grey;
-    margin-left: 25px;
 }
+
 
 .center {
     display:grid;
