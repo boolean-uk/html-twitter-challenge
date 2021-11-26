@@ -1,0 +1,150 @@
+/* CSS Custom Properties */
+:root {
+  /* border styling */
+  --border-styling: 2px solid #333333;
+  --border-styling-1: 0.3rem solid #ae1457;
+  --border-styling-2: 0.3rem solid black;
+  --border-bottom-1: 1px solid black;
+  --border-radius-custom: 10px;
+  /* fonts */
+  --font-1: 1rem;
+  --font-2: 2rem;
+  --font-3: 0.5rem;
+  --font-4: 10px;
+  --header-font-size: 2rem;
+  --text-font-size: 1rem;
+  /* colors */
+  --first-color: #4eb6ac;
+  --second-color: #e5ffff;
+  --third-color: #1d313a;
+  --fourth-color: #ffffff;
+  --fifth-color: #1c1c1c;
+  --sixth-color: #ffebee;
+  --seventh-color: #ae1457;
+  /* shifts */
+  --shift-20px: 20px;
+  --shift-50px: 50px;
+  --left-margin-1: 10px;
+}
+
+.lf-menu,
+.tweet-feed,
+.rh-sidebar,
+.tweet-feed__user,
+.tweet-feed__main .rh-sidebar__search,
+.rh-sidebar__news,
+.box-container--left,
+.box-container--right,
+.box-container--bottom {
+  border: var(--border-styling);
+}
+
+/* CSS RESET */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CSS GRID SECTION */
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas: "lf-menu tweet-feed rh-sidebar";
+  height: 100vh;
+}
+
+.lf-menu {
+  grid-area: lf-menu;
+}
+
+.tweet-feed {
+  grid-area: tweet-feed;
+}
+
+.rh-sidebar {
+  grid-area: rh-sidebar;
+}
+
+/* Tweet Feed Grid */
+.tweet-feed {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "tweet-feed__user"
+    "tweet-feed__main";
+}
+
+.tweet-feed__user {
+  grid-area: tweet-feed__user;
+}
+
+.tweet-feed__main {
+  grid-area: tweet-feed__main;
+}
+
+.tweet-feed__user {
+  position: relative;
+  border-bottom: 1px solid grey;
+}
+
+/* rh-sidebar Grid */
+.rh-sidebar {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-auto-columns: 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "rh-sidebar__search"
+    "rh-sidebar__news";
+}
+
+.rh-sidebar__search {
+  grid-area: rh-sidebar__search;
+}
+
+.rh-sidebar__news {
+  grid-area: rh-sidebar__news;
+}
+
+/* Prop Box Stylings */
+
+.box-container--left {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.box-container--right {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.box-container--bottom {
+  display: inline-block;
+  position: absolute;
+  top: 2rem;
+  left: 0;
+}
+
+.avatar {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+/* textarea {
+  max-width: 100%;
+} */
