@@ -9,14 +9,14 @@
 
  /* REMOVE SECTION */
 
-.left-menu,
+/* .left-menu,
 .left-menu div,
 .main,
 .main div,
 .right-menu,
 .right-menu div {
     border: solid 1px;
-}
+} */
 
 /* END OF REMOVE SECTION */
 
@@ -88,16 +88,19 @@
 
 .viking-button {
     justify-content: center;
-    padding-left: 29px;
+    padding-left: 7px;
 }
 
 
 
-#viking-button-bottom-left {
+
+
+#viking-button-bottom-left,
+#viking-middle-button {
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
-    padding: 7px 31px;
+    padding: 5px 27px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -113,6 +116,7 @@
 .main {
     display: grid;
     grid-template-rows: 0.2fr 0.8fr;
+    border-right: groove;
 
 }
 
@@ -122,6 +126,82 @@
     grid-template-rows: 0.3fr 0.4fr 0.3fr;
 }
 
+.home-top-bar {
+    display: grid;
+    grid-template-columns: 0.8fr 0.2fr;
+    border-bottom-style: groove;
+    
+}
+
+
+.whats-happening-box {
+    display: grid;
+    grid-template-columns: 0.2fr 0.8fr;
+    border-bottom-style: groove; 
+    
+}
+
+textarea {
+    font-size: 10px;
+    border-style: none;
+    width: 100%;
+    resize: none;
+    color: #a7a7a79a;
+
+
+}
+
+.icon-box-and-viking-button {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.icon-box {
+    margin: 10px;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(4, 0.25fr);
+}
+
+.main-scrolling {
+    display: grid;
+    grid-auto-flow: rows;
+}
+
+.tweet-one {
+    display: grid;
+    grid-template-rows: 80px 20px;
+}
+
+.icon-bar-within-tweet {
+    display: grid;
+    grid-auto-flow: column;
+    margin-left: 15px;
+}
+
+.tweet-one-top {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+
+.tweet-text {
+    font-size: 8px;
+}
+
+
+.pictures {
+    border-radius: 80%;
+}
+
+#star {
+    margin: 10px;
+}
+
+#home-top {
+    font-size: 0.6em;
+    margin: 10px;
+}
 
 /* RIGHT COLUMN */
 
