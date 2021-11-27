@@ -21,6 +21,7 @@
     display:grid;
     grid-template-rows:50px 1fr 150px 50px;
     padding:10px;
+    grid-gap:5px;
 }
 
 .left-menu .icon,
@@ -30,15 +31,78 @@
     border:1px dashed black;
 }
 
-.left-menu .emails p{
-    /* border:1px dashed black; */
+.left-menu .emails {
     display:grid;
-    place-items: center;
-    font-weight: bold;
+    grid-auto-columns:
+    padding:10px;
 }
 
-.left-menu .emails{
+.emails .homes,
+.emails .explore,
+.emails .notifications,
+.emails .messages,
+.emails .bookmarks,
+.emails .lists,
+.emails .profile,
+.emails .more {
     display:grid;
+    grid-template-columns: 80px 1fr;
+    grid-gap:5px;
+    padding:10px;
+    /* text-align: center; */
+}
+
+.content,
+.content-2,
+.content-3,
+.content-4,
+.content-5,
+.content-6,
+.content-7,
+.content-8 {
+    display:grid;
+    place-items: center;
+
+}
+
+
+
+
+
+.homes .symbol,
+.homes .content,
+.explore .symbol-2,
+.explore .content-2,
+.notifications .symbol-3,
+.notifications .content-3,
+.messages .symbol-4,
+.messages .content-4,
+.bookmarks .symbol-5,
+.bookmarks .content-5,
+.lists .symbol-6,
+.lists .content-6,
+.profile .symbol-7,
+.profile .content-7,
+.more .symbol-8,
+.more .content-8{
+    border:1px dashed black;
+}
+
+
+
+
+
+
+
+.emails .homes,
+.emails .explore,
+.emails .notifications,
+.emails .messages,
+.emails .bookmarks,
+.emails .lists,
+.emails .profile,
+.emails .more {
+    border:1px dashed black;
 }
 
 .left-menu .tweet{
@@ -165,7 +229,7 @@
 
 .right-menu{
     grid-area: right-menu;
-    background-color: pink;
+    background-color: whitesmoke;
     display:grid;
     grid-template-rows:50px 50px 1fr 1fr 1fr 1fr 1fr;
     grid-gap:5px;
@@ -179,8 +243,8 @@
 .right-menu .alex,
 .right-menu .hong,
 .right-menu .bloomberg {
-    border:1px dashed black;
-    border-radius: 10px;
+    /* border:1px dashed black; */
+    border-radius 10px;
 }
 
 .search-twitter .lang2 {
