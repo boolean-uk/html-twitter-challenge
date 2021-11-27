@@ -112,11 +112,10 @@
 .logos .icon7{
     display:grid;
     place-items:center;
-    /* background-color: skyblue; */
 }
 
 .logos .icon7 a{
-    border: 1px blue solid;
+    border: 1px skyblue solid;
     text-decoration:none;
     padding:5px 30px;
     border-radius:10px;
@@ -158,10 +157,59 @@
     padding:10px;
 }
 
+.first-image{
+    margin-top:20px;
+}
+
 
 
 .right-menu{
     grid-area: right-menu;
     background-color: pink;
+    display:grid;
+    grid-template-rows:50px 50px 1fr 1fr 1fr 1fr 1fr;
+    grid-gap:5px;
+    padding:10px;
 }
 
+.right-menu .search-twitter,
+.right-menu .whatis,
+.right-menu .news-life,
+.right-menu .richardson,
+.right-menu .alex,
+.right-menu .hong,
+.right-menu .bloomberg {
+    border:1px dashed black;
+    border-radius: 10px;
+}
+
+.search-twitter .lang2 {
+    color:grey;
+    display:grid;
+    padding:5px;
+}
+
+.right-menu .whatis{
+    font-weight: bold;
+    padding:10px;
+    font-size: 15px;
+}
+
+.news-life .lang3 {
+    color:grey;
+    font-size: small;
+}
+
+
+.right-menu .news-life,
+.right-menu .richardson,
+.right-menu .alex,
+.right-menu .hong,
+.right-menu .bloomberg {
+    padding:10px;
+}
+
+.lang4{
+    font-size:small;
+    color:grey;
+}
