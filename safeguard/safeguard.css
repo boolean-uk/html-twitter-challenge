@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+
+}
+
+#layout {
+    height: 100vh;
+    display: grid;
+    grid-template:
+
+        "side    left-header     main-header     right-header   side2"50px 
+        "side    left-column     middle-main     main-right     side2"15% 
+        "side    left-column     main            main-right     side2"1fr 
+        "side     bottom-left     main            bottom-right  side2"70px/ 
+        1fr 2.2fr 6fr 3fr 0.8fr;
+
+}
+
+.side {
+    grid-area: side;
+    background-color: aqua;
+}
+
+.left-header {
+    grid-area:left-header;
+    background-color: red;
+}
+
+.left-column {
+    grid-area: left-column;
+    background-color: pink;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    padding-top: 10%;
+    
+}   /* DO 2 COLUMS FOR LIST SO CAN SHRINK NAMES TO LOGO */
+
+#list-logo , #list-name {
+    list-style-type: none;
+    line-height: 1cm;
+}
+
+#list-name ul {
+    list-style-type: none;
+    text-align: left;
+}
+
+
+#list-logo ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+
+
+.bottom-left {
+    grid-area: bottom-left;
+    margin-bottom: 2mm;
+    background-color: palevioletred;
+}
+
+.main-header {
+    grid-area: main-header;
+    background-color: blue;
+}
+
+.middle-main {
+    grid-area: middle-main;
+    background-color: lightblue;
+}
+
+.main {
+    grid-area: main;
+    background-color: lightskyblue;
+}
+
+.right-header {
+    grid-area: right-header;
+    background-color: gold;
+}
+
+.main-right {
+    grid-area: main-right;
+    background-color: greenyellow;
+}
+
+.bottom-right {
+    grid-area: bottom-right;
+    background-color: green;
+    margin-bottom: 2mm;
+}
+
+.side2 {
+    grid-area: side2;
+    background-color: aqua;
+}
+
+@media screen and (max-width: 987px) {
+    #layout {
+        grid-template:
+
+            "  left-header     main-header     right-header   "50px 
+            "  left-column     middle-main     main-right     "15% 
+            "  left-column     main            main-right     "1fr 
+            "    bottom-left     main            bottom-right  "70px/ 
+            2.2fr 6fr 3fr;
+
+
+    }
+
+    .side,
+    .side2 {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 499px) {
+    #layout {
+        grid-template:
+
+            "  left-header     main-header    "50px 
+            "  left-column     middle-main      "15% 
+            "  left-column     main             "1fr
+             "    bottom-left     main            "70px/ 
+             2.2fr 6fr;
+
+
+    }
+
+    .right-header,
+    .main-right,
+    .bottom-right {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    #layout {
+        grid-template:
+
+            "      main-header    "50px "  middle-main      "15% "   main             "1fr "    main            "70px/ 6fr;
+
+
+    }
+
+    .left-header,
+    .left-column,
+    .bottom-left {
+        display: none;
+    }
+}
