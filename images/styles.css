@@ -145,6 +145,18 @@
     padding:10px;
 }
 
+.homes a,
+.explore a,
+.notifications a,
+.messages a,
+.bookmarks a,
+.lists a,
+.profile a,
+.more a {
+    text-decoration: none;
+    color:black;
+}
+
 .main .home,
 .main .happening,
 .main .logos,
