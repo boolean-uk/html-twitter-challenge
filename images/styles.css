@@ -28,7 +28,7 @@
 .left-menu .emails,
 .left-menu .tweet,
 .left-menu .footer {
-    border:1px dashed black;
+    /* border:1px dashed black; */
 }
 
 .left-menu .emails {
@@ -52,7 +52,7 @@
     /* text-align: center; */
 }
 
-.content,
+/* .content,
 .content-2,
 .content-3,
 .content-4,
@@ -63,7 +63,7 @@
     display:grid;
     place-items: center;
 
-}
+} */
 
 
 
@@ -85,7 +85,7 @@
 .profile .content-7,
 .more .symbol-8,
 .more .content-8{
-    border:1px dashed black;
+    /* border:1px dashed black; */
 }
 
 
@@ -102,7 +102,7 @@
 .emails .lists,
 .emails .profile,
 .emails .more {
-    border:1px dashed black;
+    /* border:1px dashed black; */
 }
 
 .left-menu .tweet{
@@ -112,12 +112,13 @@
 
 .left-menu .tweet a{
     display:grid;
-    border:1px solid black;
+    border:1px solid skyblue;
     padding:10px 80px;
-    border-radius:5px;
+    border-radius:20px;
     text-decoration:none;
-    background-color: #6c6cf3;
+    background-color: skyblue;
     color:white;
+    font-weight: bold;
 }
 
 .main {
@@ -133,7 +134,7 @@
 .main .logos,
 .main .eric,
 .main .group-docs {
-    border:1px dashed black;
+    /* border:1px dashed black; */
 }
 
 .main .home{
@@ -149,7 +150,7 @@
 
 .happening .logo,
 .happening .whats-happening{
-    border:1px dashed black;
+    /* border:1px dashed black; */
 }
 
 .whats-happening{
@@ -170,7 +171,7 @@
 .logos .icon5,
 .logos .icon6,
 .logos .icon7 {
-    border:1px dashed black;
+    /* border:1px dashed black; */
 }
 
 .logos .icon7{
@@ -197,7 +198,7 @@
 
 .eric .pics,
 .eric .wordings {
-    border:1px dashed black;
+    /* border:1px dashed black; */
 }
 
 .eric .wordings{
@@ -213,7 +214,7 @@
 
 .group-docs .picss2,
 .group-docs .wordings2 {
-    border:1px dashed black;
+    /* border:1px dashed black; */
 
 }
 
