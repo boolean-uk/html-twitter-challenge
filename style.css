@@ -1,0 +1,230 @@
+* {
+    margin: 0px;
+}
+
+body {
+    background-color: #FFFF;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 318px minmax(598px, 1fr) minmax(auto, 1fr);
+}
+
+.left-c {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.left-c .nav li a {
+    text-decoration: none;
+    padding-bottom: 50px;
+}
+
+.left-c .nav ul {
+    list-style-type: none;
+}
+
+.left-c .nav {
+    padding-top: 20px;
+}
+
+.menu {
+    border-left:grey solid 1px;
+    border-right:grey solid 1px;
+    height: 100vh;
+}
+
+.profile {
+    overflow: hidden;
+}
+
+.profile .top-profile {
+    display: grid;
+    grid-template: "back name" 50px /
+                    35px  auto;
+}
+
+.profile .top-profile .back-icon {
+    grid-area: back;
+}
+
+.profile .top-profile .profile-name {
+    grid-area: name;
+    grid-template: "name" 25px 
+                    "tweets" 25px/
+                    auto;
+}
+
+.name {
+    grid-area: name;
+    font-weight: 700;
+}
+
+.tweets {
+    grid-area: tweets;
+    color: rgb(83, 100, 113);
+}
+
+.profile-info {
+    display: grid;
+    grid-template-rows: 5, auto;
+    margin-left: 10px;
+}
+
+.profile-info .row-1 {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+}
+
+.profile-info .row-1 .profile-pic img{
+    border-radius: 1000px;
+    border: white solid 5px;
+    width: 133.5px;
+    height: 133.5px;
+    margin-top: -70px;
+}
+
+.profile-info .row-2 .row-2-label {
+    padding-bottom: 10px;
+}
+
+.profile-info .info {
+    color: rgb(83, 100, 113);;
+}
+
+.profile-info .info#row-3 {
+    padding-bottom: 10px;
+}
+
+.profile-info .info#row-4 {
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.profile-info .info#row4-2 {
+    padding-bottom: 10px;
+}
+
+.profile-info .row-5-stats ul,
+.profile-info .row-5-stats ul li,
+.profile-info .row-5-stats ul li a {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    display: inline;
+    text-decoration: none;
+    color: rgb(83, 100, 113);
+}
+
+.profile-info .row-5-stats ul li#followers a {
+    padding-left: 10px;
+}
+
+.profile .tweet-buttons,
+.profile .tweet-buttons ul li,
+.profile .tweet-buttons ul li a {
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;
+    text-decoration: none;
+    color: #536471;
+    padding: 0px 16px;
+}
+
+/* .profile .tweet-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 139.33px 201.33px 132.17px 125.17px);
+}
+
+.profile .tweet-buttons button {
+    height: 50px;
+} */
+
+.share {
+    border-bottom: grey solid 1px;
+}
+
+.post {
+    border-bottom:grey solid 1px;
+}
+
+.right-c {
+    /* background-color: red; */
+}
+
+.footer {
+    background-color: rgb(29, 155, 240);
+    padding: 5px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-size: 15px
+}
+
+.footer h2, p {
+    color: white;
+    padding-left: 320px;
+}
+
+.footer p {
+    font-family: inherit;
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.footer .footer-buttons {
+    text-align: end;
+    padding-top: 15px;
+    padding-right: 30px;
+}
+
+.footer .footer-buttons ul#list li {
+    display: inline;
+    padding: 11px;
+    border-radius: 100px;
+    border: white solid 1px;
+}
+
+.footer .footer-buttons ul#list li a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer .footer-buttons ul#list li a#list-1 {
+    color: #FFFF;
+}
+
+.footer .footer-buttons ul#list li a#list-2 {
+    color: #0F1415;
+}
+
+.footer .footer-buttons ul#list li#bg-list {
+    background-color: #EFF3F4;
+}
+
+@media screen and (max-width: 2000px) {
+    .icons {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        grid-template-columns: 100px minmax(400px, 1fr);
+    }
+
+    .right-c {
+        display: none;
+    }
+
+    .icons {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+    }
+}
