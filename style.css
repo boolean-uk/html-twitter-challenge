@@ -38,10 +38,6 @@ h3 {
     font-size: 1rem;
 }
 
-h4 {
-    display: inline;
-}
-
 a {
     text-decoration: none;
 }
@@ -198,6 +194,10 @@ p {
 
 .feed-posts-container {
     margin-top: 20px;
+}
+
+.user-name {
+    display: inline;
 }
 
 .feed-posts-container p.twitter-handle {
