@@ -9,7 +9,7 @@
 .container {
     display: grid;
     height: 100vh;
-    grid-template-columns: 300px 600px 400px;
+    grid-template-columns: 300px 600px 350px;
     justify-content: center;
 }
 
@@ -66,7 +66,21 @@ nav p a:hover {
 }
 .bottom-div {
     display: grid;
-    justify-content: center;
+    grid-template-columns: 55px 2fr 1fr;
+    background-color: pink;
+    border-radius: 50px;
+    place-items: center;
+}
+
+.bottom-div img {
+    height:50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.bottom-div p {
+    padding: 0;
+    margin: 0;
 }
 
 .bottom-icon {
@@ -140,7 +154,7 @@ input {
     padding: 10px;
     border: none;
     font-size: 20px;
-    color: rgb(192, 189, 189);
+    color: rgb(95, 95, 95);
 }
 .post-box {
     grid-area: post-box;
@@ -188,28 +202,39 @@ input {
 .search-bar {
     background-color: white;
     position: fixed;
-    width: 400px;
+    width: 350px;
+    height: 55px;
 }
 
 .search {
     background-color: #EFF3F4;
-    margin: 10px;
+    margin: 5px;
     border-radius: 50px;
-    height: 40px;
+    height: 45px;
+    display: flex;
+    align-items: center;
 
+    padding-left: 15px;
+}
+
+.search img {
+    margin-right: 10px;
 }
 
 .rest {
-    position: fixed;
-    width: 400px;
+   /*  position: fixed;
+    width: 350px;*/
 }
 
 .happening {
     background-color:#F7F9F9;
     margin: 70px 10px 10px 10px;
-    padding: 10px;
     border-radius: 10px;
     height: auto;
+}
+
+.happening h3 {
+    font-size: 20px;
 }
 
 .happening a {
@@ -218,7 +243,8 @@ input {
 
 .happening h3,
 .follow h3 {
-    font-weight: bold; 
+    font-weight: bold;
+    padding: 10px; 
 }
 
 .happening__link {
@@ -226,31 +252,37 @@ input {
     font-size: 12px;
     color:black;
     text-decoration: none;
-    padding:10px 0px;
+    padding:10px 10px;
     
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     gap: 20px;
 }
 
 .happening__link:hover {
-    background-color: lightgray;
+    background-color: lightgrey;
 }
 
 .happening__link p {
     font-size: 14px;
     color:grey;
+    padding-bottom: 5px;
 }
 
 .happening__link h4 {
     font-size: 15px;
+    padding-bottom: 5px;
 }
 
 .happening img {
-    height: 80px;
-    width: 80px;
+    height: 70px;
+    width: 70px;
     border-radius: 10px;;
 }
+ .elipsis {
+     font-size: 20px;
+     /* this doesn't work why?*/
+ }
 
 .show-more {
     color: #1A8CD8;
@@ -264,7 +296,6 @@ input {
 .follow {
     background-color:#F7F9F9;
     margin: 10px;
-    padding:10px;
     border-radius: 10px;
     height: auto;
 }
@@ -272,6 +303,7 @@ input {
 .follow a {
     text-decoration: none;
     color:black;
+    font-size: 16px;
 }
 
 .follow img {
@@ -284,7 +316,7 @@ input {
     height: 70px;
     padding:10px;
     display: grid;
-    grid-template-columns: 60px 2fr 1fr;
+    grid-template-columns: 55px 2fr 1fr;
     gap: 5px;
 }
 
@@ -309,4 +341,15 @@ input {
 .center {
     display:grid;
     align-items: center;
+}
+
+.terms {
+    font-size: 13px;
+    padding-left: 10px;
+    color: gray;
+}
+
+.terms span {
+    padding-right: 15px;
+    padding-bottom: 10px;
 }
