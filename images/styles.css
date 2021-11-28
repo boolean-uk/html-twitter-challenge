@@ -74,19 +74,6 @@
     /* text-align: center; */
 }
 
-/* .content,
-.content-2,
-.content-3,
-.content-4,
-.content-5,
-.content-6,
-.content-7,
-.content-8 {
-    display:grid;
-    place-items: center;
-
-} */
-
 
 
 .homes .symbol,
@@ -153,8 +140,13 @@
 .lists a,
 .profile a,
 .more a {
-    text-decoration: none;
+    text-decoration:none;
     color:black;
+}
+
+a:hover{
+    text-decoration:none;
+    color:tomato;
 }
 
 .main .home,
