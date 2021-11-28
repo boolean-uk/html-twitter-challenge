@@ -15,9 +15,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
 }
-.for-vision {
-  border: solid 1px orangered;
-}
+
 .left-menu {
   display: grid;
   grid-template-rows: 1fr 150px;
@@ -25,8 +23,11 @@ body {
 }
 /* Flexbox layout for left menu picture profile */
 .lft-btm--e1-b {
-  display: flex;
-  gap: 20px;
+  /* display: flex;
+  gap: 20px; */
+  display: grid;
+  grid-template-columns: 100px;
+  /* grid-auto-rows: auto; */
 }
 .pic-profile {
   width: 50px;
@@ -55,6 +56,12 @@ body {
 .right-menu {
   display: grid;
 }
+.right-m-content {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  grid-auto-rows: auto;
+}
+
 .main-pg-icons {
   /* display: flex;
   gap: 60px;
