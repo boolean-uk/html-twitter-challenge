@@ -1,51 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css">
     <title>Twitter</title>
-</head>
-<body>
-    <header>
-        <section id="left-menu">
-            <div id="logo"></div>
-            <ul class="nav">
-              <li class="nav-link">
-                  <a href="">Home</a>
+  </head>
+  <body>
+   <header>
+      <nav>
+          <ul>
+              <li>
+                  <i class="twitter"></i>
               </li>
-              <li class="nav-link">
+              <li> 
+              <div class="Logo" ></div> 
+              <img src="" alt="">
+              </li>
+              
+              <li>
+                  <div class="header-icon"><i class="home"></i></div>
+                  <a href="#home"><strong>Home</strong></a>
+              </li>
+              <li>
+                  <div class="header-icon"><i class="hashtag"></i></div>
                   <a href="">Explore</a>
               </li>
-              <li class="nav-link">
-                  <a href="">Notifiactions</a>
-              </li> 
-              <li class="nav-link">
+              <li>
+                  <div class="header-icon"><i class="bell"></i></div>
+                  <a href="">Notifications</a>
+              </li>
+              <li>
+                  <div class="header-icon"><i class="envelope"></i></div>
                   <a href="">Messages</a>
-              </li>               
-              <li class="nav-link">
+              </li>
+              <li>
+                  <div class="header-icon"><i class="bookmark"></i></div>
                   <a href="">Bookmarks</a>
-              </li> 
-              <li class="nav-link">
+              </li>
+              <li>
+                  <div class="header-icon"><i class="list-alt"></i></div>
+                  <a href="">Lists</a>
+              </li>
+              <li>
+                  <div class="header-icon"><i class="user"></i></div>
                   <a href="">Profile</a>
-              </li> 
-              <li class="nav-link">
-                <a href="">More</a>
-              </li>   
-            </ul>
+              </li>
+              <li>
+                  <img  alt="more">
+                  <a href="">More</a>
+              </li>
+          </ul>
+          <div class="tweet-bt">
+              <button class="bt">Tweet</button>
+          </div>
+      </nav>
+      <div class="user">
+          <img src="/assests/Profile.jpg" alt="">
+          <div class="user-name">
+              <span>Anojan</span>
+              <span>@PointWolfAnj</span>
+          </div>
+          <span><i class="ellipsis-h"></i></span>
+      </div>
+  </header>
+  <main>
+      <div class="main-content">
+          <div class="home-title">
+              <h1>Home</h1>
+              <span>
+                  <img src="" alt="start icon">
+              </span>
+          </div>
+          <div class="tweet-post">
+              <div class="post">
+                  <img src="/assests/Profile.jpg" alt="pic">
+                  <input type="text" placeholder="What's happening?">
+              </div>
+              <div class="icons">
+                  <div class="icon">
+                      <span><i class="photo-video"></i></span>
+                      <span><i class="poll-h"></i></span>
+                      <span><i class="calendar-day"></i></span>
+                      <span><i class="smile"></i></span>
+                  </div>
+                  <button>Tweet</button>
+                  
+              </div>
+          </div>
+          <div class="user-posts">
+              <div class="user-posts-top">
+                  <div class="pic-name">
+                      <img src="/assests/Profile.jpg" alt="user1">
+                      <p>Anojan Ahilan <span class="userId">@PointWolfAnj </span></p>
+                  </div>
+                  <span><i class="fas fa-ellipsis-h"></i></span>
+              </div>
+              <div class="user-posts-bottom">
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non ipsam reprehenderit voluptatibus error ut commodi, veritatis nisi excepturi rerum. Sed doloribus ipsa delectus recusandae placeat, aut beatae odio numquam vero?</p>
+              </div>
+              <div class="user-likes">
+                  <span><i class="comment"></i>1</span>
+                  <span><i class="retweet"></i>25</span>
+                  <span><i class="heart"></i>130</span>
+                  <span><i class="download"></i></span>
+                  <span></span>
+              </div>
+          </div>
+          <div class="user-posts">
+              <div class="user-posts-top">
+                  <div class="pic-name">
+                      <img src="/assests/Profile.jpg" alt="user1">
+                      <p>Anojan Ahilan <span class="userId">@PointWolfAnj </span></p>
+                  </div>
+                  <span><i class="ellipsis-h"></i></span>
+              </div>
+              <div class="user-posts-bottom">
+                  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non ipsam reprehenderit voluptatibus error ut commodi, veritatis nisi excepturi rerum. Sed doloribus ipsa delectus recusandae placeat, aut beatae odio numquam vero?</p>
+                  <img src="" alt="">
+              </div>
 
-            <div class="bite-bt">
-                <button class="bt">Bite</button>
-            </div>
-   
-        </section>
-        <section id="Feed">
-
-        </section>
-        <section id="right-menu"
-        ></section>
-    </header>
-    
+              <div class="user-likes">
+                  <span><i class="comment"></i>1</span>
+                  <span><i class="retweet"></i>25</span>
+                  <span><i class="heart"></i>130</span>
+                  <span><i class="download"></i></span>
+                  <span></span>
+              </div>
+          </div>
+      </div>
+      <div class="main-news">
+          <div class="search-container">
+              <div class="search-icon">
+                  <i class="search"></i>
+              </div>
+              <div>
+                  <input type="text" placeholder="Search Twitter">
+              </div>
+          </div>
+          <div class="card">
+              <h3>What's happening?</h3>
+              <div class="news-container">
+                  <div class="news">
+                      <p class="pColor">Anime</p>
+                      <p>New One Piece movie annouced</p>
+                      <p class="pColor">Trending with One Piece</p>
+                  </div>
+                  <div class="news">
+                      <div class="news">
+                          <p class="pColor">music</p>
+                          <p>Samm Hensaw teases debut album</p>
+                          <p class="pColor">Trending with Samm Hensaw</p>
+                      </div>
+                  </div>
+                  <div class="news">
+                      <div class="news">
+                          <p class="pColor">sport</p>
+                          <p>Orlando Magic Fultz return closer</p>
+                          <p class="pColor">Trending with Orlando Magic</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="card">
+              <h3>Who to follow</h3>
+              <div class="follow">
+                  <img src="/assests/Profile.jpg" alt="user2">
+                  <div class="user-name">
+                      <span>Anojan Ahilan</span>
+                      <span>@PointWolfAnj</span>
+                  </div>
+                  <button>follow</button>
+              </div>
+              <div class="follow">
+                  <img src="/assests/Profile.jpg" alt="user2">
+                  <div class="user-name">
+                      <span>Anojan Ahilan</span>
+                      <span>@PointWolfAnj</span>
+                  </div>
+                  <button>follow</button>
+              </div>
+              <div class="follow">
+                  <img src="/assests/Profile.jpg" alt="user2">
+                  <div class="user-name">
+                      <span>Anojan Ahilan</span>
+                      <span>@PointWolfAnj</span>
+                  </div>
+                  <button>follow</button>
+              </div>
+          </div>
+      </div>
+  </main>
+  <footer>
+  </footer>
 </body>
 </html>
