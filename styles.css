@@ -64,6 +64,10 @@
     padding: 5px;
 }
 
+.icons { 
+    color: black;
+}
+
 
 .left-nav-text li {
     list-style: none;
