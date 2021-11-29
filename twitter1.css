@@ -26,15 +26,16 @@ p {
 }
 body {
   background-color: #fff;
+
   font-family: "Roboto", sans-serif;
-  margin-left: 60px;
-  padding: 40px;
-  /* margin: auto; */
 }
 .container {
+  width: 60%;
   height: 100vh;
+  margin: auto;
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 500px auto 500px;
+  grid-template-rows: 200px auto;
   margin-top: 40px;
 }
 
@@ -43,13 +44,13 @@ body {
   grid-template-rows: 1fr 50px;
   grid-auto-rows: auto;
   margin-left: 80px;
+  margin-right: 40px;
 }
 .left-icons-n-list {
   display: grid;
   grid-template-columns: 50px auto;
 }
 .lft-top--el-a {
-  grid-area: ;
 }
 
 .lft-btm--e1-b {
@@ -68,17 +69,57 @@ body {
   grid-auto-rows: auto;
 }
 .header {
+  /* margin-bottom: 40px; */
   display: grid;
-  grid-template-columns: 1fr 50px;
-  grid-template-rows: 100px 200px;
-  row-gap: 1em;
+  grid-template-columns: 100px auto 100px;
+  grid-template-rows: 50px 50px 100px;
+  /* row-gap: 1.5em; */
 }
-.Whats-hap-header {
-  display: grid;
-  grid-template-columns: auto;
-  /* grid-template-rows: 100px; */
+.home-n-str {
+}
+.home {
+  grid-column: 1 / 3;
+  grid-row: 2/ 3;
+}
+.star {
+}
+.img-header {
+}
+.img-hdr-pfl {
+  width: 50px;
+  border-radius: 50%;
+}
+.whats-h-header {
+  color: var(--dark-gry);
+  font-family: lato;
+  font-weight: bold;
+  font-size: 38px;
+}
+.icon-hdr {
+}
+
+.header-btn {
+  border: solid 1px var(--accent-clr);
+  border-radius: 30px;
+  background-color: var(--accent-clr);
+  height: 40px;
+  color: var(--xtr-light-gry);
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+.hdr {
+  margin-bottom: 60px;
+  padding-right: 20px;
 }
 .house {
+  color: var(--accent-clr);
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  margin-top: 28px;
+}
+.house-2 {
   color: var(--accent-clr);
   width: 30px;
   height: 30px;
@@ -87,12 +128,14 @@ body {
   color: var(--accent-clr);
   width: 50px;
   height: 50px;
-
-  margin-left: 20px;
 }
 .whats-h-icons {
   width: 30px;
   color: var(--accent-clr);
+  display: inline-block;
+  padding-right: 40px;
+  padding-top: 40px;
+  margin-right: 40px;
 }
 
 .left-icons-n-list .list-clr {
@@ -109,21 +152,83 @@ body {
 .list-clr {
   color: var(--blk-clr);
 }
+.pic-profile-1 {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+  border-radius: 50%;
+}
+.pic-profile-2 {
+  width: 70px;
+  height: 70px;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.e1-b-el-1,
+.e1-b-e2-2,
+.e1-b-e2-3 {
+  align-items: center;
+  /* padding: 10px; */
+  margin-bottom: 30px;
+}
+.e1-b-e2-2 {
+}
+.e1-b-e2-3 {
+}
+.lft-btm--e1-b {
+  column-gap: 3em;
+}
 .main {
   display: grid;
-  grid-template-columns: 50px 1fr 50px;
+  grid-template-columns: 70px 1fr 30px;
   grid-auto-rows: auto;
-  column-gap: 20px;
+  /* column-gap: 20px;
+  display: grid; */
 }
+.gry-font {
+  color: var(--dark-gry);
+  font-size: 16px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.gry-font-big {
+  color: var(--dark-gry);
+  size: 10px;
+}
+.ylw-clr {
+  color: #fab005;
+}
+.clr-grn {
+  color: #74b816;
+}
+.firt-tweet {
+}
+.space-btn-out {
+  word-spacing: 100px;
+}
+
 .right-menu {
   display: grid;
 }
 .right-m-content {
   display: grid;
-  grid-template-columns: 1fr 150px;
+  grid-template-columns: 1fr auto;
   grid-auto-rows: auto;
   padding: 40px;
-  margin: 20px;
+  border: ;
+  border-radius: 10px;
+}
+.search-bar {
+  background-color: lightgray;
+  border-bottom: solid 1px lightgrey;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  font-size: small;
+  font-weight: 200;
+  color: var(--dark-gry);
 }
 .style-cards {
   background-color: var(--right-menu-bg-clr);
@@ -141,13 +246,21 @@ body {
   padding-top: 40px;
   margin-right: 40px;
 }
-/* .main-pic {
-  width: 900px;
-  justify-content: 2, 3 / -3;
+.main-pic {
+  width: 800px;
+  height: 800px;
+  justify-content: 2 /-3;
   border: ;
-  border-bottom-left-radius: 40px;
+  border-top-left-radius: 40px;
   border-top-right-radius: 40px;
-} */
+}
+.pic-profile {
+  width: 150px;
+  height: 150px;
+  padding: 10px;
+  border: ;
+  border-radius: 30px;
+}
 .font-home-list-whats-h {
   font-size: 22px;
   font-weight: bold;
@@ -161,8 +274,9 @@ body {
   padding-right: 100px;
   padding-left: 100px;
   padding-bottom: 20px;
-  margin-top: 500px;
+  margin-top: 475px;
   font-size: 20px;
   color: var(--xtr-light-gry);
   font-weight: bold;
+  margin-left: -10px;
 }
