@@ -31,37 +31,6 @@
   box-sizing: border-box;
 }
 
-/* border aid */
-/* .lh-sb,
-.main,
-.rh-sb {
-  border: var(--border-styling);
-} */
-
-/* .main
- {
-  border: 2px solid blue;
-} */
-
-/* .lh-sb{
-  border: 2px solid green;
-} */
-
-/* .rh-sb{
-  border: 2px solid orange;
-} */
-
-/* .main__top,
-.main__bottom {
-    border: 2px solid red;
-} */
-
-/* .main__top-a,
-.main__top-b,
-.main__top-c{
-    border: 2px solid green;
-} */
-
 
 /* Global Styles */
 /* rh-sb */
@@ -147,8 +116,6 @@
 .lh-sb {
   grid-area: lh-sb;
 }
-
-
 
 .lh-sb {
   margin-top: 1rem;
@@ -243,6 +210,12 @@
   .main__top-b-pic { grid-area: main__top-b-pic; }
   .main__top-b_input { grid-area: main__top-b_input; }
 
+
+div.main__top-b {
+  justify-items: left;
+  align-items: center;
+}
+
 /* icons + buttons - main top c */
   .main__top-c {
     display: grid; 
@@ -281,14 +254,21 @@
   .main__bottom {
     display: grid; 
     grid-template-columns: 0.3fr 1.7fr; 
-    grid-template-rows: 1fr 1fr; 
+    grid-template-rows: repeat(4, 1fr); 
     gap: 0px 0px; 
     grid-template-areas: 
       "main__bottom-pic-1 main__bottom-text-1"
-      "main__bottom-pic-2 main__bottom-text-2"; 
+      "main__bottom-pic-2 main__bottom-text-2"
+      "main__bottom-pic-3 main__bottom-text-3"
+      "main__bottom-pic-4 main__bottom-text-4";  
   }
   .main__bottom-pic-1 { grid-area: main__bottom-pic-1; }
   .mmain__bottom-pic-2 { grid-area: mmain__bottom-pic-2; }
+  .main__bottom-pic-3 { grid-area: main__bottom-pic-3; }
+  .mmain__bottom-pic-4 { grid-area: mmain__bottom-pic-4; }
+
+
+
 /* mobile end */
 
 
@@ -373,6 +353,11 @@ svg {
 display: none;
     } 
 
+    .btn_tweet--m2 {
+      display: none;
+    }
+
+
 }
 /* tablet end */    
 
@@ -407,15 +392,30 @@ display: none;
 .rh-sb {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.1fr 0.9fr;
-    gap: 0em 0em;
+    grid-template-rows: 0fr 0.9fr;
+    gap: 1em 0em;
     grid-template-areas:
       "rh-sb__search-b"
       "rh-sb__news";
   }
   
   .rh-sb__search-b { grid-area: rh-sb__search-b; }
+
   
+  /* "rh-sb__search-b > search > input */
+
+  .rh-sb__search-b > .search > input {
+    width: 100%
+  }
+
+  .fa-search {
+    position: relative;
+    color: grey;
+    left:0.4em;
+    top: 1.3em;
+    font-size: 1em;
+}
+
   .rh-sb__news { grid-area: rh-sb__news; }
   
   .rh-sb__news {
@@ -467,8 +467,8 @@ display: none;
 /* nav icons and links for desktop */
   .nav-grid {
     display: grid;
-    grid-template-columns: 0.5fr 0.5fr;
-    grid-template-rows: repeat(9, 1fr);
+    grid-template-columns: 0.1fr 0.9fr;
+    grid-template-rows: repeat(10, 1fr);
     gap: 0px 0px;
     grid-template-areas:
       "logo ."
@@ -479,11 +479,14 @@ display: none;
       "bookmarks nav-links__text-bookmarks"
       "lists nav-links__text-lists"
       "profile nav-links__text-profile"
-      "more nav-links__text-more";
+      "more nav-links__text-more"
+      "btn-container-2 .";
     grid-area: nav-grid;
     align-content: center;
     justify-content: center;
   }
+
+  .btn-container-2 { grid-area: btn-container-2; }
 
   .logo { grid-area: logo; }
   
@@ -518,6 +521,15 @@ display: none;
   .nav-links__text.profile { grid-area: nav-links__text-profile; }
   
   .nav-links__text.more { grid-area: nav-links__text-more; } 
+
+  .btn_tweet--m2 {
+    border: 0px solid transparent;  
+    border-radius: 20px;
+      padding: 1em 4em 1em 4em;
+      /* margin: 0em 0em 0em 1em; */
+      background-color: var(--twitter-color);
+      color: white;
+  }
 
 }
 /* desktop end */
@@ -560,7 +572,11 @@ h5 {
 
 .main__top-a,
 .main__bottom-pic-1,
-.main__bottom-text-1
+.main__bottom-text-1,
+.main__bottom-pic-2,
+.main__bottom-text-2,
+.main__bottom-pic-3,
+.main__bottom-text-3
  {
   border-bottom: var(--border-styling-1);
 }
@@ -630,13 +646,20 @@ h5 {
 gap: 0px 0px;
 
   }
+
+.btn_tweet--m2 {
+  display: none;
+}
+
 }
 
 /* bug fixes general */
 /* Twitter feed font size and display */
 
 .main__bottom-text-1 > p,
-.main__bottom-text-2 > p {
+.main__bottom-text-2 > p,
+.main__bottom-text-3 > p,
+.main__bottom-text-4 > p {
   font-size: 23px;
   font-stretch: 100%;
   font-weight: 400;
@@ -653,6 +676,9 @@ gap: 0px 0px;
   overflow-wrap: break-word
 }
 
+p {
+  overflow-wrap: break-word
+}
 
 .home,
 .nav-links.nav-links__text.home {
@@ -666,7 +692,48 @@ gap: 0px 0px;
 
 /* 20px twitter chirp arial  - NAV ICONS*/
 
+.nav-links__text {
+  font-size: 20px;
+}
 
-/* .nav-links {
-  display: inline-block;
-} */
+input {
+  outline: none;
+}
+
+.icon .twitter {
+  fill: var(--twitter-color);
+  color: var(--twitter-color);
+}
+
+#logo > a > svg {
+  fill: var(--twitter-color);
+}
+
+
+/* Tweet Feed Scroll Functionality */
+
+/* In hindsight the the user-input box should have been part of the tweet feed section in html, */
+/* so then upon scroll - home-bar is always in view and more screen exposure to tweet */
+
+.main__bottom {
+  overflow: scroll;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.main__bottom::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.main__bottom {
+  /* IE and Edge */
+  -ms-overflow-style: none;  
+  /* Firefox */
+  scrollbar-width: none;  
+}
+
+.hashtag{
+  color:var(--twitter-color);
+  font-size: 23px;
+  font-family: Arial, Helvetica, sans-serif;
+}
