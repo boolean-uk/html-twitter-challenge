@@ -16,20 +16,20 @@
 nav ul img {
     height: 45px;
     width: 45px;
-    border-radius: 50%;
+    margin-right: 20px;
 }
 
 .pin {
-    position:fixed;
-    width: 300px;
+    position:sticky;
+    top: 0;
 
     display: grid;
     grid-template-rows: 92vh 8vh;
 }
 
 .pin2 {
-    position:fixed;
-    width: 50px;
+    position:sticky;
+    top: 0;
 
     display: grid;
     grid-template-rows: 92vh 8vh;
@@ -123,8 +123,8 @@ nav p a:hover {
 .home {
     height: 55px;
     background-color: white; 
-    position: fixed;
-    width:600px;;
+    position: sticky;
+    top:0;
 
     display: grid;
     grid-template-columns: 90% 10%;
@@ -151,7 +151,6 @@ nav p a:hover {
 
 .post {
     height: 120px;
-    margin-top: 60px;
 
     display: grid;
     grid-template:
@@ -220,49 +219,59 @@ input {
 .feed__element { 
     display: grid;
     grid-template:
-    "retweet info" 20px
     "profile feed-main" 1fr
-    "profile feed-icons" 20px /
+    "profile feed-icons" 36px /
     80px 1fr;
-}
-
-.feed__retweet {
-    grid-area: retweet;
-    background-color: blue;
-}
-
-.feed__info {
-    grid-area: info;
-    background-color: lightpink
+    gap: 5px;
 }
 
 .feed__profile {
     grid-area: profile;
-    background-color: lightseagreen
+
+    display: grid;
+    justify-content: center;
+}
+
+.feed__profile img {
+    width:60px;
+    border-radius: 50%;
+    margin-top: 10px;
 }
 
 .feed__main {
     grid-area: feed-main;
-    background-color: lime;
+    padding-top: 10px;
 }
 
 .feed__icons {
     grid-area: feed-icons;
-    background-color: lightsalmon
+    padding-bottom: 20px;
 }
+
+.feed__icons img {
+    width: 20px;
+    margin-right: 15px;
+}
+
+.feed__icons span {
+    margin-right: 60px;
+} 
 
 .right {
     padding-left: 20px;
 
     display: grid;
     grid-template-rows: 60px 1fr;
+    /* position: relative; */
 }
 
 .search-bar {
     background-color: white;
-    position: fixed;
+    position: sticky;
+    top: 0;
     width: 350px;
     height: 55px;
+    z-index: 1;
 }
 
 .search {
@@ -282,13 +291,17 @@ input {
 }
 
 .rest {
-   /*  position: fixed;
-    width: 350px;*/
+    position: relative;
+} 
+
+.rest2 {
+    position:sticky;
+    top:0;
 }
 
 .happening {
     background-color:#F7F9F9;
-    margin: 70px 10px 10px 10px;
+    margin: 10px;
     border-radius: 10px;
     height: auto;
 }
@@ -348,7 +361,7 @@ nav a:hover,
      font-size: 30px;
      text-align: end;
      padding-right: 10px;
-     /* this doesn't work why?*/
+
  }
 
 .show-more {
