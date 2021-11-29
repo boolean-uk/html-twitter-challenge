@@ -44,6 +44,9 @@ h4,
 span {
     font-size: 13pt
 }
+h5 {
+    color: white
+}
 a {
     text-decoration: none;
 }
@@ -100,6 +103,10 @@ div.tweet.button {
 .embedded {
     object-fit: contain;
     border-radius: 10px
+}
+.hide {
+    display: none;
+    padding-left: 12px
 }
 /*grids*/
 .container {
@@ -226,14 +233,29 @@ nav div,
     #menu .tweet {
         height: 50px;
         width: 50px;
-        font-size: 17pt;
-        text-align:center;
-        color: #4BA0EB;
         background-color: #4BA0EB;
         border-radius: 50%;
         align-items: center;
     }
     #menu .two-col-grid {
         display: none;
+    }
+    .hide {
+        display:grid
+    }
+    div h5 {
+        display: none;
+    }
+}
+@media screen and (max-width: 801px) {
+    #suggested {
+        display: none
+    }
+    #menu {
+        margin-right:0px
+    }
+    #main {
+        padding-left: 0px;
+        margin-left:0px
     }
 }
