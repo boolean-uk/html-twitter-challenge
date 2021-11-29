@@ -70,33 +70,37 @@
     list-style: none;
     font-size: 0.35em;
     padding: 10px;
-    font-weight: bold;
     
 }
 .left-nav-text ul a {
     text-decoration: none;
+    color: black;
 }
 
-.left-nav-text ul li a h2 { 
-    color: black
-}
-
-/* .hover:hover {
-    color: blue;
-} */
+.hover:hover {
+    color: rgb(29, 155, 240);
+  }
 
 .viking-button {
     justify-content: center;
     padding-left: 7px;
 }
 
+.hover:active {
+    color: rgb(111, 129, 141);
+}
+
+#selected-state {
+    font-weight: bold;
+    color: rgb(29, 155, 240);
+}
 
 
 
 
 #viking-button-bottom-left,
 #viking-middle-button {
-    background-color: #4CAF50; /* Green */
+    background-color: rgb(29, 155, 240);
     border: none;
     color: white;
     padding: 5px 27px;
@@ -106,6 +110,21 @@
     font-size: 10px;
     border-radius: 17px;
   }
+
+.viking-button-two {
+    display: grid;
+    justify-items: end;
+}
+
+#viking-middle-button {
+    height: 24px; 
+    display: grid;
+    align-items: center;
+    background-color: rgb(140, 200, 240);
+    
+}
+
+
 
 #viking-button-bottom-left:hover {background-color: #3e8e41}
 
@@ -153,6 +172,8 @@ textarea {
 .icon-box-and-viking-button {
     display: grid;
     grid-auto-flow: column;
+    margin-top: 1px;
+    margin-right: 1px;
 }
 
 .icon-box {
@@ -208,7 +229,12 @@ textarea {
 
 #star {
     margin: 10px;
+    color:rgb(29, 155, 240);
 }
+
+/* #axe-top-left {
+    fill: blue;
+} */
 
 #home-top {
     font-size: 0.6em;
