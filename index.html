@@ -11,41 +11,65 @@
   <div class="container">
     <div id="menu">
       <nav>
-        <img src="/images/twitterlogo.png"> <!--image courtesy of flaticon.com-->
+        <img id="logo" src="images/twitterlogo.png"> <!--image courtesy of flaticon.com-->
         <div>
+          <img class="icon" src="icons/home.png">
           <h1><a class="menulink" href="/index.html">Home</a></h1>
         </div>
         <div>
+          <img class="icon" src="icons/explore.png">
           <h1><a class="menulink" href="/index.html">Explore</a></h1>
         </div>
         <div>
+          <img class="icon" src="icons/notifications.png">
           <h1><a class="menulink" href="/index.html">Notifications</a></h1>
         </div>
         <div>
+          <img class="icon" src="icons/messages.png">
           <h1><a class="menulink" href="/index.html">Messages</a></h1>
         </div>
         <div>
+          <img class="icon" src="icons/bookmarks.png">
           <h1><a class="menulink" href="/index.html">Bookmarks</a></h1>
         </div>
         <div>
+          <img class="icon" src="icons/lists.png">
           <h1><a class="menulink" href="/index.html">Lists</a></h1>
         </div>
         <div>
+          <img class="icon" src="icons/profile.png">
           <h1><a class="menulink" href="/index.html">Profile</a></h1>
         </div>
         <div>
+          <img class="icon" src="icons/more.png">
           <h1><a class="menulink" href="/index.html">More</a></h1>
         </div>
       </nav>
-      <div>Tweet</div> <!--Tweet button element-->
+      <div>
+        <h5 class="tweet-button">Tweet</h5>
+      </div>
       <div>@pdsmart6</div> <!--Profile element-->
     </div>
     <div id="main">
-      <header>
+      <header class="two-col-grid">
         <h1>Home</h1>
+        <img class="icon" src="icons/timeline-options.png">
       </header>
       <div>
-        <textarea rows:3 cols:1 placeholder="What's happening?"></textarea>
+        <div class="two-col-grid">
+          <img class="profile-pic" src="images/profileimg.jpg">
+          <textarea rows:3 cols:1 placeholder="What's happening?"></textarea>
+        </div>
+        <div class="two-col-grid">
+          <div>
+            <img class="icon" src="icons/timeline-options.png">
+            <img class="icon" src="icons/timeline-options.png">
+            <img class="icon" src="icons/timeline-options.png">
+            <img class="icon" src="icons/timeline-options.png">
+            <img class="icon" src="icons/timeline-options.png">
+          </div>
+          <div class="tweet-button">Tweet</div>
+        </div>
       </div> <!--Tweet element-->
       <div id="tweets">
         <article>
@@ -69,7 +93,8 @@
       </div> <!--Feed element-->
     </div>
     <div id="suggested">
-      <div>
+      <div id="searchbar">
+        <img class="icon" src="icons/search.png">
         <textarea rows:1 cols:1 placeholder="Search Twitter"></textarea>
       </div> <!--Search bar element-->
       <div id="happening">
@@ -85,14 +110,14 @@
           <h4 class ="h-about">Music - Trending</h4>
           <h2 class ="h-main">Madonna</h2>
           <h4 class ="h-stats">20.4K Tweets</h4>
-          <img class="h-img" src="/images/newsimg1.jpg">
+          <img class="h-img icon" src="icons/more-b.png">
           <div class="h-blank"></div>
         </article>
         <article>
           <h4 class ="h-about">Music -Trending</h4>
           <h2 class ="h-main">Brian May</h2>
           <h4 class ="h-stats">3,407 Tweets</h4>
-          <img class="h-img" src="/images/newsimg1.jpg">
+          <img class="h-img icon" src="icons/more-b.png">
           <div class="h-blank"></div>
         </article>
         <article>
