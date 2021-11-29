@@ -35,7 +35,7 @@
 .left-menu {
     display: grid;
     grid-template-rows: 0.1fr 0.3fr 0.6fr;
-    border-right-style: groove;
+    border-right: lightgrey solid 0.5px;
 }
 
 #viking-icon {
@@ -133,7 +133,7 @@
 .main {
     display: grid;
     grid-template-rows: 0.2fr 0.8fr;
-    border-right: groove;
+    border-right: lightgrey solid 0.5px;
 
 }
 
@@ -141,12 +141,13 @@
 
     display: grid;
     grid-template-rows: 0.3fr 0.4fr 0.3fr;
+    border-bottom: rgb(243, 240, 240) solid 5px;
 }
 
 .home-top-bar {
     display: grid;
     grid-template-columns: 0.8fr 0.2fr;
-    border-bottom-style: groove;
+    border-bottom: lightgrey solid 0.5px;
     
 }
 
@@ -154,7 +155,7 @@
 .whats-happening-box {
     display: grid;
     grid-template-columns: 0.2fr 0.8fr;
-    border-bottom-style: groove; 
+    border-bottom: lightgrey solid 0.5px;
     
 }
 
@@ -190,6 +191,7 @@ textarea {
 .tweet-one {
     display: grid;
     grid-template-rows: 1fr 20px;
+    border-bottom: lightgrey solid 0.5px;
 }
 
 .text-inside-tweet {
@@ -207,6 +209,7 @@ textarea {
     display: grid;
     grid-auto-flow: column;
     grid-template-rows: auto;
+    
 }
 
 .tweet-text {
