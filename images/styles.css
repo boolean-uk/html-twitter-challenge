@@ -53,6 +53,36 @@
     /* border:1px dashed black; */
 }
 
+.left-menu .icon{
+    display:grid;
+    grid-template-columns: 80px 1fr;
+    padding:5px;
+    gap:5px;
+}
+
+.icon .in,
+.icon .out{
+    /* border:1px dashed black; */
+}
+
+.svg-home,
+.svg-home1,
+.svg-home2,
+.svg-home3,
+.svg-home4,
+.svg-home5,
+.svg-home6,
+.svg-home7
+ {
+    width: 40%;
+    height:70%;
+}
+
+.svg-icon{
+    width: 40%;
+    height: 90%;
+}
+
 .left-menu .emails {
     display:grid;
     grid-auto-columns:
