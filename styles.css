@@ -52,6 +52,7 @@ li a{
 li .header-icon{
     grid-column: 1/2;
     justify-self: flex-end;
+    
 }
 
 li a:hover{
@@ -63,9 +64,9 @@ li a:hover{
 .Logo {
     width: 150px;
     height: 150px;
-    
-    
 }
+
+
 
 .twitter{
     color: rgb(29, 155, 240);
