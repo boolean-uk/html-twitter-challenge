@@ -71,16 +71,28 @@
                 <div id="tweet-button">
                     <a href="#">
                         <h4 id="tweet">Tweet</h4>
+                        <img id="tweet-image" src="/img/images/tweet-button.png" alt=""width="60px">
                     </a>
                 </div>
-                <div class="left-menu-item">
+                <a href="#">
+                    <img id="tweet-image" src="/img/images/tweet-button.png" alt=""width="100px">
+                </a>
+                <div class="left-menu-item blank-space">
                     &nbsp;
                 </div>
                 <div id="profile-item">
-
+                    <div id="profile-item-avatar">
+                        <img src="/img/images/profile.jpg" alt="avatar user" width="50px">
+                    </div>
+                    <div id="profile-item-user">
+                        <h4 class="user-name">Nico Picchio</h4>
+                        <p>@nicopicchio</p>
+                    </div>
+                    <div id="profile-item-icon">
+                        <img src="/img/svg/dots-more.svg" alt="avatar user" width="20px">
+                    </div>
                 </div>
             </section>
-
 
             <section id="middle">
 
@@ -96,185 +108,190 @@
                     </div>
                 </section>
 
-                <section id="status-container">
+                <div id="scroll-area-container">
+                    <section id="status-container">
 
-                    <div id="status-left">
-                        <img id="profile-photo" src="/img/images/profile.jpg" alt="profile photo" width="80px">
-                    </div>
+                        <div id="status-left">
+                            <img id="profile-photo" src="/img/images/profile.jpg" alt="profile photo" width="80px">
+                        </div>
 
-                    <div id="status-right">
-                        <div id="status-right-top">
-                            <h3>What's happening?</h3>                        
-                        </div>
-                        <div id="status-right-bottom">
-                            <div id="status-right-bottom-svg">
-                                <svg viewbox="0 0 24 24"><g><path d="M19.75 2H4.25C3.01 2 2 3.01 2 4.25v15.5C2 20.99 3.01 22 4.25 22h15.5c1.24 0 2.25-1.01 2.25-2.25V4.25C22 3.01 20.99 2 19.75 2zM4.25 3.5h15.5c.413 0 .75.337.75.75v9.676l-3.858-3.858c-.14-.14-.33-.22-.53-.22h-.003c-.2 0-.393.08-.532.224l-4.317 4.384-1.813-1.806c-.14-.14-.33-.22-.53-.22-.193-.03-.395.08-.535.227L3.5 17.642V4.25c0-.413.337-.75.75-.75zm-.744 16.28l5.418-5.534 6.282 6.254H4.25c-.402 0-.727-.322-.744-.72zm16.244.72h-2.42l-5.007-4.987 3.792-3.85 4.385 4.384v3.703c0 .413-.337.75-.75.75z"></path><circle cx="8.868" cy="8.309" r="1.542"></circle></g></svg>
-                                <svg viewbox="0 0 24 24"><g><path d="M19 10.5V8.8h-4.4v6.4h1.7v-2h2v-1.7h-2v-1H19zm-7.3-1.7h1.7v6.4h-1.7V8.8zm-3.6 1.6c.4 0 .9.2 1.2.5l1.2-1C9.9 9.2 9 8.8 8.1 8.8c-1.8 0-3.2 1.4-3.2 3.2s1.4 3.2 3.2 3.2c1 0 1.8-.4 2.4-1.1v-2.5H7.7v1.2h1.2v.6c-.2.1-.5.2-.8.2-.9 0-1.6-.7-1.6-1.6 0-.8.7-1.6 1.6-1.6z"></path><path d="M20.5 2.02h-17c-1.24 0-2.25 1.007-2.25 2.247v15.507c0 1.238 1.01 2.246 2.25 2.246h17c1.24 0 2.25-1.008 2.25-2.246V4.267c0-1.24-1.01-2.247-2.25-2.247zm.75 17.754c0 .41-.336.746-.75.746h-17c-.414 0-.75-.336-.75-.746V4.267c0-.412.336-.747.75-.747h17c.414 0 .75.335.75.747v15.507z"></path></g></svg>
-                                <svg viewbox="0 0 24 24"><g><path d="M20.222 9.16h-1.334c.015-.09.028-.182.028-.277V6.57c0-.98-.797-1.777-1.778-1.777H3.5V3.358c0-.414-.336-.75-.75-.75s-.75.336-.75.75V20.83c0 .415.336.75.75.75s.75-.335.75-.75v-1.434h10.556c.98 0 1.778-.797 1.778-1.777v-2.313c0-.095-.014-.187-.028-.278h4.417c.98 0 1.778-.798 1.778-1.778v-2.31c0-.983-.797-1.78-1.778-1.78zM17.14 6.293c.152 0 .277.124.277.277v2.31c0 .154-.125.28-.278.28H3.5V6.29h13.64zm-2.807 9.014v2.312c0 .153-.125.277-.278.277H3.5v-2.868h10.556c.153 0 .277.126.277.28zM20.5 13.25c0 .153-.125.277-.278.277H3.5V10.66h16.722c.153 0 .278.124.278.277v2.313z"></path></g></svg>
-                                <svg viewbox="0 0 24 24"><g><path d="M12 22.75C6.072 22.75 1.25 17.928 1.25 12S6.072 1.25 12 1.25 22.75 6.072 22.75 12 17.928 22.75 12 22.75zm0-20C6.9 2.75 2.75 6.9 2.75 12S6.9 21.25 12 21.25s9.25-4.15 9.25-9.25S17.1 2.75 12 2.75z"></path><path d="M12 17.115c-1.892 0-3.633-.95-4.656-2.544-.224-.348-.123-.81.226-1.035.348-.226.812-.124 1.036.226.747 1.162 2.016 1.855 3.395 1.855s2.648-.693 3.396-1.854c.224-.35.688-.45 1.036-.225.35.224.45.688.226 1.036-1.025 1.594-2.766 2.545-4.658 2.545z"></path><circle cx="14.738" cy="9.458" r="1.478"></circle><circle cx="9.262" cy="9.458" r="1.478"></circle></g></svg>
-                                <svg viewbox="0 0 24 24"><g><path d="M-37.9 18c-.1-.1-.1-.1-.1-.2.1 0 .1.1.1.2z"></path><path d="M-37.9 18c-.1-.1-.1-.1-.1-.2.1 0 .1.1.1.2zM18 2.2h-1.3v-.3c0-.4-.3-.8-.8-.8-.4 0-.8.3-.8.8v.3H7.7v-.3c0-.4-.3-.8-.8-.8-.4 0-.8.3-.8.8v.3H4.8c-1.4 0-2.5 1.1-2.5 2.5v13.1c0 1.4 1.1 2.5 2.5 2.5h2.9c.4 0 .8-.3.8-.8 0-.4-.3-.8-.8-.8H4.8c-.6 0-1-.5-1-1V7.9c0-.3.4-.7 1-.7H18c.6 0 1 .4 1 .7v1.8c0 .4.3.8.8.8.4 0 .8-.3.8-.8v-5c-.1-1.4-1.2-2.5-2.6-2.5zm1 3.7c-.3-.1-.7-.2-1-.2H4.8c-.4 0-.7.1-1 .2V4.7c0-.6.5-1 1-1h1.3v.5c0 .4.3.8.8.8.4 0 .8-.3.8-.8v-.5h7.5v.5c0 .4.3.8.8.8.4 0 .8-.3.8-.8v-.5H18c.6 0 1 .5 1 1v1.2z"></path><path d="M15.5 10.4c-3.4 0-6.2 2.8-6.2 6.2 0 3.4 2.8 6.2 6.2 6.2 3.4 0 6.2-2.8 6.2-6.2 0-3.4-2.8-6.2-6.2-6.2zm0 11c-2.6 0-4.7-2.1-4.7-4.7s2.1-4.7 4.7-4.7 4.7 2.1 4.7 4.7c0 2.5-2.1 4.7-4.7 4.7z"></path><path d="M18.9 18.7c-.1.2-.4.4-.6.4-.1 0-.3 0-.4-.1l-3.1-2v-3c0-.4.3-.8.8-.8.4 0 .8.3.8.8v2.2l2.4 1.5c.2.2.3.6.1 1z"></path></g></svg>
+                        <div id="status-right">
+                            <div id="status-right-top">
+                                <h3>What's happening?</h3>                        
                             </div>
-                            <div id="status-right-bottom-tweet">
-                                <a href="#">Tweet</a>
+                            <div id="status-right-bottom">
+                                <div id="status-right-bottom-svg">
+                                    <svg viewbox="0 0 24 24"><g><path d="M19.75 2H4.25C3.01 2 2 3.01 2 4.25v15.5C2 20.99 3.01 22 4.25 22h15.5c1.24 0 2.25-1.01 2.25-2.25V4.25C22 3.01 20.99 2 19.75 2zM4.25 3.5h15.5c.413 0 .75.337.75.75v9.676l-3.858-3.858c-.14-.14-.33-.22-.53-.22h-.003c-.2 0-.393.08-.532.224l-4.317 4.384-1.813-1.806c-.14-.14-.33-.22-.53-.22-.193-.03-.395.08-.535.227L3.5 17.642V4.25c0-.413.337-.75.75-.75zm-.744 16.28l5.418-5.534 6.282 6.254H4.25c-.402 0-.727-.322-.744-.72zm16.244.72h-2.42l-5.007-4.987 3.792-3.85 4.385 4.384v3.703c0 .413-.337.75-.75.75z"></path><circle cx="8.868" cy="8.309" r="1.542"></circle></g></svg>
+                                    <svg viewbox="0 0 24 24"><g><path d="M19 10.5V8.8h-4.4v6.4h1.7v-2h2v-1.7h-2v-1H19zm-7.3-1.7h1.7v6.4h-1.7V8.8zm-3.6 1.6c.4 0 .9.2 1.2.5l1.2-1C9.9 9.2 9 8.8 8.1 8.8c-1.8 0-3.2 1.4-3.2 3.2s1.4 3.2 3.2 3.2c1 0 1.8-.4 2.4-1.1v-2.5H7.7v1.2h1.2v.6c-.2.1-.5.2-.8.2-.9 0-1.6-.7-1.6-1.6 0-.8.7-1.6 1.6-1.6z"></path><path d="M20.5 2.02h-17c-1.24 0-2.25 1.007-2.25 2.247v15.507c0 1.238 1.01 2.246 2.25 2.246h17c1.24 0 2.25-1.008 2.25-2.246V4.267c0-1.24-1.01-2.247-2.25-2.247zm.75 17.754c0 .41-.336.746-.75.746h-17c-.414 0-.75-.336-.75-.746V4.267c0-.412.336-.747.75-.747h17c.414 0 .75.335.75.747v15.507z"></path></g></svg>
+                                    <svg viewbox="0 0 24 24"><g><path d="M20.222 9.16h-1.334c.015-.09.028-.182.028-.277V6.57c0-.98-.797-1.777-1.778-1.777H3.5V3.358c0-.414-.336-.75-.75-.75s-.75.336-.75.75V20.83c0 .415.336.75.75.75s.75-.335.75-.75v-1.434h10.556c.98 0 1.778-.797 1.778-1.777v-2.313c0-.095-.014-.187-.028-.278h4.417c.98 0 1.778-.798 1.778-1.778v-2.31c0-.983-.797-1.78-1.778-1.78zM17.14 6.293c.152 0 .277.124.277.277v2.31c0 .154-.125.28-.278.28H3.5V6.29h13.64zm-2.807 9.014v2.312c0 .153-.125.277-.278.277H3.5v-2.868h10.556c.153 0 .277.126.277.28zM20.5 13.25c0 .153-.125.277-.278.277H3.5V10.66h16.722c.153 0 .278.124.278.277v2.313z"></path></g></svg>
+                                    <svg viewbox="0 0 24 24"><g><path d="M12 22.75C6.072 22.75 1.25 17.928 1.25 12S6.072 1.25 12 1.25 22.75 6.072 22.75 12 17.928 22.75 12 22.75zm0-20C6.9 2.75 2.75 6.9 2.75 12S6.9 21.25 12 21.25s9.25-4.15 9.25-9.25S17.1 2.75 12 2.75z"></path><path d="M12 17.115c-1.892 0-3.633-.95-4.656-2.544-.224-.348-.123-.81.226-1.035.348-.226.812-.124 1.036.226.747 1.162 2.016 1.855 3.395 1.855s2.648-.693 3.396-1.854c.224-.35.688-.45 1.036-.225.35.224.45.688.226 1.036-1.025 1.594-2.766 2.545-4.658 2.545z"></path><circle cx="14.738" cy="9.458" r="1.478"></circle><circle cx="9.262" cy="9.458" r="1.478"></circle></g></svg>
+                                    <svg viewbox="0 0 24 24"><g><path d="M-37.9 18c-.1-.1-.1-.1-.1-.2.1 0 .1.1.1.2z"></path><path d="M-37.9 18c-.1-.1-.1-.1-.1-.2.1 0 .1.1.1.2zM18 2.2h-1.3v-.3c0-.4-.3-.8-.8-.8-.4 0-.8.3-.8.8v.3H7.7v-.3c0-.4-.3-.8-.8-.8-.4 0-.8.3-.8.8v.3H4.8c-1.4 0-2.5 1.1-2.5 2.5v13.1c0 1.4 1.1 2.5 2.5 2.5h2.9c.4 0 .8-.3.8-.8 0-.4-.3-.8-.8-.8H4.8c-.6 0-1-.5-1-1V7.9c0-.3.4-.7 1-.7H18c.6 0 1 .4 1 .7v1.8c0 .4.3.8.8.8.4 0 .8-.3.8-.8v-5c-.1-1.4-1.2-2.5-2.6-2.5zm1 3.7c-.3-.1-.7-.2-1-.2H4.8c-.4 0-.7.1-1 .2V4.7c0-.6.5-1 1-1h1.3v.5c0 .4.3.8.8.8.4 0 .8-.3.8-.8v-.5h7.5v.5c0 .4.3.8.8.8.4 0 .8-.3.8-.8v-.5H18c.6 0 1 .5 1 1v1.2z"></path><path d="M15.5 10.4c-3.4 0-6.2 2.8-6.2 6.2 0 3.4 2.8 6.2 6.2 6.2 3.4 0 6.2-2.8 6.2-6.2 0-3.4-2.8-6.2-6.2-6.2zm0 11c-2.6 0-4.7-2.1-4.7-4.7s2.1-4.7 4.7-4.7 4.7 2.1 4.7 4.7c0 2.5-2.1 4.7-4.7 4.7z"></path><path d="M18.9 18.7c-.1.2-.4.4-.6.4-.1 0-.3 0-.4-.1l-3.1-2v-3c0-.4.3-.8.8-.8.4 0 .8.3.8.8v2.2l2.4 1.5c.2.2.3.6.1 1z"></path></g></svg>
+                                </div>
+                                <div id="status-right-bottom-tweet">
+                                    <a href="#">Tweet</a>
+                                </div>
                             </div>
                         </div>
-                    </div>
 
-                </section>
+                    </section>
 
-                <section id="feed">
-                    <div class="feed-cards-container">
-                        <img src="/img/avatar/snowden.jpg" alt="snowden">
-                        <div class="feed-posts-container">
-                            <div class="post-main-section">
-                                <h4 class="user-name">Edward Snowden</h4>
-                                <p class="twitter-handle">@catchmeifyoucan · 46m</p>
-                                <p class="twitter-post">Snitches get stitches....Just saying...</p>
+                    <section id="feed">
+                        <div class="feed-cards-container">
+                            <img src="/img/avatar/snowden.jpg" alt="snowden">
+                            <div class="feed-posts-container">
+                                <div class="post-main-section">
+                                    <h4 class="user-name">Edward Snowden</h4>
+                                    <p class="twitter-handle">@catchmeifyoucan · 46m</p>
+                                    <p class="twitter-post">Snitches get stitches....Just saying...</p>
+                                </div>
+                                <div class="post-icons-container">
+                                    <img class="post-icons" src="/img/images/speech-bubble.png" alt="bubble">
+                                    <img class="post-icons" src="/img/images/retweet.png" alt="retweet">
+                                    <img class="post-icons" src="/img/images/heart.png" alt="heart">
+                                    <img class="post-icons" src="img/images/upload.png" alt="upload">
+                                </div>
                             </div>
-                            <div class="post-icons-container">
-                                <img class="post-icons" src="/img/images/speech-bubble.png" alt="bubble">
-                                <img class="post-icons" src="/img/images/retweet.png" alt="retweet">
-                                <img class="post-icons" src="/img/images/heart.png" alt="heart">
-                                <img class="post-icons" src="img/images/upload.png" alt="upload">
+                            
+                        </div>
+                        <div class="feed-cards-container">
+                            <img src="/img/avatar/trump.jpg" alt="trump">
+                            <div class="feed-posts-container">
+                                <div class="post-main-section">
+                                    <h4 class="user-name">Donald J. Trump</h4>
+                                    <p class="twitter-handle">@donnieduckface · 1h</p>
+                                    <p class="twitter-post">I am wondering if I can go back to <span>@MetteFrederiksen</span> with a counter-offer to buy Greenland. I am still conviced it would be a great real estate deal to Make America great again.</p>
+                                </div>
+                                <div class="post-icons-container">
+                                    <img class="post-icons" src="/img/images/speech-bubble.png" alt="bubble">
+                                    <img class="post-icons" src="/img/images/retweet.png" alt="retweet">
+                                    <img class="post-icons" src="/img/images/heart.png" alt="heart">
+                                    <img class="post-icons" src="img/images/upload.png" alt="upload">
+                                </div>
                             </div>
                         </div>
-                        
-                    </div>
-                    <div class="feed-cards-container">
-                        <img src="/img/avatar/trump.jpg" alt="trump">
-                        <div class="feed-posts-container">
-                            <div class="post-main-section">
-                                <h4 class="user-name">Donald J. Trump</h4>
-                                <p class="twitter-handle">@donnieduckface · 1h</p>
-                                <p class="twitter-post">I am wondering if I can go back to <span>@MetteFrederiksen</span> with a counter-offer to buy Greenland. I am still conviced it would be a great real estate deal to Make America great again.</p>
-                            </div>
-                            <div class="post-icons-container">
-                                <img class="post-icons" src="/img/images/speech-bubble.png" alt="bubble">
-                                <img class="post-icons" src="/img/images/retweet.png" alt="retweet">
-                                <img class="post-icons" src="/img/images/heart.png" alt="heart">
-                                <img class="post-icons" src="img/images/upload.png" alt="upload">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="feed-cards-container">
-                        <img src="/img/avatar/elon-musk.jpg" alt="musk">
-                        <div class="feed-posts-container">
-                            <div class="post-main-section">
-                                <h4 class="user-name">Elon Musk</h4>
-                                <p class="twitter-handle">@thecryptoslayer · 2m</p>
-                                <p class="twitter-post">Time is ticking and we soon won't be able to live on Earth. This is how I envision humanity's future!
-                                <br>
-                                Join our next <span>@SpaceX</span> flight to see what space travel is like.
-                                <br>
-                                Tickets available from only $25M! Now accepting <span>@dogecoin</span> too!!</p>
-                                <img class=post-image src="/img/images/mars.jpg" alt="post image">
-                            </div>
-                            <div class="post-icons-container">
-                                <img class="post-icons" src="/img/images/speech-bubble.png" alt="bubble">
-                                <img class="post-icons" src="/img/images/retweet.png" alt="retweet">
-                                <img class="post-icons" src="/img/images/heart.png" alt="heart">
-                                <img class="post-icons" src="img/images/upload.png" alt="upload">
+                        <div class="feed-cards-container">
+                            <img src="/img/avatar/elon-musk.jpg" alt="musk">
+                            <div class="feed-posts-container">
+                                <div class="post-main-section">
+                                    <h4 class="user-name">Elon Musk</h4>
+                                    <p class="twitter-handle">@thecryptoslayer · 2m</p>
+                                    <p class="twitter-post">Time is ticking and we soon won't be able to live on Earth. This is how I envision humanity's future!
+                                    <br>
+                                    Join our next <span>@SpaceX</span> flight to see what space travel is like.
+                                    <br>
+                                    Tickets available from only $25M! Now accepting <span>@dogecoin</span> too!!</p>
+                                    <img class=post-image src="/img/images/mars.jpg" alt="post image">
+                                </div>
+                                <div class="post-icons-container">
+                                    <img class="post-icons" src="/img/images/speech-bubble.png" alt="bubble">
+                                    <img class="post-icons" src="/img/images/retweet.png" alt="retweet">
+                                    <img class="post-icons" src="/img/images/heart.png" alt="heart">
+                                    <img class="post-icons" src="img/images/upload.png" alt="upload">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="feed-cards-container">
-                        <img src="/img/avatar/putin.jpg" alt="putin">
-                        <div class="feed-posts-container">
-                            <div class="post-main-section">
-                                <h4 class="user-name">Vladimir Putin</h4>
-                                <p class="twitter-handle">@huntforredoctober · 1d</p>
-                                <p class="twitter-post">Приветствую, мир!!</p>
-                            </div>
-                            <div class="post-icons-container">
-                                <img class="post-icons" src="/img/images/speech-bubble.png" alt="bubble">
-                                <img class="post-icons" src="/img/images/retweet.png" alt="retweet">
-                                <img class="post-icons" src="/img/images/heart.png" alt="heart">
-                                <img class="post-icons" src="img/images/upload.png" alt="upload">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="feed-cards-container">
-                        <img src="/img/avatar/boris.jpg" alt="boris">
-                        <div class="feed-posts-container">
-                            <div class="post-main-section">
-                                <h4 class="user-name">Boris Johnson</h4>
-                                <p class="twitter-handle">@imsexyandiknowit · 4h</p>
-                                <p class="twitter-post">Stay HO-HO-Home! Save lives. Protect the NHS. Perhaps if keep saying it they'll forget about Brexit...</p>
-                            </div>
-                            <div class="post-icons-container">
-                                <img class="post-icons" src="/img/images/speech-bubble.png" alt="bubble">
-                                <img class="post-icons" src="/img/images/retweet.png" alt="retweet">
-                                <img class="post-icons" src="/img/images/heart.png" alt="heart">
-                                <img class="post-icons" src="img/images/upload.png" alt="upload">
+                        <div class="feed-cards-container">
+                            <img src="/img/avatar/putin.jpg" alt="putin">
+                            <div class="feed-posts-container">
+                                <div class="post-main-section">
+                                    <h4 class="user-name">Vladimir Putin</h4>
+                                    <p class="twitter-handle">@huntforredoctober · 1d</p>
+                                    <p class="twitter-post">Приветствую, мир!!</p>
+                                </div>
+                                <div class="post-icons-container">
+                                    <img class="post-icons" src="/img/images/speech-bubble.png" alt="bubble">
+                                    <img class="post-icons" src="/img/images/retweet.png" alt="retweet">
+                                    <img class="post-icons" src="/img/images/heart.png" alt="heart">
+                                    <img class="post-icons" src="img/images/upload.png" alt="upload">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="feed-cards-container">
-                        <img src="/img/avatar/zlatan.jpg" alt="zlatan">
-                        <div class="feed-posts-container">
-                            <div class="post-main-section">
-                                <h4 class="user-name">Zlatan Ibrahimović</h4>
-                                <p class="twitter-handle">@wtfareyoulookingat · 6h</p>
-                                <p class="twitter-post"></p>
-                            </div>
-                            <div class="post-icons-container">
-                                <img class="post-icons" src="/img/images/speech-bubble.png" alt="bubble">
-                                <img class="post-icons" src="/img/images/retweet.png" alt="retweet">
-                                <img class="post-icons" src="/img/images/heart.png" alt="heart">
-                                <img class="post-icons" src="img/images/upload.png" alt="upload">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="feed-cards-container">
-                        <img src="/img/avatar/cook.jpg" alt="cook">
-                        <div class="feed-posts-container">
-                            <div class="post-main-section">
-                                <h4 class="user-name">Tim Cook</h4>
-                                <p class="twitter-handle">@iwishiwaslikesteve · 10h</p>
-                                <p class="twitter-post"></p>
-                            </div>
-                            <div class="post-icons-container">
-                                <img class="post-icons" src="/img/images/speech-bubble.png" alt="bubble">
-                                <img class="post-icons" src="/img/images/retweet.png" alt="retweet">
-                                <img class="post-icons" src="/img/images/heart.png" alt="heart">
-                                <img class="post-icons" src="img/images/upload.png" alt="upload">
+                        <div class="feed-cards-container">
+                            <img src="/img/avatar/boris.jpg" alt="boris">
+                            <div class="feed-posts-container">
+                                <div class="post-main-section">
+                                    <h4 class="user-name">Boris Johnson</h4>
+                                    <p class="twitter-handle">@imsexyandiknowit · 4h</p>
+                                    <p class="twitter-post">Stay HO-HO-Home! Save lives. Protect the NHS. Perhaps if keep saying it they'll forget about <span>#Brexit</span>...</p>
+                                </div>
+                                <div class="post-icons-container">
+                                    <img class="post-icons" src="/img/images/speech-bubble.png" alt="bubble">
+                                    <img class="post-icons" src="/img/images/retweet.png" alt="retweet">
+                                    <img class="post-icons" src="/img/images/heart.png" alt="heart">
+                                    <img class="post-icons" src="img/images/upload.png" alt="upload">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="feed-cards-container">
-                        <img src="/img/avatar/gates.jpg" alt="gates">
-                        <div class="feed-posts-container">
-                            <div class="post-main-section">
-                                <h4 class="user-name">Bill Gates</h4>
-                                <p class="twitter-handle">@formerrichestmanonearth · 3h</p>
-                                <p class="twitter-post">While you waste your time reading this tweet I made a million. It's just a shame that I have to give half of that to Melinda.</p>
-                            </div>
-                            <div class="post-icons-container">
-                                <img class="post-icons" src="/img/images/speech-bubble.png" alt="bubble">
-                                <img class="post-icons" src="/img/images/retweet.png" alt="retweet">
-                                <img class="post-icons" src="/img/images/heart.png" alt="heart">
-                                <img class="post-icons" src="img/images/upload.png" alt="upload">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="feed-cards-container">
-                        <img src="/img/avatar/pinchai.jpg" alt="pinchai">
-                        <div class="feed-posts-container">
-                            <div class="post-main-section">
-                                <h4 class="user-name">Sundar Pinchai</h4>
-                                <p class="twitter-handle">@justgoogleit · 6h</p>
-                                <p class="twitter-post">The difference between me and developers is that I work at Google and developers Google at work.</p>
-                            </div>
-                            <div class="post-icons-container">
-                                <img class="post-icons" src="/img/images/speech-bubble.png" alt="bubble">
-                                <img class="post-icons" src="/img/images/retweet.png" alt="retweet">
-                                <img class="post-icons" src="/img/images/heart.png" alt="heart">
-                                <img class="post-icons" src="img/images/upload.png" alt="upload">
+                        <div class="feed-cards-container">
+                            <img src="/img/avatar/zlatan.jpg" alt="zlatan">
+                            <div class="feed-posts-container">
+                                <div class="post-main-section">
+                                    <h4 class="user-name">Zlatan Ibrahimović</h4>
+                                    <p class="twitter-handle">@wtfareyoulookingat · 6h</p>
+                                    <p class="twitter-post">God's day of rest exists only because I created it.</p>
+                                </div>
+                                <div class="post-icons-container">
+                                    <img class="post-icons" src="/img/images/speech-bubble.png" alt="bubble">
+                                    <img class="post-icons" src="/img/images/retweet.png" alt="retweet">
+                                    <img class="post-icons" src="/img/images/heart.png" alt="heart">
+                                    <img class="post-icons" src="img/images/upload.png" alt="upload">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </section>
-
+                        <div class="feed-cards-container">
+                            <img src="/img/avatar/cook.jpg" alt="cook">
+                            <div class="feed-posts-container">
+                                <div class="post-main-section">
+                                    <h4 class="user-name">Tim Cook</h4>
+                                    <p class="twitter-handle">@iwishiwaslikesteve · 10h</p>
+                                    <p class="twitter-post">Let's be honest. Two USB-C ports on the old <span>@Apple</span> MacBook Pro was a bad idea.
+                                    <br>
+                                    I still can't believe how many we managed to sell!</p>
+                                </div>
+                                <div class="post-icons-container">
+                                    <img class="post-icons" src="/img/images/speech-bubble.png" alt="bubble">
+                                    <img class="post-icons" src="/img/images/retweet.png" alt="retweet">
+                                    <img class="post-icons" src="/img/images/heart.png" alt="heart">
+                                    <img class="post-icons" src="img/images/upload.png" alt="upload">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feed-cards-container">
+                            <img src="/img/avatar/gates.jpg" alt="gates">
+                            <div class="feed-posts-container">
+                                <div class="post-main-section">
+                                    <h4 class="user-name">Bill Gates</h4>
+                                    <p class="twitter-handle">@formerrichestmanonearth · 3h</p>
+                                    <p class="twitter-post">While you waste your time reading this tweet I made a million. It's just a shame that I have to give half of that to Melinda.</p>
+                                </div>
+                                <div class="post-icons-container">
+                                    <img class="post-icons" src="/img/images/speech-bubble.png" alt="bubble">
+                                    <img class="post-icons" src="/img/images/retweet.png" alt="retweet">
+                                    <img class="post-icons" src="/img/images/heart.png" alt="heart">
+                                    <img class="post-icons" src="img/images/upload.png" alt="upload">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feed-cards-container">
+                            <img src="/img/avatar/pinchai.jpg" alt="pinchai">
+                            <div class="feed-posts-container">
+                                <div class="post-main-section">
+                                    <h4 class="user-name">Sundar Pinchai</h4>
+                                    <p class="twitter-handle">@justgoogleit · 6h</p>
+                                    <p class="twitter-post">The difference between me and developers is that I work at Google and developers <span>@Google</span> at work.
+                                    <br>
+                                    <span>#HeyGoogle</span></p>
+                                </div>
+                                <div class="post-icons-container">
+                                    <img class="post-icons" src="/img/images/speech-bubble.png" alt="bubble">
+                                    <img class="post-icons" src="/img/images/retweet.png" alt="retweet">
+                                    <img class="post-icons" src="/img/images/heart.png" alt="heart">
+                                    <img class="post-icons" src="img/images/upload.png" alt="upload">
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
             </section>
 
 
@@ -289,34 +306,68 @@
 
                 <div id="right-card-container">
 
-                    <div id="box-one">
+                    <div class="news-box-right first-news-box">
                         <h4>What's happening?</h4>
                     </div>
 
-                    <div id="box-two">
-                        <p>News - Live</p>
-                        <h5>NATO expels eight Russian mission staff in connection with 'undeclared intelligence officer' roles</h5>
-                        <p>Trending in United Kingom</p>
-                        <div id=""></div>
+                    <div class="news-box-right">
+                        <div class="news-container">
+                            <p>News · Live</p>
+                            <h5>Venezuelan President Maduro allegedly calls EU electoral observers 'spies' after they flagged irregularities in recent election.</h5>
+                            <p>Trending in United Kingom</p>
+                        </div>
+                        <div class="box-news-image">
+                            <img src="/img/images/maduro.jpeg" alt="maduro" width="80px"/>
+                        </div>
                     </div>
 
-                    <div id="box-three">
-
+                    <div class="news-box-right">
+                        <div class="news-container">
+                            <p>Advert</p>
+                            <h5>Become a software engineer with our job-ready method.
+                            <br>
+                            Join Boolean!</h5>
+                            <a href="http://www.boolean.co.uk">Click to find out more.</a>
+                        </div>
+                        <div class="box-news-image">
+                            <img src="/img/images/boolean.png" alt="maduro" width="80px"/>
+                        </div>
                     </div>
 
-                    <div id="box-four">
-
+                    <div class="news-box-right">
+                        <div class="news-container">
+                            <p>Covid-19 · Live</p>
+                            <h5>The usual amount of CoronaVirus news which is now a must have in every news section of every newspaper on the planet.</h5>
+                            <p>Trending on Planet Earth</p>
+                        </div>
+                        <div class="box-news-image">
+                            <img src="/img/images/corona.jpg" alt="maduro" width="80px"/>
+                        </div>
                     </div>
 
-                    <div id="box-five">
-
+                    <div class="news-box-right">
+                        <div class="news-container">
+                            <p>Football News · yesterday</p>
+                            <h5>Rampant Liverpool close gap to Chelsea as Diogo Jota double stuns disorganised Southampton.</h5>
+                            <p>Trending in United Kingom</p>
+                        </div>
+                        <div class="box-news-image">
+                            <img src="/img/images/liverpool.jpg" alt="maduro" width="80px"/>
+                        </div>
                     </div>
 
-                    <div id="box-six">
-
+                    <div class="news-box-right">
+                        <div class="news-container">
+                            <p>Finance · 4h ago</p>
+                            <h5>Stocks jumped Monday morning to recover some losses after Friday's slide, when uncertainty over a new coronavirus variant stoked volatility across global markets.</h5>
+                            <p>Trending Worldwide</p>
+                        </div>
+                        <div class="box-news-image">
+                            <img src="/img/images/stocks.jpg" alt="maduro" width="80px"/>
+                        </div>
                     </div>
 
-                    <div id="box-seven">
+                    <div class="news-box-right last-news-box">
                         <a href="#">Show more</a>
                     </div>
 
