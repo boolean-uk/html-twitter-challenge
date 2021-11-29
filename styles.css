@@ -170,7 +170,7 @@ textarea {
 
 .tweet-one {
     display: grid;
-    grid-template-rows: 80px 20px;
+    grid-template-rows: auto 0.2fr;
 }
 
 .icon-bar-within-tweet {
@@ -182,11 +182,24 @@ textarea {
 .tweet-one-top {
     display: grid;
     grid-auto-flow: column;
+    grid-template-rows: auto;
 }
 
-
 .tweet-text {
-    font-size: 8px;
+    font-size: 8px;   
+}
+
+.vikings-main {
+    border-radius: 50%;
+}
+
+.tweet-text h3,
+.grey-text {
+    display: inline;
+}
+
+.grey-text {
+    color: lightgrey;
 }
 
 
