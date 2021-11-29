@@ -46,7 +46,7 @@
         </div>
       </nav>
       <div>
-        <h5 class="tweet-button">Tweet</h5>
+        <h5 class="button tweet">Tweet</h5>
       </div>
       <div class="tweet-grid">
         <div class="image-box">
@@ -80,17 +80,17 @@
               <img class="icon" src="icons/smiley.png">
               <img class="icon" src="icons/calendar.png">
             </div>
-            <div class="tweet-button">Tweet</div>
+            <div class="tweet button">Tweet</div>
           </div>  
         </div>
       </div> <!--Tweet element-->
-      <div id="tweets">
+      <div class="auto-row-box">
         <article class="tweet-grid">
           <div class="image-box">
             <img class="profile-pic" src="images/profileimg.jpg">
           </div>  
           <div class="inner-tweet-grid">
-            <div>
+            <div class="auto-row-box">
               <h2>Paul Smart</h2>
               <p>#100DaysOfCode 
 
@@ -109,9 +109,10 @@
             <img class="profile-pic" src="images/profileimg2.jpg">
           </div> 
           <div class="inner-tweet-grid">
-            <div>
+            <div class="auto-row-box">
               <h2>Ricky Gervais</h2>
               <p>Thanks for all your lovely comments about #AfterLife, particularly your own stories of loss & grief. And I love how #AfterLife fans give each other words of comfort and encouragement. You're good people &#128591;</p>
+              <img src="images/tweetimg1.jpg" class="embedded">
             </div>
             <div class="four-col-grid">
               <img src="/icons/reply.svg" class="icon">
@@ -124,7 +125,7 @@
         <article class="tweet-grid">
           <img class="profile-pic" src="images/profileimg3.jpg">
           <div class="inner-tweet-grid">
-            <div>
+            <div class="auto-row-box">
               <h2>freeCodeCamp.org</h2>
               <p>MySQL is a popular database lots of companies use, so knowing how it works can make you more marketable.
 
@@ -147,7 +148,7 @@
         <img class="icon" src="icons/search.png">
         <textarea rows:1 cols:1 placeholder="Search Twitter"></textarea>
       </div> <!--Search bar element-->
-      <div id="happening">
+      <div class="content-box">
         <h1>What's happening</h1>
         <article>
           <h4 class ="h-about">Latin - Last night</h4>
@@ -179,10 +180,54 @@
         </article>
         <a href="/index.html"><h3>Show more</h3></a> <!--dummy link-->
       </div> 
-      <div>
+      <div class="content-box">
         <h1>Who to follow</h1>
+        <div class="tweet-grid">
+          <div class="image-box">
+            <img class="profile-pic" src="images/profileimg4.jpg">
+          </div>
+          <div class="two-col-grid">
+            <div>
+              <h2>DEV Community</h2>
+              <p><strong>@ThePracticalDev</strong></p>
+            </div>
+            <div class="follow button">Follow</div>
+          </div>
+        </div>  
+        <div class="tweet-grid">
+          <div class="image-box">
+            <img class="profile-pic" src="images/profileimg5.jpg">
+          </div>
+          <div class="two-col-grid">
+            <div>
+              <h2>CSS Tricks</h2>
+              <p><strong>@css</strong></p>
+            </div>
+            <div class="follow button">Follow</div>
+          </div>
+      </div>
+        <div class="tweet-grid">
+          <div class="image-box">
+            <img class="profile-pic" src="images/profileimg6.jpg">
+          </div>
+          <div class="two-col-grid">
+            <div>
+              <h2>BBC Breaking News</h2>
+              <p><strong>@BBCBreaking</strong></p>
+            </div>
+            <div class="follow button">Follow</div>
+          </div>
+        </div>  
       </div> <!--Who to follow element-->
-      <footer></footer>
+      <footer>
+        <span>Terms of Service</span>
+        <span>Privacy Policy</span>
+        <span>Cookie Policy</span>
+          <br>
+        <span>Ads Info</span>
+        <span>More<img class="icon" src="icons/more-b.png"></span>
+        <span>&copy; 2021 Twitter, Inc.</span>
+      </footer>
     </div>
   </div>
 </body>

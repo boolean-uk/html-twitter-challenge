@@ -5,6 +5,23 @@
     color: black;
     font-family:Helvetica, sans-serif
 }
+/*margins*/
+body {
+    margin-top: 20px;
+    height: 100vh
+}
+#main header {
+    margin-left: 10px;
+    margin-right: 30px
+}
+#tweets article,
+#main .tweet-grid {
+    border: 1px solid lightgrey
+}
+.tweet-grid {
+    padding: 10px 0px 10px 10px
+}
+/*element styling*/
 h1 {
     font-size: 20pt;
     }
@@ -18,11 +35,12 @@ h3,
 textarea {
     font-size: 15pt
 }
-h3 {
-    color: rgb(29, 126, 192);
-}
+h3,
 h4 {
     color: rgb(29, 126, 192);
+}
+h4,
+span {
     font-size: 13pt
 }
 a {
@@ -32,14 +50,55 @@ strong {
     font-weight: normal;
     color: gray
 }
-body {
-    margin-top: 20px;
-    height: 100vh
+nav img {
+    max-height: 40px;
+    max-width: 40px;
 }
+#small-profile {
+    width: 60px;
+}
+.icon {
+    max-height:25px;
+    max-width: 25px
+}
+.tweet.button {
+    height: 45px;
+    width: 200px;
+    padding-top: 20px;
+    color: white;
+    background-color: #4BA0EB;
+}
+
+.button {
+    font-size: 17pt;
+    text-align:center;
+    border-radius: 20px;
+    align-items: center;
+}
+.follow.button {
+    height: 25px;
+    width: 100px;
+    padding-top: 5px;
+    background-color: white;
+    color:rgb(29, 126, 192);
+    font-weight: bold;
+    border:rgb(29, 126, 192) solid 2px
+}
+.profile-pic {
+    border-radius: 50%;
+    max-width: 100px;
+    max-height: 100px
+}
+.embedded {
+    object-fit: contain;
+    border-radius: 10px
+}
+/*grids*/
 .container {
     display: grid;
     grid-template-columns: 5fr 8fr 6fr;
-    background-color:rgb(255, 255, 255)
+    background-color:rgb(255, 255, 255);
+    gap:10px
 }
 nav {
     display: grid;
@@ -53,39 +112,7 @@ nav div,
     grid-template-columns: auto 1fr;
     gap: 20px
 }
-nav img {
-    max-height: 40px;
-    max-width: 40px;
-}
-#small-profile {
-    width: 60px;
-}
-.menulink:hover {
-    color: #4BA0EB;
-}
-.menulink:visited {
-    font-weight: bolder;
-}
-.icon {
-    max-height:25px;
-    max-width: 25px
-}
-.tweet-button {
-    height: 45px;
-    width: 200px;
-    font-size: 17pt;
-    padding-top: 20px;
-    text-align:center;
-    color: white;
-    background-color: #4BA0EB;
-    border-radius: 20px;
-    align-items: center;
-}
-.profile-pic {
-    border-radius: 50%;
-    max-width: 100px;
-    max-height: 100px
-}
+
 #menu {
     display: grid;
     grid-template-rows: 700px 1fr auto auto;
@@ -106,28 +133,19 @@ nav img {
 .four-col-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin-bottom: 15px;
 }
 #tweet-options  {
     display: grid;
     grid-template-columns: repeat(5, 60px)
 }
-#main header {
-    margin-left: 10px;
-    margin-right: 30px
-}
-#tweets {
+.auto-row-box {
     display: grid;
-    grid-auto-rows: min-content;
-    gap:1px
-}
-#tweets article,
-#main .tweet-grid {
-    border: 1px solid lightgrey
+    grid-auto-rows: auto;
+    grid-gap: 10px
 }
 #suggested {
     display: grid;
-    grid-template-rows: auto 1fr 1fr;
+    grid-auto-rows: min-content;
     margin-right: 200px
 }
 #searchbar {
@@ -138,17 +156,17 @@ nav img {
     margin-left: 5px
 
 }
-#happening {
+.content-box {
     display: grid;
-    grid-template-rows: repeat(6, auto);
-    gap: 15px;
+    grid-auto-rows: min-content;
+    gap: 20px;
     background-color: #f7f9faea;
 }
 #happening article {
     display: grid;
     grid-template: "about img  " auto
                    "main  img  " auto
-                   "stats blank" auto /
+                   "stats img  " auto /
                     1fr auto;
 }
 .h-about {
@@ -169,6 +187,14 @@ nav img {
     width: 60px;
     border-radius: 10px
 }
+/*pseudo-selectors*/
+.menulink:hover {
+    color: #4BA0EB;
+}
+.menulink:visited {
+    font-weight: bolder;
+}
+
 /*responsiveness section*/
 @media screen and (max-width: 1265px) {
     .container {
