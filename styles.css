@@ -3,7 +3,6 @@
     padding: 0px;
     box-sizing: border-box;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
-    /* font-family: "Lucida Console", "Courier New", monospace; */
 }
 
 
@@ -82,9 +81,9 @@
     color: black
 }
 
-.hover:hover {
+/* .hover:hover {
     color: blue;
-}
+} */
 
 .viking-button {
     justify-content: center;
@@ -170,7 +169,7 @@ textarea {
 
 .tweet-one {
     display: grid;
-    grid-template-rows: auto 0.2fr;
+    grid-template-rows: 50px 0.2fr;
 }
 
 .icon-bar-within-tweet {
@@ -186,7 +185,7 @@ textarea {
 }
 
 .tweet-text {
-    font-size: 8px;   
+    font-size: 6px;   
 }
 
 .vikings-main {
@@ -221,5 +220,43 @@ textarea {
 .right-menu {
 
     display: grid;
-    grid-template-rows: 0.1fr 0.45fr 0.45fr; 
+    grid-template-rows: 20px 60px 60px;
+    gap: 3px;
+    margin-left: 1px;
+}
+
+#search-bar-top-left {
+    display: grid;
+    grid-template-columns: 0.2fr 0.8fr;
+    background-color: rgb(243, 240, 240); 
+    border: none;
+    font-size: 8px; 
+    border-radius: 20px
+}
+
+#search-bar-top-left img {
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+#search-bar-top-left p {
+    text-align: left
+}
+
+.whats-happening-box-two {
+    display: inline;
+    background-color: rgb(243, 240, 240);
+    font-size: 5px; 
+    border-radius: 10px
+}
+.who-to-follow-box {
+    display: inline;
+    background-color: rgb(243, 240, 240);
+    font-size: 5px; 
+    border-radius: 10px
+}
+
+.who-to-follow-box h2,
+.whats-happening-box-two h2 {
+    margin-left: 10px;
 }
