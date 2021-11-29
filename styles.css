@@ -37,7 +37,8 @@ textarea {
 }
 h3,
 h4 {
-    color: rgb(29, 126, 192);
+    font-weight: normal;
+    color: grey;
 }
 h4,
 span {
@@ -45,6 +46,10 @@ span {
 }
 a {
     text-decoration: none;
+}
+em {
+    font-style: normal;
+    color:rgb(29, 126, 192)
 }
 strong {
     font-weight: normal;
@@ -162,11 +167,11 @@ nav div,
     gap: 20px;
     background-color: #f7f9faea;
 }
-#happening article {
+.content-box article {
     display: grid;
-    grid-template: "about img  " auto
-                   "main  img  " auto
-                   "stats img  " auto /
+    grid-template: "about img" auto
+                   "main  img" auto
+                   "stats img" auto /
                     1fr auto;
 }
 .h-about {
@@ -207,7 +212,7 @@ nav div,
     #menu {
         margin-left: 10px
     }
-    #menu .tweet-button {
+    #menu .tweet {
         height: 50px;
         width: 50px;
         font-size: 17pt;
