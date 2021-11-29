@@ -92,7 +92,7 @@ p {
 
 #middle {
     display: grid;
-    grid-template-rows: 4rem 10rem 1fr;
+    grid-template-rows: 4rem 8.5rem 1fr;
     background: rgb(239,243,244);
 }
 
@@ -194,6 +194,7 @@ p {
 
 .feed-posts-container {
     margin-top: 20px;
+    display: grid;
 }
 
 .user-name {
@@ -202,11 +203,38 @@ p {
 
 .feed-posts-container p.twitter-handle {
     color: grey;
+    font-size: 1rem;
 }
 
 .feed-posts-container p.twitter-post {
     display: block;
-    margin-top: 10px;
+    margin: 8px 0px;
+    width: 60ch;
+    line-height: 1.5;
+}
+
+.post-image {
+    border-radius: 4px !important;
+    width: 95% !important;
+    margin: 10px 0px !important;
+}
+
+span {
+    color: rgb(29,155,240);
+}
+
+.post-icons-container {
+    display: flex;
+    place-items: center;
+    justify-content: space-between;
+    margin-right: 100px;
+    margin-bottom: 10px;
+}
+
+.post-icons {
+    width: 18px !important;
+    margin: 0px !important;
+    margin-top: 0px !important;
 }
 
 #right {
@@ -257,7 +285,6 @@ p {
 #box-one h4 {
     font-size: 1.2rem;
     font-weight: 900;
-
 }
 
 #box-two {
@@ -281,7 +308,6 @@ p {
 #box-six {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     background-color: rgb(239,243,244);
-
 }
 
 #box-seven {
