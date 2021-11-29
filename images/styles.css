@@ -188,11 +188,16 @@ a:hover{
 }
 
 .main .home,
-.main .happening,
-.main .logos,
+/* .main .happening, */
+/* .main .logos, */
 .main .eric,
 .main .group-docs {
-    /* border:1px dashed black; */
+    border:1px solid whitesmoke;
+}
+
+
+.happening .logo .whats-happening{
+    border:1px solid black;
 }
 
 .main .home{
