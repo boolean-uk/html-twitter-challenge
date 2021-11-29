@@ -9,7 +9,7 @@
 .container {
     display: grid;
     height: 100vh;
-    grid-template-columns: 300px 600px 350px;
+    grid-template-columns: 300px 600px 370px;
     justify-content: center;
 }
 
@@ -27,6 +27,19 @@ nav ul img {
     grid-template-rows: 92vh 8vh;
 }
 
+.pin2 {
+    position:fixed;
+    width: 50px;
+
+    display: grid;
+    grid-template-rows: 92vh 8vh;
+    visibility: hidden;
+}
+
+.nav-icon {
+    width: 27px;
+}
+
 nav ul {
     list-style-type: none;
     padding: 10px;
@@ -37,15 +50,11 @@ nav li {
     font-size: 20px;
 }
 
-nav a {
+nav li a {
     text-decoration: none;
     padding: 15px 20px;
     border-radius: 50px;
     color: inherit;
-}
-
-nav a:hover {
-    background-color: lightgray;
 }
 
 nav p {
@@ -59,33 +68,46 @@ nav p a {
     color: white;
     border-radius: 50px;
     font-weight:bold;
+    text-decoration: none;
 }
 
 nav p a:hover {
     background-color: #1073b4;
 }
+
 .bottom-div {
     display: grid;
-    grid-template-columns: 55px 2fr 1fr;
-    background-color: pink;
+    width: 240px;
+    height: 62px;
+    grid-template-columns: 70px 2fr 1fr;
     border-radius: 50px;
-    place-items: center;
+    margin-bottom: 10px; 
+    margin-left: 50px; 
 }
 
 .bottom-div img {
     height:50px;
     width: 50px;
     border-radius: 50%;
+    margin: 5px;
+    margin-left: 10px;
 }
 
-.bottom-div p {
+.bottom-div p,
+.bottom-div h5 {
     padding: 0;
     margin: 0;
+    text-align: left;
+}
+
+.bottom-div h5 {
+    margin-top: 10px;
 }
 
 .bottom-icon {
     border-radius: 50px;
 }
+
 .main {
     /* background-color: lightpink; */
 }
@@ -122,9 +144,10 @@ nav p a:hover {
     padding-left: 15px;
 }
 
-.top-tweets img:hover {
-    border:lightslategrey 1px solid;
-}
+ .top-tweets--size {
+     width:30px;
+ } 
+
 
 .post {
     height: 120px;
@@ -143,6 +166,7 @@ nav p a:hover {
     margin:3px 10px;
     border-radius: 50%;
 }
+
 
 .person-image {
     grid-area: person-image;
@@ -165,14 +189,15 @@ input {
 }
 
 .post-icons img {
-    height: inherit;
+    width: 35px;
+    padding: 7px;
+    height: auto;
     margin:0;
     border-radius: 50%;
-    margin:1px;
 }
 
 .post-icons img:hover {
-    border: #1A8CD8 1px solid;
+    background-color: #d6ebfa;
 }
 
 .tweet {
@@ -190,6 +215,40 @@ input {
 
 .feed {
     height: auto;
+}
+
+.feed__element { 
+    display: grid;
+    grid-template:
+    "retweet info" 20px
+    "profile feed-main" 1fr
+    "profile feed-icons" 20px /
+    80px 1fr;
+}
+
+.feed__retweet {
+    grid-area: retweet;
+    background-color: blue;
+}
+
+.feed__info {
+    grid-area: info;
+    background-color: lightpink
+}
+
+.feed__profile {
+    grid-area: profile;
+    background-color: lightseagreen
+}
+
+.feed__main {
+    grid-area: feed-main;
+    background-color: lime;
+}
+
+.feed__icons {
+    grid-area: feed-icons;
+    background-color: lightsalmon
 }
 
 .right {
@@ -219,6 +278,7 @@ input {
 
 .search img {
     margin-right: 10px;
+    width: 20px;
 }
 
 .rest {
@@ -259,8 +319,13 @@ input {
     gap: 20px;
 }
 
-.happening__link:hover {
-    background-color: lightgrey;
+.bottom-div:hover,
+.happening__link:hover,
+.follow__link:hover,
+.show-more:hover,
+nav a:hover,
+.top-tweets img:hover {
+    background-color: rgb(241, 240, 240);
 }
 
 .happening__link p {
@@ -280,7 +345,9 @@ input {
     border-radius: 10px;;
 }
  .elipsis {
-     font-size: 20px;
+     font-size: 30px;
+     text-align: end;
+     padding-right: 10px;
      /* this doesn't work why?*/
  }
 
@@ -290,7 +357,9 @@ input {
 }
 
 .show-more:hover {
-    background-color: lightgray;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+
 }
 
 .follow {
@@ -320,8 +389,8 @@ input {
     gap: 5px;
 }
 
-.follow__link:hover {
-    background-color: lightgray;
+.follow h5:hover {
+    text-decoration: underline;
 }
 
 .follow__button {
@@ -352,4 +421,33 @@ input {
 .terms span {
     padding-right: 15px;
     padding-bottom: 10px;
+}
+
+@media screen and (max-width: 1300px) {
+    .container {
+        grid-template-columns: 100px 600px 370px;
+    }
+    
+    .pin {
+        display:none;
+    }
+    .pin2{
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .container {
+        grid-template-columns: 100px 600px;
+    }
+    
+    .right {
+        display:none;
+    }
+}
+
+@media screen and (max-width: 700) {
+    .container {
+        grid-template-columns: 100px auto;
+    } 
 }
