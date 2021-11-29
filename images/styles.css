@@ -83,6 +83,14 @@
     height: 90%;
 }
 
+.svg-icon1,
+.svg-icon2,
+.svg-icon3,
+.svg-icon4 {
+    width:60%;
+    height:80%;
+}
+
 .left-menu .emails {
     display:grid;
     grid-auto-columns:
