@@ -1,0 +1,206 @@
+* {
+    padding:0px;
+    margin: 0px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+  Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.main-grid {
+    display:grid;
+    height: 100vh;
+    grid-template-columns: .5fr .5fr 2fr 1fr; 
+}
+
+/* --------------------------------LEFT COLUMN 1--------------------------------*/
+
+.left-side-icons {
+    background-color: rgb(225, 235, 235);
+}
+
+.left-icons-wrapper {
+    display:grid;
+    row-gap: 5px;
+    align-items: center;
+    justify-items: right;
+    padding-top: 5px;
+        
+}
+
+img {
+    padding: 10px;
+    min-height: 20px;
+    /*border: solid 2px blueviolet;
+    border-radius:5px*/
+}
+
+#skull, #idea, #rocket, #connections, #spider, #sand-castle, #jellyfish, #crab {
+    width:40px;
+     
+}
+
+/* --------------------------------LEFT COLUMN 2--------------------------------*/
+
+.left-menu {
+    background-color: rgb(225, 235, 235);
+}
+
+.left-menu-wrapper {
+    display:grid;
+    row-gap: 5px;
+    align-items: center;
+    justify-items: left;
+    padding-top: 5px;]
+    scroll-behavior: none;
+    
+}
+
+.left-menu-item {
+    padding: 20px;
+    min-height: 20px;
+    /*border: solid 2px blueviolet;*/
+    border-radius:25px
+}
+
+.left-menu-item.button {
+    border:  2px blueviolet; 
+    width:100px;
+    background-color: #3884f7; 
+}
+
+/* --------------------------------CENTER COLUMN --------------------------------*/
+
+.tweets {
+    background-color:rgb(234, 240, 234);
+}
+
+.tweet-wrapper {
+    display:grid;
+    align-items: center;
+    justify-items: center;
+    padding: 10px;
+    min-height: 20px;
+    min-width: 499px;
+    max-width: 700px;
+    scroll-behavior: column;
+}
+
+.tweet-item-home {
+    padding-left: 5px;
+    border: solid .5px blueviolet;
+    min-width:100%;
+    min-height: auto;
+}
+
+#whats-happening {
+    display:grid;
+    padding:10px;
+    grid-template-columns: repeat (10, 1fr);
+    width: 100%;
+    height: 100%;
+
+    align-items: start;
+    justify-items: start;
+
+}
+
+img {
+    width:20px;
+    
+}
+
+#avatar {
+    border-radius: 50%;
+    width: 30px;
+    background-color:purple;
+    
+  }
+
+#whats-happening-text {
+    grid-column: 2 / span 7;
+    align-content: center;
+    justify-content: center;
+}
+
+.tweet-icons-1 { 
+    grid-column: 2;
+}
+
+.tweet-icons-2 { 
+    grid-column: 3;
+}
+
+.tweet-icons-3 { 
+    grid-column: 4;
+}
+
+.tweet-icons-4 { 
+    grid-column: 5;
+}
+
+.tweet-icons-5 {
+    grid-column: 6;
+}
+
+.blankspace {
+    grid-column: 8;
+}
+
+.tweet {
+    grid-column: 8;
+    grid-row: 2;
+    border: none;
+    border-radius: 25px;
+    background-color: #3884f7; 
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.tweet-item {
+    
+    /*border: solid .5px blueviolet;*/
+    border-top: .5px solid rgb(148, 143, 143);
+    border-left: .5px solid rgb(148, 143, 143);
+    border-right: .5px solid rgb(148, 143, 143);
+    border-radius:0px;
+    min-width:100%;
+    min-height: 10px; 
+}
+
+.tweet-components {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: .5fr .5fr;
+    padding-top: 5px;
+    padding-block: 5px;
+}
+
+.tweet-text {
+    grid-column: 2 / span 5;
+    font-size: 14px;
+}
+
+/* --------------------------------RIGHT COLUMN --------------------------------*/
+
+.right-menu {
+    background-color:rgb(206, 189, 223);
+    grid-column: 4;
+}
+
+.right-menu-wrapper {
+    display:grid;
+    row-gap: 5px;
+    align-items: center;
+    justify-items: center;
+    column-span:all;
+}
+
+.right-menu-item {
+    
+    padding: 20px;
+    border: solid 2px blueviolet;
+    border-radius:5px
+}
