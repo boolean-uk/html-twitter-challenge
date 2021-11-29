@@ -11,7 +11,7 @@
   <div class="container">
     <div id="menu">
       <nav>
-        <img id="logo" src="images/twitterlogo.png"> <!--image courtesy of flaticon.com-->
+        <img id="logo" src="images/twitterlogo.png"> <!--images courtesy of flaticon.com-->
         <div>
           <img class="icon" src="icons/home.png">
           <h1><a class="menulink" href="/index.html">Home</a></h1>
@@ -55,40 +55,79 @@
         <h1>Home</h1>
         <img class="icon" src="icons/timeline-options.png">
       </header>
-      <div>
-        <div class="two-col-grid">
+      <div class="tweet-grid">
+        <div class="image-box">
           <img class="profile-pic" src="images/profileimg.jpg">
-          <textarea rows:3 cols:1 placeholder="What's happening?"></textarea>
         </div>
-        <div class="two-col-grid">
-          <div>
-            <img class="icon" src="icons/timeline-options.png">
-            <img class="icon" src="icons/timeline-options.png">
-            <img class="icon" src="icons/timeline-options.png">
-            <img class="icon" src="icons/timeline-options.png">
-            <img class="icon" src="icons/timeline-options.png">
-          </div>
-          <div class="tweet-button">Tweet</div>
+        <div class="inner-tweet-grid">
+          <textarea rows:1 cols:1 placeholder="What's happening?"></textarea>
+          <div class="two-col-grid">
+            <div id ="tweet-options">
+              <img class="icon" src="icons/image.png">
+              <img class="icon" src="icons/gif.png">
+              <img class="icon" src="icons/bar-chart.png">
+              <img class="icon" src="icons/smiley.png">
+              <img class="icon" src="icons/calendar.png">
+            </div>
+            <div class="tweet-button">Tweet</div>
+          </div>  
         </div>
       </div> <!--Tweet element-->
       <div id="tweets">
-        <article>
-          <h2>Paul Smart</h2>
-          <p>#100DaysOfCode 
+        <article class="tweet-grid">
+          <div class="image-box">
+            <img class="profile-pic" src="images/profileimg.jpg">
+          </div>  
+          <div class="inner-tweet-grid">
+            <div>
+              <h2>Paul Smart</h2>
+              <p>#100DaysOfCode 
 
-            Day 2: Building a Twitter clone webpage using css grids.</p>
+                Day 2: Building a Twitter clone webpage using css grids.</p>
+            </div>
+            <div class="four-col-grid">
+              <img src="/icons/reply.svg" class="icon">
+              <img src="/icons/retweet.svg" class="icon">
+              <img src="/icons/like.svg" class="icon">
+              <img src="icons/share.svg" class="icon">
+            </div>
+          </div>  
         </article>
-        <article>
-          <h2>Ricky Gervais</h2>
-          <p>Thanks for all your lovely comments about #AfterLife, particularly your own stories of loss & grief. And I love how #AfterLife fans give each other words of comfort and encouragement. You're good people Folded hands</p>
+        <article class="tweet-grid">
+          <div class="image-box">
+            <img class="profile-pic" src="images/profileimg2.jpg">
+          </div> 
+          <div class="inner-tweet-grid">
+            <div>
+              <h2>Ricky Gervais</h2>
+              <p>Thanks for all your lovely comments about #AfterLife, particularly your own stories of loss & grief. And I love how #AfterLife fans give each other words of comfort and encouragement. You're good people Folded hands</p>
+            </div>
+            <div class="four-col-grid">
+              <img src="/icons/reply.svg" class="icon">
+              <img src="/icons/retweet.svg" class="icon">
+              <img src="/icons/like.svg" class="icon">
+              <img src="icons/share.svg" class="icon">
+            </div>  
+            </div>
         </article>
-        <article>
-          <h2>freeCodeCamp.org</h2>
-          <p>MySQL is a popular database lots of companies use, so knowing how it works can make you more marketable.
+        <article class="tweet-grid">
+          <img class="profile-pic" src="images/profileimg3.jpg">
+          <div class="inner-tweet-grid">
+            <div>
+              <h2>freeCodeCamp.org</h2>
+              <p>MySQL is a popular database lots of companies use, so knowing how it works can make you more marketable.
 
-            Want to learn SQL basics & key database concepts like Data Modeling, Locks, Indexes, SQL Explain, etc?
+                Want to learn SQL basics & key database concepts like Data Modeling, Locks, Indexes, SQL Explain, etc?
             
-            This full MySQL course will get you started.</p>
+                This full MySQL course will get you started.</p>
+            </div>
+            <div class="four-col-grid">
+              <img src="/icons/reply.svg" class="icon">
+              <img src="/icons/retweet.svg" class="icon">
+              <img src="/icons/like.svg" class="icon">
+              <img src="icons/share.svg" class="icon">
+            </div>
+          </div>   
         </article>
       </div> <!--Feed element-->
     </div>
