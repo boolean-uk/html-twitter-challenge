@@ -56,11 +56,14 @@ a.left-nav h1:hover {
     font-style: Helvetica;
     display: grid;
     align-content: center;
+    place-items: center;
 
     
-    border: solid aquamarine;
+    border: solid orange;
+    background-color: orange;
     border-radius: 30px;
-    color: aquamarine;
+    
+    
 
 }
 
