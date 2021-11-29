@@ -28,10 +28,16 @@ h4 {
 a {
     text-decoration: none;
 }
-.container {
+strong {
+    font-weight: normal;
+    color: gray
+}
+body {
     margin-top: 20px;
+    height: 100vh
+}
+.container {
     display: grid;
-    height: 100vh;
     grid-template-columns: 5fr 8fr 6fr;
     background-color:rgb(255, 255, 255)
 }
@@ -50,6 +56,9 @@ nav div,
 nav img {
     max-height: 40px;
     max-width: 40px;
+}
+#small-profile {
+    width: 60px;
 }
 .menulink:hover {
     color: #4BA0EB;
@@ -79,12 +88,9 @@ nav img {
 }
 #menu {
     display: grid;
-    grid-template-rows: 700px 1fr auto;
-    }
-#logo,
-#menu div {
+    grid-template-rows: 700px 1fr auto auto;
     margin-left: 200px
-}
+    }
 #main {
     display: grid;
     grid-template-rows: 50px 150px auto;
@@ -172,11 +178,10 @@ nav img {
     .menulink {
         display: none;
     }
-    #logo,
-    #menu div {
+    #menu {
         margin-left: 10px
     }
-    .tweet-button {
+    #menu .tweet-button {
         height: 50px;
         width: 50px;
         font-size: 17pt;
@@ -185,5 +190,8 @@ nav img {
         background-color: #4BA0EB;
         border-radius: 50%;
         align-items: center;
+    }
+    #menu .two-col-grid {
+        display: none;
     }
 }
