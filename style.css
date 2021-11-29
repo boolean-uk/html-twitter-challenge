@@ -13,12 +13,6 @@
     justify-content: center;
 }
 
-nav ul img {
-    height: 45px;
-    width: 45px;
-    margin-right: 20px;
-}
-
 .pin {
     position:sticky;
     top: 0;
@@ -36,34 +30,50 @@ nav ul img {
     visibility: hidden;
 }
 
-.nav-icon {
-    width: 27px;
+.blue {
+    border-radius: 50px;
+    width: 45px;
+    height: auto;
+    padding:10px;
+    background-color:  #1A8CD8;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 10px;
 }
 
 nav li {
-    padding: 6px;
+    padding: 5px;
     font-size: 20px;
+    margin-top: 15px;
+}
+
+.reduced-margin {
+    margin-top: 10px;
 }
 
 nav li a {
     text-decoration: none;
-    padding: 15px 20px;
+    padding: 13px 20px;
     border-radius: 50px;
     color: inherit;
+}
+nav span {
+    padding-left: 12px;
+}
+
+nav ul img {
+    height: auto;
+    width: 27px;
 }
 
 nav p {
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 nav p a {
-    padding: 15px 80px;
+    padding: 15px 90px;
     background-color: #1A8CD8;
     color: white;
     border-radius: 50px;
@@ -75,14 +85,18 @@ nav p a:hover {
     background-color: #1073b4;
 }
 
+.reduced-margin a:hover {
+    background-color: #d6ebfa;
+}
+
 .bottom-div {
     display: grid;
-    width: 240px;
+    width: 260px;
     height: 62px;
     grid-template-columns: 70px 2fr 1fr;
     border-radius: 50px;
     margin-bottom: 10px; 
-    margin-left: 50px; 
+    margin-left: 20px; 
 }
 
 .bottom-div img {
@@ -98,6 +112,11 @@ nav p a:hover {
     padding: 0;
     margin: 0;
     text-align: left;
+    color:black;
+}
+
+.no-underline a {
+    text-decoration: none;
 }
 
 .bottom-div h5 {
@@ -108,8 +127,16 @@ nav p a:hover {
     border-radius: 50px;
 }
 
+.bottom-div-small img {
+    height:50px;
+    width: 50px;
+    border-radius: 50%;
+    margin: 5px;
+    margin-right: 10px;
+}
+
 .main {
-    /* background-color: lightpink; */
+    /* will enter something later */
 }
 
 .home,
@@ -145,7 +172,8 @@ nav p a:hover {
 }
 
  .top-tweets--size {
-     width:30px;
+    width:20px;
+    /*this is not resizing*/
  } 
 
 
@@ -162,7 +190,7 @@ nav p a:hover {
 .post img {
     height: 60px;
     width: auto;
-    margin:3px 10px;
+    margin:10px 10px;
     border-radius: 50%;
 }
 
@@ -243,6 +271,11 @@ input {
     padding-top: 10px;
 }
 
+.feed__main img {
+    width: 500px;
+    height: auto;
+}
+
 .feed__icons {
     grid-area: feed-icons;
     padding-bottom: 20px;
@@ -262,7 +295,6 @@ input {
 
     display: grid;
     grid-template-rows: 60px 1fr;
-    /* position: relative; */
 }
 
 .search-bar {
@@ -402,7 +434,8 @@ nav a:hover,
     gap: 5px;
 }
 
-.follow h5:hover {
+.follow h5:hover,
+.main h4:hover {
     text-decoration: underline;
 }
 
@@ -442,7 +475,7 @@ nav a:hover,
     }
     
     .pin {
-        display:none;
+        display: none;
     }
     .pin2{
         visibility: visible;
@@ -459,8 +492,13 @@ nav a:hover,
     }
 }
 
-@media screen and (max-width: 700) {
+@media screen and (max-width: 700px) {
     .container {
-        grid-template-columns: 100px auto;
+        grid-template-columns: 100px minmax(10px, 600px);
     } 
+
+    .feed__main img {
+        width: minmax(10px, 600px);
+        height: auto;
+    }
 }
