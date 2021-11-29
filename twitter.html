@@ -15,67 +15,249 @@
       </div>
 
       <!-- LEFT NAVIGATION -->
-      <div class="nav-box">
-        <nav>
-          <a class="nav-logo">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/sco/9/9f/Twitter_bird_logo_2012.svg"
-              alt="twitter logo"
-              width="50px"
-          /></a>
-          <strong><a class="nav-home">Home</a></strong>
-          <a class="nav-explore">Explore</a>
-          <a class="nav-notifications">Notifications</a>
-          <a class="nav-messages">Messages</a>
-          <a class="nav-bookmarks">Bookmarks</a>
-          <a class="nav-lists">Lists</a>
-          <a class="nav-profile">Profile</a>
-          <a class="nav-more">More</a>
-          <a class="nav-tweet">Tweet</a>
-        </nav>
+      <div class="menu-container">
+        <div class="menu">
+          <ul>
+            <li>
+              <img
+                src="images/logo-blue.svg"
+                class="menu__item-logo"
+                width="35px"
+              />
+            </li>
+            <li class="menu__item">
+              <img
+                src="images/home-black.svg"
+                class="menu__item-home"
+                width="25px"
+                align="center"
+              />
+              Home
+            </li>
+            <li class="menu__item">
+              <img
+                src="images/explore-black.svg"
+                class="menu__item-explore"
+                width="25px"
+                align="center"
+              />
+              Explore
+            </li>
+            <li class="menu__item">
+              <img
+                src="images/notifications-black.svg"
+                class="menu__item-notifications"
+                width="25px"
+                align="center"
+              />
+              Notifications
+            </li>
+            <li class="menu__item">
+              <img
+                src="images/messages-black.svg"
+                class="menu__item-messages"
+                width="25px"
+                align="center"
+              />
+              Messages
+            </li>
+            <li class="menu__item">
+              <img
+                src="images/bookmarks-black.svg"
+                class="menu__item-bookmark"
+                width="25px"
+                align="center"
+              />
+              Bookmarks
+            </li>
+            <li class="menu__item">
+              <img
+                src="images/lists-black.svg"
+                class="menu__item-lists-ico"
+                width="25px"
+                align="center"
+              />
+              Lists
+            </li>
+            <li class="menu__item">
+              <img
+                src="images/profile-black.svg"
+                class="menu__item-profile"
+                width="25px"
+                align="center"
+              />Profile
+            </li>
+            <li class="menu__item">
+              <img
+                src="images/more-black.svg"
+                class="menu__item-more"
+                width="25px"
+                align="center"
+              />
+              More
+            </li>
+            <li><a class="nav-tweet">Tweet</a></li>
+          </ul>
+        </div>
       </div>
 
       <!-- BODY SECTION -->
       <div class="body">
         <div class="tweet-bar">
-          <div class="profile-pic">profile</div>
-          <span>What's happening?</span>
+          <img class="profile-pic" src="/images/profile.png" width="70px" />
 
-          <div>icons</div>
+          <p>What's happening?</p>
+
+          <div class="icons">
+            <img src="images/media.svg" width="18px" />
+            <img src="images/gif.svg" width="18px" />
+            <img src="images/poll.svg" width="18px" />
+            <img src="images/emoji.svg" width="18px" />
+            <img src="images/schedule.svg" width="18px" />
+          </div>
           <div class="tweet">Tweet</div>
         </div>
 
         <div class="main-body">
           <div class="content-1">
-            content
-            <div class="profile-pic">profile</div>
+            <div>
+              <img class="profile-pic" src="images/BBC.png" width="70px" />
+            </div>
+            <div class="feed-header">
+              <p>
+                <strong>BBC NEWS (World) </strong>
+                <span> @BBCWorld . 1hr </span>
+              </p>
+              <p>
+                "He opened the doors for a generation of thinkers from
+                marginalised communities"
+              </p>
+              <p>Tributes paid to designer Virgil Abloh</p>
+            </div>
+            <div class="feed-window">
+              <img src="/images/virgil.jpeg" width="400px" class="feed-pic" />
+              <div class="body-title">
+                <span>bbc.com</span>
+                <p>Virgil Abloh: How he helped black people dream in fashion</p>
+                <p>
+                  <span
+                    >Radio 1 Newsbeat has been speaking to people about the
+                    legacy Virgil Abloh leaves behind.</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="feed-footer">
+              <img src="/images/reply.svg" width="18px" />
+              <span>15</span>
+              <img src="/images/retweet.svg" width="18px" />
+              <span>40</span>
+              <img src="/images/like.svg" width="18px" />
+              <span>295</span>
+              <img src="images/share.svg" width="18px" />
+            </div>
           </div>
           <div class="content-1">
-            <div class="profile-pic">profile</div>content</div>
+            <div>
+              <img class="profile-pic" src="images/itv.png" width="70px" />
+            </div>
+            <div class="feed-header">
+              <p><strong> ITV News </strong> <span> @itvnews . 3h</span></p>
+              <p>Mandatory masks rules will return to England on Tuesday</p>
+            </div>
+            <div class="feed-window">
+              <img src="images/itv-feed.jpeg" width="400px" class="feed-pic" />
+              <div class="body-title">
+                <span>itv.com</span>
+                <p>
+                  what are the new mask rules for England and when do they
+                  start?
+                </p>
+                <p>
+                  <span
+                    >From Tuesday masks will be mandatory in many places across
+                    England amid fears over the Omicron variant. Here's what's
+                    changing.</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="feed-footer">
+              <img src="/images/reply.svg" width="18px" />
+              <span>7</span>
+              <img src="/images/retweet.svg" width="18px" />
+              <span>10</span>
+              <img src="/images/like.svg" width="18px" />
+              <span>21</span>
+              <img src="images/share.svg" width="18px" />
+            </div>
+          </div>
           <div class="content-1">
-            <div class="profile-pic">profile</div>content</div>
+            <div class="profile-pic">
+              <img src="/twiterimages/profile.png" width="70px" />
+            </div>
+            content
+          </div>
           <div class="content-1">
-            <div class="profile-pic">profile</div>content</div>
+            <div class="profile-pic">
+              <img src="/twiterimages/profile.png" width="70px" />
+            </div>
+            content
+          </div>
           <div class="content-1">
-            <div class="profile-pic">profile</div>content</div>
+            <div class="profile-pic">
+              <img src="/twiterimages/profile.png" width="70px" />
+            </div>
+            content
+          </div>
           <div class="content-1">
-            <div class="profile-pic">profile</div>content</div>
-          <div class="content-1">
-            <div class="profile-pic">profile</div>content</div>
+            <div class="profile-pic">
+              <img src="/twiterimages/profile.png" width="70px" />
+            </div>
+            content
+          </div>
         </div>
       </div>
 
       <!-- RIGHT SECTION -->
       <div class="news-bar">
         <div class="search-bar">Search Twitter</div>
-        <h1 class="whats-happening">whats happeneing</h1>
-        <h1 class="follow">who to follow</h1>
+        <div class="whats-happening">
+          <h1>whats happeneing</h1>
+          <ol>
+            <li></li>
+          </ol>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde
+            corrupti ullam deserunt, voluptate adipisci dignissimos tempore
+            expedita ut porro minus a sit eum eius blanditiis. Repellendus, rem
+            corporis! Ex, soluta.
+          </p>
+        </div>
+        <div class="follow">
+          <h1>who to follow</h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus
+            tempora aliquam quia quibusdam ea quaerat odit inventore saepe?
+            Facilis recusandae illo beatae a aliquam nihil labore repellat esse.
+            Minus, assumenda?
+          </p>
+        </div>
       </div>
-
       <!-- FOOTER PROFILE SECTION-->
       <div class="footer">
-        <a class="bottom-profile">Profile-bar</a>
-      </div>
+        <div>
+      <img src="images/profile.png" width="60px" class="profile-pic"></div>
+        <div class="footer__header"><strong> Kiran </strong> <br>
+        <span> @Kiran </span></div>
+
+
+
+
+        </div>
+      
+      
     </div>
   </body>
 </html>
+  
