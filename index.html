@@ -8,9 +8,9 @@
     <title>Twitter Clone</title>
 </head>
 <body>
-  <div class="container">
-    <div id="menu">
-      <nav>
+  <div class="container"> <!--this is the main three column grid for the whole page-->
+    <div id="menu"> <!--Column one, row template grid-->
+      <nav> <!--Row template grid-->
         <img id="logo" src="images/twitterlogo.png"> <!--images courtesy of flaticon.com-->
         <div>
           <img class="icon" src="icons/home.png">
@@ -45,10 +45,10 @@
           <h1><a class="menulink" href="/index.html">More</a></h1>
         </div>
       </nav>
-      <div>
+      <div> <!--Tweet button element-->
         <h5 class="button tweet">Tweet</h5>
       </div>
-      <div class="tweet-grid">
+      <div class="tweet-grid"> <!--Profile element, nested grid-->
         <div class="image-box">
           <img class="profile-pic" id="small-profile" src="images/profileimg.jpg">
         </div>
@@ -58,21 +58,21 @@
             <p><strong>@pdsmart6</strong></p>
           </div>
           <img class="icon" src="icons/more-b.png">
-        </div> <!--Profile element-->
+        </div>
       </div>
     </div>  
-    <div id="main">
-      <header class="two-col-grid">
+    <div id="main"> <!--Column Two, row template grid-->
+      <header class="two-col-grid"> <!--grid-->
         <h1>Home</h1>
         <img class="icon" src="icons/timeline-options.png">
       </header>
-      <div class="tweet-grid">
+      <div class="tweet-grid"> <!--grid-->
         <div class="image-box">
           <img class="profile-pic" src="images/profileimg.jpg">
         </div>
-        <div class="inner-tweet-grid">
+        <div class="inner-tweet-grid"> <!--grid-->
           <textarea rows:1 cols:1 placeholder="What's happening?"></textarea>
-          <div class="two-col-grid">
+          <div class="two-col-grid"> <!--grid-->
             <div id ="tweet-options">
               <img class="icon" src="icons/image.png">
               <img class="icon" src="icons/gif.png">
@@ -83,20 +83,20 @@
             <div class="tweet button">Tweet</div>
           </div>  
         </div>
-      </div> <!--Tweet element-->
-      <div class="auto-row-box">
-        <article class="tweet-grid">
+      </div>
+      <div class="auto-row-box"> <!--grid-->
+        <article class="tweet-grid"> <!--grid-->
           <div class="image-box">
             <img class="profile-pic" src="images/profileimg.jpg">
           </div>  
-          <div class="inner-tweet-grid">
+          <div class="inner-tweet-grid"> <!--grid-->
             <div class="auto-row-box">
               <h2>Paul Smart</h2>
               <p>#100DaysOfCode 
 
                 Day 2: Building a Twitter clone webpage using css grids.</p>
             </div>
-            <div class="four-col-grid">
+            <div class="four-col-grid"> <!--grid-->
               <img src="/icons/reply.svg" class="icon">
               <img src="/icons/retweet.svg" class="icon">
               <img src="/icons/like.svg" class="icon">
@@ -104,17 +104,17 @@
             </div>
           </div>  
         </article>
-        <article class="tweet-grid">
+        <article class="tweet-grid"> <!--grid-->
           <div class="image-box">
             <img class="profile-pic" src="images/profileimg2.jpg">
           </div> 
-          <div class="inner-tweet-grid">
-            <div class="auto-row-box">
+          <div class="inner-tweet-grid"> <!--grid-->
+            <div class="auto-row-box"> <!--grid-->
               <h2>Ricky Gervais</h2>
               <p>Thanks for all your lovely comments about #AfterLife, particularly your own stories of loss & grief. And I love how #AfterLife fans give each other words of comfort and encouragement. You're good people &#128591;</p>
               <img src="images/tweetimg1.jpg" class="embedded">
             </div>
-            <div class="four-col-grid">
+            <div class="four-col-grid"> <!--grid-->
               <img src="/icons/reply.svg" class="icon">
               <img src="/icons/retweet.svg" class="icon">
               <img src="/icons/like.svg" class="icon">
@@ -122,10 +122,10 @@
             </div>  
             </div>
         </article>
-        <article class="tweet-grid">
+        <article class="tweet-grid"> <!--grid-->
           <img class="profile-pic" src="images/profileimg3.jpg">
-          <div class="inner-tweet-grid">
-            <div class="auto-row-box">
+          <div class="inner-tweet-grid"> <!--grid-->
+            <div class="auto-row-box"> <!--grid-->
               <h2>freeCodeCamp.org</h2>
               <p>MySQL is a popular database lots of companies use, so knowing how it works can make you more marketable.
 
@@ -133,7 +133,7 @@
             
                 This full MySQL course will get you started.</p>
             </div>
-            <div class="four-col-grid">
+            <div class="four-col-grid"> <!--grid-->
               <img src="/icons/reply.svg" class="icon">
               <img src="/icons/retweet.svg" class="icon">
               <img src="/icons/like.svg" class="icon">
@@ -143,35 +143,35 @@
         </article>
       </div>
     </div>
-    <div id="suggested">
+    <div id="suggested"> <!--grid-->
       <div id="searchbar">
         <img class="icon" src="icons/search.png">
         <textarea rows:1 cols:1 placeholder="Search Twitter"></textarea>
-      </div> <!--Search bar element-->
-      <div class="content-box">
+      </div>
+      <div class="content-box"> <!--grid-->
         <h1>What's happening</h1>
-        <article>
+        <article> <!--grid-->
           <h4 class ="h-about">Latin - Last night</h4>
           <h2 class ="h-main">Lorem ipsum dolor sit amet.</h2>
           <h4 class ="h-stats"> Trending with #Lorem</h4>
           <img class="h-img" src="/images/newsimg1.jpg">
           <div class="h-blank"></div>
         </article>
-        <article>
+        <article> <!--grid-->
           <h4 class ="h-about">Music - Trending</h4>
           <h2 class ="h-main">Madonna</h2>
           <h4 class ="h-stats">20.4K Tweets</h4>
           <img class="h-img icon" src="icons/more-b.png">
           <div class="h-blank"></div>
         </article>
-        <article>
+        <article> <!--grid-->
           <h4 class ="h-about">Trending in United Kingdom</h4>
           <h2 class ="h-main">Jack Dorsey</h2>
           <h4 class ="h-stats">Trending with <em>Twitter CEO</em></h4>
           <img class="h-img icon" src="icons/more-b.png">
           <div class="h-blank"></div>
         </article>
-        <article>
+        <article> <!--grid-->
           <h4 class ="h-about">News - 5 hours ago</h4>
           <h2 class ="h-main">Barbados set to remove Queen Elizabeth II as head of state.</h2>
           <h4 class ="h-stats">Trending with <em>Barbados</em></h4>
@@ -180,13 +180,13 @@
         </article>
         <a href="/index.html"><h3>Show more</h3></a> <!--dummy link-->
       </div> 
-      <div class="content-box">
+      <div class="content-box"> <!--grid-->
         <h1>Who to follow</h1>
-        <div class="tweet-grid">
+        <div class="tweet-grid"> <!--grid-->
           <div class="image-box">
             <img class="profile-pic" src="images/profileimg4.jpg">
           </div>
-          <div class="two-col-grid">
+          <div class="two-col-grid"> <!--grid-->
             <div>
               <h2>DEV Community</h2>
               <p><strong>@ThePracticalDev</strong></p>
@@ -194,11 +194,11 @@
             <div class="follow button">Follow</div>
           </div>
         </div>  
-        <div class="tweet-grid">
+        <div class="tweet-grid"> <!--grid-->
           <div class="image-box">
             <img class="profile-pic" src="images/profileimg5.jpg">
           </div>
-          <div class="two-col-grid">
+          <div class="two-col-grid"> <!--grid-->
             <div>
               <h2>CSS Tricks</h2>
               <p><strong>@css</strong></p>
@@ -206,11 +206,11 @@
             <div class="follow button">Follow</div>
           </div>
       </div>
-        <div class="tweet-grid">
+        <div class="tweet-grid"> <!--grid-->
           <div class="image-box">
             <img class="profile-pic" src="images/profileimg6.jpg">
           </div>
-          <div class="two-col-grid">
+          <div class="two-col-grid"> <!--grid-->
             <div>
               <h2>BBC Breaking News</h2>
               <p><strong>@BBCBreaking</strong></p>
@@ -218,7 +218,7 @@
             <div class="follow button">Follow</div>
           </div>
         </div>  
-      </div> <!--Who to follow element-->
+      </div>
       <footer>
         <span>Terms of Service</span>
         <span>Privacy Policy</span>

@@ -14,7 +14,7 @@ body {
     margin-left: 10px;
     margin-right: 30px
 }
-#tweets article,
+.auto-row-box article,
 #main .tweet-grid {
     border: 1px solid lightgrey
 }
@@ -49,6 +49,7 @@ a {
 }
 em {
     font-style: normal;
+    font-weight: bold;
     color:rgb(29, 126, 192)
 }
 strong {
@@ -66,6 +67,9 @@ nav img {
     max-height:25px;
     max-width: 25px
 }
+div.tweet.button {
+    width: 130px
+}
 .tweet.button {
     height: 45px;
     width: 200px;
@@ -73,11 +77,10 @@ nav img {
     color: white;
     background-color: #4BA0EB;
 }
-
 .button {
     font-size: 17pt;
     text-align:center;
-    border-radius: 20px;
+    border-radius: 40px;
     align-items: center;
 }
 .follow.button {
@@ -151,21 +154,29 @@ nav div,
 #suggested {
     display: grid;
     grid-auto-rows: min-content;
+    gap: 15px;
     margin-right: 200px
 }
 #searchbar {
     display: grid;
-    background-color: #f7f9faea;
-    height: 50px;
+    grid-template-columns: auto 1fr;
+    height: 40px;
     width: 500px;
-    margin-left: 5px
-
+    margin-left: 5px;
+    border-radius: 50px;
+    padding: 15px 15px 0px 15px
+}
+#searchbar, 
+#searchbar textarea {
+    background-color: #c2c7ce;
 }
 .content-box {
     display: grid;
     grid-auto-rows: min-content;
     gap: 20px;
-    background-color: #f7f9faea;
+    background-color: #c2c7ce;
+    padding: 15px;
+    border-radius: 40px;
 }
 .content-box article {
     display: grid;
