@@ -5,34 +5,6 @@
     color: black;
     font-family:Helvetica, sans-serif
 }
-.container {
-    margin-top: 20px;
-    display: grid;
-    height: 100vh;
-    grid-template-columns: 5fr 8fr 6fr;
-    background-color:rgb(255, 255, 255)
-}
-nav {
-    display: grid;
-    grid-template-rows: repeat(8, 60px);
-    gap: 20px
-}
-nav div,
-#searchbar {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 20px
-}
-nav img {
-    max-height: 40px;
-    max-width: 40px;
-}
-.menulink:hover {
-    color: #4BA0EB;
-}
-.menulink::selection {
-    color:rgb(147, 62, 187);
-    }
 h1 {
     font-size: 20pt;
     }
@@ -54,7 +26,36 @@ h4 {
     font-size: 13pt
 }
 a {
-    text-decoration: none
+    text-decoration: none;
+}
+.container {
+    margin-top: 20px;
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 5fr 8fr 6fr;
+    background-color:rgb(255, 255, 255)
+}
+nav {
+    display: grid;
+    grid-template-rows: repeat(8, 60px);
+    gap: 20px
+}
+nav div,
+#searchbar,
+.tweet-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px
+}
+nav img {
+    max-height: 40px;
+    max-width: 40px;
+}
+.menulink:hover {
+    color: #4BA0EB;
+}
+.menulink:visited {
+    font-weight: bolder;
 }
 .icon {
     max-height:25px;
@@ -86,16 +87,11 @@ a {
 }
 #main {
     display: grid;
-    grid-template-rows: auto auto 1fr
-}
-.tweet-grid {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    gap: 20px
+    grid-template-rows: 50px 150px auto;
 }
 .inner-tweet-grid {
     display: grid;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr auto;
 }
 .two-col-grid {
     display: grid;
@@ -104,6 +100,7 @@ a {
 .four-col-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 15px;
 }
 #tweet-options  {
     display: grid;
@@ -115,10 +112,11 @@ a {
 }
 #tweets {
     display: grid;
-    grid-auto-rows: minmax(50px auto);
-    gap:.5px
+    grid-auto-rows: min-content;
+    gap:1px
 }
-#tweets article {
+#tweets article,
+#main .tweet-grid {
     border: 1px solid lightgrey
 }
 #suggested {
@@ -164,4 +162,28 @@ a {
     height: 60px;
     width: 60px;
     border-radius: 10px
+}
+/*responsiveness section*/
+@media screen and (max-width: 1265px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 8fr 6fr;
+    }
+    .menulink {
+        display: none;
+    }
+    #logo,
+    #menu div {
+        margin-left: 10px
+    }
+    .tweet-button {
+        height: 50px;
+        width: 50px;
+        font-size: 17pt;
+        text-align:center;
+        color: #4BA0EB;
+        background-color: #4BA0EB;
+        border-radius: 50%;
+        align-items: center;
+    }
 }
