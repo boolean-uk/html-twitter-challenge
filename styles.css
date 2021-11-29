@@ -42,7 +42,6 @@
     display: grid;
     margin-top: 30px;
     padding: 5px;
-
 }
 
 
@@ -185,18 +184,23 @@ textarea {
 
 .main-scrolling {
     display: grid;
-    grid-auto-flow: rows;
+    grid-template-rows: auto auto auto 1fr;
 }
 
 .tweet-one {
     display: grid;
-    grid-template-rows: 50px 0.2fr;
+    grid-template-rows: 1fr 20px;
+}
+
+.text-inside-tweet {
+    font-size: 5px;
 }
 
 .icon-bar-within-tweet {
     display: grid;
     grid-auto-flow: column;
-    margin-left: 15px;
+    justify-items: center;
+    padding: 3px;
 }
 
 .tweet-one-top {
@@ -206,7 +210,8 @@ textarea {
 }
 
 .tweet-text {
-    font-size: 6px;   
+    font-size: 6px;
+    padding-right: 5px;   
 }
 
 .vikings-main {
@@ -231,10 +236,6 @@ textarea {
     margin: 10px;
     color:rgb(29, 155, 240);
 }
-
-/* #axe-top-left {
-    fill: blue;
-} */
 
 #home-top {
     font-size: 0.6em;
@@ -285,4 +286,37 @@ textarea {
 .who-to-follow-box h2,
 .whats-happening-box-two h2 {
     margin-left: 10px;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 550px) {
+    .container {
+        display: grid;
+        grid-template-columns: 0.1fr 0.9fr;
+    }
+    .right-menu {
+        display: none;
+    }
+
+    /* .main {
+        padding-right: 20px;
+        border-right: none; 
+    } */
+
+
+
+}
+
+@media screen and (max-width: 400px) {
+    .navigation-bar-left {
+        display: grid;
+        grid-template-columns: 0.3fr;
+    }
+    .left-nav-text {
+        display: none;
+    }
+    .viking-button {
+        display: none;
+    }
 }
