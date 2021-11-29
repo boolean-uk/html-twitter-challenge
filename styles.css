@@ -11,7 +11,7 @@
 body{
     font-size: 62.5%;
     display: grid;
-    grid-template-columns: 5fr 16rem  5fr;
+    grid-template-columns: 1fr auto  1fr;
 }
 
 header{
@@ -57,14 +57,14 @@ li .header-icon{
 li a:hover{
     background-color: #e6e6e6;
     border-radius: 2rem;
-    /* padding: 1rem; */
+    
 }
 
 .Logo {
-    width: 100px;
-    height: 100px;
-
-    padding-bottom: 50px;
+    width: 150px;
+    height: 150px;
+    
+    
 }
 
 .twitter{
