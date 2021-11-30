@@ -570,6 +570,14 @@ strong {
     width: 80px;
 }
 
+.hello a img {
+    display: grid;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+}
+
+
 
 /* INNER SCROLL BARS */
 .right-col,
@@ -588,7 +596,7 @@ strong {
 @media screen and (max-width: 1000px) {
     .layout {
     grid-template:
-    "left-col        main-col        "     1fr/
+    "left-col        main-col"     1fr/
     25%            42%        ;
     }
     .right-col {
