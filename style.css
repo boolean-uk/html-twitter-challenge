@@ -153,6 +153,39 @@ nav {
   border-radius: 30px;
   background-color: #fff;
 }
+#explore {
+  width: 25px;
+  margin-top: 10px;
+  position: relative;
+  left: 10px;
+  border: 1px solid #fff;
+  padding: 13px;
+  border-radius: 30px;
+  background-color: #fff;
+}
+.nav-search {
+  width: 25px;
+  margin-top: 10px;
+  position: relative;
+  left: 10px;
+  border: 1px solid #fff;
+  padding: 13px;
+  border-radius: 30px;
+  background-color: #fff;
+  display: none;
+}
+.tweet-icon {
+  display: none;
+  width: 25px;
+  margin-top: 10px;
+  position: relative;
+  left: 10px;
+  border: 1px solid rgb(29, 155, 240);
+  padding: 13px;
+  border-radius: 30px;
+  background-color: rgb(29, 155, 240);
+  fill: #fff;
+}
 label {
   position: relative;
   left: 15px;
@@ -276,8 +309,7 @@ aside h3 {
   width: 21px;
   fill: rgb(29, 155, 240);
   border: 1px solid #fff;
-  background-color: #fff;
-  border-radius: 30px;
+  border-radius: 15px;
   padding: 6px;
 }
 .tweet {
@@ -295,11 +327,11 @@ aside h3 {
   display: grid;
   grid-template-rows: repeat(4, 1fr);
   grid-template-columns: 80px 1fr;
-  border-bottom: 1px solid rgb(236, 231, 231);
 }
 .first-post {
   display: grid;
-  grid-template-rows: 80px 1fr 33px;
+  grid-template-rows: 80px 1fr 45px;
+  border-bottom: 1px solid rgb(236, 231, 231);
 }
 .post-heading {
   margin-top: 15px;
@@ -309,6 +341,9 @@ aside h3 {
   width: 51px;
   padding-top: 10px;
   padding-left: 18px;
+}
+.left-side-post {
+  border-bottom: 1px solid rgb(236, 231, 231);
 }
 .happening img[alt="Phil"] {
   width: 12cm;
@@ -325,32 +360,24 @@ aside h3 {
 .post-interaction {
   width: 18px;
   fill: #95a0a8;
-  padding-top: 5px;
-}
-/* the number of post interaction counter */
-.counter {
-  margin-bottom: 20px;
-  margin-left: 9px;
-  font-size: 14px;
-  padding-bottom: 5px;
-  color: #95a0a8;
 }
 /*
 
 
 
 8- the effects of the icons and buttons in the page  */
-.tweet-nav:hover {
+.tweet-nav:hover,
+.tweet-icon:hover {
   background-color: #1a8cd8;
   transition: 300ms;
 }
-
 header:hover {
   cursor: pointer;
 }
-
 nav img[alt="myself"]:hover,
-.nav-icons:hover {
+.nav-icons:hover,
+.nav-search:hover,
+#explore:hover {
   border: 1px solid #e7e7e8;
   background-color: #e7e7e8;
   transition: 300ms;
@@ -362,34 +389,122 @@ nav img[alt="myself"]:hover,
   background-color: #e8f5fd;
   transition: 300ms;
 }
+.nav-icons:active,
+label:active {
+  fill: rgb(29, 155, 240);
+  transition: 0s;
+}
 /*
 
 
 
 9- responsive part*/
-@media screen and (max-width: 1004px) {
+@media screen and (max-width: 1130px) {
   .layout {
     display: grid;
     grid-template:
-      "nav header" 60px
-      "nav post" 150px
-      "nav happening" 1fr/
-      1fr 700px;
+      "nav header search" 60px
+      "nav post aside" 150px
+      "nav happening aside" 1fr/
+      1fr 550px 4fr;
   }
-  .aside {
+  nav ul {
+    margin-left: 0;
+    padding: 0;
+  }
+  .nav-L {
     display: none;
   }
 }
-@media screen and (max-width: 838px) {
+@media screen and (max-width: 1094px) {
   .layout {
     display: grid;
     grid-template:
-      " header" 60px
-      " post" 150px
-      " happening" 1fr/
+      "nav header search" 60px
+      "nav post aside" 150px
+      "nav happening aside" 1fr/
+      1fr 550px 4fr;
+  }
+  label {
+    display: none;
+  }
+  .tweet-nav {
+    display: none;
+  }
+  .nav-search {
+    visibility: visible;
+  }
+}
+@media screen and (max-width: 980px) {
+  .layout {
+    display: grid;
+    grid-template:
+      "nav header search" 60px
+      "nav post aside" 150px
+      "nav happening aside" 1fr/
+      1fr 550px 2fr;
+  }
+  .tweet-nav {
+    width: 65px;
+  }
+  .people,
+  .follow {
+    width: 4.4cm;
+  }
+  .search input {
+    width: 2.9cm;
+  }
+  .search-button {
+    width: 4.2cm;
+  }
+}
+@media screen and (max-width: 870px) {
+  .layout {
+    display: grid;
+    grid-template:
+      "nav header search" 60px
+      "nav post aside" 150px
+      "nav happening aside" 1fr/
+      70px 550px 1fr;
+  }
+
+  .people,
+  .follow,
+  .search input,
+  .search-button,
+  img[alt="search-icon"] {
+    display: none;
+  }
+  nav ul {
+    grid-auto-columns: 1fr;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 616px) {
+  .layout {
+    display: grid;
+    grid-template:
+      " header " 60px
+      " post " 150px
+      " happening " 1fr
+      "nav" 60px/
       1fr;
   }
-  .nav {
+  .search,
+  aside {
+    display: none;
+  }
+  nav ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    position: relative;
+    position: sticky;
+    top: 0;
+  }
+  #explore,
+  #profile,
+  #more {
     display: none;
   }
 }
