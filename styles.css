@@ -10,7 +10,7 @@ body {
 .layout {
     background-color: white;
     display: grid;
-    height: 110vh;
+    height: 105vh;
     grid-template: 
         "left-col        main-col        right-col"     1fr/
         25%            42%         33%;
@@ -22,12 +22,17 @@ body {
 .left-col {
     grid-area: left-col;
     display: grid;
-    height: 110vh;
+    height: 105vh;
     margin: 0;
     border-right: 1px solid rgb(221, 221, 221);
     grid-template-rows: 700px 300px;
 }
 
+
+.lefty {
+    position: sticky;
+    top: 5px;
+}
 
 .aa {
     display: grid;
@@ -40,6 +45,7 @@ body {
     padding-top: 5px;
     display: grid;
 }
+
 
 .box1,
 .box2,
@@ -54,6 +60,7 @@ body {
     margin-top: 30px;
     grid-template-columns: 70px 200px;
 }
+
 
 
 h2 {
@@ -133,7 +140,7 @@ h2 a:hover {
     grid-area: main-col;
     background-color: white;
     display: grid;
-    height: 110vh;
+    height: 105vh;
     grid-template-rows: 200px 450pt 160px;
     border: 10px 10px 10px 10px;
 }
@@ -152,6 +159,11 @@ h2 a:hover {
     display: grid;
     border-bottom: 1px solid rgb(221, 221, 221);
     grid-template-columns: 85% 15%;
+}
+
+.homeone {
+    position: sticky;
+    top: 10px;
 }
 
 
@@ -407,7 +419,7 @@ svg {
     background-color: white;
     padding-top: 10px;
     display: grid;
-    height: 110vh;
+    height: 105vh;
     border-left: 1px solid rgb(221, 221, 221);
     grid-template-rows: 50px 410pt 370px;
     gap: 5px;
@@ -550,10 +562,13 @@ strong {
 .one23 {
     display: grid;
     grid-template-columns: 150px 150px 120px;
-    border: 2px solid black;
+    border: 0;
     place-items: center;
 }
 
+.showmore {
+    padding-top: 5px;
+}
 
 
 .followbutton {
@@ -601,7 +616,10 @@ strong {
     }
     .right-col {
         display: none;
+        background-color: rgb(221, 221, 221);
     }
+
+
 }
 
 /* LEFT COLUMN REMOVED */
@@ -615,5 +633,6 @@ strong {
     .left-col,
     .right-col {
         display: none;
+        background-color: rgb(221, 221, 221);
     }
 }
