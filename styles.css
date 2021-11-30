@@ -17,9 +17,9 @@
   /* shifts */
   --shift-20px: 20px;
   /* breakpoints */
-  --mobile-max-width: 480px;
-  --tablet-max-width: 899px 
-  --desktop-min-width: 900px;
+  --mobile-max-width: 600px;
+  --tablet-max-width: 1024px 
+  --desktop-min-width: 1025px;
 }
 
 /* CSS Reset */
@@ -126,7 +126,7 @@
 .main {
     display: grid;
     grid-template-columns: 1.1fr;
-    grid-template-rows: 0.5fr 1.1fr;
+    grid-template-rows: 0.1fr 1.1fr;
     gap: 0px 0px;
     grid-template-areas:
       "main__top"
@@ -141,7 +141,8 @@
   .main__top {
     display: grid; 
     grid-template-columns: 1fr; 
-    grid-template-rows: repeat(3, 1fr); 
+    grid-template-rows: 0.6fr 1fr 1fr;
+    /* grid-template-rows: repeat(3, 1fr);  */
     gap: 0px 0px; 
     grid-template-areas: 
       "main__top-a"
@@ -245,10 +246,11 @@ div.main__top-b {
   .btn_tweet--m1 {
     border: 0px solid transparent;  
     border-radius: 20px;
-      padding: 5px;
-      background-color: var(--twitter-color-light);
+    padding: 1em 2em 1em 2em;
+    background-color: var(--twitter-color-light);
       color: white;
   }
+
 
   /* tweet feed - main bottom */
   .main__bottom {
@@ -272,11 +274,11 @@ div.main__top-b {
 /* mobile end */
 
 
-/* tablet : min-wdith 481px max-width: 899px */
+/* tablet : min-wdith 481px max-width: 1024px */
 
 /* tablet start */
 /* wrapper grid layout for tablet */
-@media screen and (min-width: 481px) and (max-width: 899px) {
+@media screen and (min-width: 601px) and (max-width: 1024px) {
     .wrapper.tablet {
         display: grid;
         grid-template-columns: 0.2fr 1.8fr; 
@@ -361,11 +363,11 @@ display: none;
 }
 /* tablet end */    
 
-/* desktop : min-wdith 900px */
+/* desktop : min-wdith 1025px */
 
 /* desktop start */
 /* wrapper grid */
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 1025px) {
     .wrapper {
       display: grid;
       grid-template-columns: 0.3fr 0.5fr 0.4fr;
@@ -392,7 +394,7 @@ display: none;
 .rh-sb {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0fr 0.9fr;
+    grid-template-rows: 0fr auto;
     gap: 1em 0em;
     grid-template-areas:
       "rh-sb__search-b"
@@ -631,12 +633,12 @@ h5 {
 
 /* bug fixes resolve via media queries */
 /* remove news sidebar for tablet and mobile */
-@media screen and (max-width: 899px) {
+@media screen and (max-width: 1024px) {
   .rh-sb__news {display: none}
   }
 
 /* nav grid for mobile only */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 600px) {
   .nav-links {display: none}
 
 
@@ -736,4 +738,17 @@ input {
   color:var(--twitter-color);
   font-size: 23px;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* fixing the news section */
+/* .news-item-4__text {
+  display: inline-block;
+} */
+
+.image-container__news-1,
+.image-container__news-2,
+.image-container__news-3,
+.image-container__news-4{display: inline-block;
+
 }
