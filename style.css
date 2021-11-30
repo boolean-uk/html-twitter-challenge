@@ -8,6 +8,12 @@ body {
 
 .container {
     display: grid;
+    grid-template-rows: 0.9fr 0.1fr;
+    height: 100vh;
+}
+
+.middle-container {
+    display: grid;
     grid-template-columns: 318px minmax(598px, 1fr) minmax(auto, 1fr);
 }
 
@@ -32,7 +38,7 @@ body {
 .menu {
     border-left:grey solid 1px;
     border-right:grey solid 1px;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .profile {
@@ -121,28 +127,109 @@ body {
     padding-left: 10px;
 }
 
+/* .profile .tweet-buttons {
+    display: grid;
+    grid-template-columns: 4, 139.33px 201.33px 132.17px 125.17px;
+} */
+
+.profile .tweet-buttons {
+    display: grid;
+    grid-template-columns: 139.33px 201.33px 132.17px 125.17px;
+    height: 53px;
+}
+
 .profile .tweet-buttons,
 .profile .tweet-buttons ul li,
 .profile .tweet-buttons ul li a {
-    display: inline;
     list-style-type: none;
-    padding-right: 20px;
+    /* padding-right: 20px; */
     text-decoration: none;
     color: #536471;
-    padding: 0px 16px;
+    /* padding: 0px 16px; */
+    align-items: center;
 }
+
+.profile .tweet-buttons ul li a#current {
+    border-radius: 5px;
+    border-bottom: rgb(29, 155, 240) 5px solid;
+    font-weight: bold;
+}
+
+/* .profile .tweet-buttons:hover {
+    background-color: rgb(134, 136, 132);
+} */
 
 /* .profile .tweet-buttons {
     display: grid;
-    grid-template-columns: repeat(4, 139.33px 201.33px 132.17px 125.17px);
-}
+    grid-template-columns: 4, 139.33px 201.33px 132.17px 125.17px;
+} */
 
-.profile .tweet-buttons button {
+/* .profile .tweet-buttons button {
     height: 50px;
+    display: inline;
 } */
 
 .share {
     border-bottom: grey solid 1px;
+    border-top: grey solid 1px;
+    display: grid;
+    grid-template: "icon share" auto /
+                    48px   auto; 
+}
+
+.share .profileicon img {
+    border-radius: 100px;
+    border-color: white 1px solid;
+}
+
+.profileicon {
+    grid-area: icon;
+}
+
+.share-tweet {
+    grid-area: share;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+}
+
+.feed {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template: "icon content" auto /
+                     48px   auto;
+}
+
+.feed-icon,
+.feed-icon img {
+    grid-area: icon;
+    border-radius: 100px;
+    border-color: white 1px solid;
+}
+
+.feed-tweet {
+    grid-area: content;
+    display: grid;
+    grid-template: "name-twt"   auto
+                    "messsage"  auto
+                    "media"     auto
+                    "interact" 50px /
+                    auto;
+}
+
+.tweeter {
+    grid-area: name-twt;
+}
+
+.msg {
+    grid-area: messsage;
+}
+
+.media {
+    grid-area: media;
+}
+
+.tweet-stats {
+    grid-area: interact;
 }
 
 .post {
@@ -150,7 +237,26 @@ body {
 }
 
 .right-c {
-    /* background-color: red; */
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+
+input[type=text] {
+    margin-top: 5px;
+    width: 350px;
+    height: 40px;
+    font-size: inherit;
+    text-align: left;
+    border-radius: 100px;
+    border: none;
+    box-sizing: border-box;
+}
+
+.search-icon {
+    background-image:url('https://cdn-icons.flaticon.com/png/512/2811/premium/2811790.png?token=exp=1638266843~hmac=aee548fded6e4f0e609ff69ef6bc623b');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: left center; padding-left: 20px;
 }
 
 .footer {
@@ -158,7 +264,8 @@ body {
     padding: 5px;
     grid-column-start: 1;
     grid-column-end: 4;
-    font-size: 15px
+    font-size: 15px;
+    display: grid;
 }
 
 .footer h2, p {
@@ -170,20 +277,20 @@ body {
     font-family: inherit;
 }
 
-.footer {
+/* .footer {
     display: grid;
     grid-template-columns: auto auto;
-}
+} */
 
 .footer .footer-buttons {
     text-align: end;
-    padding-top: 15px;
-    padding-right: 30px;
+    /* padding-top: 15px;
+    padding-right: 30px; */
 }
 
 .footer .footer-buttons ul#list li {
     display: inline;
-    padding: 11px;
+    /* padding: 11px; */
     border-radius: 100px;
     border: white solid 1px;
 }
