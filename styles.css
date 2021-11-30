@@ -181,6 +181,18 @@
         color: tomato;
     }
     
+    .left-menu .footer {
+        display: grid;
+        grid-template-columns: 60px 1fr 40px;
+        padding: 2px;
+    }
+    
+    .footer .peace,
+    .footer .smith,
+    .footer .threedots {
+        /* border: 1px dashed black; */
+    }
+    
     .main .eric,
     .main .group-docs {
         border: 1px solid whitesmoke;
