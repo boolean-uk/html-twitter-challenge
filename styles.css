@@ -4,6 +4,11 @@
     box-sizing: border-box;
 
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 .container {
     display: grid;
     height:100vh;
@@ -98,6 +103,15 @@ a.left-nav:hover {
     background-color: orange;
 
 }
+
+a.left-nav.h1:active {
+    border-radius: 30px;
+    
+    border: solid orange;
+    background-color: orange;
+
+}
+
 
 
 
@@ -209,6 +223,7 @@ p img {
 
     border: grey solid 1px;
     padding: 15px;
+    
   
 }
 
