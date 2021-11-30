@@ -45,8 +45,8 @@
           <h1><a class="menulink" href="/index.html">More</a></h1>
         </div>
       </nav>
-      <div class="tweet button"> <!--Tweet button element-->
-        <h5 >Tweet</h5>
+      <div class="left tweet button"> <!--Tweet button element-->
+        <h5>Tweet</h5>
         <img class ="icon hide" src="icons/twitbutton.svg">
       </div>
       <div class="tweet-grid"> <!--Profile element, nested grid-->
@@ -81,7 +81,7 @@
               <img class="icon" src="icons/smiley.png">
               <img class="icon" src="icons/calendar.png">
             </div>
-            <div class="tweet button">Tweet</div>
+            <div class="right tweet button">Tweet</div>
           </div>  
         </div>
       </div>
@@ -156,28 +156,24 @@
           <h2 class ="h-main">Lorem ipsum dolor sit amet.</h2>
           <h4 class ="h-stats"> Trending with #Lorem</h4>
           <img class="h-img" src="/images/newsimg1.jpg">
-          <div class="h-blank"></div>
         </article>
         <article> <!--grid-->
           <h4 class ="h-about">Music - Trending</h4>
           <h2 class ="h-main">Madonna</h2>
           <h4 class ="h-stats">20.4K Tweets</h4>
           <img class="h-img icon" src="icons/more-b.png">
-          <div class="h-blank"></div>
         </article>
         <article> <!--grid-->
           <h4 class ="h-about">Trending in United Kingdom</h4>
           <h2 class ="h-main">Jack Dorsey</h2>
           <h4 class ="h-stats">Trending with <em>Twitter CEO</em></h4>
           <img class="h-img icon" src="icons/more-b.png">
-          <div class="h-blank"></div>
         </article>
         <article> <!--grid-->
           <h4 class ="h-about">News - 5 hours ago</h4>
           <h2 class ="h-main">Barbados set to remove Queen Elizabeth II as head of state.</h2>
           <h4 class ="h-stats">Trending with <em>Barbados</em></h4>
           <img class="h-img" src="/images/newsimg2.jpg">
-          <div class="h-blank"></div>
         </article>
         <a href="/index.html"><h3>Show more</h3></a> <!--dummy link-->
       </div> 
@@ -225,11 +221,14 @@
         <span>Privacy Policy</span>
         <span>Cookie Policy</span>
           <br>
-        <span>Ads Info</span>
-        <span>More<img class="icon" src="icons/more-b.png"></span>
-        <span>&copy; 2021 Twitter, Inc.</span>
+        <div class="inline-grid">  
+          <span>Ads Info</span>
+          <span>More</span>
+          <img class="icon" src="icons/more-b.png">
+          <span>&copy; 2021 Twitter, Inc.</span>
+        </div>  
       </footer>
     </div>
-  </div>
+  </div>  
 </body>
 </html>
