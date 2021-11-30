@@ -35,3 +35,5 @@ This will put into practice everything we have learned so far about HTML & CSS. 
 * &#9745; Include images using the `img` and `svg` tags.
     * Get the source for the icon images from the Twitter website as SVG and include them with `svg` tags
     * Use a local file for the profile image. Research how to use CSS to to make the profile image appear as a circle
+
+
