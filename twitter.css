@@ -31,16 +31,17 @@ span {
   border-top-right-radius: 20px;
 }
 
+
 /* GRID DISPLAY*/
 
 .container {
   display: grid;
   height: 100vh;
   grid-template:
-    "left      header      header2" 50px
+    "left      header      right" 50px
     "left       main        right" 1fr
     "footer     main        right" 50px/
-    280px 550px 380px;
+    280px      550px        380px;
 }
 
 .menu-container {
@@ -51,7 +52,6 @@ span {
 .header {
   display: grid;
   grid-area: header;
-  border-right: 2px solid rgb(239, 243, 244);
 }
 
 .body {
@@ -67,13 +67,7 @@ span {
   grid-area: right;
   gap: 10px;
 }
-.header2 {
-  display: grid;
-  grid-area: header2;
-  margin-left: 20px;
-  margin-top: 5px;
- 
-}
+
 .footer {
   display: grid;
   grid-area: footer;
@@ -95,12 +89,18 @@ span {
 
 .menu-container {
   border-right: 2px solid rgb(239, 243, 244);
+  
 }
 
 .menu ul li {
   padding: 10px;
   margin-left: 75px;
   list-style: none;
+}
+
+.menu__item:hover {
+  background-color:rgb(239, 243, 244);
+  border-radius: 30px;
 }
 
 .nav-tweet {
@@ -112,6 +112,8 @@ span {
   border-radius: 30px;
   text-align: center;
 }
+
+
 
 /* MAIN BODY SECTION */
 /* TWEET BAR */
@@ -224,8 +226,27 @@ span {
 /* RIGHT SECTION */
 
 .news-bar {
-  padding: 20px;
+  padding: 8px 20px 20px 20px;
   border-left: 2px solid rgb(239, 243, 244);
+  display: grid;
+  grid-template:
+    "right-header" 50px
+    "whats-happening" minmax(auto, 500px)
+    "who-to-follow" minmax(auto, 500px) /
+    330px;
+}
+
+.search-bar__grid {
+  display: grid;
+  grid-area: right-header;
+}
+.whats-happening__grid {
+  display: grid;
+  grid-area: whats-happening;
+}
+.who-to-follow__grid {
+  display: grid;
+  grid-area: who-to-follow;
 }
 
 .whats-happening {
@@ -283,12 +304,11 @@ span {
 .show-more {
   display: grid;
   grid-area: show-more;
-  padding-left: 10px;
+  padding: 10px;
 }
 
 .search-bar {
   background-color: rgb(239, 243, 244);
-
   padding-top: 7px;
   border-radius: 30px;
   height: 35px;
@@ -307,6 +327,7 @@ span {
 /* RIGHT SECTION - WHO TO FOLLOW */
 
 .follow {
+  height: 380px;
   display: grid;
   gap: 10px;
   grid-template:
@@ -398,15 +419,7 @@ span {
   padding: 20px;
 }
 
-.follow-button {
-  background-color: black;
-  color: white;
-  width: 75px;
-  padding-top: 7px;
-  border-radius: 30px;
-  height: 30px;
-  text-align: center;
-}
+
 
 /* FOOTER PROFILE BAR SECTION */
 /*.footer{
@@ -438,3 +451,22 @@ span {
   grid-area: footer-info2;
   margin-left: 20px;
 }
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:800px) {
+  .container {
+    display: grid;
+    height: 100vh;
+    grid-template:
+      "left      header      " 50px
+      "left       main        " 1fr
+      "footer     main        " 50px/
+      280px      550px       ;
+  }
+
+  .news-bar {
+    display: none;
+  }
+}
+  
