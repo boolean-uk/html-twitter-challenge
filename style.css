@@ -318,7 +318,7 @@ input {
 
 .rest2 {
   position: sticky;
-  top: 0;
+  top: -150px;
 }
 
 .happening {
@@ -455,7 +455,8 @@ nav p a:hover,
 .follow__link:hover,
 .show-more:hover,
 nav a:hover,
-.top-tweets img:hover {
+.top-tweets img:hover,
+.feed__element:hover {
   background-color: rgb(241, 240, 240);
 }
 
@@ -492,6 +493,11 @@ nav a:hover,
 @media screen and (max-width: 700px) {
   .container {
     grid-template-columns: 100px minmax(10px, 600px);
+  }
+
+  .feed__main img {
+      width: minmax(10px,500px);
+      
   }
 
   .hide {
