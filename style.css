@@ -250,6 +250,7 @@ input {
 
 .feed__profile img {
   width: 50px;
+  height: 50px;
   border-radius: 50%;
   margin-top: 10px;
 }
@@ -262,6 +263,18 @@ input {
 .feed__main img {
   width: 500px;
   height: auto;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.feed__main .verified {
+    width: 20px;
+    margin: 0px 2px;
+}
+
+.feed__main h4 {
+    display:inline;
 }
 
 .feed__icons {
