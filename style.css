@@ -436,7 +436,16 @@ input {
 }
 
 .follow p {
-  color: grey;
+    color: grey;
+}
+
+.follow h5 {
+    display: inline-block;
+}
+
+.follow .verified {
+    width: 20px;
+    height:auto;
 }
 
 .center {
