@@ -990,7 +990,7 @@
     ;
 }
 
-#more {
+#more:hover {
     background-color: rgb(235 240 242);
 }
 
@@ -1094,8 +1094,22 @@
 
 .bottom-right {
     grid-area: bottom-right;
-    background-color: green;
-    margin-bottom: 2mm;
+    background-color: rgb(247 249 249);
+    margin-bottom: 4mm;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.bottom-right p{
+    font-weight: bolder;
+    font-size: 7mm;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 4mm;
+}
+
+.bottom-right:hover {
+    box-shadow: 5px 5px 10px rgb(207 208 209);
 }
 
 .side2 {
@@ -1107,8 +1121,12 @@
     #layout {
         grid-template:
 
-            "  left-header left-header     main-header     right-header   "50px "  list list    middle-main     main-right     "15% "  list list    main            main-right     "1fr "   tweak    tweak    main            main-right"15% "    bottom-left   bottom-left  main            bottom-right  "
-            70px/ 0.8fr 1.4fr 6fr 3fr;
+            "  left-header left-header     main-header     right-header   "
+            50px "  list list    middle-main     main-right     "15% 
+            "  list list    main            main-right     "1fr
+            "   tweak    tweak    main            main-right"15% 
+            "    bottom-left   bottom-left  main            bottom-right "70px/ 
+            0.8fr 1.4fr 6fr 3fr;
 
 
     }
@@ -1119,19 +1137,48 @@
     }
 }
 
+@media screen and (max-width: 987px) {
+    #layout {
+        grid-template:
+
+            "  left-header left-header     main-header     "
+            50px "  list list    middle-main      "15% 
+            "  list list    main              "1fr
+            "   tweak    tweak    main            "15% 
+            "    bottom-left   bottom-left  main      "70px/ 
+            0.8fr 1.4fr 6fr ;
+
+
+    }
+
+    .side,
+    .side2 ,
+    .right-header,
+    .main-right,
+    .bottom-right {
+        display: none;
+    }
+}
+
 
 @media screen and (max-width: 499px) {
     #layout {
         grid-template:
 
-            "  left-header     main-header    "50px "  list     middle-main      "15% "  list    main             "1fr " bottom-left   main            "70px/ 1.1fr 6fr;
+            "      main-header    "50px 
+            "    middle-main      "15%
+             "   main             "1fr
+              "   main            "70px/ 
+              6fr;
 
 
     }
 
     .right-header,
+    .left-header,
+    .bottom-left,
     .tweak,
-    .list,
+    .the-list,
     .main-right,
     .bottom-right {
         display: none;
