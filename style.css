@@ -167,7 +167,7 @@ nav p a {
   align-items: center;
 }
 
-.top-tweets--size {
+.home__top-tweets--size {
   padding: 12px;
 }
 
@@ -236,7 +236,7 @@ input {
   display: grid;
   grid-template:
     "profile feed-main" 1fr
-    "profile feed-icons" 36px /
+    "profile feed-icons" 42px /
     80px 1fr;
   gap: 5px;
 }
@@ -265,7 +265,6 @@ input {
   height: auto;
   border-radius: 10px;
   margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .feed__main .verified {
@@ -279,17 +278,31 @@ input {
 
 .feed__icons {
   grid-area: feed-icons;
-  padding-bottom: 20px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
 }
 
 .feed__icons img {
-  width: 20px;
-  margin-right: 15px;
+  width: 36px;
+  padding:8px;
+  border-radius: 50%;
+  margin-right: 5px;
 }
 
+.feed__icons svg {
+    width: 36px;
+    padding:8px;
+    border-radius: 50%;
+    margin-right: 5px;
+  }
+
 .feed__icons span {
-  margin-right: 60px;
+    color:gray;
+    font-size:13px;
 }
+
 
 /* RIGHT SECTION */
 
@@ -468,7 +481,7 @@ nav p a:hover,
 .follow__link:hover,
 .show-more:hover,
 nav a:hover,
-.top-tweets img:hover,
+.home__top-tweets img:hover,
 .feed__element:hover {
   background-color: rgb(241, 240, 240);
 }
@@ -476,6 +489,33 @@ nav a:hover,
 .show-more:hover {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+.blue-hover:hover svg {
+    background-color: #d6ebfa;
+    fill: #1073b4;
+}
+
+.blue-hover:hover span {
+    color: #1073b4;
+}
+
+.green-hover:hover svg {
+    background-color: #b5eebc;
+    fill: #06960d;
+}
+
+.green-hover:hover span {
+    color: #06960d;
+}
+
+.pink-hover:hover svg {
+    background-color: #fcd2ee;
+    fill:  #cc0944;
+}
+
+.pink-hover:hover span {
+    color: #cc0944;
 }
 
 /* RESPONSIVENESS */
