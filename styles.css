@@ -223,6 +223,10 @@
 
 }
 
+#three-dots svg:hover {
+    fill:red;
+} 
+
 .main-header {
     grid-area: main-header;
     background-color: white;
@@ -318,8 +322,10 @@
     min-width: 60px;
     margin: 2%;
     margin-bottom: 2mm;
+    margin-right: 6mm;
     padding-top: 1.3mm;
     padding-left: 2mm;
+    padding-right: 6mm;
     border-radius: 25px;
     background-color: rgb(29 156 240);
     font-weight: bolder;
@@ -384,6 +390,22 @@
 #tweak-tail5 {
     max-width: 30px;
 }
+
+#tweak-tail1 svg:hover{
+        fill:red;
+    } 
+#tweak-tail2 svg:hover{
+        fill:red;
+    } 
+#tweak-tail3 svg:hover{
+        fill:red;
+    } 
+#tweak-tail4 svg:hover{
+        fill:red;
+    } 
+#tweak-tail5 svg:hover{
+        fill:red;
+    } 
 
 .tweak1 {
     border-top: 10px solid rgb(204 215 221);
