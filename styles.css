@@ -89,6 +89,11 @@ ul li img{
     justify-self: flex-end;
 }
 
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
 .header-icon i{
     width: 2rem;
     
@@ -100,7 +105,7 @@ main{
     border-left: 1px solid #e6e6e6;
 }
 .main-content{
-    display: flex;
+    display: grid;
     flex-direction: column;
     width: 80%;
     
@@ -174,8 +179,9 @@ main{
     
 }
 
-.icon span{
-    padding-right: 1rem;
+.icon {
+display: grid;
+
 }
 
 .icon i{
@@ -362,6 +368,5 @@ main{
     .user{
         justify-content: flex-end;
     }
-    
     
 }
