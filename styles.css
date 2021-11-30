@@ -10,7 +10,7 @@
     display: grid;
     grid-template:
 
-        "side    left-header   left-header     main-header     right-header   side2"50px "side    list     list    middle-main     main-right     side2"15% "side    list    list     main            main-right     side2"1fr "side     tweak         tweak    main              main-right    side2"15% "side     bottom-left  bottom-left     main            bottom-right  side2"70px/ 1fr 0.8fr 1.3fr 6fr 3fr 0.8fr;
+        "side    left-header   left-header     main-header     right-header   side2"50px "side    list-logo     list-logo    middle-main     main-right     side2"15% "side    list-logo    list-logo    main            main-right     side2"1fr "side     tweak         tweak    main              main-right    side2"75px "side     bottom-left  bottom-left     main            bottom-right  side2"70px/ 1fr 0.8fr 1.3fr 6fr 3fr 0.8fr;
 
 }
 
@@ -35,119 +35,141 @@
     border-radius: 60%;
 }
 
-.the-list {
-    grid-area: list;
-    margin-top: 5mm;
-    margin-right: 1.8cm;
-    margin-left: 0.6cm;
+.list-logo {
+    grid-area: list-logo;
     display: grid;
-    grid-template: "home  home1"1fr "explore explore1"1fr "notifications notifications1"1fr "messages messages1"1fr "bookmarks bookmarks1"1fr "list list1"1fr "profile profile1"1fr "more more1"1fr/ 1fr 1fr;
-}
-
-#home {
-    grid-area: home;
-}
-
-#home1 {
-    grid-area: home1;
-}
-
-#explore {
-    grid-area: explore;
-}
-
-#explore1 {
-    grid-area: explore1;
-}
-
-#notifications {
-    grid-area: notifications;
-}
-
-#notifications1 {
-    grid-area: notifications1;
-}
-
-#messages {
-    grid-area: messages;
-}
-
-#messages1 {
-    grid-area: messages1;
-}
-
-#bookmarks {
-    grid-area: bookmarks;
-}
-
-#bookmarks1 {
-    grid-area: bookmarks1;
-}
-
-#list-blue {
-    grid-area: list;
-}
-
-#list-blue1 {
-    grid-area: list1;
-}
-
-#profile-blue {
-    grid-area: profile;
-}
-
-#profile-blue1 {
-    grid-area: profile1;
-}
-
-#more-blue {
-    grid-area: more;
-}
-
-#more-blue1 {
-    grid-area: more1;
-}
-
-.the-list img {
-    width: 20px;
-    padding-top: 4mm;
-    padding-bottom: 4mm;
+    grid-template-columns: repeat(2, auto);
+    margin-top: 4mm;
+    margin-left: 4mm;
 
 }
 
-.the-list p {
+.list-logo ul {
+    list-style: none;
+    line-height: 60px;
+}
+
+.list-logo img {
+    width: 25px;
+
+}
+
+.list-logo span {
     font-weight: 550;
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
-    text-align: left;
-    padding-bottom: 4mm;
-    padding-right: 4mm;
-    padding-top: 4mm;
+
+}
+
+#home {
+    width: 115px;
     padding-left: 4mm;
-    border-bottom-right-radius: 25px;
-    border-top-right-radius: 25px;
-    border-bottom-left-radius: 25px;
-    border-top-left-radius: 25px;
+    border-radius: 4cm;
+}
+
+#explore {
+
+    width: 130px;
+    padding-left: 4mm;
+    border-radius: 4cm;
+    margin-top: 2mm;
 
 }
 
-.the-list img:hover {
-    box-shadow: 8px 8px 2px 1px rgba(0, 0, 255, .2);
-    border-radius: 100px;
+#notifications {
+
+    width: 180px;
+    padding-left: 4mm;
+    border-radius: 4cm;
+    margin-top: 2mm;
 }
 
-.the-list p:hover {
-    background-color: rgba(0, 0, 255, .2);
+#messages {
+
+    width: 155px;
+    padding-left: 4mm;
+    border-radius: 4cm;
+    margin-top: 2mm;
 }
+
+#bookmarks {
+
+    width: 165px;
+    padding-left: 4mm;
+    border-radius: 4cm;
+    margin-top: 2mm;
+}
+
+#lists {
+
+    width: 110px;
+    padding-left: 4mm;
+    border-radius: 4cm;
+    margin-top: 2mm;
+}
+
+#profile {
+
+    width: 125px;
+    padding-left: 4mm;
+    border-radius: 4cm;
+    margin-top: 2mm;
+}
+
+#more11 {
+
+    width: 110px;
+    padding-left: 4mm;
+    border-radius: 4cm;
+    margin-top: 2mm;
+}
+
+
+#home:hover {
+    background-color: rgb(231 231 232);
+}
+
+#explore:hover {
+    background-color: rgb(231 231 232);
+}
+
+#notifications:hover {
+    background-color: rgb(231 231 232);
+}
+
+#messages:hover {
+    background-color: rgb(231 231 232);
+}
+
+#bookmarks:hover {
+    background-color: rgb(231 231 232);
+}
+
+#lists:hover {
+    background-color: rgb(231 231 232);
+}
+
+#profile:hover {
+    background-color: rgb(231 231 232);
+}
+
+#more11:hover {
+    background-color: rgb(231 231 232);
+}
+
+
+
+
+
 
 
 .tweak {
     grid-area: tweak;
     width: 88%;
     color: white;
-    margin-bottom: 28%;
     margin-left: 4%;
     margin-right: 4%;
+    margin-bottom: 8mm;
     border-radius: 30px;
     background-color: rgb(29 156 240);
     text-align: center;
@@ -224,8 +246,8 @@
 }
 
 #three-dots svg:hover {
-    fill:red;
-} 
+    fill: rgb(22 124 192);
+}
 
 .main-header {
     grid-area: main-header;
@@ -235,9 +257,23 @@
     text-align: left;
     padding-top: 4mm;
     padding-left: 3mm;
+    display: grid;
+    grid-template-columns: 95% 5%;
+}
+
+.main-header p {
     font-weight: bolder;
     font-size: large;
     font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-header img {
+    width: 20px;
+    border-radius: 50px;
+}
+
+.main-header img:hover {
+    background-color: rgb(231 231 232);
 }
 
 .middle-main {
@@ -391,21 +427,25 @@
     max-width: 30px;
 }
 
-#tweak-tail1 svg:hover{
-        fill:red;
-    } 
-#tweak-tail2 svg:hover{
-        fill:red;
-    } 
-#tweak-tail3 svg:hover{
-        fill:red;
-    } 
-#tweak-tail4 svg:hover{
-        fill:red;
-    } 
-#tweak-tail5 svg:hover{
-        fill:red;
-    } 
+#tweak-tail1 svg:hover {
+    fill: rgb(22 124 192);
+}
+
+#tweak-tail2 svg:hover {
+    fill: rgb(22 124 192);
+}
+
+#tweak-tail3 svg:hover {
+    fill: rgb(22 124 192);
+}
+
+#tweak-tail4 svg:hover {
+    fill: rgb(22 124 192);
+}
+
+#tweak-tail5 svg:hover {
+    fill: rgb(22 124 192);
+}
 
 .tweak1 {
     border-top: 10px solid rgb(204 215 221);
@@ -903,22 +943,26 @@
     grid-area: right-header;
     background-color: #e7e7e7;
     margin: 2%;
+    display: grid;
+    grid-template-columns: 3fr 23fr;
     padding-top: 2mm;
-    padding-left: 5mm;
+    padding-left: 7mm;
     border-radius: 25px;
     gap: 2px;
-    display: grid;
-    grid-template: "logo  search"1fr/ 1fr 7fr;
 }
 
-#logo {
-    grid-area: logo;
+#search p {
+    font-weight: 550;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    justify-self: center;
+
 
 }
 
-#search {
-    grid-area: search;
-
+.right-header img {
+    width: 20px;
+    display: inline-block;
 }
 
 .main-right {
@@ -1122,7 +1166,7 @@
     border-top-right-radius: 25px;
 }
 
-.bottom-right p{
+.bottom-right p {
     font-weight: bolder;
     font-size: 7mm;
     font-family: Arial, Helvetica, sans-serif;
@@ -1144,11 +1188,7 @@
         grid-template:
 
             "  left-header left-header     main-header     right-header   "
-            50px "  list list    middle-main     main-right     "15% 
-            "  list list    main            main-right     "1fr
-            "   tweak    tweak    main            main-right"15% 
-            "    bottom-left   bottom-left  main            bottom-right "70px/ 
-            0.8fr 1.4fr 6fr 3fr;
+            50px "  list-logo list-logo   middle-main     main-right     "15% "  list-logo list-logo   main            main-right     "1fr "   tweak    tweak    main            main-right"15% "    bottom-left   bottom-left  main            bottom-right "70px/ 0.8fr 1.4fr 6fr 3fr;
 
 
     }
@@ -1159,22 +1199,17 @@
     }
 }
 
-@media screen and (max-width: 987px) {
+@media screen and (max-width: 700px) {
     #layout {
         grid-template:
 
             "  left-header left-header     main-header     "
-            50px "  list list    middle-main      "15% 
-            "  list list    main              "1fr
-            "   tweak    tweak    main            "15% 
-            "    bottom-left   bottom-left  main      "70px/ 
-            0.8fr 1.4fr 6fr ;
+            50px "  list-logo list-logo   middle-main      "15% "  list-logo list-logo   main              "1fr "   tweak    tweak    main            "15% "    bottom-left   bottom-left  main      "70px/ 0.8fr 1.4fr 6fr;
 
 
     }
 
-    .side,
-    .side2 ,
+
     .right-header,
     .main-right,
     .bottom-right {
@@ -1187,11 +1222,7 @@
     #layout {
         grid-template:
 
-            "      main-header    "50px 
-            "    middle-main      "15%
-             "   main             "1fr
-              "   main            "70px/ 
-              6fr;
+            "      main-header    "50px "    middle-main      "15% "   main             "1fr "   main            "70px/ 6fr;
 
 
     }
@@ -1200,7 +1231,7 @@
     .left-header,
     .bottom-left,
     .tweak,
-    .the-list,
+    .list-logo,
     .main-right,
     .bottom-right {
         display: none;
