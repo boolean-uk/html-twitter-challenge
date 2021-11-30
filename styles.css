@@ -59,6 +59,7 @@ body {
     display: grid;
     margin-top: 30px;
     grid-template-columns: 70px 200px;
+    place-items: center;
 }
 
 
@@ -206,14 +207,16 @@ h2 a:hover {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
     padding: 1%;
+    padding-top: 15px;
     border: transparent;
-  margin-top: 15px;
-  margin-bottom: 0;
-  margin-right: 10px;
+    margin-top: 15px;
+    margin-bottom: 0;
+    margin-right: 10px;
 }
 
 .profile-pict {
     background-color: white;
+    padding-top: 10px;
 }
 
 .profile-pict a img {
