@@ -31,6 +31,24 @@
   box-sizing: border-box;
 }
 
+/* bug fixes - rh-sb */
+.news-item-1__text ,
+.news-item-2__text,
+.news-item-3__text,
+.news-item-4__text {
+  display: inline-block;
+  overflow-wrap: break-word}
+
+
+.news-item-1__text > p,
+.news-item-2__text > p,
+.news-item-3__text > p,
+.news-item-4__text > p {
+  display: inline-block;
+  overflow-wrap: break-word}
+
+
+
 
 /* Global Styles */
 /* rh-sb */
@@ -59,7 +77,7 @@
 }
 
 .news-item > p {
-    max-width: 30ch;
+    max-width: 25ch;
 }
 
 .boolean-logo{
@@ -83,13 +101,12 @@
     margin: auto;
   }
 
+
+
   html, body .wrapper {
     height: 100vh;
     margin: 0;
   }
-
-
-
 
 /* mobile start */
 /* wrapper grid */
@@ -169,6 +186,15 @@
       display: inline-block;
   }
   
+.box-container--left{
+  margin-top: 5px;
+  margin-left: 1em;
+}
+
+.box-container--right{
+  margin-top: 5px;
+  margin-right: 1em;
+}
 
   .avatar,
   .avatar-two,
@@ -370,7 +396,7 @@ display: none;
 @media screen and (min-width: 1025px) {
     .wrapper {
       display: grid;
-      grid-template-columns: 0.3fr 0.5fr 0.4fr;
+      grid-template-columns: 0.2fr 0.6fr 0.4fr;
       /* grid-template-rows: 0.2fr 1.8fr; */
       gap: 0px 0px;
       grid-template-areas: "lh-sb main rh-sb";
@@ -404,7 +430,42 @@ display: none;
   .rh-sb__search-b { grid-area: rh-sb__search-b; }
 
   
-  /* "rh-sb__search-b > search > input */
+  .rh-sb__news {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: 0.6fr 0.4fr;
+    grid-template-rows: 0.3fr 0.6fr repeat(3, 0.8fr);
+    gap: 0em 0em;
+    grid-template-areas:
+      "news__heading ."
+      "news-item-1__text image-container__news-1"
+      "news-item-2__text image-container__news-2"
+      "news-item-3__text image-container__news-3"
+      "news-item-4__text image-container__news-4";
+  }
+  
+  .news__heading { grid-area: news__heading; }
+  
+  .news-item-1__text { grid-area: news-item-1__text; }
+   
+  .news-item-2__text { grid-area: news-item-2__text; }
+  
+  .news-item-3__text { grid-area: news-item-3__text; }
+  
+  .news-item-4__text { grid-area: news-item-4__text; }
+
+  .image-container__news-1 { grid-area: image-container__news-1; }
+
+  .image-container__news-2 { grid-area: image-container__news-2; }
+  
+  .image-container__news-3 { grid-area: image-container__news-3; }
+  
+  .image-container__news-4 { grid-area: image-container__news-4; }
+
+  .rh-sb{
+    margin-left: 1em;
+  }
+
 
   .rh-sb__search-b > .search > input {
     width: 100%
@@ -419,42 +480,11 @@ display: none;
 }
 
   .rh-sb__news { grid-area: rh-sb__news; }
-  
-  .rh-sb__news {
-    display: grid;
-    /* grid-template-columns: 1fr 1fr; */
-    grid-template-columns: 0.6fr 0.4fr;
-    grid-template-rows: 0.3fr 0.6fr repeat(3, 0.8fr);
-    gap: 0em 0em;
-    grid-template-areas:
-      "news__heading news__heading"
-      "news-item-1__text image-container__news-1"
-      "news-item-2__text image-container__news-2"
-      "news-item-3__text image-container__news-3"
-      "news-item-4__text image-container__news-4";
-  }
-  
-  .news__heading { grid-area: news__heading; }
-  
-  .news-item-1__text { grid-area: news-item-1__text; }
-  
-  .image-container__news-1 { grid-area: image-container__news-1; }
-  
-  .news-item-2__text { grid-area: news-item-2__text; }
-  
-  .news-item-3__text { grid-area: news-item-3__text; }
-  
-  .news-item-4__text { grid-area: news-item-4__text; }
-  
-  .image-container__news-2 { grid-area: image-container__news-2; }
-  
-  .image-container__news-3 { grid-area: image-container__news-3; }
-  
-  .image-container__news-4 { grid-area: image-container__news-4; }
 
   .rh-sb{
     margin-left: 1em;
   }
+
 
   /* lh-sb grid for desktop */
   .lh-sb {
@@ -641,7 +671,6 @@ h5 {
 @media screen and (max-width: 600px) {
   .nav-links {display: none}
 
-
 .nav-grid {
   display: grid;
   grid-template-columns: repeat(9, 1fr);
@@ -653,6 +682,10 @@ gap: 0px 0px;
   display: none;
 }
 
+.rh-sb__search-b {
+  padding-top: 1em;
+}
+
 }
 
 /* bug fixes general */
@@ -662,7 +695,7 @@ gap: 0px 0px;
 .main__bottom-text-2 > p,
 .main__bottom-text-3 > p,
 .main__bottom-text-4 > p {
-  font-size: 23px;
+  font-size: 16px;
   font-stretch: 100%;
   font-weight: 400;
   line-height: 28px;
@@ -736,19 +769,6 @@ input {
 
 .hashtag{
   color:var(--twitter-color);
-  font-size: 23px;
+  font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
-}
-
-
-/* fixing the news section */
-/* .news-item-4__text {
-  display: inline-block;
-} */
-
-.image-container__news-1,
-.image-container__news-2,
-.image-container__news-3,
-.image-container__news-4{display: inline-block;
-
 }
