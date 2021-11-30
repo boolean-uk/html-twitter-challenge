@@ -8,14 +8,33 @@
 .main-grid {
     display:grid;
     height: 100vh;
-    grid-template-columns: 180px 180px 720px 360px; 
+    grid-template-columns: 1fr 1fr 3fr 2fr; 
+    max-width: 1265px;
 }
 
-@media screen and (max-width:987px) {
+@media screen and (max-width:1000px) {
     .main-grid {
-        grid-template-columns: 180px 0px 720px 360px;                      
+        grid-template-columns: 1fr 0fr 3fr 2fr;                      
     }
     .left-menu {
+        display:none;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .main-grid {
+        grid-template-columns: 1fr 0fr 3fr 0fr;                      
+    }
+    .right-menu {
+        display:none;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .main-grid {
+        grid-template-columns: 0fr 0fr 3fr 0fr;                      
+    }
+    .left-side-icons {
         display:none;
     }
 }
@@ -31,15 +50,12 @@
     row-gap: 5px;
     align-items: center;
     justify-items: right;
-    padding-top: 5px;
-        
+    padding-top: 5px;  
 }
 
 img {
     padding: 10px;
     min-height: 20px;
-    /*border: solid 2px blueviolet;
-    border-radius:5px*/
 }
 
 #skull, #idea, #rocket, #connections, #spider, #sand-castle, #jellyfish, #crab, #wasp {
@@ -60,18 +76,16 @@ img {
     justify-items: left;
     padding-top: 5px;
     scroll-behavior: none;
-    
 }
 
 .left-menu-item {
     padding: 20px;
     min-height: 20px;
-    /*border: solid 2px blueviolet;*/
-    border-radius:25px
+    border-radius:25px;
+    display:inline-grid;
 }
 
 .left-menu-item.button {
-    border:  2px blueviolet; 
     width:100px;
     background-color: #3884f7; 
 }
@@ -82,8 +96,8 @@ img {
 
 a:hover {
     color: hotpink;
+    background-color: aqua;
   }
-
 
 /* --------------------------------CENTER COLUMN --------------------------------*/
 
@@ -97,8 +111,9 @@ a:hover {
     justify-items: center;
     min-height: 20px;
     min-width: 499px;
-    max-width: 700px;
+    /*max-width: 700px;*/
     scroll-behavior: column;
+    padding-right: 10px;
 }
 
 .tweet-item-home {
@@ -119,7 +134,6 @@ a:hover {
     padding-bottom: 10px;
     align-items: start;
     justify-items: center;
-
 }
 
 img {
@@ -131,7 +145,6 @@ img {
     border-radius: 50%;
     width: 30px;
     background-color:purple;
-    
   }
 
   .avatar-2 {
@@ -180,8 +193,6 @@ img {
     grid-row: 3;
 }
 
-
-
 .tweet {
     grid-column: 8;
     grid-row: 3;
@@ -197,7 +208,6 @@ img {
 }
 
 .tweet-item {
-    
     border:solid rgb(148, 143, 143);
     border-width: .1px .5px .1px .5px;
     border-radius:0px;
@@ -242,9 +252,9 @@ img {
 /* --------------------------------RIGHT COLUMN --------------------------------*/
 
 .right-menu {
-    background-color:rgb(221, 219, 223);
     grid-column: 4;
     width: 100%;
+    padding: 10px;
 }
 
 .right-menu-wrapper {
@@ -252,15 +262,16 @@ img {
     align-items: center;
     justify-items: center;
     column-span:all;
-    width:380px;
-    background-color:rgb(221, 219, 223);
+    width:100%;
+    
 }
 
 .right-menu-item {
-    border: solid .5px rgb(221, 219, 223);
     min-height: 150px;
     min-width: 360px;
     max-width: auto;
+    background-color:rgb(221, 219, 223);
+    border-radius: 5px;
 }
 
 .right-menu-item-search {
@@ -269,13 +280,12 @@ img {
     align-items: center;
     justify-items: center;
     border: solid .5px rgb(209, 208, 209);
-   
 }
 
 .actual-status-box {
+    min-height: 50px;
     width: 360px;
-    border: none;
-  
+    border-radius: 5px;
     text-align: start;
     background-color:rgb(202, 202, 202);
 }
