@@ -72,6 +72,12 @@ a {
     color: black;
 }
 
+
+h2 a:hover {
+    background: rgb(221, 221, 221);
+    border-radius: 5px;
+}
+
 .lefttweet {
     display: grid;
     place-items: center;
@@ -569,4 +575,37 @@ strong {
 .right-col,
 .main-col {
     overflow-y: auto;
+}
+
+
+
+
+
+
+
+/* RIGHT COLUMN REMOVED */
+
+@media screen and (max-width: 1000px) {
+    .layout {
+    grid-template:
+    "left-col        main-col        "     1fr/
+    25%            42%        ;
+    }
+    .right-col {
+        display: none;
+    }
+}
+
+/* LEFT COLUMN REMOVED */
+
+@media screen and (max-width: 480px) {
+    .layout {
+    grid-template:
+    "        main-col        "     1fr/
+                42%        ;
+    }
+    .left-col,
+    .right-col {
+        display: none;
+    }
 }
