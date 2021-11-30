@@ -62,11 +62,7 @@
 .icon-bar-left li {
     list-style: none;
     padding: 5px;
-}
-
-.icons { 
-    color: black;
-}
+}   
 
 
 .left-nav-text li {
@@ -129,7 +125,10 @@
 
 
 
-#viking-button-bottom-left:hover {background-color: #3e8e41}
+#viking-button-bottom-left:hover,
+#viking-middle-button:hover {
+    background-color: rgb(97, 97, 228)
+}
 
 /* MIDDLE COLUMN */
 
@@ -306,11 +305,6 @@ textarea {
         display: none;
     }
 
-    /* .main {
-        padding-right: 20px;
-        border-right: none; 
-    } */
-
 
 
 }
@@ -326,4 +320,37 @@ textarea {
     .viking-button {
         display: none;
     }
+}
+
+@media screen and (max-width: 350px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20px 1fr;
+        min-width: 250px;
+    }
+    .left-menu {
+        grid-template-rows: 1fr;
+    }
+    .viking-button {
+        display: none;
+    } 
+    #viking-icon {
+        display: none;
+    } 
+
+    .navigation-bar-left {
+        grid-template-columns: 1fr
+    } 
+
+    .icon-bar-left li {
+        display: inline;
+    }
+
+    .main-top {
+        border-top: lightgrey solid 0.5px;
+    }
+    
+    
+    
 }
