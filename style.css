@@ -187,7 +187,7 @@ textarea {
     min-height: 350px;
     display: grid;
     grid-template-columns: 60px 1fr;
-    grid-template-rows: 50px 1fr 40px;
+    grid-template-rows: 50px 50px 1fr 40px;
     padding: 1em;
     border-top: #F6F9F9 solid 2.3px;
     
@@ -199,7 +199,7 @@ textarea {
 }
 
 .visit {
-    background: url('images/tweets/visit-tweet1.png');
+    background: url('images/tweets/visit-tweet.png');
     background-size: cover;
 }
 
@@ -207,7 +207,7 @@ textarea {
     min-height: 350px;
     display: grid;
     grid-template-columns: 60px 1fr;
-    grid-template-rows: 70px 1fr 40px;
+    grid-template-rows: 50px 50px 1fr 40px;
     padding: 1em;
     border-top: #F6F9F9 solid 2.3px;
     
@@ -218,7 +218,7 @@ textarea {
 }
 
 .shot {
-    background: url('images/tweets/shot-tweet.png');
+    background: url('images/tweets/shot.jpg');
     background-size: cover;
 }
 
@@ -226,7 +226,7 @@ textarea {
     min-height: 350px;
     display: grid;
     grid-template-columns: 60px 1fr;
-    grid-template-rows: 70px 1fr 40px;
+    grid-template-rows: 50px 50px 1fr 40px;
     padding: 1em;
      border-top: #F6F9F9 solid 2.3px;
 }
@@ -235,11 +235,16 @@ textarea {
     padding: 0.5em;
 }
 
+.radio {
+    background: url('images/tweets/radio.jpg');
+    background-size: cover;
+}
+
 .tweet-four {
     min-height: 350px;
     display: grid;
     grid-template-columns: 60px 1fr;
-    grid-template-rows: 70px 1fr 40px;
+    grid-template-rows: 50px 50px 1fr 40px;
     padding: 1em;
     border-top: #F6F9F9 solid 2.3px;
 }
@@ -248,11 +253,16 @@ textarea {
     padding: 0.5em;
 }
 
+.green {
+    background: url('images/tweets/greenacres.png');
+    background-size: cover;
+}
+
 .tweet-five {
     min-height: 350px;
     display: grid;
     grid-template-columns: 60px 1fr;
-    grid-template-rows: 70px 1fr 40px;
+    grid-template-rows: 50px 50px 1fr 40px;
     padding: 1em;
     border-top: #F6F9F9 solid 2.3px;
 }
@@ -265,7 +275,7 @@ textarea {
     min-height: 350px;
     display: grid;
     grid-template-columns: 60px 1fr;
-    grid-template-rows: 70px 1fr 40px;
+    grid-template-rows: 50px 50px 1fr 40px;
     padding: 1em;
     border-top: #F6F9F9 solid 2.3px;
 }
@@ -278,7 +288,7 @@ textarea {
     min-height: 350px;
     display: grid;
     grid-template-columns: 60px 1fr;
-    grid-template-rows: 70px 1fr 40px;
+    grid-template-rows: 50px 50px 1fr 40px;
     padding: 1em;
     border-top: #F6F9F9 solid 2.3px;
 }
