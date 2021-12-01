@@ -23,9 +23,13 @@ body {
 }
 
 .nav {
-    display: inline-grid;
+    display: grid;
     grid-template-columns: 30px 1fr;
     height: 50px;
+}
+
+.nav:hover {
+    background-color: aliceblue;
 }
 
 .nav .left-icons img {
