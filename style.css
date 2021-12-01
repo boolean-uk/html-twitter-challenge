@@ -1,0 +1,483 @@
+* {
+    margin: 0px;
+}
+
+body {
+    background-color: #FFFF;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 0.9fr 0.1fr;
+    height: 100vh;
+}
+
+.middle-container {
+    display: grid;
+    grid-template-columns: 318px 598px minmax(auto, 1fr);
+}
+
+.left-c {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.nav {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    height: 50px;
+}
+
+.nav:hover {
+    background-color: aliceblue;
+}
+
+.nav .left-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.left-c .nav .left-link li a {
+    text-decoration: none;
+    padding-bottom: 50px;
+}
+
+.left-c .nav .left-link ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.left-c .nav {
+    padding-top: 20px;
+}
+
+.left-c .icons {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.menu {
+    border-left: solid;
+    border-right: solid;
+    border-color: rgb(239, 243, 244);
+    border-width: 1px;
+}
+
+.profile {
+    overflow: hidden;
+}
+
+.profile .top-profile {
+    display: grid;
+    grid-template: "back name" 50px /
+                    35px  auto;
+}
+
+.profile .top-profile .back-icon {
+    grid-area: back;
+}
+
+.profile .top-profile .profile-name {
+    grid-area: name;
+    grid-template: "name" 25px 
+                    "tweets" 25px/
+                    auto;
+}
+
+.name {
+    grid-area: name;
+    font-weight: 700;
+}
+
+.tweets {
+    grid-area: tweets;
+    color: rgb(83, 100, 113);
+}
+
+.profile-info {
+    display: grid;
+    grid-template-rows: 5, auto;
+    margin-left: 10px;
+}
+
+.profile-info .row-1 {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.profile-info .row-1 .profile-pic img{
+    border-radius: 1000px;
+    border: white solid 5px;
+    width: 133.5px;
+    height: 133.5px;
+    margin-top: -70px;
+}
+
+.profile-info .row-1 .follow-button ul {
+    margin-top: 10px;
+    margin-left: 360px;
+    list-style-type: none;
+    background-color: black;
+    border-radius: 20px;
+    width: 36px;
+    height: 36px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.profile-info .row-1 .follow-button ul:hover {
+    background-color: rgba(5, 4, 4, 0.747)
+}
+
+.profile-info .row-1 .follow-button ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 35px;
+    padding-right: 5px;
+}
+
+.profile-info .row-1 .profile-pic img:hover {
+    opacity: 0.9;
+}
+
+.profile-info .row-2 .row-2-label {
+    padding-bottom: 10px;
+}
+
+.profile-info .info {
+    color: rgb(83, 100, 113);;
+}
+
+.profile-info .info#row-3 {
+    padding-bottom: 10px;
+}
+
+.profile-info .info#row-4 {
+    display: grid;
+    grid-template-rows: auto;
+}
+
+.profile-info .info#row4-2 {
+    padding-bottom: 10px;
+}
+
+.profile-info .row-5-stats ul,
+.profile-info .row-5-stats ul li,
+.profile-info .row-5-stats ul li a {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    display: inline;
+    text-decoration: none;
+    color: rgb(83, 100, 113);
+}
+
+.profile-info .row-5-stats ul li#followers a {
+    padding-left: 10px;
+}
+
+.profile .tweet-buttons {
+    display: grid;
+    grid-template-columns: 139.33px 201.33px 132.17px 125.17px;
+}
+
+.profile .tweet-buttons,
+.profile .tweet-buttons ul li,
+.profile .tweet-buttons ul li a {
+    list-style-type: none;
+    text-decoration: none;
+    color: #536471;
+    align-items: center;
+}
+
+.tweet-button-selected {
+    border-radius: 5px;
+    border-bottom: rgb(29, 155, 240) 5px solid;
+    font-weight: bold;
+}
+
+.hover1 {
+    padding-bottom: 17px;
+    padding-top: 17px
+}
+
+.hover1:hover {
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+.share {
+    border-bottom: solid;
+    border-top: solid;
+    border-color: rgb(239, 243, 244);
+    border-width: 1px;
+
+    display: grid;
+    grid-template: "icon share" auto /
+                    48px   auto; 
+}
+
+.share .profileicon img {
+    border-radius: 100px;
+    border-color: white 1px solid;
+}
+
+.profileicon {
+    grid-area: icon;
+}
+
+.profileicon img:hover {
+    opacity: 0.9;
+}
+
+.share-tweet {
+    grid-area: share;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+}
+
+hr {
+    background-color: rgb(239, 243, 244);
+    height: 1px;
+    border: none;
+}
+
+.feed {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template: "icon content" auto /
+                     48px   auto;
+}
+
+.feed-icon,
+.feed-icon img {
+    grid-area: icon;
+    border-radius: 100px;
+    border-color: white 1px solid;
+}
+
+.feed-icon img:hover {
+    opacity: 0.9;
+}
+
+.feed-tweet {
+    grid-area: content;
+    display: grid;
+    grid-template: "name-twt"   auto
+                    "messsage"  auto
+                    "media"     auto
+                    "interact" 50px /
+                    auto;
+}
+
+.tweeter {
+    grid-area: name-twt;
+}
+
+.msg {
+    grid-area: messsage;
+}
+
+.media {
+    grid-area: media;
+}
+
+.tweet-stats {
+    grid-area: interact;
+}
+
+.post {
+    border-bottom: solid;
+    border-color: rgb(239, 243, 244);
+    border-width: 1px;
+}
+
+.right-c {
+    margin-left: 30px;
+    margin-bottom: 40px;
+}
+
+input[type=text] {
+    margin-top: 5px;
+    width: 350px;
+    height: 40px;
+    font-size: inherit;
+    text-align: left;
+    border-radius: 100px;
+    border: none;
+    box-sizing: border-box;
+    background-color:floralwhite;
+    margin-bottom: 10px;
+}
+
+.search-icon {
+    background-image:url('https://cdn-icons.flaticon.com/png/512/2811/premium/2811790.png?token=exp=1638266843~hmac=aee548fded6e4f0e609ff69ef6bc623b');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: left center; padding-left: 20px;
+}
+
+.sign-up {
+    border-color: rgb(239, 243, 244);
+    border-radius: 10px;
+    border-width: 1px;
+    border-style: solid;
+    box-sizing: border-box;
+    width: 350px;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+.sign-up-row1 {
+    padding-bottom: 15px;
+    font-weight: 800;
+    font-size: 20px;
+    color: rgb(15, 20, 25);
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.sign-up-row2 {
+    padding-bottom: 16px;
+    color: rgb(83, 100, 113);
+    font-size: 13px;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.right-c .sign-up-row3 {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    gap: 15px;
+}
+
+.sign-up-row3 ul li {
+    list-style-type: none;
+    border: solid;
+    border-color: rgb(239, 243, 244);
+    border-width: 1px;
+    border-radius: 10px;
+    width: 300px;
+    height: 40px;
+}
+
+.sign-up-row3 ul {
+    padding: 0px;
+    text-align: center;
+}
+
+.sign-up-row3 ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.sign-up-row3 .google ul li a {
+    color: grey;
+}
+
+.sign-up-row3 .apple ul li a {
+    color: rgb(15, 20, 25);
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.sign-up-row3 .phone-or-email ul li a {
+    color: rgb(15, 20, 25);
+}
+
+.sign-up-row3 .phone-or-email ul {
+    padding-bottom: 20px;
+}
+
+.sign-up-row4 {
+    color: rgb(83, 100, 113);
+    font-size: 13px;
+    font-family: TwitterChirp, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.sign-up-row4 a {
+    text-decoration: none;
+}
+
+.sign-up-row4-hover:hover a {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: rgb(29, 155, 240);
+    padding: 5px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    font-size: 15px;
+    display: grid;
+}
+
+.footer h2, p {
+    color: white;
+    padding-left: 320px;
+}
+
+.footer p {
+    font-family: inherit;
+}
+
+.footer .footer-buttons {
+    text-align: end;
+}
+
+.footer .footer-buttons ul#list li {
+    display: inline;
+    border-radius: 100px;
+    border: white solid 1px;
+}
+
+.footer .footer-buttons ul#list li a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer .footer-buttons ul#list li a#list-1 {
+    color: #FFFF;
+}
+
+.footer .footer-buttons ul#list li a#list-2 {
+    color: #0F1415;
+}
+
+.footer .footer-buttons ul#list li#bg-list {
+    background-color: #EFF3F4;
+}
+
+@media screen and (max-width: 10000px) {
+    .icons {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 2000px) {
+    .icons {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .middle-container {
+        grid-template-columns: 100px 598px;
+    }
+
+    .right-c {
+        display: none;
+    }
+
+    .icons {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+    }
+}
