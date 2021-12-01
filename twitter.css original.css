@@ -2,6 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
+  }
+
+  img {
+      width: 20px;
+      height: 20px;
   }
   
   body {
@@ -148,13 +154,7 @@
   
   /* post */
   .post__avatar img {
-    border-radius: 50%;
-    height: 40px;
-  }
-  
-  .post {
     display: flex;
-    align-items: flex-start;
     border-bottom: 1px solid var(--twitter-background);
     padding-bottom: 10px;
   }
