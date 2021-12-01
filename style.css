@@ -1,370 +1,383 @@
 * {
-    margin:0;
-    /* font-family: “Helvetica Neue”, Helvetica, Arial, sans-serif; */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  /* font-family: “Helvetica Neue”, Helvetica, Arial, sans-serif; */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 a.logo:hover {
-    background-color: lightskyblue;
+  background-color: lightskyblue;
 }
 
 a:hover {
-    background-color: #E7E7E8;
+  background-color: #e7e7e8;
 }
 
 a:link {
-    color: black;
-    text-decoration: none;
-  }
+  color: black;
+  text-decoration: none;
+}
 
 h2 {
-    font-size: 18px;
-    font-weight: normal;
+  font-size: 18px;
+  font-weight: normal;
 }
 
 h3 {
-    font-size: 17px;
+  font-size: 17px;
 }
 
-h4, h5 {
-    font-size: 13px;
+h4,
+h5 {
+  font-size: 13px;
 }
 
 h6 {
-    font-size: 13px;
-    color: #BBB8C1;
+  font-size: 13px;
+  color: #bbb8c1;
 }
 
-p {
-    font-size: 11px;
-    color: #BBB8C1;
-}
-
+p,
 p2 {
-    font-size: 13px;
-    color: #BBB8C1;
+  font-size: 11px;
+  color: #bbb8c1;
 }
-
-/* h4 {
-    font-size: 14px;
-} */
 
 #show {
-    /* font-weight: normal; */
-    color: #76D2F8;
+  color: #76d2f8;
 }
 
+/* Main layout */
 .layout {
-    display: grid;
-    grid-template-columns: 3fr 8fr 5fr;
-    padding-inline: 5em;
-    border-top: white solid 10px;
-    /* column-gap: 10px; */
-    column-gap: 1.5em;
+  display: grid;
+  grid-template-columns: 3fr 8fr 5fr;
+  padding-inline: 5em;
+  border-top: white solid 10px;
+  column-gap: 1.5em;
 }
 
+/* Left column */
 .left {
-    display: grid;
-    grid-template-rows: repeat(14, 1fr);
-    grid-template-columns: 40px 1fr;
-    max-height:575px;
-    
-    /* color: #1D9BF0; */
-    /* align-items: center; */
+  display: grid;
+  grid-template-rows: repeat(14, 1fr);
+  grid-template-columns: 40px 1fr;
+  max-height: 575px;
 }
 
-.left > div, h1, h2 {
-    display: inline;
-    font-size: 18px;
+.left > div,
+h1,
+h2 {
+  display: inline;
+  font-size: 18px;
 }
 
+/* Circular profile pic */
 .profile {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 
+/* Centre column */
 .center {
-    /* border: green solid 3px; */
-    display: grid;
-    grid-template-rows: 40px 450px;
-    grid-template-columns: 1fr;
+  display: grid;
+  grid-template-rows: 40px 450px;
+  grid-template-columns: 1fr;
 }
 
+/* Right column */
 .right {
-    /* border: red solid 3px; */
-    display: grid;
-    grid-template-rows: 40px repeat(16, 1fr);
-    gap: 10px;
+  display: grid;
+  grid-template-rows: 40px repeat(16, 1fr);
+  gap: 10px;
 }
 
 /* Left Tweet button */
 input.left {
-    /* background-color: #1da1f2; */
-    background-color: #3589F4;
-    border: none;
-    border-radius: 20px;
-    color: #fff;
-    padding: 7px 9px;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 1px 1px;
-    cursor: pointer;
+  background-color: #3589f4;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  padding: 7px 9px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 1px 1px;
+  cursor: pointer;
 }
 
-/* Right-alight tweet button in center column */
+/* Right-align tweet button in centre column */
 input.right {
-    float: right;
-    background-color: #3589F4;
-    border: none;
-    border-radius: 20px;
-    color: #fff;
-    padding: 7px 9px;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 1px 1px;
-    cursor: pointer;
+  float: right;
+  background-color: #3589f4;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  padding: 7px 9px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 1px 1px;
+  cursor: pointer;
 }
 
+/* Follow buttons */
 input.follow {
-    float: right;
-    background-color: black;
-    border: none;
-    border-radius: 20px;
-    color: #fff;
-    padding: 7px 9px;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 1px 1px;
-    cursor: pointer;
+  float: right;
+  background-color: black;
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  padding: 7px 9px;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 1px 1px;
+  cursor: pointer;
 }
 
-input[type="text"] { border: none }
-input[type="text"] { background: #F6F9F9 }
+input[type="text"] {
+  border: none;
+}
+input[type="text"] {
+  background: #f6f9f9;
+}
 
 .connect {
-    border-radius: 20px;
+  border-radius: 20px;
 }
 
+/* Top of centre column */
 .home {
-    /* grid-row: 1 / 2; */
-    border-left: #F6F9F9 solid 2.3px;
-    border-right: #F6F9F9 solid 2.3px;
-    /*  */
-    padding: 0.5em;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+  border-left: #f6f9f9 solid 2.3px;
+  border-right: #f6f9f9 solid 2.3px;
+  padding: 0.5em;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
+/* Feed */
 .feed {
-    /* grid-row: 2 / 16; */
-    border-left: #F6F9F9 solid 2.3px;
-    border-right: #F6F9F9 solid 2.3px;
-    display: grid;
-    grid-template-rows: repeat(8, 1fr);
-    height: 800px;
-    /* max-height: 800px; */
-    /* padding: 0.5em; */
-    overflow: scroll;
-    -ms-overflow-style: none;  /*Hide scrollbar for IE and Edge */
-    scrollbar-width: none;  /* Hide scrollbar for Firefox */
+  border-left: #f6f9f9 solid 2.3px;
+  border-right: #f6f9f9 solid 2.3px;
+  display: grid;
+  grid-template-rows: repeat(8, 1fr);
+  height: 800px;
+  overflow: scroll; /* scrollbar */
+  -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
+  scrollbar-width: none; /* Hide scrollbar for Firefox */
 }
 
+/* Post Tweet */
 .happening {
-    grid-row: 1;
-    /* border: orange solid 3px; */
-    max-height: 300px;
-    display: grid;
-    grid-template-columns: 50px 1fr;
-    border-top: #F6F9F9 solid 2.3px;
-    padding: 10px;
+  grid-row: 1;
+  max-height: 300px;
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  border-top: #f6f9f9 solid 2.3px;
+  padding: 10px;
 }
 
 textarea {
-    border: none;
-    outline: none;
-    color: grey;
+  border: none;
+  outline: none;
+  color: grey;
 }
 
 .tweet-one {
-    min-height: 350px;
-    display: grid;
-    grid-template-columns: 60px 1fr;
-    grid-template-rows: 50px 50px 1fr 40px;
-    padding: 1em;
-    border-top: #F6F9F9 solid 2.3px;
-    
+  min-height: 350px;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  grid-template-rows: 50px 50px 1fr 40px;
+  padding: 1em;
+  border-top: #f6f9f9 solid 2.3px;
 }
 
 .tweet-one > div {
-    padding: 0.5em;
-    
+  padding: 0.5em;
 }
 
+/* Tweet one image using background to span width of grid */
 .visit {
-    background: url('images/tweets/visit-tweet.png');
-    background-size: cover;
+  background: url("images/tweets/visit-tweet.png");
+  background-size: cover;
 }
 
 .tweet-two {
-    min-height: 350px;
-    display: grid;
-    grid-template-columns: 60px 1fr;
-    grid-template-rows: 50px 50px 1fr 40px;
-    padding: 1em;
-    border-top: #F6F9F9 solid 2.3px;
-    
+  min-height: 350px;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  grid-template-rows: 50px 50px 1fr 40px;
+  padding: 1em;
+  border-top: #f6f9f9 solid 2.3px;
 }
 
 .tweet-two > div {
-    padding: 0.5em;
+  padding: 0.5em;
 }
 
+/* Tweet two image */
 .shot {
-    background: url('images/tweets/shot.jpg');
-    background-size: cover;
+  background: url("images/tweets/shot.png");
+  background-size: cover;
 }
 
 .tweet-three {
-    min-height: 350px;
-    display: grid;
-    grid-template-columns: 60px 1fr;
-    grid-template-rows: 50px 50px 1fr 40px;
-    padding: 1em;
-     border-top: #F6F9F9 solid 2.3px;
+  min-height: 350px;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  grid-template-rows: 50px 50px 1fr 40px;
+  padding: 1em;
+  border-top: #f6f9f9 solid 2.3px;
 }
 
 .tweet-three > div {
-    padding: 0.5em;
+  padding: 0.5em;
 }
 
+/* Tweet thee image */
 .radio {
-    background: url('images/tweets/radio.jpg');
-    background-size: cover;
+  background: url("images/tweets/radio.jpg");
+  background-size: cover;
 }
 
 .tweet-four {
-    min-height: 350px;
-    display: grid;
-    grid-template-columns: 60px 1fr;
-    grid-template-rows: 50px 50px 1fr 40px;
-    padding: 1em;
-    border-top: #F6F9F9 solid 2.3px;
+  min-height: 350px;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  grid-template-rows: 50px 50px 1fr 40px;
+  padding: 1em;
+  border-top: #f6f9f9 solid 2.3px;
 }
 
 .tweet-four > div {
-    padding: 0.5em;
+  padding: 0.5em;
 }
 
+/* Tweet four image */
 .green {
-    background: url('images/tweets/greenacres.png');
-    background-size: cover;
+  background: url("images/tweets/greenacres.png");
+  background-size: cover;
 }
 
 .tweet-five {
-    min-height: 350px;
-    display: grid;
-    grid-template-columns: 60px 1fr;
-    grid-template-rows: 50px 50px 1fr 40px;
-    padding: 1em;
-    border-top: #F6F9F9 solid 2.3px;
+  min-height: 350px;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  grid-template-rows: 50px 50px 1fr 40px;
+  padding: 1em;
+  border-top: #f6f9f9 solid 2.3px;
 }
 
 .tweet-five > div {
-    padding: 0.5em;
+  padding: 0.5em;
 }
 
+.observe {
+    background: url("images/tweets/co.jpg");
+    background-size: cover;
+  }
+
 .tweet-six {
-    min-height: 350px;
-    display: grid;
-    grid-template-columns: 60px 1fr;
-    grid-template-rows: 50px 50px 1fr 40px;
-    padding: 1em;
-    border-top: #F6F9F9 solid 2.3px;
+  min-height: 350px;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  grid-template-rows: 50px 50px 1fr 40px;
+  padding: 1em;
+  border-top: #f6f9f9 solid 2.3px;
 }
 
 .tweet-six > div {
-    padding: 0.5em;
+  padding: 0.5em;
 }
 
+.sol {
+    background: url("images/tweets/cds.jpg");
+    background-size: cover;
+  }
+
 .tweet-seven {
-    min-height: 350px;
-    display: grid;
-    grid-template-columns: 60px 1fr;
-    grid-template-rows: 50px 50px 1fr 40px;
-    padding: 1em;
-    border-top: #F6F9F9 solid 2.3px;
+  min-height: 350px;
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  grid-template-rows: 50px 50px 1fr 40px;
+  padding: 1em;
+  border-top: #f6f9f9 solid 2.3px;
 }
 
 .tweet-seven > div {
-    padding: 0.5em;
+  padding: 0.5em;
 }
 
 .tweet-footer {
-    display:grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 .search {
-    grid-row: 1 / 2;
-    background:#F6F9F9;
-    border-radius: 20px;
-    padding: 10px;
-    display:grid;
-    grid-template-columns: 40px 1fr;
+  grid-row: 1 / 2;
+  background: #f6f9f9;
+  border-radius: 20px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 40px 1fr;
 }
 
 .trends {
-    grid-row: 2 / 8;
-    border: black 3px;
-    border-radius: 20px;
-    display:grid;
-    grid-template-columns: auto;
-    background:#F6F9F9;
-    padding: 10px;
+  grid-row: 2 / 8;
+  border: black 3px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: auto;
+  background: #f6f9f9;
+  padding: 10px;
 }
 
 .trendy {
-    display:grid;
-    grid-template-columns: 2fr 1fr;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
 }
 
 .trends > div {
-    /* border: blue solid 1px; */
-    padding: 7px;
+  padding: 7px;
 }
 
 .who {
-    grid-row: 8 / 12;
-    border: black 3px;
-    border-radius: 20px;
-    display:grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 30px, 1fr;
-    background:#F6F9F9;
-    padding: 10px;
+  grid-row: 8 / 12;
+  border: black 3px;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 30px, 1fr;
+  background: #f6f9f9;
+  padding: 10px;
 }
 
 .who > div {
-    /* border:lightgreen solid 1px; */
-    padding: 7px;
-    vertical-align: middle;
+  padding: 7px;
+  vertical-align: middle;
 }
 
 .who-to {
-    display:grid;
-    grid-template-columns: 40px 1fr 90px;
-    grid-template-rows: repeate(4, 1fr);
-    background:#F6F9F9;
-    padding: 10px;
+  display: grid;
+  grid-template-columns: 40px 1fr 90px;
+  grid-template-rows: repeate(4, 1fr);
+  background: #f6f9f9;
+  padding: 10px;
 }
 
 .who-to > div {
-    /* border:lightgreen solid 1px; */
-    padding: 7px;
-    vertical-align: middle;
+  padding: 7px;
+  vertical-align: middle;
+}
+
+/* Hides both sidebars
+@media only screen and (max-width: 800px) {
+    .left .right {
+        display: none;
+    }
 }
 
 /* Mimic current version of Twitter where right hand side-bar is hidden and the left is shrunk leaving only icons */
 @media only screen and (max-width: 800px) {
-    h1, h2, h5, h6, .right {
-        display: none;
-    }
+  h1,
+  h2,
+  h5,
+  h6,
+  .right {
+    display: none;
+  }
 }
