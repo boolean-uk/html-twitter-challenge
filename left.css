@@ -1,16 +1,20 @@
 .leftmenu{
     display: grid;
-    grid-template-rows:repeat(8, auto);
+    grid-template-rows:repeat(5, auto);
 }
-ul{
+.twitter{
     list-style-type:none;
 }
 li{
-padding: 5px;
-border: solid black 1px;
+padding: 5px 5px;
+margin-right: 10px;
 }
 .endbotton{
     padding: 2px 4px;
     border-radius: 8px;
     background-color: blue;
+   
+}
+img{
+    max-width: 15px;
 }
