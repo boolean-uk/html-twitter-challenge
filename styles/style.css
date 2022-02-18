@@ -7,10 +7,6 @@
     --fourth-color: #706c6c;
 }
 
-.main-color {
-    color: var(--main-color);
-}
-
 body {
     height: 100vh;
     margin: 0;
@@ -32,18 +28,25 @@ ul {
 a {
     text-decoration: none;
     color: #000000;
+
+    border-radius: 35px;
+    padding: 0px 12px;
 }
 
 a:hover {
-    color: var(--main-color);
+    background-color: var(--third-color);
 }
 
 a:active {
-    color: #000000;
+    color: var(--main-color);
 }
 
 
 /* MAIN STYLES */
+
+#logo {
+    padding-left: 12px;
+}
 
 .asides-padding {
     padding: 12px 24px;
@@ -52,7 +55,9 @@ a:active {
 .left-menu h2,
 .right-side-bar h2 {
     font-size: 18px;
+    font-weight: 400;
 }
+
 
 main {
     background-color: var(--second-color);
@@ -68,7 +73,7 @@ main header h1 {
     font-size: 20px;
 }
 
-main img {
+main section img {
     border-radius: 50%;
 }
 
