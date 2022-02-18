@@ -41,6 +41,12 @@
 }
 .profile-pic-small {
     width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.profile-pic {
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
 }
 h1 {
@@ -56,14 +62,21 @@ h4 {
 h5 {
     color: var(--third-color-medium);
 }
+h6 {
+    font-size: 16px;
+}
 .style-one {
     color: var(--third-color-medium);
 }
 .style-two {
     color: var(--second-color-dark);
 }
+.style-three {
+    color: var(--second-color-dark);
+    font-size: 20px;
+    font-weight: 540;
+}
 /* DASHED BOXES */
-
 .dashed-border-black {
     border: 2px black dashed;
     margin: 2px;
@@ -87,9 +100,17 @@ h5 {
     display: grid;
     grid-template-columns: 1fr 4fr 1.8fr;
 }
-.menu-container {
+.main-container {
     display: grid;
-    grid-template-rows: 100px 400px 20px auto;
+    grid-template-rows: 100px 170px 20px auto;
+}
+.whats-happening-box {
+    display: grid;
+    grid-template: 
+    "profile-pic whats-happening-form whats-happening-form" auto
+    ". icons-list-home tweet-button-light-small" 50px /
+    80px 1fr 110px
+    ;
 }
 .left-menu-container {
     display: grid;
@@ -101,7 +122,15 @@ h5 {
 }
 .tweet-icon-holder {
     display: grid;
-    grid-template-columns: 100px repeat(5, 1fr) 100px;
+    grid-template-columns: repeat(5, 1fr);
+}
+.tweet {
+    display: grid;
+    grid-template: 
+    "retweet-icon retweet-name ." auto
+    "profile-pic-small tweet-content three-dots-icon" auto
+    ". tweet-icon-holder ." 50px /
+    50px 1fr 50px
 }
 /* columns */
 .two-columns__expand-two {
@@ -152,14 +181,11 @@ h5 {
  /* LEFT MENU */
  .left-menu {
     height: 100vh;
-    padding-left: 10px;
-}
-.logo {
-
 }
 .left-menu-button {
     padding: 20px;
     background-color: white;
+    border: none;
 }
 .left-menu-button img {
     margin-right: 20px;
@@ -172,11 +198,75 @@ h5 {
     margin-bottom: auto;
     border-radius: 20px;
     padding: 10px 50px;
- /* MAIN */
- .main {
-
+    border: none;
 }
+ /* MAIN */
+.home-header {
+    place-items: center;
+    padding: 0px 10px;
+}
+.whats-happening-form {
+    padding: 20px;
+    height: 100px;
 
+    grid-area: whats-happening-form;
+}
+.profile-pic {
+    grid-area: profile-pic;
+    margin: 10px;
+}
+.icons-list-home {
+    grid-area: icons-list-home;
+    padding-right: 600px;
+}
+.tweet-button-light-small{
+    grid-area: tweet-button-light-small;
+
+    background-color: #a5d0f5;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 30px;
+    width: 90px;
+    border: none;
+    margin-bottom: 10px;
+} 
+.grey-space{
+    background-color: var(--second-color-light);
+}
+.grey-border {
+    border-bottom: 2px var(--second-color-medium) solid;
+    border-left: 2px var(--second-color-medium) solid;
+    border-right: 2px var(--second-color-medium) solid;
+}
+.retweet-icon {
+    grid-area: retweet-icon;
+    place-items: right;
+    margin: 10px;
+}
+.tweet h4 {
+    grid-area: retweet-name;
+    margin: 10px;
+}
+.tweet .profile-pic-small {
+    grid-area: profile-pic-small;
+    margin: 10px;
+}
+.tweet-icon-holder {
+    grid-area: tweet-icon-holder;
+    margin: 10px;
+}
+.tweet .icon {
+    grid-area: three-dots-icon;
+    margin: 10px;
+}
+.tweet-content {
+    grid-area: tweet-content;
+    padding: 10px;
+}
+.tweet p {
+    display: inline;
+}
  /* RIGHT-SIDE-BAR */
  .right-side-bar {
 
