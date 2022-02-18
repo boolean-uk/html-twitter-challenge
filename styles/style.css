@@ -53,8 +53,30 @@ a:active {
     font-size: 18px;
 }
 
+main header h1 {
+    margin: 0;
+
+    font-size: 20px;
+}
+
+main #tweet img {
+    border-radius: 50%;
+}
+
+main #tweet p {
+    margin-top: 10px;
+
+    font-size: 20px;
+    color: #706c6c;
+}
+
+main .tweet-options svg {
+    color: var(--main-color);
+}
+
 .search-bar p {
     font-size: 14px;
+    color: #706c6c;
 }
 
 .side-bar-container {
@@ -79,6 +101,28 @@ a:active {
 
 
 /* COMPONENT STYLES */
+#tweet-button {
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+
+    padding: 12px 36px;
+    
+    background-color: var(--main-color);
+
+    border-radius: 35px;
+}
+
+#tweet-button:hover {
+    color: #ffffff;
+    background-color: #1ea1f398;
+}
+
+#tweet-button:active {
+    background-color: var(--main-color);
+}
+
 #tweet-button-lg {
     display: block;
 
@@ -118,8 +162,6 @@ a:active {
 
 .follow-button:hover {
     font-size: 15px;
-
-    padding: 7px 17px;
 }
 
 .search-bar {
@@ -130,6 +172,10 @@ a:active {
 }
 
 /* UTILITY STYLES */
+
+.padding-sm {
+    padding: 8px;
+}
 
 .padding-md {
     padding: 16px;
@@ -153,4 +199,8 @@ a:active {
 
 .border-bottom {
     border-bottom: 1px solid var(--tertiary-color);
+}
+
+.align-center {
+    align-items: center;
 }
