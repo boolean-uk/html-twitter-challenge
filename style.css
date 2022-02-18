@@ -11,13 +11,15 @@
     background-color: white;
  }
  html {
-    --primary-color-light: ;
-    --primary-color-medium: ;
-    --primary-color-dark: ;
-    --secondary-color1: ;
-    --secondary-color2: ;
-    --third-color1: ;
-    --third-color2: ;
+    --first-color-light: ;
+    --first-color-medium: ;
+    --first-color-dark: ;
+    --second-color-light: ;
+    --second-color-medium: ;
+    --second-color-dark: grey;
+    --third-color-light: ;
+    --third-color-medium: ;
+    --third-color-dark: blue;
 }
 .center-wrapper {
     max-width: 2000px;
@@ -25,14 +27,33 @@
     padding-left: 12px;
     margin: 0 auto;
 }
-.style-one {
-
-}
 .left-menu-icon{
     width: 50px;
 }
 .icon {
     width: 50px;
+}
+.icons-small {
+    width: 25px;
+}
+.icons-x-small {
+    width: 20px;
+}
+.profile-pic-small {
+    width: 40px;
+    border-radius: 50%;
+}
+h1 {
+}
+h2 {
+}
+h3 {
+}
+h4 {
+    color: var(--second-color-dark);
+}
+h5 {
+    color: var(--third-color-dark);
 }
 /* DASHED BOXES */
 
@@ -54,45 +75,68 @@
 }
 
 /* GRIDS */
+/* parents */
 .parent-container {
     display: grid;
     grid-template-columns: 1fr 4fr 1.8fr;
-}
-.two-column__expand-two {
-    display: grid;
-    grid-template-columns: 100px 1fr;
-}
-.two-row {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-}
-.three-column__expand-two {
-    display: grid;
-    grid-template-columns: 100px 1fr 100px;
-}
-.three-rows__expand-two {
-    display: grid;
-    grid-template-rows: 100px 1fr 100px;
 }
 .menu-container {
     display: grid;
     grid-template-rows: 100px 400px 20px auto;
 }
-.responsive-rows {
-    display: grid;
-    grid-template-rows: repeat(auto-fit, minmax(400px, 1fr));
-}
 .left-menu-container {
     display: grid;
     grid-template-rows: 100px 1fr 300px 100px;
 }
-.eight-rows {
-    display: grid;
-    grid-template-rows: repeat(8, 1fr);
-}
 .right-side-bar-container {
     display: grid;
     grid-template-rows: 100px auto auto;
+}
+.tweet-icon-holder {
+    display: grid;
+    grid-template-columns: 100px repeat(5, 1fr) 100px;
+}
+/* columns */
+.two-columns__expand-two {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.two-columns__expand-one {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+.three-columns__expand-two {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+/* rows */
+.two-rows {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+.two-rows__expand-one {
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+.two-rows__expand-two {
+    display: grid;
+    grid-template-rows: auto 1fr;
+}
+.three-rows__expand-two {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+.three-rows-auto {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+}
+.four-rows-auto {
+    display: grid;
+    grid-auto-rows: auto;
+}
+.responsive-rows {
+    display: grid;
+    grid-auto-rows: repeat(auto-fit, minmax(800px, 1fr));
 }
  /* LEFT MENU */
  .left-menu {
@@ -110,11 +154,15 @@
 }
 
  /* MEDIA */
- @media screen and (max-width: 880px) {
-    
+ @media screen and (max-width: 1200px) {
+    /*collapses left menu to just icons, changes tweet button to icon*/
     
   }
-  @media screen and (max-width: 520px) {
-   
+  @media screen and (max-width: 1000px) {
+    /*remove right-side-bar and move search twitter between home and stars */
+    
+  }
+  @media screen and (max-width: 500px) {
+   /* left menu becomes footer */
     
   }
