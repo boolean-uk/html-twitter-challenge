@@ -1,2 +1,55 @@
 *{box-sizing: border-box;}
 body{margin: 0;}
+
+.comtainer{
+    padding: 4px;
+    border: 1px solid black;
+    font-family: sans-serif;
+}
+
+.box{
+    min-height: 30px;
+    min-height: 30px;
+    padding: 4px;
+    border: 1px solid lightgrey;
+    display: grid;
+    grid-template-columns: 200px 300px 200px;
+}
+
+.inner-box{
+    min-width: auto;
+    min-height: auto;
+    padding: 4px;
+    border: 1px solid lightcoral;
+    max-width: 200px;
+    max-height: 70px;
+}
+
+.icon-text{
+    padding-left: 30px;
+    padding-right: 16px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 14px;
+}
+
+.logo{
+    width: 26px;
+    height: 26px;
+}
+
+.tweet-button{
+    background-color: rgb(45, 116, 209);
+    border: none;
+    color: white;
+    border-radius: 200px;
+    display: inline-block;
+    padding: 4px 50px;
+}
+
+.menu-gap{
+    min-height: 100px;
+    min-width: 200px;
+}
