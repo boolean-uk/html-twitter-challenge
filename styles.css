@@ -1,3 +1,40 @@
 * {
     box-sizing: border-box;
 }
+
+.twitter-grid > * {
+    min-height: 100vh;
+    border: 2px solid black;
+}
+
+.left-hand-menu > * {
+    border: 2px solid yellow;
+}
+
+.tweet-feed > * {
+    border: 2px solid red;
+}
+
+.right-side-bar > * {
+    border: 2px solid blue;
+}
+
+.three-columns {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+}
+
+.three-rows {
+    display: grid;
+    grid-template-rows: 50px 1fr 50px;
+}
+
+.four-rows {
+    display: grid;
+    grid-template-rows: auto auto auto 1fr;
+}
+
+.eight-rows {
+    display: grid;
+    grid-template-rows: repeat(8, 100px);
+}
