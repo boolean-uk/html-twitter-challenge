@@ -1,19 +1,95 @@
 .center {
+  //   border: 2px dashed blue;
+  overflow-y: scroll;
   &-header {
+    padding: 1rem 1.6rem 0rem 1.6rem;
     h4 {
       grid-column: 1/3;
       margin-bottom: 2rem;
+    }
+
+    .icon {
+      justify-self: flex-end;
     }
   }
 
   .profile-image.header-image {
     grid-row: 2/4;
   }
+  .header-post {
+    margin: 1.5rem 0rem 1rem 0rem;
+    grid-column: 2/4;
+    padding-bottom: 1rem;
+    .header-question {
+      margin-bottom: 1.4rem;
+    }
+    .header-reply {
+      color: $color-main;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20rem;
 
-  .header-question {
-    grid-column: 2/4;
+      .fa-earth-europe {
+        margin-right: 0.5rem;
+      }
+      &:hover {
+        background-color: #b2defc7e;
+        cursor: pointer;
+        display: inline-block;
+      }
+    }
   }
-  .headr-reply {
-    grid-column: 2/4;
+
+  .header-icons {
+    color: $color-main;
+    font-size: 2.5rem;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    img {
+      border-radius: 50%;
+      transform: translateY(-5px);
+      padding: 0.7rem;
+      &:hover {
+        background-color: #b2defc7e;
+        cursor: pointer;
+      }
+    }
+
+    & > i {
+      padding: 0.8rem;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      &:hover {
+        background-color: #b2defc7e;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .header-btn {
+    align-self: start;
+    text-align: center;
+    border: transparent;
+    border-radius: 20rem;
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    background-color: $color-main;
+    &:hover {
+      background-color: $color-main-dark;
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+  }
+
+  .show-tweets {
+    color: $color-main;
+    margin-top: 0.2rem;
+    text-align: center;
+    &:hover {
+      cursor: pointer;
+      transition: all 0.3s;
+      background-color: $color-hover-light;
+    }
   }
 }

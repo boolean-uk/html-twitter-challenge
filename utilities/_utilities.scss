@@ -31,3 +31,21 @@
 .cl-fade {
   color: rgba(70, 68, 68, 0.664);
 }
+
+.border-bottom {
+  border-bottom: 0.5px solid rgba(218, 213, 213, 0.445);
+}
+.border-top {
+  border-top: 0.5px solid rgba(218, 213, 213, 0.445);
+}
+.border {
+  border: 0.5px solid rgba(218, 213, 213, 0.445);
+}
+
+.margin-typography .mg-lg {
+  margin: 1.6rem;
+}
+
+.color-grey {
+  color: $color-grey;
+}

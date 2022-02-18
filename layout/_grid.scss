@@ -11,3 +11,8 @@
 .two-column-grid-expand-two {
   grid-template-columns: 10rem 1fr;
 }
+
+.four-column-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
