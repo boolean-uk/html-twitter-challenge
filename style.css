@@ -5,32 +5,54 @@
 }
 
 body {
-  margin: 0;
+  min-height: 100vh;
+  margin-left: 40px;
+  margin-right: 40px;
   padding: 0;
   scroll-behavior: smooth;
 }
 
 /* Header Section  */
 
-header {
-}
+/* header {
+} */
 
 .header-grid {
+  display: grid;
+  grid-template:
+    "twitter-logo home-grid search" auto /
+    auto 1fr auto;
+  gap: 5px;
 }
 
 .twitter-logo {
+  grid-area: twitter-logo;
+  padding-right: 100px;
+  border: 2px solid rgb(29, 26, 226);
+}
+
+.home-section {
+  grid-area: home-grid;
+  border: 2px solid rgb(226, 26, 26);
 }
 
 .home-grid {
+  display: grid;
+  grid-template-columns: auto auto;
 }
 
-.home {
+/* .home {
+  justify-content: left;
 }
 
 .stars-icon {
-}
+  justify-items: right;
+} */
 
 .search {
+  grid-area: search;
+  padding-right: 100px;
+  border: 2px solid rgb(29, 26, 226);
 }
 
 /* Main Section  */
