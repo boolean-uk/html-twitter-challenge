@@ -178,6 +178,36 @@ body {
 }
 
 .main-feed {
+  grid-area: main-feed;
+  border: 2px solid rgb(66, 216, 61);
+}
+
+/* .centerised {
+  margin: 0 auto;
+} */
+
+.center-grid {
+  display: grid;
+  grid-auto-flow: row;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 20px;
+}
+
+.main-two-column-grid {
+  display: grid;
+  grid-template: "profile-logo-tweet p";
+}
+
+.profile-logo-tweet {
+  grid-area: profile-logo-tweet;
+  border: 2px solid rgb(30, 53, 128);
+}
+
+p {
+  grid-area: p;
+  text-align: left;
+  border: 2px solid rgb(216, 61, 61);
 }
 
 .right-column {
