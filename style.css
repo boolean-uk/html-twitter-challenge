@@ -14,12 +14,12 @@
     --first-color-light: ;
     --first-color-medium: ;
     --first-color-dark: ;
-    --second-color-light: ;
-    --second-color-medium: ;
-    --second-color-dark: grey;
-    --third-color-light: ;
-    --third-color-medium: ;
-    --third-color-dark: blue;
+    --second-color-light: #f7f9fa;
+    --second-color-medium: #eceef0;
+    --second-color-dark: #9fa9b4;
+    --third-color-light: #a5d0f5;
+    --third-color-medium: #63a5e1;
+    --third-color-dark: ;
 }
 .center-wrapper {
     max-width: 2000px;
@@ -46,6 +46,7 @@
 h1 {
 }
 h2 {
+    font-weight: 800;
 }
 h3 {
 }
@@ -53,7 +54,13 @@ h4 {
     color: var(--second-color-dark);
 }
 h5 {
-    color: var(--third-color-dark);
+    color: var(--third-color-medium);
+}
+.style-one {
+    color: var(--third-color-medium);
+}
+.style-two {
+    color: var(--second-color-dark);
 }
 /* DASHED BOXES */
 
@@ -86,11 +93,11 @@ h5 {
 }
 .left-menu-container {
     display: grid;
-    grid-template-rows: 100px 1fr 300px 100px;
+    grid-template-rows: 100px 620px auto 100px;
 }
 .right-side-bar-container {
     display: grid;
-    grid-template-rows: 100px auto auto;
+    grid-template-rows: 100px 700px 300px;
 }
 .tweet-icon-holder {
     display: grid;
@@ -108,6 +115,10 @@ h5 {
 .three-columns__expand-two {
     display: grid;
     grid-template-columns: auto 1fr auto;
+}
+.five-columns {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 /* rows */
 .two-rows {
@@ -141,8 +152,26 @@ h5 {
  /* LEFT MENU */
  .left-menu {
     height: 100vh;
+    padding-left: 10px;
 }
+.logo {
 
+}
+.left-menu-button {
+    padding: 20px;
+    background-color: white;
+}
+.left-menu-button img {
+    margin-right: 20px;
+}
+.tweet-button {
+    background-color: var(--third-color-medium);
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: auto;
+    border-radius: 20px;
+    padding: 10px 50px;
  /* MAIN */
  .main {
 
