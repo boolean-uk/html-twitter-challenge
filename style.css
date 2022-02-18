@@ -10,28 +10,88 @@
       grid-template-columns: auto 1fr auto;
 }
 
-.one-column-auto-rows {
+.auto-rows {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: auto;
-      grid-template-rows: auto;
+  grid-auto-rows: auto;
 }
 
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: sans-serif;
 }
 
-.box-bg {
-  border: 2px dashed green;
-  background-color: lightblue;
+h2 {
+  margin: 0%;
+}
+
+.btn-text__small:link, .btn-text:link, .btn-text__small:visited, .btn-text:visited {
+  font-size: 1.4rem;
+  color: #1da0f2;
+  display: inline-block;
+  text-decoration: none;
+  border: 0.5px solid #1da0f2;
+  padding: 3px 40px;
+  border-radius: 25px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.btn-text:hover, .btn-text__small:hover {
+  background-color: #1da0f2;
+  color: white;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  -webkit-transform: translateY(2px) translateX(2px);
+          transform: translateY(2px) translateX(2px);
+}
+
+.btn-text:active, .btn-text__small:active {
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background-color: white;
+  color: #1da0f2;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.btn-text__small, .btn-text__small:link, .btn-text:link, .btn-text__small:visited, .btn-text:visited {
+  font-size: 1rem;
+  padding: 2px 20px;
+}
+
+.box-vb {
+  border: 2px dashed #005c00;
+  background-color: lightgreen;
   padding: 1rem;
   margin: 0.5rem;
 }
 
-.box-sm {
+.box-bg {
+  border: 2px dashed #fbff00;
+  background-color: lightyellow;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+.box-md {
   border: 2px dashed red;
-  background-color: lightgreen;
+  background-color: lightcoral;
+  padding: 1rem;
+  margin: 0.2rem;
+}
+
+.box-sm {
+  border: 2px dashed #1100ff;
+  background-color: lightblue;
+  padding: 1rem;
+  margin: 0.2rem;
+}
+
+.box-vs {
+  border: 12px dashed #ff9d00;
+  background-color: #f0d680;
   padding: 1rem;
   margin: 0.2rem;
 }

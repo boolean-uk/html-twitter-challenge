@@ -1,14 +1,14 @@
 .center-wrapper {
-  padding: 1rem 8rem;
-  margin: 0 auto;
+    padding: 1rem 8rem;
+    margin: 0 auto;
 }
 
 .three-column-expand-two {
-  display: grid;
-  grid-template-columns: auto 1fr auto;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
 }
 
-.one-column-auto-rows {
-  display: grid;
-  grid-template-rows: auto;
+.auto-rows {
+    display: grid;
+    grid-auto-rows: auto;
 }
