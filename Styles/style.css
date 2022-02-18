@@ -46,10 +46,6 @@ aside {
   padding: 10px;
 }
 
-/* .menu-bar > img {
-  width: 30px;
-} */
-
 h2 > span {
   color: var(--light-pink);
 }
@@ -71,8 +67,11 @@ h2 > span {
 /* profile bar */
 .profile-container {
   gap: 10px;
+  max-width: 100%;
   align-items: center;
   padding: 10px;
+
+  border: 2px red solid;
 }
 
 .profile-icon {
