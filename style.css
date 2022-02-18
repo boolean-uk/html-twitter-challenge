@@ -34,7 +34,7 @@ body {
 
 .home-section {
   grid-area: home-grid;
-  border: 2px solid rgb(226, 26, 26);
+  /* border: 2px solid rgb(226, 26, 26); */
 }
 
 .home-grid {
@@ -53,7 +53,7 @@ body {
 .search {
   grid-area: search;
   padding-right: 100px;
-  border: 2px solid rgb(29, 26, 226);
+  /* border: 2px solid rgb(29, 26, 226); */
 }
 
 /* Main Section  */
@@ -162,11 +162,11 @@ body {
 }
 
 .tweet {
-  border: 2px solid rgb(6, 223, 205);
+  /* border: 2px solid rgb(6, 223, 205); */
 }
 
 .profile-info {
-  border: 2px solid rgb(128, 64, 4);
+  /* border: 2px solid rgb(128, 64, 4); */
 }
 
 /* Middle Main Section  */
@@ -176,12 +176,12 @@ body {
   grid-template:
     "profile-pic type-tweet type-tweet" auto
     "space tweet-icons tweet-button" auto /
-    auto auto auto;
+    80px auto auto;
 }
 
 .middle-main {
   grid-area: middle-main;
-  border: 2px solid rgb(130, 2, 153);
+  /* border: 2px solid rgb(130, 2, 153); */
 }
 
 /* .make-tweet {
@@ -189,25 +189,27 @@ body {
 
 .profile-pic {
   grid-area: profile-pic;
-  border: 2px solid rgb(21, 177, 0);
 }
 
 .type-tweet {
   grid-area: type-tweet;
-  border: 2px solid rgb(177, 0, 97);
+  /* border: 2px solid rgb(177, 0, 97); */
 }
+
+/* .space {
+} */
 
 .icons-list-grid {
   display: grid;
   grid-auto-flow: column;
 }
 
-.tweet-icons {
+/* .tweet-icons {
   grid-area: tweet-icons;
   border: 2px solid rgb(180, 134, 7);
-}
+} */
 
-.image {
+/* .image {
   border: 2px solid rgb(180, 134, 7);
 }
 
@@ -225,16 +227,16 @@ body {
 
 .calendar {
   border: 2px solid rgb(180, 134, 7);
-}
+} */
 
 .tweet-button {
   grid-area: tweet-button;
-  border: 2px solid rgb(76, 61, 216);
+  /* border: 2px solid rgb(76, 61, 216); */
 }
 
 .main-feed {
   grid-area: main-feed;
-  border: 2px solid rgb(66, 216, 61);
+  /* border: 2px solid rgb(66, 216, 61); */
 }
 
 /* .centerised {
@@ -252,22 +254,25 @@ body {
 .main-two-column-grid {
   display: grid;
   grid-template: "profile-logo-tweet p";
+  margin-top: 15px;
+  padding: 5px;
+  gap: 5px;
 }
 
 .profile-logo-tweet {
   grid-area: profile-logo-tweet;
-  border: 2px solid rgb(30, 53, 128);
+  /* border: 2px solid rgb(30, 53, 128); */
 }
 
 p {
   grid-area: p;
   text-align: left;
-  border: 2px solid rgb(216, 61, 61);
+  /* border: 2px solid rgb(216, 61, 61); */
 }
 
 .right-column {
   grid-area: right-column;
-  border: 2px solid rgb(197, 105, 18);
+  /* border: 2px solid rgb(197, 105, 18); */
 }
 
 .whats-happening {
