@@ -162,7 +162,16 @@ body {
 }
 
 .tweet {
-  /* border: 2px solid rgb(6, 223, 205); */
+  /* grid-area: tweet-button;
+  border: 2px solid rgb(4, 134, 240);
+  background-color: rgb(4, 134, 240);
+  color: white;
+  width: 80px;
+  height: 40px;
+  border-radius: 40%;
+  text-align: center;
+  justify-content: center;
+  padding-top: 8px; */
 }
 
 .profile-info {
@@ -231,7 +240,15 @@ body {
 
 .tweet-button {
   grid-area: tweet-button;
-  /* border: 2px solid rgb(76, 61, 216); */
+  border: 2px solid rgb(4, 134, 240);
+  background-color: rgb(4, 134, 240);
+  color: white;
+  width: 80px;
+  height: 40px;
+  border-radius: 40%;
+  text-align: center;
+  justify-content: center;
+  padding-top: 8px;
 }
 
 .main-feed {
