@@ -20,6 +20,7 @@
     --third-color-light: #a5d0f5;
     --third-color-medium: #63a5e1;
     --third-color-dark: ;
+    --header-height: 60px;
 }
 .center-wrapper {
     max-width: 2000px;
@@ -44,10 +45,15 @@
     height: 40px;
     border-radius: 50%;
 }
-.profile-pic {
+.profile-pic,
+.profile-pic-someone {
     width: 60px;
     height: 60px;
     border-radius: 50%;
+}
+.news-icon {
+    width: 100px;
+    margin: 20px;
 }
 h1 {
 }
@@ -76,7 +82,10 @@ h6 {
     font-size: 20px;
     font-weight: 540;
 }
-/* DASHED BOXES */
+.line-height {
+    line-height: 1.5rem;
+}
+/* DASHED BOXES 
 .dashed-border-black {
     border: 2px black dashed;
     margin: 2px;
@@ -93,7 +102,7 @@ h6 {
     border: 2px pink dashed;
     margin: 2px;
 }
-
+*/
 /* GRIDS */
 /* parents */
 .parent-container {
@@ -102,7 +111,7 @@ h6 {
 }
 .main-container {
     display: grid;
-    grid-template-rows: 100px 170px 20px auto;
+    grid-template-rows: var(--header-height) 170px 20px auto;
 }
 .whats-happening-box {
     display: grid;
@@ -114,11 +123,11 @@ h6 {
 }
 .left-menu-container {
     display: grid;
-    grid-template-rows: 100px 620px auto 100px;
+    grid-template-rows: var(--header-height) 570px auto 100px;
 }
 .right-side-bar-container {
     display: grid;
-    grid-template-rows: 100px 700px 300px;
+    grid-template-rows: var(--header-height) 720px 400px;
 }
 .tweet-icon-holder {
     display: grid;
@@ -195,10 +204,11 @@ h6 {
     color: white;
     font-weight: bold;
     font-size: 18px;
-    margin-bottom: auto;
+    margin: 0px auto auto auto;
     border-radius: 20px;
     padding: 10px 50px;
     border: none;
+    width: 200px;
 }
  /* MAIN */
 .home-header {
@@ -239,6 +249,9 @@ h6 {
     border-left: 2px var(--second-color-medium) solid;
     border-right: 2px var(--second-color-medium) solid;
 }
+.grey-border-bottom {
+    border-bottom: 2px var(--second-color-medium) solid;
+}
 .retweet-icon {
     grid-area: retweet-icon;
     place-items: right;
@@ -268,9 +281,54 @@ h6 {
     display: inline;
 }
  /* RIGHT-SIDE-BAR */
- .right-side-bar {
+ .search-twitter {
+    background-color: var(--second-color-medium);
+    color: var(--second-color-dark);
 
+    border: none;
+    border-radius: 30px;
+    width: auto;
+    margin: 10px;
 }
+.search-twitter .icon {
+    margin: 0px 10px 0px 15px;
+}
+.search-twitter p {
+    padding-top: 10px;
+}
+.news,
+.who-to-follow {
+    background-color: var(--second-color-light);
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.news-content,
+.someone {
+    padding: 10px;
+}
+.news h2,
+.who-to-follow h2 {
+    padding: 10px;
+}
+.news h5,
+.who-to-follow h5 {
+    padding: 20px 10px;
+}
+.news h6 {
+    padding: 10px 0px;
+}
+.follow-button {
+    background-color: black;
+    color: white;
+    margin: 18px 20px;
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    width: 80px;
+}
+/* RIGHT SIDE BAR */
+.someone
 
  /* MEDIA */
  @media screen and (max-width: 1200px) {
