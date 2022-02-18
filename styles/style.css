@@ -59,7 +59,7 @@ main header h1 {
     font-size: 20px;
 }
 
-main #tweet img {
+main img {
     border-radius: 50%;
 }
 
@@ -193,8 +193,16 @@ main .tweet-options svg {
     gap: 8px;
 }
 
+.gap-md {
+    gap: 16px;
+}
+
 .gap-bg {
     gap: 24px;
+}
+
+.fit-content {
+    width: fit-content;
 }
 
 .border-bottom {

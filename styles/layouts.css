@@ -10,9 +10,6 @@
 .grid-auto__columns {
     display: grid;
     grid-auto-flow: column;
-
-    width: fit-content;
-    gap: 16px;
 }
 
 .two-column-grid__expand-one {
