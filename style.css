@@ -1,0 +1,281 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+/* ------------------- */
+/* Resets              */
+/* ------------------- */
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* ------------------- */
+/* Custom properties   */
+/* ------------------- */
+
+:root {
+  --clr-dark: 0, 22, 50;
+  --clr-light: 109, 151, 173;
+  --clr-accent: 255, 153, 0;
+  --clr-white: 255, 255, 255;
+
+  --fs-sm: 1rem;
+  --fs-md: 2rem;
+  --fs-lg: 7rem;
+
+  --ff-global: "poppins", sans-serif;
+
+  --gap-sm: 0.5rem;
+  --gap-md: 1rem;
+  --gap-lg: 3rem;
+}
+
+/* ------------------- */
+/* Utility classes     */
+/* ------------------- */
+
+/* general */
+
+.center-wrapper {
+  padding-inline: 2em;
+  margin-inline: auto;
+  max-width: 100rem;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+/* grid classes */
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+.three-row-grid__expand-two {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.grid-auto-flow {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.two-column-grid__expand-one {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+.two-column-grid__expand-two {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.three-column-grid__main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.two-column-grid__center-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+.three-column-grid__expand-two {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  padding: 1em 2em;
+}
+
+.place-items-center {
+  display: grid;
+  place-items: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.place-content-center {
+  display: grid;
+  place-content: center;
+}
+
+/* colors */
+
+.bg-dark {
+  background-color: rgba(var(--clr-dark));
+}
+.bg-light {
+  background-color: rgba(var(--clr-light));
+}
+.bg-accent {
+  background-color: rgba(var(--clr-accent));
+}
+.bg-white {
+  background-color: rgba(var(--clr-white));
+}
+
+.text-dark {
+  color: rgba(var(--clr-dark));
+}
+.text-light {
+  color: rgba(var(--clr-light));
+}
+.text-accent {
+  color: rgba(var(--clr-accent));
+}
+.text-white {
+  color: rgba(var(--clr-white));
+}
+
+/* typography */
+
+.ff-global {
+  font-family: var(--ff-global);
+}
+
+.fs-sm {
+  font-size: var(--fs-sm);
+}
+.fs-md {
+  font-size: var(--fs-md);
+}
+.fs-lg {
+  font-size: var(--fs-lg);
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/* ------------------- */
+/* Components          */
+/* ------------------- */
+.btn {
+  background-color: rgba(var(--clr-accent));
+  padding: 10px;
+  border-radius: 2rem;
+  color: rgba(var(--clr-white));
+  font-weight: 600;
+}
+
+.tweet-btn {
+  margin-left: 10px;
+  width: 80%;
+}
+
+.icon {
+}
+
+.icon-ex-sm {
+  height: 15px;
+  aspect-ratio: 1;
+}
+
+.icon-sm {
+  height: 20px;
+  aspect-ratio: 1;
+}
+
+.icon-md {
+  height: 25px;
+  min-width: no25pxne;
+  border-radius: 12.5px;
+}
+
+.icon-lg {
+  height: 40px;
+  aspect-ratio: 1;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+/* ------------------- */
+/* main styling        */
+/* ------------------- */
+
+/* general styling */
+
+body {
+  font-family: var(--ff-global);
+  height: 100vh;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: rgba(var(--clr-dark));
+  display: block;
+}
+
+.nav-list > * {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  padding-block: 10px;
+}
+
+ul {
+  padding-left: 10px;
+  margin-block: 15px;
+}
+
+.nav-list a {
+  padding-left: 20px;
+}
+
+.container {
+  height: 100vh;
+}
+
+/* main styling */
+
+.home-title {
+  padding: 10px;
+  border-bottom: lightgrey solid 1px;
+}
+
+.main-section {
+  border-inline: lightgrey solid 1px;
+}
+
+.twitter {
+  margin-top: 10px;
+}
