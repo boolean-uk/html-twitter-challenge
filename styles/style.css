@@ -8,6 +8,7 @@
     box-sizing: border-box;
 
     --main-color: #1ea1f3;
+    --secondary-color: #f7f9fa;
 }
 
 .main-color {
@@ -21,23 +22,56 @@ body {
     font-family: sans-serif;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 
 /* MAIN STYLES */
 
-.left-menu {
+.asides-padding {
     padding: 12px 24px;
 }
 
-.left-menu h2 {
-    font-size: 24px;
+.left-menu h2,
+.right-side-bar h2 {
+    font-size: 18px;
 }
 
+.search-bar p {
+    font-size: 14px;
+}
+
+.news {
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+
+    width: 200px;
+}
+
+.news h2 {
+    margin: 0;
+}
+
+.news article > *,
+.news ul li p {
+    font-size: 14px;
+}
+
+.news img {
+    border-radius: 15px;
+}
+
+
+/* COMPONENT STYLES */
 .tweet-button-lg {
     display: block;
 
     text-decoration: none;
     color: #ffffff;
     text-align: center;
+    font-size: 14px;
 
     padding: 16px;
     
@@ -48,11 +82,56 @@ body {
 
 .tweet-button-lg:hover {
     background-color: #1ea1f398;
+}
 
+.follow-button {
+    text-decoration: none;
+    color: var(--main-color);
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+
+    padding: 6px 16px;
+    
+    border: 2px solid var(--main-color);
+    border-radius: 35px;
+}
+
+.follow-button:hover {
+    font-size: 15px;
+
+    padding: 7px 17px;
+}
+
+.search-bar {
+    border-radius: 35px;
+    background-color: #eceef0;
+
+    padding: 0px 24px;
 }
 
 /* UTILITY STYLES */
 
+.padding-md {
+    padding: 16px;
+}
+
+.padding-md-left-right {
+    padding: 0px 16px;
+}
+
 .margin-bottom-md {
     margin-bottom: 12px;
+}
+
+.gap-sm {
+    gap: 8px;
+}
+
+.gap-bg {
+    gap: 24px;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #eceef0;
 }
