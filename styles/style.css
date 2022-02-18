@@ -264,3 +264,32 @@ main .feed .tag {
 .align-center {
     align-items: center;
 }
+
+
+/* MEDIA QUERIES */
+
+@media screen and (min-width: 1024px) {
+    .bottom-nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .right-side-bar {
+        display: none;
+    }
+
+    .bottom-nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .left-menu {
+        display: none;
+    }
+
+    .bottom-nav {
+        display: grid;
+    }
+}
