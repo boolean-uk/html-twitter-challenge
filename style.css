@@ -11,9 +11,9 @@ li {
     list-style: none;
 }
 
-/* SCROLL BEHAVIOUS starts here */
+/* SCROLL BEHAVIOUS and HOVER starts here */
 ::-webkit-scrollbar {
-    width: 5px;
+    width: 0px;
   }
 
   ::-webkit-scrollbar-track {
@@ -29,14 +29,18 @@ li {
     background: black;
   }
 
-/* SCROLL BEHAVIOUS ends here */
+  p:hover {
+    color: orange;
+  }
+
+/* SCROLL BEHAVIOUS and HOVER ends here */
 
 /* this is the coloured border, will be removed - its only here because it helps me to visualise the layout */
 
-.icon,
+/* .icon,
 .border {
     border: 1px dashed turquoise;
-}
+} */
 
 /* this is the coloured border, will be removed */
 
@@ -65,15 +69,24 @@ h3 {
     font-weight: bold; 
 }
 
-.right-panel .trends p {
+.right-panel p {
+    font-size: 12px;
+    color: var(--grey-)
+}
+
+.show_more {
+    color: var(--twitter-blue);
     font-size: 14px;
-    color: var(--grey-);
 }
 
 /* PRIMARY COLOURS and FONTS SIZES ends here*/
 
 
 /* MAIN GRID SETUP starts here */
+.blank_side {
+    height: 100vh;
+}
+
 .container {
     display: grid;
     grid-template-columns: auto 250px 600px 370px auto;
@@ -105,6 +118,8 @@ main {
     height: 50px;
     place-content: center;
     margin: 5px 0px 5px 30px;
+    border-radius: 50px;
+    border: red solid 2px;
 }
 
 .nav-items p {
@@ -137,14 +152,6 @@ main {
     align-items: center;
 }
 
-.account-icon {
-    width: 45px;
-    height: 45px;
-    background-color:#c2185b ;
-    border-radius: 50px;
-    margin: 10px;
-}
-
 .account-details {
     display: grid;
     align-items: center;
@@ -163,12 +170,13 @@ main {
     display: grid;
     grid-template-columns: 1fr auto;
     align-items: center;
-    padding: 0px 10px 0px 10px;
-    border-bottom: 1px solid var(--grey-);
+    padding: 0px 15px 0px 15px;
+    opacity: 0.5;
 }
 
 .status-bar {
     display: grid;
+
 }
 
 .blue_icon {
@@ -219,6 +227,7 @@ main {
     height: 48px;
     display: grid;
     place-items: center;
+    border-top: 1px solid var(--grey-);
 }
 
 .content {
@@ -235,6 +244,8 @@ main {
 
 .tweet-head {
     height: 55px;
+    display: grid;
+    align-items: center;
 }
 
 .align_right {
@@ -258,8 +269,12 @@ main {
 /* MAIN - CONTENT - ends here */
 
 /* RIGHT PANEL starts here */
+.right_panel_scroll {
+    overflow: scroll;
+}
+
 .right-panel {
-    padding: 5px 0px 0px 30px
+    padding: 5px 0px 0px 30px;
 }
 
 .round {
@@ -297,7 +312,7 @@ main {
 
 .follow,
 .trends{
-    padding: 15px;
+    padding: 15px 15px 15px 20px;
     line-height: 20px;
 }
 
@@ -309,6 +324,7 @@ main {
 .follow_button {
     background-color: var(--light-grey);
     color: black;
+    font-weight: bold;
     width: 75px;
     height: 30px;
     border-radius: 50px;
@@ -316,12 +332,27 @@ main {
     place-items: center;
 }
 
+.terms_list * {
+    display: inline-block;
+    font-size: 12px;
+    color: var(--grey-);
+    font-weight: lighter;
+    line-height: 1.5rem;
+}
 /* RIGHT PANEL ends here */
 
 
 
 
-
+/* I NEED TO CHANGE SOME CLASSES for this below...to be able to move this higher in the code */
+.account-icon {
+    width: 45px;
+    height: 45px;
+    background-color:#c2185b ;
+    border-radius: 50px;
+    margin: 10px;
+}
+/* I NEED TO CHANGE SOME CLASSES for this below...to be able to move this higher in the code */
 
 
 
