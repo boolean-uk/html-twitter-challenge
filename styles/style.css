@@ -26,6 +26,19 @@ ul {
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    color: var(--main-color);
+}
+
+a:active {
+    color: #000000;
+}
+
 
 /* MAIN STYLES */
 
@@ -64,7 +77,7 @@ ul {
 
 
 /* COMPONENT STYLES */
-.tweet-button-lg {
+#tweet-button-lg {
     display: block;
 
     text-decoration: none;
@@ -79,8 +92,13 @@ ul {
     border-radius: 35px;
 }
 
-.tweet-button-lg:hover {
+#tweet-button-lg:hover {
+    color: #ffffff;
     background-color: #1ea1f398;
+}
+
+#tweet-button-lg:active {
+    background-color: var(--main-color);
 }
 
 .follow-button {
