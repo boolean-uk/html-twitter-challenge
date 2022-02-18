@@ -51,6 +51,13 @@ body, html {
     border-color: white
 }
 
+.b-r-md {
+    border-radius: 30px;
+}
+
+.b-r-sm {
+    border-radius: 15px;
+}
 .pd-0 {
     padding:0;
 }
@@ -84,6 +91,9 @@ body, html {
 
 .mg-sm {
     margin: 10px;
+}
+.mg-0 {
+    margin: 0;
 }
 
 a {
@@ -125,7 +135,47 @@ svg {
 .content-container {
     height: 100%;
     width: 100%;
+    position: relative;
+}
+
+
+.content-header {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 600px 1fr;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 50px;
+}
+
+.main-header {
     display:grid;
-    grid-template-columns: 700px 1fr;
-    grid-template-rows: 50px 1fr;
+    grid-template-columns: 1fr 24px;
+    position: relative;
+}
+
+.content-header::before {
+    filter: blur(10px);
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.aside-header { 
+    position: relative;
+}
+
+.search-box {
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    background-color: lightgray;
+}
+
+.search-box input[type="text"] {
+    border: none;
+    background: none;
 }
