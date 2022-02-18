@@ -155,3 +155,46 @@ button:hover {
 .post-image {
   max-height: 500px;
 }
+
+/*** RIGHT BAR ***/
+.search-twitter-container {
+  max-width: 100%;
+}
+.search-twitter {
+  width: 350px;
+  height: 50px;
+  margin: 10px;
+
+  background-color: var(--light-grey);
+  border: none;
+  border-radius: 30px;
+}
+
+.search-twitter[type="text"] {
+  color: var(--dark-grey);
+  padding: 10px;
+}
+
+/* news */
+.news-bar-container {
+  padding: 10px;
+  background-color: var(--light-grey);
+  border-radius: 20px;
+  max-width: 90%;
+}
+
+.news-bar-container > a {
+  border-top: var(--dark-grey) 1px solid;
+  margin: 10px;
+}
+.news-bar-container h4 {
+  color: var(--light-pink);
+  margin: 0;
+}
+.news {
+  border-top: var(--dark-grey) 1px solid;
+}
+.news p {
+  color: var(--dark-grey);
+  font-size: 14px;
+}
