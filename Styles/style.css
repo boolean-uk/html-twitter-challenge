@@ -26,13 +26,23 @@ aside {
 /* --- MAIN STYLES --- */
 /* Left Bar */
 .logo {
-  width: 15%;
+  width: 40px;
   margin: 10px;
 }
 
 .left-bar-wrapper {
   width: 300px;
   padding: 10px;
+}
+.menu-bar {
+  padding: 10px;
+}
+
+.menu-bar > img {
+  width: 30px;
+}
+h2 > span {
+  color: var(--light-pink);
 }
 
 .profile-container {
