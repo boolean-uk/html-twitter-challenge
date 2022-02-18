@@ -2,7 +2,7 @@
     box-sizing: border-box; 
     padding: 0;
     margin: 0;
-    font-family: sans-serif;
+    font-family: "Chirp";
     scroll-behavior: smooth;
     list-style-type: none;
  }
@@ -58,7 +58,8 @@
 h1 {
 }
 h2 {
-    font-weight: 800;
+    font-size: 20px;
+    font-weight: 900;
 }
 h3 {
 }
@@ -73,6 +74,7 @@ h6 {
 }
 .style-one {
     color: var(--third-color-medium);
+    font-weight: 900;
 }
 .style-two {
     color: var(--second-color-dark);
@@ -263,6 +265,11 @@ h6 {
 .tweet h4 {
     grid-area: retweet-name;
     margin: 10px;
+}
+.tweet h6,
+.tweet .style-two {
+    display: inline-block;
+    padding-bottom: 5px;
 }
 .tweet .profile-pic-small {
     grid-area: profile-pic-small;
