@@ -1,4 +1,4 @@
-# Twitter Clone Pull request
+# Twitter Clone
 
 For this exercise, we will be building a clone of Twitter:
 
