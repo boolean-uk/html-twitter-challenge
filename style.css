@@ -41,7 +41,7 @@ body {
   grid-template-columns: auto auto;
 }
 
-.home {
+.home-header {
   justify-content: left;
 }
 
@@ -65,33 +65,47 @@ body {
   gap: 5px;
 }
 
+.left-main-grid {
+  display: grid;
+  grid-auto-rows: auto;
+  gap: 5px;
+}
+
 .left-menu {
   grid-area: left-menu;
   border: 2px solid rgb(6, 223, 24);
 }
 
-.home {
+.home-main {
+  border: 2px solid rgb(223, 6, 6);
 }
 
 .explore {
+  border: 2px solid rgb(223, 6, 6);
 }
 
 .notifications {
+  border: 2px solid rgb(223, 6, 6);
 }
 
 .messages {
+  border: 2px solid rgb(223, 6, 6);
 }
 
 .bookmarks {
+  border: 2px solid rgb(223, 6, 6);
 }
 
 .lists {
+  border: 2px solid rgb(223, 6, 6);
 }
 
 .profile {
+  border: 2px solid rgb(223, 6, 6);
 }
 
 .more {
+  border: 2px solid rgb(223, 6, 6);
 }
 
 .tweet {
