@@ -1,4 +1,4 @@
-# Twitter Clone
+# Twitter Clone Ed Withers
 
 For this exercise, we will be building a clone of Twitter:
 
