@@ -16,12 +16,17 @@
 html {
   --light-pink: rgb(255, 149, 149);
   --dark-pink: rgb(252, 85, 112);
+  --light-grey: rgb(214, 213, 213);
 }
 
 /* --- BASE STYLES --- */
 aside {
   display: grid;
   justify-content: center;
+}
+
+main {
+  border: var(--light-grey) 1px solid;
 }
 
 h2 {
@@ -101,6 +106,7 @@ button:hover {
 /* Header */
 .home-container {
   padding: 10px;
+  border-bottom: var(--light-grey) 1px solid;
 }
 
 .home-container > img {
@@ -119,8 +125,14 @@ button:hover {
   color: grey;
   font-size: 16px;
 }
+.top-section {
+  padding: 10px;
+}
 
-.media-icon  {
-  width: 30px;
-  height: 30px;
+.media-container > ul {
+  place-items: center;
+}
+.media-icon {
+  width: 20px;
+  margin: 5px;
 }
