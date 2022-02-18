@@ -40,6 +40,10 @@ body, html {
     color :var(--blue);
     fill: var(--blue);
 }
+
+.gray {
+    color : gray
+}
 .il-b {
     display: inline-block
 }
@@ -151,6 +155,9 @@ a {
 }
 
 .font-s-md {
+    font-size: 16px;
+}
+.font-s-lg {
     font-size: 20px;
 }
 
@@ -285,7 +292,7 @@ svg {
 
 .content-header::before {
     backdrop-filter: blur(4px);
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255,255,255,0.9);
     display: block;
     content: "";
     position: absolute;
@@ -301,8 +308,18 @@ svg {
     display: grid;
     grid-template-columns: 24px 1fr;
     background-color: lightgray;
+    border: 1px solid lightgray;
 }
 
+.search-box:focus-within {
+    border: 1px solid var(--blue);
+    color: var(--blue);
+    background-color: white;
+}
+
+.search-box:focus-within svg path {
+    fill: var(--blue)
+}
 .search-box input[type="text"] {
     border: none;
     background: none;
