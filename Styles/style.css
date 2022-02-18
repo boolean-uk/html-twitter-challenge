@@ -12,6 +12,11 @@
   border: blue 2px solid;
 }
 
+/* COLOR*/
+html {
+  --light-pink: rgb(255, 149, 149);
+}
+
 /* --- BASE STYLES --- */
 aside {
   display: grid;
@@ -20,6 +25,16 @@ aside {
 
 /* --- MAIN STYLES --- */
 /* Left Bar */
+.logo {
+  width: 15%;
+  margin: 10px;
+}
+
+.left-bar-wrapper {
+  width: 300px;
+  padding: 10px;
+}
+
 .profile-container {
   align-items: center;
 }
