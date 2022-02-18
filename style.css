@@ -1,14 +1,15 @@
 /* Reset  */
 
-. {
+* {
   box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
   min-height: 100vh;
   margin-left: 40px;
   margin-right: 40px;
-  padding: 0;
   scroll-behavior: smooth;
 }
 
@@ -62,13 +63,16 @@ body {
   grid-template:
     "left-menu middle-main right-column" auto /
     auto 1fr auto;
-  gap: 5px;
 }
 
 .left-main-grid {
   display: grid;
   grid-auto-rows: auto;
-  gap: 5px;
+}
+
+.left-main-grid > div {
+  display: grid;
+  grid-auto-flow: column;
 }
 
 .left-menu {
@@ -109,9 +113,11 @@ body {
 }
 
 .tweet {
+  border: 2px solid rgb(6, 223, 205);
 }
 
 .profile-info {
+  border: 2px solid rgb(128, 64, 4);
 }
 
 /* Middle Main Section  */
