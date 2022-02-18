@@ -1,0 +1,19 @@
+/* DELETE LATER */
+
+.border-red {
+  border: red 2px solid;
+}
+
+.border-green {
+  border: green 2px solid;
+}
+
+/* --- BASE STYLES --- */
+aside {
+  display: grid;
+  justify-content: center;
+}
+
+.profile-container {
+  align-items: center;
+}
