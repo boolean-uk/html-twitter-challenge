@@ -2,8 +2,9 @@
     box-sizing: border-box;
 
     --main-color: #1ea1f3;
-    --secondary-color: #f7f9fa;
-    --tertiary-color: #eceef0;
+    --second-color: #f7f9fa;
+    --third-color: #eceef0;
+    --fourth-color: #706c6c;
 }
 
 .main-color {
@@ -18,7 +19,7 @@ body {
 }
 
 main {
-    border: 1px solid var(--tertiary-color);
+    border: 1px solid var(--third-color);
 }
 
 ul {
@@ -53,6 +54,14 @@ a:active {
     font-size: 18px;
 }
 
+main {
+    background-color: var(--second-color);
+}
+
+main > * {
+    background-color: #ffffff;
+}
+
 main header h1 {
     margin: 0;
 
@@ -63,24 +72,54 @@ main img {
     border-radius: 50%;
 }
 
+main .post {
+    width: 100%;
+
+    border-radius: 15px;
+}
+
+#tweet {
+    margin-bottom: 8px;
+}
+
 main #tweet p {
     margin-top: 10px;
 
     font-size: 20px;
-    color: #706c6c;
+    color: var(--fourth-color);
 }
 
 main .tweet-options svg {
     color: var(--main-color);
 }
 
+main .feed {
+    font-size: 16px;
+}
+
+main .feed p {
+    line-height: 1.3;
+}
+
+main .feed svg {
+    color: var(--fourth-color);
+}
+
+main .feed span {
+    color: var(--fourth-color);
+}
+
+main .feed .tag {
+    color: var(--main-color);
+}
+
 .search-bar p {
     font-size: 14px;
-    color: #706c6c;
+    color: var(--fourth-color);
 }
 
 .side-bar-container {
-    background-color: var(--secondary-color);
+    background-color: var(--second-color);
     border-radius: 20px;
 
     width: 200px;
@@ -166,7 +205,7 @@ main .tweet-options svg {
 
 .search-bar {
     border-radius: 35px;
-    background-color: var(--tertiary-color);
+    background-color: var(--third-color);
 
     padding: 0px 24px;
 }
@@ -206,7 +245,7 @@ main .tweet-options svg {
 }
 
 .border-bottom {
-    border-bottom: 1px solid var(--tertiary-color);
+    border-bottom: 1px solid var(--third-color);
 }
 
 .align-center {
