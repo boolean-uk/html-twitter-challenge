@@ -26,41 +26,6 @@ h2 {
   margin: 0%;
 }
 
-.btn-text__small:link, .btn-text:link, .btn-text__small:visited, .btn-text:visited {
-  font-size: 1.4rem;
-  color: #1da0f2;
-  display: inline-block;
-  text-decoration: none;
-  border: 0.5px solid #1da0f2;
-  padding: 3px 40px;
-  border-radius: 25px;
-  -webkit-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.btn-text:hover, .btn-text__small:hover {
-  background-color: #1da0f2;
-  color: white;
-  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
-  -webkit-transform: translateY(2px) translateX(2px);
-          transform: translateY(2px) translateX(2px);
-}
-
-.btn-text:active, .btn-text__small:active {
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  background-color: white;
-  color: #1da0f2;
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
-}
-
-.btn-text__small, .btn-text__small:link, .btn-text:link, .btn-text__small:visited, .btn-text:visited {
-  font-size: 1rem;
-  padding: 2px 20px;
-}
-
 .box-vb {
   border: 2px dashed #005c00;
   background-color: lightgreen;
@@ -96,10 +61,47 @@ h2 {
   margin: 0.2rem;
 }
 
-.section-one-nav__profile-image,
-.section-one-nav img,
-.section-one-main__profile-image,
-.section-one-main img {
+.section-one-nav__tweet-button:link, .section-one-nav__tweet-button:visited,
+.section-one-main__tweet-button:link,
+.section-one-main__tweet-button:visited {
+  font-size: 1.4rem;
+  color: #1da0f2;
+  display: inline-block;
+  text-decoration: none;
+  border: 0.5px solid #1da0f2;
+  padding: 2px 40px;
+  border-radius: 25px;
+  margin: 40px 0;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.section-one-nav__tweet-button:hover,
+.section-one-main__tweet-button:hover {
+  background-color: #1da0f2;
+  color: white;
+  -webkit-box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  -webkit-transform: translateY(2px) translateX(2px);
+          transform: translateY(2px) translateX(2px);
+}
+
+.section-one-nav__tweet-button:active,
+.section-one-main__tweet-button:active {
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background-color: white;
+  color: #1da0f2;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.section-one-nav__list img {
+  height: 2rem;
+}
+
+.section-one-nav__profile-image img,
+.section-one-main__profile-image img {
   height: 2rem;
   border-radius: 50%;
 }
