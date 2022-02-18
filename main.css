@@ -7,7 +7,22 @@
 
 .text-heading {
   font-size: 2.4rem;
-  font-weight: 700;
+  font-weight: 400;
+}
+
+.text-heading-bold {
+  font-size: 2.4rem;
+  font-weight: 600;
+}
+
+.text-md-bold {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.text-md {
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 
 html {
@@ -34,11 +49,27 @@ html {
   grid-template-columns: 10rem 1fr;
 }
 
+.center-header h4 {
+  grid-column: 1/3;
+  margin-bottom: 2rem;
+}
+.center .profile-image.header-image {
+  grid-row: 2/4;
+}
+.center .header-question {
+  grid-column: 2/4;
+}
+.center .headr-reply {
+  grid-column: 2/4;
+}
+
 .left-side {
-  padding-top: 1rem;
+  padding: 1.5rem 1.2rem 0 1.2rem;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
 }
 .left-side .logo {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   padding-left: 1.2rem;
 }
 .left-side .logo .fa-twitter {
@@ -46,14 +77,15 @@ html {
   color: #4ba0eb;
 }
 .left-side .list-container {
-  width: 28rem;
+  width: 26rem;
 }
-.left-side .list-container :first-child {
+.left-side .list-container :nth-of-type(1) {
   color: #4ba0eb;
+  font-weight: 700;
 }
 .left-side .list-container .list-item {
   list-style-type: none;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
 }
 .left-side .list-container .list-item i {
   color: #363636;
@@ -97,6 +129,33 @@ html {
   display: inline-flex;
   justify-content: center;
 }
+.left-side .profile {
+  padding: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  border-radius: 20rem;
+}
+.left-side .profile-img {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.left-side .profile-img img {
+  height: 100%;
+  border-radius: 50%;
+}
+.left-side .profile-name p {
+  color: rgba(70, 68, 68, 0.664);
+}
+.left-side .profile .more .fa-ellipsis {
+  font-size: 2rem;
+}
+.left-side .profile:hover {
+  background-color: rgba(187, 183, 183, 0.609);
+  transition: all 0.3s;
+  cursor: pointer;
+}
 
 .center-wrapper-sm {
   max-width: 96rem;
@@ -126,4 +185,43 @@ html {
 
 .gap-lg-2x {
   gap: 3rem;
+}
+
+.pd-lg {
+  padding: 1.6rem;
+}
+
+.cl-fade {
+  color: rgba(70, 68, 68, 0.664);
+}
+
+.tweet-btn {
+  width: 100%;
+  display: flex;
+}
+.tweet-btn #tweet-btn {
+  text-align: center;
+  border: transparent;
+  border-radius: 20rem;
+  color: #fff;
+  font-size: 2rem;
+  padding: 1.6rem 8rem;
+  background-color: #4ba0eb;
+}
+.tweet-btn #tweet-btn:hover {
+  background-color: #3c78ad;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.profile-image {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  margin-right: 1rem;
+}
+.profile-image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
 }/*# sourceMappingURL=main.css.map */
