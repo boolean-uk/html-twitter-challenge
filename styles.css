@@ -26,6 +26,12 @@
     border: 1px solid red;
 }
 
+.icon-list > * {
+    list-style-type: none;
+    height: 50px;
+    border: 1px solid green;
+}
+
 /* TWEET LAYOUT */
 
 .tweet-feed {
@@ -39,6 +45,8 @@
 }
 
 .post {
+    margin: 5px;
+    height: 30px;
     border: 1px solid green;
 }
 
