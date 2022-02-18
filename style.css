@@ -1,5 +1,98 @@
 /* Reset  */
 
-body {
-  background-color: aqua;
+. {
+  box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* Header Section  */
+
+header {
+}
+
+.header-grid {
+}
+
+.twitter-logo {
+}
+
+.home-grid {
+}
+
+.home {
+}
+
+.stars-icon {
+}
+
+.search {
+}
+
+/* Main Section  */
+
+.main-section-grid {
+}
+
+.left-menu {
+}
+
+.home {
+}
+
+.explore {
+}
+
+.notifications {
+}
+
+.messages {
+}
+
+.bookmarks {
+}
+
+.lists {
+}
+
+.profile {
+}
+
+.more {
+}
+
+.tweet {
+}
+
+.profile-info {
+}
+
+.middle-main {
+}
+
+.make-tweet {
+}
+
+.type-tweet {
+}
+
+.tweet-icons {
+}
+
+.tweet-button {
+}
+
+.main-feed {
+}
+
+.right-column {
+}
+
+.whats-happening {
+}
+
+/* Footer Section - Not needed yet  */
