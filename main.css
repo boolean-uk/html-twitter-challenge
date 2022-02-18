@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.text-heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+}
+
+.container > * {
+  border: 2px dashed lightcoral;
+  min-height: 100vh;
+}
+
+.three-column-grid__expand-two {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
+
+.three-row-grid__expand-two {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.two-column-grid-expand-two {
+  grid-template-columns: 10rem 1fr;
+}
+
+.left-side {
+  padding-top: 1rem;
+}
+.left-side .logo {
+  margin-bottom: 2rem;
+  padding-left: 1.2rem;
+}
+.left-side .logo .fa-twitter {
+  font-size: 3rem;
+  color: #4ba0eb;
+}
+.left-side .list-container {
+  width: 28rem;
+}
+.left-side .list-container :first-child {
+  color: #4ba0eb;
+}
+.left-side .list-container .list-item {
+  list-style-type: none;
+  margin-bottom: 2rem;
+}
+.left-side .list-container .list-item i {
+  color: #363636;
+}
+.left-side .list-container .list-item img {
+  height: 2.6rem;
+  width: 2.6rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+}
+.left-side .list-container .list-item:hover {
+  color: #4ba0eb;
+  cursor: pointer;
+}
+.left-side .list-container .list-item:first-of-type i {
+  color: #4ba0eb;
+}
+.left-side .list-container .list-item:hover i {
+  color: #4ba0eb;
+}
+.left-side .list-container .list-item:last-of-type {
+  display: flex;
+  align-items: center;
+  margin-left: 0.2rem;
+  gap: 1rem;
+}
+.left-side .list-container .list-item:last-of-type .png {
+  background-image: url(../icons/more.png);
+  background-size: cover;
+  width: 3rem;
+  height: 3rem;
+  margin: 0rem 0.6rem 0rem 0.8rem;
+}
+.left-side .list-container .list-item:last-of-type:hover .png {
+  background-image: url(../icons/more-hover.png);
+  background-repeat: no-repeat;
+}
+.left-side .list-container .icon-wrapper {
+  display: inline-block;
+  width: 5rem;
+  display: inline-flex;
+  justify-content: center;
+}
+
+.center-wrapper-sm {
+  max-width: 96rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  margin: 0 auto;
+}
+
+.center-wrapper-md {
+  max-width: 140rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  margin: 0 auto;
+}
+
+.gap-sm {
+  gap: 0.4rem;
+}
+
+.gap-md {
+  gap: 0.8rem;
+}
+
+.gap-lg {
+  gap: 1.6rem;
+}
+
+.gap-lg-2x {
+  gap: 3rem;
+}/*# sourceMappingURL=main.css.map */
