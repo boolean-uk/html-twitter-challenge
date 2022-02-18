@@ -17,6 +17,7 @@ html {
   --light-pink: rgb(255, 149, 149);
   --dark-pink: rgb(252, 85, 112);
   --light-grey: rgb(214, 213, 213);
+  --dark-grey: rgb(104, 99, 99);
 }
 
 /* --- BASE STYLES --- */
@@ -31,6 +32,10 @@ main {
 
 h2 {
   margin: 10px 0;
+}
+
+span {
+  color: grey;
 }
 
 img {
@@ -98,9 +103,6 @@ button:hover {
   height: 50px;
   border-radius: 50%;
 }
-.user-name > span {
-  color: grey;
-}
 
 /*** Main ***/
 /* Header */
@@ -132,7 +134,23 @@ button:hover {
 .media-container > ul {
   place-items: center;
 }
-.media-icon {
+
+.media-icon,
+.tweet-icon {
   width: 20px;
   margin: 5px;
+}
+
+/* Tweets */
+.tweet-container {
+  padding: 10px;
+  border-top: var(--light-grey) 1px solid;
+}
+
+.option-icon {
+  width: 15px;
+}
+
+.post-image {
+  max-height: 500px;
 }
