@@ -11,7 +11,7 @@
 @font-face {
     font-family: "chirp";
     src: url("../fonts/chirp-medium-web.woff") format('woff');
-    font-weight: medium;
+    font-weight: 500;
 }
 
 @font-face {
@@ -30,21 +30,38 @@ body, html {
     margin: 0;
     font-family: 'chirp';
     font-weight: normal;
+    overscroll-behavior-y: none;
+    --blue :  #1DA1F2;
+    --border-color: rgba(128, 128, 128, 0.145);
 } 
 
 /* --------------------------------*/
 .twitter-color {
-    color :#1DA1F2
+    color :var(--blue);
+    fill: var(--blue);
 }
 .il-b {
     display: inline-block
 }
 .b-light {
-    border: 2px solid gray
+    border: 2px solid var(--border-color);
 }
 
 .b-thin {
-    border: 1px solid gray
+    border: 1px solid var(--border-color);
+}
+.b-b-thin {
+   
+    border-bottom: 1px solid var(--border-color);
+}
+.b-sd-thin {
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
+}
+
+.b-eg-thin {
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
 }
 
 .b-white {
@@ -92,6 +109,22 @@ body, html {
 .mg-sm {
     margin: 10px;
 }
+
+.mg-eg-sm {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.mg-eg-xs {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.mg-t-sm {
+    margin-top: 10px;
+}
+.mg-t-md {
+    margin-top: 15px;
+}
 .mg-0 {
     margin: 0;
 }
@@ -100,10 +133,91 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
+.grid-center {
+    height: 100%;
+    display: grid;
+    align-items: center;
+}
+.text-medium {
+        font-weight: 500;
+}
+.text-regular {
+    font-weight:normal;
+}
+
+.text-bold {
+    font-weight:bold;
+}
+
+.font-s-md {
+    font-size: 20px;
+}
+
+.font-s-xs {
+    font-size: 8px;
+}
+
+.font-s-rg {
+    font-size: 12px;
+}
+.flex {
+    display: flex;
+}
+
+.gap-sm {
+    gap : 5px;
+}
+
+.gap-md {
+    gap: 10px;
+}
+
+.gap-lg {
+    gap: 20px;
+}
+
+.center-items {
+    align-items: center;
+}
+
+/**/
+
+.tweet-button {
+    color: white;
+    fill: white;
+    background-color: var(--blue);
+    width: 80%;
+    padding: 10px 0px;
+    box-sizing: content-box;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: center
+}
+/* -------------------------------- */
+.img-fit {
+    z-index:-1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+}
+
+/* AVATARS */
+
+.avatar {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+
+}
+
 /* -------------------------------- */
 
 .container {
-    height: 100vh;
     width: 1250px;
     margin: 0 auto;
     display: grid;
@@ -129,6 +243,14 @@ svg {
     height: 35px;
     vertical-align: middle;
 } 
+.nav {
+    position: sticky;
+    top: 25px;
+}
+
+.active h2{
+    font-weight: bold;
+}
 
 /* MAIN CONTENT */
 
@@ -138,6 +260,12 @@ svg {
     position: relative;
 }
 
+
+.content {
+    display: grid;
+    grid-template-columns: 600px 1fr;
+    min-height: 100vh;
+}
 
 .content-header {
     display: grid;
@@ -156,13 +284,13 @@ svg {
 }
 
 .content-header::before {
-    filter: blur(10px);
+    backdrop-filter: blur(4px);
+    background-color: rgba(255,255,255,0.2);
     display: block;
     content: "";
     position: absolute;
     width: 100%;
     height: 100%;
-    z-index: -1;
 }
 
 .aside-header { 
@@ -178,4 +306,37 @@ svg {
 .search-box input[type="text"] {
     border: none;
     background: none;
+}
+
+.search-box input[type="text"]:focus {
+    outline: none;
+}
+
+/* FEED */
+
+.tweet {
+    display: grid;
+    grid-template-columns: 75px 1fr;
+    align-items: center;
+    justify-items: center;
+
+}
+
+.tweet .avatar {
+    align-self: baseline;
+}
+.tweet-container {
+    z-index: -1;
+}
+.tweet-options {
+    grid-auto-rows: 24px;
+    display: grid;
+    grid-auto-flow: column;
+    position: relative;
+}
+
+.tweet-option {
+    height: 100%;
+    align-items: center;
+    cursor: pointer;
 }
