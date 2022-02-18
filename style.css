@@ -29,7 +29,7 @@ body {
 .twitter-logo {
   grid-area: twitter-logo;
   padding-right: 100px;
-  border: 2px solid rgb(29, 26, 226);
+  /* border: 2px solid rgb(29, 26, 226); */
 }
 
 .home-section {
@@ -73,43 +73,92 @@ body {
 .left-main-grid > div {
   display: grid;
   grid-auto-flow: column;
+  font-weight: bolder;
 }
 
 .left-menu {
   grid-area: left-menu;
-  border: 2px solid rgb(6, 223, 24);
+  /* border: 2px solid rgb(6, 223, 24); */
 }
 
 .home-main {
-  border: 2px solid rgb(223, 6, 6);
+  /* border: 2px solid rgb(223, 6, 6); */
+}
+
+.home-button {
+  text-align: center;
+  padding-top: 10px;
+  padding-right: 10px;
 }
 
 .explore {
-  border: 2px solid rgb(223, 6, 6);
+  /* border: 2px solid rgb(223, 6, 6); */
+}
+
+.explore-button {
+  text-align: center;
+  padding-top: 10px;
+  padding-right: 10px;
 }
 
 .notifications {
-  border: 2px solid rgb(223, 6, 6);
+  /* border: 2px solid rgb(223, 6, 6); */
+}
+
+.notifications-button {
+  text-align: center;
+  padding-top: 10px;
+  padding-right: 10px;
 }
 
 .messages {
-  border: 2px solid rgb(223, 6, 6);
+  /* border: 2px solid rgb(223, 6, 6); */
+}
+
+.messages-button {
+  text-align: center;
+  padding-top: 10px;
+  padding-right: 10px;
 }
 
 .bookmarks {
-  border: 2px solid rgb(223, 6, 6);
+  /* border: 2px solid rgb(223, 6, 6); */
+}
+
+.bookmarks-button {
+  text-align: center;
+  padding-top: 10px;
+  padding-right: 10px;
 }
 
 .lists {
-  border: 2px solid rgb(223, 6, 6);
+  /* border: 2px solid rgb(223, 6, 6); */
+}
+
+.lists-button {
+  text-align: center;
+  padding-top: 10px;
+  padding-right: 10px;
 }
 
 .profile {
-  border: 2px solid rgb(223, 6, 6);
+  /* border: 2px solid rgb(223, 6, 6); */
+}
+
+.profile-button {
+  text-align: center;
+  padding-top: 10px;
+  padding-right: 10px;
 }
 
 .more {
-  border: 2px solid rgb(223, 6, 6);
+  /* border: 2px solid rgb(223, 6, 6); */
+}
+
+.more-button {
+  text-align: center;
+  padding-top: 10px;
+  padding-right: 10px;
 }
 
 .tweet {
