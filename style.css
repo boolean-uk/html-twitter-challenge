@@ -192,7 +192,7 @@ h6 {
     height: 100vh;
 }
 .left-menu-button {
-    padding: 20px;
+    padding: 20px 20px 20px 0px;
     background-color: white;
     border: none;
 }
@@ -204,11 +204,11 @@ h6 {
     color: white;
     font-weight: bold;
     font-size: 18px;
-    margin: 0px auto auto auto;
+    margin: 0 auto auto 0;
     border-radius: 20px;
     padding: 10px 50px;
     border: none;
-    width: 200px;
+    width: 240px;
 }
 .left-menu p {
     padding-top: 5px;
