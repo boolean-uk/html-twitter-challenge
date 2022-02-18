@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+.container{
+    display: grid;
+    grid-template:
+    "leftmenu  mainMenu rightmenu" 500px/
+     300px 400px 300px;
+    border:black solid 2px;
+}
