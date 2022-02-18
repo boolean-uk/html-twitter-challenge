@@ -7,7 +7,7 @@ h2 {
     margin: 0%;
 }
 
-// STYLES FOR VISUALISING GRID
+// STYLES FOR VISUALISING OF GRID
 .box-vb {
     border: 2px dashed rgb(0, 92, 0);
     background-color: lightgreen;
@@ -41,4 +41,12 @@ h2 {
     background-color: rgb(240, 214, 128);
     padding: 1rem;
     margin: 0.2rem;
+}
+
+.box-default {
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 12px;
+    background-color: rgb(255, 255, 255);
+    padding: 1rem;
+    margin: 0.5rem;
 }

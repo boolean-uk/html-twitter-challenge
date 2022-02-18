@@ -1,0 +1,110 @@
+@mixin respond($breakpoint) {
+    @if $breakpoint==phone {
+        @media only screen and (max-width: 500px) {
+            @content;
+        }
+    }
+    @if $breakpoint==tablet-portrait {
+        @media only screen and (max-width: 1005px) {
+            @content;
+        }
+    }
+    @if $breakpoint==tablet-landscape {
+        @media only screen and (max-width: 1282px) {
+            @content;
+        }
+    }
+    @if $breakpoint==big-desktop {
+        @media only screen and (min-width: 112.5em) {
+            @content;
+        } //1800
+    }
+}
+
+// PROFILE IMAGE IN NAVIGATION AND MAIN SECTION
+.section-one-nav,
+.section-one-main {
+    &__profile-image img {
+        height: 3.5rem;
+        border-radius: 50%;
+    }
+}
+
+// NAVIGATION LIST ITEMS AND ACCOUNT CONTACT SECTION
+.section-one-nav {
+    &__list img {
+        height: 2rem;
+    }
+    &__list,
+    li {
+        list-style: none;
+        margin: 1rem 0;
+        border: 0.1px solid transparent;
+        border-radius: 12px;
+        padding: 6px;
+        @include respond(tablet-landscape) {
+            color: transparent;
+            display: grid;
+            justify-items: end;
+            margin: 0;
+            padding: 0;
+        }
+    }
+    &__list li:hover {
+        text-decoration: underline;
+        color: $color-grey-dark;
+        border: 0.1px solid $color-grey-dark;
+        box-shadow: 0 5px 5px rgba($color-black, 0.15);
+        transform: translateX(3px);
+        cursor: pointer;
+        @include respond(tablet-landscape) {
+            color: transparent;
+            display: grid;
+            justify-items: end;
+            border: 0;
+            margin: 0;
+            padding: 0;
+            box-shadow: 0 0 0 transparent;
+            transform: translateX(0px);
+        }
+    }
+    &__list li:active {
+        box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
+        background-color: $color-grey-light;
+        transform: translateY(0);
+    }
+    // ALIGNING TEXT WITH ICONS
+    &__list,
+    img {
+        margin-right: 16px;
+        position: relative;
+        top: 10px;
+    }
+    //  ACCOUNT CONTACT SECTION
+    &__twitter-account-holder {
+        border-radius: 16px;
+        padding: 12px;
+    }
+    &__twitter-account-holder:hover {
+        background-color: $color-grey-dark;
+        border: 2px sold $color-black;
+        color: $color-white;
+    }
+    &__acount-contact,
+    span {
+        display: block;
+        padding: 0.2rem;
+        position: relative;
+        top: -25px;
+    }
+    &__twitter-account-holder {
+        display: grid;
+        grid-auto-flow: column;
+        align-items: baseline;
+    }
+    &__contact {
+        color: $color-grey-dark;
+        background-color: $color-black;
+        border-radius: 16px;
+    }
+}

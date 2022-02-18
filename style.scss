@@ -2,30 +2,5 @@
 @import "reset";
 @import "variables";
 @import "button";
-.section-one-nav {
-    &__list img {
-        height: 2rem;
-    }
-}
-
-.section-one-nav,
-.section-one-main {
-    &__profile-image img {
-        height: 2rem;
-        border-radius: 50%;
-    }
-}
-
-.section-one-nav {
-    &__list,
-    li {
-        list-style: none;
-        margin: 1rem 0;
-    }
-    &__list,
-    img {
-        margin-right: 16px;
-        position: relative;
-        top: 10px;
-    }
-}
+@import "navigation";
+@import "mixins";

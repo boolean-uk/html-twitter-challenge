@@ -1,4 +1,27 @@
-// BUTTON STYLES
+@mixin respond($breakpoint) {
+    @if $breakpoint==phone {
+        @media only screen and (max-width: 500px) {
+            @content;
+        }
+    }
+    @if $breakpoint==tablet-portrait {
+        @media only screen and (max-width: 1005px) {
+            @content;
+        }
+    }
+    @if $breakpoint==tablet-landscape {
+        @media only screen and (max-width: 1282px) {
+            @content;
+        }
+    }
+    @if $breakpoint==big-desktop {
+        @media only screen and (min-width: 112.5em) {
+            @content;
+        } //1800
+    }
+}
+
+// BUTTON STYLES FOR BUTTONS IN NAVIGATION AND MAIN SECTIONS
 .section-one-nav,
 .section-one-main {
     &__tweet-button {
@@ -6,13 +29,18 @@
         &:visited {
             font-size: 1.4rem;
             color: $color-primary;
-            display: inline-block;
+            // display: inline-block;
             text-decoration: none;
             border: 0.5px solid $color-primary;
-            padding: 2px 40px;
+            padding: 2px 50px;
             border-radius: 25px;
             margin: 40px 0;
             transition: all 0.2s;
+            @include respond(tablet-landscape) {
+                width: 5rem;
+                font: 1rem;
+                padding: 2px 5px;
+            }
         }
         &:hover {
             background-color: $color-primary;
@@ -29,12 +57,11 @@
     }
 }
 
-// .btn-text {
-//     &__small,
-//     &:link,
-//     &:visited {
-//         @extend .btn-text;
-//         font-size: $default-font-size;
-//         padding: 2px 20px;
-//     }
-// }
+.section-one-main {
+    &__tweet-button {
+        &:link,
+        &:visited {
+            padding: 2px 25px;
+        }
+    }
+}
