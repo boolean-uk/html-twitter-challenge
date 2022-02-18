@@ -2,28 +2,54 @@
     box-sizing: border-box;
 }
 
-/* NAMES and STARS */
+/* MAIN LAYOUT */
 .twitter-grid > * {
     min-height: 100vh;
     border: 1px solid black;
 }
-
-
-/* BEHAVIOUR */
 
 .three-columns {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
 }
 
-.border {
+/* LEFT SIDE */
+
+.left-hand-menu {
+    display: grid;
+    grid-template-rows: 80px 2fr 80px;
+    gap: 10px;
+}
+
+.left-box {
     margin: 10px;
     border: 1px solid red;
 }
 
+/* TWEET LAYOUT */
 
-.left-hand-menu {
+.tweet-feed {
     display: grid;
-    grid-template-rows: 50px 1fr 50px;
-    gap: 10px;
+    grid-template-rows: 80px 100px 100px 1fr;
 }
+
+.middle-box {
+    margin: 10px;
+    border: 1px solid red;
+}
+
+.post {
+    border: 1px solid green;
+}
+
+/* RIGHT SIDE */
+
+.right-side-bars {
+    display: grid;
+}
+
+.right-box {
+    margin: 10px;
+    border: 1px solid red;
+}
+
