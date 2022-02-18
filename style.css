@@ -1,1 +1,38 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+.center-wrapper {
+  padding: 1rem 8rem;
+  margin: 0 auto;
+}
+
+.three-column-expand-two {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr auto;
+      grid-template-columns: auto 1fr auto;
+}
+
+.one-column-auto-rows {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.box-bg {
+  border: 2px dashed green;
+  background-color: lightblue;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+.box-sm {
+  border: 2px dashed red;
+  background-color: lightgreen;
+  padding: 1rem;
+  margin: 0.2rem;
+}
+/*# sourceMappingURL=style.css.map */

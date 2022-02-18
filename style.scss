@@ -1,0 +1,15 @@
+@import "grid";
+@import "reset";
+.box-bg {
+  border: 2px dashed green;
+  background-color: lightblue;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+.box-sm {
+  border: 2px dashed red;
+  background-color: lightgreen;
+  padding: 1rem;
+  margin: 0.2rem;
+}
