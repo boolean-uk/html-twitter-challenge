@@ -58,9 +58,16 @@ body {
 /* Main Section  */
 
 .main-section-grid {
+  display: grid;
+  grid-template:
+    "left-menu middle-main right-column" auto /
+    auto 1fr auto;
+  gap: 5px;
 }
 
 .left-menu {
+  grid-area: left-menu;
+  border: 2px solid rgb(6, 223, 24);
 }
 
 .home {
@@ -94,6 +101,8 @@ body {
 }
 
 .middle-main {
+  grid-area: middle-main;
+  border: 2px solid rgb(130, 2, 153);
 }
 
 .make-tweet {
@@ -112,6 +121,8 @@ body {
 }
 
 .right-column {
+  grid-area: right-column;
+  border: 2px solid rgb(197, 105, 18);
 }
 
 .whats-happening {
