@@ -64,6 +64,7 @@ img {
 .menu-bar {
   padding: 10px;
   cursor: pointer;
+  align-items: center;
 }
 
 h2 > span {
