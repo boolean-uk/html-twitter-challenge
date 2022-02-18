@@ -8,12 +8,20 @@
   border: green 2px solid;
 }
 
+.border-blue {
+  border: blue 2px solid;
+}
+
 /* --- BASE STYLES --- */
 aside {
   display: grid;
   justify-content: center;
 }
 
+/* --- MAIN STYLES --- */
+/* Left Bar */
 .profile-container {
   align-items: center;
 }
+
+/* Main */
