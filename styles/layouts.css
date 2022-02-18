@@ -1,0 +1,22 @@
+/* MAIN LAYOUTS */
+
+.center-wrapper {
+    max-width: 960px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+}
+
+.two-column-grid_expand-two {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    
+    gap: 24px;
+    
+    align-items: center;
+}
+
+.three-column-grid__expand-two {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}

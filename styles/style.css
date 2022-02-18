@@ -1,0 +1,58 @@
+/* FOR TESTTING PURPOSES - DELETE LATER */
+.center-wrapper > * {
+    border: 1px solid black;
+}
+
+
+* {
+    box-sizing: border-box;
+
+    --main-color: #1ea1f3;
+}
+
+.main-color {
+    color: var(--main-color);
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+
+    font-family: sans-serif;
+}
+
+
+/* MAIN STYLES */
+
+.left-menu {
+    padding: 12px 24px;
+}
+
+.left-menu h2 {
+    font-size: 24px;
+}
+
+.tweet-button-lg {
+    display: block;
+
+    text-decoration: none;
+    color: #ffffff;
+    text-align: center;
+
+    padding: 16px;
+    
+    background-color: var(--main-color);
+
+    border-radius: 35px;
+}
+
+.tweet-button-lg:hover {
+    background-color: #1ea1f398;
+
+}
+
+/* UTILITY STYLES */
+
+.margin-bottom-md {
+    margin-bottom: 12px;
+}
