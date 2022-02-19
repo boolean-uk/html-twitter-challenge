@@ -125,6 +125,7 @@ main {
     border-right: 2px solid var(--dark-grey);
     max-height: 100vh;
     overflow-y: scroll;
+    overflow-x: hidden;
 
 }
 /* MAIN GRID SETUP starts here */
