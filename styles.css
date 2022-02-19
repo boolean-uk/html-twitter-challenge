@@ -15,6 +15,15 @@
 
 /* LEFT SIDE */
 
+.two-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.align-center {
+    align-items: center;
+}
+
 .left-hand-menu {
     display: grid;
     grid-template-rows: 80px 2fr 80px;
@@ -24,12 +33,6 @@
 .left-box {
     margin: 10px;
     border: 1px solid red;
-}
-
-.icon-list > * {
-    list-style-type: none;
-    height: 50px;
-    border: 1px solid green;
 }
 
 /* TWEET LAYOUT */
