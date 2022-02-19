@@ -11,6 +11,19 @@ li {
     list-style: none;
 }
 
+/* MEDIA QUERIES starts here */
+@media (max-width: 1260px) {
+    .right-panel {
+        width: 300px;
+    }
+}
+@media (max-width: 1180px) {
+    .right-panel {
+        display: none;
+    }
+}
+/* MEDIA QUERIES ends here */
+
 /* SCROLL BEHAVIOUS and HOVER starts here */
 ::-webkit-scrollbar {
     width: 0px;
