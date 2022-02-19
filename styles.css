@@ -10,10 +10,16 @@
 
 .three-columns {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 1fr 3fr 1fr;
 }
 
 /* LEFT SIDE */
+
+.center-wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0, auto;
+}
 
 .two-columns {
     display: grid;
@@ -34,6 +40,11 @@
 .left-box {
     margin: 10px;
     border: 1px solid red;
+}
+
+.picture-sm {
+    height: 40px;
+    width: 40px;
 }
 
 /* TWEET LAYOUT */
