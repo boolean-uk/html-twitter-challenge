@@ -1,20 +1,42 @@
 .center {
-  //   border: 2px dashed blue;
   overflow-y: scroll;
-  &-header {
-    padding: 1rem 1.6rem 0rem 1.6rem;
-    h4 {
-      grid-column: 1/3;
-      margin-bottom: 2rem;
-    }
+  position: sticky;
+  top: 0;
+  height: 100vh;
 
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-row: 1/2;
+    grid-column: 1/4;
+    position: sticky;
+    top: 0;
+    bottom: 100%;
+    z-index: 999999;
+    padding: 0.8rem 1.6rem 0.8rem 1.6rem;
+    background-color: rgba(255, 255, 255, 0.596);
+    backdrop-filter: blur(6px);
     .icon {
       justify-self: flex-end;
+      cursor: pointer;
+
+      padding: 0.4rem 0.6rem;
+      &:hover {
+        background-color: $color-hover-light;
+        align-self: start;
+        border-radius: 50%;
+        transition: background-color 0.3s;
+      }
     }
   }
 
+  &-header {
+    padding: 0.2rem 1.6rem 0rem 1.6rem;
+  }
+
   .profile-image.header-image {
-    grid-row: 2/4;
+    grid-row: 1/3;
   }
   .header-post {
     margin: 1.5rem 0rem 1rem 0rem;
@@ -91,5 +113,9 @@
       transition: all 0.3s;
       background-color: $color-hover-light;
     }
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
   }
 }
