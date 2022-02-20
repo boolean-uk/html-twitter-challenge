@@ -31,6 +31,7 @@ body, html {
     font-family: 'chirp';
     font-weight: normal;
     overscroll-behavior-y: none;
+    --gray : #f6f9f9;
     --blue :  #1DA1F2;
     --border-color: rgba(128, 128, 128, 0.145);
 } 
@@ -72,6 +73,11 @@ body, html {
     border-color: white
 }
 
+.b-r-sm {
+    border-radius: 20%;
+}
+
+
 .b-r-md {
     border-radius: 30px;
 }
@@ -109,14 +115,27 @@ body, html {
     padding-left: 20px;
     padding-right: 20px;
 }
+.mg-sd-sm {
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
 .mg-sm {
     margin: 10px;
 }
 
+.mg-eg-md {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
 .mg-eg-sm {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+.mg-eg-xd {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 .mg-eg-xs {
     margin-top: 5px;
@@ -155,7 +174,7 @@ a {
 }
 
 .font-s-md {
-    font-size: 16px;
+    font-size: 15px;
 }
 .font-s-lg {
     font-size: 20px;
@@ -164,14 +183,23 @@ a {
 .font-s-xs {
     font-size: 8px;
 }
-
+.font-s-sm {
+    font-size: 10px;
+}
 .font-s-rg {
-    font-size: 12px;
+    font-size: 13px;
 }
 .flex {
     display: flex;
 }
 
+.space-between { 
+    justify-content: space-between;
+}
+
+.top {
+    align-self: flex-start;
+}
 .gap-sm {
     gap : 5px;
 }
@@ -188,6 +216,10 @@ a {
     align-items: center;
 }
 
+.self-center {
+    align-items: center;
+}
+
 /**/
 
 .tweet-button {
@@ -201,9 +233,16 @@ a {
     margin: 0 auto;
     justify-content: center
 }
+
+.follow-button {
+    background: black;
+    color: white;
+    border: none;
+    height: min-content;
+    align-self: center;
+ }
 /* -------------------------------- */
 .img-fit {
-    z-index:-1;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -219,7 +258,8 @@ a {
     position: relative;
     overflow: hidden;
     border-radius: 50%;
-
+    align-self: baseline;
+    justify-self: center;
 }
 
 /* -------------------------------- */
@@ -275,6 +315,7 @@ svg {
 }
 
 .content-header {
+    z-index: 1;
     display: grid;
     align-items: center;
     grid-template-columns: 600px 1fr;
@@ -307,8 +348,8 @@ svg {
 .search-box {
     display: grid;
     grid-template-columns: 24px 1fr;
-    background-color: lightgray;
-    border: 1px solid lightgray;
+    background-color: var(--gray);
+    border: 1px solid var(--gray);
 }
 
 .search-box:focus-within {
@@ -334,14 +375,9 @@ svg {
 .tweet {
     display: grid;
     grid-template-columns: 75px 1fr;
-    align-items: center;
-    justify-items: center;
 
 }
 
-.tweet .avatar {
-    align-self: baseline;
-}
 .tweet-container {
     z-index: -1;
 }
@@ -357,3 +393,41 @@ svg {
     align-items: center;
     cursor: pointer;
 }
+
+/* TRENDS */
+.trends {
+overflow: hidden;
+}
+
+.option {
+    transition: background-color 0.2s;
+    cursor:pointer;
+}
+.option:hover {
+    background-color: rgba(0,0,0,0.03);
+}
+
+.trends .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trending-item {
+    display: flex;
+    justify-content: space-between;
+}
+/* MODALS */
+.modal {
+    background-color: var(--gray);
+}
+.more {
+  
+}
+
+/* SUGGESTIONS */
+.suggestion-item{
+    display: grid;
+    grid-template-columns: min-content 1fr min-content;
+    align-items: center;
+} 
