@@ -27,19 +27,17 @@
     &__tweet-button {
         &:link,
         &:visited {
-            font-size: 1.4rem;
+            font-size: 1.2rem;
             color: $color-primary;
-            // display: inline-block;
             text-decoration: none;
             border: 0.5px solid $color-primary;
-            padding: 2px 50px;
+            padding: 2px 5px;
             border-radius: 25px;
-            margin: 40px 0;
+            margin: 5px 0;
             transition: all 0.2s;
             @include respond(tablet-landscape) {
-                width: 5rem;
-                font: 1rem;
-                padding: 2px 5px;
+                width: 4.2rem;
+                font-size: 1.2rem;
             }
         }
         &:hover {
@@ -57,11 +55,17 @@
     }
 }
 
+.section-one-nav {
+    display: grid;
+    place-items: center;
+}
+
 .section-one-main {
     &__tweet-button {
         &:link,
         &:visited {
-            padding: 2px 25px;
+            font-size: 1rem;
+            padding: 0.4rem;
         }
     }
 }
