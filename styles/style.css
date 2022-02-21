@@ -161,6 +161,37 @@ main .feed .tag {
     color: var(--main-color);
 }
 
+main .feed button {
+    border-radius: 50%;
+
+    padding: 8px 8px 3px 8px;
+}
+
+main .tweet-options button:hover,
+main .feed button:hover {
+    background-color: #1ea1f31a;
+}
+
+main .feed button svg:hover {
+    fill: var(--main-color);
+}
+
+main .feed .retweet:hover {
+    background-color: #45db1f1a;
+}
+
+main .feed .retweet svg:hover {
+    fill: #47bb2a;
+}
+
+main .feed .like:hover {
+    background-color: #f918801a;
+}
+
+main .feed .like svg:hover {
+    fill: #f91880;
+}
+
 main .bottom-nav {
     position: sticky;
     bottom: 0;
