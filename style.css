@@ -324,6 +324,7 @@ a {
 .icons-list-grid {
   display: grid;
   grid-auto-flow: column;
+  margin-left: 25px;
 }
 
 /* .tweet-icons {
