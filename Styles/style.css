@@ -28,7 +28,7 @@ aside {
 }
 
 main {
-  min-width: 600px;
+  min-width: 300px;
   border: var(--light-grey) 1px solid;
   overflow: scroll;
 }
@@ -168,6 +168,7 @@ button:hover {
 }
 
 .post-image {
+  min-width: 300px;
   max-height: 500px;
 }
 
