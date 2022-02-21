@@ -13,7 +13,7 @@
  }
  html {
     --first-color-light: white;
-    --first-color-medium: ;
+    --first-color-medium: #dddddd ;
     --first-color-dark: ;
     --second-color-light: #f7f9fa;
     --second-color-medium: #eceef0;
@@ -26,6 +26,7 @@
 .links {
     color: black;
     text-decoration: none;
+    transition: background-color .5s;
 }
 .center-wrapper {
     max-width: 2000px;
@@ -136,6 +137,16 @@ h6 {
 .main-container {
     display: grid;
     grid-template-rows: var(--header-height) 170px 20px auto;
+
+    overflow-x: auto;
+    max-height: 100vh;
+    overflow-y: scroll;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+}
+.main-container::-webkit-scrollbar { 
+    width: 0;
+    height: 0;
 }
 .whats-happening-box {
     display: grid;
@@ -150,6 +161,7 @@ h6 {
     grid-template-rows: var(--header-height) 570px 50px 1fr 55px;
 
     height: 100vh;
+    max-height: 100vh;
 }
 .right-side-bar-container {
     grid-template-rows: var(--header-height) minmax(400px, auto) 400px;
@@ -220,8 +232,11 @@ vertical-align: middle;
     height: 100vh;
     padding-right: 12px;
 }
+.left-menu h2 {
+    margin-top:  3px;
+}
 .left-menu-button {
-    padding: 20px 20px 20px 10px;
+    padding: 20px 20px 20px 20px;
     background-color: white;
     border: none;
     margin-right: auto;
@@ -234,7 +249,6 @@ vertical-align: middle;
     color: white;
     font-weight: bold;
     font-size: 18px;
-    margin: 0 auto auto 0;
     border-radius: 20px;
     padding: 10px 50px;
     border: none;
@@ -382,17 +396,26 @@ vertical-align: middle;
     padding-left: 10px;
 }
 /* RIGHT SIDE BAR */
-
+.news li,
+.someone {
+    transition: background-color .5s;
+ }
 
 /* RESPONSIVE */
 .links :hover {
    background-color: var(--second-color-medium);
    border-radius: 30px;
 }
-.tweet-button :hover {
-    background-color: var(--third-color-dark);
+.news li :hover,
+.someone :hover {
+    background-color: var(--first-color-medium);
  }
-
+.tweet-button :hover {
+    background-color: #235a8d;
+ }
+ .tweet-button-light-small :hover {
+    background-color: #235a8d;
+ }
  /* MEDIA */
  @media screen and (max-width: 1580px) {
     /*collapses left menu to just icons, changes tweet button to icon*/
