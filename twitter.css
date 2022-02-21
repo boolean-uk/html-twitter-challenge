@@ -103,19 +103,18 @@ font-size: 20px
 .tweet{
     background-color: #1DA1F2;
     border-radius: 50px;
-    height: 50px;
-    width: 280px;    
-    
+    height: 50px;    
+    width: 250px;
+    margin-top: 13px;
 }
-#h3-tweet{
-    display: grid;
+.tweet > *{
+    margin:0px;
+    justify-content: center;
+    text-align: center;
+    padding: 12px;
     color: white;
-    border: 0px;
-    margin-top: 40px;
-    place-content: center;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-
 #small-profile{
     height: 35px;
     width: 35px;
@@ -123,6 +122,14 @@ font-size: 20px
 .profile-name > *{
     margin: 0px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: #1DA1F2;
 }
 
 
@@ -212,6 +219,13 @@ font-size: 20px
     border-radius: 50px;
     align-items: center;
 }
+.search-bar h3{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: lighter;
+    opacity: 0.5;
+    font-size: 15px;
+}
+
 .magnifying{
     height: 30px;
     width: 30px;
@@ -229,4 +243,12 @@ font-size: 20px
 .box-right{
     border-radius: 25x;
     padding: 25px;
+}
+.mag{
+    height: 15px;
+    width: 15px;
+    margin-left: 15px;
+}
+.stylebox{
+    margin-left: 15px;
 }
