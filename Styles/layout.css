@@ -23,6 +23,7 @@
 .grid-auto-flow__row {
   display: grid;
   grid-auto-flow: row;
+  gap: 10px;
 }
 
 .centered {
