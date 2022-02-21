@@ -42,6 +42,15 @@ a:active {
     color: var(--main-color);
 }
 
+button {
+    border-style: none;
+    background-color: #ffffff;
+}
+
+button:hover {
+    background-color: var(--third-color);
+}
+
 #logo {
     padding-left: 12px;
 }
@@ -100,10 +109,11 @@ main section img {
     border-radius: 50%;
 }
 
-main li a {
+main .tweet-options button {
     border-radius: 50%;
-    padding: 8px 6px 0px 6px;
+    padding: 8px 8px 3px 8px;
     margin-left: -10px;
+    margin-right: 6px;
 }
 
 main .tweet-options svg {
@@ -193,10 +203,9 @@ main .bottom-nav a {
 
 /* COMPONENT STYLES */
 #tweet-button {
-    text-decoration: none;
     color: #ffffff;
-    text-align: center;
     font-size: 14px;
+    font-weight: 600;
 
     padding: 12px 36px;
     
