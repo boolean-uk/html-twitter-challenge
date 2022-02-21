@@ -109,6 +109,11 @@ h2 {
 .book-cover {
     margin-left: 10px;
 }
+
+button:hover {
+    background-color: lightskyblue;
+    opacity: 1;
+}
 /* RIGHT SIDE */
 
 .right-box {
