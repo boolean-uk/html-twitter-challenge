@@ -27,12 +27,32 @@
     &__tweet {
         display: grid;
         grid-auto-flow: row;
-        border-bottom: 2px solid $color-primary;
     }
     &__tweet-profile-message {
         display: grid;
         grid-template-columns: 4rem 18rem;
         align-items: center;
         border-bottom: 2px solid $color-primary;
+    }
+}
+
+.individual-tweet {
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    align-items: center;
+    border-top: 2px solid $color-primary;
+    &__name {
+        font-weight: 700;
+    }
+    &__name-at,
+    &__reply {
+        color: $color-grey-dark;
+    }
+    &__reply-blue {
+        color: $color-primary;
+    }
+    &__tweet-image img {
+        width: 100%;
+        height: auto;
     }
 }
