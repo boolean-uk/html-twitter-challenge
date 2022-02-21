@@ -5,7 +5,36 @@
 .container{
     display: grid;
     grid-template:
-    "leftmenu  mainMenu rightmenu" 500px/
-     300px 400px 300px;
+    "leftmenu   mainMenu rightmenu" 500px/
+     300px  50px 400px 300px;
     border:black solid 2px;
 }
+.icons{
+    display: grid;
+    grid-template-rows: repeat(5 ,auto);
+
+}
+body{
+    background:chocolate;
+    font-family: 'Open Sans', sans-serif;
+    color: cornsilk;
+  }
+  .responsive-grid {
+    display: grid;
+    grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 15px;
+  }
+li{ 
+      padding: 2px;
+    border: 2px solid green;
+    list-style: none;
+  width: fit-content;
+    height: 50px}
+
+    
+    .iconrow{
+        display: grid;
+    grid-auto-flow: column;
+      border: solid black 1px ;
+      align-self: end 3;
+    }
