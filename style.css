@@ -1,68 +1,19 @@
 * {
-    box-sizing: border-box;
-    color: white;
-    background-color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0;
-    margin: 0;
+  box-sizing: border-box;
+  color: white;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.inline {
+  display: inline;
 }
 
 li {
-    list-style: none;
+  list-style: none;
 }
-
-/* MEDIA QUERIES starts here */
-@media (max-width: 1260px) {
-    .right-panel {
-        width: 300px;
-    }
-}
-@media (max-width: 1180px) {
-    .right-panel {
-        display: none;
-    }
-}
-/* MEDIA QUERIES ends here */
-
-/* SCROLL BEHAVIOUS and HOVER starts here */
-::-webkit-scrollbar {
-    width: 0px;
-  }
-
-::-webkit-scrollbar-track {
-    background: var(--twitter-blue)
-
-  }
-  
-::-webkit-scrollbar-thumb {
-    background: black
-  }
-  
-::-webkit-scrollbar-thumb:hover {
-    background: black;
-  }
-
-.hover_round:hover {
-    background-color: var(--dark-grey);
-  }
-
-.hover_round {
-    display: grid;
-    grid-template-columns: auto auto;
-    padding: 10px;
-    border-radius: 100px;
-}
-
-.hover_square:hover {
-    background-color: var(--hover-square-grey)
-} 
-
-.transparent {
-    background-color: transparent;
-}
-
-
-/* SCROLL BEHAVIOUS and HOVER ends here */
 
 /* this is the coloured border, will be removed - its only here because it helps me to visualise the layout */
 
@@ -73,374 +24,417 @@ li {
 
 /* this is the coloured border, will be removed */
 
-/* PRIMARY COLOURS and FONTS SIZES starts here*/
+/* MEDIA QUERIES starts here */
+@media (max-width: 1260px) {
+  .right-panel {
+    width: 300px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .right-panel {
+    display: none;
+  }
+}
+/* MEDIA QUERIES ends here */
+
+/* SCROLL BEHAVIOUS and HOVER starts here */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+.hover_round:hover {
+  background-color: var(--dark-grey);
+}
+
+.hover_round {
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 10px;
+  border-radius: 100px;
+}
+
+.hover_square:hover {
+  background-color: var(--hover-square-grey);
+}
+
+.hover_square_more:hover {
+  background-color: var(--dark-grey);
+}
+
+.hover_blue:hover {
+  background-color: var(--hover-blue);
+  color: var(--hover-bright-blue);
+}
+
+.hover_green:hover {
+  background-color: var(--hover-green);
+  color: var(--hover-bright-green);
+}
+
+.hover_red:hover {
+  background-color: var(--hover-red);
+  color: var(--hover-bright-red);
+}
+
+.hover_underline:hover {
+  text-decoration: underline;
+}
+/* SCROLL BEHAVIOUS and HOVER ends here */
+
+/* COLOURS and FONT SIZES starts here*/
 html {
-    --twitter-blue: #1d9bf0;
-    --dark-grey: #15181c;
-    --grey- : #6e767d;
-    --light-grey: #eff3f4;
-    --hover-square-grey: #1c1f23;
+  --twitter-blue: #1d9bf0;
+  --dark-grey: #15181c;
+  --grey-: #6e767d;
+  --light-grey: #eff3f4;
+  --hover-square-grey: #1c1f23;
+  --hover-blue: rgba(10, 23, 31, 255);
+  --hover-bright-blue: rgba(26, 136, 210, 255);
+  --hover-green: rgba(7, 26, 20, 255);
+  --hover-bright-green: rgba(4, 174, 115);
+  --hover-red: rgba(32, 9, 20, 255);
+  --hover-bright-red: #d0156b;
 }
 
 h1 {
-    margin: 0;
-    font-size: 20px;
-    font-weight: bold;
-    display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 100%;
+  margin: 0;
 }
 
 h2 {
-    font-size: 18px;
+  font-size: 20px;
+  font-weight: 100;
+  margin-left: 15px;
 }
-
 
 h3 {
-    font-size: 14px;
-    font-weight: bold; 
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.right-panel p {
-    font-size: 12px;
-    color: var(--grey-)
+h4 {
+  font-size: 14px;
+}
+
+p {
+  font-size: 14px;
 }
 
 .show_more {
-    color: var(--twitter-blue);
-    font-size: 14px;
+  color: var(--twitter-blue);
+  font-size: 14px;
+  padding: 16px 16px 16px 16px;
 }
 
-/* PRIMARY COLOURS and FONTS SIZES ends here*/
+.at_account {
+  font-size: 14px;
+  font-weight: lighter;
+  color: var(--grey-);
+}
 
+.sm_grey {
+  font-size: 13px;
+  color: var(--grey-);
+}
+/* PRIMARY COLOURS and FONT SIZES ends here*/
 
 /* MAIN GRID SETUP starts here */
-
 .container {
-    display: grid;
-    grid-template-columns: auto 250px 600px 370px auto;
-    gap: 5px;
-    margin: 0;
-    height: 100vh;
-}
-
-.nav {
-    display: grid;
-    grid-template-rows: 1fr auto;
-    padding: 5px;
-    max-height: 100vh;
-  
-
-}
-
-main {
-    display: grid;
-    grid-template-rows: 56px 1fr;
-    border-left: 2px solid var(--dark-grey);
-    border-right: 2px solid var(--dark-grey);
-    max-height: 100vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
-
+  display: grid;
+  grid-template-columns: auto 250px 600px 370px auto;
+  gap: 5px;
+  margin: 0;
+  height: 100vh;
 }
 /* MAIN GRID SETUP starts here */
 
 /* LEFT NAV BAR starts here */
-.nav-items {
-    height: auto;
-    margin: 5px 0px 5px 30px;
-    display: grid;
-    align-items: center;
-    justify-content: left;
+.nav {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  padding: 5px;
+  max-height: 100vh;
 }
 
+.nav-items {
+  height: auto;
+  margin: 10px 0px 5px 25px;
+  display: grid;
+  align-items: center;
+  justify-content: left;
+}
 
 .nav-items p {
-    margin: 0px 5px 0px 15px;
-    padding-top: 3px;
+  margin: 0px 5px 0px 15px;
+  padding-top: 3px;
 }
 
 .logo {
-    width: 30px;
-    height: 30px;
-    margin: 10px 0px 0px 30px
+  width: 30px;
+  height: 30px;
+  margin: 10px 0px 0px 40px;
 }
 
 .large_tweet {
-    background-color: var(--twitter-blue);
-    width: 200px;
-    height: 45px;
-    border-radius: 50px;
-    display: grid;
-    place-items: center;
-    font-size: 15px;
-    font-weight: bold;
-    margin-left: 20px;
-    margin-top: 15px;
+  background-color: var(--twitter-blue);
+  width: 200px;
+  height: 45px;
+  border-radius: 50px;
+  display: grid;
+  place-items: center;
+  font-size: 15px;
+  font-weight: bold;
+  margin-left: 20px;
+  margin-top: 15px;
 }
 
 .account {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    align-items: center;
-    padding: 0px;
-    margin-bottom: 5px;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  padding: 0px;
 }
 
 .account-details {
-    display: grid;
-    align-items: center;
-    row-gap: 3px;
-
+  display: grid;
+  align-items: center;
+  row-gap: 3px;
 }
 
-.at_account {
-    font-size: 13px;
-    font-weight: lighter;
-    color: var(--grey-);
+.account-icon {
+  width: 45px;
+  height: 45px;
+  background-color: #c2185b;
+  border-radius: 50px;
+  margin: 10px;
 }
 
 .icon-right-padding {
-    margin-right: 10px;
+  margin-right: 10px;
 }
-
-
-
 /* LEFT NAV BAR ends here */
 
 /* MAIN - HEADER and STATUS bar - starts here */
+main {
+  display: grid;
+  grid-template-rows: 56px 1fr;
+  border-left: 2px solid var(--dark-grey);
+  border-right: 2px solid var(--dark-grey);
+  max-height: 100vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
 
 .header {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    align-items: center;
-    padding: 0px 15px 0px 15px;
-    height: 56px;
-
-    position:fixed;
-    top:0;
-    width: 600px;
-
-    background-color: rgba(0, 0, 0, 0.5);
-    backdrop-filter: blur(15px);
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding: 0px 15px 0px 15px;
+  height: 56px;
+  position: fixed;
+  top: 0;
+  width: 596px;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(15px);
 }
-
-
-h1 {
-    opacity: 100%;
-    color: white;
-    font-weight: bold;
-}
-
-
-
-
-
-
 
 .content {
-    margin-top: 56px;
+  margin-top: 56px;
 }
 
 .status-bar {
-    display: grid;
-
+  display: grid;
 }
 
 .blue_icon {
-    color: var(--twitter-blue);
-    margin-right: 10px;
+  color: var(--twitter-blue);
+  margin-right: 12px;
 }
 
 .status-bar-inline {
-    display: grid;
-    grid-template-columns: auto 1fr;
+  display: grid;
+  grid-template-columns: auto 1fr;
 }
 
 .type-here {
-    display: grid;
-    align-items: center;
-    padding-left: 10px;
-    color: var(--grey-);
-    font-size: 18px;
+  display: grid;
+  align-items: center;
+  padding-left: 10px;
+  color: var(--grey-);
+  font-size: 18px;
 }
 
 .two_column_grid {
-    display: grid;
-    grid-template-columns: 1fr auto;
-    margin: 10px 10px 10px 65px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  margin: 10px 10px 10px 65px;
 }
 
-.list_items_in_row{
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: left;
-    align-items: center;
+.list_items_in_row {
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: left;
+  align-items: center;
 }
 
 .small-tweet {
-    background-color: var(--twitter-blue);
-    width: 80px;
-    height: 35px;
-    border-radius: 50px;
-    display: grid;
-    place-items: center;
-    font-size: 14px;
-    font-weight: bold;
+  background-color: var(--twitter-blue);
+  width: 80px;
+  height: 35px;
+  border-radius: 50px;
+  display: grid;
+  place-items: center;
+  font-size: 14px;
+  font-weight: bold;
 }
 /* MAIN - HEADER and STATUS bar - ends here */
 
 /* MAIN - CONTENT - starts here */
 .more-tweets {
-    height: 48px;
-    display: grid;
-    place-items: center;
-    border-top: 2px solid var(--dark-grey);
+  display: grid;
+  place-items: center;
+  border-top: 2px solid var(--dark-grey);
 }
 
-
 .card {
-    min-height: 200px;
-    border-top: 2px solid var(--dark-grey);
-    display: grid;
-    padding: 12px 16px 12px 16px;
-    grid-template-columns: 65px auto;
+  min-height: 200px;
+  border-top: 2px solid var(--dark-grey);
+  display: grid;
+  padding: 12px 16px 12px 16px;
+  grid-template-columns: 65px auto;
 }
 
 .tweet-head {
-    height: 55px;
-    display: grid;
-    align-items: center;
+  display: grid;
+  align-items: center;
+  line-height: 20px;
+  margin-bottom: 10px;
 }
 
 .align_right {
-    grid-template-rows: 55px auto 50px;
+  grid-template-rows: auto auto 50px;
 }
 
 .content_image {
-    max-width: 500px;   
-    border-radius: 20px;
-    justify-self: right;
+  max-width: 500px;
+  border-radius: 20px;
+  justify-self: right;
+  max-height: 650px;
 }
 
-
 .card .list_items_in_row {
-    justify-content: space-between;
-    padding-right: 100px;
-    margin-top: 2px;
-    height: 32px;
+  justify-content: space-between;
+  padding-right: 100px;
+  margin-top: 2px;
+  height: 32px;
+}
 
+.hover_blue:hover,
+.hover_green:hover,
+.hover_red:hover {
+  border-radius: 50px;
+  padding: 5px;
 }
 /* MAIN - CONTENT - ends here */
 
 /* RIGHT PANEL starts here */
-
 .right-panel {
-    padding: 5px 0px 0px 30px;
-    max-height: 100vh;
-}
-.scroll {
-    max-height:  calc(100vh - 68px);
-    overflow-y: scroll;
+  padding: 5px 0px 0px 25px;
+  max-height: 100vh;
 }
 
+.scroll {
+  max-height: calc(100vh - 68px);
+  overflow-y: scroll;
+}
 
 .round {
-    background-color: var(--dark-grey);
-    border-radius: 25px;
-    margin-bottom: 15px;
+  background-color: var(--dark-grey);
+  border-radius: 20px;
+  margin-bottom: 15px;
 }
 
-.round * {
-    background-color: var(--dark-grey)
+.round_bottom {
+  border-radius: 0px 0px 25px 25px;
+}
+
+.round > * {
+  background-color: var(--dark-grey);
 }
 
 .search-bar {
-    display: grid;
-    grid-auto-flow: column;
-    justify-content: left;
-    align-items: center;
-    padding: 10px;
-    padding-left: 20px;
-
+  display: grid;
+  grid-auto-flow: column;
+  justify-content: left;
+  align-items: center;
+  padding: 10px;
+  padding-left: 20px;
 }
 
 .search-bar * {
-    color: var(--grey-);
+  color: var(--grey-);
 }
-
 
 .right-panel .search-bar p {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
-.trends-head{
-    display: grid;
-    grid-template-columns: 1fr auto;
-    border-radius: 25px 25px 0px 0px;
-}
-
-.round-top-corners {
-    border-radius: 25px 25px 0px 0px;
-}
-
-.round-bottom-corners {
-    border-radius: 0px 0px 25px 25px;
+.right_panel_heads {
+  display: grid;
+  grid-template-columns: 1fr auto;
 }
 
 .trends_item {
-    padding: 12px 16px 12px 16px;
-    line-height: 20px;
+  line-height: 20px;
 }
 
+.two_col_1fr_auto {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
 
 .follow {
-    padding: 15px 15px 15px 20px;
-    line-height: 25px;
+  line-height: 25px;
 }
 
+.right_items_padding {
+  padding: 12px 16px 12px 16px;
+}
+
+.sm_article_img {
+  width: 68px;
+  height: 68px;
+  border-radius: 15px;
+  background-color: aqua;
+  margin-left: 10px;
+}
 
 .follow_button {
-    background-color: var(--light-grey);
-    color: black;
-    font-weight: bold;
-    width: 75px;
-    height: 30px;
-    border-radius: 50px;
-    display: grid;
-    place-items: center;
-}
-
-.terms_list {
-    padding: 10px;
-    padding-bottom: 50px;
-}
-
-.terms_list * {
-    display: inline-block;
-    font-size: 12px;
-    color: var(--grey-);
-    font-weight: lighter;
+  background-color: var(--light-grey);
+  color: black;
+  font-weight: bold;
+  width: 75px;
+  height: 30px;
+  border-radius: 50px;
+  display: grid;
+  place-items: center;
 }
 
 .transparent {
-    background-color: transparent;
+  background-color: transparent;
 }
 
+.terms_list {
+  padding: 10px;
+  padding-bottom: 50px;
+}
+
+.terms_list * {
+  display: inline-block;
+  color: var(--grey-);
+  font-weight: lighter;
+}
 /* RIGHT PANEL ends here */
-
-
-
-
-/* I NEED TO CHANGE SOME CLASSES for this below...to be able to move this higher in the code */
-.account-icon {
-    width: 45px;
-    height: 45px;
-    background-color:#c2185b ;
-    border-radius: 50px;
-    margin: 10px;
-}
-/* I NEED TO CHANGE SOME CLASSES for this below...to be able to move this higher in the code */
-
-
-
-
-
