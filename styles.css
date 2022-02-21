@@ -53,10 +53,6 @@ body {
     height: 50px;
     width: 50px;
 }
-
-.home {
-    color: rgb(29, 155, 240);
-}
  
 .text {
     color: grey;
@@ -81,7 +77,7 @@ h2 {
 
 .middle-box {
     margin: 3px;
-    border: 2px solid rgb(29, 155, 240);
+    border: 2px solid lightskyblue;
 }
 
 .post {
@@ -89,15 +85,20 @@ h2 {
 }
 
 .bear-image, 
-.inter-image {
+.inter-image,
+.khaled-image {
     height: 50px;
     width: 50px;
+}
+
+.bear-image, 
+.khaled-image {
+    border-radius: 50%;
 }
 
 .reaction-section > * {
     padding: 2px;
     margin: 2px;
-    border: 1px solid orange;
     width: 24px;
     height: 24px;
 }
@@ -124,7 +125,7 @@ button {
     background: rgb(29, 155, 240);
     border-radius: 20px;
     color: white;
-    height: 40px;
+    height: 35px;
     width: 100px;
     font-size: 20px;
     font-weight: bold;
