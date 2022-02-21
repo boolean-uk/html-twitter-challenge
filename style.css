@@ -336,3 +336,30 @@ p {
 }
 
 /* Footer Section - Not needed yet  */
+
+@media screen and (max-width: 800px) {
+ .main-section-grid {
+   grid-template:
+    "left-menu middle-main" auto /
+    auto 1fr;
+}
+
+.header-grid {
+  grid-template:
+    "twitter-logo home-grid" auto /
+    auto 1fr;
+  gap: 5px;
+}
+
+.right-column {
+    display: none;
+}
+
+.search {
+    display: none;
+}
+}
+
+@media screen and (max-width: 640px) {
+ 
+}
