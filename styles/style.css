@@ -56,16 +56,20 @@ a:active {
     font-weight: 400;
 }
 
-/* .left-menu,
-.right-side-bar {
-    position: sticky;
-    top: 0;
-
-    z-index: 1;
-} */
-
 main {
+    height: 100vh;
+
     background-color: var(--second-color);
+
+    overflow-y: scroll;
+    /* Hide scrollbar */
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+main::-webkit-scrollbar {
+    /* Hides scrollbar for Chrome, Safari and Opera */
+    display: none;
 }
 
 main > * {
@@ -299,11 +303,11 @@ main .bottom-nav a {
 
 /* MEDIA QUERIES */
 
-/* @media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
     .bottom-nav {
         display: none;
     }
-} */
+}
 
 @media screen and (max-width: 1024px) {
     .right-side-bar {
