@@ -53,6 +53,11 @@ body {
     font-size: 20px;
 }
 
+.text-name {
+    color: grey;
+    font-size: 20px;
+}
+
 h2 {
     padding-left: 15px;
 }
@@ -155,6 +160,15 @@ button {
     }
     h3 {
         display: none;
+    }
+    .text-name {
+        display: none;
+    }
+    .more-icon {
+        display: none;
+    }
+    .gap-sm {
+        margin: 10px;
     }
 }
 
