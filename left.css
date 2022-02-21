@@ -8,10 +8,10 @@
 }
 
 .endbotton{
-    padding: 2px 4px;
-    border-radius: 8px;
+    padding: 2px 2px;
+    border-radius: 6px;
     background-color: blue;
-   
+    width: 60px;   
 }
 img{
     max-width: 15px;
