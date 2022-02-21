@@ -71,6 +71,7 @@ html {
 .four-column-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
+  justify-items: flex-start;
 }
 
 .center {
@@ -823,4 +824,13 @@ html {
 }
 .center-card-videos .video {
   border-radius: 10px;
+}
+
+.feather {
+  display: none;
+}
+@media only screen and (max-width: 75em) {
+  .feather {
+    display: unset;
+  }
 }/*# sourceMappingURL=main.css.map */

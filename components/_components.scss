@@ -260,3 +260,10 @@
     }
   }
 }
+
+.feather {
+  display: none;
+  @include respond(tab-land) {
+    display: unset;
+  }
+}
