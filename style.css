@@ -20,7 +20,7 @@
     --second-color-dark: #9fa9b4;
     --third-color-light: #a5d0f5;
     --third-color-medium: #63a5e1;
-    --third-color-dark: ;
+    --third-color-dark: #3779b8;
     --header-height: 60px;
 }
 .links {
@@ -49,7 +49,7 @@
     width: 50px;
     border-radius: 50%;
 }
-.logo {
+#logo {
     margin-left: 10px;
     width: 40px;
     margin-top: 10px;
@@ -60,11 +60,15 @@
     height: 70px;
     border-radius: 50%;
 }
+.java img {
+    display: none;
+}
 .news-icon {
-    width: 60px;
-    height: 60px;
+    max-width: 100px;
     margin: 20px;
     border-radius: 10px;
+    width: auto;
+    height: auto;
 }
 h1 {
 }
@@ -143,10 +147,11 @@ h6 {
 }
 .left-menu-container {
     display: grid;
-    grid-template-rows: var(--header-height) 570px auto 60px;
+    grid-template-rows: var(--header-height) 570px 50px 1fr 55px;
+
+    height: 100vh;
 }
 .right-side-bar-container {
-    display: grid;
     grid-template-rows: var(--header-height) minmax(400px, auto) 400px;
 }
 .tweet-icon-holder {
@@ -242,6 +247,9 @@ vertical-align: middle;
 .left-menu .profile-pic-small {
     margin: auto 0;
 }
+.footer-box {
+
+}
  /* MAIN */
 .home-header {
     place-items: center;
@@ -252,6 +260,9 @@ vertical-align: middle;
     height: 100px;
 
     grid-area: whats-happening-form;
+}
+.whats-happening-box .icon-small {
+    margin-right: 30px;
 }
 .profile-pic {
     grid-area: profile-pic;
@@ -317,6 +328,9 @@ vertical-align: middle;
 .tweet p {
     display: inline;
 }
+.tweet {
+    border-bottom: 2px var(--second-color-medium) solid;
+}
  /* RIGHT-SIDE-BAR */
  .search-twitter {
     background-color: var(--second-color-medium);
@@ -375,17 +389,66 @@ vertical-align: middle;
    background-color: var(--second-color-medium);
    border-radius: 30px;
 }
+.tweet-button :hover {
+    background-color: var(--third-color-dark);
+ }
 
  /* MEDIA */
  @media screen and (max-width: 1580px) {
     /*collapses left menu to just icons, changes tweet button to icon*/
-    
+    main {
+        padding: 0;
+    }
+    .parent-container {
+        display: grid;
+        grid-template-columns: 70px 4fr 1.8fr;
+        background-color: var(--first-color-light);
+    }
+    .left-menu h2 {
+        display: none;
+    }
+    .left-menu-button {
+        padding: 20px 20px 20px 15px;
+    }
+    .tweet-button {
+        padding: 15px 0;
+        margin: 10px 10px auto 10px;
+        border-radius: 50%;
+        font-size: 10px;
+        width: 40px;
+    }
+    .footer-box {
+        display: block;
+    }
+    .left-menu .profile-pic-small {
+        margin-left: 6px;
+    }
+    .footer-box p, 
+    .footer-box .icon-x-small {
+        display: none;
+    }
+    .left-menu a {
+        place-content: middle;
+    }
+    .left-menu a img {
+    margin: 0;
   }
+     .java img {
+    width: 50px;
+    display: inline-block;
+    margin-left: 6px;
+}
+    .java button {
+    display: none;
+}
   @media screen and (max-width: 1000px) {
     /*remove right-side-bar and move search twitter between home and stars */
-    
-  }
-  @media screen and (max-width: 500px) {
-   /* left menu becomes footer */
-    
+    .parent-container {
+        display: grid;
+        grid-template-columns: 70px 4fr;
+        background-color: var(--first-color-light);
+    }
+    .right-side-bar-container {
+        display: none;
+    }
   }
