@@ -55,4 +55,13 @@
         width: 100%;
         height: auto;
     }
+    &__bottom-icons svg {
+        width: 1rem;
+        padding-top: 1rem;
+    }
+    &__bottom-icons {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-items: end;
+    }
 }

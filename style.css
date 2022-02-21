@@ -326,6 +326,21 @@ h2 {
   height: auto;
 }
 
+.individual-tweet__bottom-icons svg {
+  width: 1rem;
+  padding-top: 1rem;
+}
+
+.individual-tweet__bottom-icons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
 .section-one-aside {
   padding-left: 1.4rem;
 }
