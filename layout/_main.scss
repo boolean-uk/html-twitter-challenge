@@ -20,7 +20,7 @@
     .icon {
       justify-self: flex-end;
       cursor: pointer;
-
+      align-self: start;
       padding: 0.4rem 0.6rem;
       &:hover {
         background-color: $color-hover-light;
@@ -28,9 +28,6 @@
         border-radius: 50%;
         transition: background-color 0.3s;
       }
-    }
-
-    @include respond(phone) {
     }
   }
 

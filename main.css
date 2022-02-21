@@ -99,6 +99,7 @@ html {
 .center .header-wrapper .icon {
   justify-self: flex-end;
   cursor: pointer;
+  align-self: start;
   padding: 0.4rem 0.6rem;
 }
 .center .header-wrapper .icon:hover {
@@ -510,12 +511,14 @@ html {
 .right-side .follow-card-title img {
   margin: 0rem 0.2rem;
 }
-.right-side .follow-card-btn a {
+.right-side .follow-card-btn button {
   text-decoration: none;
-  padding: 0.7rem 1.4rem;
+  padding: 0.6rem 1.2rem;
   background-color: black;
   color: #fff;
+  border: none;
   border-radius: 14px;
+  cursor: pointer;
 }
 @media only screen and (max-width: 1050px) {
   .right-side {

@@ -177,6 +177,33 @@
       padding: 1rem;
       font-size: 1.6rem;
     }
+
+    // &-1 i,
+    // &-4 i {
+    //   &:hover,
+    //   .center-card-icons-1:hover span {
+    //     color: $color-main;
+    //     background-color: $color-hover-lightblue;
+    //     border-radius: 50%;
+    //     transition: all 0.3s;
+    //   }
+    // }
+
+    // &-1 span,
+    // &-4 span {
+    //   &:hover,
+    //   .center-card-icons-1:hover span {
+    //     color: $color-main;
+    //     transition: all 0.3s;
+    //   }
+    //   .center-card-icons-1:hover i {
+    //     color: $color-main;
+    //     background-color: $color-hover-lightblue;
+    //     border-radius: 50%;
+    //     transition: all 0.3s;
+    //   }
+    // }
+
     &-1,
     &-4 {
       &:hover,
