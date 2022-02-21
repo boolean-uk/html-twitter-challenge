@@ -1,0 +1,27 @@
+.section-one-main {
+    &__tweet {
+        display: grid;
+        grid-auto-flow: row;
+    }
+    &__tweet-profile-message {
+        display: flex;
+        margin-bottom: 2rem;
+    }
+    &__profile-image,
+    &__input {
+        display: flex;
+        align-items: center;
+        padding-right: 4rem;
+    }
+    &__input {
+        border-radius: 2rem;
+    }
+    &__list {
+        display: flex;
+    }
+    &__content {
+        display: grid;
+        grid-template-columns: 2rem 4rem 3rem;
+        grid-gap: 2rem;
+    }
+}
