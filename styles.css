@@ -81,11 +81,34 @@ h2 {
 
 .middle-box {
     margin: 3px;
-    border: 1px solid rgb(29, 155, 240);;
+    border: 2px solid rgb(29, 155, 240);
 }
 
 .post {
     margin: 10px;
+}
+
+.bear-image, 
+.inter-image {
+    height: 50px;
+    width: 50px;
+}
+
+.reaction-section > * {
+    padding: 2px;
+    margin: 2px;
+    border: 1px solid orange;
+    width: 24px;
+    height: 24px;
+}
+
+.reaction-section {
+    list-style-type: none;
+}
+
+.grid-auto-column {
+    display: grid;
+    grid-auto-flow: column;
 }
 
 /* RIGHT SIDE */
