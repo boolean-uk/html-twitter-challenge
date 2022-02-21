@@ -64,6 +64,7 @@ body {
   text-align: center;
   text-decoration: black;
   justify-content: center;
+  padding-right: 250px;
 }
 
 .search-grid {
@@ -73,7 +74,6 @@ body {
 }
 
 .search-image {
-  margin-left: 10px;
   margin-top: 7px;
 }
 
@@ -217,6 +217,24 @@ body {
   padding-left: 10ps;
 }
 
+.profile-info-grid {
+  grid-template:
+    "profile-pic-bottom username three-dots-icon" auto /
+    auto auto auto;
+}
+
+.profile-pic-bottom {
+  grid-area: profile-pic-bottom;
+}
+
+.username {
+  grid-area: username;
+}
+
+.three-dots-icon {
+  grid-area: three-dots-icon;
+}
+
 .profile-info {
   grid-area: profile-info;
   margin-top: 150px;
@@ -333,6 +351,7 @@ body {
 p {
   grid-area: p;
   text-align: left;
+  margin-top: 25px;
   /* border: 2px solid rgb(216, 61, 61); */
 }
 
@@ -345,6 +364,7 @@ p {
   font-size: x-large;
   font-weight: bolder;
   /* display: inline; */
+  margin-top: 40px;
 }
 
 .news-grid {
@@ -353,7 +373,7 @@ p {
     "left-text right-image" auto /
     1fr 1fr;
   gap: 10px;
-  margin-top: 20px;
+  margin-top: 40px;
 }
 
 .left-text {
