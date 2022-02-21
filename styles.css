@@ -9,7 +9,7 @@ body {
 
 /* MAIN LAYOUT */
 .twitter-grid > * {
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .three-columns {
@@ -50,17 +50,22 @@ body {
  
 .text {
     color: grey;
+    font-size: 20px;
 }
 
 h2 {
     padding-left: 15px;
 }
 
+h3, li:hover {
+    opacity: 0.6;
+}
+
 /* TWEET LAYOUT */
 
 .tweet-feed {
     display: grid;
-    grid-template-rows: 80px 120px 140px 300px;
+    grid-template-rows: auto;
 }
 
 .seven-columns {
@@ -114,6 +119,7 @@ button:hover {
     background-color: lightskyblue;
     opacity: 1;
 }
+
 /* RIGHT SIDE */
 
 .right-box {
