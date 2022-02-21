@@ -90,6 +90,10 @@ li {
 .hover_underline:hover {
   text-decoration: underline;
 }
+
+.hover_content * {
+    background-color: transparent;
+}
 /* SCROLL BEHAVIOUS and HOVER ends here */
 
 /* COLOURS and FONT SIZES starts here*/
@@ -351,9 +355,8 @@ main {
   margin-top: 2px;
 }
 
-.hover_content * {
-    background-color: transparent;
-}
+
+
 /* MAIN - CONTENT - ends here */
 
 /* RIGHT PANEL starts here */
