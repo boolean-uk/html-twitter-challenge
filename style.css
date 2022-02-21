@@ -196,24 +196,31 @@ body {
 
 .left-bottom-grid {
   display: grid;
-  grid-auto-flow: row;
+  grid-template:
+    "tweet" auto
+    "profile-info" auto /
+    auto;
+  gap: 10px;
 }
 
 .tweet {
-  grid-area: tweet-button;
+  grid-area: tweet;
   border: 2px solid rgb(4, 134, 240);
   background-color: rgb(4, 134, 240);
   color: white;
-  width: 80px;
+  width: 160px;
   height: 40px;
-  border-radius: 40%;
+  border-radius: 20%;
   text-align: center;
   justify-content: center;
   padding-top: 8px;
+  padding-left: 10ps;
 }
 
-/* .profile-info {
-} */
+.profile-info {
+  grid-area: profile-info;
+  margin-top: 150px;
+}
 
 /* Middle Main Section  */
 
