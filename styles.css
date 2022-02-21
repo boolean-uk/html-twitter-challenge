@@ -9,7 +9,7 @@ body {
 
 /* MAIN LAYOUT */
 .twitter-grid > * {
-    min-height: 100vh;
+    height: 100vh;
 }
 
 .three-columns {
@@ -112,6 +112,9 @@ h2 {
     grid-auto-flow: column;
 }
 
+.book-cover {
+    margin-left: 10px;
+}
 /* RIGHT SIDE */
 
 .right-box {
