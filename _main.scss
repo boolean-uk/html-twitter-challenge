@@ -1,27 +1,38 @@
 .section-one-main {
+    padding: 2rem 1.8rem;
+    border-left: 2px solid $color-primary;
+    border-right: 2px solid $color-primary;
+    &__heading {
+        padding: 0;
+        border-bottom: 2px solid $color-primary;
+    }
+    &__input {
+        height: 3rem;
+        border-radius: 2rem;
+    }
+    &__list-button {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+    }
+    ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 2rem 2rem 2rem 2rem 2rem 10rem;
+    }
+    li:last-of-type {
+        display: grid;
+        justify-content: end;
+    }
     &__tweet {
         display: grid;
         grid-auto-flow: row;
+        border-bottom: 2px solid $color-primary;
     }
     &__tweet-profile-message {
-        display: flex;
-        margin-bottom: 2rem;
-    }
-    &__profile-image,
-    &__input {
-        display: flex;
-        align-items: center;
-        padding-right: 4rem;
-    }
-    &__input {
-        border-radius: 2rem;
-    }
-    &__list {
-        display: flex;
-    }
-    &__content {
         display: grid;
-        grid-template-columns: 2rem 4rem 3rem;
-        grid-gap: 2rem;
+        grid-template-columns: 4rem 18rem;
+        align-items: center;
+        border-bottom: 2px solid $color-primary;
     }
 }

@@ -8,51 +8,8 @@ h2 {
   margin: 0%;
 }
 
-.box-vb {
-  border: 2px dashed #005c00;
-  background-color: lightgreen;
-  padding: 1rem;
-  margin: 0.5rem;
-}
-
-.box-bg {
-  border: 2px dashed #fbff00;
-  background-color: lightyellow;
-  padding: 1rem;
-  margin: 0.5rem;
-}
-
-.box-md {
-  border: 2px dashed red;
-  background-color: lightcoral;
-  padding: 1rem;
-  margin: 0.2rem;
-}
-
-.box-sm {
-  border: 2px dashed #1100ff;
-  background-color: lightblue;
-  padding: 1rem;
-  margin: 0.2rem;
-}
-
-.box-vs {
-  border: 12px dashed #ff9d00;
-  background-color: #f0d680;
-  padding: 1rem;
-  margin: 0.2rem;
-}
-
-.box-default {
-  border: 2px solid black;
-  border-radius: 12px;
-  background-color: white;
-  padding: 1rem;
-  margin: 0.5rem;
-}
-
 .center-wrapper {
-  padding: 1rem 8rem;
+  padding: 1rem 10rem;
   margin: 0 auto;
 }
 
@@ -131,6 +88,7 @@ h2 {
 
 .section-one-nav__list img {
   height: 1.8rem;
+  padding-right: 0.6rem;
 }
 
 .section-one-nav__list,
@@ -275,45 +233,64 @@ h2 {
   }
 }
 
+.section-one-main {
+  padding: 2rem 1.8rem;
+  border-left: 2px solid #1da0f2;
+  border-right: 2px solid #1da0f2;
+}
+
+.section-one-main__heading {
+  padding: 0;
+  border-bottom: 2px solid #1da0f2;
+}
+
+.section-one-main__input {
+  height: 3rem;
+  border-radius: 2rem;
+}
+
+.section-one-main__list-button {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-one-main ul {
+  list-style: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2rem 2rem 2rem 2rem 2rem 10rem;
+      grid-template-columns: 2rem 2rem 2rem 2rem 2rem 10rem;
+}
+
+.section-one-main li:last-of-type {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
 .section-one-main__tweet {
   display: -ms-grid;
   display: grid;
   grid-auto-flow: row;
+  border-bottom: 2px solid #1da0f2;
 }
 
 .section-one-main__tweet-profile-message {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 2rem;
-}
-
-.section-one-main__profile-image, .section-one-main__input {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 4rem 18rem;
+      grid-template-columns: 4rem 18rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-right: 4rem;
-}
-
-.section-one-main__input {
-  border-radius: 2rem;
-}
-
-.section-one-main__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.section-one-main__content {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 2rem 4rem 3rem;
-      grid-template-columns: 2rem 4rem 3rem;
-  grid-gap: 2rem;
+  border-bottom: 2px solid #1da0f2;
 }
 
 .section-one-aside h3 {
