@@ -118,7 +118,7 @@ a {
 
 .menu-list {
   list-style-type: none;
-  padding: 0;
+  padding: 20px;
   margin: 0;
 }
 
@@ -126,8 +126,13 @@ a {
   font-weight: 800;
   font-size: 20px;
   margin-right: 20px;
-  padding: 20px;
+  /* padding: 20px; */
   color: black;
+}
+
+.menu-list img {
+   margin-right: 10px;
+
 }
 
 /* .menu-list :hover {
