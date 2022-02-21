@@ -179,13 +179,15 @@ font-size: 20px
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .tweet-status{
-    background-color: #1DA1F2;
+    background-color: #3080b3;
     border-radius: 50px;
 }
 .tweet-status h3{
     display: grid;
     place-content: center;
     color: white;
+    height: 12px;
+    
 }
 
 .statement-icons > *{
@@ -200,7 +202,7 @@ font-size: 20px
 }
 .boxes {
     height: auto;
-
+    border-radius: 25px;
 }
     
 /* News Right side Bar */
@@ -214,4 +216,17 @@ font-size: 20px
     height: 30px;
     width: 30px;
 
+}
+.news > *{
+    background-color: #F5F8FA;
+
+}
+.news{
+    margin-left: 30px;
+    place-content: center;
+
+}
+.box-right{
+    border-radius: 25x;
+    padding: 25px;
 }
