@@ -19,12 +19,6 @@ body {
 
 /* LEFT SIDE */
 
-.center-wrapper {
-    padding-left: 30px;
-    padding-right: 30px;
-    margin: 0, auto;
-}
-
 .two-columns {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -151,12 +145,6 @@ button {
     h3 {
         display: none;
     }
-    .left-box-sm {
-        display: none;
-    }
-}
-.nav-links {
-    padding: 10px;
 }
 
 @media screen and (max-width: 708px) {
@@ -167,9 +155,6 @@ button {
         display: none;
     }
     h3 {
-        display: none;
-    }
-    .left-box-sm {
         display: none;
     }
 }
