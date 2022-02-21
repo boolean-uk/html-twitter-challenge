@@ -1,0 +1,9 @@
+@media screen and (max-width: 800px) {
+  .menu-container h2 {
+    display: none;
+  }
+
+  .profile-container p {
+    display: none;
+  }
+}

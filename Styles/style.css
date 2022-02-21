@@ -21,7 +21,7 @@ html {
 
 /* --- BASE STYLES --- */
 aside {
-  min-width: 300px;
+  max-width: 300px;
   height: 100vh;
   display: grid;
   justify-content: center;
@@ -35,6 +35,10 @@ main {
 
 h2 {
   margin: 10px 0;
+}
+
+p {
+  margin: 5px 0 10px 0;
 }
 
 span {
@@ -74,6 +78,7 @@ img {
 
 .profile-container {
   place-items: center;
+  max-width: 300px;
 }
 
 h2 > span {
@@ -169,6 +174,7 @@ button:hover {
 /*** RIGHT BAR ***/
 .right-bar-wrapper {
   padding: 10px;
+  gap: 10px;
   overflow: scroll;
 }
 
@@ -209,4 +215,15 @@ button:hover {
 .news p {
   color: var(--dark-grey);
   font-size: 14px;
+}
+
+/* Who to Follow */
+.who-to-follow-container > ul {
+  gap: 10px;
+}
+.follow-button {
+  width: 60px;
+  height: 30px;
+  border: none;
+  border-radius: 30px;
 }
