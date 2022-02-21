@@ -8,4 +8,7 @@
     p {
         font-size: 1.2rem;
     }
+    @include respond(tablet-portrait) {
+        display: none;
+    }
 }

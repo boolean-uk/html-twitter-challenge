@@ -9,6 +9,9 @@
 
 // NAVIGATION LIST ITEMS AND ACCOUNT CONTACT SECTION
 .section-one-nav {
+    @include respond(phone) {
+        display: none;
+    }
     &__list img {
         height: 1.8rem;
         padding-right: 0.6rem;
