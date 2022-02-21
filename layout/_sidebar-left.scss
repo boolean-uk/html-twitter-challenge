@@ -39,6 +39,10 @@
         &:hover {
           color: $color-main;
         }
+
+        @include respond(tab-land) {
+          display: none;
+        }
       }
 
       i {
@@ -92,6 +96,9 @@
       display: inline-flex;
       justify-content: center;
     }
+    @include respond(tab-land) {
+      width: auto;
+    }
   }
 
   .profile {
@@ -122,5 +129,11 @@
       transition: all 0.3s;
       cursor: pointer;
     }
+    @include respond(tab-land) {
+      display: none;
+    }
+  }
+  @include respond(phone) {
+    display: none;
   }
 }

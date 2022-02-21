@@ -72,6 +72,10 @@
       height: 90%;
       object-fit: cover;
       border-radius: 15px;
+
+      @include respond(tab-middle) {
+        height: 60%;
+      }
     }
   }
 
@@ -160,5 +164,12 @@
 
       border-radius: 14px;
     }
+  }
+
+  @include respond(tab-middle) {
+    width: 28rem;
+  }
+  @include respond(tab-port) {
+    display: none;
   }
 }

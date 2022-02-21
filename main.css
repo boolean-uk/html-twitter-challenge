@@ -134,6 +134,11 @@ html {
   cursor: pointer;
   display: inline-block;
 }
+@media only screen and (max-width: 37.5em) {
+  .center .header-post {
+    display: none;
+  }
+}
 .center .header-icons {
   color: #4ba0eb;
   font-size: 2.5rem;
@@ -159,6 +164,11 @@ html {
   background-color: #b2defc7e;
   cursor: pointer;
 }
+@media only screen and (max-width: 37.5em) {
+  .center .header-icons {
+    display: none;
+  }
+}
 .center .header-btn {
   align-self: start;
   text-align: center;
@@ -174,6 +184,11 @@ html {
   transition: all 0.3s;
   cursor: pointer;
 }
+@media only screen and (max-width: 37.5em) {
+  .center .header-btn {
+    display: none;
+  }
+}
 .center .show-tweets {
   color: #4ba0eb;
   margin-top: 0.2rem;
@@ -186,6 +201,32 @@ html {
 }
 .center::-webkit-scrollbar {
   display: none;
+}
+
+@media only screen and (max-width: 37.5em) {
+  .profile-image.header-image {
+    display: none;
+  }
+}
+
+.header-icon.profile-image img.image-header {
+  display: none;
+}
+@media only screen and (max-width: 37.5em) {
+  .header-icon.profile-image img.image-header {
+    display: flex;
+    width: 5rem;
+    height: 5rem;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .header-icon.profile-image {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
 }
 
 .left-side {
@@ -227,6 +268,11 @@ html {
 }
 .left-side .list-container .list-item a:hover {
   color: #4ba0eb;
+}
+@media only screen and (max-width: 75em) {
+  .left-side .list-container .list-item a {
+    display: none;
+  }
 }
 .left-side .list-container .list-item i {
   color: #363636;
@@ -270,6 +316,11 @@ html {
   display: inline-flex;
   justify-content: center;
 }
+@media only screen and (max-width: 75em) {
+  .left-side .list-container {
+    width: auto;
+  }
+}
 .left-side .profile {
   padding: 1rem;
   margin-bottom: 1rem;
@@ -296,6 +347,16 @@ html {
   background-color: rgba(187, 183, 183, 0.609);
   transition: all 0.3s;
   cursor: pointer;
+}
+@media only screen and (max-width: 75em) {
+  .left-side .profile {
+    display: none;
+  }
+}
+@media only screen and (max-width: 37.5em) {
+  .left-side {
+    display: none;
+  }
 }
 
 .right-side {
@@ -378,6 +439,11 @@ html {
      object-fit: cover;
   border-radius: 15px;
 }
+@media only screen and (max-width: 1050px) {
+  .right-side .news-card-left img {
+    height: 60%;
+  }
+}
 .right-side .card-bottom-text {
   color: #4ba0eb;
   padding: 1.4rem;
@@ -450,6 +516,16 @@ html {
   background-color: black;
   color: #fff;
   border-radius: 14px;
+}
+@media only screen and (max-width: 1050px) {
+  .right-side {
+    width: 28rem;
+  }
+}
+@media only screen and (max-width: 56.25em) {
+  .right-side {
+    display: none;
+  }
 }
 
 .center-wrapper-sm {
@@ -535,6 +611,11 @@ html {
   background-color: #3c78ad;
   transition: all 0.3s;
   cursor: pointer;
+}
+@media only screen and (max-width: 75em) {
+  .tweet-btn #tweet-btn {
+    display: none;
+  }
 }
 
 .profile-image {
@@ -643,6 +724,11 @@ html {
      object-fit: cover;
   border-radius: 10px;
 }
+@media only screen and (max-width: 400px) {
+  .center-card .center-card-image {
+    height: 40rem;
+  }
+}
 .center-card-images {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -685,6 +771,11 @@ html {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+@media only screen and (max-width: 400px) {
+  .center-card-images {
+    grid-template-rows: repeat(2, 7rem);
+  }
 }
 .center-card-icons i {
   padding: 1rem;

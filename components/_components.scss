@@ -18,6 +18,9 @@
       transition: all 0.3s;
       cursor: pointer;
     }
+    @include respond(tab-land) {
+      display: none;
+    }
   }
 }
 
@@ -117,6 +120,9 @@
       object-fit: cover;
       border-radius: 10px;
     }
+    @include respond(phone-sm) {
+      height: 40rem;
+    }
   }
 
   &-images {
@@ -159,6 +165,10 @@
       }
       grid-row: 2/3;
       grid-column: 2/3;
+    }
+
+    @include respond(phone-sm) {
+      grid-template-rows: repeat(2, 7rem);
     }
   }
 
