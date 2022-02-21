@@ -30,6 +30,8 @@
   height: 100vh;
 }
 
+/* Layout */
+
 .resources-sidebar {
   width: 275px;
 }
@@ -44,21 +46,12 @@
   font-size: 20px;
   margin-right: 20px;
   padding: 20px;
+  cursor: pointer;
 }
 
+/* left side-bar */
 
-.search-icon {
-  width: 20px;
-  height: 20px;
-}
-
-side-bar-menu :hover {
-  background-color: var(--twitter-background);
-  border-radius: 30px;
-  color: var(--twitter-color);
-  transition: color 100ms ease-out;
-}
-
+/* Feed Section */
 a {
   text-decoration: none;
 
@@ -80,6 +73,26 @@ a {
   margin: 0;
 }
 
+.menu-list a {
+  font-weight: 800;
+  font-size: 20px;
+  margin-right: 20px;
+  padding: 20px;
+  color: black;
+}
+
+.menu-list :hover {
+  background-color: var(--twitter-background);
+  border-radius: 30px;
+  color: var(--twitter-color);
+  transition: color 100ms ease-out;
+}
+
 menu-list-link {
 
+}
+
+.main-box img {
+  height: 40px;
+  border-radius: 50%;
 }
