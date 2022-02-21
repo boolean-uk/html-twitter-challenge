@@ -45,6 +45,10 @@ body {
 
 .home-header {
   justify-content: left;
+  font-size: x-large;
+  font-weight: bolder;
+  padding-top: 5px;
+  padding-left: 50px;
 }
 
 .stars-icon {
@@ -190,8 +194,8 @@ body {
   padding-right: 10px;
 }
 
-.tweet {
-  /* grid-area: tweet-button;
+/* .tweet {
+  grid-area: tweet-button;
   border: 2px solid rgb(4, 134, 240);
   background-color: rgb(4, 134, 240);
   color: white;
@@ -227,10 +231,15 @@ body {
 
 .profile-pic {
   grid-area: profile-pic;
+  margin-left: 35px;
 }
 
 .type-tweet {
   grid-area: type-tweet;
+  color: grey;
+  font-size: x-large;
+  margin-left: 30px;
+  padding-top: 30px;
   /* border: 2px solid rgb(177, 0, 97); */
 }
 
@@ -322,6 +331,8 @@ p {
 }
 
 .whats-happening {
+    font-size: x-large;
+  font-weight: bolder;
 }
 
 /* Footer Section - Not needed yet  */
