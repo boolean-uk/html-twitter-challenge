@@ -1,9 +1,9 @@
 * {
     box-sizing: border-box;
 
-    --main-color: #1ea1f3;
-    --second-color: #f7f9fa;
-    --third-color: #eceef0;
+    --main-color: #1ea1f3;    /* Logo, buttons, tags */
+    --second-color: #f7f9fa;  /* Main and risght side bar BG */
+    --third-color: #eceef0;   /* Main borders and BG a:hover */
     --fourth-color: #706c6c;
 }
 
@@ -50,10 +50,14 @@ a:active {
     padding: 12px 24px;
 }
 
-.left-menu h2,
+.left-menu .left-menu-link-text,
 .right-side-bar h2 {
     font-size: 18px;
     font-weight: 400;
+}
+
+.left-menu .left-menu-link-text {
+    padding: 16px 0px;
 }
 
 main {
@@ -211,18 +215,17 @@ main .bottom-nav a {
 }
 
 #tweet-button-lg {
-    display: block;
-
-    text-decoration: none;
-    color: #ffffff;
-    text-align: center;
-    font-size: 14px;
-
+    width: 100%;
     padding: 16px;
+
+    color: #ffffff;
+    font-size: 14px; 
+    font-weight: 600;
     
     background-color: var(--main-color);
 
     border-radius: 35px;
+    border-style: none;
 }
 
 #tweet-button-lg:hover {
@@ -231,6 +234,33 @@ main .bottom-nav a {
 }
 
 #tweet-button-lg:active {
+    background-color: var(--main-color);
+}
+
+.tweet-frame {
+    height: 24px;
+    width: 24px;
+}
+
+#tweet-button-round {
+    display: none;
+
+    margin-left: 3px;
+    padding: 8px;
+    
+    color: #ffffff;
+    background-color: var(--main-color);
+
+    border-radius: 50%;
+    border-style: none;
+}
+
+#tweet-button-round:hover {
+    color: #ffffff;
+    background-color: #1ea1f398;
+}
+
+#tweet-button-round:active {
     background-color: var(--main-color);
 }
 
@@ -300,21 +330,39 @@ main .bottom-nav a {
     align-items: center;
 }
 
-
 /* MEDIA QUERIES */
 
-@media screen and (min-width: 1024px) {
-    .bottom-nav {
-        display: none;
+@media screen and (max-width: 1280px) {
+    .center-wrapper {
+        max-width: 1024px;
     }
 }
 
 @media screen and (max-width: 1024px) {
-    .right-side-bar {
+    .left-menu {
+        padding: 12px 0px;
+        align-content: center;
+        justify-content: center;
+    }
+    .left-menu .two-column-grid_expand-two {
+        grid-template-columns: auto;
+    }
+
+    .left-menu-link-text {
         display: none;
     }
 
-    .bottom-nav {
+    .left-menu a {
+        margin-bottom: 32px;
+    }
+
+    #tweet-button-lg {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .right-side-bar {
         display: none;
     }
 }
@@ -326,5 +374,11 @@ main .bottom-nav a {
 
     .bottom-nav {
         display: grid;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .bottom-nav {
+        display: none;
     }
 }
