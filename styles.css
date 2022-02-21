@@ -66,7 +66,7 @@ h2 {
 
 .tweet-feed {
     display: grid;
-    grid-template-rows: 80px 120px 120px 300px;
+    grid-template-rows: 80px 120px 140px 300px;
 }
 
 .seven-columns {
@@ -131,3 +131,39 @@ button {
     font-weight: bold;
     border: rgb(29, 155, 240);
 }
+
+/* RESPONSIVENESS */
+
+@media screen and (max-width: 1052px) {
+    .twitter-grid {
+        grid-template: 1fr 2fr;
+    }
+    .right-side-bar {
+        display: none;
+    }
+    h3 {
+        display: none;
+    }
+    .left-box-sm {
+        display: none;
+    }
+}
+.nav-links {
+    padding: 10px;
+}
+
+@media screen and (max-width: 708px) {
+    .twitter-grid {
+        grid-template: 1fr auto;
+    }
+    .right-side-bar {
+        display: none;
+    }
+    h3 {
+        display: none;
+    }
+    .left-box-sm {
+        display: none;
+    }
+}
+
