@@ -45,36 +45,46 @@ li {
 
 .hover_round:hover {
   background-color: var(--dark-grey);
-}
-
-.hover_round {
-  display: grid;
-  grid-template-columns: auto auto;
-  padding: 10px;
-  border-radius: 100px;
+  transition: 0.3s;
 }
 
 .hover_square:hover {
   background-color: var(--hover-square-grey);
+  transition: 0.3s;
 }
 
 .hover_square_more:hover {
   background-color: var(--dark-grey);
+  transition: 0.3s;
 }
 
 .hover_blue:hover {
   background-color: var(--hover-blue);
   color: var(--hover-bright-blue);
+  border-radius: 50px;
+  padding: 5px;
+  transition: 0.3s;
 }
 
 .hover_green:hover {
   background-color: var(--hover-green);
   color: var(--hover-bright-green);
+  border-radius: 50px;
+  padding: 5px;
+  transition: 0.3s;
 }
 
 .hover_red:hover {
   background-color: var(--hover-red);
   color: var(--hover-bright-red);
+  border-radius: 50px;
+  padding: 5px;
+  transition: 0.3s;
+}
+
+.hover_content:hover {
+    background-color: rgba(8,8,8,255);
+    transition: 0.3s;
 }
 
 .hover_underline:hover {
@@ -167,10 +177,12 @@ p {
   justify-content: left;
 }
 
-.nav-items p {
-  margin: 0px 5px 0px 15px;
-  padding-top: 3px;
-}
+.hover_round {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+    border-radius: 100px;
+  }
 
 .logo {
   width: 30px;
@@ -249,9 +261,15 @@ main {
   display: grid;
 }
 
+.sm_box {
+    height: 40px;
+    width: 40px;
+    display: grid;
+    place-content: center;
+}
+
 .blue_icon {
   color: var(--twitter-blue);
-  margin-right: 12px;
 }
 
 .status-bar-inline {
@@ -271,6 +289,8 @@ main {
   display: grid;
   grid-template-columns: 1fr auto;
   margin: 10px 10px 10px 65px;
+  align-items: center;
+  margin: 5px 10px 5px 65px;
 }
 
 .list_items_in_row {
@@ -329,14 +349,10 @@ main {
   justify-content: space-between;
   padding-right: 100px;
   margin-top: 2px;
-  height: 32px;
 }
 
-.hover_blue:hover,
-.hover_green:hover,
-.hover_red:hover {
-  border-radius: 50px;
-  padding: 5px;
+.hover_content * {
+    background-color: transparent;
 }
 /* MAIN - CONTENT - ends here */
 
