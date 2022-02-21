@@ -86,7 +86,7 @@ body {
 }
 
 .space1 {
-  width: 100px;
+  width: 50px;
 }
 
 /* Main Section  */
@@ -122,6 +122,11 @@ body {
   text-align: center;
   padding-top: 10px;
   padding-right: 10px;
+  background-color: white;
+}
+
+.home-button:hover {
+  background-color: rgb(4, 134, 240);
 }
 
 .explore {
@@ -132,16 +137,26 @@ body {
   text-align: center;
   padding-top: 10px;
   padding-right: 10px;
+  background-color: white;
+}
+
+.explore-button:hover {
+  background-color: rgb(4, 134, 240);
 }
 
 .notifications {
-  /* border: 2px solid rgb(223, 6, 6); */
+  /* padding-right: 10px; */
 }
 
 .notifications-button {
   text-align: center;
   padding-top: 10px;
   padding-right: 10px;
+  background-color: white;
+}
+
+.notifications-button:hover {
+  background-color: rgb(4, 134, 240);
 }
 
 .messages {
@@ -152,6 +167,11 @@ body {
   text-align: center;
   padding-top: 10px;
   padding-right: 10px;
+  background-color: white;
+}
+
+.messages-button:hover {
+  background-color: rgb(4, 134, 240);
 }
 
 .bookmarks {
@@ -162,6 +182,11 @@ body {
   text-align: center;
   padding-top: 10px;
   padding-right: 10px;
+  background-color: white;
+}
+
+.bookmarks-button:hover {
+  background-color: rgb(4, 134, 240);
 }
 
 .lists {
@@ -172,6 +197,11 @@ body {
   text-align: center;
   padding-top: 10px;
   padding-right: 10px;
+  background-color: white;
+}
+
+.lists-button:hover {
+  background-color: rgb(4, 134, 240);
 }
 
 .profile {
@@ -182,6 +212,11 @@ body {
   text-align: center;
   padding-top: 10px;
   padding-right: 10px;
+  background-color: white;
+}
+
+.profile-button:hover {
+  background-color: rgb(4, 134, 240);
 }
 
 .more {
@@ -192,6 +227,11 @@ body {
   text-align: center;
   padding-top: 10px;
   padding-right: 10px;
+  background-color: white;
+}
+
+.more-button:hover {
+  background-color: rgb(4, 134, 240);
 }
 
 .left-bottom-grid {
