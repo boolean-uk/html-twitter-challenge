@@ -132,6 +132,10 @@ button {
     border: rgb(29, 155, 240);
 }
 
+.read-more-link {
+    color: rgb(29, 155, 240);
+}
+
 /* RESPONSIVENESS */
 
 @media screen and (max-width: 1052px) {
