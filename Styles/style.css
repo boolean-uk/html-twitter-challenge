@@ -45,10 +45,9 @@ span {
   color: grey;
 }
 
-img {
+button {
   cursor: pointer;
 }
-
 /* --- MAIN STYLES --- */
 .body-container {
   max-width: 1500px;
@@ -72,8 +71,11 @@ img {
 /* menu bar */
 .menu-bar {
   padding: 10px;
-  cursor: pointer;
+}
+
+.menu-bar > a {
   align-items: center;
+  text-decoration: none;
 }
 
 .profile-container {
@@ -99,7 +101,7 @@ h2 > span {
   cursor: pointer;
 }
 
-button:hover {
+.tweet-button:hover {
   background-color: var(--dark-pink);
 }
 
@@ -150,8 +152,14 @@ button:hover {
 .media-container > ul {
   place-items: center;
 }
+.media-container button {
+  border: none;
+}
 
-.media-icon,
+.media-icon {
+  background-color: transparent;
+}
+.media-icon > img,
 .tweet-icon {
   width: 20px;
   margin: 5px;
