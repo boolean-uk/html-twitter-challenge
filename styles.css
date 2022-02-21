@@ -75,3 +75,13 @@ body{margin: 0;}
     min-width: 200px;
 }
 
+.hr{
+    width: 394px;
+}
+
+.header{
+    height: 50px;
+    width: 394px;
+    border: 1px solid lightgreen;
+}
+
