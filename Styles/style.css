@@ -21,14 +21,12 @@ html {
 
 /* --- BASE STYLES --- */
 aside {
-  max-width: 300px;
   height: 100vh;
   display: grid;
   justify-content: center;
 }
 
 main {
-  min-width: 500px;
   border: var(--light-grey) 1px solid;
   overflow: scroll;
 }
@@ -110,7 +108,6 @@ h2 > span {
 /* profile bar */
 .profile-container {
   gap: 10px;
-  max-width: 100%;
   align-items: center;
   padding: 10px;
   align-self: end;
@@ -187,10 +184,8 @@ h2 > span {
 }
 
 .search-twitter {
-  max-width: 100%;
   height: 50px;
   margin: 10px;
-
   background-color: var(--light-grey);
   border: none;
   border-radius: 30px;

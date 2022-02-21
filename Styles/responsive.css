@@ -9,13 +9,33 @@
 }
 
 @media screen and (max-width: 600px) {
-  .right-bar {
-    display: none;
+  .body-container {
+    grid-template:
+      "left-bar main" 1fr /
+      1fr 4fr;
+  }
+
+  .left-bar {
+    grid-area: left-bar;
+  }
+  main {
+    grid-area: main;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .left-bar {
+  .body-container {
+    grid-template:
+      "main" 1fr /
+      1fr;
+  }
+
+  main {
+    grid-area: main;
+  }
+
+  .left-bar,
+  .right-bar {
     display: none;
   }
 }
