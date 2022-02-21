@@ -69,6 +69,11 @@ button:hover {
     padding: 16px 0px;
 }
 
+.left-menu nav a:focus {
+    background-color: var(--third-color);
+    outline: none;
+}
+
 main {
     height: 100vh;
 
@@ -275,6 +280,11 @@ main .bottom-nav a {
 
 #tweet-button-lg:active {
     background-color: var(--main-color);
+}
+
+#tweet-button-lg:focus {
+    background-color: #1ea1f398;
+    outline: none;
 }
 
 .tweet-frame {
