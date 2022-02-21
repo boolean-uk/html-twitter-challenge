@@ -265,9 +265,7 @@ main .bottom-nav a {
 }
 
 .follow-button {
-    text-decoration: none;
     color: var(--main-color);
-    text-align: center;
     font-size: 14px;
     font-weight: bold;
 
@@ -278,7 +276,7 @@ main .bottom-nav a {
 }
 
 .follow-button:hover {
-    font-size: 15px;
+    background-color: var(--second-color);
 }
 
 .search-bar {
