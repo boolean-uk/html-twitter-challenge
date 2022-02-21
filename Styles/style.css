@@ -28,7 +28,7 @@ aside {
 }
 
 main {
-  min-width: 300px;
+  min-width: 500px;
   border: var(--light-grey) 1px solid;
   overflow: scroll;
 }
@@ -176,8 +176,7 @@ h2 > span {
 }
 
 .post-image {
-  min-width: 300px;
-  max-height: 500px;
+  max-width: 450px;
 }
 
 /*** RIGHT BAR ***/
