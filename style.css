@@ -335,6 +335,20 @@ p {
   font-weight: bolder;
 }
 
+.news-grid {
+    display: grid;
+grid-template-columns: "left-text right-image" auto /
+1fr 1fr;
+}
+
+.left-text {
+    grid-area: left-text;
+}
+
+.right-image {
+    grid-area: right-image;
+}
+
 /* Footer Section - Not needed yet  */
 
 @media screen and (max-width: 800px) {
@@ -360,6 +374,6 @@ p {
 }
 }
 
-@media screen and (max-width: 640px) {
+/* @media screen and (max-width: 640px) {
  
-}
+} */
