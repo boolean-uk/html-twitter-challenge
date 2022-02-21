@@ -220,6 +220,7 @@ button:hover {
 
 /* Who to Follow */
 .who-to-follow-container > ul {
+  display: grid;
   gap: 10px;
 }
 .follow-button {
