@@ -22,6 +22,7 @@ html {
 /* --- BASE STYLES --- */
 aside {
   height: 100vh;
+  max-width: 300px;
   display: grid;
   justify-content: center;
 }
@@ -178,7 +179,6 @@ h2 > span {
 
 /*** RIGHT BAR ***/
 .right-bar-wrapper {
-  padding: 10px;
   gap: 10px;
   overflow: scroll;
 }
@@ -199,6 +199,7 @@ h2 > span {
 /* news */
 .news-bar-container,
 .who-to-follow-container {
+  max-width: fit-content;
   padding: 10px;
   background-color: var(--light-grey);
   border-radius: 20px;

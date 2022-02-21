@@ -1,14 +1,4 @@
-@media screen and (max-width: 800px) {
-  .menu-container h2 {
-    display: none;
-  }
-
-  .profile-container p {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
   .body-container {
     grid-template:
       "left-bar main" 1fr /
@@ -20,6 +10,16 @@
   }
   main {
     grid-area: main;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .menu-container h2 {
+    display: none;
+  }
+
+  .profile-container p {
+    display: none;
   }
 }
 
