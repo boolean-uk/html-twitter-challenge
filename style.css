@@ -80,6 +80,7 @@ h2 {
     color: black;
 }
 h3 {
+    color: black;
 }
 h4 {
     color: var(--second-color-dark);
@@ -132,12 +133,12 @@ h6 {
 .parent-container {
     display: grid;
     grid-template-columns: 1fr 4fr 1.8fr;
-    background-color: var(--first-color-light);
 }
 .main-container {
     display: grid;
     grid-template-rows: var(--header-height) 170px 20px auto;
 
+    width: auto;
     overflow-x: auto;
     max-height: 100vh;
     overflow-y: scroll;
@@ -165,10 +166,21 @@ h6 {
 }
 .right-side-bar-container {
     grid-template-rows: var(--header-height) minmax(400px, auto) 400px;
+    max-height: 100vh;
+    overflow-x: auto;
+    max-height: 100vh;
+    overflow-y: scroll;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+}
+.right-side-bar-container::-webkit-scrollbar { 
+    width: 0;
+    height: 0;
 }
 .tweet-icon-holder {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    max-width: 800px;
 }
 .tweet-icon-holder img {
 vertical-align: middle;
@@ -284,7 +296,6 @@ vertical-align: middle;
 }
 .icons-list-home {
     grid-area: icons-list-home;
-    padding-right: 600px;
 }
 .tweet-button-light-small{
     grid-area: tweet-button-light-small;
@@ -338,6 +349,7 @@ vertical-align: middle;
 .tweet-content {
     grid-area: tweet-content;
     padding: 10px;
+    margin-left: 10px;
 }
 .tweet p {
     display: inline;
