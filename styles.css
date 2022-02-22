@@ -136,6 +136,11 @@ button:hover {
 
 .search-box {
     border-radius: 40px;
+    padding: 2px;
+}
+
+.magnifying-glass {
+    padding-left: 25px;
 }
 
 button {
@@ -159,16 +164,7 @@ button {
     .twitter-grid {
         grid-template: 1fr 2fr;
     }
-    .right-side-bar {
-        display: none;
-    }
-    h3 {
-        display: none;
-    }
-    .text-name {
-        display: none;
-    }
-    .more-icon {
+    .right-side-bar, .h3, .text-name, .more-icon {
         display: none;
     }
     .gap-sm {
