@@ -44,12 +44,12 @@
   position: sticky;
 }
 
-.left-side .logo {
+.left-side #logo {
   margin-bottom: 3rem;
   padding-left: 1.2rem;
 }
 
-.left-side .logo .fa-twitter {
+.left-side #logo .fa-twitter {
   font-size: 3rem;
   color: darkturquoise;
 }
