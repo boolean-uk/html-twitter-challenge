@@ -16,28 +16,12 @@ li {
 }
 
 /* this is the coloured border, will be removed - its only here because it helps me to visualise the layout */
-
 /* .icon,
 .border {
     border: 1px dashed turquoise;
 } */
-
 /* this is the coloured border, will be removed */
 
-
-/* MEDIA QUERIES starts here */
-@media (max-width: 1260px) {
-  .right-panel {
-    width: 300px;
-  }
-}
-
-@media (max-width: 1180px) {
-  .right-panel {
-    display: none;
-  }
-}
-/* MEDIA QUERIES ends here */
 
 /* SCROLL BEHAVIOUS and HOVER starts here */
 ::-webkit-scrollbar {
@@ -167,7 +151,7 @@ p {
 /* MAIN GRID SETUP starts here */
 
 /* LEFT NAV BAR starts here */
-.nav {
+.nav-container {
   display: grid;
   grid-template-rows: 1fr auto;
   padding: 5px;
@@ -459,3 +443,31 @@ main {
 }
 /* RIGHT PANEL ends here */
 
+
+/* MEDIA QUERIES starts here */
+@media (max-width: 1260px) {
+  .right-panel {
+    width: 300px;
+  }
+}
+
+@media (max-width: 1180px) {
+  .right-panel {
+    display: none;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: auto 250px 600px auto;
+  }
+}
+
+@media (max-width: 900px) {
+  .nav-container {
+    display: none;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: auto 600px auto;
+  }
+}
+/* MEDIA QUERIES ends here */
