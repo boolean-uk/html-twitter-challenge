@@ -182,8 +182,7 @@ h6 {
     grid-template: 
     "profile-pic whats-happening-form whats-happening-form" auto
     ". icons-list-home tweet-button-light-small" 50px /
-    80px 1fr 110px
-    ;
+    80px 1fr 110px;
 }
 
 .left-menu-container {
@@ -344,7 +343,7 @@ vertical-align: middle;
 }
 
 .whats-happening-box .icon-small {
-    margin-right: 30px;
+    margin: 11px 10px 0 10px 
 }
 
 .profile-pic {
@@ -498,23 +497,27 @@ vertical-align: middle;
    border-radius: 30px;
 }
 
-.main-content ul :hover {
+.main-content li:hover {
     background-color: var(--second-color-medium);
  }
 
-.right-side-bar ul :hover {
+.right-side-bar li:hover {
     background-color: var(--first-color-medium);
  }
 
- .right-side-bar ul a :hover {
+ .right-side-bar li a:hover {
    text-decoration: underline;
  }
 
-.tweet-button :hover {
+.tweet-button:hover {
     background-color: #235a8d;
  }
 
- .tweet-button-light-small :hover {
+ .whats-happening-box li:hover {
+    background-color: var(--third-color-light);
+    border-radius: 50%;
+ }
+ .tweet-button-light-small:hover {
     background-color: #235a8d;
  }
 
