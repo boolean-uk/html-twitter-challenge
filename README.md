@@ -1,4 +1,4 @@
-# Twitter Clone
+# Twitter Clone Bassam Seid
 
 For this exercise, we will be building a clone of Twitter:
 
