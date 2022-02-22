@@ -1,0 +1,18 @@
+.leftmenu{
+    display: grid;
+    grid-template-rows:repeat(5, 25px);
+    border: solid black 1px;
+}
+.twitter{
+    list-style-type:none;
+}
+
+.endbotton{
+    padding: 2px 2px;
+    border-radius: 6px;
+    background-color: blue;
+    width: 60px;   
+}
+img{
+    max-width: 15px;
+}
