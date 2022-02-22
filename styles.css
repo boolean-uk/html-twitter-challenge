@@ -48,7 +48,7 @@ body {
     width: 50px;
 }
  
-.text {
+.text, .search-text {
     color: grey;
     font-size: 20px;
 }
@@ -88,15 +88,12 @@ h3, li:hover {
     margin: 10px;
 }
 
-.bear-image, 
-.inter-image,
-.khaled-image {
+.profile-img {
     height: 50px;
     width: 50px;
 }
 
-.bear-image, 
-.khaled-image {
+.profile-img {
     border-radius: 50%;
 }
 
@@ -125,6 +122,10 @@ button:hover {
     opacity: 1;
 }
 
+input[type=text] {
+ border: none;
+}
+
 /* RIGHT SIDE */
 
 .right-box {
@@ -137,6 +138,12 @@ button:hover {
 .search-box {
     border-radius: 40px;
     padding: 2px;
+    background-color: lightgray;
+}
+
+.search-text {
+    background-color: lightgray;
+    width: 100px;
 }
 
 .magnifying-glass {
