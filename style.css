@@ -223,6 +223,7 @@ vertical-align: middle;
     grid-template: 
     "retweet-icon retweet-name ." auto
     "profile-pic-small tweet-content three-dots-icon" auto
+    ". tweet-pic ." auto
     ". tweet-icon-holder ." 50px /
     50px 1fr 50px
 }
@@ -332,7 +333,8 @@ vertical-align: middle;
     position: sticky;
     top: 0;
 
-    background-color: rgba(255, 255, 255, 95%);
+    background-color: white;
+    opacity: 98%;
 }
 
 .whats-happening-form {
@@ -422,6 +424,16 @@ vertical-align: middle;
 
 .tweet p {
     display: inline;
+}
+
+.tweet-pic {
+    grid-area: tweet-pic;
+}
+
+.tweet-pic-img {
+    max-width: 490px;
+    max-height: 400px;
+    padding-left: 20px;
 }
 
 .tweet {
