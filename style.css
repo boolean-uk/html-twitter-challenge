@@ -222,9 +222,12 @@ a {
   padding-left: 10ps;
 }
 
-  grid-template: 
-    "profile-pic-bottom username three-dots-icon" a /
+.profile-info-grid {
+    display: grid;
+  grid-template : 
+    "profile-pic-bottom username three-dots-icon" auto /
     auto auto auto;
+}
 
 .profile-pic-bottom {
   grid-area: profile-pic-bottom;
