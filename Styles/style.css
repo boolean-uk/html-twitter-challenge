@@ -1,0 +1,234 @@
+/* COLOR */
+html {
+  --primary-color: rgb(255, 149, 149);
+  --second-primary-color: rgb(252, 85, 112);
+  --accent-color: rgb(214, 213, 213);
+  --second-accent-color: rgb(104, 99, 99);
+}
+
+/* --- BASE STYLES --- */
+aside {
+  max-height: 100vh;
+  max-width: 400px;
+  margin: 10px;
+  display: grid;
+  justify-content: center;
+}
+
+main {
+  height: 100vh;
+  border: var(--accent-color) 1px solid;
+  overflow: scroll;
+}
+
+h2 {
+  margin: 10px 0;
+  width: fit-content;
+}
+
+p {
+  margin: 5px 0 10px 0;
+}
+
+span {
+  color: grey;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 30px;
+  background-color: transparent;
+}
+
+input[type="text"] {
+  color: var(--second-accent-color);
+  padding: 10px;
+  font-size: 1em;
+}
+
+input:focus {
+  outline: none;
+}
+
+/* --- MAIN STYLES --- */
+.body-container {
+  max-width: 1500px;
+  min-height: 100vh;
+}
+/*** Left Bar ***/
+.logo {
+  width: 40px;
+  margin: 0 10px;
+}
+
+.left-bar-wrapper img {
+  width: 30px;
+  height: 30px;
+}
+
+/* menu bar */
+.menu-bar {
+  padding: 10px;
+}
+
+.menu-bar > a {
+  align-items: center;
+  text-decoration: none;
+}
+
+.menu-bar > a:visited {
+  color: black;
+}
+
+h2 > span {
+  color: var(--primary-color);
+}
+
+/* tweet button */
+.tweet-button {
+  width: 100%;
+  height: 50px;
+  margin: 10px 0;
+  font-size: 1em;
+  font-weight: 800;
+  color: white;
+  background-color: var(--primary-color);
+  cursor: pointer;
+}
+
+.tweet-button:hover {
+  background-color: var(--second-primary-color);
+}
+
+/* profile bar */
+.profile-container {
+  max-width: 300px;
+  padding: 10px;
+  gap: 10px;
+  align-items: center;
+  align-self: end;
+}
+
+.profile-icon {
+  object-fit: cover;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+/*** Main ***/
+/* Header */
+.home-container {
+  padding: 10px;
+  border-bottom: var(--accent-color) 1px solid;
+}
+
+.home-container > img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Post */
+.post-container {
+  padding: 10px;
+}
+
+.input-container > input {
+  width: 100%;
+  height: 75px;
+  border: none;
+}
+
+.media-container > ul {
+  place-items: center;
+}
+
+.media-icon {
+  background-color: transparent;
+}
+
+.media-icon > img,
+.tweet-icon {
+  width: 20px;
+  margin: 5px;
+}
+
+/* Tweets */
+.tweet-container {
+  padding: 10px;
+  border-top: var(--accent-color) 1px solid;
+}
+
+.option-icon {
+  width: 15px;
+}
+
+.post-image {
+  max-width: 400px;
+}
+
+/*** RIGHT BAR ***/
+.right-bar-wrapper {
+  max-width: 300px;
+  gap: 10px;
+  overflow: scroll;
+}
+
+.search-twitter {
+  height: 50px;
+  margin: 10px;
+  background-color: var(--accent-color);
+  border: none;
+  border-radius: 30px;
+}
+
+/* news */
+.news-bar-container,
+.who-to-follow-container {
+  padding: 0 10px;
+  background-color: var(--accent-color);
+  border-radius: 20px;
+}
+
+.news-bar-container > a {
+  border-top: var(--second-accent-color) 1px solid;
+  margin: 10px;
+}
+.news-bar-container h4 {
+  color: var(--primary-color);
+  margin: 0;
+}
+
+.news {
+  border-top: var(--second-accent-color) 1px solid;
+}
+.news p {
+  width: fit-content;
+  color: var(--second-accent-color);
+  font-size: 14px;
+}
+
+/* Who to Follow */
+.who-to-follow-container h3 {
+  border-bottom: var(--second-accent-color) 1px solid;
+}
+.who-to-follow-container ul {
+  display: grid;
+  gap: 10px;
+}
+.who-to-follow-container li {
+  align-items: center;
+  gap: 5px;
+}
+
+.follow-button {
+  width: 60px;
+  height: 30px;
+  color: white;
+  background-color: var(--primary-color);
+}
+
+.follow-button:hover {
+  background-color: var(--second-primary-color);
+}

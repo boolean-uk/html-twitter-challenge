@@ -1,0 +1,30 @@
+.two-grid-column__expand-one {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+}
+
+.two-grid-column__expand-two {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+}
+
+.three-grid-column__big-two {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+
+.grid-auto-flow__column {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.grid-auto-flow__row {
+  display: grid;
+  grid-auto-flow: row;
+}
+
+.centered {
+  margin: 0 auto;
+}
