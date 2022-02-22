@@ -1,0 +1,318 @@
+* {
+    padding:0px;
+    margin: 0px;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", 
+  Helvetica, Arial, "Lucida Grande", sans-serif;
+}
+
+.main-grid {
+    display:grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 3fr 2fr; 
+    max-width: 1265px;
+}
+
+@media screen and (max-width:1000px) {
+    .main-grid {
+        grid-template-columns: 1fr 0fr 3fr 2fr;                      
+    }
+    .left-menu {
+        display:none;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .main-grid {
+        grid-template-columns: 1fr 0fr 3fr 0fr;                      
+    }
+    .right-menu {
+        display:none;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .main-grid {
+        grid-template-columns: 0fr 0fr 3fr 0fr;                      
+    }
+    .left-side-icons {
+        display:none;
+    }
+}
+
+/* --------------------------------LEFT COLUMN 1--------------------------------*/
+
+.left-side-icons {
+    background-color: rgb(255, 255, 255);
+}
+
+.left-icons-wrapper {
+    display:grid;
+    row-gap: 5px;
+    align-items: center;
+    justify-items: right;
+    padding-top: 5px;  
+}
+
+img {
+    padding: 10px;
+    min-height: 20px;
+}
+
+#skull, #idea, #rocket, #connections, #spider, #sand-castle, #jellyfish, #crab, #wasp {
+    width:40px;
+     
+}
+
+/* --------------------------------LEFT COLUMN 2--------------------------------*/
+
+.left-menu {
+    background-color: rgb(255, 255, 255);
+}
+
+.left-menu-wrapper {
+    display:grid;
+    row-gap: 5px;
+    align-items: center;
+    justify-items: left;
+    padding-top: 5px;
+    scroll-behavior: none;
+}
+
+.left-menu-item {
+    padding: 20px;
+    min-height: 20px;
+    border-radius:25px;
+    display:inline-grid;
+}
+
+.left-menu-item.button {
+    width:100px;
+    background-color: #3884f7; 
+}
+
+.link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: hotpink;
+    background-color: aqua;
+  }
+
+/* --------------------------------CENTER COLUMN --------------------------------*/
+
+.tweets {
+    background-color:FFFFFF;
+}
+
+.tweet-wrapper {
+    display:grid;
+    align-items: center;
+    justify-items: center;
+    min-height: 20px;
+    min-width: 499px;
+    /*max-width: 700px;*/
+    scroll-behavior: column;
+    padding-right: 10px;
+}
+
+.tweet-item-home {
+    border: solid .5px rgb(148, 143, 143);
+    min-width:100%;
+    min-height: 30px;
+    font-size: 14pt;
+}
+
+#whats-happening {
+    display:grid;
+    grid-template-columns: repeat (8, 1fr);
+    grid-template-rows: 1fr 1fr 1fr;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    align-items: start;
+    justify-items: center;
+}
+
+img {
+    width:20px;
+    
+}
+
+#avatar {
+    border-radius: 50%;
+    width: 30px;
+    background-color:purple;
+  }
+
+  .avatar-2 {
+    border-radius: 50%;
+    width: 30px;
+    background-color:rgb(0, 77, 128);
+    margin: left 10px;
+    padding-left: 10px;
+  }
+
+#whats-happening-text {
+    grid-column: 2 / span 1;
+    justify-items: left;
+}
+
+.whats-happening-icon-grid {
+    display: grid;
+    grid-column: 2;
+    grid-row:3;
+    min-width: 20px;
+}
+
+.tweet-icons-1 { 
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.tweet-icons-2 { 
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.tweet-icons-3 { 
+    grid-column: 4;
+    grid-row:3;
+}
+
+.tweet-icons-4 { 
+    grid-column: 5;
+    grid-row:3;
+    justify-items: start;
+}
+
+.tweet-icons-5 {
+    grid-column: 6;
+    grid-row: 3;
+}
+
+.tweet {
+    grid-column: 8;
+    grid-row: 3;
+    border: none;
+    border-radius: 25px;
+    background-color: #3884f7; 
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.tweet-item {
+    border:solid rgb(148, 143, 143);
+    border-width: .1px .5px .1px .5px;
+    border-radius:0px;
+    min-width:100%;
+    min-height: 150px; 
+}
+
+.tweet-item-end {
+    border: .5px solid rgb(148, 143, 143);
+    min-width:100%;
+    min-height: 150px; 
+}
+
+.tweet-components {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 60px 60px 60px;
+    justify-items:center;
+    align-items:end;
+    min-height: 100%;
+    padding-block: 5px;
+}
+
+.three-dots {
+    grid-row: 1;
+    grid-column: 5;
+}
+
+.tweet-icons-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-row: 3; 
+    grid-column:2;
+    justify-items: start;
+}
+
+.tweet-text {
+    grid-column: 2 / span 3;
+    font-size: 14px;
+}
+
+/* --------------------------------RIGHT COLUMN --------------------------------*/
+
+.right-menu {
+    grid-column: 4;
+    width: 100%;
+    padding: 10px;
+}
+
+.right-menu-wrapper {
+    display:grid;
+    align-items: center;
+    justify-items: center;
+    column-span:all;
+    width:100%;
+    
+}
+
+.right-menu-item {
+    min-height: 150px;
+    min-width: 360px;
+    max-width: auto;
+    background-color:rgb(221, 219, 223);
+    border-radius: 5px;
+}
+
+.right-menu-item-search {
+    display:grid;
+    width: 360px;
+    align-items: center;
+    justify-items: center;
+    border: solid .5px rgb(209, 208, 209);
+}
+
+.actual-status-box {
+    min-height: 50px;
+    width: 360px;
+    border-radius: 5px;
+    text-align: start;
+    background-color:rgb(202, 202, 202);
+}
+
+.news-items {
+    display:grid;
+    grid-template-rows: 30px 90px 30px;
+    grid-template-columns: 180px 180px;
+    row-gap: 5px;
+    border: 5px;
+    padding: 10px;
+}
+
+.headline {
+    grid-row: 1;
+}
+
+.story-content {
+    grid-row: 2;
+    font-size: .9em;
+}
+
+.trending {
+    grid-row: 3;
+    font-size: .8em;
+}
+
+.flamingo {
+    width: 10em;
+}
