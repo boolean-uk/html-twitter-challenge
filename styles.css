@@ -139,6 +139,7 @@ input[type=text] {
     border-radius: 40px;
     padding: 2px;
     background-color: lightgray;
+    height: 45px;
 }
 
 .search-text {
@@ -163,6 +164,12 @@ button {
 
 .read-more-link {
     color: rgb(29, 155, 240);
+}
+
+hr {
+    border: solid rgb(172, 167, 167);
+    border-bottom: none;
+    width: 40%;
 }
 
 /* RESPONSIVENESS */
