@@ -48,7 +48,8 @@ select {
 
 :root {
   --clr-dark: 0, 22, 50;
-  --clr-light: 109, 151, 173;
+  --clr-grey: 189, 193, 197;
+  --clr-grey-light: 211, 211, 211;
   --clr-accent: 85, 172, 238;
   --clr-white: 255, 255, 255;
 
@@ -122,7 +123,9 @@ select {
 .tweet-btn {
   margin-left: 10px;
   width: 80%;
+  border: none;
 }
+
 .tweet-btn-sm {
   font-size: 12px;
   padding: 5px;
@@ -145,7 +148,7 @@ select {
 
 .icon-md {
   height: 25px;
-  min-width: no25pxne;
+  min-width: 25px;
   border-radius: 12.5px;
   margin-right: 10px;
 }
@@ -199,7 +202,7 @@ h2 {
 }
 
 .grey-sub-text {
-  color: #d3d8dd;
+  color: rgba(var(--clr-grey));
 }
 
 /* ------------------- */
@@ -231,13 +234,13 @@ li > a:focus {
 /* ------------------- */
 
 .main-section {
-  border-inline: lightgrey solid 1px;
+  border-inline: rgba(var(--clr-grey-light)) solid 1px;
   overflow-y: scroll;
 }
 
 .home-title {
   padding: 10px;
-  border-bottom: lightgrey solid 1px;
+  border-bottom: rgba(var(--clr-grey-light)) solid 1px;
 }
 
 /* status section */
@@ -253,7 +256,7 @@ li > a:focus {
 }
 
 .status-container {
-  border-bottom: 15px #f7f9fa solid;
+  border-bottom: 15px rgba(var(--clr-grey-light), 0.2) solid;
 }
 
 /* posts section */
@@ -264,7 +267,7 @@ main .icon-md {
 }
 
 .post {
-  border-block: lightgrey 1px solid;
+  border-block: rgba(var(--clr-grey-light)) 1px solid;
 }
 
 .post-img {
@@ -285,19 +288,19 @@ main .icon-md {
 .search-bar {
   width: 100%;
   border: none;
-  background-color: #f7f9fa;
+  background-color: rgba(var(--clr-grey-light), 0.2);
   border-radius: 30px;
   padding: 10px;
   margin-block: 10px;
 }
 
 .stories {
-  background-color: #f7f9fa;
+  background-color: rgba(var(--clr-grey-light), 0.2);
   border-radius: 10px;
 }
 
 .story {
-  border-bottom: rgb(170, 169, 169) solid 1px;
+  border-bottom: rgba(var(--clr-grey)) solid 1px;
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
