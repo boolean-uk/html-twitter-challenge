@@ -1,0 +1,676 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: grid;
+}
+
+
+.layout {
+    grid-area: layout;
+    background-color: white;
+    display: grid;
+    height: 105vh;
+    grid-template: 
+        "left-col main-col right-col" 1fr/
+        25% 42% 33%;
+}
+
+/* LEFT SECTION */
+
+.left-col {
+    grid-area: left-col;
+    display: grid;
+    height: 105vh;
+    margin: 0;
+    border-right: 1px solid rgb(221, 221, 221);
+    grid-template-rows: 700px 300px;
+}
+
+
+.lefty {
+    position: sticky;
+    top: 5px;
+}
+
+.aa {
+    display: grid;
+    background-color: white;
+    place-items: center;
+}
+
+.aa a img {
+    height: 30px;
+    padding-top: 5px;
+    display: grid;
+    position: sticky;
+    place-items: center;
+    top: 10px;
+}
+
+
+.box1,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7,
+.box8,
+.box9 {
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: 70px 200px;
+    place-items: center;
+}
+
+
+
+h2 {
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.box9 {
+    display: grid;
+    place-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+h2 a:hover {
+    background: rgb(221, 221, 221);
+    border-radius: 5px;
+}
+
+.lefttweet {
+    display: grid;
+    place-items: center;
+    border-radius: 20px;
+    margin-top: 30px;
+    background-color:rgb(75, 173, 235);
+    padding: 0px 45px 0px 45px;
+    color: white;
+    margin-left: 200px;
+    font-family: helvetica;
+    font-weight: bold;
+    font-size: 15px;
+    height: 30px;
+    text-decoration: none;
+}   
+
+
+.bb {
+    display: grid;
+    background-color: white;
+    place-items: center;
+}
+
+.box10 {
+    display: grid;
+    margin-top: 70px;
+    place-items: center;
+    grid-template-columns: 60px 100px;
+}
+
+.profile-pic a img {
+    display: grid;
+    border-radius: 50%;
+    margin-left: 15px;
+    height: 55px;
+    width: 55px;
+    margin-top: 10px;
+}
+
+.profile-pic,
+.deets {
+    display: grid;
+    place-items: center;
+}
+
+
+/* MIDDLE SECTION */
+.main-col {
+    grid-area: main-col;
+    background-color: white;
+    display: grid;
+    height: 105vh;
+    grid-template-rows: 200px 450pt 160px;
+    border: 10px 10px 10px 10px;
+}
+
+/* WHOLE TOP BOXONE */
+.boxone {
+    background: white;
+    display: grid;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    grid-template-rows: 30% 40% 30%;
+}
+
+/* HOMEONE */
+.homeone {
+    background: white;
+    display: grid;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    grid-template-columns: 85% 15%;
+}
+
+.homeone {
+    position: sticky;
+    top: 10px;
+}
+
+
+.top-home {
+    font-family: arial;
+    font-weight: bold;
+    font-size: 20px; 
+    border: 0;
+    display: grid;
+    margin-top: 4%;
+    margin-left: 4%;
+    margin-bottom: 4%;
+    margin-right: auto;
+}
+
+
+.top-tweets svg {
+    border: 0;
+    display: grid;
+    margin-top: 24px;
+    margin-left: 50px;
+    margin-right: auto;
+}
+
+
+/* MIDDLEONE */
+
+.middleone {
+    background: white;
+    display: grid;
+    grid-template-columns: 18% 82%;
+}
+
+.status-box {
+    background-color: white;
+}
+
+.actual-status-box {
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding: 1%;
+    padding-top: 15px;
+    border: transparent;
+    margin-top: 15px;
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+
+.profile-pict {
+    background-color: white;
+    padding-top: 10px;
+}
+
+.profile-pict a img {
+    display: grid;
+    border-radius: 50%;
+    margin-left: 15px;
+    height: 55px;
+    width: 55px;
+    margin-top: 10px;
+}
+
+/* ICONSONE */
+
+.iconsone {
+    background: rgb(247, 247, 247);
+    display: grid;
+    grid-template-columns: 18% 10% 10% 10% 10% 25% 17%;
+}
+
+.boxisa,
+.boxdalawa, 
+.boxtatlo, 
+.boxapat,
+.boxlima,
+.boxanim,
+.boxpito {
+    background-color: white; 
+}
+
+
+.iconsone svg {
+    fill: rgb(75, 173, 235);
+}
+
+svg:hover {
+    background-color:rgb(220, 239, 250);
+    border-radius: 50%;
+    }
+
+
+
+
+/* MIDDLE TWEET BUTTON */
+.tweetbut {
+    border: 2px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 20px;
+    background-color: rgb(75, 173, 235);
+    color: white;
+    font-weight: bold;
+    font-family: helvetica;
+    width:min-content;
+    font-size: 15px;
+    height: 30px;
+    place-items: center;
+    display: grid;
+  }
+
+.btn {
+    color: white;
+    text-decoration: none;
+  }
+
+
+
+/* MR BEAST POST */
+.boxtwo {
+    background: white;
+    display: grid;
+    grid-template-columns: 12% 88%;
+}
+
+.beastpic {
+    background-color: white;
+}
+
+.beastpic a img {
+    display: grid;
+    border-radius: 50%;
+    margin-left: 15px;
+    height: 55px;
+    width: 55px;
+    margin-top: 10px;
+}
+
+.beastcontext {
+    background-color: white;
+    
+}
+.beastuser {
+    margin-top: 6px;
+}
+
+
+.beastuser h3,
+.beastuser h4 {
+    display: inline;
+    margin-left: 10px;
+}
+
+.beastuser h3 {
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.beasttext h3 {
+    display: grid;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+.beastyoutubepic {
+    display: grid;
+}
+
+.beastyoutubepic {
+    display: grid;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+.beastyoutubepic a img {
+    height: 400px;
+    border-radius: 15px;
+}
+
+.reactions {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+
+
+/* MY POST */
+.boxthree {
+    background: white;
+    border-top: 1px solid rgb(221, 221, 221);
+    display: grid;
+    grid-template-columns: 12% 88%;
+}
+
+.profilepictu {
+    background-color: white;
+}
+
+.profilepictu a img {
+    display: grid;
+    border-radius: 50%;
+    margin-left: 15px;
+    height: 55px;
+    width: 55px;
+    margin-top: 10px;
+}
+
+.mycontext {
+    background-color: white;
+    
+}
+.myuser {
+    margin-top: 6px;
+}
+
+
+.myuser h3,
+.myuser h4 {
+    display: inline;
+    margin-left: 10px;
+}
+
+.myuser h3 {
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.mytext h3 {
+    display: grid;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+.reactions {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+svg {
+    display: grid;
+    height: 25px;
+}
+
+
+/* RIGHT COLUMN */
+.right-col {
+    grid-area: right-col;
+    background-color: white;
+    padding-top: 10px;
+    display: grid;
+    height: 105vh;
+    border-left: 1px solid rgb(221, 221, 221);
+    grid-template-rows: 50px 420pt 370px 50px;
+    gap: 5px;
+    margin-right: 10px;
+    border: 10px 10px 10px 10px;
+}
+
+/* SEARCH BOX */
+.twittersearch {
+    border: 2px;
+    background: rgb(233, 233, 233);
+    margin-left: 35px;
+    margin-right: 50px;
+    border-radius: 30px;
+    display: grid;
+    padding-top: 15x;
+    padding-left: 15px;
+    grid-template-columns: 50px 300px;
+    position: sticky;
+    top: 0;
+}
+
+.input,
+.searchicon {
+    margin-top: 10px;
+}
+
+
+input {
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border: 0;
+    display: grid;
+    margin-right: 90px;
+    place-content: center;
+    background-color: transparent;  
+}
+
+/* PROMO SECTION */
+.whatshappening {
+    background: rgb(233, 233, 233);
+    margin-top: 10px;
+    margin-left: 35px;
+    margin-right: 50px;
+    border-radius: 15px;
+    display: grid;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    grid-template-rows: 50px 85px 85px 80px;
+    gap: 5px;
+    border: 10px 10px 10px 10px;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+
+}
+
+#subheadings {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: rgb(83, 83, 83);
+    font-weight: normal;
+}
+
+h4 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: black;
+}
+
+.showmore {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    color: rgb(75, 173, 235);
+}
+
+strong {
+    color: rgb(75, 173, 235);
+    font-weight: normal;
+}
+
+.promo1,
+.promo2,
+.promo3,
+.promo4,
+.promo5 { 
+    display: grid;
+    grid-template-columns: 250px 70px;
+}
+
+
+
+.promoa111 {
+    display: grid;
+}
+
+.dot svg {
+    border-radius: 10%;
+    width: 120px;
+    margin-left: 110px;
+}
+
+
+.imagesleft img {
+    border-radius: 10%;
+    margin-left: 70px;
+    width: 120px;
+}
+
+
+
+.whotofollow {
+    background: rgb(233, 233, 233);
+    margin-top: 10px;
+    margin-left: 35px;
+    margin-right: 50px;
+    border-radius: 15px;
+    padding-top: 15px;
+    padding-left: 15px;
+    display: grid;
+    grid-template-rows: 55px 800px;
+}
+
+
+/* SOCIALS SECTIONS */
+.fourrows {
+    display: grid;
+    Grid-auto-rows: 80px;
+}
+
+.one23 {
+    display: grid;
+    grid-template-columns: 150px 150px 120px;
+    border: 0;
+    place-items: center;
+}
+
+.showmore {
+    padding-top: 5px;
+}
+
+
+.followbutton {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    display: grid;
+    place-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 20px;
+    width: 80px;
+}
+
+.hello a img {
+    display: grid;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+}
+
+
+
+/* INNER SCROLL BARS */
+.right-col,
+.main-col {
+    overflow-y: auto;
+}
+
+.messagesbox {
+    display: grid;
+    border: 2px solid rgb(221, 221, 221);
+    background-color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin-left: 35px;
+    margin-right: 50px;
+    padding-top: 15x;
+    padding-left: 15px;
+    grid-template-columns: 1fr 110px;
+    place-content: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+
+}
+
+.messages1 {
+    display: grid;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding-top: 5px;
+    font-size: 20px;
+    place-items: start;
+}
+
+
+.twoicons {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+
+
+
+/* RIGHT COLUMN REMOVED */
+@media screen and (max-width: 1100px) {
+    .layout {
+    grid-template:
+    "left-col main-col" 1fr/
+    25% 42%;
+    }
+    .right-col {
+        display: none;
+        background-color: rgb(221, 221, 221);
+    }
+.disappear {
+    display: none;
+}
+}
+
+/* LEFT COLUMN REMOVED */
+
+@media screen and (max-width: 500px) {
+    .layout {
+    grid-template:
+    "main-col" 1fr/
+    42%;
+    }
+    .left-col,
+    .right-col {
+        display: none;
+        background-color: rgb(221, 221, 221);
+    }
+}
