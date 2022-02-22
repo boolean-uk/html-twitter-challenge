@@ -5,6 +5,7 @@
     --second-color: #f7f9fa;  /* Main and risght side bar BG */
     --third-color: #eceef0;   /* Main borders and BG a:hover */
     --fourth-color: #706c6c;
+    --white: #ffffff;         /* Some backgrounds and buttons:hovered */
 }
 
 body {
@@ -40,7 +41,7 @@ a:active {
 
 button {
     border-style: none;
-    background-color: #ffffff;
+    background-color: var(--white);
 }
 
 button:hover {
@@ -85,7 +86,7 @@ main::-webkit-scrollbar {
 }
 
 main > * {
-    background-color: #ffffff;
+    background-color: var(--white);
 }
 
 main header {
@@ -171,7 +172,7 @@ main .feed button:hover {
     background-color: #1ea1f31a;
 }
 
-main .feed button svg:hover {
+main .feed button:hover svg {
     fill: var(--main-color);
 }
 
@@ -179,7 +180,7 @@ main .feed .retweet:hover {
     background-color: #45db1f1a;
 }
 
-main .feed .retweet svg:hover {
+main .feed .retweet:hover svg {
     fill: #47bb2a;
 }
 
@@ -187,7 +188,7 @@ main .feed .like:hover {
     background-color: #f918801a;
 }
 
-main .feed .like svg:hover {
+main .feed .like:hover svg {
     fill: #f91880;
 }
 
