@@ -1,4 +1,39 @@
 @media screen and (max-width: 900px) {
+  .menu-bar a {
+    display: grid;
+    grid-template:
+      "icon" 1fr /
+      1fr;
+
+    grid-area: icon;
+    place-items: center;
+  }
+
+  .menu-bar h2 {
+    display: none;
+  }
+
+  .profile-container {
+    display: grid;
+    grid-template:
+      "profile-icon option-icon" 1fr /
+      1fr 1fr;
+
+    place-items: center;
+  }
+
+  .profile-container > .profile-icon {
+    grid-area: profile-icon;
+  }
+  .option-icon {
+    grid-area: option-icon;
+  }
+  .profile-container p {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 750px) {
   .body-container {
     grid-template:
       "left-bar main" 1fr /
@@ -10,16 +45,6 @@
   }
   main {
     grid-area: main;
-  }
-}
-
-@media screen and (max-width: 750px) {
-  .menu-container h2 {
-    display: none;
-  }
-
-  .profile-container p {
-    display: none;
   }
 }
 

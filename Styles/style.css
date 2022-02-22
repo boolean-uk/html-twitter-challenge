@@ -1,14 +1,3 @@
-/* DELETE LATER
-.border-red {
-  border: red 2px solid;
-}
-.border-green {
-  border: green 2px solid;
-}
-.border-blue {
-  border: blue 2px solid;
-} */
-
 /* COLOR */
 html {
   --primary-color: rgb(255, 149, 149);
@@ -20,7 +9,8 @@ html {
 /* --- BASE STYLES --- */
 aside {
   height: 100vh;
-  max-width: 300px;
+  max-width: 400px;
+  margin: 10px;
   display: grid;
   justify-content: center;
 }
@@ -32,6 +22,7 @@ main {
 
 h2 {
   margin: 10px 0;
+  width: fit-content;
 }
 
 p {
@@ -62,16 +53,12 @@ input:focus {
 /* --- MAIN STYLES --- */
 .body-container {
   max-width: 1500px;
-  height: 100vh;
+  min-height: 100vh;
 }
 /*** Left Bar ***/
 .logo {
   width: 40px;
-  margin: 10px;
-}
-
-.left-bar-wrapper {
-  padding: 10px;
+  margin: 0 10px;
 }
 
 .left-bar-wrapper img {
@@ -177,11 +164,12 @@ h2 > span {
 }
 
 .post-image {
-  max-width: 450px;
+  max-width: 400px;
 }
 
 /*** RIGHT BAR ***/
 .right-bar-wrapper {
+  max-width: 300px;
   gap: 10px;
   overflow: scroll;
 }
@@ -197,8 +185,7 @@ h2 > span {
 /* news */
 .news-bar-container,
 .who-to-follow-container {
-  max-width: fit-content;
-  padding: 10px;
+  padding: 0 10px;
   background-color: var(--accent-color);
   border-radius: 20px;
 }
@@ -211,10 +198,12 @@ h2 > span {
   color: var(--primary-color);
   margin: 0;
 }
+
 .news {
   border-top: var(--second-accent-color) 1px solid;
 }
 .news p {
+  width: fit-content;
   color: var(--second-accent-color);
   font-size: 14px;
 }
