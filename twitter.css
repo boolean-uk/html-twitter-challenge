@@ -22,12 +22,12 @@ h2{
     gap: 2px;
   }
 .center-wrapper{
-    max-width: 1000px;
+    max-width: 1250px;
     margin: 0 auto
 }
 .three-column-grid{
     display: grid;
-    grid-template-columns: auto 1fr 80px;
+    grid-template-columns: auto 1fr auto;
 }
 
 .three-row-grid{
@@ -44,6 +44,7 @@ h2{
     display: grid;
     grid-template-columns: 50px auto 50px;
     column-gap: 5px;
+    padding: 10px;
   }
 .three-row-grid__main{
     display: grid;
@@ -67,7 +68,7 @@ font-size: 20px
 .main-body > *{
     padding: 2px;
 }
-/**/
+/* Left Nav Bar*/
 
 
 
@@ -133,6 +134,32 @@ a:hover{
 }
 
 
+
+@media screen and (max-width: 1580px) {
+    .main-body {
+            display: grid;
+            grid-template-columns: 70px 4fr 1.8fr;
+            background-color: var(--first-color-light);
+        }
+    .icons h2 {
+            display: none;
+        }
+    .tweet{
+        display: none;
+    }
+    .profile p ,
+    .profile .dots{
+        display: none;
+    }
+
+    }
+    .icons{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
+    
+
 /* Main Section */
 .main{
     border: 1.5px solid #E1E8ED;
@@ -186,7 +213,7 @@ a:hover{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .tweet-status{
-    background-color: #3080b3;
+    background-color: #1DA1F2;
     border-radius: 50px;
 }
 .tweet-status h3{
@@ -212,6 +239,41 @@ a:hover{
     border-radius: 25px;
 }
     
+.user{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-size: small;
+    color: #AAB8C2;
+}
+.profile-statement p {
+    color: black;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+font-weight: 500;
+
+}
+
+
+.paragraph{
+    font-family: 'Franklin Gothic Medium',
+     'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;}
+
+.right-icon{
+    height: 30px;
+    width: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* News Right side Bar */
 
 .search-bar{
