@@ -1,0 +1,261 @@
+* { margin:0;
+    border:0;
+    padding:0;
+    color: black;
+    font-family:Helvetica, sans-serif
+}
+/*margins*/
+body {
+    margin-top: 20px;
+    height: 100vh
+}
+#main header {
+    padding: 10px 10px 10px;
+}
+.auto-row-box article,
+#main .tweet-grid,
+header {
+    border: 1px solid lightgrey
+}
+.tweet-grid {
+    padding: 10px 0px 10px 10px
+}
+/*element styling*/
+h1 {
+    font-size: 20pt;
+    }
+h1,
+h2 {
+    font-weight: bold;
+}
+h2,
+p,
+h3,
+textarea {
+    font-size: 15pt
+}
+h3,
+h4 {
+    font-weight: normal;
+    color: grey;
+}
+h4,
+span {
+    font-size: 13pt
+}
+h5 {
+    color: white
+}
+a {
+    text-decoration: none;
+}
+em {
+    font-style: normal;
+    font-weight: bold;
+    color:rgb(29, 126, 192)
+}
+strong {
+    font-weight: normal;
+    color: gray
+}
+nav img {
+    max-height: 40px;
+    max-width: 40px;
+}
+#small-profile {
+    width: 60px;
+}
+.icon {
+    max-height:25px;
+    max-width: 25px
+}
+.right {
+    width: 130px
+}
+.left {
+    width: 200px;
+}
+.tweet.button {
+    height: 45px;
+    padding-top: 20px;
+    color: white;
+    background-color: #4BA0EB;
+}
+.button {
+    font-size: 17pt;
+    text-align:center;
+    border-radius: 40px;
+    align-items: center;
+}
+.follow.button {
+    height: 25px;
+    width: 100px;
+    padding-top: 5px;
+    background-color: white;
+    color:rgb(29, 126, 192);
+    font-weight: bold;
+    border:rgb(29, 126, 192) solid 2px
+}
+.profile-pic {
+    border-radius: 50%;
+    max-width: 100px;
+    max-height: 100px
+}
+.embedded {
+    border-radius: 10px
+}
+#searchbar, 
+#searchbar textarea {
+    background-color: #c2c7ce;
+}
+.hide {
+    display: none;
+    padding-left: 12px
+}
+/*grids*/
+.container {
+    display: grid;
+    grid-template-columns: 5fr 8fr 6fr;
+    gap:10px
+}
+nav {
+    display: grid;
+    grid-template-rows: repeat(8, 60px);
+    gap: 20px
+}
+nav div,
+#searchbar,
+.tweet-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px
+}
+#menu {
+    display: grid;
+    grid-template-rows: 700px 1fr auto auto;
+    margin-left: 200px;
+    }
+#main {
+    display: grid;
+    grid-template-rows: 50px 150px auto;
+}
+.inner-tweet-grid {
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+.two-col-grid {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+.four-col-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+#tweet-options  {
+    display: grid;
+    grid-template-columns: repeat(5, 60px)
+}
+.auto-row-box {
+    display: grid;
+    grid-auto-rows: auto;
+    grid-gap: 10px
+}
+#suggested {
+    display: grid;
+    grid-auto-rows: min-content;
+    gap: 15px;
+    margin-right: 200px
+}
+#searchbar {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    height: 40px;
+    width: 500px;
+    margin-left: 5px;
+    border-radius: 50px;
+    padding: 15px 15px 0px 15px
+}
+
+.content-box {
+    display: grid;
+    grid-auto-rows: min-content;
+    gap: 20px;
+    background-color: #c2c7ce;
+    padding: 15px;
+    border-radius: 40px;
+}
+.content-box article {
+    display: grid;
+    grid-template: "about img" auto
+                   "main  img" auto
+                   "stats img" auto /
+                    1fr auto;
+}
+.h-about {
+    grid-area: about
+}
+.h-main {
+    grid-area: main
+}
+.h-stats {
+    grid-area:stats
+}
+.h-blank {
+    grid-area:blank
+}
+.h-img {
+    grid-area: img;
+    height: 60px;
+    width: 60px;
+    border-radius: 10px
+}
+.inline-grid {
+    display: grid;
+    grid-template-columns: auto auto auto 1fr;
+    grid-template-rows: 1fr;
+    gap: 5px
+}
+/*responsiveness section*/
+.menulink:hover {
+    color: #4BA0EB;
+}
+@media screen and (max-width: 1265px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 8fr 6fr;
+    }
+    .menulink {
+        display: none;
+    }
+    #menu {
+        margin-left: 10px
+    }
+    #menu .tweet {
+        height: 50px;
+        width: 50px;
+        background-color: #4BA0EB;
+        border-radius: 50%;
+        align-items: center;
+    }
+    #menu .two-col-grid {
+        display: none;
+    }
+    .hide {
+        display:grid
+    }
+    div h5 {
+        display: none;
+    }
+}
+@media screen and (max-width: 801px) {
+    #suggested {
+        display: none
+    }
+    #menu {
+        margin-right:0px
+    }
+    #main {
+        padding-left: 0px;
+        margin-left:0px
+    }
+}
