@@ -16,9 +16,6 @@ body {
 
 /* Header Section  */
 
-/* header {
-} */
-
 .header-grid {
   display: grid;
   grid-template:
@@ -30,12 +27,10 @@ body {
 .twitter-logo {
   grid-area: twitter-logo;
   padding-right: 100px;
-  /* border: 2px solid rgb(29, 26, 226); */
 }
 
 .home-section {
   grid-area: home-grid;
-  /* border: 2px solid rgb(226, 26, 26); */
 }
 
 .home-grid {
@@ -79,9 +74,6 @@ body {
 }
 
 .Search-twitter {
-  /* text-align: center;
-  justify-content: center;
-  justify-items: center; */
   padding-top: 15px;
   padding-left: 15px;
 }
@@ -112,11 +104,6 @@ body {
 
 .left-menu {
   grid-area: left-menu;
-  /* border: 2px solid rgb(6, 223, 24); */
-}
-
-.home-main {
-  /* border: 2px solid rgb(223, 6, 6); */
 }
 
 .home-button {
@@ -135,10 +122,6 @@ a {
   background-color: rgb(4, 134, 240);
 }
 
-.explore {
-  /* border: 2px solid rgb(223, 6, 6); */
-}
-
 .explore-button {
   text-align: center;
   padding-top: 10px;
@@ -148,10 +131,6 @@ a {
 
 .explore-button:hover {
   background-color: rgb(4, 134, 240);
-}
-
-.notifications {
-  /* padding-right: 10px; */
 }
 
 .notifications-button {
@@ -165,10 +144,6 @@ a {
   background-color: rgb(4, 134, 240);
 }
 
-.messages {
-  /* border: 2px solid rgb(223, 6, 6); */
-}
-
 .messages-button {
   text-align: center;
   padding-top: 10px;
@@ -178,10 +153,6 @@ a {
 
 .messages-button:hover {
   background-color: rgb(4, 134, 240);
-}
-
-.bookmarks {
-  /* border: 2px solid rgb(223, 6, 6); */
 }
 
 .bookmarks-button {
@@ -195,10 +166,6 @@ a {
   background-color: rgb(4, 134, 240);
 }
 
-.lists {
-  /* border: 2px solid rgb(223, 6, 6); */
-}
-
 .lists-button {
   text-align: center;
   padding-top: 10px;
@@ -210,10 +177,6 @@ a {
   background-color: rgb(4, 134, 240);
 }
 
-.profile {
-  /* border: 2px solid rgb(223, 6, 6); */
-}
-
 .profile-button {
   text-align: center;
   padding-top: 10px;
@@ -223,10 +186,6 @@ a {
 
 .profile-button:hover {
   background-color: rgb(4, 134, 240);
-}
-
-.more {
-  /* border: 2px solid rgb(223, 6, 6); */
 }
 
 .more-button {
@@ -242,11 +201,11 @@ a {
 
 .left-bottom-grid {
   display: grid;
-  grid-template:
+   grid-template:
     "tweet" auto
     "profile-info" auto /
-    auto;
-  gap: 10px;
+    auto; */
+   gap: 10px;
 }
 
 .tweet {
@@ -263,11 +222,9 @@ a {
   padding-left: 10ps;
 }
 
-.profile-info-grid {
-  grid-template:
-    "profile-pic-bottom username three-dots-icon" auto /
+  grid-template: 
+    "profile-pic-bottom username three-dots-icon" a /
     auto auto auto;
-}
 
 .profile-pic-bottom {
   grid-area: profile-pic-bottom;
@@ -279,7 +236,7 @@ a {
 
 .three-dots-icon {
   grid-area: three-dots-icon;
-}
+} 
 
 .profile-info {
   grid-area: profile-info;
@@ -298,11 +255,7 @@ a {
 
 .middle-main {
   grid-area: middle-main;
-  /* border: 2px solid rgb(130, 2, 153); */
 }
-
-/* .make-tweet {
-} */
 
 .profile-pic {
   grid-area: profile-pic;
@@ -315,42 +268,13 @@ a {
   font-size: x-large;
   margin-left: 30px;
   padding-top: 30px;
-  /* border: 2px solid rgb(177, 0, 97); */
 }
-
-/* .space2 {
-} */
 
 .icons-list-grid {
   display: grid;
   grid-auto-flow: column;
   margin-left: 25px;
 }
-
-/* .tweet-icons {
-  grid-area: tweet-icons;
-  border: 2px solid rgb(180, 134, 7);
-} */
-
-/* .image {
-  border: 2px solid rgb(180, 134, 7);
-}
-
-.gif {
-  border: 2px solid rgb(180, 134, 7);
-}
-
-.poll {
-  border: 2px solid rgb(180, 134, 7);
-}
-
-.emojis {
-  border: 2px solid rgb(180, 134, 7);
-}
-
-.calendar {
-  border: 2px solid rgb(180, 134, 7);
-} */
 
 .tweet-button {
   grid-area: tweet-button;
@@ -367,12 +291,7 @@ a {
 
 .main-feed {
   grid-area: main-feed;
-  /* border: 2px solid rgb(66, 216, 61); */
 }
-
-/* .centerised {
-  margin: 0 auto;
-} */
 
 .center-grid {
   display: grid;
@@ -392,25 +311,21 @@ a {
 
 .profile-logo-tweet {
   grid-area: profile-logo-tweet;
-  /* border: 2px solid rgb(30, 53, 128); */
 }
 
 p {
   grid-area: p;
   text-align: left;
   margin-top: 25px;
-  /* border: 2px solid rgb(216, 61, 61); */
 }
 
 .right-column {
   grid-area: right-column;
-  /* border: 2px solid rgb(197, 105, 18); */
 }
 
 .whats-happening {
   font-size: x-large;
   font-weight: bolder;
-  /* display: inline; */
   margin-top: 40px;
 }
 
@@ -431,7 +346,7 @@ p {
   grid-area: right-image;
 }
 
-/* Footer Section - Not needed yet  */
+/* Media Section  */
 
 @media screen and (max-width: 800px) {
   .main-section-grid {
@@ -455,7 +370,3 @@ p {
     display: none;
   }
 }
-
-/* @media screen and (max-width: 640px) {
- 
-} */
