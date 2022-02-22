@@ -15,10 +15,6 @@ body {
 
 /* MAIN STYLES */
 
-main {
-    border: 1px solid var(--third-color);
-}
-
 ul {
     list-style: none;
 
@@ -51,10 +47,6 @@ button:hover {
     background-color: var(--third-color);
 }
 
-#logo {
-    padding-left: 12px;
-}
-
 .asides-padding {
     padding: 12px 24px;
 }
@@ -76,6 +68,8 @@ button:hover {
 
 main {
     height: 100vh;
+
+    border: 1px solid var(--third-color);
 
     background-color: var(--second-color);
 
@@ -238,6 +232,11 @@ main .bottom-nav a {
 
 
 /* COMPONENT STYLES */
+
+#logo {
+    padding-left: 12px;
+}
+
 #tweet-button {
     color: #ffffff;
     font-size: 14px;
@@ -406,6 +405,10 @@ main .bottom-nav a {
 
     #tweet-button-lg {
         display: none;
+    }
+
+    #tweet-button-round {
+        display: block;
     }
 }
 
