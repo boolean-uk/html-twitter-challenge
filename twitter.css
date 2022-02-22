@@ -1,0 +1,472 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Ubuntu, "Helvetica Neue", sans-serif;
+  font-size: 14px;
+}
+
+/* GENERIC TAGS */
+
+.body {
+  background-color: white;
+}
+
+.header,
+.nav-box {
+  font-size: 20px;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  padding: 8px;
+}
+span {
+  color: gray;
+}
+
+.feed-pic {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+
+/* GRID DISPLAY*/
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template:
+    "left      header      right" 50px
+    "left       main        right" 1fr
+    "footer     main        right" 50px/
+    280px      550px        380px;
+}
+
+.menu-container {
+  display: grid;
+  grid-area: left;
+}
+
+.header {
+  display: grid;
+  grid-area: header;
+}
+
+.body {
+  display: grid;
+  grid-area: main;
+  overflow: scroll;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+.news-bar {
+  display: grid;
+  grid-area: right;
+  gap: 10px;
+}
+
+.footer {
+  display: grid;
+  grid-area: footer;
+  border-right: 2px solid rgb(239, 243, 244);
+}
+
+/* HEADER SECTION */
+
+.header {
+  padding: 10px;
+  border-bottom: 2px solid rgb(239, 243, 244);
+}
+
+.header h1 {
+  font-size: 18px;
+}
+
+/* LEFT NAVIGATION SECTION */
+
+.menu-container {
+  border-right: 2px solid rgb(239, 243, 244);
+  
+}
+
+.menu ul li {
+  padding: 10px;
+  margin-left: 75px;
+  list-style: none;
+}
+
+.menu__item:hover {
+  background-color:rgb(239, 243, 244);
+  border-radius: 30px;
+}
+
+.nav-tweet {
+  color: white;
+  background-color: rgb(29, 155, 240);
+  height: 30px;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 30px;
+  text-align: center;
+}
+
+
+
+/* MAIN BODY SECTION */
+/* TWEET BAR */
+
+.body {
+  display: inline;
+}
+
+.tweet-bar {
+  display: grid;
+  grid-template:
+    "profile      profile" 45px
+    "icons        tweet" 1fr /
+    auto 1fr;
+  border-bottom: 2px solid rgb(239, 243, 244);
+}
+
+.profile-pic {
+  display: grid;
+  grid-area: profile;
+}
+
+.tweet-bar p {
+  display: grid;
+  grid-area: profile;
+  margin-left: 80px;
+  margin-top: 30px;
+}
+
+.icons {
+  display: grid;
+  grid-area: icons;
+  grid-auto-flow: column;
+  margin-left: 100px;
+  margin-top: 40px;
+  gap: 10px;
+}
+
+.tweet {
+  display: grid;
+  grid-area: tweet;
+  background-color: rgb(29 161 242);
+  color: white;
+  width: 75px;
+  padding-top: 7px;
+  border-radius: 30px;
+  height: 30px;
+  text-align: center;
+  margin-left: 180px;
+  margin-top: 35px;
+  margin-bottom: 5px;
+}
+
+/* MAIN BODY SECTION */
+/* SCROLLING BODY SECTION*/
+
+.content-1 {
+  display: grid;
+  grid-template:
+    " feed-profile feed-header" auto
+    " feed-profile feed-body" 1fr
+    " feed-profile feed-footer" auto/
+    auto 1fr;
+  border-bottom: 2px solid rgb(239, 243, 244);
+  padding: 5px;
+}
+.content-1 .profile-pic {
+  display: grid;
+  grid-area: feed-profile;
+}
+
+.content-1 .feed-header {
+  display: grid;
+  display: feed-header;
+  padding: 5px;
+}
+
+.feed-window {
+  display: grid;
+  grid-area: feed-body;
+  border: 2px solid rgb(239, 243, 244);
+}
+
+.feed-window {
+  display: grid;
+  grid-template:
+    "pic" 230px
+    "body-title" 1fr/
+    400px;
+  border-radius: 20px;
+  width: 400px;
+}
+.content-1 .profile-pic {
+  display: grid;
+  grid-area: feed-profile;
+}
+
+.body-title {
+  display: grid;
+  grid-area: body-title;
+  padding: 10px;
+}
+.feed-footer {
+  display: grid;
+  grid-area: feed-footer;
+  grid-auto-flow: column;
+  padding: 10px;
+}
+
+/* RIGHT SECTION */
+
+.news-bar {
+  padding: 8px 20px 20px 20px;
+  border-left: 2px solid rgb(239, 243, 244);
+  display: grid;
+  grid-template:
+    "right-header" 50px
+    "whats-happening" minmax(auto, 500px)
+    "who-to-follow" minmax(auto, 500px) /
+    330px;
+}
+
+.search-bar__grid {
+  display: grid;
+  grid-area: right-header;
+}
+.whats-happening__grid {
+  display: grid;
+  grid-area: whats-happening;
+}
+.who-to-follow__grid {
+  display: grid;
+  grid-area: who-to-follow;
+}
+
+.whats-happening {
+  display: grid;
+  gap: 5px;
+  grid-template:
+    " right-title right-title" 50px
+    " right-feed1 right-feed1" 90px
+    " right-feed2 right-pic" 90px
+    " right-feed3 right-pic" 90px
+    " right-feed4 right-pic" 100px
+    " show-more   showmore" 50px/
+    240px 1fr;
+
+  border-left: 2px solid rgb(239, 243, 244);
+}
+
+.whats-happening h1 {
+  display: grid;
+  grid-area: right-title;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 10px;
+}
+
+.right-feed1 {
+  display: grid;
+  grid-area: right-feed1;
+  padding-left: 10px;
+}
+
+.right-feed__pic {
+  display: grid;
+  grid-area: right-pic;
+  border-radius: 10px;
+}
+
+.right-feed2 {
+  display: grid;
+  grid-area: right-feed2;
+  padding-left: 10px;
+}
+
+.right-feed3 {
+  display: grid;
+  grid-area: right-feed3;
+  padding-left: 10px;
+}
+
+.right-feed4 {
+  display: grid;
+  grid-area: right-feed4;
+  padding-left: 10px;
+}
+.show-more {
+  display: grid;
+  grid-area: show-more;
+  padding: 10px;
+}
+
+.search-bar {
+  background-color: rgb(239, 243, 244);
+  padding-top: 7px;
+  border-radius: 30px;
+  height: 35px;
+  text-align: center;
+  width: 340px;
+  padding-right: 30px;
+}
+
+.whats-happening,
+.follow {
+  background-color: rgb(247, 249, 249);
+  border-radius: 30px;
+  padding: 5px;
+  gap: 5px;
+}
+/* RIGHT SECTION - WHO TO FOLLOW */
+
+.follow {
+  height: 380px;
+  display: grid;
+  gap: 10px;
+  grid-template:
+    "follow        follow       follow" 50px
+    "follow-pic1   follow1     button1" 70px
+    "follow-pic2   follow2     button2" 70px
+    "follow-pic3   follow3     button3" 70px
+    "show-more     show-more   show-more" 20px/
+    60px 1fr 100px;
+}
+
+.follow h1 {
+  display: grid;
+  grid-area: follow;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 10px;
+}
+
+.follow-pic-1 {
+  display: grid;
+  grid-area: follow-pic1;
+  border-radius: 50%;
+}
+
+.follow-pic-2 {
+  display: grid;
+  grid-area: follow-pic2;
+  border-radius: 50%;
+}
+.follow-pic-3 {
+  display: grid;
+  grid-area: follow-pic3;
+  border-radius: 50%;
+}
+
+.follow1 {
+  display: grid;
+  grid-area: follow1;
+}
+
+.follow2 {
+  display: grid;
+  grid-area: follow2;
+}
+.follow3 {
+  display: grid;
+  grid-area: follow3;
+}
+
+.follow-button-1 {
+  display: grid;
+  grid-area: button1;
+  color: white;
+  background-color: black;
+  width: 75px;
+  padding-top: 7px;
+  border-radius: 30px;
+  height: 30px;
+  text-align: center;
+}
+
+.follow-button-2 {
+  display: grid;
+  grid-area: button2;
+  color: white;
+  background-color: black;
+  width: 75px;
+  padding-top: 7px;
+  border-radius: 30px;
+  height: 30px;
+  text-align: center;
+}
+.follow-button-3 {
+  display: grid;
+  grid-area: button3;
+  color: white;
+  background-color: black;
+  width: 75px;
+  padding-top: 7px;
+  border-radius: 30px;
+  height: 30px;
+  text-align: center;
+}
+
+.show-more__follow {
+  display: grid;
+  grid-area: show-more;
+  padding: 20px;
+}
+
+
+
+/* FOOTER PROFILE BAR SECTION */
+/*.footer{
+ 
+}*/
+
+.footer-profile {
+  margin-left: 50px;
+  display: grid;
+  grid-template:
+    "profile  footer-info1" 1fr
+    "profile footer-info2" 1fr/
+    50px 1fr;
+}
+.footer-profile .profile-pic {
+  display: grid;
+  grid-area: profile;
+}
+
+.footer-info1 {
+  display: grid;
+  grid-area: footer-info1;
+  padding-top: 10px;
+  margin-left: 20px;
+}
+
+.footer-info2 {
+  display: grid;
+  grid-area: footer-info2;
+  margin-left: 20px;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width:800px) {
+  .container {
+    display: grid;
+    height: 100vh;
+    grid-template:
+      "left      header      " 50px
+      "left       main        " 1fr
+      "footer     main        " 50px/
+      280px      550px       ;
+  }
+
+  .news-bar {
+    display: none;
+  }
+}
+  
