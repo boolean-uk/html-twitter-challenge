@@ -12,3 +12,17 @@
         display: none;
     }
 }
+
+.center-wrapper {
+    @include respond(tablet-portrait) {
+        padding: 2rem;
+        margin: 0 auto;
+    }
+}
+
+.center-wrapper {
+    @include respond(between-phone-tablet) {
+        padding: 1rem;
+        margin: 0 auto;
+    }
+}

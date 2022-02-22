@@ -8,6 +8,49 @@ h2 {
   margin: 0%;
 }
 
+.box-vb {
+  border: 2px dashed #005c00;
+  background-color: lightgreen;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+.box-bg {
+  border: 2px dashed #fbff00;
+  background-color: lightyellow;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
+.box-md {
+  border: 2px dashed red;
+  background-color: lightcoral;
+  padding: 1rem;
+  margin: 0.2rem;
+}
+
+.box-sm {
+  border: 2px dashed #1100ff;
+  background-color: lightblue;
+  padding: 1rem;
+  margin: 0.2rem;
+}
+
+.box-vs {
+  border: 12px dashed #ff9d00;
+  background-color: #f0d680;
+  padding: 1rem;
+  margin: 0.2rem;
+}
+
+.box-default {
+  border: 2px solid black;
+  border-radius: 12px;
+  background-color: white;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+
 .center-wrapper {
   padding: 1rem 10rem;
   margin: 0 auto;
@@ -84,12 +127,6 @@ h2 {
 .section-one-main__profile-image img {
   height: 3.5rem;
   border-radius: 50%;
-}
-
-@media only screen and (max-width: 500px) {
-  .section-one-nav {
-    display: none;
-  }
 }
 
 .section-one-nav__list img {
@@ -355,9 +392,23 @@ h2 {
   font-size: 1.2rem;
 }
 
-@media only screen and (max-width: 1005px) {
+@media only screen and (max-width: 1110px) {
   .section-one-aside {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 1110px) {
+  .center-wrapper {
+    padding: 2rem;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 870px) {
+  .center-wrapper {
+    padding: 1rem;
+    margin: 0 auto;
   }
 }
 /*# sourceMappingURL=style.css.map */
