@@ -25,6 +25,18 @@
   grid-template-rows: auto 1fr auto;
 }
 
+.eight-columns {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-gap: 8px;
+}
+
+.two-column-expand-space{
+  display: grid;
+  grid-template-columns: 30px 30px auto;
+  margin: 0;
+}
+
 .main-header {
   width: 275px;
   height: 100vh;
@@ -131,24 +143,59 @@ a {
 }
 
 .menu-list img {
+   font-weight: 800;
+   font-size: 20px;
    margin-right: 10px;
+   padding: 30px;
+   padding-bottom: 0px;
+  }
+
+.active {
+  color: var(--twitter-color)
+}
+
+.menu-list  :hover {
+  /* background-color: var(--twitter-background);
+  border-radius: 40px; */
+  color: var(--twitter-color);
+  transition: color 100ms ease-out;
 
 }
 
-/* .menu-list :hover {
-  background-color: var(--twitter-background);
-  border-radius: 30px;
-  color: var(--twitter-color);
-  transition: color 100ms ease-out;
-} */
+.feed-menu-icon {
+  width: 25px;
+  height: auto;
+}
 
 menu-list-link {
 
 }
 
-.main-box img {
+/* FEED */
+.profile-feed-pic img {
   height: 40px;
   border-radius: 50%;
+  object-fit: contain;
+  
+}
+
+span img {
+  height: 40px;
+  border-radius: 30px;
+  object-fit: contain;
+}
+
+/* POST */
+.post__badge {
+  font-size: 14px !important;
+  color: var(--twitter-color);
+  margin-right: 5px;
+}
+
+.post__header-Special {
+  font-weight: 600;
+  font-size: 12px;
+  color: gray;
 }
 
 .post__headerDescription {
@@ -173,3 +220,60 @@ menu-list-link {
   border: 1px solid var(--twitter-background);
   padding: 4px;
 }
+
+.post-tweet {
+  background-color: var(--twitter-color);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-weight: 900;
+  width: 80px;
+  height: 40px;
+  margin-bottom: 40px;
+  margin-right: 20px;
+  cursor: pointer;
+  
+}
+
+.no-decoration {
+  text-decoration: none;
+  list-style: none;
+}
+
+/* News */
+.News {
+  flex: 0.3;
+}
+
+.News__input {
+  display: flex;
+  align-items: center;
+  background-color: var(--twitter-background);
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.News__input input {
+  border: none;
+  background-color: var(--twitter-background);
+}
+
+.News__searchIcon {
+  color: gray;
+}
+
+.News__widgetContainer {
+  margin-top: 15px;
+  margin-left: 20px;
+  padding: 20px;
+  background-color: #f5f8fa;
+  border-radius: 20px;
+}
+
+.News__widgetContainer h2 {
+  font-size: 18px;
+  font-weight: 800;
+}
+/* News */
