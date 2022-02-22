@@ -8,7 +8,7 @@ html {
 
 /* --- BASE STYLES --- */
 aside {
-  height: 100vh;
+  max-height: 100vh;
   max-width: 400px;
   margin: 10px;
   display: grid;
@@ -16,6 +16,7 @@ aside {
 }
 
 main {
+  height: 100vh;
   border: var(--accent-color) 1px solid;
   overflow: scroll;
 }

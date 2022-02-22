@@ -46,6 +46,10 @@
   main {
     grid-area: main;
   }
+
+  .right-bar {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -59,8 +63,7 @@
     grid-area: main;
   }
 
-  .left-bar,
-  .right-bar {
+  .left-bar {
     display: none;
   }
 }
