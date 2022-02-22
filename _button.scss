@@ -1,0 +1,48 @@
+// BUTTON STYLES FOR BUTTONS IN NAVIGATION AND MAIN SECTIONS
+.section-one-nav,
+.section-one-main {
+    &__tweet-button {
+        &:link,
+        &:visited {
+            font-size: 1.2rem;
+            color: $color-primary;
+            text-decoration: none;
+            border: 0.5px solid $color-primary;
+            padding: 2px 5px;
+            border-radius: 25px;
+            margin: 5px 0;
+            transition: all 0.2s;
+            @include respond(tablet-landscape) {
+                width: 4.2rem;
+                font-size: 1.2rem;
+            }
+        }
+        &:hover {
+            background-color: $color-primary;
+            color: $color-white;
+            box-shadow: 0 1rem 2rem rgba($color-black, 0.15);
+            transform: translateY(2px) translateX(2px);
+        }
+        &:active {
+            box-shadow: 0 0.5rem 1rem rgba($color-black, 0.15);
+            background-color: $color-white;
+            color: $color-primary;
+            transform: translateY(0);
+        }
+    }
+}
+
+.section-one-nav {
+    display: grid;
+    place-items: center;
+}
+
+.section-one-main {
+    &__tweet-button {
+        &:link,
+        &:visited {
+            font-size: 1rem;
+            padding: 0.4rem;
+        }
+    }
+}

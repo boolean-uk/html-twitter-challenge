@@ -1,0 +1,15 @@
+// MAIN GRID FOR OVERALL PAGE
+.center-wrapper {
+    padding: 1rem 10rem;
+    margin: 0 auto;
+}
+
+.three-column-expand-two {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
+.auto-rows {
+    display: grid;
+    grid-auto-rows: auto;
+}

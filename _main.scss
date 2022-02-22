@@ -1,0 +1,67 @@
+.section-one-main {
+    padding: 2rem 1.8rem;
+    border-left: 2px solid $color-primary;
+    border-right: 2px solid $color-primary;
+    &__heading {
+        padding: 0;
+        border-bottom: 2px solid $color-primary;
+    }
+    &__input {
+        height: 3rem;
+        border-radius: 2rem;
+    }
+    &__list-button {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        align-items: center;
+    }
+    ul {
+        list-style: none;
+        display: grid;
+        grid-template-columns: 2rem 2rem 2rem 2rem 2rem 10rem;
+    }
+    li:last-of-type {
+        display: grid;
+        justify-content: end;
+    }
+    &__tweet {
+        display: grid;
+        grid-auto-flow: row;
+    }
+    &__tweet-profile-message {
+        display: grid;
+        grid-template-columns: 4rem 18rem;
+        align-items: center;
+        border-bottom: 2px solid $color-primary;
+    }
+}
+
+.individual-tweet {
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    align-items: center;
+    border-top: 2px solid $color-primary;
+    &__name {
+        font-weight: 700;
+    }
+    &__name-at,
+    &__reply {
+        color: $color-grey-dark;
+    }
+    &__reply-blue {
+        color: $color-primary;
+    }
+    &__tweet-image img {
+        width: 100%;
+        height: auto;
+    }
+    &__bottom-icons svg {
+        width: 1rem;
+        padding-top: 1rem;
+    }
+    &__bottom-icons {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-items: end;
+    }
+}
