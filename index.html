@@ -98,34 +98,34 @@
           <button class="side-bar-button__tweet">Tweet</button>
         </aside>
       </header>
-      <main>
+      <main class="border-left border-right">
         <div class="main-box">
           <h3>Home</h3>
         </div>
-          <div class="  profile-feed-pic main-box">
+          <div class="  profile-feed-pic main-box border-bg-bot">
             <form>
               <img
               src="https://img.search.brave.com/PU4XglJ1LbZ43RGtsowE0WKSw_VXOh2oHxgbQ2kwxfw/rs:fit:240:240:1/g:ce/aHR0cDovL2Zhcm0z/LnN0YXRpYy5mbGlj/a3IuY29tLzI3MTMv/NDA5ODI1OTc2OV82/OWFjODFkZWRhX20u/anBn"
               alt="Profile Pic"
               />
-              <input type="text" placeholder="What's happening?" />
+              <input class="search-style" type="text" placeholder="What's happening?" />
             </form>
             <!-- feed-icons -->
-            <ul class="eight-columns no-decoration">
+            <ul class="eight-columns no-decoration pad-sm">
               <li>
-                <img class="feed-menu-icon" src="/icons/picture.png" alt="picture">
+                <img class="feed-icons" src="/icons/picture.png" alt="picture">
               </li>
               <li>
-                <img class="icon-small" src="/icons/gif.png" alt="gif">
+                <img class="feed-icons" src="/icons/gif.png" alt="gif">
               </li>
               <li>
-                <img class="icon-small" src="/icons/bar-graph.png" alt="graph">
+                <img class="feed-icons" src="/icons/bar-graph.png" alt="graph">
               </li>
               <li>
-                <img class="icon-small" src="/icons/happiness.png" alt="smiley">
+                <img class="feed-icons" src="/icons/happiness.png" alt="smiley">
               </li>
               <li>
-                <img class="icon-small" src="/icons/calendar.png" alt="calendar">
+                <img class="feed-icons" src="/icons/calendar.png" alt="calendar">
               </li>
               <li></li>
               <li></li>
@@ -144,11 +144,11 @@
                 <span class="two-column-expand-space">
                   <img
                   src="https://img.search.brave.com/PU4XglJ1LbZ43RGtsowE0WKSw_VXOh2oHxgbQ2kwxfw/rs:fit:240:240:1/g:ce/aHR0cDovL2Zhcm0z/LnN0YXRpYy5mbGlj/a3IuY29tLzI3MTMv/NDA5ODI1OTc2OV82/OWFjODFkZWRhX20u/anBn"
-                  alt="Profile Pic"
+                  alt="Profile Pic" class="avator-pic"
                   />
-                  M...
+                   M...
                   <span class="post__header-Special"
-                    ><span class="material-icons post__badge"> verified </span
+                  ><span class="material-icons post__badge"> verified </span
                     >@Mubarak</span
                   >
                 </span>
@@ -187,8 +187,6 @@
                   </div>
                 </div>
 
-                
-                
               
                 
             </div>
@@ -197,15 +195,17 @@
 
         <!-- DOES IT BREAK THE NATURAL FLOW? WILL THE CONTENT PROVIDE THE HEIGHT? -->
       </main>
+
       <aside class="resources-sidebar">
-        <div class="News">
-          <div class="News__input">
-            <span class="material-icons News__searchIcon"> search </span>
-            <input type="text" placeholder="Search Twitter" />
-          <!-- <News></News> -->
-          <div class="News__widgetContainer">
-            <h2>What's happening?</h2>
-          </div>
+            
+         <!-- <img src="/icons/search.png" alt="search icon"/> -->
+         <span class="material-icons News__searchIcon"> search </span>
+         <input class="search-style search-border" type="text" placeholder="Search Twitter"/>
+            
+         <div class="news-box search-border">
+
+         </div>
+            
         <!-- DOES IT BREAK THE NATURAL FLOW? WILL THE CONTENT PROVIDE THE HEIGHT? -->
       </aside>
     </div>
