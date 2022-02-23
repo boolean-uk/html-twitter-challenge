@@ -729,7 +729,7 @@ html {
      object-fit: cover;
   border-radius: 10px;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   .center-card .center-card-image {
     height: 40rem;
   }
@@ -777,7 +777,7 @@ html {
   -o-object-fit: cover;
      object-fit: cover;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   .center-card-images {
     grid-template-rows: repeat(2, 7rem);
   }
@@ -786,7 +786,7 @@ html {
   font-size: 1.5rem;
   font-weight: 400;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   .center-card-icons {
     font-size: 1rem;
   }
@@ -795,7 +795,7 @@ html {
   padding: 1rem;
   font-size: 1.6rem;
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 450px) {
   .center-card-icons i {
     font-size: 1rem;
     padding: 0.7rem;
