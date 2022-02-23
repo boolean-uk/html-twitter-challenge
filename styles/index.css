@@ -1,0 +1,203 @@
+html {
+  --primary-clr: #1a8cd8;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+
+  color: inherit;
+}
+
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: start;
+
+  background-color: var(--primary-clr);
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+
+  padding: 4px 8px;
+  min-width: 10ch;
+
+  text-align: center;
+  line-height: 1.5;
+
+  transition: 220ms all ease-in-out;
+}
+
+.main-layout {
+  padding: 4px;
+}
+
+.main-layout > * {
+  padding: 2px;
+
+  /* border: 2px dashed lightblue; */
+}
+
+.center-wrapper {
+  max-width: 960px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin: 0 auto;
+}
+
+.stack > * + * {
+  margin-top: 8px;
+}
+
+.two-column-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.two-column-grid__auto {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.two-column-grid__expand-two {
+  display: grid;
+  grid-template-columns: auto 1fr;
+}
+
+.three-column-grid__expand-two {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
+
+.three-row-grid__expand-two {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.gap-sm {
+  gap: 4px;
+}
+
+.gap-lg {
+  gap: 16px;
+}
+
+.align-items\:center {
+  align-items: center;
+}
+
+.main-header {
+  width: 275px;
+  height: 100vh;
+}
+
+.main-header > * {
+  /* border: 2px dashed lightcoral; */
+}
+
+.resources-sidebar {
+  width: 275px;
+}
+
+/* MAIN LAYOUTS */
+
+.button {
+  display: block;
+}
+
+.main-header .logo {
+  padding: 0 16px;
+}
+
+.nav-list {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.nav-list > li {
+  /* padding: 8px 4px; */
+}
+
+.nav-list--link {
+  display: grid;
+  grid-template-columns: auto 1fr;
+
+  gap: 8px;
+}
+
+.nav-list--link--wrapper {
+  padding: 8px 16px;
+  border-radius: 32px;
+}
+
+.nav-list--link--wrapper:hover {
+  background-color: #e3f2fd;
+}
+
+.nav-list--link .link-text {
+  color: var(--primary-clr);
+}
+
+@media screen and (max-width: 800px) {
+  .center-wrapper {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .main-header {
+    width: auto;
+  }
+
+  .nav-list--link {
+    grid-template-columns: auto;
+
+    gap: 0;
+  }
+
+  .nav-list--link .link-text {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .center-wrapper {
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  .resources-sidebar {
+    display: none;
+  }
+}
+
+/*
+DO NOT USE THE BELOW.
+FOR DEMO ONLY; REMEMBER THAT THE CONTENT GIVES HEIGHT.
+*/
+
+/* MAIN STYLES */
+
+.twitter-logo,
+.nav-list .icon {
+  width: 32px;
+  height: 32px;
+}
+
+.tweet-button {
+  width: 100%;
+
+  border-radius: 32px;
+}
