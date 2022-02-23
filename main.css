@@ -782,9 +782,24 @@ html {
     grid-template-rows: repeat(2, 7rem);
   }
 }
+.center-card-icons {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+@media only screen and (max-width: 400px) {
+  .center-card-icons {
+    font-size: 1rem;
+  }
+}
 .center-card-icons i {
   padding: 1rem;
   font-size: 1.6rem;
+}
+@media only screen and (max-width: 400px) {
+  .center-card-icons i {
+    font-size: 1rem;
+    padding: 0.7rem;
+  }
 }
 .center-card-icons-1:hover, .center-card-icons-1:hover span, .center-card-icons-4:hover, .center-card-icons-4:hover span {
   color: #4ba0eb;
