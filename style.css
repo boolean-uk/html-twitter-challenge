@@ -16,8 +16,8 @@
  html {
     --first-color-light: white;
     --first-color-medium: #dddddd ;
-    --first-color-dark: ;
-    --second-color-light: #f7f9fa;
+    --first-color-dark: rgba(32, 197, 32, 0.5);
+    --second-color-light: #f7faf8;
     --second-color-medium: #eceef0;
     --second-color-dark: #9fa9b4;
     --third-color-light: #a5d0f5;
@@ -29,7 +29,6 @@
 .links {
     color: black;
     text-decoration: none;
-    justify-items: flex-start;
 }
 
 .center-wrapper {
@@ -62,8 +61,8 @@
 
 #logo {
     margin-left: 10px;
-    width: 40px;
-    margin-top: 10px;
+    width: 60px;
+    padding: 10px;
 }
 
 .profile-pic,
@@ -188,7 +187,7 @@ h6 {
 
 .left-menu-container {
     display: grid;
-    grid-template-rows: var(--header-height) 570px 50px 1fr 55px;
+    grid-template-rows: var(--header-height) 570px 50px 1fr 80px;
 
     height: 100vh;
     max-height: 100vh;
@@ -326,6 +325,14 @@ vertical-align: middle;
 .left-menu .profile-pic-small {
     margin: auto 0;
 }
+footer button {
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    text-align: left;
+    background-color: var(--first-color-light);
+}
 
  /* MAIN */
 .home-header {
@@ -402,6 +409,9 @@ vertical-align: middle;
     padding-bottom: 5px;
 }
 
+.tweet .style-two {
+    padding-left: 10px;
+}
 .tweet .profile-pic-small {
     grid-area: profile-pic-small;
     margin: 10px;
@@ -505,7 +515,12 @@ vertical-align: middle;
 
 
 /* RESPONSIVE */
-.links :hover {
+#logo:hover {
+    background-color: var(--third-color-light);
+    border-radius: 50%;
+}
+
+.left-menu a:hover {
    background-color: var(--second-color-medium);
    border-radius: 30px;
 }
@@ -517,6 +532,10 @@ vertical-align: middle;
 .right-side-bar li:hover {
     background-color: var(--first-color-medium);
  }
+
+ footer button:hover {
+    background-color: var(--second-color-medium);
+}
 
  .right-side-bar li a:hover {
    text-decoration: underline;
@@ -539,6 +558,10 @@ vertical-align: middle;
     /*collapses left menu to just icons, changes tweet button to icon*/
     main {
         padding: 0;
+    }
+
+    #logo {
+        margin-left: 0;
     }
 
     .parent-container {
@@ -565,11 +588,17 @@ vertical-align: middle;
 
     .footer-box {
         display: block;
+        padding-bottom: 60px;
     }
 
     .left-menu .profile-pic-small {
         margin-left: 6px;
     }
+
+    footer button {
+        padding: 0;
+    }
+
 
     .footer-box p, 
     .footer-box .icon-x-small {
