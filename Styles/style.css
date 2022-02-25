@@ -90,6 +90,10 @@ h2 > span {
   color: var(--primary-color);
 }
 
+li > div {
+  width: fit-content;
+}
+
 /* tweet button */
 .tweet-button {
   width: 100%;
