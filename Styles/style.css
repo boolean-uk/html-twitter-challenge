@@ -70,6 +70,11 @@ input:focus {
 /* menu bar */
 .menu-bar {
   padding: 10px;
+  border-radius: 30px;
+}
+
+.menu-bar:hover {
+  background-color: rgba(214, 213, 213, 0.781);
 }
 
 .menu-bar > a {
