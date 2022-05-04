@@ -5,11 +5,16 @@
     font-family: helvetica;
 }
 
+
+
+/* overall grid */
 .website-body {
     display: grid;
     grid-template-columns: 1fr 2fr 1.5fr;
     grid-auto-flow: column;
 }
+
+
 
 /* aside-left */
 .aside-left {
@@ -18,7 +23,7 @@
     margin-right: 30px;
 }
 
-.aside-left > img {
+.aside-left > a > img {
     object-fit: cover;
     max-width: 20%;
     margin-left: 50px;
@@ -42,6 +47,19 @@
     font-weight: bold;
 }
 
+.nav-text li a:hover {
+    text-decoration: underline;
+}
+
+.nav-text li a:active {
+    color: red;
+    }
+
+.nav-text a {
+    text-decoration: none;
+    color: black;
+}
+
 .aside-left nav {
     display: grid;
     grid-template-columns: 135px 1fr;
@@ -49,8 +67,16 @@
     margin-bottom: 20px;
 }
 
-.home-icon {
+#home-icon {
     color: orange;
+}
+
+.nav-text li a:active {
+    color: red;
+}
+
+#home-icon:active {
+    color: red;
 }
 
 .aside-left button {
@@ -62,3 +88,20 @@
     font-size: 1.5rem;
     margin-left: 20px;
 }
+
+.aside-left button a {
+    text-decoration: none;
+    color: white;
+}
+
+.aside-left button a:hover {
+    text-decoration: underline;
+}
+
+.aside-left button a:active {
+    color: red;
+}
+
+
+
+/* main */
