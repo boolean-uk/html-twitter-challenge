@@ -18,9 +18,9 @@ body {
 }
 
 .left-aside {
-    background-color: lightblue;
     display: grid;
     padding: 1rem;
+    border-right: 1px solid rebeccapurple;
 }
 
 .left-aside a {
@@ -60,7 +60,6 @@ body {
     cursor: pointer;
     border: 2px solid rebeccapurple;
     margin: 0.5rem 0;
-
 }
 
 .button-container button:hover {
@@ -70,17 +69,23 @@ body {
 
 /* Centre Column */
 
-.main {
-    background-color: lightcoral;
+.title {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    border-bottom: 1px solid rebeccapurple;
 }
 
-.title {
+.title p {
     font-size: 1.25rem;
     font-weight: bold;
     margin-left: 1rem;
 }
 
-.main img {
+.title img {
+    margin: 1rem 1rem 0 0;
+}
+
+.image-container img {
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -90,6 +95,7 @@ body {
     display: grid;
     grid-template-columns: auto 1fr;
     background-color: white;
+    border-bottom: 10px solid rebeccapurple;
 }
 
 .search img {
@@ -99,13 +105,36 @@ body {
 .search input {
     border: none;
     width: 100%;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     margin: 1rem 1rem 0 0;
     outline: none;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid rebeccapurple;
+}
+
+.search-nav {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.icons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    place-items: center start;
+}
+
+.search-nav img {
+    cursor: pointer;
+    margin-left: 0;
+}
+
+.search-nav button {
+    width: 8rem;
+    margin-right: 1rem;
 }
 
 /* Right Column */
 
 .right-aside {
-    background-color: lightgreen;
+    border-left: 1px solid rebeccapurple;
 }
