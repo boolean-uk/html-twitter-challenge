@@ -15,6 +15,16 @@ ul {
     list-style: none;
 }
 
+button {
+    border: none;
+    background-color: white;
+}
+
+.more-option {
+    grid-area: more-option;
+    height: 20px;
+}
+
 section,
 main,
 main>* {
@@ -29,6 +39,24 @@ body {
     display: grid;
     grid-template-columns: 19rem 1fr 26rem;
 }
+
+.tweet-button button {
+    color: white;
+    background-color: #1DA1F2;
+
+    font-weight: bold;
+    font-size: 1.1rem;
+
+    border-radius: 3rem;
+
+    display: grid;
+    place-items: center;
+}
+
+.tweet-button button:hover {
+    background-color: #0C84CD;
+}
+
 
 /* Left Menu */
 .left-menu {
@@ -79,25 +107,9 @@ nav a:active h2 {
 }
 
 /* Left-menu Tweet button */
-.tweet-button a {
-    color: white;
-    background-color: #1DA1F2;
-
-    font-weight: bold;
-    font-size: 1.1rem;
-
+.left-menu .tweet-button button {
     height: 50px;
-    border-radius: 3rem;
-
     width: 15rem;
-    height: 50px;
-
-    display: grid;
-    place-items: center;
-}
-
-.tweet-button a:hover {
-    background-color: #0C84CD;
 }
 
 /* Left-menu account */
@@ -113,8 +125,8 @@ nav a:active h2 {
     display: grid;
     align-items: center;
     grid-template-areas:
-        "profile-photo account-name switch-button"
-        "profile-photo username switch-button";
+        "profile-photo account-name more-option"
+        "profile-photo username more-option";
     grid-template-columns: 50px 1fr 20px;
 }
 
@@ -139,15 +151,15 @@ nav a:active h2 {
     grid-area: username;
 }
 
-.account .switch-button {
-    grid-area: switch-button;
-    height: 20px;
-}
-
 /* Main */
 main {
     display: grid;
     grid-template-rows: 50px 125px 1fr;
+}
+
+main .profile-photo {
+    width: 3rem;
+    border-radius: 50%;
 }
 
 /* Main header */
@@ -186,30 +198,164 @@ main header .top-tweet img {
 
 /* Main Create-tweet */
 .create-tweet {
-    padding: 0.5rem;
+    padding: 0.5rem 1rem;
 
     display: grid;
-
-    /* grid-template-rows: auto; */
+    /* gap: 0.5rem; */
+    grid-template-areas:
+        "profile-photo-wrap input"
+        "profile-photo-wrap options";
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr auto;
 }
 
-.create-tweet>*,
+
+/* .create-tweet>*,
 .form>*,
 .options>* {
     border: 1px dotted;
+} */
+
+.create-tweet .profile-photo-wrap {
+    grid-area: profile-photo-wrap;
+
+    /* padding-top: 0.5rem; */
 }
 
-.create-tweet .form {
+.create-tweet .input {
+    padding-left: 0.5rem;
+    grid-area: input;
+
+    font-size: 1.3rem;
+    padding-top: 1rem;
+}
+
+.create-tweet .options {
+    grid-area: options;
+
+    height: fit-content;
+
     display: grid;
-    gap: 0.5rem;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: auto 1fr auto;
+    grid-template-areas: "option-list . tweet-button";
 }
 
-.create-tweet .form .profile-photo {
-    width: 45px;
+.create-tweet .option-list {
+    grid-area: option-list;
+
+    padding: 0 0.1rem;
+
+    display: grid;
+    align-items: center;
+    grid-auto-flow: column;
+}
+
+.create-tweet .option-list button {
+    display: grid;
+    place-items: center;
+
+    border: 1px dotted;
+    padding: 0.5rem;
+
     border-radius: 50%;
 }
 
-.create-tweet .options img {
-    width: 20px;
+.create-tweet .option-list button:hover {
+    background-color: #1DA1F230;
+}
+
+.create-tweet .option-list img {
+    width: 1rem;
+    height: 1rem;
+}
+
+.create-tweet .tweet-button {
+    grid-area: tweet-button;
+}
+
+.create-tweet .tweet-button button {
+    padding: 0.5rem 1rem;
+}
+
+/* Feed */
+
+.feed>*,
+.feed div {
+    border: 1px dotted;
+}
+
+.feed {
+    display: grid;
+    grid-template-rows: 50px 1fr;
+}
+
+/* Feed Show-more */
+.feed button.show-more-button {
+    font-size: 1.1rem;
+    color: #1DA1F2;
+
+    height: 100%;
+    width: 100%;
+}
+
+.feed button.show-more-button:hover {
+    background-color: #00000015;
+}
+
+/* Feed Posts */
+.post-wrap {
+    display: grid;
+    column-gap: 1rem;
+    /* row-gap: 0.5rem; */
+    grid-template-areas:
+        "profile-photo author-info more-option"
+        "profile-photo content more-option"
+        "profile-photo response-option-list more-option";
+    grid-template-columns: auto 1fr auto;
+    padding: 0.5rem 1rem;
+}
+
+.post-wrap .profile-photo {
+    grid-area: profile-photo;
+}
+
+.post-wrap .author-info {
+    grid-area: author-info;
+
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.post-wrap .content {
+    grid-area: content;
+    padding: 0.5rem 0;
+}
+
+.post-wrap .more-option {
+    grid-area: more-option;
+}
+
+.post-wrap ul.response-option-list {
+    grid-area: response-option-list;
+
+    display: grid;
+    grid-auto-flow: column;
+}
+
+.post-wrap ul.response-option-list li {
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+
+    width: fit-content;
+    height: fit-content;
+}
+
+.post-wrap ul.response-option-list img {
+    height: 1rem;
+    width: 1rem;
+    /* padding: 0.5rem; */
+
+    border: 1px solid red;
 }

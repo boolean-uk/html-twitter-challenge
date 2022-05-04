@@ -87,15 +87,15 @@
         </nav>
 
         <div class="tweet-button">
-            <a href="">
+            <button>
                 Tweet
-            </a>
+            </button>
         </div>
         <div class="account">
             <img class="profile-photo" src="/images/profile.jpg" alt="Profile photo">
             <h3>Coffeebean</h3>
             <p>@Coffeebean</p>
-            <img class="switch-button" src="/icons/ellipsis-solid.svg" alt="Options">
+            <img class="more-option" src="/icons/ellipsis-solid.svg" alt="Options">
         </div>
 
     </section>
@@ -109,55 +109,121 @@
                 <img src="/icons/top-tweets.svg" alt="Top tweets">
             </a>
         </header>
+
         <section class="create-tweet">
-            <div class="form">
+
+            <div class="profile-photo-wrap">
                 <a href="">
                     <img class="profile-photo" src="/images/profile.jpg" alt="Profile photo">
                 </a>
-                <div class="input">What's happening?</div>
             </div>
+
+            <div class="input">
+                What's happening?
+            </div>
+
             <div class="options">
-                <ul>
+                <ul class="option-list">
                     <li>
-                        <a href="">
+                        <button>
                             <img src="/icons/pic.svg" alt="Picture">
-                        </a>
+                        </button>
                     </li>
                     <li>
-                        <a href="">
+                        <button>
                             <img src="/icons/video.svg" alt="Video">
-                        </a>
+                        </button>
                     </li>
                     <li>
-                        <a href="">
+                        <button>
                             <img src="/icons/poll.svg" alt="Poll">
-                        </a>
+                        </button>
                     </li>
                     <li>
-                        <a href="">
+                        <button>
                             <img src="/icons/emoji.svg" alt="Emoji">
-                        </a>
+                        </button>
                     </li>
                     <li>
-                        <a href="">
-                            <img src="/icons/schedule.svg" alt="Schedule>
-                        </a>
+                        <button>
+                            <img src="/icons/schedule.svg" alt="Schedule">
+                        </button>
+                    </li>
+                    <li>
+                        <button>
+                            <img src="/icons/location.svg" alt="Location">
+                        </button>
                     </li>
                 </ul>
-                <div>Tweet</div>
+                <div class="tweet-button">
+                    <button>
+                        Tweet
+                    </button>
+                </div>
             </div>
+
         </section>
 
-        <section class=" feed">
-                            <div>
-                            </div>
-                            <ul class="post-list">
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
-                                <li></li>
+        <section class="feed">
+            <div class="show-more-tweets">
+                <button class="show-more-button">
+                    Show 150 Tweets
+                </button>
+            </div>
+            <ul class="post-list">
+                <li>
+                    <div class="post-wrap">
+                        <img class="profile-photo" src="/images/Bang.JPG" alt="Profile photo">
+                        <div class="author-info">
+                            <h3>Bangbang</h3>
+                            <p>@Bangbang</p>
+                            <p></p>
+                            <p>6m</p>
+                        </div>
+                        <div class="content">
+                            <p>
+                                Coding is fun!
+                                <br>
+                                <br>
+                                But I really want to go outside!
+                            </p>
+                        </div>
+                        <div class="response-options">
+                            <ul class="response-option-list">
+                                <li>
+                                    <button>
+                                        <img src="icons/comment.svg" alt="Comment">
+                                    </button>
+                                </li>
+                                <li>
+                                    <button>
+                                        <img src="icons/retweet.svg" alt="Retweet">
+                                    </button>
+                                    <p>3</p>
+                                </li>
+                                <li>
+                                    <button>
+                                        <img src="icons/like.svg" alt="Like">
+                                    </button>
+                                    <p>15</p>
+                                </li>
+                                <li>
+                                    <button>
+                                        <img src="icons/share.svg" alt="Share">
+                                    </button>
+                                </li>
                             </ul>
+                        </div>
+                        <div class="more-option">
+                            <img class="more-option" src="/icons/ellipsis-solid.svg" alt="More option">
+                        </div>
+                    </div>
+                </li>
+                <!-- <li></li>
+                <li></li>
+                <li></li>
+                <li></li> -->
+            </ul>
 
         </section>
     </main>
