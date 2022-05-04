@@ -4,3 +4,7 @@
 
     box-sizing: border-box;
 }
+
+.wrapper {
+    max-width: 1282px;
+}
