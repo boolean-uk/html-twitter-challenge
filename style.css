@@ -2,10 +2,63 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: helvetica;
 }
 
 .website-body {
     display: grid;
     grid-template-columns: 1fr 2fr 1.5fr;
     grid-auto-flow: column;
+}
+
+/* aside-left */
+.aside-left {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+}
+
+.aside-left > img {
+    object-fit: cover;
+    max-width: 20%;
+    margin-left: 50px;
+}
+
+.aside-left ul img {
+    object-fit: cover;
+    max-width: 15%;
+}
+
+.nav-icons {
+    line-height: 60px;
+    list-style: none;
+    text-align: center;
+}
+
+.nav-text {
+    line-height: 59px;
+    list-style: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.aside-left nav {
+    display: grid;
+    grid-template-columns: 135px 1fr;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.home-icon {
+    color: orange;
+}
+
+.aside-left button {
+    background-color: orange;
+    color: white;
+    border: hidden 1px white;
+    border-radius: 30px;
+    padding: 20px 100px 20px 100px;
+    font-size: 1.5rem;
+    margin-left: 20px;
 }
