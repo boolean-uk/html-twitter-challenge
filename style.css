@@ -10,6 +10,13 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+/* Left Column */
+
+.icon-cog {
+    color: rebeccapurple;
+    margin: 0.5rem 0;
+}
+
 .left-aside {
     background-color: lightblue;
     display: grid;
@@ -52,6 +59,8 @@ body {
     border-radius: 50px;
     cursor: pointer;
     border: 2px solid rebeccapurple;
+    margin: 0.5rem 0;
+
 }
 
 .button-container button:hover {
@@ -59,10 +68,43 @@ body {
     color: rebeccapurple;
 }
 
+/* Centre Column */
 
 .main {
     background-color: lightcoral;
 }
+
+.title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.main img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    background-color: white;
+}
+
+.search img {
+    margin: 1rem;
+}
+
+.search input {
+    border: none;
+    width: 100%;
+    font-size: 1.25rem;
+    margin: 1rem 1rem 0 0;
+    outline: none;
+}
+
+/* Right Column */
 
 .right-aside {
     background-color: lightgreen;

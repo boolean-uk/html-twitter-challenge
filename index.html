@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>Twitter</title>
 </head>
 <body>
+
     <div class="left-aside">
-        <img src="./svgs/cat-solid.svg" width="60" alt="Logo">
+        <a href="#">
+            <i class="fa-solid fa-cat icon-cog fa-3x"></i>
+        </a>
         <a href="#">
             <img src="./svgs/house-solid.svg" width="30" alt="Home">
             <p>Home</p>
@@ -42,7 +46,19 @@
             <button>Miaow</button>
         </div>
     </div>
-    <div class="main">Main</div>
+
+    <div class="main">
+        <p class="title">Home</p>
+        <div class="search">
+            <div class="image-container">
+                <img src="./images/profile.jpg" alt="John's Profile Pic">
+            </div>
+            <div class="search-features">
+                <input type="text" placeholder="What's happening?"/>
+            </div>
+        </div>
+    </div>
+
     <div class="right-aside">Right</div>
 </body>
 </html>
