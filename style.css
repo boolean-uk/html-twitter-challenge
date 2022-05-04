@@ -89,17 +89,15 @@ body {
     width: 60px;
     height: 60px;
     border-radius: 50%;
+    margin: 1rem;
+    object-fit: cover;
 }
 
 .search {
     display: grid;
     grid-template-columns: auto 1fr;
     background-color: white;
-    border-bottom: 10px solid rebeccapurple;
-}
-
-.search img {
-    margin: 1rem;
+    border-bottom: 10px solid rgba(102, 51, 153, 0.5);
 }
 
 .search input {
@@ -131,6 +129,26 @@ body {
 .search-nav button {
     width: 8rem;
     margin-right: 1rem;
+}
+
+.user-post {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    border-bottom: 1px solid rebeccapurple;
+    padding-bottom: 1rem;
+}
+
+.post p {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+.post p:nth-of-type(2) {
+    margin-top: 0.5rem;
+}
+
+.post .icons {
+    margin-top: 1.5rem;
 }
 
 /* Right Column */
