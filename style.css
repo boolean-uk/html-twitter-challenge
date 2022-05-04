@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template: 
+        "left_menu home_page right_menu " 1fr /
+        auto minmax(400px, 1fr) auto;
+
+    height: 100vh;
+    margin: 0 100px;
+}
+
+/* LEFT MENU */
+
+.left_menu {
+    grid-area: left_menu;
+    display: grid;
+    grid-template:
+        "icon" auto
+        "nav" 1fr
+        "tweet_button" auto
+        "." 1fr /
+        1fr;
+
+    gap: 1rem;
+    height: 100vh;
+}
+
+#icon {
+    grid-area: icon;
+    padding: 20px;
+    margin-left: 15px;
+}
+
+.twitter {
+    width: 33px;
+    margin-top: 10px;
+}
+
+#nav {
+    grid-area: nav;
+    display: grid;
+    grid-auto-rows: 30px;
+    gap: 1rem;
+    align-items: center;
+    margin-right: 60px;
+}
+
+.nav_menu {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    gap: 0.2rem;
+
+    align-items: center;
+    margin: 30px;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black
+}
+
+.nav_menu > svg {
+    width: 30px;
+}
+
+.nav_menu:hover {
+    background-color: rgba(207, 207, 207, 0.465);
+    border-radius: 40px;
+}
+
+#tweet_button {
+    grid-area: tweet_button;
+    display: flex;
+    border-radius: 50px;
+    background-color: #1DA1F2;
+    color: white;
+    justify-content: center;
+    padding: 15px;
+    min-width: 220px;
+    place-self: center;
+    
+}
+
+#tweet_button:hover {
+    background-color: #1288d2;
+    cursor: pointer;
+}
+
+/* MAIN */
+
+main {
+    grid-area: home_page;
+    display: grid;
+    grid-template: 
+        "page_title" auto
+        "posting_box" auto
+        "scroll_page" 1fr /
+        1fr;
+
+    border-left: 1px solid rgb(219, 219, 219);
+    border-right: 1px solid rgb(219, 219, 219);
+}
+
+.page_title {
+    grid-area: page_title;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    padding: 10px;
+    align-content: space-between;
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.page_title h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.page_title h1 {
+    font-size: 20px;
+}
+
+
+.page_title > svg {
+    width: 25px;
+    
+}
+
+.posting_box {
+    grid-area: posting_box;
+    display: grid;
+    grid-template:
+        "profile_pic post_bar post_bar" 1fr
+        "profile_pic small_icons tweet_button_small" auto /
+        auto auto 1fr;
+
+    padding: 10px;
+    gap: 5px;
+}       
+
+.profile_pic {
+    grid-area: profile_pic;
+}
+
+.profile_pic > img {
+    width: 50px;
+    border-radius: 100%;
+}
+
+.post_bar {
+    grid-area: post_bar;
+    margin-left: 10px;
+}
+
+.post_bar > input {
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+    border: none;
+}
+
+.post_bar input:focus {
+    outline: none;
+}
+
+.post_bar hr {
+    border: 0.2px solid rgb(219, 219, 219);
+}
+
+.small_icons {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.svg_icon svg {
+    width: 20px;
+}
+
+.tweet_button_small {
+    grid-area: tweet_button_small;
+    display: flex;
+    place-self: end;
+    background-color: #1DA1F2;
+    color: white;
+    border-radius: 20px;
+    height: fit-content;
+    padding: 7px 20px;
+    opacity: 40%;
+    margin-left: 3px;
+    width: fit-content;
+}
+
+.scroll_page {
+    grid-area: scroll_page;
+    display: grid;
+    grid-auto-rows: 40px;
+}
+
+/* RIGHT MENU */
+
+.right_menu {
+    grid-area: right_menu;
+    display: grid;
+    grid-template:
+        "search" auto
+        "feeds" auto
+        "suggestions" auto
+        "." 1fr /
+        1fr;
+
+    gap: 1rem;
+    margin-left: 30px;
+    height: 100vh;
+}
+
+.search_bar {
+    grid-area: search;
+    display: flex;
+    margin-right: 10px;
+    margin-top: 5px;
+    background-color: rgba(232, 232, 232, 0.455);
+    border-radius: 20px;
+    place-content: center;
+}
+
+.search_bar > svg {
+    width: 18px;
+    display: inline;
+}
+
+.search_bar > input {
+    background-color: rgb(247 247 247 / 46%);
+    border: none;
+    height: 40px;
+    width: 100%;
+    
+    font-size: 15px;
+    border-radius: 20px;
+}
+
+.search_bar input:focus{
+    outline: none;
+}
+
+.feeds {
+    grid-area: feeds;
+    background-color: rgba(232, 232, 232, 0.455);
+    border-radius: 20px;
+}
+
+.feeds h1,
+.suggestions h1 {
+    padding: 20px;
+    text-align: start;
+    font-size: 22px;
+}
+
+.feeds hr,
+.suggestions hr {
+    margin-top: 10px;
+    border: 0.2px solid rgb(219, 219, 219);
+}
+
+.suggestions {
+    grid-area: suggestions;
+    background-color: rgba(232, 232, 232, 0.455);
+    border-radius: 20px;
+}
