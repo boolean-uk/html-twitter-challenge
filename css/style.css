@@ -68,6 +68,7 @@ a {
   top: 0;
   right: 0;
   left: 0;
+  z-index: 2;
 }
 
 .header__logo {
@@ -298,12 +299,60 @@ svg {
   }
 }
 
+.feed__post {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  border-bottom: 1px solid var(--bg1);
+}
+
+.post__icon {
+  border-radius: 50%;
+}
+
+.post__user {
+  display: flex;
+  gap: 5px;
+}
+.post__username,
+.post__personname {
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 200px;
+  text-overflow: ellipsis;
+}
+
+.post__username span,
+.post__date span,
+.post__icon-text {
+  font-size: 0.9rem;
+  color: var(--accent);
+}
+
+.post__text {
+  font-size: 0.9rem;
+  line-height: 1.4;
+  padding: 5px 0 15px 0;
+}
+
+.post__icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.post__replies,
+.post__likes,
+.post__retweets {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+}
+
 .right-aside {
   height: fit-content;
   position: sticky;
   top: -60px;
   padding-top: 20px;
-  z-index: -1;
 }
 
 .whats-happening,
