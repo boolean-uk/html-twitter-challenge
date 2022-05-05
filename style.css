@@ -5,6 +5,9 @@
     font-family: Arial, sans-serif;
 }
 
+
+
+/* Profile pictures dimensions */
 .profile-pic {
     object-fit: cover;
     border-radius: 50%;
@@ -327,6 +330,36 @@
     border: 0.5px solid rgba(0, 0, 0, .2);
 }
 
+.inner-kitter-feed {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.colone {
+    display: grid;
+    margin: 30px;
+}
+
+.coltwo {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    margin-left: 100px;
+    margin-top: -80px; 
+}
+
+span {
+    opacity: .6;
+}
+
+.kitter-icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    cursor: pointer;
+}
+
+hr {
+    border: 1px solid #5E389B22;
+}
 
 /* End of main feed grid */
 
