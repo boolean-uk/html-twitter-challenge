@@ -83,6 +83,7 @@ body {
 
 .title img {
     margin: 1rem 1rem 0 0;
+    cursor: pointer;
 }
 
 .image-container img {
@@ -151,8 +152,66 @@ body {
     margin-top: 1.5rem;
 }
 
+.icons img {
+    cursor: pointer;
+}
+
 /* Right Column */
 
 .right-aside {
     border-left: 1px solid rebeccapurple;
 }
+
+.search-bar {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    padding: 1rem;
+    background-color: rgba(102, 51, 153, 0.5);
+    margin: 1rem;
+    border-radius: 50px;
+}
+
+.search-bar input {
+    border: none;
+    font-size: 1.25rem;
+    width: 100%;
+    background: transparent;
+    margin-left: 0.5rem;
+    color: white;
+    outline: none;
+}
+
+.search-bar ::placeholder {
+    color: white;
+}
+
+/* Responsiveness */
+  
+@media (max-width: 767px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+
+    .left-aside, .main {
+        border: none;
+        margin-bottom: 1rem;
+    }
+
+    .right-aside {
+        border: none;
+    }
+}
+  
+@media (min-width: 768px) and (max-width: 1280px){
+    body {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .right-aside {
+        border: none;
+        margin-top: 1rem;
+    }
+}
+
+
+
