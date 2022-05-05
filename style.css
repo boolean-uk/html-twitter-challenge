@@ -71,11 +71,10 @@ body {
     border-radius: 50px;
 }
 
-/* still here for height setting - can remove*/
-
+/* 
 .head-item > * {
     height: 40px;
-}
+} */
 
 .nav-svg {
     display: grid;
@@ -108,7 +107,7 @@ body {
     background-color: #2779af;
 }
 
-/* HEADER PROFILE */
+/* HEADER PROFILE - BOTTOM LEFT */
 
 .header-profile-container {
     display: grid;
@@ -166,6 +165,8 @@ body {
     border-left: 1px solid #e1f1f7;
     border-right: 1px solid #e1f1f7;
 }
+
+/* WHATS HAPPENING */
 
 .whats-happening {
     background-color: #ffffff;
