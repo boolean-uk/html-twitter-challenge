@@ -2,7 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Verdana, sans-serif;
+    font-family: Arial, sans-serif;
+}
+
+.profile-pic {
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 /* WEBSITE LAYOUT */
@@ -16,7 +21,7 @@
     grid-template-columns: 500px minmax(300px, 1fr) 500px;
 
     height: 100vh;
-    font-size: 16px; 
+    font-size: 18px; 
 }
 
 .left-menu {
@@ -52,8 +57,8 @@
     "tweet"
     "icon-profile";
 
-    grid-template-columns: 250px ;
-    grid-template-rows: repeat(11, 30px);
+    grid-template-columns: 250px;
+    grid-template-rows: repeat(11, 40px);
     height: 100vh;
     grid-gap: 30px;
     font-weight: 700;
@@ -82,17 +87,21 @@
     transition: 0.4s;
 }
 
-.logo {
+#logo {
     grid-area: logo;
     width: 100%;
     color: #5E389B;
     font-size: 35px;
-    padding: 10px 25px; 
+    padding: 20px 30px;
+    background-color: transparent;
 }
 
-.logo:hover {
-    width: 50%;
+#logo img:hover {
+    background-color: #5E389B22;
+    border-radius: 30px;
+    transition: 0.4s;
 }
+
 
 .home {
     grid-area: home;
@@ -102,7 +111,7 @@
     padding: 13px 0px;
     
     display: grid;
-    grid-template-columns: repeat(2, 40px);
+    grid-template-columns: repeat(2, 5px);
 }
 
 .explore {
@@ -111,7 +120,7 @@
     padding: 13px 0;
 
     display: grid;
-    grid-template-columns: repeat(2, 40px);
+    grid-template-columns: repeat(2, 5px);
 }
 
 .notifications {
@@ -120,7 +129,7 @@
     padding: 13px 0;
 
     display: grid;
-    grid-template-columns: repeat(2, 40px);
+    grid-template-columns: repeat(2, 5px);
 }
 
 .messages {
@@ -129,7 +138,7 @@
     padding: 13px 0;
 
     display: grid;
-    grid-template-columns: repeat(2, 40px);
+    grid-template-columns: repeat(2, 5px);
 }
 
 .bookmarks {
@@ -138,7 +147,7 @@
     padding: 13px 0;
 
     display: grid;
-    grid-template-columns: repeat(2, 40px);
+    grid-template-columns: repeat(2, 5px);
 }
 
 .lists {
@@ -147,7 +156,7 @@
     padding: 13px 0;
 
     display: grid;
-    grid-template-columns: repeat(2, 40px);
+    grid-template-columns: repeat(2, 5px);
 }
 
 .profiles {
@@ -156,7 +165,7 @@
     padding: 13px 0;
 
     display: grid;
-    grid-template-columns: repeat(2, 40px);
+    grid-template-columns: repeat(2, 5px);
 }
 
 .more {
@@ -165,15 +174,13 @@
     padding: 13px 0;
 
     display: grid;
-    grid-template-columns: repeat(2, 40px);
+    grid-template-columns: repeat(2, 5px);
 }
 
 .tweet {
     grid-area: tweet;
     text-align: center;
     place-items: center;
-    margin-left: 30px;
-    
     
     background-color: #5E389B;
     color: white;
@@ -202,12 +209,21 @@
     margin-top: 90px;
     position: fixed;
     bottom: 0;
-    padding: 10px 20px;
+    padding: 10px 0px;
     font-size: 14px;
 
     display: grid;
     grid-template-rows: repeat(2, 1fr);
 }
+
+.icon-profile img {
+    display: grid;
+    grid-template-columns: 50px;
+    float: left;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
 
 .handle {
     margin-left: 60px;
@@ -217,7 +233,7 @@
 
 .inner-left-menu img {
     display: grid;
-    margin: -6px 0px 0 0px;
+    margin: -6px 0px 0 -60px;
 }
 /* End of left menu grid */
 
@@ -241,6 +257,62 @@
     border: 0.5px solid rgba(0, 0, 0, .2);
 }
 
+.inner-home-feed {
+    display: grid;
+
+    grid-template-areas: 
+    "first-row"
+    "second-row"
+    "third-row";
+
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.first-row {
+    display: grid;
+    
+    grid-area: first-row ;
+}
+
+.second-row {
+    display: grid;
+    grid-template-columns: 40px 200px;
+    grid-area: second-row;
+    margin-left: 20px;
+    color: rgba(0, 0, 0, .6);
+}
+
+.inner-main-feed .home-feed p {
+    margin: 15px 0 0 20px ;
+    font-weight: 500;
+}
+
+.inner-main-feed .home-feed h2 {
+    margin: 15px 0 0 20px ;
+}
+
+
+.third-row {
+    display: grid;
+    grid-template-columns: repeat(7, 60px) ;
+    grid-area: third-row;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.third-row .tweet {
+    padding: 10px 0;
+    margin-bottom: 10px;
+
+    width: 150px;
+}
+
+.third-row > img:hover {
+    background-color: #5E389B22;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
 .middle-feed {
     display: grid;
     grid-area: middle-feed;
@@ -255,10 +327,7 @@
     border: 0.5px solid rgba(0, 0, 0, .2);
 }
 
-.inner-main-feed .home-feed p {
-    margin: 10px 0 0 20px ;
-    font-weight: 900;
-}
+
 /* End of main feed grid */
 
 
