@@ -9,10 +9,12 @@
     display: grid;
     grid-template: 
         "left_menu home_page right_menu " 1fr /
-        auto minmax(400px, 1fr) auto;
+        auto minmax(400px, 700px) auto;
 
     height: 100vh;
-    margin: 0 100px;
+    margin-left: 20px;
+    margin-right: 40px;
+    position: relative;
 }
 
 /* LEFT MENU */
@@ -23,12 +25,15 @@
     grid-template:
         "icon" auto
         "nav" 1fr
-        "tweet_button" auto
-        "." 1fr /
+        "tweet_box" auto
+        "." 1fr
+        "profile" auto /
         1fr;
 
     gap: 1rem;
     height: 100vh;
+    position: fixed;
+    justify-self: left;
 }
 
 #icon {
@@ -69,25 +74,88 @@
 }
 
 .nav_menu:hover {
-    background-color: rgba(207, 207, 207, 0.465);
+    background-color: #E7E7E8;
     border-radius: 40px;
 }
 
+.tweet_box {
+    grid-area: tweet_box;
+}
+
 #tweet_button {
-    grid-area: tweet_button;
     display: flex;
     border-radius: 50px;
     background-color: #1DA1F2;
     color: white;
     justify-content: center;
     padding: 15px;
-    min-width: 220px;
+    width: 200px;
+    margin-left: 30px;
     place-self: center;
     
 }
 
 #tweet_button:hover {
     background-color: #1288d2;
+    cursor: pointer;
+}
+
+.profile_left_bottom {
+    grid-area: profile;
+    display: grid;
+    grid-template:
+        "pic name icon" auto
+        "pic user_name icon" auto /
+        auto 1fr;
+
+    column-gap: 5px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding: 10px 0px 10px 10px;
+    width: 17rem;
+    position: fixed;
+    bottom: 0;
+}
+
+.profile_left_bottom:hover {
+    background-color: #E7E7E8;
+    border-radius: 40px;
+}
+
+.pic {
+    grid-area: pic;
+}
+
+.pic > img {
+    width: 40px;
+    border-radius: 100%;
+}
+
+.name {
+    grid-area: name;
+}
+
+.user_name {
+    grid-area: user_name;
+}
+
+.user_name > span{
+    opacity: 20%;
+    font-size: 15px;
+}
+
+.profile_icon {
+    grid-area: icon;
+    display: flex;
+    justify-content: center;
+    padding-right: 35px;
+}
+
+.profile_icon > svg {
+    width: 20px;
+}
+
+.profile_icon > svg:hover{
     cursor: pointer;
 }
 
@@ -99,9 +167,11 @@ main {
     grid-template: 
         "page_title" auto
         "posting_box" auto
-        "scroll_page" 1fr /
+        "scroll_page" 1fr
+        "." 0.1fr /
         1fr;
 
+    gap: 10px;
     border-left: 1px solid rgb(219, 219, 219);
     border-right: 1px solid rgb(219, 219, 219);
 }
@@ -140,6 +210,7 @@ main {
 
     padding: 10px;
     gap: 5px;
+    border-bottom: 1px solid rgb(219, 219, 219);
 }       
 
 .profile_pic {
@@ -182,6 +253,10 @@ main {
     width: 20px;
 }
 
+.svg_icon > svg:hover{
+    cursor: pointer;
+}
+
 .tweet_button_small {
     grid-area: tweet_button_small;
     display: flex;
@@ -192,14 +267,118 @@ main {
     height: fit-content;
     padding: 7px 20px;
     opacity: 40%;
-    margin-left: 3px;
+    margin-right: 5px;
     width: fit-content;
 }
 
 .scroll_page {
     grid-area: scroll_page;
     display: grid;
-    grid-auto-rows: 40px;
+    grid-auto-rows: 150px;
+}
+
+.post_feed {
+    display: grid;
+    grid-template:
+        "profile_pic_post p_name" auto
+        "profile_pic_post p_post" auto
+        "profile_pic_post icons_post" auto /
+        auto 1fr;
+
+    column-gap: 10px;
+    padding: 15px 15px 0 15px;
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.post_feed:hover{
+    background-color: #F7F7F7;
+    cursor: pointer;
+}
+
+.first {
+    border-top: 1px solid rgb(219, 219, 219);
+}
+
+.profile_pic_post {
+    grid-area: profile_pic_post;
+}
+
+.profile_pic_post > img {
+    width: 40px;
+    border-radius: 100%;
+}
+
+.p_name {
+    grid-area: p_name;
+}
+
+.opacity_text {
+    opacity: 25%;
+}
+
+.p_post {
+    grid-area: p_post;
+}
+
+.color_text {
+    color: #1288d2;
+}
+
+.icons_post {
+    grid-area: icons_post;
+    height: fit-content;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.icons_post svg{
+    width: 20px;
+}
+
+.icons_post svg:hover,
+.counter > svg:hover{
+    cursor: pointer;
+}
+
+.counter {
+    display: grid;
+    grid-auto-flow: column;
+    padding: 3px;
+}
+
+.counter > svg {
+    width: 20px;
+}
+
+.counter > span {
+    opacity: 40%;
+    font-size: 15px;
+}
+
+.counter:hover {
+    background-color: #E1EEF6;
+    border-radius: 50%;
+}
+
+.green,
+.pink,
+.blue {
+    padding: 5px 5px 0 5px;
+}
+
+.green:hover {
+    background-color: #E0F1EB;
+    border-radius: 50%;
+}
+
+.pink:hover {
+    background-color: #F7E2EB;
+    border-radius: 100%;
+}
+
+.blue:hover {
+    background-color: #E1EEF6;
+    border-radius: 50%;
 }
 
 /* RIGHT MENU */
@@ -217,6 +396,9 @@ main {
     gap: 1rem;
     margin-left: 30px;
     height: 100vh;
+    width: 20%;
+    position: fixed;
+    justify-self: right;
 }
 
 .search_bar {
@@ -227,6 +409,7 @@ main {
     background-color: rgba(232, 232, 232, 0.455);
     border-radius: 20px;
     place-content: center;
+    width: 100%;
 }
 
 .search_bar > svg {
@@ -238,8 +421,7 @@ main {
     background-color: rgb(247 247 247 / 46%);
     border: none;
     height: 40px;
-    width: 100%;
-    
+
     font-size: 15px;
     border-radius: 20px;
 }
@@ -252,6 +434,58 @@ main {
     grid-area: feeds;
     background-color: rgba(232, 232, 232, 0.455);
     border-radius: 20px;
+}
+
+article {
+    margin: 0 10px 20px 10px;
+    padding: 7px;
+}
+
+article:hover {
+    background-color: #E7E7E8;
+    border-radius: 20px;
+}
+
+article > a {
+    text-decoration: none;
+    color: black;
+}
+
+article  p {
+    max-width: fit-content;
+    
+}
+
+.opaque {
+    opacity: 20%;
+}
+
+.opaque_text {
+    display: inline;
+    opacity: 20%;
+}
+
+article span {
+    opacity: none;
+    color: #1288d2;
+}
+
+.image {
+    float: right;
+}
+
+.image > img {
+    width: 50px;
+    border-radius: 10px;
+}
+
+.more_feeds {
+    padding: 15px;
+}
+
+.more_feeds a{
+    text-decoration: none;
+    color: #1288d2;
 }
 
 .feeds h1,
@@ -271,4 +505,128 @@ main {
     grid-area: suggestions;
     background-color: rgba(232, 232, 232, 0.455);
     border-radius: 20px;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (min-width: 1316px){
+
+    .svg_icon_tweet {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 1315px){
+
+    .container {
+        display: grid;
+        grid-template: 
+            "left_menu home_page" 1fr /
+            minmax(100px, 300px) minmax(400px, 700px);
+    
+        height: 100vh;
+        margin-left: 20px;
+        position: relative;
+    }
+
+    .left_menu {
+        margin-left: 2%;
+    }
+    
+    #nav span {
+        display: none;
+    }
+
+    #tweet_button {
+        display: none;
+    }
+
+    .svg_icon_tweet {
+        background-color: #1DA1F2;
+        border-radius: 90%;
+        margin-left: 30px;
+        padding: 10px;
+        max-width: fit-content;
+    }
+
+    .svg_icon_tweet > svg{
+        fill: white;
+        width: 40px;
+    }
+
+    .svg_icon_tweet:hover {
+        background-color: #1288d2;
+    }
+
+    .name,
+    .user_name,
+    .profile_icon {
+        display: none;
+    }
+
+    .right_menu {
+        display: none;
+    }
+
+    .profile_left_bottom {
+        max-width: fit-content;
+    }
+
+    .profile_left_bottom:hover{
+        background-color: #E7E7E8;
+        border-radius: 40px;
+        cursor: pointer;
+    }
+
+}
+
+@media screen and (max-width: 590px) {
+
+    .container {
+        display: grid;
+        grid-template: 
+            "home_page" 1fr /
+            1fr;
+    
+        height: 100vh;
+        margin-left: 20px;
+        margin-right: 40px;
+        position: relative;
+    }
+
+    .left_menu {
+        display: grid;
+        grid-template: none;
+        grid-template-columns: repeat(auto-fill, 1fr);
+        grid-auto-flow: column;
+    }
+
+    #nav {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-flow: column;
+        position: fixed;
+        justify-self: center;
+        align-self: flex-end;
+        margin-right: 0;
+        margin-left: 70%;
+        background-color: white;
+        padding-top: 10px;
+
+    }
+
+    .nav_menu {
+        display: inline;
+    }
+
+    .profile_left_bottom,
+    .bookmarks,
+    .lists,
+    .more,
+    #icon,
+    .profile,
+    .svg_icon_tweet {
+        display: none;
+    }
 }
