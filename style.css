@@ -32,6 +32,9 @@ body {
     grid-template-rows: auto auto;
 
     padding-right: 1.5rem;
+
+    position: sticky;
+    top: 0;
 }
 
 .header-navbar {
@@ -61,32 +64,7 @@ body {
     margin-right: 2.4rem;
 }
 
-/* HEADER PROFILE */
-
-.header-profile-container {
-    border: 2px solid white;
-    display: grid;
-}
-
-.hp-container {
-    display: grid;
-    gap: 5px;
-    /* grid-template-columns: 60px 1fr 50px; */
-    border: 2px solid green;
-    
-}
-
-.left-profile-img img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    /* width: 100%;
-    height: 100%; */
-}
-
-
-
-/* still here for height setting */
+/* still here for height setting - can remove*/
 
 .head-item > * {
     height: 40px;
@@ -114,15 +92,47 @@ body {
 }
 
 
+/* HEADER PROFILE */
+
+.header-profile-container {
+    border: 2px solid white;
+    display: grid;
+}
+
+.hp-container {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 50px 1fr 50px;
+    border: 2px solid green;
+    align-items: center;
+    
+}
+
+.more-dots {
+    display: grid;
+    justify-content: end;
+}
+
+.left-profile-img img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* width: 100%;
+    height: 100%; */
+}
+
+
+
+
 
 
 /* MAIN PAGE  */
 
 .main-container {
-    background-color: lightblue;
 
     display: grid;
     grid-template-columns: 1.6fr 1fr .8fr;
+  
 }
 
 .main-middle {
@@ -138,6 +148,7 @@ body {
 
     position: sticky;
     top: 0;
+    background-color: rgba(0, 0, 255, 0.445);
 }
 
 .whats-happening {
@@ -160,11 +171,58 @@ body {
     border-radius: 50%;
 }
 
+/* FEED */
+
 .feed-container {
     background-color: purple;
-    /* height: 200vh; */
-    padding: 0.5rem;
 }
+
+.twitter-post {
+    padding: 1rem;
+
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    gap: 1rem;
+}
+
+.post-img img {
+    width: 100%;
+    height: 50px;
+    border-radius: 50%;
+    /* height: 50px;
+    width: 50px; */
+}
+
+.post-img-container img {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* temp colours for imagining */
+
+.feed-post1 {
+    background-color: coral;
+}
+
+.feed-post2 {
+    background-color: hotpink;
+}
+
+.feed-post3 {
+    background-color: red;
+}
+
+.feed-post4 {
+    background-color: blue;
+}
+
+.feed-post5 {
+    background-color: yellow
+}
+
+
+
 
 .happening-title {
     padding: 1.5rem 0;
@@ -214,8 +272,7 @@ body {
 
 .right-side {
     display: grid;
-    grid-template-rows: 60px 1fr;
-    
+    grid-template-rows: 60px auto 1fr;
 }
 
 .search-container {
@@ -266,16 +323,16 @@ body {
 
 .whotofollow-container {
     background-color: red;
-    padding: 0.5rem;
+    padding: 1rem;
     border-radius: 8px;
-    height: 100px;
+    
 }
 
 .article {
     padding: 0.6rem 0;
 
     display: grid;
-    grid-template-columns: 1fr 50px;
+    grid-template-columns: 1fr auto;
 }
 
 .article-img img {
@@ -290,8 +347,14 @@ body {
     color: black;
 }
 
+/* WHO TO FOLLOW */
 
-
+.follow-account {
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    gap: 1rem;
+    align-items: center;
+}
 
 /* TERMS AND LINKS */
 
