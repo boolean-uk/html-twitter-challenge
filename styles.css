@@ -306,11 +306,10 @@ main header .top-tweet img {
 .post-wrap {
     display: grid;
     column-gap: 1rem;
-    /* row-gap: 0.5rem; */
     grid-template-areas:
         "profile-photo author-info more-option"
-        "profile-photo content more-option"
-        "profile-photo response-option-list more-option";
+        "profile-photo content content"
+        "profile-photo response-options response-options";
     grid-template-columns: auto 1fr auto;
     padding: 0.5rem 1rem;
 }
@@ -336,9 +335,11 @@ main header .top-tweet img {
     grid-area: more-option;
 }
 
-.post-wrap ul.response-option-list {
-    grid-area: response-option-list;
+.post-wrap .response-options {
+    grid-area: response-options;
+}
 
+.post-wrap ul.response-option-list {
     display: grid;
     grid-auto-flow: column;
 }
@@ -346,16 +347,47 @@ main header .top-tweet img {
 .post-wrap ul.response-option-list li {
     display: grid;
     grid-auto-flow: column;
-    place-items: center;
+    align-items: center;
 
     width: fit-content;
-    height: fit-content;
 }
+
+.post-wrap ul.response-option-list button {
+    padding: 0.3rem;
+    margin-right: 0.5rem;
+
+    display: flex;
+    align-items: center;
+
+    border-radius: 50%;
+}
+
+.post-wrap ul.response-option-list li:hover button {
+    background-color: #1DA1F230;
+}
+
+.post-wrap ul.response-option-list li:hover p {
+    color: #1DA1F2;
+}
+
+.post-wrap ul.response-option-list li:hover button.retweet {
+    background-color: #1EBC6330;
+}
+
+.post-wrap ul.response-option-list li:hover button.retweet+p {
+    color: #1EBC63;
+}
+
+.post-wrap ul.response-option-list li:hover button.like {
+    background-color: #E0255E30;
+}
+
+.post-wrap ul.response-option-list li:hover button.like+p {
+    color: #E0255E;
+}
+
 
 .post-wrap ul.response-option-list img {
     height: 1rem;
     width: 1rem;
-    /* padding: 0.5rem; */
-
-    border: 1px solid red;
 }
