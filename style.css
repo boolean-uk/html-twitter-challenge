@@ -433,4 +433,60 @@ body {
     text-decoration: none;
 }
 
+@media only screen and (max-width: 1200px) {
 
+    .nav-title, .header-tweet-btn, .header-profile-container {
+        display: none;
+    }
+    .twitter-container {
+        display: grid;
+        grid-template-columns: 100px auto;
+        
+    }
+    .header-container {
+        background-color: #ffffff;
+        height: 100vh;
+
+        display: grid;
+
+        place-items: center;
+        justify-content: center;
+
+        position: sticky;
+        top: 0;
+        padding-left: 4rem;
+    }
+    .main-container {
+        display: grid;
+        grid-template-columns: auto 1fr;
+
+    }
+    .header-navbar {
+        display: grid;
+        place-items: center;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .main-container {
+        display: grid;
+        grid-template-columns: auto auto;
+
+    }
+    .right-side {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .main-container {
+        display: grid;
+        width: 550px;
+        
+    }
+    .header-container {
+        display: none;
+    }
+    
+}
