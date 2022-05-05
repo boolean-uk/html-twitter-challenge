@@ -171,6 +171,51 @@ body {
     border-radius: 50%;
 }
 
+
+.happening-title {
+    padding: 1.5rem 0;
+
+}
+
+.whats-text-container {
+    background-color: pink;
+    display: grid;
+    grid-template-rows: auto 60px;
+    -bottom: 1rem;
+
+}
+
+.happening-icon-bar {
+    background-color: brown;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem 0.4rem;
+    align-content: center;
+}
+
+.icon-bar-div {
+    display: grid;
+    grid-template-columns: repeat(6, 50px);
+    align-items: center;
+}
+
+.post-btn {
+    grid-column: -1;
+    margin-right: 2rem;
+
+    color: white;
+    
+}
+
+.tweet-btn-main {
+    height: 40px;
+    width: 70px;
+    border-radius: 50px;
+    background-color: blue;
+    color: white;
+    font-weight: 600;
+}
+
 /* FEED */
 
 .feed-container {
@@ -224,49 +269,6 @@ body {
 
 
 
-.happening-title {
-    padding: 1.5rem 0;
-
-}
-
-.whats-text-container {
-    background-color: pink;
-    display: grid;
-    grid-template-rows: auto 60px;
-    -bottom: 1rem;
-
-}
-
-.happening-icon-bar {
-    background-color: brown;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 1rem 0.4rem;
-    align-content: center;
-}
-
-.icon-bar-div {
-    display: grid;
-    grid-template-columns: repeat(6, 50px);
-    align-items: center;
-}
-
-.post-btn {
-    grid-column: -1;
-    margin-right: 2rem;
-
-    color: white;
-    
-}
-
-.tweet-btn-main {
-    height: 40px;
-    width: 70px;
-    border-radius: 50px;
-    background-color: blue;
-    color: white;
-    font-weight: 600;
-}
 
 /* RIGHT SIDE - NEWS*/
 
@@ -310,7 +312,7 @@ body {
     border-radius: 8px;
     display: grid;
     gap: 1rem;
-    grid-template-rows: auto 1fr;
+    grid-template-rows: auto auto;
 }
 
 .headlines-container {
@@ -318,14 +320,6 @@ body {
     display: grid;
     padding: 1rem 1rem 1rem 1rem; 
     border-radius: 8px;
-}
-
-
-.whotofollow-container {
-    background-color: red;
-    padding: 1rem;
-    border-radius: 8px;
-    
 }
 
 .article {
@@ -349,11 +343,27 @@ body {
 
 /* WHO TO FOLLOW */
 
+.whotofollow-container {
+    background-color: red;
+    padding: 1rem;
+    border-radius: 8px;
+    display: grid;
+    grid-template-rows: auto 70px 70px auto;
+}
+
+.wtf-title {
+    padding-bottom: 1rem;
+}
+
 .follow-account {
     display: grid;
     grid-template-columns: 50px 1fr 50px;
-    gap: 1rem;
     align-items: center;
+    gap: 1rem;
+}
+
+.whotofollow-container a {
+    padding-top: 1rem;
 }
 
 /* TERMS AND LINKS */
