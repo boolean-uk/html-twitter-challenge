@@ -542,3 +542,8 @@ main header .top-tweet img {
 .right-bar .follow button:hover {
     background-color: #272C30;
 }
+
+/* Right bar footer */
+.right-bar footer {
+    padding: 0 3rem;
+}
