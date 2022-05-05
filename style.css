@@ -199,6 +199,13 @@ body {
     border-radius: 10px;
     cursor: pointer;
     max-width: 100%;
+    text-decoration: none;
+    color: black;
+}
+
+.news-item:hover {
+    background-color: rgba(102, 51, 153, 0.5);
+    color: #fff;
 }
 
 .news-item .text {
@@ -220,6 +227,16 @@ body {
     .left-aside, .main {
         border: none;
         margin-bottom: 1rem;
+    }
+
+    .search-nav {
+        padding: 1rem;
+        grid-template-columns: 1fr;
+    }
+
+    .search-nav .button-container {
+        margin-top: 1rem;
+        place-items: end;
     }
 
     .right-aside {
