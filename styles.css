@@ -20,11 +20,6 @@ button {
     background-color: transparent;
 }
 
-.more-option {
-    grid-area: more-option;
-    height: 20px;
-}
-
 .tweet-button button {
     color: white;
     background-color: #1DA1F2;
@@ -42,9 +37,14 @@ button {
     background-color: #0C84CD;
 }
 
+.tweet-button button img {
+    display: none;
+}
+
 .create-tweet .option-list img,
 .post-wrap ul.response-option-list img,
 .post-wrap .more-option img,
+.left-menu .more-option img,
 .right-bar .more-option img {
     height: 1rem;
     width: 1rem;
@@ -89,19 +89,19 @@ header.logo img {
 /* Left-menu nav */
 nav img {
     height: 25px;
+    margin: 0.75rem 1rem;
 }
 
 nav h2 {
     display: inline-block;
     font-size: 1.3rem;
     font-weight: normal;
-    padding: 0.75rem 1rem;
+    margin-right: 2rem;
 }
 
 nav li div {
     width: fit-content;
     margin: 0.7rem 0;
-    padding: 0 1rem;
 
     display: flex;
     align-items: center;
@@ -135,10 +135,7 @@ nav a:active h2 {
 
     display: grid;
     align-items: center;
-    grid-template-areas:
-        "profile-photo account-name more-option"
-        "profile-photo username more-option";
-    grid-template-columns: 50px 1fr 20px;
+    grid-auto-flow: column;
 }
 
 .account:hover {
@@ -146,20 +143,13 @@ nav a:active h2 {
 }
 
 .account .profile-photo {
-    grid-area: profile-photo;
-
     height: 40px;
     border-radius: 50%;
 }
 
-.account h3 {
-    grid-area: account-name;
-
+.account h4 {
     font-size: 1.1rem;
-}
-
-.account p {
-    grid-area: username;
+    padding-right: 3.5rem;
 }
 
 /* Main */
@@ -546,4 +536,40 @@ main header .top-tweet img {
 /* Right bar footer */
 .right-bar footer {
     padding: 0 3rem;
+}
+
+/* Media query */
+@media screen and (max-width: 1265px) {
+    .left-menu nav h2 {
+        display: none;
+    }
+
+    .left-menu .tweet-button #circle-button {
+        width: 50px;
+        border-radius: 50%;
+    }
+
+    .left-menu .tweet-button button p {
+        display: none;
+    }
+
+    .left-menu .tweet-button button img {
+        width: 30px;
+
+        display: flex;
+    }
+
+    .left-menu .account {
+        padding: 0.7rem;
+
+        width: fit-content;
+    }
+
+    .left-menu .account img~* {
+        display: none;
+    }
+
+    .container {
+        grid-template-columns: 6.5rem 600px 26rem;
+    }
 }
