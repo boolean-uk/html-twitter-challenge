@@ -52,6 +52,7 @@ header {
   grid-template-rows: 50px;
   grid-auto-flow: column;
   border: 0.2rem solid var(--darkShade);
+  background-color:var(--shade2);
   width: 100%;
   /* Stick header to top of grid */
   position: sticky;
