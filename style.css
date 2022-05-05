@@ -223,11 +223,46 @@ body {
     
 }
 
+/* NEWS */
+
 .news-container {
     background-color: rgba(172, 255, 47, 0.596);
+    padding: 1rem;
+}
+
+.news-content {
+    background-color: orange;
+    border-radius: 8px;
+    display: grid;
+    gap: 10px;
+    grid-template-rows: 1fr 1fr;
+}
+
+.headlines-container {
+    background-color: blue;
+    display: grid;
+    padding: 0.5rem; 
+    border-radius: 8px;
+}
+
+
+.whotofollow-container {
+    background-color: red;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+
+.article {
+    padding: 1rem 0;
 }
 
 
 
+
+/* TERMS AND LINKS */
+
+.terms-container li {
+    list-style-type: none;
+}
 
 
