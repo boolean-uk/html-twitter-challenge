@@ -5,20 +5,38 @@
     font-family: Verdana, sans-serif;
 }
 
-/* Grid Templates */
+/* WEBSITE LAYOUT */
 
+/* Main Grid template */
 .container {
     display: grid;
     grid-template-areas:
     "left-menu main-feed right-menu";
 
-    grid-template-columns: 300px minmax(300px, 1fr) 300px;
-    
+    grid-template-columns: 500px minmax(300px, 1fr) 500px;
 
     height: 100vh;
     font-size: 16px; 
 }
 
+.left-menu {
+    grid-area: left-menu;
+    font-size: 18px;
+}
+
+.main-feed {
+    grid-area: main-feed;
+    border-left: 0.5px solid rgba(0, 0, 0, .2);
+    border-right: 0.5px solid rgba(0, 0, 0, .2);
+}
+
+.right-menu {
+    grid-area: right-menu;
+}
+/* End of main grid template */
+
+
+/* Left menu grid */
 .inner-left-menu {
     display: grid;
     grid-template-areas: 
@@ -38,75 +56,9 @@
     grid-template-rows: repeat(11, 30px);
     height: 100vh;
     grid-gap: 30px;
-    font-weight: 700;  
-}
-
-.inner-right-menu {
-    display: grid;
-    grid-template-areas: 
-    "search"
-    "happening"
-    "follow";
-
-    grid-template-columns: 250px; 
-    
-    gap: 20px;
-    margin-left: 20px;
-}
-
-.search-kitter {
-    display: grid;
-    grid-area: search;
-    grid-template-rows: minmax(50px, 1fr);
-    padding: 10px 0px;
-    margin: 10px 0 30px 0;
-      
-}
-
-.search-kitter input {
-    border: transparent;
-    background-color: #5E389B33;
-    border-radius: 30px;
-}
-
-input[type="text"]::placeholder {              
-    padding-left: 50px;
-    font-size: 16px;
-}
-
-.magnifier-icon {
-    position: absolute;
-    top: 30px;
-    margin-left: 10px;
-}
-
-.happening {
-    display: grid;
-    grid-area: happening;
-    grid-template-rows: minmax(70px, 1fr);
-
-    border-radius: 5px;
-    background-color: #5E389B33;
-    font-weight: 900;
-}
-
-.inner-right-menu p {
-    margin: 10px;
-}
-
-.who-to-follow {
-    display: grid;
-    grid-area: follow;
-    grid-template-rows: minmax(70px, 1fr);
-
-    border-radius: 5px;
-    background-color: #5E389B33;
-    font-weight: 900;
-}
-
-.inner-left-menu img {
-    display: grid;
-    margin: -6px 0px 0 0px;
+    font-weight: 700;
+    margin-left: 90px;
+    position: fixed;
 }
 
 .home,
@@ -151,8 +103,6 @@ input[type="text"]::placeholder {
     
     display: grid;
     grid-template-columns: repeat(2, 40px);
-    
-    /* border: 2px dotted orange; */
 }
 
 .explore {
@@ -162,8 +112,6 @@ input[type="text"]::placeholder {
 
     display: grid;
     grid-template-columns: repeat(2, 40px);
-    
-    /* border: 2px dotted yellow; */
 }
 
 .notifications {
@@ -173,8 +121,6 @@ input[type="text"]::placeholder {
 
     display: grid;
     grid-template-columns: repeat(2, 40px);
-    
-    /* border: 2px dotted greenyellow; */
 }
 
 .messages {
@@ -184,8 +130,6 @@ input[type="text"]::placeholder {
 
     display: grid;
     grid-template-columns: repeat(2, 40px);
-    
-    /* border: 2px dotted blue; */
 }
 
 .bookmarks {
@@ -195,8 +139,6 @@ input[type="text"]::placeholder {
 
     display: grid;
     grid-template-columns: repeat(2, 40px);
-    
-    /* border: 2px dotted indigo; */
 }
 
 .lists {
@@ -206,8 +148,6 @@ input[type="text"]::placeholder {
 
     display: grid;
     grid-template-columns: repeat(2, 40px);
-
-    /* border: 2px dotted violet; */
 }
 
 .profiles {
@@ -217,8 +157,6 @@ input[type="text"]::placeholder {
 
     display: grid;
     grid-template-columns: repeat(2, 40px);
-
-    /* border: 2px dotted aqua; */
 }
 
 .more {
@@ -228,8 +166,6 @@ input[type="text"]::placeholder {
 
     display: grid;
     grid-template-columns: repeat(2, 40px);
-
-    /* border: 2px dotted burlywood; */
 }
 
 .tweet {
@@ -264,7 +200,7 @@ input[type="text"]::placeholder {
     display: grid;
     place-items: center;
     margin-top: 90px;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     padding: 10px 20px;
     font-size: 14px;
@@ -279,19 +215,115 @@ input[type="text"]::placeholder {
     color: grey;
 }
 
-.left-menu {
-    grid-area: left-menu;
-    font-size: 18px;
+.inner-left-menu img {
+    display: grid;
+    margin: -6px 0px 0 0px;
+}
+/* End of left menu grid */
+
+
+/* Main feed grid */
+.inner-main-feed {
+    display: grid;
+    grid-template-areas: 
+    "home-feed"
+    "middle-feed"
+    "kitter-feed";
+
+    grid-template-columns: 1fr;
+    /* grid-template-rows: repeat(3, 200px); */
 }
 
-.main-feed {
-    grid-area: main-feed;
-    background-color: rgb(199, 229, 235);
-    border-left: 0.5px solid rgba(0, 0, 0, .2);
-    border-right: 0.5px solid rgba(0, 0, 0, .2);
+.home-feed {
+    display: grid;
+    grid-area: home-feed;
+    grid-template-rows: minmax(200px, 1fr);
+    border: 0.5px solid rgba(0, 0, 0, .2);
 }
 
-.right-menu {
-    grid-area: right-menu;
+.middle-feed {
+    display: grid;
+    grid-area: middle-feed;
+    grid-template-rows: 30px;
+    background-color: #5E389B22;
+}
+
+.kitter-feed {
+    display: grid;
+    grid-area: kitter-feed;
+    grid-template-rows: minmax(200px, 1000px);
+    border: 0.5px solid rgba(0, 0, 0, .2);
+}
+
+.inner-main-feed .home-feed p {
+    margin: 10px 0 0 20px ;
+    font-weight: 900;
+}
+/* End of main feed grid */
+
+
+/* Right menu grid */
+.inner-right-menu {
+    display: grid;
+    grid-template-areas: 
+    "search"
+    "happening"
+    "follow";
+
+    grid-template-columns: 350px; 
     
+    gap: 20px;
+    margin-left: 90px;
+    position: fixed;
 }
+
+.search-kitter {
+    display: grid;
+    grid-area: search;
+    grid-template-rows: minmax(50px, 1fr);
+    padding: 10px 0px;
+    margin: 10px 0 30px 0;
+      
+}
+
+.search-kitter input {
+    border: transparent;
+    background-color: #5E389B33;
+    border-radius: 30px;
+}
+
+input[type="text"]::placeholder {              
+    padding-left: 50px;
+    font-size: 16px;
+}
+
+.magnifier-icon {
+    position: absolute;
+    top: 30px;
+    margin-left: 10px;
+}
+
+.happening {
+    display: grid;
+    grid-area: happening;
+    grid-template-rows: minmax(90px, 1fr);
+
+    border-radius: 5px;
+    background-color: #5E389B33;
+    font-weight: 900;
+}
+
+.inner-right-menu p {
+    margin: 10px;
+}
+
+.who-to-follow {
+    display: grid;
+    grid-area: follow;
+    grid-template-rows: minmax(90px, 1fr);
+
+    border-radius: 5px;
+    background-color: #5E389B33;
+    font-weight: 900;
+}
+/* End of right menu grid */
