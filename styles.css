@@ -17,27 +17,12 @@ ul {
 
 button {
     border: none;
-    background-color: white;
+    background-color: transparent;
 }
 
 .more-option {
     grid-area: more-option;
     height: 20px;
-}
-
-section,
-main,
-main>* {
-    border: 1px solid;
-}
-
-body {
-    height: 100vh;
-
-    padding: 0 4rem;
-
-    display: grid;
-    grid-template-columns: 19rem 1fr 26rem;
 }
 
 .tweet-button button {
@@ -57,6 +42,22 @@ body {
     background-color: #0C84CD;
 }
 
+
+
+section,
+main,
+main>* {
+    border: 1px solid;
+}
+
+body {
+    height: 100vh;
+
+    padding: 0 4rem;
+
+    display: grid;
+    grid-template-columns: 19rem 1fr 26rem;
+}
 
 /* Left Menu */
 .left-menu {
@@ -314,6 +315,7 @@ main header .top-tweet img {
     padding: 0.5rem 1rem;
 }
 
+/* Single post block */
 .post-wrap .profile-photo {
     grid-area: profile-photo;
 }
@@ -331,10 +333,7 @@ main header .top-tweet img {
     padding: 0.5rem 0;
 }
 
-.post-wrap .more-option {
-    grid-area: more-option;
-}
-
+/* Single post block response options */
 .post-wrap .response-options {
     grid-area: response-options;
 }
@@ -362,6 +361,13 @@ main header .top-tweet img {
     border-radius: 50%;
 }
 
+.post-wrap ul.response-option-list img,
+.post-wrap .more-option img {
+    height: 1rem;
+    width: 1rem;
+}
+
+/* Single post block hover effect */
 .post-wrap ul.response-option-list li:hover button {
     background-color: #1DA1F230;
 }
@@ -386,8 +392,4 @@ main header .top-tweet img {
     color: #E0255E;
 }
 
-
-.post-wrap ul.response-option-list img {
-    height: 1rem;
-    width: 1rem;
-}
+/* Right bar */
