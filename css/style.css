@@ -38,7 +38,7 @@ a {
   padding-top: 50px;
 }
 
-@media screen and (max-width: 81.25em) {
+@media screen and (max-width: 77.5em) {
   .container {
     grid-template-columns: 70px 600px minmax(auto, 350px);
     max-width: 67.5rem;
@@ -182,7 +182,7 @@ svg {
   background-color: var(--twitter-blue-hover);
 }
 
-@media screen and (max-width: 81.25em) {
+@media screen and (max-width: 77.5em) {
   .menu__item {
     gap: 0px;
   }
