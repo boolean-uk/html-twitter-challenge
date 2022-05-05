@@ -226,21 +226,41 @@ body {
         border: none;
     }
 
-    .news-item {
-        width: 75%;
-        place-items: center start;
+    .news {
+        display: grid;
+        place-items: center center;
     }
+
 }
   
 @media (min-width: 768px) and (max-width: 1280px){
     body {
-        grid-template-columns: 1fr 2fr;
+        display: grid;
+        grid-template-areas: 
+        "left main main"
+        "right right right";
+    }
+
+    .left-aside {
+        grid-area: left;
+    }
+
+    .main {
+        grid-area: main;
     }
 
     .right-aside {
+        grid-area: right;
         border: none;
         margin-top: 1rem;
     }
+
+    .news {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center start;
+    }
+
 }
 
 
