@@ -51,13 +51,16 @@ button {
 }
 
 body {
-    position: relative;
+    display: grid;
+    justify-items: center;
+}
 
-    padding: 0 4rem;
+.container {
+    position: relative;
 
     display: grid;
     grid-template-areas: "left-menu main right-bar";
-    grid-template-columns: 19rem 1fr 26rem;
+    grid-template-columns: 19rem 600px 26rem;
 }
 
 /* Left Menu */
@@ -165,8 +168,8 @@ main {
 
     border: solid #00000015;
     border: 0 1px;
-    display: grid;
-    grid-template-rows: 50px 125px 1fr;
+    /* display: grid;
+    grid-template-rows: 50px 125px 1fr; */
 }
 
 main .profile-photo,
@@ -177,6 +180,15 @@ main .profile-photo,
 
 /* Main header */
 main header {
+    background-color: #FFFFFF;
+    position: fixed;
+    top: 0;
+}
+
+main .header-wrap {
+    height: 50px;
+    width: 597px;
+
     display: grid;
     align-items: center;
     grid-template-columns: 1fr auto;
@@ -209,9 +221,13 @@ main header .top-tweet img {
 
 /* Main Create-tweet */
 .create-tweet {
+    margin-top: 55px;
+
+    height: 125px;
     padding: 0.5rem 1rem;
 
     display: grid;
+    column-gap: 0.5rem;
     grid-template-areas:
         "profile-photo-wrap input"
         "profile-photo-wrap options";
@@ -421,6 +437,11 @@ main header .top-tweet img {
 }
 
 /* Right bar search-bar */
+.right-bar .search-bar-wrap {
+    background-color: white;
+    position: fixed;
+}
+
 .right-bar .search-bar {
     border-radius: 3rem;
 
@@ -430,8 +451,6 @@ main header .top-tweet img {
 
     display: flex;
     align-items: center;
-
-    /* position: fixed; */
 }
 
 .right-bar .search-bar img {
@@ -441,6 +460,11 @@ main header .top-tweet img {
 }
 
 /* Right bar trending topics and news */
+.right-bar .trend-wrap {
+    margin-top: 4rem;
+}
+
+
 .right-bar .follow,
 .right-bar .trend {
     margin: 1rem 2rem 0 2rem;
