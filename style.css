@@ -166,7 +166,7 @@ body {
     display: grid;
     grid-template-columns: auto 1fr;
     padding: 1rem;
-    background-color: rgba(102, 51, 153, 0.5);
+    background-color: rgba(102, 51, 153, 0.25);
     margin: 1rem;
     border-radius: 50px;
 }
@@ -177,11 +177,16 @@ body {
     width: 100%;
     background: transparent;
     margin-left: 0.5rem;
-    color: white;
+    color: #fff;
     outline: none;
 }
 
 .search-bar ::placeholder {
+    color: black;
+}
+
+.search-bar:focus-within {
+    background-color: rgba(102, 51, 153, 0.5);
     color: white;
 }
 
