@@ -185,6 +185,31 @@ body {
     color: white;
 }
 
+.right-aside .title {
+    border: none;
+}
+
+.news-item {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    place-items: center;
+    background-color: rgba(102, 51, 153, 0.25);
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    max-width: 100%;
+}
+
+.news-item .text {
+    width: 10rem;
+}
+
+.news-item img {
+    width: 10rem;
+    object-fit: cover;
+}
+
 /* Responsiveness */
   
 @media (max-width: 767px) {
@@ -199,6 +224,11 @@ body {
 
     .right-aside {
         border: none;
+    }
+
+    .news-item {
+        width: 75%;
+        place-items: center start;
     }
 }
   
