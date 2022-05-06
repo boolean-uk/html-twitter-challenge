@@ -126,6 +126,11 @@ ul {
   grid-template-columns: 50px 1fr;
   grid-auto-flow: row;
 }
+.left-aside li:hover
+{
+    background-color:var(--shade1);
+}
+
 .li-size,
 .li-inner-size {
   width: 90%;
