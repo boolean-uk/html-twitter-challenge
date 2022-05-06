@@ -87,19 +87,23 @@ header.logo img {
 /* Left-menu nav */
 nav img {
     height: 25px;
+    width: 25px;
+}
+
+.left-menu nav img {
     margin: 0.75rem 1rem;
 }
 
-nav h2 {
+.left-menu nav h2 {
     display: inline-block;
     font-size: 1.3rem;
     font-weight: normal;
     margin-right: 2rem;
 }
 
-nav li div {
+.left-menu nav li div {
     width: fit-content;
-    margin: 0.7rem 0;
+    margin: 0.32rem 0;
 
     display: flex;
     align-items: center;
@@ -107,11 +111,17 @@ nav li div {
     border-radius: 3rem;
 }
 
+.left-menu nav a {
+    display: flex;
+
+    height: fit-content;
+}
+
 nav a:hover>div {
     background-color: #00000015;
 }
 
-nav a:active h2 {
+.left-menu nav a:active h2 {
     font-weight: bold;
 }
 
@@ -119,6 +129,7 @@ nav a:active h2 {
 .left-menu .tweet-button button {
     height: 50px;
     width: 15rem;
+    margin-top: 0.5rem;
 }
 
 /* Left-menu account */
@@ -536,6 +547,11 @@ main header .top-tweet img {
     padding: 0 3rem;
 }
 
+/* Bottom menu */
+.bottom-menu {
+    display: none;
+}
+
 /* Media query */
 @media screen and (max-width: 1265px) {
     header.logo {
@@ -556,7 +572,6 @@ main header .top-tweet img {
     .left-menu nav li div {
         width: 50px;
         height: 50px;
-        margin: 0.7rem 0;
 
         display: grid;
         place-items: center;
@@ -631,10 +646,47 @@ main header .top-tweet img {
         display: none;
     }
 
+    .bottom-menu {
+        position: fixed;
+        bottom: 0;
 
-    .container {
-        grid-template-areas: "main";
-        grid-template-columns: 1fr;
+        background-color: white;
+        border-top: 1px solid #00000015;
+        width: 414px;
+        height: fit-content;
+
+        display: grid;
+        justify-content: center;
     }
 
+    .bottom-menu nav {
+        height: fit-content;
+    }
+
+    .bottom-menu ul {
+        display: grid;
+        align-items: center;
+        grid-auto-flow: column;
+        column-gap: 2.5rem;
+        padding: 0.2rem 0;
+    }
+
+    .bottom-menu a {
+        display: flex;
+        align-items: center;
+
+        padding: 0.8rem;
+        border-radius: 50%;
+
+    }
+
+    .bottom-menu a:active {
+        background-color: #00000015;
+    }
+
+    .container {
+        grid-template-areas: "main .";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 50px;
+    }
 }
