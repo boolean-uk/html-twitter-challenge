@@ -310,7 +310,7 @@ body {
 }
 
 .feed-post2 {
-    background-color: hotpink;
+    /* background-color: hotpink; */
 }
 
 .feed-post3 {
@@ -412,6 +412,8 @@ body {
     padding: 1rem;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+    cursor: pointer;
+
 }
 
 .show-more-container:hover {
@@ -422,21 +424,23 @@ body {
 
 .whotofollow-container {
     background-color: #eff3f4;
-    padding: 1rem;
+    
     border-radius: 8px;
     display: grid;
     grid-template-rows: auto 70px 70px auto;
 }
 
 .wtf-title {
-    padding-bottom: 1rem;
+    padding: 1rem;
 }
 
 .follow-account {
     display: grid;
     grid-template-columns: 50px 1fr auto;
     align-items: center;
-    gap: 1rem;
+    padding: 0 1rem;
+    cursor: pointer;
+    gap: 5px;
 }
 
 .whotofollow-container a {
@@ -445,13 +449,11 @@ body {
 
 .tweet-btn-right button {
     width: 70px;
-
     background-color: #1d9bf0;
     color: white;
     border-radius: 50px;
     border-color: #1d9bf0;
     cursor: pointer;
-
 }
 
 /* TERMS AND LINKS */
