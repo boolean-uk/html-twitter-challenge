@@ -46,6 +46,7 @@ header {
 
     margin-left:40%;
     
+    
 }
 
 
@@ -140,7 +141,10 @@ main {
     background-color: transparent;
     font-family: 'Ubuntu', sans-serif;
     font-size: large;
-    font-weight: 800;;
+    font-weight: 800;
+    position:sticky;
+    top:0;
+    background-color: rgba(255,255,255,0.5);
     
 }
 
@@ -306,18 +310,22 @@ h1 {
 
 .tools {
     display:grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto auto;
     padding-top: 10px;
     
     place-items: center;
+
+    width: 200px;
 }
 
 
 .tool-pic:hover,
 .tool-poll:hover,
-.tool-schedule:hover {
+.tool-schedule:hover,
+.tool-location:hover {
 
     background-color: #d4e0ed;
+    border-radius: 3px;
 
 }
 
