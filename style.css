@@ -45,10 +45,38 @@ header {
     padding-right: 50px;
 
     margin-left:40%;
+
+   
     
     
 }
 
+.footer {
+    position: sticky;
+    bottom: 0;
+    display:grid;
+    grid-template-columns: 40px 150px 20px;
+}
+
+.user-name {
+    padding-left: 10px;
+    padding-top:5px;
+
+}
+
+.user-name span {
+    font-weight: bold;
+}
+
+.user-name .at {
+    color:#d4e0ed;
+    font-weight: lighter;
+}
+
+.detail img {
+    width: 30px;
+    padding-top: 10px;;
+}
 
 .icon {
     
@@ -56,6 +84,8 @@ header {
     margin-top: 10px;
 
 }
+
+
 
 .nav {
     margin-top: 20px;
@@ -295,7 +325,8 @@ h1 {
 .notifications:hover,
 .messages:hover,
 .Profile:hover,
-.more:hover {
+.more:hover,
+a:hover {
     background-color: #d4e0ed;
     cursor: pointer;
     border-radius: 10px;
@@ -341,4 +372,10 @@ h1 {
 .profile-pic {
     text-align: center;
     margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    
+
 }
