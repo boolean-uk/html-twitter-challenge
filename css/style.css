@@ -184,8 +184,16 @@ svg {
   background-color: var(--twitter-blue-hover);
 }
 
-.profilemenu {
-  margin-top: 280px;
+.menu__profile {
+  bottom: 0;
+  position: fixed;
+  z-index: -1;
+}
+
+@media screen and (max-height: 700px) {
+  .menu__profile {
+    position: static;
+  }
 }
 
 @media screen and (max-width: 77.5em) {
@@ -201,7 +209,7 @@ svg {
   .button__svg {
     display: inline-block;
   }
-  .profilemenu {
+  .hide-for-tablet {
     display: none;
   }
 }
@@ -209,8 +217,8 @@ svg {
 @media screen and (max-width: 31.25em) {
   .menu__inner {
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
     bottom: 0;
     left: 0;
     right: 0;
@@ -518,11 +526,12 @@ span {
   position: fixed;
   bottom: -20px;
   right: 0;
+  margin-right: 20px;
   width: 400px;
   display: flex;
   justify-content: space-between;
   padding: 1rem 1rem 2rem 1rem;
-  margin-right: 20px;
+
   border-radius: 20px;
   box-shadow: 0px 0px 6px var(--accent);
   background-color: black;
