@@ -1,0 +1,405 @@
+/*  */
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.wrapper {
+    max-width: 1282px;
+    margin: 0 auto;
+    padding: 0 10px;
+
+    display: grid;
+    grid-template-columns: 275px auto;
+    justify-content: center;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 598px minmax(250px, 275px);
+    grid-gap: 25px;
+}
+
+ul {
+    list-style: none;
+}
+
+/* LEFT MENU SECTION */
+.left-menu {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 72px minmax(200px, 400px) 52px 64px;
+    
+    grid-gap: 10px;
+
+    position: sticky;
+    top: 0%;
+}
+
+.logo {
+    width: fit-content;
+    display: grid;
+    align-items: center;
+    
+    padding: 5px;
+}
+.logo img {
+    width: 48px;
+    height: 48px;
+}
+
+nav {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+nav ul {
+    overflow: hidden;
+}
+
+nav li img {
+    width: 30px;
+    height: 30px;
+}
+
+nav li {
+    width: fit-content;    
+}
+
+nav p {
+    margin-right: 12px;
+}
+
+nav a {
+    height: 50px;
+    padding: 10px;
+    
+    display: grid;
+    grid-template-columns: 30px auto;
+    grid-gap: 15px;
+    
+    align-items: center;
+    
+    font-size: 1.4em;
+    
+    text-decoration: none;
+    border-radius: 25px;
+    color: black;
+}
+
+nav a:hover {
+    background-color: rgba(230, 44, 255, 0.123);
+    color: #3C096C;
+}
+
+nav a:active {
+    font-weight: bold;
+}
+
+#tweet-out {
+    display: grid;
+    place-content: center;
+    
+    background-color: #5b0da3;
+    color: white;
+    
+    font-size: 1.2em;
+    text-decoration: none;
+    
+    border-radius: 25px;
+}
+
+#tweet-out img {
+    display: none;
+}
+
+#tweet-out:hover {
+    background-color: #3C096C;
+}
+
+.left-menu #tweet-out {
+    width: 225px;
+}
+
+.handle {
+    width: 255px;
+    padding: 0 10px;
+    
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 12px;
+    
+    border-radius: 30px;
+    align-items: center;
+    text-decoration: none;
+}
+
+.handle:hover {
+    background-color: rgba(230, 44, 255, 0.123);
+    color: #3C096C;
+}
+
+
+.handle .avi {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.display-name {
+    color: black;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.username,
+.time {
+    color: rgb(73, 73, 73);
+}
+
+/* FEED SECTION */
+.feed {
+    border-left: 1px solid #5a0da31a;
+    border-right: 1px solid #5a0da31a;
+
+    display: grid;
+    grid-template-rows: 72px 96px 1fr;
+    grid-gap: 8px;
+}
+
+header {
+    padding: 0 16px;
+
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    
+    background-color: rgba(245, 245, 245, 0.562);
+    backdrop-filter: saturate(180%) blur(20px);
+}
+
+header img {
+    height: 24px;
+    width: 24px;
+}
+
+.make-tweet {
+    padding: 0 16px;
+
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 4px;
+}
+
+.form {
+    padding: 2px;
+  
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 4px;
+}
+
+.form input {
+    font-size: 20px;
+    background-color: whitesmoke;
+    border: 0;
+}
+
+main .avi {
+    width: 48px;
+    height: 48px;
+  
+    border-radius: 50%;
+}
+.options {
+    padding: 0 2px;
+    height: 40px;
+
+    display: grid;
+    grid-template-columns: 300px auto;
+    justify-content: space-between;
+}
+
+.options ul {
+    padding: 8px;
+    margin-left: 52px;
+}
+
+.options li {
+    margin-right: 5px;
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+}
+
+.options #tweet-out {
+    width: 88px;
+    font-size: 1.1em;
+}
+
+/* TWEETS FEED SECTION */
+.tweets {
+    border-top: 10px solid #5a0da31a;
+}
+
+.tweet-wrapper {
+    display: grid;
+    grid-gap: 10px;
+
+    padding: 16px;
+    border-bottom: 1px solid #5a0da31a;
+}
+
+.tweet {
+    display: grid;
+}
+
+.tweet-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 15px;
+}
+
+.tweet-content > * {
+    display: inline-block;
+    line-height: 1.2em;
+}
+
+.interact {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: space-between;
+
+    padding: 0 60px;
+}
+
+.interact > * {
+    width: 18px;
+}
+
+/* RIGHT MENU SECTION */
+.right-menu {
+    display: grid;
+    grid-template-rows: 72px 100px 200px;
+    grid-gap: 25px;
+}
+
+.search-bar {
+    height: 53px;
+    padding: 8px;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 4px;
+
+    align-items: center;
+    background-color: rgba(230, 44, 255, 0.123);
+    border-radius: 25px;
+}
+
+.search-bar img {
+    width: 18px;
+    height: 18px;
+}
+
+.search-bar input {
+    height: 42px;
+    padding: 12px;
+
+    font-size: 1em;
+    background-color: transparent;
+    border: 0;
+}
+
+.right-menu header{
+    padding: 5px;
+}
+
+.card {
+    display: grid;
+    grid-gap: 5px;
+}
+
+@media screen and (max-width: 1125px) {
+
+    .wrapper {
+        max-width: 1282px;
+        margin: 0 auto;
+        padding: 0 10px;
+    
+        display: grid;
+        grid-template-columns: 58px auto;
+        justify-content: center;
+
+    }
+    
+    .left-menu p {
+        display: none;
+    }
+
+    nav {
+        overflow: hidden;
+    }
+
+    nav a {
+        height: 50px;
+        padding: 10px;
+        
+        display: grid;
+        grid-template-columns: 30px;
+        grid-gap: 15px;
+        
+        align-items: center;
+        
+        font-size: 1.4em;
+        
+        text-decoration: none;
+        border-radius: 25px;
+        color: black;
+    }
+
+    .logo {
+        padding: 5px 0;
+    }
+
+    .left-menu #tweet-out {
+        width: 52px
+    }
+
+    #tweet-out img {
+        width: 48px;
+        display: grid;
+    }
+
+    .left-menu .handle div {
+        display: none;
+    }
+
+    .left-menu .handle {
+        grid-template-columns: auto;
+        padding-left: 5px;
+    }
+}
+
+@media screen and (max-width: 949px) {
+    main {
+        grid-template-columns: 598px;
+    }
+    
+    .right-menu {
+        display: none;
+    }
+    
+}
