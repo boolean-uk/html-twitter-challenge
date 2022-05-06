@@ -125,6 +125,7 @@ a {
 
 .menu__inner {
   position: fixed;
+  background-color: black;
 }
 
 .menu__icon {
@@ -262,7 +263,6 @@ svg {
 
 .tweet-creator__buttons {
   display: flex;
-  width: 100%;
   gap: 10px;
   align-items: center;
   justify-content: space-between;
@@ -274,8 +274,12 @@ svg {
   padding-bottom: 5px;
 }
 
+.tweet-creator__buttons__right {
+  width: fit-content;
+}
+
 .tweet-creator__button {
-  display: block;
+  display: inline-block;
   width: 5rem;
   padding: 0.5rem;
   text-align: center;
@@ -307,19 +311,31 @@ svg {
 }
 
 .post__icon {
+  max-width: 50px;
+  min-width: 20px;
+}
+
+.post__img {
+  width: 100%;
   border-radius: 50%;
 }
 
 .post__user {
   display: flex;
   gap: 5px;
+  max-width: 320px;
 }
+
 .post__username,
 .post__personname {
   overflow: hidden;
-  white-space: nowrap;
-  max-width: 200px;
+  color: var(--accent);
   text-overflow: ellipsis;
+  width: max(20vw);
+}
+
+.post__date {
+  white-space: nowrap;
 }
 
 .post__username span,
@@ -335,8 +351,20 @@ svg {
   padding: 5px 0 15px 0;
 }
 
+.post__assets {
+  max-width: 400px;
+}
+
+.post__image {
+  border-radius: 20px;
+  width: 100%;
+}
+
 .post__icons {
   display: flex;
+  width: 85%;
+  flex-wrap: wrap;
+  padding-top: 10px;
   justify-content: space-between;
 }
 
@@ -346,6 +374,39 @@ svg {
   display: flex;
   align-items: center;
   gap: 0.625rem;
+}
+
+span {
+  transition: color 300ms ease-in-out;
+}
+
+.post__replies:hover span {
+  color: var(--twitter-blue-hover);
+}
+
+.post__replies:hover svg,
+.post__share:hover svg {
+  fill: var(--twitter-blue-hover);
+}
+
+.post__likes:hover span {
+  color: rgb(224, 41, 139);
+}
+
+.post__likes:hover svg {
+  fill: rgb(224, 41, 139);
+}
+
+.post__retweets:hover span {
+  color: rgb(48, 134, 64);
+}
+
+.post__retweets:hover svg {
+  fill: rgb(48, 134, 64);
+}
+
+.feed__post:hover {
+  background-color: rgba(255, 255, 255, 0.03);
 }
 
 .right-aside {
