@@ -1,0 +1,482 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Profile pictures dimensions */
+.profile-pic {
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+/* TWITTER CLONE LAYOUT */
+
+/* Main Grid template */
+.container {
+    display: grid;
+    grid-template-areas:
+    "left-menu main-feed right-menu";
+
+    grid-template-columns: 400px minmax(300px, 1fr) 400px;
+
+    height: 100vh;
+    font-size: 18px; 
+}
+
+.left-menu {
+    grid-area: left-menu;
+    font-size: 18px;
+}
+
+.main-feed {
+    grid-area: main-feed;
+    border-left: 0.5px solid rgba(0, 0, 0, .2);
+    border-right: 0.5px solid rgba(0, 0, 0, .2);
+}
+
+.right-menu {
+    grid-area: right-menu;
+}
+/* End of main grid template */
+
+
+/* Left menu grid */
+.inner-left-menu {
+    display: grid;
+    grid-template-areas: 
+    "logo"
+    "home"
+    "explore"
+    "notifications"
+    "messages"
+    "bookmarks"
+    "lists"
+    "profiles"
+    "more"
+    "tweet"
+    "icon-profile";
+
+    grid-template-columns: 250px;
+    grid-template-rows: repeat(11, 40px);
+    height: 100vh;
+    grid-gap: 20px;
+    font-weight: 700;
+    margin-left: 90px;
+    position: fixed;
+}
+
+.home,
+.explore,
+.notifications,
+.messages,
+.bookmarks,
+.lists,
+.profiles,
+.more {
+    margin-left: 30px;
+    padding: 20px 0px;
+}
+
+.inner-left-menu div:hover {
+    cursor: pointer;
+    background-color: #5E389B11;
+    border-radius: 30px;
+    padding-top: 13px;
+    padding-bottom: 30px;
+    transition: 0.4s;
+}
+
+#logo {
+    grid-area: logo;
+    width: 100%;
+    color: #5E389B;
+    font-size: 35px;
+    padding: 20px 30px;
+    background-color: transparent;
+}
+
+#logo img:hover {
+    background-color: #5E389B22;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+
+.home {
+    grid-area: home;
+    color: #5E389B;
+    margin-left: 30px;
+    font-weight: 900;
+    padding: 13px 0px;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 5px);
+}
+
+.explore {
+    grid-area: explore;
+    margin-left: 30px;
+    padding: 13px 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, 5px);
+}
+
+.notifications {
+    grid-area: notifications;
+    margin-left: 30px;
+    padding: 13px 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, 5px);
+}
+
+.messages {
+    grid-area: messages;
+    margin-left: 30px;
+    padding: 13px 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, 5px);
+}
+
+.bookmarks {
+    grid-area: bookmarks;
+    margin-left: 30px;
+    padding: 13px 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, 5px);
+}
+
+.lists {
+    grid-area: lists;
+    margin-left: 30px;
+    padding: 13px 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, 5px);
+}
+
+.profiles {
+    grid-area: profiles;
+    margin-left: 30px;
+    padding: 13px 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, 5px);
+}
+
+.more {
+    grid-area: more;
+    margin-left: 30px;
+    padding: 13px 0;
+
+    display: grid;
+    grid-template-columns: repeat(2, 5px);
+}
+
+.tweet {
+    grid-area: tweet;
+    text-align: center;
+    place-items: center;
+    
+    background-color: #5E389B;
+    color: white;
+    border: 2px solid transparent;
+    font-weight: bold;
+    border-radius: 30px;
+    padding-top: 13px;
+    padding-bottom: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    
+    width: 80%;
+}
+
+.tweet:hover {
+    background-color: transparent;
+    border: 2px solid #5E389B;
+    color: #5E389B;
+    transition: 0.4s;
+}
+
+.icon-profile {
+    grid-area: icon-profile;
+    display: grid;
+    place-items: center;
+    margin-top: 90px;
+    position: fixed;
+    bottom: 0;
+    padding: 10px 0px;
+    font-size: 14px;
+
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.icon-profile img {
+    display: grid;
+    grid-template-columns: 50px;
+    float: left;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+.handle {
+    margin-left: 60px;
+    font-weight: 500;
+    color: grey;
+}
+
+.inner-left-menu img {
+    display: grid;
+    margin: -6px 0px 0 -60px;
+}
+/* End of left menu grid */
+
+
+/* Main feed grid */
+.inner-main-feed {
+    display: grid;
+    grid-template-areas: 
+    "home-feed"
+    "middle-feed"
+    "kitter-feed";
+
+    grid-template-columns: 1fr;
+}
+
+.home-feed {
+    display: grid;
+    grid-area: home-feed;
+    grid-template-rows: minmax(200px, 1fr);
+    border: 0.5px solid rgba(0, 0, 0, .2);
+}
+
+.inner-home-feed {
+    display: grid;
+
+    grid-template-areas: 
+    "first-row"
+    "second-row"
+    "third-row";
+
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.first-row {
+    display: grid;
+    
+    grid-area: first-row ;
+}
+
+.second-row {
+    display: grid;
+    grid-template-columns: 40px 200px;
+    grid-area: second-row;
+    margin-left: 20px;
+    color: rgba(0, 0, 0, .6);
+}
+
+.inner-main-feed .home-feed p {
+    margin: 15px 0 0 20px ;
+    font-weight: 500;
+}
+
+.inner-main-feed .home-feed h2 {
+    margin: 15px 0 0 20px ;
+}
+
+.third-row {
+    display: grid;
+    grid-template-columns: repeat(7, 60px) ;
+    grid-area: third-row;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.third-row .tweet {
+    padding: 10px 0;
+    margin-bottom: 10px;
+
+    width: 150px;
+}
+
+.third-row > img:hover {
+    background-color: #5E389B22;
+    border-radius: 30px;
+    transition: 0.4s;
+}
+
+.middle-feed {
+    display: grid;
+    grid-area: middle-feed;
+    grid-template-rows: 30px;
+    background-color: #5E389B22;
+}
+
+.kitter-feed {
+    display: grid;
+    grid-area: kitter-feed;
+    grid-template-rows: minmax(200px, 1000px);
+    border: 0.5px solid rgba(0, 0, 0, .2);
+}
+
+.inner-kitter-feed {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.colone {
+    display: grid;
+    margin: 30px;
+}
+
+.coltwo {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    margin-left: 100px;
+    margin-top: -80px; 
+    grid-gap: 15px;
+}
+
+span {
+    opacity: .6;
+}
+
+.kitter-icons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr) ;
+    cursor: pointer;
+}
+
+hr {
+    border: 1px solid #5E389B22;
+}
+/* End of main feed grid */
+
+
+/* Right menu grid */
+.inner-right-menu {
+    display: grid;
+    grid-template-areas: 
+    "search"
+    "happening"
+    "follow";
+
+    grid-template-columns: 350px; 
+    
+    gap: 20px;
+    margin-left: 30px;
+    position: fixed;
+}
+
+.search-kitter {
+    display: grid;
+    grid-area: search;
+    grid-template-rows: minmax(50px, 1fr);
+    padding: 10px 0px;
+    margin: 10px 0 30px 0;
+      
+}
+
+.search-kitter input {
+    border: transparent;
+    background-color: #5E389B33;
+    border-radius: 30px;
+}
+
+input[type="text"]::placeholder {              
+    padding-left: 50px;
+    font-size: 16px;
+}
+
+.magnifier-icon {
+    position: absolute;
+    top: 30px;
+    margin-left: 10px;
+}
+
+.happening {
+    display: grid;
+    grid-area: happening;
+    grid-template-rows: minmax(90px, 1fr);
+
+    border-radius: 5px;
+    background-color: #5E389B33;
+    font-weight: 900;
+}
+
+.inner-right-menu p {
+    margin: 10px;
+}
+
+.who-to-follow {
+    display: grid;
+    grid-area: follow;
+    grid-template-rows: minmax(90px, 1fr);
+
+    border-radius: 5px;
+    background-color: #5E389B33;
+    font-weight: 900;
+}
+/* End of right menu grid */
+
+
+/* Responsive design */
+
+@media screen and (max-width: 1400px ) {
+    .container {
+        display: grid;
+        grid-template-areas:
+        "left-menu main-feed";
+    
+        grid-template-columns: 300px minmax(300px, 1fr);
+    
+        height: 100vh;
+        font-size: 18px; 
+    }
+
+    .right-menu {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1024px ) {
+    .container {
+        display: grid;
+        grid-template-areas:
+        "left-menu main-feed";
+    
+        grid-template-columns: 150px minmax(300px, 1fr);
+    
+        height: 100vh;
+        font-size: 18px; 
+    }
+
+    .icon-profile  {
+        display: none;
+    }
+
+    .inner-left-menu .tweet {
+        width: 40%;
+        margin-left: -60px;
+    }
+
+    .home p,
+    .explore p,
+    .notifications p,
+    .messages p,
+    .bookmarks p,
+    .lists p,
+    .profiles p,
+    .more p {
+        display: none; 
+    }
+}
