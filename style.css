@@ -302,3 +302,35 @@ h1 {
     border-radius: 10px;
     font-style: none;
 }
+
+
+.tools {
+    display:grid;
+    grid-template-columns: auto auto auto;
+    padding-top: 10px;
+    
+    place-items: center;
+}
+
+
+.tool-pic:hover,
+.tool-poll:hover,
+.tool-schedule:hover {
+
+    background-color: #d4e0ed;
+
+}
+
+
+.profile-pic img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+   
+
+}
+
+.profile-pic {
+    text-align: center;
+    margin-top: 10px;
+}
