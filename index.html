@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Chatter</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <section class="left-menu">
+            <header class="logo">
+                <a href="index.html">
+                    <img src="icons/logo.svg" alt="Logo">
+                </a>
+            </header>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <div>
+                                <img src="icons/home.svg" alt="Home">
+                                <h2 class="bold">Home</h2>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div>
+                                <img src="icons/explore.svg" alt="Explore">
+                                <h2>Explore</h2>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div>
+                                <img src="icons/notifications.svg" alt="Notifications">
+                                <h2>Notifications</h2>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div>
+                                <img src="icons/messages.svg" alt="Messages">
+                                <h2>Messages</h2>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div>
+                                <img src="icons/bookmarks.svg" alt="Bookmarks">
+                                <h2>Bookmarks</h2>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div>
+                                <img src="icons/lists.svg" alt="Lists">
+                                <h2>Lists</h2>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div>
+                                <img src="icons/profile.svg" alt="Profile">
+                                <h2>Profile</h2>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <div>
+                                <img src="icons/more.svg" alt="More">
+                                <h2>More</h2>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="tweet-button">
+                <button id="circle-button">
+                    <p>Tweet</p>
+                    <img src="icons/paw.svg" alt="Tweet button">
+                </button>
+            </div>
+            <div class="account">
+                <img class="profile-photo" src="images/profile.jpg" alt="Profile photo">
+                <div class="account-info">
+                    <h4>Coffeebean</h4>
+                    <p>@Coffeebean</p>
+                </div>
+                <button class="more-option">
+                    <img src="icons/ellipsis-solid.svg" alt="Options">
+                </button>
+            </div>
+
+        </section>
+
+        <main>
+            <header>
+                <div class="header-wrap">
+                    <a class="home-button" href="index.html">
+                        <h2>Home</h2>
+                    </a>
+                    <a class="top-tweet" href="">
+                        <img class="small-screen-hide" src="icons/top-tweets.svg" alt="Top tweets">
+                    </a>
+                </div>
+            </header>
+
+            <section class="create-tweet">
+
+                <div class="profile-photo-wrap">
+                    <a href="">
+                        <img class="profile-photo" src="images/profile.jpg" alt="Profile photo">
+                    </a>
+                </div>
+
+                <div class="input">
+                    What's happening?
+                </div>
+
+                <div class="options">
+                    <ul class="option-list">
+                        <li>
+                            <button>
+                                <img src="icons/pic.svg" alt="Picture">
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <img src="icons/video.svg" alt="Video">
+                            </button>
+                        </li>
+                        <li class="small-screen-hide">
+                            <button>
+                                <img src="icons/poll.svg" alt="Poll">
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <img src="icons/emoji.svg" alt="Emoji">
+                            </button>
+                        </li>
+                        <li class="small-screen-hide">
+                            <button>
+                                <img src="icons/schedule.svg" alt="Schedule">
+                            </button>
+                        </li>
+                        <li>
+                            <button>
+                                <img src="icons/location.svg" alt="Location">
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="tweet-button">
+                        <button>
+                            Tweet
+                        </button>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="feed">
+                <div class="show-more-tweets">
+                    <button class="show-more-button">
+                        Show 150 Tweets
+                    </button>
+                </div>
+                <ul class="post-list">
+                    <li>
+                        <div class="post-wrap">
+                            <a class="profile-photo" href="">
+                                <img class="profile-photo" src="images/Bang2.jpg" alt="Profile photo">
+                            </a>
+                            <div class="author-info">
+                                <a href="">
+                                    <h3>Bangbang2</h3>
+                                </a>
+                                <p>@Bangbang2</p>
+                                <p>·</p>
+                                <p>6m</p>
+                            </div>
+                            <div class="content">
+                                <p>
+                                    Coding is fun as well!
+                                    <br>
+                                    <br>
+                                    And I am outside!
+                                </p>
+                            </div>
+                            <div class="response-options">
+                                <ul class="response-option-list">
+                                    <li>
+                                        <button>
+                                            <img src="icons/comment.svg" alt="Comment">
+                                        </button>
+                                        <p>8</p>
+                                    </li>
+                                    <li>
+                                        <button class="retweet">
+                                            <img src="icons/retweet.svg" alt="Retweet">
+                                        </button>
+                                        <p>3</p>
+                                    </li>
+                                    <li>
+                                        <button class="like">
+                                            <img src="icons/like.svg" alt="Like">
+                                        </button>
+                                        <p>15</p>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            <img src="icons/share.svg" alt="Share">
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="more-option">
+                                <img src="icons/ellipsis-solid.svg" alt="More option">
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="post-wrap">
+                            <a class="profile-photo" href="">
+                                <img class="profile-photo" src="images/Bang.JPG" alt="Profile photo">
+                            </a>
+                            <div class="author-info">
+                                <a href="">
+                                    <h3>Bangbang</h3>
+                                </a>
+                                <p>@Bangbang</p>
+                                <p>·</p>
+                                <p>15m</p>
+                            </div>
+                            <div class="content">
+                                <p>
+                                    Coding is fun!
+                                    <br>
+                                    <br>
+                                    But I really want to go outside!
+                                </p>
+                            </div>
+                            <div class="response-options">
+                                <ul class="response-option-list">
+                                    <li>
+                                        <button>
+                                            <img src="icons/comment.svg" alt="Comment">
+                                        </button>
+                                        <p>4</p>
+                                    </li>
+                                    <li>
+                                        <button class="retweet">
+                                            <img src="icons/retweet.svg" alt="Retweet">
+                                        </button>
+                                        <p>5</p>
+                                    </li>
+                                    <li>
+                                        <button class="like">
+                                            <img src="icons/like.svg" alt="Like">
+                                        </button>
+                                        <p>20</p>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            <img src="icons/share.svg" alt="Share">
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="more-option">
+                                <img src="icons/ellipsis-solid.svg" alt="More option">
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="post-wrap">
+                            <a class="profile-photo" href="">
+                                <img class="profile-photo" src="images/Coffeebean.jpg" alt="Profile photo">
+                            </a>
+                            <div class="author-info">
+                                <a href="">
+                                    <h3>Coffeebean2</h3>
+                                </a>
+                                <p>@Coffeebean2</p>
+                                <p>·</p>
+                                <p>20m</p>
+                            </div>
+                            <div class="content">
+                                <p>
+                                    I don't know coding!
+                                    <br>
+                                    <br>
+                                    I only want to go outside!
+                                </p>
+                            </div>
+                            <div class="response-options">
+                                <ul class="response-option-list">
+                                    <li>
+                                        <button>
+                                            <img src="icons/comment.svg" alt="Comment">
+                                        </button>
+                                        <p>3</p>
+                                    </li>
+                                    <li>
+                                        <button class="retweet">
+                                            <img src="icons/retweet.svg" alt="Retweet">
+                                        </button>
+                                        <p></p>
+                                    </li>
+                                    <li>
+                                        <button class="like">
+                                            <img src="icons/like.svg" alt="Like">
+                                        </button>
+                                        <p>10</p>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            <img src="icons/share.svg" alt="Share">
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="more-option">
+                                <img src="icons/ellipsis-solid.svg" alt="More option">
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="post-wrap">
+                            <a class="profile-photo" href="">
+                                <img class="profile-photo" src="images/Ning2.JPG" alt="Profile photo">
+                            </a>
+                            <div class="author-info">
+                                <a href="">
+                                    <h3>Ning2</h3>
+                                </a>
+                                <p>@Ning2</p>
+                                <p>·</p>
+                                <p>22m</p>
+                            </div>
+                            <div class="content">
+                                <p>
+                                    I am coding!
+                                    <br>
+                                    <br>
+                                    But I really want to go outside!
+                                </p>
+                            </div>
+                            <div class="response-options">
+                                <ul class="response-option-list">
+                                    <li>
+                                        <button>
+                                            <img src="icons/comment.svg" alt="Comment">
+                                        </button>
+                                        <p>10</p>
+                                    </li>
+                                    <li>
+                                        <button class="retweet">
+                                            <img src="icons/retweet.svg" alt="Retweet">
+                                        </button>
+                                        <p>6</p>
+                                    </li>
+                                    <li>
+                                        <button class="like">
+                                            <img src="icons/like.svg" alt="Like">
+                                        </button>
+                                        <p>25</p>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            <img src="icons/share.svg" alt="Share">
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="more-option">
+                                <img src="icons/ellipsis-solid.svg" alt="More option">
+                            </button>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="post-wrap">
+                            <a class="profile-photo" href="">
+                                <img class="profile-photo" src="images/Ning.jpg" alt="Profile photo">
+                            </a>
+                            <div class="author-info">
+                                <a href="">
+                                    <h3>Ning</h3>
+                                </a>
+                                <p>@Ning</p>
+                                <p>·</p>
+                                <p>30m</p>
+                            </div>
+                            <div class="content">
+                                <p>
+                                    I finished coding!
+                                    <br>
+                                    <br>
+                                    I am outside!
+                                </p>
+                            </div>
+                            <div class="response-options">
+                                <ul class="response-option-list">
+                                    <li>
+                                        <button>
+                                            <img src="icons/comment.svg" alt="Comment">
+                                        </button>
+                                        <p>15</p>
+                                    </li>
+                                    <li>
+                                        <button class="retweet">
+                                            <img src="icons/retweet.svg" alt="Retweet">
+                                        </button>
+                                        <p>5</p>
+                                    </li>
+                                    <li>
+                                        <button class="like">
+                                            <img src="icons/like.svg" alt="Like">
+                                        </button>
+                                        <p>35</p>
+                                    </li>
+                                    <li>
+                                        <button>
+                                            <img src="icons/share.svg" alt="Share">
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="more-option">
+                                <img src="icons/ellipsis-solid.svg" alt="More option">
+                            </button>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </section>
+        </main>
+
+        <section class="right-bar">
+
+            <div class="search-bar-wrap">
+                <div class="search-bar">
+                    <img src="icons/search.svg" alt="Search">
+                    <p>What do other cats tweet?</p>
+                </div>
+            </div>
+
+            <section class="trend-wrap">
+
+                <div class="trend">
+                    <h2>What's happening</h2>
+                    <ul>
+                        <li class="topic">
+                            <div class="trending-topic">
+                                <p>Trending in the following area: Cat Kingdom</p>
+                                <h4>Coding</h4>
+                                <p>89,875 Tweets</p>
+                            </div>
+                            <button class="more-option">
+                                <img src="icons/ellipsis-solid.svg" alt="More option">
+                            </button>
+                        </li>
+                        <li class="topic">
+                            <div class="trending-topic">
+                                <p>Trending in the following area: Cat Kingdom</p>
+                                <h4>Going Outside</h4>
+                                <p>76,845 Tweets</p>
+                            </div>
+                            <button class="more-option">
+                                <img src="icons/ellipsis-solid.svg" alt="More option">
+                            </button>
+                        </li>
+                        <li class="news">
+                            <div class="trending-news">
+                                <div class="media-info">
+                                    <h5>🐈 Daily Cats</h5>
+                                    <p>·</p>
+                                    <p>3 hours ago</p>
+                                </div>
+                                <h4>Bangbang won the first place in Cat Coding Competition</h4>
+                            </div>
+                            <img class="news-pic" src="images/Bang-coding.JPG" alt="Bangbang coding">
+                        </li>
+                        <li class="news">
+                            <div class="trending-news">
+                                <div class="media-info">
+                                    <h5>🐈‍⬛ Yesterday's Cats</h5>
+                                    <p>·</p>
+                                    <p>1 day ago</p>
+                                </div>
+                                <h4>Coffeebean has finished his journey to 60 countries, including all countries in the
+                                    Europe!
+                                </h4>
+                            </div>
+                            <img class="news-pic" src="images/Coffeebean-news.JPG" alt="Bangbang coding">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="show-more">
+                    <a class="" href="">
+                        Show more
+                    </a>
+                </div>
+
+            </section>
+            <section class="follow-wrap">
+
+                <div class="follow">
+                    <h2>Who to follow</h2>
+                    <ul>
+                        <li>
+                            <a href="">
+                                <img class="profile-photo" src="images/boolean.jpeg" alt="Boolean">
+                            </a>
+                            <div class="account-info">
+                                <h4>Boolean UK</h4>
+                                <p>@BooleanUK</p>
+                            </div>
+                            <div class="follow-button">
+                                <button>
+                                    Follow
+                                </button>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img class="profile-photo" src="images/Ning3.jpg" alt="Ning">
+                            </a>
+                            <div class="account-info">
+                                <h4>Ning3</h4>
+                                <p>@Ning3</p>
+                            </div>
+                            <div class="follow-button">
+                                <button>
+                                    Follow
+                                </button>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="">
+                                <img class="profile-photo" src="images/SleepingBang.jpg" alt="Sleeping Bangbang">
+                            </a>
+                            <div class="account-info">
+                                <h4>Sleeping Bangbang</h4>
+                                <p>@SleepingBang</p>
+                            </div>
+                            <div class="follow-button">
+                                <button>
+                                    Follow
+                                </button>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <div class="show-more">
+                    <a class="" href="">
+                        Show more
+                    </a>
+                </div>
+
+            </section>
+
+            <footer>
+                <p>&#169; Made by Ning 💙</p>
+            </footer>
+
+        </section>
+
+        <section class="bottom-menu">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <img src="icons/home.svg" alt="Home">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="icons/explore.svg" alt="Explore">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="icons/notifications.svg" alt="Notifications">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="icons/messages.svg" alt="Messages">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </section>
+    </div>
+</body>
+
+</html>
