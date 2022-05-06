@@ -1,0 +1,644 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    display: grid;
+    grid-template: 
+        "left_menu home_page right_menu " 1fr /
+        auto minmax(400px, 700px) auto;
+
+    height: 100vh;
+    margin-left: 20px;
+    margin-right: 40px;
+    position: relative;
+}
+
+/* LEFT MENU */
+
+.left_menu {
+    grid-area: left_menu;
+    display: grid;
+    grid-template:
+        "icon" auto
+        "nav" 1fr
+        "tweet_box" auto
+        "." 1fr
+        "profile_left_bottom" auto /
+        1fr;
+
+    gap: 1rem;
+    height: 100vh;
+    position: fixed;
+    justify-self: left;
+}
+
+#icon {
+    grid-area: icon;
+    padding: 20px;
+    margin-left: 15px;
+}
+
+.twitter {
+    width: 33px;
+    margin-top: 10px;
+}
+
+#nav {
+    grid-area: nav;
+    display: grid;
+    grid-auto-rows: 30px;
+    gap: 1rem;
+    align-items: center;
+    margin-right: 60px;
+}
+
+.nav_menu {
+    display: grid;
+    grid-template-columns: 0.5fr 1fr;
+    gap: 0.2rem;
+
+    align-items: center;
+    margin: 30px;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+    color: black
+}
+
+.nav_menu > svg {
+    width: 30px;
+}
+
+.nav_menu:hover {
+    background-color: #E7E7E8;
+    border-radius: 40px;
+}
+
+.tweet_box {
+    grid-area: tweet_box;
+}
+
+#tweet_button {
+    display: flex;
+    border-radius: 50px;
+    background-color: #1DA1F2;
+    color: white;
+    justify-content: center;
+    padding: 15px;
+    width: 200px;
+    margin-left: 30px;
+    place-self: center;
+    
+}
+
+#tweet_button:hover {
+    background-color: #1288d2;
+    cursor: pointer;
+}
+
+.profile_left_bottom {
+    grid-area: profile_left_bottom;
+    display: grid;
+    grid-template:
+        "pic name icon" auto
+        "pic user_name icon" auto /
+        auto 1fr;
+
+    column-gap: 5px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    padding: 10px 0px 10px 10px;
+    width: 17rem;
+}
+
+.profile_left_bottom:hover {
+    background-color: #E7E7E8;
+    border-radius: 40px;
+}
+
+.pic {
+    grid-area: pic;
+}
+
+.pic > img {
+    width: 40px;
+    border-radius: 100%;
+}
+
+.name {
+    grid-area: name;
+}
+
+.user_name {
+    grid-area: user_name;
+}
+
+.user_name > span{
+    opacity: 20%;
+    font-size: 15px;
+}
+
+.profile_icon {
+    grid-area: icon;
+    display: flex;
+    justify-content: center;
+    padding-right: 35px;
+}
+
+.profile_icon > svg {
+    width: 20px;
+}
+
+.profile_icon > svg:hover{
+    cursor: pointer;
+}
+
+/* MAIN */
+
+main {
+    grid-area: home_page;
+    display: grid;
+    grid-template: 
+        "page_title" 50px
+        "posting_box" 7rem
+        "scroll_page" 1fr
+        "." 0.1fr /
+        1fr;
+
+    gap: 10px;
+    border-left: 1px solid rgb(219, 219, 219);
+    border-right: 1px solid rgb(219, 219, 219);
+}
+
+.page_title {
+    grid-area: page_title;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    padding: 10px;
+    align-content: space-between;
+    border-bottom: 1px solid rgb(219, 219, 219);
+    height: fit-content;
+}
+
+.page_title h1 a {
+    text-decoration: none;
+    color: black;
+}
+
+.page_title h1 {
+    font-size: 20px;
+}
+
+
+.page_title > svg {
+    width: 25px;
+    
+}
+
+.posting_box {
+    grid-area: posting_box;
+    display: grid;
+    grid-template:
+        "profile_pic post_bar post_bar" 1fr
+        "profile_pic small_icons tweet_button_small" auto /
+        auto auto 1fr;
+
+    padding: 10px;
+    gap: 5px;
+    border-bottom: 1px solid rgb(219, 219, 219);
+}       
+
+.profile_pic {
+    grid-area: profile_pic;
+}
+
+.profile_pic > img {
+    width: 50px;
+    border-radius: 100%;
+}
+
+.post_bar {
+    grid-area: post_bar;
+    margin-left: 10px;
+}
+
+.post_bar > input {
+    height: 50px;
+    width: 100%;
+    font-size: 20px;
+    border: none;
+}
+
+.post_bar input:focus {
+    outline: none;
+}
+
+.post_bar hr {
+    border: 0.2px solid rgb(219, 219, 219);
+}
+
+.small_icons {
+    display: flex;
+    margin-left: 20px;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.svg_icon svg {
+    width: 20px;
+}
+
+.svg_icon > svg:hover{
+    cursor: pointer;
+}
+
+.tweet_button_small {
+    grid-area: tweet_button_small;
+    display: flex;
+    place-self: end;
+    background-color: #1DA1F2;
+    color: white;
+    border-radius: 20px;
+    height: fit-content;
+    padding: 7px 20px;
+    opacity: 40%;
+    margin-right: 5px;
+    width: fit-content;
+}
+
+.scroll_page {
+    grid-area: scroll_page;
+    display: grid;
+    grid-auto-rows: 150px;
+}
+
+.post_feed {
+    display: grid;
+    grid-template:
+        "profile_pic_post p_name" auto
+        "profile_pic_post p_post" auto
+        "profile_pic_post icons_post" auto /
+        auto 1fr;
+
+    column-gap: 10px;
+    padding: 15px 15px 0 15px;
+    border-bottom: 1px solid rgb(219, 219, 219);
+}
+
+.post_feed:hover{
+    background-color: #F7F7F7;
+    cursor: pointer;
+}
+
+.first {
+    border-top: 1px solid rgb(219, 219, 219);
+}
+
+.profile_pic_post {
+    grid-area: profile_pic_post;
+}
+
+.profile_pic_post > img {
+    width: 40px;
+    border-radius: 100%;
+}
+
+.p_name {
+    grid-area: p_name;
+}
+
+.opacity_text {
+    opacity: 25%;
+}
+
+.p_post {
+    grid-area: p_post;
+}
+
+.color_text {
+    color: #1288d2;
+}
+
+.icons_post {
+    grid-area: icons_post;
+    height: fit-content;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.icons_post svg{
+    width: 20px;
+}
+
+.icons_post svg:hover,
+.counter > svg:hover{
+    cursor: pointer;
+}
+
+.counter {
+    display: grid;
+    grid-auto-flow: column;
+    padding: 3px;
+}
+
+.counter > svg {
+    width: 20px;
+}
+
+.counter > span {
+    opacity: 40%;
+    font-size: 15px;
+}
+
+.counter:hover {
+    background-color: #E1EEF6;
+    border-radius: 50%;
+}
+
+.green,
+.pink,
+.blue {
+    padding: 5px 5px 0 5px;
+}
+
+.green:hover {
+    background-color: #E0F1EB;
+    border-radius: 50%;
+}
+
+.pink:hover {
+    background-color: #F7E2EB;
+    border-radius: 100%;
+}
+
+.blue:hover {
+    background-color: #E1EEF6;
+    border-radius: 50%;
+}
+
+/* RIGHT MENU */
+
+.right_menu {
+    grid-area: right_menu;
+    display: grid;
+    grid-template:
+        "search" auto
+        "feeds" auto
+        "suggestions" auto
+        "." 1fr /
+        1fr;
+
+    gap: 1rem;
+    /* margin-left: 30px; */
+    height: 100vh;
+    position: fixed;
+    justify-self: right;
+}
+
+.search_bar {
+    grid-area: search;
+    display: flex;
+    margin-right: 10px;
+    margin-top: 5px;
+    background-color: rgba(232, 232, 232, 0.455);
+    border-radius: 20px;
+    place-content: center;
+    width: 100%;
+}
+
+.search_bar > svg {
+    width: 18px;
+    display: inline;
+}
+
+.search_bar > input {
+    background-color: rgb(247 247 247 / 46%);
+    border: none;
+    height: 40px;
+
+    font-size: 15px;
+    border-radius: 20px;
+}
+
+.search_bar input:focus{
+    outline: none;
+}
+
+.feeds {
+    grid-area: feeds;
+    background-color: rgba(232, 232, 232, 0.455);
+    border-radius: 20px;
+}
+
+article {
+    margin: 0 10px 20px 10px;
+    padding: 7px;
+}
+
+article:hover {
+    background-color: #E7E7E8;
+    border-radius: 20px;
+}
+
+article > a {
+    text-decoration: none;
+    color: black;
+}
+
+article  p {
+    max-width: fit-content;
+    
+}
+
+.opaque {
+    opacity: 20%;
+}
+
+.opaque_text {
+    display: inline;
+    opacity: 20%;
+}
+
+article span {
+    opacity: none;
+    color: #1288d2;
+}
+
+.image {
+    float: right;
+}
+
+.image > img {
+    width: 50px;
+    border-radius: 10px;
+}
+
+.more_feeds {
+    padding: 15px;
+}
+
+.more_feeds a{
+    text-decoration: none;
+    color: #1288d2;
+}
+
+.feeds h1,
+.suggestions h1 {
+    padding: 20px;
+    text-align: start;
+    font-size: 22px;
+}
+
+.feeds hr,
+.suggestions hr {
+    margin-top: 10px;
+    border: 0.2px solid rgb(219, 219, 219);
+}
+
+.suggestions {
+    grid-area: suggestions;
+    background-color: rgba(232, 232, 232, 0.455);
+    border-radius: 20px;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (min-width: 1316px){
+
+    .svg_icon_tweet {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 1315px){
+
+    .container {
+        display: grid;
+        grid-template: 
+            "left_menu home_page right_menu" 1fr /
+            auto minmax(300px, 700px) auto;
+    
+        height: 100vh;
+        margin: 0;
+        position: relative;
+    }
+
+    .right_menu {
+        width: 10%;
+        margin-right: 7em;
+    }
+
+    .svg_icon_tweet {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1215px) {
+
+     #nav span {
+        display: none;
+    }
+    
+    #tweet_button {
+        display: none;
+    }
+
+    .svg_icon_tweet {
+        background-color: #1DA1F2;
+        border-radius: 90%;
+        margin-left: 30px;
+        padding: 10px;
+        max-width: fit-content;
+    }
+
+    .svg_icon_tweet > svg{
+        fill: white;
+        width: 40px;
+    }
+
+    .svg_icon_tweet:hover {
+        background-color: #1288d2;
+    }
+
+    .name,
+    .user_name,
+    .profile_icon {
+        display: none;
+    }
+
+    .profile_left_bottom {
+        max-width: fit-content;
+    }
+
+    .profile_left_bottom:hover{
+        background-color: #E7E7E8;
+        border-radius: 40px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    
+    .right_menu {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 875px) {
+
+    .container {
+        display: grid;
+        grid-template: 
+            "home_page" 1fr
+            "left_menu"  auto/
+            minmax(1fr, 500px);
+    
+        height: 100vh;
+    }
+
+    .left_menu {
+        grid-area: left_menu;
+        grid-template: none;
+        display: flex;
+        height: fit-content;
+        position: fixed;
+        bottom: 0;
+
+        background-color: white;
+    }
+
+    #nav {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0;
+        width: 100vw;
+    }
+
+    .nav_menu {
+        display: inline;
+        margin: 0;
+    }
+
+    .profile_left_bottom,
+    .bookmarks,
+    .lists,
+    .more,
+    #icon,
+    .profile,
+    .svg_icon_tweet {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 700px) {
+
+    main {
+    border: none;
+    }
+    
+}
