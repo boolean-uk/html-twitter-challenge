@@ -27,7 +27,7 @@ body {
 
 header {
     width:280px;
-    height: 100vh;
+    height: 100%;
     
 
     display: grid;
@@ -40,7 +40,7 @@ header {
     ".tweet"
     ".footer";
 
-    border-right: 1px solid #d4e0ed;
+    
 
     padding-right: 50px;
 
@@ -99,30 +99,44 @@ header {
 
 .footer {
     grid-area: footer;
+    position:sticky;
 }
 
 .footer:hover {
     background-color: rgb(221, 228, 239);
 }
 
+.user-name {
+    font-family: 'Ubuntu', sans-serif ;
+}
+
 
 main {
     width: 600px;
     display: grid;
-    grid-template-rows: "homebar middle tweets" 50px 150px 1fr;
+    grid-template-rows: 50px 150px 1fr;
+    
+    
   
     
-    height: 100vh;
+    height: 100%;
     text-align: left;
+
+    padding-right:5px;
+    
+    
+    border-left:#d4e0ed 1px solid;
+    border-right: #d4e0ed 1px solid;
     
 
 }
 
 .home-bar {
-    grid-area: homebar;
+    
+    width: 600px;
     padding-top: 20px;
     padding-left: 5px;
-    position: absolute;
+    
     background-color: transparent;
     font-family: 'Ubuntu', sans-serif;
     font-size: large;
@@ -131,7 +145,7 @@ main {
 }
 
 .middle {
-    grid-area: middle;
+    
     display: grid;
     grid-template-rows: 70px 70px;
     grid-template-columns: 70px auto 100px;
@@ -179,5 +193,112 @@ main {
 
 .tweets {
     border-top: #d4e0ed 1px solid;
-    grid-area: tweets;
+    display: repeat (3,550px);
+    gap:100px;
+    padding-top:50px;
+    font-family:  'Ubuntu', sans-serif;
+    
+}
+
+.card img {
+
+    height: 30px;
+    width: 30px;
+
+}
+
+.card {
+    height:600px;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 50px 100px 350px 50px;
+    grid-template-areas: 
+    "profile username "
+    "space text"
+    "space picture"
+    "tool tool"
+    ;
+
+    margin-left: 10px;
+
+    gap:10px;
+   
+
+}
+
+.tweet-content {
+    grid-area: text;
+    margin-right: 10px;
+}
+
+.tweet-pic {
+    border:#d4e0ed 1px solid;
+    grid-area: picture;
+    border-radius: 20px;
+    margin-right:10px
+}
+
+
+.username > span {
+    color: #d4e0ed;
+}
+
+.side-bar {
+    display: grid;
+    grid-template-rows: 50px 500px 300px;
+    height:100%;
+    width: 280px;
+}
+
+.search img {
+    height:25px;
+    width: 25px;
+
+}
+
+.search {
+    margin-top: 10px;
+    background-color: #d4e0ed;
+    padding:2px;
+    border-radius: 10px;
+    color: #364F6B;
+    font-family:  'Ubuntu', sans-serif;
+}
+
+.happening {
+    background-color: #d4e0ed;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: large;
+    font-weight: bold;
+    font-family:  'Ubuntu', sans-serif;
+    color:#0f2b4b;
+}
+
+.follow {
+    background-color: #d4e0ed;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.home:hover,
+.explore:hover,
+.notifications:hover,
+.messages:hover,
+.Profile:hover,
+.more:hover {
+    background-color: #d4e0ed;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.home :visited {
+    background-color:#0f2b4b;
+    border-radius: 10px;
+    font-style: none;
 }
