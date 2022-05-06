@@ -12,7 +12,7 @@
 :root {
   --twitter-blue: rgb(29, 155, 240);
   --twitter-blue-hover: rgb(25, 128, 196);
-  --bg1: rgb(32, 35, 39);
+  --bg1: rgb(22, 24, 28);
   --accent: rgb(113, 118, 123);
 }
 
@@ -184,6 +184,10 @@ svg {
   background-color: var(--twitter-blue-hover);
 }
 
+.profilemenu {
+  margin-top: 280px;
+}
+
 @media screen and (max-width: 77.5em) {
   .menu__item {
     gap: 0px;
@@ -196,6 +200,9 @@ svg {
   }
   .button__svg {
     display: inline-block;
+  }
+  .profilemenu {
+    display: none;
   }
 }
 
@@ -420,8 +427,48 @@ span {
 .who-to-follow {
   border-radius: 20px;
   background-color: var(--bg1);
-  height: 400px;
+  height: fit-content;
   margin-bottom: 20px;
+  padding: 20px;
+}
+
+.news__item {
+  display: flex;
+  padding: 10px 0;
+}
+
+.follow__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.follow__left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.follow__icon img {
+  border-radius: 50%;
+}
+
+.follow__button span {
+  padding: 0.6rem 1rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: black;
+  border-radius: 20px;
+  background-color: white;
+}
+
+.follow__username {
+  font-size: 0.9rem;
+}
+
+.follow__username p:last-child {
+  color: var(--accent);
 }
 
 .footer {
@@ -458,6 +505,35 @@ span {
 
 @media screen and (max-width: 62.5em) {
   .right-aside {
+    display: none;
+  }
+}
+
+.messages {
+  position: fixed;
+  bottom: -20px;
+  right: 0;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem 2rem 1rem;
+  margin-right: 20px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 6px var(--accent);
+  background-color: black;
+}
+
+.messages__icons {
+  display: flex;
+  gap: 15px;
+}
+
+.messages__header {
+  font-size: 1.3rem;
+}
+
+@media screen and (max-width: 62.5em) {
+  .messages {
     display: none;
   }
 }
