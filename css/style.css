@@ -380,7 +380,6 @@ svg {
 .post__retweets {
   display: flex;
   align-items: center;
-  gap: 0.625rem;
 }
 
 span {
@@ -393,6 +392,8 @@ span {
 
 .post__replies:hover svg,
 .post__share:hover svg {
+  border-radius: 50%;
+  background-color: rgba(25, 128, 196, 0.3);
   fill: var(--twitter-blue-hover);
 }
 
@@ -401,7 +402,9 @@ span {
 }
 
 .post__likes:hover svg {
+  border-radius: 50%;
   fill: rgb(224, 41, 139);
+  background-color: rgba(224, 41, 139, 0.3);
 }
 
 .post__retweets:hover span {
@@ -409,7 +412,9 @@ span {
 }
 
 .post__retweets:hover svg {
+  border-radius: 50%;
   fill: rgb(48, 134, 64);
+  background-color: rgba(48, 134, 64, 0.3);
 }
 
 .feed__post:hover {
