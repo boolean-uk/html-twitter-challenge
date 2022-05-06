@@ -393,9 +393,8 @@ main {
         1fr;
 
     gap: 1rem;
-    margin-left: 30px;
+    /* margin-left: 30px; */
     height: 100vh;
-    width: 20%;
     position: fixed;
     justify-self: right;
 }
@@ -521,20 +520,17 @@ article span {
     .container {
         display: grid;
         grid-template: 
-            "left_menu home_page" 1fr /
-            auto minmax(400px, 700px);
+            "left_menu home_page right_menu" 1fr /
+            auto minmax(300px, 700px) auto;
     
         height: 100vh;
-        margin-left: 20px;
+        margin: 0;
         position: relative;
     }
 
-    .left_menu {
-        margin-left: 2%;
-    }
-
     .right_menu {
-        display: none;
+        width: 10%;
+        margin-right: 7em;
     }
 
     .svg_icon_tweet {
@@ -542,7 +538,7 @@ article span {
     }
 }
 
-@media screen and (max-width: 1060px) {
+@media screen and (max-width: 1215px) {
 
      #nav span {
         display: none;
@@ -586,38 +582,41 @@ article span {
     }
 }
 
+@media screen and (max-width: 1170px) {
+    
+    .right_menu {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 875px) {
 
     .container {
         display: grid;
         grid-template: 
-            "home_page" 1fr /
-            1fr;
+            "home_page" 1fr
+            "left_menu"  auto/
+            minmax(1fr, 500px);
     
         height: 100vh;
-        margin-left: 20px;
-        margin-right: 40px;
-        position: relative;
     }
 
     .left_menu {
-        display: grid;
+        grid-area: left_menu;
         grid-template: none;
-        grid-template-columns: repeat(auto-fill, 1fr);
-        grid-auto-flow: column;
+        display: flex;
+        height: fit-content;
+        position: fixed;
+        bottom: 0;
+
+        background-color: white;
     }
 
     #nav {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-auto-flow: column;
-        position: fixed;
-        justify-self: center;
-        align-self: flex-end;
-        background-color: white;
-        padding-top: 10px;
-        width: fit-content;
-
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0;
+        width: 100vw;
     }
 
     .nav_menu {
@@ -634,4 +633,12 @@ article span {
     .svg_icon_tweet {
         display: none;
     }
+}
+
+@media screen and (max-width: 700px) {
+
+    main {
+    border: none;
+    }
+    
 }
