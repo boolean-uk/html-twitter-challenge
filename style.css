@@ -609,15 +609,15 @@ article span {
         position: fixed;
         justify-self: center;
         align-self: flex-end;
-        margin-right: 0;
-        margin-left: 70%;
         background-color: white;
         padding-top: 10px;
+        width: fit-content;
 
     }
 
     .nav_menu {
         display: inline;
+        margin: 0;
     }
 
     .profile_left_bottom,
