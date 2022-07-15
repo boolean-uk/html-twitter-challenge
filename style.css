@@ -1,0 +1,122 @@
+html {
+    font-family: 'Arial'
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+  
+  .nav-section {
+    background-color: rgb(241, 214, 214);
+  }
+  
+  .nav-list {
+    list-style-type: none;
+  }
+  
+  .nav-list li {
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 30px;
+  }
+  
+  .nav-list li a:hover {
+    color: rgb(247, 0, 255);
+  }
+  
+  .nav-list li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .search-section {
+    background-color: rgb(241, 214, 214);
+  }
+  
+  .tweet-section {
+    background-color: rgb(216, 210, 210);
+  }
+  
+  .tweet-container-header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+  
+  .tweet-header-item {
+    padding: 20px;
+  }
+  
+  #message-btn {
+    border-radius: 20px;
+    width: 80%;
+    color:#fff;
+    background-color:#acd4fc;
+    font-size:1.1em;
+    border:0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor:pointer;
+  }
+
+
+
+
+
+
+/*RIGHT MENU*/
+
+.nav {
+    border: solid 5px var(--primary-color);
+    border-radius: 5px;
+    grid-template: "left-container right-container";
+
+    background-color: rgb(249, 220, 220);
+
+    height: 979px;
+    width: 320px;
+
+    border: 1px solid black;
+
+  } 
+
+.right-grid {
+    display: grid;
+
+
+    grid-template-areas: 
+    "1"
+    "2"
+    "3"
+    "4"
+    "5"
+    "6"
+    "7";
+    grid-template-rows: repeat(7, 50px);
+    justify-content: center;
+
+
+}
+
+.search-button {
+    grid-area: 1;
+}
+
+.right-news {
+    grid-area: 2;
+}
+
+.right-follow {
+    grid-area: 3;
+}
+
+.dog {
+    width: 15%;
+    margin-left: 1px;
+  }
+
+
+
+
+
+
