@@ -27,7 +27,7 @@ div.page {
 div.left-menu {
     /* border: dashed 2px seagreen; */
     display: grid;
-    grid-template-rows: 60px minmax(400px, 3fr) 1fr 75px;
+    grid-template-rows: 60px minmax(400px, 3fr) auto 75px;
 }
 .logo img {
     height: 60px;
