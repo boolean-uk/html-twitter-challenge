@@ -194,7 +194,7 @@ div.main {
 .right-menu {
     /* border: dashed 2px seagreen; */
     display: grid;
-    grid-template-rows: 50px auto;
+    grid-template-rows: 50px auto 1fr;
 }
 .right-menu .search {
     display: grid;
