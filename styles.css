@@ -88,7 +88,7 @@ div.left-menu .navigation {
     grid-area: username;
     margin: 0 10px 10px 10px;
     color: grey;
-    font-size: 12px;
+    font-size: 11px;
     font-weight: 400;
 }
 
@@ -100,6 +100,89 @@ div.main {
     display: grid;
     grid-template-rows: 130px 1fr;
     scroll-behavior: smooth;
+}
+.main .home {
+    display: grid;
+    grid-template-rows: 40px 1fr 50px;
+}
+.home .home-header {
+    display: grid;
+    grid-template-columns: auto 30px;
+    border: 1px solid rgba(0, 0, 0, 0.494);
+    padding: 0px 10px
+}
+.home-header span {
+    font-size: x-large;
+    font-weight: 900;
+}
+.home .home-post {
+    display: grid;
+    grid-template-columns: 50px auto;
+    border: 1px solid rgba(0, 0, 0, 0.494);
+    border-bottom: none;
+    padding: 0px 10px
+}
+.home-post input{
+    border: none;    
+    margin-left: 20px;
+    font-size: large;
+}
+.home .home-options {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50px repeat(5, 20px) 1fr 70px;
+    gap: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.494);
+    border-top: none;
+    padding: 0px 10px;
+    
+}
+.home #tweet-post {
+    height: 40px;
+    padding: 8px;
+    margin: 5px;
+    font-size: 14px;
+    color: white;
+    border: solid 2px black;
+    border-radius: 40px;
+    background-color: black;
+    text-align: center;
+    align-self: center;
+}
+.home .feed {
+    display: grid;
+    /* grid-auto-rows: auto; */
+    /* grid-template-rows: 1fr; */
+}
+.feed .tweet {
+    margin-top: 50px;
+    display: grid;
+    grid-template: 
+    "photo name username time empty-space" 30px
+    "photo message message message message" auto
+    "icons icons icons icons icons" 30px /
+    50px 100px 120px 80px auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.509);
+}
+.tweet .photo {
+    grid-area: photo;
+}
+.tweet .message {
+    grid-area: message;
+}
+.tweet .icons {
+    height: 30px;
+    grid-area: icons;
+    display: grid;
+    grid-template-columns: 50px repeat(4, 1fr);
+}
+.message .user {
+    color: rgba(128, 128, 128, 0.795);
+}
+.icons img {
+    position: relative;
+    object-position: left;
+    height: 20px;
 }
 div.right-menu {
     border: dashed 2px seagreen;
