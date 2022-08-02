@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    margin: 1px;
+    margin: 0px;
     padding: 0;
     font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
     font-size: 12px;
@@ -13,6 +13,11 @@ img {
     object-fit: contain;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 div.page {
     width: 100vw;
     height: 100vh;
@@ -20,7 +25,7 @@ div.page {
     grid-template-columns: 1fr 200px minmax(300px, 3fr) 300px 1fr;
 }
 div.left-menu {
-    border: dashed 2px seagreen;
+    /* border: dashed 2px seagreen; */
     display: grid;
     grid-template-rows: 60px minmax(400px, 3fr) 1fr 75px;
 }
@@ -36,7 +41,7 @@ div.left-menu {
     grid-template-columns: 50px 1fr;
 }
 div.left-menu .navigation {
-    border: dashed 2px seagreen;
+    /* border: dashed 2px seagreen; */
     display: grid;
     grid-template-rows: repeat(8, 1fr) 2fr;
 }
@@ -59,6 +64,7 @@ div.left-menu .navigation {
     align-self: center;
 }
 .navigation #tweet {
+    margin-right: 10px;
     padding: 10px 60px 10px 60px;
     font-size: 20px;
     color: white;
@@ -67,7 +73,7 @@ div.left-menu .navigation {
     background-color: black;
 }
 .left-menu .profile {
-    border: dashed 2px seagreen;
+    /* border: dashed 2px seagreen; */
     display: grid;
     grid-template: 
     "photo name more" 1fr
@@ -96,7 +102,7 @@ div.left-menu .navigation {
     grid-area: more;
 }
 div.main {
-    border: dashed 2px seagreen;
+    /* border: dashed 2px seagreen; */
     display: grid;
     grid-template-rows: 130px 1fr;
     scroll-behavior: smooth;
@@ -162,6 +168,7 @@ div.main {
     "photo message message message message" auto
     "icons icons icons icons icons" 30px /
     50px 100px 120px 80px auto;
+    padding: 0px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.509);
 }
 .tweet .photo {
@@ -184,8 +191,41 @@ div.main {
     object-position: left;
     height: 20px;
 }
-div.right-menu {
-    border: dashed 2px seagreen;
+.right-menu {
+    /* border: dashed 2px seagreen; */
     display: grid;
-    grid-template-rows: 50px 1fr;
+    grid-template-rows: 50px auto;
+}
+.right-menu .search {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    border: rgba(128, 128, 128, 0.35) solid 2px;
+    border-radius: 40px;
+    background-color: rgba(128, 128, 128, 0.35);
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.search input {
+    border: none;
+    height: 80%;
+    width: 80%;
+    align-self: center;
+    background-color: rgb(211 211 211);
+    padding-left: 5px;
+
+}
+.search img {
+    height: 25px;
+    align-self: center;
+}
+.right-menu .trends {
+    display: grid;
+    grid-template-rows: 50px repeat(3, 140px) 50px;
+    border: 2px rgba(128, 128, 128, 0.35) solid;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+.trends .news {
+    
 }
