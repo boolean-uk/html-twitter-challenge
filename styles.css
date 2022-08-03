@@ -1,3 +1,8 @@
+/*
+CSS for Emo Twitter.
+
+General styling:
+*/
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -17,15 +22,19 @@ a {
     text-decoration: none;
     color: black;
 }
-
+/*
+Site layout:
+*/
 div.page {
     width: 100vw;
     height: 100vh;
     display: grid;
     grid-template-columns: 1fr 200px minmax(300px, 3fr) 300px 1fr;
 }
+/*
+Left Menu:
+*/
 div.left-menu {
-    /* border: dashed 2px seagreen; */
     display: grid;
     grid-template-rows: 60px 500px 1fr 75px 1fr;
 }
@@ -100,9 +109,18 @@ div.left-menu .navigation {
 
 .profile .more {
     grid-area: more;
+    margin-left: 0px;
+    align-self: center;
+    height: 20px;
+    padding-right: 10px;
 }
+.more img {
+    
+}
+/*
+Main layout:
+*/
 div.main {
-    /* border: dashed 2px seagreen; */
     display: grid;
     grid-template-rows: 130px 1fr;
     scroll-behavior: smooth;
@@ -157,8 +175,6 @@ div.main {
 }
 .home .feed {
     display: grid;
-    /* grid-auto-rows: auto; */
-    /* grid-template-rows: 1fr; */
 }
 .feed .tweet {
     margin-top: 50px;
@@ -191,8 +207,10 @@ div.main {
     object-position: left;
     height: 20px;
 }
+/*
+Right menu layout:
+*/
 .right-menu {
-    /* border: dashed 2px seagreen; */
     display: grid;
     grid-template-rows: 50px auto 1fr;
 }
@@ -225,7 +243,36 @@ div.main {
     border-radius: 15px;
     margin-left: 20px;
     margin-top: 15px;
+    background-color: rgba(128, 128, 128, 0.308);
+}
+.trends span {
+    font-size: 1.5rem;
+    align-self: center;
+    padding-left: 10px;
 }
 .trends .news {
-    
+    margin: 10px;
 }
+.trends a {
+    align-self: center;
+    color: rgba(0, 0, 0, 0.495);
+}
+.trends a span {
+    font-size: larger;
+}
+/*
+Media queries:
+*/
+
+@media screen and (max-width: 1060px) {
+    div.page {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 200px minmax(300px, 3fr) 1fr;
+    }
+
+    .right-menu {
+        display: none;
+    }
+  }
