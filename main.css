@@ -76,22 +76,15 @@ body {
 
 /* Main Twitter Feed */
 
-.main-tweet-input {
-    width: 80%;
-    height: 2em;
-    padding: 1em;
-    color: gray;
-    border: 1px lightgray solid;
-    border-radius: 2em;
-}
-
 .write-tweet {
     display: grid;
-    grid-template-areas:
+    grid-template:
     'profile-pic main-tweet-input'
-    'write-tweet-toolbar feed-tweet-button';
+    'write-tweet-toolbar feed-tweet-button'
+    / 1fr 3fr;
     padding: 1em 0 2em 0;
 }
+
 
 .profile-pic {
     grid-area: profile-pic;
@@ -99,6 +92,12 @@ body {
 
 .main-tweet-input {
     grid-area: main-tweet-input;
+    width: 80%;
+    height: 2em;
+    padding: 1em;
+    color: gray;
+    border: 1px lightgray solid;
+    border-radius: 2em;
 }
 
 .write-tweet-toolbar {
@@ -120,13 +119,91 @@ body {
     background-color: lightgray;
 }
 
+.tweet {
+    display: grid;
+    grid-template:
+    "profile-pic tweet-text"
+    "tweet-tools tweet-tools"
+    / 1fr 3fr;
+    padding: 1em;
+}
+
+.tweet:hover {
+    background-color: #eee;
+}
+
+.profile-pic {
+    grid-area: profile-pic;
+}
+
+.tweet-text {
+    grid-area: tweet-text;
+}
+
+.tweet-text p {
+    margin: 0;
+    padding: 0;
+}
+
+.tweet-tools {
+    grid-area: tweet-tools;
+}
+
+/* Aside with suggestions and recommendations */
+
+.searchbar {
+    width: 80%;
+    height: 2em;
+    padding: 1em;
+    color: gray;
+    background-color: #eee;
+    border: 1px lightgray solid;
+    border-radius: 2em;
+    margin-bottom: 1em;
+}
+
 .related-infos {
     border-left: 1px lightgray solid; 
 }
 
+.suggested-article {
+    display: grid;
+    grid-template:
+    "category-meta-data more"
+    "news-headline suggested-article-img";
+    padding: 1em;
+}
+
+.category-meta-data {
+    grid-area: category-meta-data;
+}
+
+.more {
+    grid-area: more;
+    text-align: center;
+}
+
+.news-headline {
+    grid-area: news-headline;
+}
+
+.suggested-article-img {
+    grid-area: suggested-article-img;
+}
+
+.direct-messages {
+    padding: 1em;
+    border: 1px lightgray solid;
+    border-radius: 2em 2em 0 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
 /* Fixed compliance floater */
 
-.gdpr-compliance {
+
+#gdpr-compliance {
     width: 100%;
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -140,11 +217,11 @@ body {
     left: 0;
 }
 
-.gdpr-compliance a {
+#gdpr-compliance a {
     color: lightblue;
 }
 
-.gdpr-compliance a:hover {
+#gdpr-compliance a:hover {
     color: white;
 }
 
