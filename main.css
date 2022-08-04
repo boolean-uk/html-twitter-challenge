@@ -1,290 +1,410 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 #container {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    height: 100%;
+  display: grid;
+  grid-template:
+    "nav-pane main-feed related-infos"
+    / 1fr 2fr 1fr;
+  width: 80%;
+  margin: 0 auto;
 }
 
 /* Left nav pane */
 
 .nav-pane {
-    height: 100vh;
-    position: relative;
-    top: 0;
-    left: 0;
+  grid-area: nav-pane;
+  height: 100vh;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
-.nav-pane, .main-feed, .related-infos {
-    padding: 1em;
+.nav-pane,
+.main-feed,
+.related-infos {
+  padding: 1em;
 }
 
 .nav-pane {
-    border-right: 1px lightgray solid; 
+  border-right: 1px lightgray solid;
 }
 
 .logo-area {
-    padding: 1em;
-    margin-bottom: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-radius: 50%;
+  background-color: white;
+  height: 4em;
+  width: 4em;
 }
 
-.nav-menu {
-    min-height: 900px;
+.logo-area:hover {
+background-color: #E8F5FD;
+}
+
+.logo-area svg {
+    margin: 1em;
+    width: 2em;
+    height: 2em;
+    fill: #1D9BF0;
 }
 
 .menu-item {
-    display: grid;
-    grid-template-columns: 1fr 6fr;
-    padding: 1em;
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  padding: 1em;
 }
 
-.menu-item:hover, .menu-bottom-profile:hover {
-    background-color: #eee;
-    border-radius: 2em;
+.menu-item:hover,
+.menu-bottom-profile:hover {
+  background-color: #eee;
+  border-radius: 2em;
+}
+
+.nav-icon {
+    width: 2em;
+    height: 2em;
 }
 
 .nav-text {
-    padding: 0.5em;
-    font-weight: bold;
+  padding: 0.5em;
+  font-weight: bold;
 }
 
 .menu-bottom-profile {
-    width: 90%;
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-    padding: 0.5em;
-    position: absolute;
-    bottom: 3em;
-    left: 1em;
-    height: 4em;
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+  padding: 0.5em;
+  position: absolute;
+  bottom: 0;
+  left: 1em;
+  height: 4em;
+  background-color: white;
+  border-radius: 2em;
 }
 
 .menu-profile-more {
-    text-align: center;
-    padding-top: 1em;
+  text-align: center;
+  padding-top: 1em;
+  font-weight: bold;
 }
 
 .menu-profile-pic {
-    padding: 1em 0.5em 0 0;
+  padding: 1em 0.5em 0 0;
+}
+
+.menu-profile-pic img {
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
 }
 
 .profile-name {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .twitter-handle {
-    color: gray;
+  color: gray;
 }
 
 .menu-tweet-button {
-    width: 100%;
-    margin: 0.5em;
-    padding: 1em;
-    color: white;
-    background-color: #1D9BF0;
-    border-radius: 1em;
-    font-weight: bold;
-    border: 0;
+  width: 100%;
+  margin: 0.5em;
+  padding: 1em;
+  color: white;
+  background-color: #1d9bf0;
+  border-radius: 1em;
+  font-weight: bold;
+  border: 0;
 }
 
 .menu-tweet-button:hover {
-    background-color: #8ECDF8;
+  background-color: #8ecdf8;
 }
 
 /* Main Twitter Feed */
 
 .main-feed {
-    overflow-y: scroll;
-    height: 100vh;
+  grid-area: main-feed;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+.feed-header {
+    padding-top: 1em;
 }
 
 .write-tweet {
-    display: grid;
-    grid-template:
-    'profile-pic main-tweet-input-area main-tweet-input-area'
-    'write-tweet-toolbar write-tweet-toolbar feed-tweet-button-area'
+  display: grid;
+  grid-template:
+    "profile-pic main-tweet-input-area main-tweet-input-area"
+    "write-tweet-toolbar write-tweet-toolbar feed-tweet-button-area"
     / 1fr 2fr 1fr;
-    padding: 1em 0 2em 0;
+  padding: 1em 0 2em 1em;
+  border-bottom: 1px solid lightgray;
 }
 
 .profile-pic {
-    grid-area: profile-pic;
+  grid-area: profile-pic;
+  text-align: center;
 }
 
-.main-tweet-input-area{
-    grid-area: main-tweet-input-area;
+.profile-pic img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.profile-pic p {
+    margin: 0;
+    padding: 0;
+    color: gray;
+}
+
+.main-tweet-input-area {
+  grid-area: main-tweet-input-area;
 }
 
 .main-tweet-input {
-    width: 90%;
-    height: 2em;
-    padding: 1em;
-    color: gray;
-    border: 1px lightgray solid;
-    border-radius: 2em;
+  width: 90%;
+  height: 2em;
+  padding: 1em;
+  color: gray;
+  border: 1px lightgray solid;
+  border-radius: 2em;
 }
 
 .write-tweet-toolbar {
-    grid-area: write-tweet-toolbar;
+  grid-area: write-tweet-toolbar;
 }
 
 .feed-tweet-button-area {
-    grid-area: feed-tweet-button-area;
-    text-align: right;
+  grid-area: feed-tweet-button-area;
+  text-align: right;
 }
 
 .feed-tweet-button {
-    margin: 0.5em 2em 0.5em 0.5em;
-    padding: 1em;
-    color: white;
-    background-color: #8ECDF8;
-    border-radius: 1em;
-    font-weight: bold;
-    border: 0;
+  margin: 0.5em 2em 0.5em 0.5em;
+  padding: 1em;
+  color: white;
+  background-color: #8ecdf8;
+  border-radius: 1em;
+  font-weight: bold;
+  border: 0;
 }
 
 .feed-tweet-button:hover {
-    background-color: lightgray;
+  background-color: lightgray;
 }
 
 .tweet {
-    display: grid;
-    grid-template:
+  display: grid;
+  grid-template:
     "profile-pic tweet-text"
     "tweet-tools tweet-tools"
     / 1fr 3fr;
-    padding: 1em;
+  padding: 1em;
 }
 
 .tweet:hover {
-    background-color: #eee;
+  background-color: #eee;
 }
 
 .profile-pic {
-    grid-area: profile-pic;
+  grid-area: profile-pic;
 }
 
 .tweet-text {
-    grid-area: tweet-text;
+  grid-area: tweet-text;
 }
 
 .tweet-text p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .tweet-tools {
-    grid-area: tweet-tools;
+  grid-area: tweet-tools;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 1em;
+  text-align: center;
+}
+
+.tool-column svg {
+    width: 2em;
+    height: 1.5em;
+    fill: gray;
+    padding: 0.5em;
+    border-radius: 50%;
+}
+
+.tool-column svg:hover {
+    background-color: lightgray;
 }
 
 /* Aside with suggestions and recommendations */
 
-.searchbar {
-    width: 80%;
-    height: 2em;
-    padding: 1em;
-    color: gray;
-    background-color: #eee;
-    border: 1px lightgray solid;
-    border-radius: 2em;
-    margin-bottom: 1em;
+.related-infos {
+  grid-area: related-infos;
+  border-left: 1px lightgray solid;
+  height: 100vh;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 
-.related-infos {
-    border-left: 1px lightgray solid; 
-    height: 100vh;
-    position: relative;
-    top: 0;
-    left: 0;
+.search {
+    margin-top: 2em;
+}
+
+.searchbar {
+  width: 80%;
+  height: 2em;
+  padding: 1em;
+  color: gray;
+  background-color: #eee;
+  border: 1px lightgray solid;
+  border-radius: 2em;
+  margin-bottom: 1em;
+}
+
+.recommendations {
+  padding: 1em 0 1em 0;
+  border-radius: 1em;
+  background-color: #eee;
+}
+
+.recommendations h2 {
+  padding-left: 0.5em;
 }
 
 .suggested-article {
-    display: grid;
-    grid-template:
+  display: grid;
+  grid-template:
     "category-meta-data more"
     "news-headline suggested-article-img";
-    padding: 1em;
+  padding: 1em;
 }
 
 .suggested-article:hover {
-    background-color: #eee;
+  background-color: #ddd;
 }
 
 .category-meta-data {
-    grid-area: category-meta-data;
+  grid-area: category-meta-data;
+  color: gray;
 }
 
 .more {
-    grid-area: more;
-    text-align: center;
+  grid-area: more;
+  text-align: center;
+  font-weight: bold;
 }
 
 .news-headline {
-    grid-area: news-headline;
+  grid-area: news-headline;
 }
 
 .suggested-article-img {
-    grid-area: suggested-article-img;
+  grid-area: suggested-article-img;
+  margin-top: 1em;
+}
+
+.suggested-article-img img {
+  border-radius: 0.5em;
+  width: 80px;
 }
 
 .direct-messages {
-    /* min-width: 120px; */
-    width: 80%;
-    padding: 1em;
-    border: 1px lightgray solid;
-    border-radius: 1em 1em 0 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1em;
-    position: absolute;
-    bottom: 1.5em;
-    left: 1em;
+  /* min-width: 120px; */
+  padding: 1em;
+  border: 1px lightgray solid;
+  background-color: white;
+  border-radius: 1em 1em 0 0;
+  box-shadow: 0px 0px 6px gray;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+  position: absolute;
+  bottom: 0;
+  left: 1em;
+}
+
+.messages-label {
+  padding-left: 1em;
+  font-weight: bold;
 }
 
 /* Fixed compliance floater */
 
-
 #gdpr-compliance {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 2fr 1fr;
-    background-color: black;
-    color: white;
-    padding: 1em;
-    gap: 1em;
-    z-index: 2;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: black;
+  color: white;
+  padding: 1em;
+  gap: 1em;
+  z-index: 2;
+  position: absolute;
+  bottom: -2em;
+  left: 0;
 }
 
 #gdpr-compliance a {
-    color: lightblue;
+  color: lightblue;
 }
 
 #gdpr-compliance a:hover {
-    color: white;
+  color: white;
 }
 
 .gdpr-buttons {
-    padding: 1em;
+  padding: 1em;
 }
 .gdpr-button {
-    width: 100%;
-    margin: 0.5em;
-    padding: 1em;
-    color: black;
-    background-color: lightgray;
-    border-radius: 1em;
-    font-weight: bold;
-    border: 0;
+  width: 100%;
+  margin: 0.5em;
+  padding: 1em;
+  color: black;
+  background-color: lightgray;
+  border-radius: 1em;
+  font-weight: bold;
+  border: 0;
 }
 
 .gdpr-button:hover {
-    background-color: gray;
+  background-color: gray;
+}
+
+.instructions-for-teacher {
+  color: red;
+}
+
+/* Responsive settings for smaller screen sizes */
+
+@media only screen and (max-width: 1400px) {
+  #container {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .nav-pane {
+    display: none;
+  }
+
+  .related-infos {
+    display: none;
+  }
 }
