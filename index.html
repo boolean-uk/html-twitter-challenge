@@ -10,90 +10,97 @@
 </head>
 
 <body>
-
     <div id="container">
         <nav class="nav-pane">
             <div class="logo-area">
                 <div style="background-color: skyblue; width: 3em; height: 3em; border-radius: 50%;"></div>
             </div>
-            <div class="menu-item active">
-                <div class="nav-icon">
-                    <div style="background-color: skyblue; width: 2em; height: 2em; border-radius: 50%;"></div>
+            <section class="nav-menu">
+                <div class="menu-item active">
+                    <div class="nav-icon">
+                        <div style="background-color: skyblue; width: 2em; height: 2em; border-radius: 50%;"></div>
+                    </div>
+                    <div class="nav-text">
+                        Home
+                    </div>
                 </div>
-                <div class="nav-text">
-                    Home
+                <div class="menu-item">
+                    <div class="nav-icon">
+                        <div style="background-color: darkgray; width: 2em; height: 2em; border-radius: 50%;"></div>
+                    </div>
+                    <div class="nav-text">
+                        Explore
+                    </div>
                 </div>
-            </div>
-            <div class="menu-item">
-                <div class="nav-icon">
-                    <div style="background-color: darkgray; width: 2em; height: 2em; border-radius: 50%;"></div>
+                <div class="menu-item">
+                    <div class="nav-icon">
+                        <div style="background-color: darkgray; width: 2em; height: 2em; border-radius: 50%;"></div>
+                    </div>
+                    <div class="nav-text">
+                        Notifications
+                    </div>
                 </div>
-                <div class="nav-text">
-                    Explore
+                <div class="menu-item">
+                    <div class="nav-icon">
+                        <div style="background-color: darkgray; width: 2em; height: 2em; border-radius: 50%;"></div>
+                    </div>
+                    <div class="nav-text">
+                        Messages
+                    </div>
                 </div>
-            </div>
-            <div class="menu-item">
-                <div class="nav-icon">
-                    <div style="background-color: darkgray; width: 2em; height: 2em; border-radius: 50%;"></div>
+                <div class="menu-item">
+                    <div class="nav-icon">
+                        <div style="background-color: darkgray; width: 2em; height: 2em; border-radius: 50%;"></div>
+                    </div>
+                    <div class="nav-text">
+                        Bookmarks
+                    </div>
                 </div>
-                <div class="nav-text">
-                    Notifications
+                <div class="menu-item">
+                    <div class="nav-icon">
+                        <div style="background-color: darkgray; width: 2em; height: 2em; border-radius: 50%;"></div>
+                    </div>
+                    <div class="nav-text">
+                        Lists
+                    </div>
                 </div>
-            </div>
-            <div class="menu-item">
-                <div class="nav-icon">
-                    <div style="background-color: darkgray; width: 2em; height: 2em; border-radius: 50%;"></div>
+                <div class="menu-item">
+                    <div class="nav-icon">
+                        <div style="background-color: darkgray; width: 2em; height: 2em; border-radius: 50%;"></div>
+                    </div>
+                    <div class="nav-text">
+                        Profile
+                    </div>
                 </div>
-                <div class="nav-text">
-                    Messages
+                <div class="menu-item">
+                    <div class="nav-icon">
+                        <div style="background-color: darkgray; width: 2em; height: 2em; border-radius: 50%;"></div>
+                    </div>
+                    <div class="nav-text">
+                        More
+                    </div>
                 </div>
-            </div>
-            <div class="menu-item">
-                <div class="nav-icon">
-                    <div style="background-color: darkgray; width: 2em; height: 2em; border-radius: 50%;"></div>
-                </div>
-                <div class="nav-text">
-                    Bookmarks
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="nav-icon">
-                    <div style="background-color: darkgray; width: 2em; height: 2em; border-radius: 50%;"></div>
-                </div>
-                <div class="nav-text">
-                    Lists
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="nav-icon">
-                    <div style="background-color: darkgray; width: 2em; height: 2em; border-radius: 50%;"></div>
-                </div>
-                <div class="nav-text">
-                    Profile
-                </div>
-            </div>
-            <div class="menu-item">
-                <div class="nav-icon">
-                    <div style="background-color: darkgray; width: 2em; height: 2em; border-radius: 50%;"></div>
-                </div>
-                <div class="nav-text">
-                    More
-                </div>
-            </div>
-            <button class="menu-tweet-button">
-                Tweet
-            </button>
+                <button class="menu-tweet-button">
+                    Tweet
+                </button>
+            </section>
+
             <div class="menu-bottom-profile">
                 <div class="menu-profile-pic">
-                    <div style="background-color: lavender; width: 3em; height: 3em; border-radius: 50%;"></div>
+                    <div style="background-color: lavender; width: 2em; height: 2em; border-radius: 50%;"></div>
                 </div>
                 <div class="menu-nav-text">
-                    <p class="profile-name">John Doe</p>
-                    <p class="twitter-handle">@jdoe</p>
+                    <p>
+                        <span class="profile-name">John Doe</span><br />
+                        <span class="twitter-handle">@jdoe</span>
+                    </p>
+                </div>
+                <div class="menu-profile-more">
+                    &hellip;
                 </div>
             </div>
         </nav>
-    
+
         <main class="main-feed">
             <header class="fixed-header">
                 <h2>Home</h2>
@@ -108,9 +115,11 @@
                 <div class="write-tweet-toolbar">
                     Add icons
                 </div>
-                <button class="feed-tweet-button">
-                    Tweet
-                </button>
+                <div class="feed-tweet-button-area">
+                    <button class="feed-tweet-button">
+                        Tweet
+                    </button>
+                </div>
             </section>
             <section class="twitter-feed">
                 <article class="tweet">
@@ -118,8 +127,10 @@
                         <div style="background-color: lavender; width: 3em; height: 3em; border-radius: 50%;"></div>
                     </div>
                     <div class="tweet-text">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam recusandae ullam voluptatem illum
-                            veritatis cum consequuntur ipsam at consectetur deserunt ab praesentium fugit, maiores quidem
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam recusandae ullam voluptatem
+                            illum
+                            veritatis cum consequuntur ipsam at consectetur deserunt ab praesentium fugit, maiores
+                            quidem
                             unde inventore? Nostrum, fugit quos?</p>
                     </div>
                     <div class="tweet-tools">
@@ -131,8 +142,10 @@
                         <div style="background-color: lavender; width: 3em; height: 3em; border-radius: 50%;"></div>
                     </div>
                     <div class="tweet-text">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam recusandae ullam voluptatem illum
-                            veritatis cum consequuntur ipsam at consectetur deserunt ab praesentium fugit, maiores quidem
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam recusandae ullam voluptatem
+                            illum
+                            veritatis cum consequuntur ipsam at consectetur deserunt ab praesentium fugit, maiores
+                            quidem
                             unde inventore? Nostrum, fugit quos?</p>
                     </div>
                     <div class="tweet-tools">
@@ -144,8 +157,10 @@
                         <div style="background-color: lavender; width: 3em; height: 3em; border-radius: 50%;"></div>
                     </div>
                     <div class="tweet-text">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam recusandae ullam voluptatem illum
-                            veritatis cum consequuntur ipsam at consectetur deserunt ab praesentium fugit, maiores quidem
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam recusandae ullam voluptatem
+                            illum
+                            veritatis cum consequuntur ipsam at consectetur deserunt ab praesentium fugit, maiores
+                            quidem
                             unde inventore? Nostrum, fugit quos?</p>
                     </div>
                     <div class="tweet-tools">
@@ -157,8 +172,10 @@
                         <div style="background-color: lavender; width: 3em; height: 3em; border-radius: 50%;"></div>
                     </div>
                     <div class="tweet-text">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam recusandae ullam voluptatem illum
-                            veritatis cum consequuntur ipsam at consectetur deserunt ab praesentium fugit, maiores quidem
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam recusandae ullam voluptatem
+                            illum
+                            veritatis cum consequuntur ipsam at consectetur deserunt ab praesentium fugit, maiores
+                            quidem
                             unde inventore? Nostrum, fugit quos?</p>
                     </div>
                     <div class="tweet-tools">
@@ -170,8 +187,10 @@
                         <div style="background-color: lavender; width: 3em; height: 3em; border-radius: 50%;"></div>
                     </div>
                     <div class="tweet-text">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam recusandae ullam voluptatem illum
-                            veritatis cum consequuntur ipsam at consectetur deserunt ab praesentium fugit, maiores quidem
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam recusandae ullam voluptatem
+                            illum
+                            veritatis cum consequuntur ipsam at consectetur deserunt ab praesentium fugit, maiores
+                            quidem
                             unde inventore? Nostrum, fugit quos?</p>
                     </div>
                     <div class="tweet-tools">
@@ -183,8 +202,10 @@
                         <div style="background-color: lavender; width: 3em; height: 3em; border-radius: 50%;"></div>
                     </div>
                     <div class="tweet-text">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam recusandae ullam voluptatem illum
-                            veritatis cum consequuntur ipsam at consectetur deserunt ab praesentium fugit, maiores quidem
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam recusandae ullam voluptatem
+                            illum
+                            veritatis cum consequuntur ipsam at consectetur deserunt ab praesentium fugit, maiores
+                            quidem
                             unde inventore? Nostrum, fugit quos?</p>
                     </div>
                     <div class="tweet-tools">
@@ -196,8 +217,85 @@
                         <div style="background-color: lavender; width: 3em; height: 3em; border-radius: 50%;"></div>
                     </div>
                     <div class="tweet-text">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam recusandae ullam voluptatem illum
-                            veritatis cum consequuntur ipsam at consectetur deserunt ab praesentium fugit, maiores quidem
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam recusandae ullam voluptatem
+                            illum
+                            veritatis cum consequuntur ipsam at consectetur deserunt ab praesentium fugit, maiores
+                            quidem
+                            unde inventore? Nostrum, fugit quos?</p>
+                    </div>
+                    <div class="tweet-tools">
+                        Add icons here
+                    </div>
+                </article>
+                <article class="tweet">
+                    <div class="profile-pic">
+                        <div style="background-color: lavender; width: 3em; height: 3em; border-radius: 50%;"></div>
+                    </div>
+                    <div class="tweet-text">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam recusandae ullam voluptatem
+                            illum
+                            veritatis cum consequuntur ipsam at consectetur deserunt ab praesentium fugit, maiores
+                            quidem
+                            unde inventore? Nostrum, fugit quos?</p>
+                    </div>
+                    <div class="tweet-tools">
+                        Add icons here
+                    </div>
+                </article>
+                <article class="tweet">
+                    <div class="profile-pic">
+                        <div style="background-color: lavender; width: 3em; height: 3em; border-radius: 50%;"></div>
+                    </div>
+                    <div class="tweet-text">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam recusandae ullam voluptatem
+                            illum
+                            veritatis cum consequuntur ipsam at consectetur deserunt ab praesentium fugit, maiores
+                            quidem
+                            unde inventore? Nostrum, fugit quos?</p>
+                    </div>
+                    <div class="tweet-tools">
+                        Add icons here
+                    </div>
+                </article>
+                <article class="tweet">
+                    <div class="profile-pic">
+                        <div style="background-color: lavender; width: 3em; height: 3em; border-radius: 50%;"></div>
+                    </div>
+                    <div class="tweet-text">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam recusandae ullam voluptatem
+                            illum
+                            veritatis cum consequuntur ipsam at consectetur deserunt ab praesentium fugit, maiores
+                            quidem
+                            unde inventore? Nostrum, fugit quos?</p>
+                    </div>
+                    <div class="tweet-tools">
+                        Add icons here
+                    </div>
+                </article>
+                <article class="tweet">
+                    <div class="profile-pic">
+                        <div style="background-color: lavender; width: 3em; height: 3em; border-radius: 50%;"></div>
+                    </div>
+                    <div class="tweet-text">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam recusandae ullam voluptatem
+                            illum
+                            veritatis cum consequuntur ipsam at consectetur deserunt ab praesentium fugit, maiores
+                            quidem
+                            unde inventore? Nostrum, fugit quos?</p>
+                    </div>
+                    <div class="tweet-tools">
+                        Add icons here
+                    </div>
+                </article>
+                <article class="tweet">
+                    <div class="profile-pic">
+                        <div style="background-color: lavender; width: 3em; height: 3em; border-radius: 50%;"></div>
+                    </div>
+                    <div class="tweet-text">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam recusandae ullam voluptatem
+                            illum
+                            veritatis cum consequuntur ipsam at consectetur deserunt ab praesentium fugit, maiores
+                            quidem
                             unde inventore? Nostrum, fugit quos?</p>
                     </div>
                     <div class="tweet-tools">
@@ -206,11 +304,11 @@
                 </article>
             </section>
         </main>
-    
+
         <aside class="related-infos">
             <section class="search">
                 <form action="#">
-                    <input type="text" placeholder="Search"  class="searchbar" name="sendtweet">
+                    <input type="text" placeholder="Search" class="searchbar" name="sendtweet">
                 </form>
             </section>
             <section class="recommendations">
@@ -242,7 +340,9 @@
     <div id="gdpr-compliance">
         <div class="gdpr-message">
             <h3>Did someone say … cookies?</h3>
-            <p>Twitter and its partners use cookies to provide you with a better, safer and faster service and to support our business. Some cookies are necessary to use our services, improve our services, and make sure they work properly. <a href="#">Show more about your choices.</a></p>
+            <p>Twitter and its partners use cookies to provide you with a better, safer and faster service and to
+                support our business. Some cookies are necessary to use our services, improve our services, and make
+                sure they work properly. <a href="#">Show more about your choices.</a></p>
         </div>
         <div class="gdpr-buttons" onclick="hideComplianceBar()">
             <button class="gdpr-button">
