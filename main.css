@@ -316,6 +316,7 @@ body {
   grid-template:
     "category-meta-data more"
     "news-headline suggested-article-img";
+  gap: 0.5em;
   padding: 1em;
 }
 
