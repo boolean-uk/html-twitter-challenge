@@ -1,0 +1,167 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100%;
+}
+
+/* Left nav pane */
+
+.nav-pane, .main-feed, .related-infos {
+    padding: 1em;
+}
+
+.nav-pane {
+    border-right: 1px lightgray solid; 
+}
+
+.logo-area {
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+.menu-item {
+    display: grid;
+    grid-template-columns: 1fr 6fr;
+    padding: 1em;
+}
+
+.menu-item:hover {
+    background-color: #eee;
+    border-radius: 2em;
+}
+
+.nav-text {
+    padding: 0.5em;
+    font-weight: bold;
+}
+
+.menu-bottom-profile {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding: 1em;
+}
+
+.menu-profile-pic {
+    padding: 1em 0 0 0;    
+}
+
+.profile-name {
+    font-weight: bold;
+}
+
+.twitter-handle {
+    color: gray;
+}
+
+.menu-tweet-button {
+    width: 100%;
+    margin: 0.5em;
+    padding: 1em;
+    color: white;
+    background-color: #1D9BF0;
+    border-radius: 1em;
+    font-weight: bold;
+    border: 0;
+}
+
+.menu-tweet-button:hover {
+    background-color: #8ECDF8;
+}
+
+/* Main Twitter Feed */
+
+.main-tweet-input {
+    width: 80%;
+    height: 2em;
+    padding: 1em;
+    color: gray;
+    border: 1px lightgray solid;
+    border-radius: 2em;
+}
+
+.write-tweet {
+    display: grid;
+    grid-template-areas:
+    'profile-pic main-tweet-input'
+    'write-tweet-toolbar feed-tweet-button';
+    padding: 1em 0 2em 0;
+}
+
+.profile-pic {
+    grid-area: profile-pic;
+}
+
+.main-tweet-input {
+    grid-area: main-tweet-input;
+}
+
+.write-tweet-toolbar {
+    grid-area: write-tweet-toolbar;
+}
+
+.feed-tweet-button {
+    grid-area: feed-tweet-button;
+    margin: 0.5em 2em 0.5em 0;
+    padding: 1em;
+    color: white;
+    background-color: #8ECDF8;
+    border-radius: 1em;
+    font-weight: bold;
+    border: 0;
+}
+
+.feed-tweet-button:hover {
+    background-color: lightgray;
+}
+
+.related-infos {
+    border-left: 1px lightgray solid; 
+}
+
+/* Fixed compliance floater */
+
+.gdpr-compliance {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    background-color: black;
+    color: white;
+    padding: 1em;
+    gap: 1em;
+    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.gdpr-compliance a {
+    color: lightblue;
+}
+
+.gdpr-compliance a:hover {
+    color: white;
+}
+
+.gdpr-buttons {
+    padding: 1em;
+}
+.gdpr-button {
+    width: 100%;
+    margin: 0.5em;
+    padding: 1em;
+    color: black;
+    background-color: lightgray;
+    border-radius: 1em;
+    font-weight: bold;
+    border: 0;
+}
+
+.gdpr-button:hover {
+    background-color: gray;
+}
