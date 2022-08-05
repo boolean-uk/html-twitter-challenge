@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.twitter {
+  display: grid;
+  grid-template:
+    "left main search" /
+    1fr 2fr 1fr;
+}
+
+.left {
+  grid-area: left;
+  border-right: 1px solid;
+  margin: 0px 0px 0px 30px;
+  
+}
+.logo{
+  padding-bottom: 40px;
+  padding-top: 10px;
+}
+
+.menuitem {
+  display: grid;
+  grid-template:
+    "icon navtxt" 60px/
+    50px 60px;
+  margin-top: 10px;
+}
+
+.icon {
+  grid-area: icon;
+}
+
+.icon img {
+  height: 30px;
+}
+
+.navtxt {
+  grid-area: navtxt;
+  margin: 5px 0px 5px 10px;
+}
+
+.main {
+  grid-area: main;
+  border-right: 1px solid black;
+
+}
+.main h2{
+ margin-top: 10px;
+ margin-left:20px ;
+}
+
+.inputfield {
+  margin: 10px;
+  color: gray;
+  grid-area: inputfield;
+}
+
+.search {
+  grid-area: search;
+  margin-top: 40px;
+}
+
+.search p{
+  margin: 10px;
+  background-color: lightgrey;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+  height: 60px;
+}
+
+.twit {
+  display: grid;
+  grid-template:
+    "image details"/
+    1fr 6fr;
+  border-top: 1px solid gray;
+  padding: 10px;
+}
+
+.story {
+  display: grid;
+  grid-template:
+    "image inputfield"
+    "image2 image2"/
+    1fr 6fr;
+  padding: 10px;
+}
+
+.image2 {
+  grid-area: image2;
+}
+
+.image {
+  grid-area: image;
+  text-align: center;
+}
+
+.image img {
+  border-radius: 50%;
+}
+
+
+
+
