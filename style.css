@@ -2,5 +2,164 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: Annlie
+}
+ul {
+    list-style: none;
+}
+.container {
+    display: grid;
+    grid-template: 
+        "left-bar main right-bar" 1fr /
+        1fr 700px 1fr;
+    margin-left: 400px;
+    margin-right: 450px;
+    height: 1000px
+}
+.left-bar {
+    grid-area: left-bar
+}
+.main {
+    grid-area: main;
+    border: solid 1px rgb(226, 226, 226)
+}
+.right-bar {
+    grid-area: right-bar
+}
+.logo, .nav-item {
+    margin-top: 30px;
+}
+.nav-item {
+    width: 300px
+}
+
+
+@font-face {
+    font-family: Annlie;
+    src: url(AnnlieEF-ExtraBoldItalic.ttf);
+}
+.twt {
+    margin: 40px 40px 0px 0px;
+    display: flex;
+    justify-content: center;
+    background-color: blueviolet;
+    filter: contrast(480%);
+    border: solid 4px black;
+    padding: 25px;
+    filter: grayscale(89%);
+    box-shadow: blue 10px 10px;
+    font-family: Annlie;
+    font-size: 30px;
+    color: white
+}
+.nav-item .twt, .home, .whats-happening {
+    padding: 5px;
+    font-size: 25px;
+    display: inline;
+    margin-left: 30px;
+}
+
+
+.make-tweet {
+    display: grid;
+    grid-template:
+        "home home"               30px
+        "avatar whats-happening"  1fr
+        "avatar icon-tweet"       70px /
+        70px 1fr;
+    height: 230px;
+}
+#home {
+    grid-area: home;
+    margin-left: 0px;
+}
+.avatar {
+    grid-area: avatar;
+    margin-top: 20px;
+    margin-left: 10px
+}
+.avatar img {
+    object-fit: cover;
+    width: 50px;
+    border-radius: 50%;
+    filter: drop-shadow(4px 4px 6px rgb(97, 93, 93));
+}
+.whats-happening {
+    grid-area: whats-happening;
+    margin-left: 10px;
+    margin-top: 40px;
+    font-size: 20px;
+    color: grey;
+}
+.icon-tweet {
+    grid-area: icons;
+    display: inline;
+    border-top: solid 1px rgb(167, 163, 163);
+
+}
+.icons {
+    padding-top: 10px;
+    margin-left: 15px;
+    border-top: solid 1px rgb(226, 226, 226)
+}
+
+.iconInd {
+    margin-left: 20px;
+}
+.tweets .iconInd {
+    margin-left: 85px
+}
+
+.icons .twt {
+    display: inline-block;
+    font-size: 15px;
+    margin: 10px 10px 60px 250px;
+    padding: 5px 10px 20px 10px;
+    height: 20px;
+    box-shadow: blue 4px 4px;
+}
+.tweets {
+    display: grid;
+    grid-template:
+        "avatar user" 20px
+        "avatar tweet-content" 1fr
+        "avatar reaction" 80px /
+        70px 1fr;
+    padding-top: 10px;
+    border-top: solid 1px rgb(226, 226, 226);
+}
+.tweets .avatar {
+    margin-top: 0px
+}
+.user {
+    grid-area: user;
+    margin-left: 10px;
+    line-height: 1.5
+}
+.tweet-content {
+    grid-area: tweet-content;
+    margin-left: 10px;
+    color: red;
+}
+.reaction {
+    grid-area: reaction;
+    margin-left: 10px;
+    margin-top: 20px
+}
+.tweets .avatar img {
+    filter: grayscale(100%);
+}
+
+
+.right-bar {
+    margin-left: 30px
+}
+.search {
+    margin-top: 5px
+}
+.search, .side-item {
+    margin-bottom: 40px;
+}
+.home {
+    colour
 }
