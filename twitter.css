@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div.grid-container {
+    display: grid;
+    grid-template:
+        "left-hand-menu tweet-feed right-side-bar"
+        / 1fr 2fr 1fr;
+    width: 87em;
+    height: 100vh;
+    margin: auto;
+    gap: 1em;
+    border: 1px solid rgb(185, 185, 185);
+}
+
+/* LEFT HAND MENU */
+.left-hand-menu {
+    grid-area: left-hand-menu;
+
+    height: 100vh;
+    font-weight: bold;
+}
+.logo-area {
+    height: 3rem;
+    padding-left: 25%;
+}
+.logo-area img {
+    width: 2.2rem;
+    padding-top: 0.5rem;
+}
+.menu-items-cont {
+    padding-left: 25%;
+}
+.menu-item {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    height: 3.5rem;
+    align-items: center;
+}
+
+/* IMPLEMENTED "HOVER" STATE */
+.menu-item:hover {
+    background-color: rgb(222, 222, 222);
+}
+.tweet-left:hover{
+    background-color: rgb(222, 222, 222);
+    }
+/* IMPLEMENTED "SELECETED" STATE */
+.menu-item div:active {
+    color:#1d9bf0 ;
+    font-size: 1.5rem;
+}
+.tweet-left:active {
+    color:#1d9bf0;
+    font-size: 1.5rem;
+}
+
+.menu-icon-left img {
+    width: 2.2rem;
+}
+.menu-text-left {
+    padding-left: 1rem;
+}
+button.tweet-left  {
+    display: block;
+    border: none;
+    background-color: #1d9bf0;
+    color: #fff;
+    width: 70%;   
+    padding: 1rem 0;
+    margin: 1rem auto;
+    border-radius: 2rem; 
+    font-weight: bold;
+}
+
+/* TWEET-FEED-SECTION */
+
+.tweet-feed {
+    grid-area: tweet-feed;
+    height: 100vh;
+}
+.tweet-feed .tweet-feed-header .tweet-feed-items {
+    display: flex;
+    align-items: center;  
+    justify-content:space-between;
+    padding: 1rem;
+    border-bottom: 0.1rem solid rgb(191, 191, 191);
+}
+.my-tweet-cont {
+    display: flex;
+    align-items: center;
+    padding: 1rem 0 0 1rem;
+}
+.my-tweet-input input {
+    padding: 1rem 21rem 1rem 1rem;
+    border: none;
+    border-bottom: 1px solid #1d9bf0;
+}
+.my-tweet-input-cont {
+    display: flex;
+    justify-content:space-between;
+    padding-right: 2rem;
+    border-bottom: 0.7rem solid #1d9bf0;
+}
+.my-tweet-input-toolbar {
+    display: flex;
+    padding-left: 4rem;
+    padding-top: 1rem;
+    height: 3rem;
+}
+#profile-pic {
+    width: 4rem;
+    border-radius: 50%;
+}
+.my-tweet-input-toolbar-icon {
+    width: 2.5rem;
+}
+.my-tweet-input-button-cont {
+    margin: 0.5rem 0 1rem 0;
+}
+button.my-tweet-input-button {
+    background-color: #1d9bf0;
+    border: none;
+    color: #fff;
+    border-radius: 2rem;
+    width: 7rem;
+    padding: 0.7rem 0;
+    font-weight: bold;
+}
+
+/* USER-TWEET */ 
+
+.user-tweet {
+    display: grid;
+
+    grid-template:
+        "profile-pic user-tweet-text"
+        "user-tweet-toolbar user-tweet-toolbar" / 5rem 3fr;
+        padding: 1rem 0 0 1rem;
+} 
+.tweet-feed {
+    overflow-y: scroll;
+    height: 100vh;
+}
+.user-tweet-toolbar {
+    display: grid;
+    grid-area: user-tweet-toolbar;
+
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    padding: 1rem;
+}
+
+/* RIGHT-SIDE-BAR */
+
+.right-side-bar {
+    grid-area: right-side-bar;
+    padding: 0.5rem;
+    
+}
+.search-bar-cont {
+    margin: 1rem 0;
+}
+.searchbar {
+    border-radius: 2rem;
+    width: 95%;
+    padding: 0.5rem 0 0.5rem 1rem;
+}
+.form {
+    display: flex;
+    flex-direction: row;
+  }
+
+.search-button {
+    background: transparent;
+    border: none;
+    outline: none;
+    margin-left: -2rem;
+  }
+.search-button img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+.articles-cont {
+    background-color: rgb(234, 234, 234);
+    border-radius: 1rem;
+    padding: 1rem;
+    height: 44rem;
+  }
+.articles-cont img{
+    width: 4rem;
+  }
+ .suggestions {
+    display: grid;
+    grid-template: 
+    "article-type article-type"
+    "article-snippet article-image";
+    gap: 0.5em;
+    padding: 1em;
+}
+.article-type {
+    grid-area: article-type;
+    color: grey;
+}
+.article-snippet {
+    grid-area: article-snippet;
+}
+.article-image {
+    grid-area: article-image;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 880px) {
+    div.grid-container {
+        display: grid;
+        grid-template:
+        "tweet-feed"
+        / 1fr;
+         width: 100%;
+    }
+    .left-hand-menu {
+        display: none;
+    }
+    .right-side-bar {
+        display: none;
+    }
+ }
