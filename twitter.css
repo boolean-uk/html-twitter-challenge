@@ -162,7 +162,6 @@ button.my-tweet-input-button {
 .right-side-bar {
     grid-area: right-side-bar;
     padding: 0.5rem;
-    
 }
 .search-bar-cont {
     margin: 1rem 0;
@@ -191,7 +190,7 @@ button.my-tweet-input-button {
     background-color: rgb(234, 234, 234);
     border-radius: 1rem;
     padding: 1rem;
-    height: 44rem;
+    height: 39rem;
   }
 .articles-cont img{
     width: 4rem;
