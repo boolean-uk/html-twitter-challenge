@@ -26,7 +26,7 @@
         grid-template:
         "left-column main-column" /
         50px     600px;
-        background-color: aqua;
+        /* background-color: aqua; */
         width: 650px;
     }
     .right-column {
