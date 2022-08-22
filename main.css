@@ -45,6 +45,7 @@ body {
 
 .logo-area:hover {
   background-color: #e8f5fd;
+  cursor: pointer;
 }
 
 .logo-area svg {
@@ -64,6 +65,7 @@ body {
 .menu-bottom-profile:hover {
   background-color: #eee;
   border-radius: 2em;
+  cursor: pointer;
 }
 
 .nav-icon {
@@ -125,6 +127,7 @@ body {
 
 .menu-tweet-button:hover {
   background-color: #8ecdf8;
+  cursor: pointer;
 }
 
 
@@ -206,6 +209,7 @@ body {
 
 .write-tool-column svg:hover {
   background-color: #e8f5fd;
+  cursor: pointer;
 }
 
 .feed-tweet-button-area {
@@ -225,6 +229,7 @@ body {
 
 .feed-tweet-button:hover {
   background-color: lightgray;
+  cursor: pointer;
 }
 
 .tweet {
@@ -238,6 +243,7 @@ body {
 
 .tweet:hover {
   background-color: #eee;
+  cursor: pointer;
 }
 
 .profile-pic {
@@ -272,6 +278,7 @@ body {
 .tool-column svg:hover {
   background-color: lightgray;
   fill: white;
+  cursor: pointer;
 }
 
 
@@ -322,6 +329,7 @@ body {
 
 .suggested-article:hover {
   background-color: #ddd;
+  cursor: pointer;
 }
 
 .category-meta-data {
@@ -389,6 +397,7 @@ body {
 
 .message-tool svg:hover {
   background-color: #ccc;
+  cursor: pointer;
 }
 
 /* Fixed compliance floater */
@@ -412,6 +421,7 @@ body {
 
 #gdpr-compliance a:hover {
   color: white;
+  cursor: pointer;
 }
 
 .gdpr-buttons {
@@ -430,6 +440,7 @@ body {
 
 .gdpr-button:hover {
   background-color: gray;
+  cursor: pointer;
 }
 
 .instructions-for-teacher {
