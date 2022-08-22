@@ -108,7 +108,6 @@ a{
 }
 p :hover{
     background-color: #4dcfe0;
-   
     border-radius: 30px;
 }
 
@@ -287,7 +286,7 @@ p :hover{
 
 
 @media screen and (max-width: 800px){
-    .left-bar p, .left-bar h3, .left-bar h2{
+    .left-bar p, .left-bar h3, .left-bar h2, .left-bar .h3-tweet{
         display: none;
     }
     .left-bar{
@@ -335,3 +334,28 @@ p :hover{
        display: none;
     }
 }
+@media screen and (min-width: 950px){
+    .container{
+        display: grid;
+        grid-template: 
+        "header header header" 35px
+        "left-bar main right-bar" 1fr /
+        250px 400px 300px;
+    }
+   
+    .right-bar{
+        margin-right: 400px;
+    }
+    .header{
+        grid-area: header;
+        display: grid;
+        grid-template-columns: 250px 400px 300px;
+        grid-template-rows: 35px;
+        top: 0px;
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+    }
+
+}
+    
