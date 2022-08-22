@@ -61,6 +61,10 @@ div.left-menu .navigation {
 .nav-button .nav-button-text {
     margin: 13px 10px 10px 10px;
 }
+.nav-button .nav-button-text:hover  {
+    font-weight: 800;
+    cursor: pointer;
+}
 .navigation img {
     height: 30px;
 }
