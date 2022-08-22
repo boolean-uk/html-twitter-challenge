@@ -7,14 +7,18 @@
 ul {
     list-style: none;
 }
+a {
+    text-decoration: none;
+}
+
 .container {
     display: grid;
     grid-template: 
         "left-bar main right-bar" 1fr /
-        1fr 700px 1fr;
-    margin-left: 400px;
-    margin-right: 450px;
-    height: 1000px
+        300px 700px 300px;
+    margin: auto;
+    height: 1000px;
+    place-content: center;
 }
 .left-bar {
     grid-area: left-bar
@@ -127,10 +131,9 @@ ul {
         70px 1fr;
     padding-top: 10px;
     border-top: solid 1px rgb(226, 226, 226);
+    margin: auto
 }
-.tweets .avatar {
-    margin-top: 0px
-}
+
 .user {
     grid-area: user;
     margin-left: 10px;
@@ -155,8 +158,17 @@ ul {
     margin-left: 30px
 }
 .search {
-    margin-top: 5px
+    margin-top: 20px;
 }
 .search, .side-item {
-    margin-bottom: 40px;
+    color: white;
+    margin-bottom: 20px;
+    background-color: grey;
+    padding: 20px
 }
+.nav-item:hover, .twt:hover {
+    color: #4eb6ac;
+    border-radius: 50%;
+    filter: invert(100%)
+}
+
