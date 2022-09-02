@@ -1,0 +1,282 @@
+/*
+CSS for Emo Twitter.
+
+General styling:
+*/
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0;
+    font-family: "Helvetica Neue", Roboto, "Segoe UI", Calibri, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+/*
+Site layout:
+*/
+div.page {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 200px minmax(300px, 3fr) 300px 1fr;
+}
+/*
+Left Menu:
+*/
+div.left-menu {
+    display: grid;
+    grid-template-rows: 60px 500px 1fr 75px 1fr;
+}
+.logo img {
+    height: 60px;
+}
+.logo span {
+    font-size: 15px;
+    margin: 10px;
+}
+.left-menu .logo {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+div.left-menu .navigation {
+    /* border: dashed 2px seagreen; */
+    display: grid;
+    grid-template-rows: repeat(8, 1fr) 2fr;
+}
+.navigation .nav-button {
+    display: grid;
+    grid-template-columns: auto 1fr;
+}
+.nav-button .nav-button-text {
+    margin: 13px 10px 10px 10px;
+}
+.nav-button .nav-button-text:hover  {
+    font-weight: 800;
+    cursor: pointer;
+}
+.navigation img {
+    height: 30px;
+}
+.navigation span {
+    font-size: larger;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+.navigation .tweet {
+    align-self: center;
+}
+.navigation #tweet {
+    margin-right: 10px;
+    padding: 10px 60px 10px 60px;
+    font-size: 20px;
+    color: white;
+    border: solid 2px black;
+    border-radius: 40px;
+    background-color: black;
+}
+.left-menu .profile {
+    /* border: dashed 2px seagreen; */
+    display: grid;
+    grid-template: 
+    "photo name more" 1fr
+    "photo username more" 1fr /
+    50px 1fr 30px ;
+}
+.profile .photo {
+    grid-area: photo;
+}
+.profile .name {
+    grid-area: name;
+    margin: 10px 10px 10px 10px;
+}
+.name span{
+    font-weight: 800;
+}
+.profile .username {
+    grid-area: username;
+    margin: 0 10px 10px 10px;
+    color: grey;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.profile .more {
+    grid-area: more;
+    margin-left: 0px;
+    align-self: center;
+    height: 20px;
+    padding-right: 10px;
+}
+.more img {
+    
+}
+/*
+Main layout:
+*/
+div.main {
+    display: grid;
+    grid-template-rows: 130px 1fr;
+    scroll-behavior: smooth;
+}
+.main .home {
+    display: grid;
+    grid-template-rows: 40px 1fr 50px;
+}
+.home .home-header {
+    display: grid;
+    grid-template-columns: auto 30px;
+    border: 1px solid rgba(0, 0, 0, 0.494);
+    padding: 0px 10px
+}
+.home-header span {
+    font-size: x-large;
+    font-weight: 900;
+}
+.home .home-post {
+    display: grid;
+    grid-template-columns: 50px auto;
+    border: 1px solid rgba(0, 0, 0, 0.494);
+    border-bottom: none;
+    padding: 0px 10px
+}
+.home-post input{
+    border: none;    
+    margin-left: 20px;
+    font-size: large;
+}
+.home .home-options {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50px repeat(5, 20px) 1fr 70px;
+    gap: 6px;
+    border: 1px solid rgba(0, 0, 0, 0.494);
+    border-top: none;
+    padding: 0px 10px;
+    
+}
+.home #tweet-post {
+    height: 40px;
+    padding: 8px;
+    margin: 5px;
+    font-size: 14px;
+    color: white;
+    border: solid 2px black;
+    border-radius: 40px;
+    background-color: black;
+    text-align: center;
+    align-self: center;
+}
+.home .feed {
+    display: grid;
+}
+.feed .tweet {
+    margin-top: 50px;
+    display: grid;
+    grid-template: 
+    "photo name username time empty-space" 30px
+    "photo message message message message" auto
+    "icons icons icons icons icons" 30px /
+    50px 100px 120px 80px auto;
+    padding: 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.509);
+}
+.tweet .photo {
+    grid-area: photo;
+}
+.tweet .message {
+    grid-area: message;
+}
+.tweet .icons {
+    height: 30px;
+    grid-area: icons;
+    display: grid;
+    grid-template-columns: 50px repeat(4, 1fr);
+}
+.message .user {
+    color: rgba(128, 128, 128, 0.795);
+}
+.icons img {
+    position: relative;
+    object-position: left;
+    height: 20px;
+}
+/*
+Right menu layout:
+*/
+.right-menu {
+    display: grid;
+    grid-template-rows: 50px auto 1fr;
+}
+.right-menu .search {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    border: rgba(128, 128, 128, 0.35) solid 2px;
+    border-radius: 40px;
+    background-color: rgba(128, 128, 128, 0.35);
+    margin-left: 20px;
+    margin-top: 5px;
+}
+.search input {
+    border: none;
+    height: 80%;
+    width: 80%;
+    align-self: center;
+    background-color: rgb(211 211 211);
+    padding-left: 5px;
+
+}
+.search img {
+    height: 25px;
+    align-self: center;
+}
+.right-menu .trends {
+    display: grid;
+    grid-template-rows: 50px repeat(3, 140px) 50px;
+    border: 2px rgba(128, 128, 128, 0.35) solid;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-top: 15px;
+    background-color: rgba(128, 128, 128, 0.308);
+}
+.trends span {
+    font-size: 1.5rem;
+    align-self: center;
+    padding-left: 10px;
+}
+.trends .news {
+    margin: 10px;
+}
+.trends a {
+    align-self: center;
+    color: rgba(0, 0, 0, 0.495);
+}
+.trends a span {
+    font-size: larger;
+}
+/*
+Media queries:
+*/
+
+@media screen and (max-width: 1060px) {
+    div.page {
+        width: 100vw;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 200px minmax(300px, 3fr) 1fr;
+    }
+
+    .right-menu {
+        display: none;
+    }
+  }
