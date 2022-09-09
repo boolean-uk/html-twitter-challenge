@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: grid;
+    grid-template: 
+    "header header header" 35px
+    "left-bar main right-bar" 1fr /
+    250px 1fr 300px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+       /* HEADER */
+.header{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 250px 1fr 300px;
+    grid-template-rows: 35px;
+    top: 0px;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+.logo{
+    align-self: center;
+    margin-left: 60px;
+    margin-top: 5px;
+}
+.home{
+    max-width: 360px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid #eceef0;
+    padding: 9px;
+}
+.header h1{
+    font-size: 15px;
+}
+.sparkles{
+    justify-self: end;
+    margin-right: 30px;
+    margin-top: 4px;
+}
+.header div, .header .lence{
+    align-self: center;
+}
+.search{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    background-color: #eceef0;
+    margin-left: 10px;
+    margin-right: 50px;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-bottom: 5px;
+    border-radius: 15px;
+
+}
+.search p{
+    font-size: 13px;
+}
+
+
+        /* LEFT BAR */
+
+
+.left-bar{
+    grid-area: left-bar;
+    display: grid;
+    grid-template-rows: repeat(8, 40px) 30px;
+    align-items: center;
+    padding-left: 60px;
+    height: 100%;
+}
+.left-bar h2{
+    
+    font-size: 18px;
+    align-self: end;
+    margin-left: 10px;
+    margin-top: 8px;
+}
+.left-bar div{
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    align-items: center;
+}
+.left-bar p{
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.h3-tweet{
+    color: white;
+    background-color: #4dcfe0;
+    font-size: 12px;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 60px;
+    padding: 5px 40px 5px 40px;
+    border-radius: 30px;
+    
+}
+p :hover{
+    background-color: #4dcfe0;
+    border-radius: 30px;
+}
+
+
+
+        /* MAIN  */
+
+.main{
+    grid-area: main;
+    grid-template-rows: repeat(4,60px);
+    min-width: 270px;
+    max-width: 360px;
+    
+}
+.write-tweet{
+    display: grid;
+    grid-template: 
+    "profile-pic tweet" 30px
+    "profile icons" 30px /
+    50px 1fr;
+    border: solid 1px #eceef0;
+    border-bottom: 4px solid #eceef0;
+    padding-top: 10px;
+    padding-bottom: 3px;
+}
+.profile-pic{
+    grid-area: profile-pic;
+    align-self: center;
+    place-self: center;
+
+}
+.tweet{
+    grid-area: tweet;
+    align-self: center;
+    border-bottom: 1px solid #eceef0;
+    padding-bottom: 10px;
+}
+.icons{
+    grid-area: icons;
+    display: grid;
+    align-self: center;
+    padding-top: 5px;
+    grid-template-columns: 1fr 70px;
+}
+.icons img{
+    margin-right: 9px;
+    justify-self: start;
+}
+.post-tweet{
+    color: white;
+   border-radius: 20px;
+   background-color: #4dcfe0;
+   padding: 3px 10px 3px 10px;
+   justify-self: center;
+   font-size: 13px;
+}
+.post{
+    display: grid;
+    grid-template: 
+    "videogame comment" 30px
+    "videogame icons-main" 30px /
+    50px 1fr;
+    border: solid 1px #eceef0;
+    padding-top: 10px;
+}
+.videogame{
+    grid-area: videogame;
+    align-self: center;
+    place-self: center;
+    margin-bottom: 30px;
+}
+.comment{
+    grid-area: comment;
+    font-size: 11px;
+}
+.icons-main{
+    grid-area: icons-main;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+}
+.in-grey{
+    color: #888888;
+}
+.in-blue{
+    color: #4dcfe0;
+}
+
+.lara{
+    border-radius: 50%;
+}
+
+
+        /* RIGHT BAR */
+
+.right-bar{
+    grid-area: right-bar;
+    display: grid;
+    grid-template-rows: 255px 200px;
+}
+.whats-up {
+    display: grid;
+    grid-template-rows: 30px repeat(4, 1fr) 20px;
+    background-color:  #eceef0;
+    margin: 15px;
+    border-radius: 15px;
+}
+.whats-up div h2{
+    align-self: center;
+    margin-top: 5px;
+}
+.whats-up h2{
+    align-self: center;
+    font-size: 15px;
+    margin-left: 20px;
+   
+}
+.whats-up span{
+    font-size: 13px;
+    margin-left: 13px;
+}
+.in-blue{
+    color: #4dcfe0;
+}
+.border{
+    padding-bottom: 5px;
+    border-top: 1px solid black;
+}
+.right-bar a :hover{
+    background-color: #4dcfe0;
+}
+
+.border.bottom{
+    border-bottom: 1px solid black;
+}
+
+
+.who-to-follow{
+    display: grid;
+    grid-template-rows: 30px repeat(3, 1fr) 30px;
+    background-color:  #eceef0;
+    margin: 10px;
+    border-radius: 15px;
+}
+.who-to-follow h3{
+    font-size: 15px;
+    margin-left: 30px;
+    margin-top: 5px;    
+}
+.who-to-follow span{
+    font-size: 10px;
+}
+.profile-to-follow{
+    display: grid;
+    grid-template-columns: 50px 1fr 1fr;
+    place-items: center;
+}
+.profile-to-follow img{
+    margin-left: 5px;
+    margin-top: 3px;
+}
+.profile-to-follow p{
+    color: white;
+    background-color: #4dcfe0;
+    padding-right: 10px;
+    text-align: center;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+.who-to-follow span{
+    font-size: 13px;
+    margin-left: 13px;
+}
+
+          /* MEDIA */
+
+
+@media screen and (max-width: 800px){
+    .left-bar p, .left-bar h3, .left-bar h2, .left-bar .h3-tweet{
+        display: none;
+    }
+    .left-bar{
+        width: 100px;
+    }
+    .container{
+        display: grid;
+        grid-template: 
+        "header header header" 35px
+        "left-bar main right-bar" 1fr /
+        100px 1fr 300px;
+    }
+    .header{
+        grid-area: header;
+        display: grid;
+        grid-template-columns: 100px 1fr 300px;
+        grid-template-rows: 35px;
+        top: 0px;
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+    }
+    .home{
+        min-width: 270px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .right-bar{
+        display: none;
+    }
+    .header{
+        grid-area: header;
+        display: grid;
+        grid-template-columns: 100px 1fr 1fr;
+        grid-template-rows: 35px;
+        top: 0px;
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 550px) {
+    .header .search{
+       display: none;
+    }
+}
+@media screen and (min-width: 950px){
+    .container{
+        display: grid;
+        grid-template: 
+        "header header header" 35px
+        "left-bar main right-bar" 1fr /
+        250px 400px 300px;
+    }
+   
+    .right-bar{
+        margin-right: 400px;
+    }
+    .header{
+        grid-area: header;
+        display: grid;
+        grid-template-columns: 250px 400px 300px;
+        grid-template-rows: 35px;
+        top: 0px;
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+    }
+
+}
+    
