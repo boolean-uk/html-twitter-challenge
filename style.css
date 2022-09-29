@@ -1,5 +1,8 @@
 :root {
   --colour-primary: #1da1f2;
+  --colour-hover: #ddd;
+
+  --border-grey: 1px solid #ddd;
 }
 
 * {
@@ -19,7 +22,7 @@ body {
 .container {
   height: 100vh;
   display: grid;
-  grid-template-columns: 400px 1fr 400px;
+  grid-template-columns: 400px 1fr 500px;
   grid-template-rows: 1fr;
 }
 
@@ -37,7 +40,9 @@ body {
 }
 
 .main {
-  background-color: #50ff2250;
+  /* background-color: #50ff2250; */
+  border-left: var(--border-grey);
+  border-right: var(--border-grey);
 }
 
 .newsfeed {
@@ -56,7 +61,7 @@ body {
 }
 
 .main-icon:hover {
-  background-color: #ddd;
+  background-color: var(--colour-hover);
 }
 
 .icon {
@@ -66,6 +71,11 @@ body {
 
 h2 {
   font-weight: 200;
+  font-size: 20px;
+}
+
+h3 {
+  font-weight: 700;
   font-size: 20px;
 }
 
@@ -83,7 +93,7 @@ h2 {
 }
 
 .menu-item:hover {
-  background-color: #ddd;
+  background-color: var(--colour-hover);
 }
 
 .tweet-btn {
@@ -116,7 +126,7 @@ h2 {
 }
 
 .user-btn:hover {
-  background-color: #ddd;
+  background-color: var(--colour-hover);
 }
 
 .user-btn img {
@@ -138,6 +148,70 @@ h2 {
 .user-icon {
   font-size: 20px;
   justify-self: end;
+}
+
+/***************************************************/
+/* MAIN SECTION */
+/***************************************************/
+
+.latest {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+
+.latest-icon {
+  font-size: 22px;
+}
+
+.tweet-box {
+  padding: 15px;
+  display: grid;
+  grid-template-columns: 70px 1fr 100px;
+  align-items: center;
+  row-gap: 20px;
+  border-bottom: var(--border-grey);
+}
+
+.tweet-box img {
+  height: 50px;
+  border-radius: 50%;
+}
+
+.tweet-box p {
+  color: #555;
+  font-size: 19px;
+}
+
+.tweet-icons {
+  grid-column: 2 / 3;
+  display: flex;
+  gap: 15px;
+}
+
+.tweet-icon {
+  color: var(--colour-primary);
+  font-size: 20px;
+}
+
+.main-tweet-btn {
+  background-color: var(--colour-primary);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 1s;
+
+  justify-self: end;
+}
+
+.main-tweet-btn:hover {
+  background-color: #2886c0;
 }
 
 /***************************************************/
