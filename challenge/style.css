@@ -47,7 +47,7 @@ button {
 }
 .main {
   border: gray solid 1px;
-  height: 100vh;
+  height: 100%;
   display: grid;
   grid-template-rows: 50px 15% auto;
 }
@@ -105,7 +105,8 @@ ul.icons {
   right: 10%;
   bottom: 20pxS;
 }
-.first {
+.first,
+.second {
   display: grid;
   grid-template:
     "profile_photos content" 0.8fr
