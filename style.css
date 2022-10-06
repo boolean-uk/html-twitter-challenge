@@ -10,21 +10,22 @@ body {
   height: 100vh;
   font-family: sans-serif;
   padding-left: 70px;
+
 }
 
 .logo {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  margin-left: 10px;
+  margin-left: 28px;
+  margin-bottom: 20px;
+  margin-top: 10px;
 }
 
 .left {
-  border: 3px dotted blue;
+  border: 0.1px solid rgb(232, 231, 231);
+  background-color: white;
 }
-ul li {
-    padding: 17px;
-    place-items: center;
-}
+
 .navbar {
   display: grid;
   grid-template-columns: 4fr 10fr;
@@ -32,26 +33,41 @@ ul li {
 }
 
 .nav-icons {
+display: grid;
+grid-auto-flow: row;
+row-gap: 20px;
+
   margin-left: 10px;
   text-align: center;
   list-style-type: none;
 }
 
 .navbar .nav-buttons {
-  border: 2px solid red;
   display: grid;
   grid-auto-flow: row;
-  row-gap: 7px;
+  row-gap: 31px;
+  padding-top: 10px;
+
+  font-size: 19px;
+  
+}
+.homebutt {
+    color: green;
 }
 
-.more-butt {
-    border: 2px solid black;
-    border-radius: 50%;
-
-}
 
 .twtbutton {
   border: 3px dotted green;
   text-align: center;
   margin-top: 40px;
+
+
+  background-color: green;
+  color: white;
+  padding: 15px;
+  border-radius: 25px;
+  width: 250px;
+
+  margin-left: 15px;
+
 }
