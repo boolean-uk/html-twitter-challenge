@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="container">
-      <div class="left-panel">
+      <div class="left-panel noselect">
         <svg xmlns="http://www.w3.org/2000/svg" viewbox="40 40 512 512 ">
           <title>Logo Twitter</title>
           <path
@@ -19,7 +19,7 @@
 
         <div class="left-menu"><ion-icon name="home"></ion-icon> Home</div>
         <div class="left-menu">
-          <ion-icon name="compass-outline"></ion-icon>Explore
+          <span><ion-icon name="compass-outline"></ion-icon>Explore </span>
         </div>
         <div class="left-menu">
           <ion-icon name="notifications-outline"></ion-icon> Notifications
@@ -36,12 +36,39 @@
         <div class="left-menu">
           <ion-icon name="person-outline"></ion-icon>Profile
         </div>
-        <div class="left-menu">More</div>
+        <div class="left-menu">
+          <ion-icon name="ellipsis-horizontal-circle-outline"></ion-icon>More
+        </div>
         <div class="tweet">Tweet</div>
-        <div class="profile">Anon</div>
+        <div class="profile">
+          <img
+            src="assets/pexels-mohamed-abdelghaffar-771742.jpg"
+            width="20"
+            alt="profile pic"
+          />
+          <h3>Anon</h3>
+          <p>@anon12345</p>
+          <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
+        </div>
       </div>
-      <div class="main">main</div>
-      <div class="right-panel">right</div>
+      <div class="main">
+        <div class="header">
+          <h2>
+            Home
+            <ion-icon name="sparkles-outline"></ion-icon>
+          </h2>
+        </div>
+        <div class="main-content">
+          <div class="writetweet"></div>
+          <div class="tweetfeed"></div>
+        </div>
+      </div>
+
+      <div class="right-panel">
+        <div class="search"></div>
+        <div class="whats-happening"></div>
+        <div class="who-to-follow"></div>
+      </div>
     </div>
     <!--code to use icon library-->
     <script
