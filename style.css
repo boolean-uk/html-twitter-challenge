@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100vh;
+    font-family: sans-serif;
+}
+
+.left {
+
+    border: 3px dotted blue;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+}
+
+.nav-icons {
+    border: 2px dotted red;
+}
+
+.nav-buttons {
+    border: 2px dotted red;
+}
+
+.twtbutton {
+    border: 3px dotted green;
+    
+}
