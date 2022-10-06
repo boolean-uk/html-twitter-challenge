@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  height: 100vh;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.left-panel {
+  display: grid;
+  grid-auto-rows: min-content;
+
+  padding-left: 40%;
+  row-gap: 5px;
+}
+
+svg {
+  fill: rgb(29, 155, 240);
+  max-width: 40px;
+  max-height: 40px;
+}
+ion-icon {
+  margin-right: 10px;
+}
+.left-menu {
+  padding: 10px;
+}
