@@ -1,0 +1,67 @@
+body {
+  display: grid;
+  grid-template:
+    "header header header" 50px
+    "left-bar main right-bar" 1fr /
+    200px 1fr 200px;
+  height: 100vh;
+  font-family: sans-serif;
+  margin: 0;
+  background: black;
+  /* border: solid 2px #2F3336; */
+  color: white;
+}
+
+
+.header {
+  grid-area: header;
+  display: grid;
+  grid-template: 
+    "img h1 search-bar" 50px /
+   200px 1fr 200px;
+}
+
+.header img {
+  width: 60px;
+}
+
+.header h1 {
+  /* border-left: solid 1px #2F3336; */
+  /* border-right: solid 1px #2F3336; */
+  font-size: large;
+}
+
+.header .search-bar {
+  display: inline-flex;
+  place-items: center;
+  background: #202327;
+  border-radius: 50px;
+  margin: 10px;
+}
+
+.header .search-bar p {
+  margin: 0;
+  color: #71767B;
+  text-align: center;
+  line-height: 2;
+}
+
+.header .search-bar img {
+  width: 20px;
+  margin: 15px;
+}
+
+.main {
+  border-top: solid 1px #2F3336;
+  border-left: solid 1px #2F3336;
+  border-right: solid 1px #2F3336;
+  height: 400px;
+}
+
+.filter-grey {
+  filter: invert(48%) sepia(8%) saturate(295%) hue-rotate(169deg) brightness(94%) contrast(85%);
+}
+
+.filter-blue {
+  filter: invert(45%) sepia(83%) saturate(1617%) hue-rotate(179deg) brightness(100%) contrast(89%);
+}
