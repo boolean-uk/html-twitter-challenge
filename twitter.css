@@ -1,6 +1,11 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+font-family: sans-serif;
 }
 
 .container{
@@ -13,7 +18,7 @@
 
 .left-bar{
 grid-area: left-bar;
-background-color: lightskyblue;
+background-color: lightskyblue;;
 }
 
 .feed{
@@ -25,3 +30,11 @@ background-color: lightgrey;
 grid-area: right-bar;
 background-color: lightslategray;
 }
+
+.icon{
+    width: 50px;
+    height: 50px;
+    gap: 20px;
+}
+
+
