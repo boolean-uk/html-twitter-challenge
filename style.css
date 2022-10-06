@@ -1,0 +1,56 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+div {
+    font-size: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template:
+        "left main right" 1fr /
+        1fr 3fr 1fr 
+}
+.left {
+    grid-area: left;
+    background-color: antiquewhite;
+    /* text-align: center;
+    gap:5px; */
+    
+}
+.main {
+    grid-area: main;
+    background-color: aquamarine;
+}
+.right {
+    grid-area: right;
+    background-color: bisque;
+}
+.home, .explore, .notifications, .message, .bookmark, .profile, .more {
+    
+    color:black;
+    padding: 7px;
+    border: none;
+    margin-left: 25%;
+    font-size: 15px;
+    width: 100px;
+    text-align: center;  
+}
+.tweet {
+    color: white;
+    background-color: pink;
+    padding: 7px;
+    border-radius: 20px;
+    border: solid;
+    border-color: pink;
+    margin-left: 25%;
+    font-size: 20px;
+    width: 100px;
+    text-align: center;  
+
+}
+/* .home, .explore, .notifications, .message, .bookmark, .profile, .more, :hover {
+    
+} */
