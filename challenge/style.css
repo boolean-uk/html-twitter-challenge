@@ -6,29 +6,137 @@
 .container {
   height: 100vh;
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 0.8fr 2fr 1fr;
 }
 /* LEFT MENU */
 
 .left_menu {
+  margin-left: 50px;
 }
 .fa-twitter {
   padding: 20px;
-  color: #09dcf8;
+  color: rgb(29, 155, 240);
 }
-.fa-house-user {
+i {
   font-size: 15px;
   display: inline;
 }
 nav a {
   display: grid;
+  grid-template-columns: 50px auto;
   text-decoration: none;
   padding: 15px;
 }
-/* MAIN */
-.main {
-  background-color: rgb(8, 114, 114);
+nav a:hover {
+  text-decoration: underline;
+  color: #09dcf8;
+  font-weight: 700;
 }
+/* nav a:visited {
+  color: #2604e7; */
+/* } */
+
+/* MAIN */
+button {
+  display: flexbox;
+  width: 150px;
+  height: 60px;
+  border-radius: 35%;
+  background-color: rgb(29, 155, 240);
+  border: none;
+}
+.main {
+  border: gray solid 1px;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 50px 15% auto;
+}
+
+.top {
+  display: grid;
+  grid-template:
+    "photo Whats_Happening" 50%
+    "photo icons" 50%/
+    120px auto;
+}
+
+.Whats_Happening {
+  grid-area: Whats_Happening;
+  border-bottom: gray solid 1px;
+  background-color: bisque;
+}
+.photo {
+  grid-area: photo;
+  position: relative;
+  margin: 12%;
+}
+.photo > img {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.home_header {
+  font-size: large;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 700;
+  background-color: blueviolet;
+}
+div > .icons {
+  grid-area: icons;
+  background-color: beige;
+  position: relative;
+}
+ul.icons {
+  list-style: none;
+  display: inline-flex;
+  gap: 20px;
+}
+.icons i {
+  place-content: center;
+  position: relative;
+  top: 30px;
+}
+.icons button {
+  display: inline-block;
+  position: absolute;
+  top: 20px;
+  right: 10%;
+  bottom: 20pxS;
+}
+.first {
+  display: grid;
+  grid-template:
+    "profile_photos content" 0.8fr
+    "profile_photos reactions" 0.5fr/
+    120px auto;
+}
+.profile_photos {
+  display: grid;
+  grid-area: profile_photos;
+  place-items: center;
+}
+.profile_photos img {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* right menu///////////////////////// */
 .right_menu {
+  display: grid;
   background-color: aqua;
+  grid-template-rows: 0.5fr 4fr 4fr 1fr;
+}
+.search {
+  display: grid;
+  height: 50px;
+  background-color: yellow;
+}
+form {
+  position: absolute;
+  border-radius: 20px;
+  margin: 3px;
 }
