@@ -5,13 +5,16 @@
   height: 100vh;
   border: solid pink;
   /* padding: 5px; */
+  font-family: sans-serif;
 }
 
 .task-bar {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   position: relative;
-  border-right: solid pink;
+  border-right: solid pink 5px;
+  padding-right: 10px;
+  /* margin-right: 10px; */
 }
 .main-page {
   display: grid;
@@ -25,18 +28,104 @@
 }
 .twitter-logo {
   position: absolute;
-  width: 30px;
+  width: 40px;
   right: 0;
 }
 .twitter-logo1 {
   position: absolute;
   width: 30px;
-  top: 60;
+  top: 55;
   right: 0;
 }
 .twitter-logo2 {
   position: absolute;
   width: 30px;
-  top: 125;
+  top: 115;
   right: 0;
+}
+.twitter-logo3 {
+  position: absolute;
+  width: 35px;
+  top: 170;
+  right: 0;
+}
+.twitter-logo4 {
+  position: absolute;
+  width: 35px;
+  top: 225;
+  right: 0;
+}
+.twitter-logo5 {
+  position: absolute;
+  width: 35px;
+  top: 275;
+  right: 0;
+}
+.twitter-logo6 {
+  position: absolute;
+  width: 35px;
+  top: 320;
+  right: 0;
+}
+.twitter-logo7 {
+  position: absolute;
+  width: 35px;
+  top: 370;
+  right: 0;
+}
+.twitter-logo8 {
+  position: absolute;
+  width: 35px;
+  top: 410;
+  right: 0;
+}
+.tweet {
+  background-color: black;
+  text-align: center;
+  margin: auto;
+  margin-left: 5ch;
+  /* margin-bottom: 80ch; */
+  color: white;
+  border-start-end-radius: 30%;
+  border-end-end-radius: 30%;
+  border-top-left-radius: 30%;
+  border-bottom-left-radius: 30%;
+  width: 20ch;
+}
+.main-page {
+  position: relative;
+}
+.post-block {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  justify-content: center;
+  padding-left: 5px;
+}
+/* .post-block {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  width: auto;
+  height: auto;
+} */
+.home {
+  margin-bottom: auto;
+  margin-top: 0ch;
+  top: 0;
+}
+.text-block {
+  position: relative;
+  margin-top: 15%;
+}
+
+.avatar {
+  background-color: white;
+  width: 10ch;
+  height: fit-content;
+  border-radius: 50%;
+  border: solid black 2px;
+  margin-left: 10ch;
+  width: 8ch;
+}
+.prompt {
+  position: absolute;
 }
