@@ -11,10 +11,11 @@
     margin-left: 80px;    
 }
 
+/* This is for the left side of the column */
 .menu{
     display: grid;
     grid-template-rows: repeat(8, auto);
-    border-right: solid rgb(97, 94, 94);
+    
 }
 
 .menu img{
@@ -37,15 +38,17 @@
     
 }
 
-
+/* This is for the middle part of the column */
 .tweet-feed{
     display: grid;
     grid-template-rows: 50px 90px 1fr;
     border-right: solid rgb(223, 133, 133);
     margin-right: 15px;
     margin-bottom: 15px;
-    border-bottom: solid rgb(93, 91, 91);
+    padding: 10px;
     gap: 10px;
+    border-right: 1px solid blue ;
+    border-left: 1px solid blue ;
     
 }
 
@@ -81,6 +84,12 @@
     width: auto;
 }
 
+.reacts li{
+    display: inline-block;
+    margin-right: 160px;
+}
+
+/* This is for the right side of the column */
 .side-bar{
     display: grid;
     grid-template-rows: repeat(3, 50px);
