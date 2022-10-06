@@ -46,7 +46,7 @@ body {
 }
 
 .newsfeed {
-  background-color: #ff005550;
+  /* background-color: #ff005550; */
 }
 
 /***************************************************/
@@ -125,7 +125,8 @@ h3 {
   padding: 10px;
 }
 
-.user-btn:hover {
+.user-btn:hover,
+.latest-icon:hover {
   background-color: var(--colour-hover);
 }
 
@@ -163,6 +164,9 @@ h3 {
 
 .latest-icon {
   font-size: 22px;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
 }
 
 .tweet-box {
@@ -193,6 +197,13 @@ h3 {
 .tweet-icon {
   color: var(--colour-primary);
   font-size: 20px;
+  padding: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.tweet-icon:hover {
+  background-color: #1da0f26b;
 }
 
 .main-tweet-btn {
@@ -214,6 +225,91 @@ h3 {
   background-color: #2886c0;
 }
 
+.underline {
+  height: 3px;
+  border-bottom: var(--border-grey);
+}
+
+/***************************************************/
+/* INDIVIDUAL TWEET */
+/***************************************************/
+
+.tweet {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 50px 500px 50px;
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  border-bottom: var(--border-grey);
+}
+
+.tweeter-img {
+  height: 40px;
+  border-radius: 50%;
+  grid-row: 1 / 3;
+  align-self: start;
+  margin-top: 8px;
+}
+
+.settings-icon {
+  font-size: 20px;
+  padding: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.tweet-content {
+  grid-column: 2 / 3;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.tweet-menu {
+  grid-column: 2 / 3;
+  grid-row: 3 / -1;
+  display: flex;
+  gap: 100px;
+}
+
+.tweet-menu ion-icon {
+  font-size: 16px;
+  color: #777;
+  padding: 6px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.tweet-menu ion-icon:hover,
+.settings-icon:hover {
+  background-color: var(--colour-hover);
+}
+
+.username {
+  font-weight: 600;
+}
+
+.usertag {
+  color: #999;
+}
+
+.tweeted-ago {
+  color: #999;
+  font-size: 12px;
+}
+
+.reply-to {
+  color: var(--colour-primary);
+}
+
+.count-box {
+  display: flex;
+  align-items: center;
+}
+
+.count {
+  font-size: 12px;
+  color: #777;
+}
 /***************************************************/
 /* MEDIA QUERIES */
 /***************************************************/
