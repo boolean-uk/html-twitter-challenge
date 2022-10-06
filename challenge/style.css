@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+/* LEFT MENU */
+
+.left_menu {
+}
+.fa-twitter {
+  padding: 20px;
+  color: #09dcf8;
+}
+.fa-house-user {
+  font-size: 15px;
+  display: inline;
+}
+nav a {
+  display: grid;
+  text-decoration: none;
+  padding: 15px;
+}
+/* MAIN */
+.main {
+  background-color: rgb(8, 114, 114);
+}
+.right_menu {
+  background-color: aqua;
+}
