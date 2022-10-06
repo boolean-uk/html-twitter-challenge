@@ -11,9 +11,8 @@ body {
   /* border: solid 2px #2F3336; */
   color: white;
   margin-left: 3vw;
-  margin-right: 3vw;
+  margin-right: 5vw;
 }
-
 
 .header {
   grid-area: header;
@@ -21,6 +20,7 @@ body {
   grid-template: 
     "img h1 search-bar" 50px /
    200px 1fr 200px;
+  position: sticky; top: 0;
 }
 
 .header img {
@@ -44,6 +44,7 @@ body {
   background: #202327;
   border-radius: 50px;
   margin: 10px;
+  width: 225px;
 }
 
 .header .search-bar p {
@@ -100,6 +101,25 @@ body {
   line-height: 1.7;
   color: #E7E9EA;
   font-size: large;
+}
+
+.right-bar {
+  margin: 10px;
+}
+
+.box {
+  display: inline-flex;
+  background-color: #2F3336;
+  border-radius: 10px;
+  padding: 10px 5px 30px 20px;
+  /* padding-bottom: 10px; */
+  width: 200px;
+  font-size: large;
+  margin-bottom: 20px;
+}
+
+h3 {
+  margin: 0;
 }
 
 .filter-grey {
