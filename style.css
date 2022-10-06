@@ -1,6 +1,9 @@
 :root {
   --colour-primary: #1da1f2;
-  --colour-hover: #ddd;
+  --colour-hover: #eee;
+  --colour-hover-dark: #bbb;
+  --colour-hover-news: #ddd;
+  --color-background: #eee;
 
   --border-grey: 1px solid #ddd;
 }
@@ -45,10 +48,6 @@ body {
   border-right: var(--border-grey);
 }
 
-.newsfeed {
-  /* background-color: #ff005550; */
-}
-
 /***************************************************/
 /* GENERAL / REUSABLE STYLES */
 /***************************************************/
@@ -77,6 +76,11 @@ h2 {
 h3 {
   font-weight: 700;
   font-size: 20px;
+}
+
+.side-title {
+  font-weight: 800;
+  margin-bottom: 12px;
 }
 
 /***************************************************/
@@ -241,6 +245,11 @@ h3 {
   grid-template-rows: repeat(3, 1fr);
   align-items: center;
   border-bottom: var(--border-grey);
+  cursor: pointer;
+}
+
+.tweet:hover {
+  background-color: var(--colour-hover);
 }
 
 .tweeter-img {
@@ -281,7 +290,7 @@ h3 {
 
 .tweet-menu ion-icon:hover,
 .settings-icon:hover {
-  background-color: var(--colour-hover);
+  background-color: var(--colour-hover-dark);
 }
 
 .username {
@@ -310,6 +319,160 @@ h3 {
   font-size: 12px;
   color: #777;
 }
+
+/***************************************************/
+/* NEWSFEED - SEARCHBAR */
+/***************************************************/
+
+.newsfeed {
+  margin: 18px;
+  font-size: 12px;
+}
+
+.search {
+  position: relative;
+  margin-bottom: 16px;
+}
+
+.searchbar {
+  width: 350px;
+  background-color: var(--color-background);
+  padding: 12px 32px;
+  padding-left: 50px;
+  border-radius: 30px;
+  border: none;
+}
+
+.searchbar:focus {
+  outline: none;
+  border: 2px solid var(--colour-primary);
+}
+
+/* .searchbar:focus ~ .search-icon {
+  color: var(--colour-primary);
+} */
+
+.searchbar::placeholder {
+  font-size: 15px;
+}
+
+.search-icon {
+  position: absolute;
+  font-size: 18px;
+  left: 15px;
+  top: 10px;
+}
+
+/***************************************************/
+/* NEWSFEED - WHAT'S HAPPENING BOX */
+/***************************************************/
+
+.news-box {
+  width: 350px;
+  background-color: var(--color-background);
+  border-radius: 30px;
+  padding: 14px 24px;
+  margin-bottom: 16px;
+}
+
+.trending {
+  display: grid;
+  grid-template-columns: 1fr 30px;
+  grid-template-rows: repeat(3, auto);
+  align-items: center;
+  margin-bottom: 24px;
+  cursor: pointer;
+}
+
+/* .trending:hover,
+.latest-news:hover,
+.show-more-btn:hover {
+  background-color: var(--colour-hover-news);
+} */
+
+.headline {
+  grid-row: 2 / 3;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.tweet-no {
+  grid-row: 3 / 4;
+}
+
+.latest-news {
+  display: grid;
+  grid-template-columns: 1fr 50px;
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  margin-bottom: 24px;
+  cursor: pointer;
+}
+
+.news-image {
+  height: 60px;
+  width: auto;
+  border-radius: 12px;
+  grid-row: 1 / -1;
+  align-self: start;
+  margin-top: 10px;
+}
+
+.show-more-btn:link {
+  display: block;
+  text-decoration: none;
+  color: var(--colour-primary);
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+/***************************************************/
+/* NEWSFEED - WHO TO FOLLOW BOX */
+/***************************************************/
+
+.follow-box {
+  width: 350px;
+  background-color: var(--color-background);
+  border-radius: 30px;
+  padding: 14px 24px;
+  font-size: 14px;
+}
+
+.follow {
+  display: grid;
+  grid-template-columns: 50px 1fr 80px;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+}
+
+.follow-btn {
+  grid-row: 1 / -1;
+  grid-column: 3 / 4;
+  background-color: #000;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: 600;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+footer {
+  margin-top: 12px;
+}
+
+footer p {
+  margin-bottom: 8px;
+}
+
+.footer-link {
+  margin-right: 10px;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 /***************************************************/
 /* MEDIA QUERIES */
 /***************************************************/
