@@ -5,31 +5,53 @@
 }
 
 body {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 100vh;
-    font-family: sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  height: 100vh;
+  font-family: sans-serif;
+  padding-left: 70px;
+}
+
+.logo {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  margin-left: 10px;
 }
 
 .left {
-
-    border: 3px dotted blue;
+  border: 3px dotted blue;
 }
-
+ul li {
+    padding: 17px;
+    place-items: center;
+}
 .navbar {
-    display: grid;
-    grid-template-columns: 1fr 10fr;
+  display: grid;
+  grid-template-columns: 4fr 10fr;
+  gap: 10px;
 }
 
 .nav-icons {
-    border: 2px dotted red;
+  margin-left: 10px;
+  text-align: center;
+  list-style-type: none;
 }
 
-.nav-buttons {
-    border: 2px dotted red;
+.navbar .nav-buttons {
+  border: 2px solid red;
+  display: grid;
+  grid-auto-flow: row;
+  row-gap: 7px;
+}
+
+.more-butt {
+    border: 2px solid black;
+    border-radius: 50%;
+
 }
 
 .twtbutton {
-    border: 3px dotted green;
-    
+  border: 3px dotted green;
+  text-align: center;
+  margin-top: 40px;
 }
