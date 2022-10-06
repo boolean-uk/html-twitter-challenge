@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100vh;
+    display:grid;
+    grid-template: 
+    "left-bar feed right-bar " 1fr/
+    1fr  700px 1fr
+}
+
+.left-bar{
+grid-area: left-bar;
+background-color: lightskyblue;
+}
+
+.feed{
+grid-area: feed;
+background-color: lightgrey;
+}
+
+.right-bar{
+grid-area: right-bar;
+background-color: lightslategray;
+}
