@@ -371,8 +371,13 @@ h3 {
   width: 350px;
   background-color: var(--color-background);
   border-radius: 30px;
-  padding: 14px 24px;
+  padding: 12px 18px;
   margin-bottom: 16px;
+}
+
+.news-box-grid {
+  display: grid;
+  grid-template-rows: auto;
 }
 
 .trending {
@@ -380,15 +385,20 @@ h3 {
   grid-template-columns: 1fr 30px;
   grid-template-rows: repeat(3, auto);
   align-items: center;
-  margin-bottom: 24px;
   cursor: pointer;
 }
 
-/* .trending:hover,
-.latest-news:hover,
-.show-more-btn:hover {
+.trending,
+.latest-news,
+.show-more-btn {
+  padding: 10px;
+}
+
+.trending:hover,
+.latest-news:hover {
   background-color: var(--colour-hover-news);
-} */
+  border-radius: 12px;
+}
 
 .headline {
   grid-row: 2 / 3;
@@ -405,7 +415,6 @@ h3 {
   grid-template-columns: 1fr 50px;
   grid-template-rows: repeat(2, 1fr);
   align-items: center;
-  margin-bottom: 24px;
   cursor: pointer;
 }
 
@@ -426,6 +435,10 @@ h3 {
   margin-top: 16px;
 }
 
+.show-more-btn:hover {
+  text-decoration: underline;
+}
+
 /***************************************************/
 /* NEWSFEED - WHO TO FOLLOW BOX */
 /***************************************************/
@@ -434,7 +447,7 @@ h3 {
   width: 350px;
   background-color: var(--color-background);
   border-radius: 30px;
-  padding: 14px 24px;
+  padding: 12px 18px;
   font-size: 14px;
 }
 
@@ -443,6 +456,8 @@ h3 {
   grid-template-columns: 50px 1fr 80px;
   grid-template-rows: 1fr 1fr;
   align-items: center;
+  cursor: pointer;
+  padding: 10px;
 }
 
 .follow-btn {
@@ -454,6 +469,11 @@ h3 {
   font-weight: 600;
   padding: 8px 16px;
   cursor: pointer;
+}
+
+.follow:hover {
+  background-color: var(--colour-hover-news);
+  border-radius: 12px;
 }
 
 footer {
