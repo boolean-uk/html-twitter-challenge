@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="container content-wrapper">
       <div class="left-panel noselect">
         <svg xmlns="http://www.w3.org/2000/svg" viewbox="40 40 512 512 ">
           <title>Logo Twitter</title>
@@ -19,7 +19,7 @@
 
         <div class="left-menu"><ion-icon name="home"></ion-icon> Home</div>
         <div class="left-menu">
-          <span><ion-icon name="compass-outline"></ion-icon>Explore </span>
+          <ion-icon name="compass-outline"></ion-icon>Explore
         </div>
         <div class="left-menu">
           <ion-icon name="notifications-outline"></ion-icon> Notifications
@@ -43,20 +43,20 @@
         <div class="profile">
           <img
             src="assets/pexels-mohamed-abdelghaffar-771742.jpg"
-            width="20"
+            width="40"
             alt="profile pic"
           />
-          <h3>Anon</h3>
-          <p>@anon12345</p>
+          <div class="account-name">
+            <h3>Anon</h3>
+            <p>@anon12345</p>
+          </div>
           <ion-icon name="ellipsis-horizontal-outline"></ion-icon>
         </div>
       </div>
       <div class="main">
         <div class="header">
-          <h2>
-            Home
-            <ion-icon name="sparkles-outline"></ion-icon>
-          </h2>
+          <h2>Home</h2>
+          <ion-icon name="sparkles-outline"></ion-icon>
         </div>
         <div class="main-content">
           <div class="writetweet"></div>
@@ -65,8 +65,27 @@
       </div>
 
       <div class="right-panel">
-        <div class="search"></div>
-        <div class="whats-happening"></div>
+        <div class="search">
+          <ion-icon name="search-outline"></ion-icon>
+          <input type="search" class="search-bar" placeholder="Search" />
+        </div>
+        <div class="whats-happening">
+          <h2>What's happening</h2>
+          <div class="news-story">
+            <p class="news-source">World news - This morning</p>
+            <p class="newstitle">
+              <strong>
+                More than 30 people killed at a child-care facility in Thailand
+              </strong>
+            </p>
+            <img
+              src="https://ichef.bbci.co.uk/news/976/cpsprodpb/1437A/production/_127001828_e3b69e6b0ecc77c7388ed0783061d80e18908f3c0_375_3600_20253600x2025.jpg.webp"
+              width="40"
+              height="40"
+              alt="news related pic"
+            />
+          </div>
+        </div>
         <div class="who-to-follow"></div>
       </div>
     </div>

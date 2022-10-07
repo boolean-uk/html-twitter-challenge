@@ -13,15 +13,21 @@
 }
 .container {
   display: grid;
-  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-columns: 30% 700px 30%;
   height: 100vh;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
+.content-wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: auto;
+  padding-right: auto;
+}
 .left-panel {
   display: grid;
-  grid-auto-rows: max-content;
-
+  grid-auto-rows: auto auto;
   padding-left: 40%;
+  padding-right: 20%;
   row-gap: 5px;
   border-right: 1px solid rgba(128, 128, 128, 0.637);
 }
@@ -30,6 +36,12 @@ svg {
   fill: rgb(29, 155, 240);
   max-width: 40px;
   max-height: 40px;
+  margin: 5px;
+  padding: 5px;
+}
+svg:hover {
+  border-radius: 50%;
+  background-color: rgba(29, 156, 240, 0.266);
 }
 ion-icon {
   margin-right: 10px;
@@ -39,6 +51,10 @@ ion-icon {
 .left-menu {
   padding: 10px;
   font-size: 20px;
+}
+.left-menu:hover {
+  border-radius: 20px;
+  background-color: rgba(128, 128, 128, 0.445);
 }
 .tweet {
   border: 1px solid rgb(29, 155, 240);
@@ -50,18 +66,103 @@ ion-icon {
   padding-top: 10px;
   padding-bottom: 10px;
   margin-right: 10px;
+  max-width: 200px;
+}
+.tweet:hover {
+  background-color: rgb(29, 120, 240);
 }
 .header {
   padding: 5px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.637);
 }
 .profile {
   margin-top: 400px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  place-items: center;
+  max-width: 250px;
+  margin-bottom: 20px;
 }
-.profile,
-h3 {
-  display: inline-block;
+.profile img {
+  padding-left: 5px;
+  border-radius: 50%;
+}
+.account-name {
+  padding-left: 10px;
+}
+.profile p {
+  color: grey;
+}
+.profile ion-icon {
+  padding-left: 10px;
+}
+.profile:hover {
+  border-radius: 40px;
+
+  box-shadow: grey 1px 1px;
+  filter: brightness(90%);
 }
 .main-content {
   display: grid;
   grid-template-rows: auto auto;
+}
+.header {
+  position: relative;
+}
+.header ion-icon {
+  position: absolute;
+  top: 30%;
+  right: 0;
+}
+.right-panel {
+  border-left: 1px solid rgba(128, 128, 128, 0.637);
+}
+.search {
+  padding: 8px 5px;
+  background-color: white;
+  position: relative;
+}
+.search ion-icon {
+  position: absolute;
+  top: 20px;
+  left: 18px;
+}
+.search-bar {
+  min-width: 300px;
+  height: 40px;
+  background-color: rgba(128, 128, 128, 0.332);
+  border: 1px solid rgba(128, 128, 128, 0.637);
+  border-radius: 50px;
+  padding: 8px 16px;
+  padding-left: 48px;
+}
+.whats-happening {
+  display: grid;
+  grid-auto-rows: auto auto;
+  border: 1px solid rgba(128, 128, 128, 0.637);
+  margin: 5px;
+  border-radius: 20px;
+}
+.whats-happening h2 {
+  padding-left: 10px;
+  margin-bottom: 15px;
+}
+.news-story {
+  display: grid;
+  grid-template:
+    "news-source img" auto
+    "news-title img" auto / auto auto;
+}
+.news-source {
+  grid-area: news-source;
+  color: rgba(128, 128, 128, 0.778);
+}
+.news-title {
+  grid-area: news-title;
+  text-align: left;
+  width: 60px;
+}
+.news-story img {
+  grid-area: img;
 }
