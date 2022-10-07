@@ -14,15 +14,12 @@
 .container {
   display: grid;
   grid-template-columns: 30% 700px 30%;
+
   height: 100vh;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0 auto;
 }
-.content-wrapper {
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: auto;
-  padding-right: auto;
-}
+
 .left-panel {
   display: grid;
   grid-auto-rows: auto auto;
@@ -75,7 +72,7 @@ ion-icon {
   padding: 5px;
   border-bottom: 1px solid rgba(128, 128, 128, 0.637);
 }
-.profile {
+.left-panel .profile {
   margin-top: 400px;
   padding: 10px;
   display: grid;
@@ -97,7 +94,7 @@ ion-icon {
 .profile ion-icon {
   padding-left: 10px;
 }
-.profile:hover {
+.left-panel .profile:hover {
   border-radius: 40px;
 
   box-shadow: grey 1px 1px;
@@ -137,32 +134,68 @@ ion-icon {
   padding: 8px 16px;
   padding-left: 48px;
 }
+.search-bar:focus {
+  background-color: white;
+}
 .whats-happening {
   display: grid;
   grid-auto-rows: auto auto;
   border: 1px solid rgba(128, 128, 128, 0.637);
   margin: 5px;
   border-radius: 20px;
+  padding: 20px;
+  gap: 20px;
 }
 .whats-happening h2 {
-  padding-left: 10px;
+  padding-left: 5px;
   margin-bottom: 15px;
 }
 .news-story {
   display: grid;
   grid-template:
     "news-source img" auto
-    "news-title img" auto / auto auto;
+    "news-title img" 60px / 200px auto;
+  gap: 10px;
 }
 .news-source {
   grid-area: news-source;
   color: rgba(128, 128, 128, 0.778);
+  padding-left: 5px;
 }
 .news-title {
   grid-area: news-title;
-  text-align: left;
+  display: inline-block;
   width: 60px;
+  padding-left: 5px;
 }
 .news-story img {
   grid-area: img;
+  width: fit-content;
+}
+.who-to-follow {
+  display: grid;
+  grid-auto-rows: auto auto;
+  border: 1px solid rgba(128, 128, 128, 0.637);
+  margin: 5px;
+  border-radius: 20px;
+  padding: 20px;
+  gap: 20px;
+}
+
+.who-to-follow .profile {
+  padding: 10px;
+  display: grid;
+  grid-template-columns: auto 150px auto;
+  place-items: center;
+  max-width: 250px;
+  margin-bottom: 20px;
+}
+.who-to-follow .profile .account-name ion-icon {
+  fill: rgb(29, 155, 240);
+}
+.who-to-follow .profile .tweet {
+  padding: 10px;
+  margin-left: 50px;
+  background-color: rgb(15, 20, 25);
+  border: 1px solid rgb(15, 20, 25);
 }
