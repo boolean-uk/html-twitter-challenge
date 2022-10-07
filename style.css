@@ -72,6 +72,55 @@ body {
   padding-right: 10px;
   margin-left: 10px;
 }
+
+.enter-tweet .text-box {
+  display: inline-flex;
+  margin: 20px;
+  gap: 100px;
+}
+
+.tweet-cards {
+  border-top: solid 1px #2F3336;
+  display: grid;
+  grid-template:
+    "name tag time" 50px
+    "message message message" 100px /
+    100px 100px 1fr 100px;
+}
+
+.name {grid-area: name;}
+.tag {grid-area: tag;}
+.time {grid-area: time;}
+.message {grid-area: message;}
+
+.tweet-cards-buttons {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+/* .p {
+  width: 300px;
+} */
+
+.attachments {
+  display: inline-flex;
+  gap: 15px;
+  margin-left: 60px;
+}
+
+.attachments img {
+  width: 30px;
+}
+
+.main-tweet-button {
+  background: #FF2819;
+  width: 100px;
+  border-radius: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  margin-left: 300px;
+}
+
 /* twitter main end */
 
 
@@ -106,20 +155,19 @@ body {
 }
 
 .button :hover {
-  
   background: #202327;
   border-radius: 50px;
+  
 }
 
-.tweet {
+.left-bar-tweet-button {
   background: #FF2819;
   width: 200px;
-  /* place-items: center; */
   border-radius: 50px;
   height: 50px;
 }
 
-.tweet h3 {
+.left-bar-tweet-button h3 {
   text-align: center;
   line-height: 50px;
 }
@@ -167,5 +215,9 @@ h3 {
   margin: 0;
 }
 
+.pfp {
+  width: 60px;
+  border-radius: 50%;
+}
 
 /* reusable end */
