@@ -38,7 +38,7 @@ body {
   color: var(--twitter-color);
 }
 .sidebar-tweet {
-  width: 100%;
+  width: 90%;
   background-color: var(--twitter-color);
   border: none;
   color: white;
@@ -46,6 +46,7 @@ body {
   border-radius: 30px;
   height: 50px;
   margin-top: 20px;
+  margin-right: 10px;
 }
 
 body {
@@ -68,4 +69,75 @@ body {
 .fa-twitter {
     color: var(--twitter-color);
     font-size: 30px;
+}
+.feed {
+    flex: 0.5;
+    border-right: 1px solid var(--twitter-background);
+    min-width: fit-content;
+    overflow-y: scroll;
+}
+
+.feed-header {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 1px solid var(--twitter-background);
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--twitter-background)
+}
+
+.feed-header h2 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.feed::-webkit-scrollbar {
+    display: none;
+} 
+
+.feed {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.tweetbox-input img{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.tweetbox {
+    padding-bottom: 10px;
+    border-bottom: 8px solid var(--twitter-background);
+    padding-right: 10px;
+}
+
+.tweetbox form {
+    display: flex;
+    flex-direction: column;
+}
+
+.tweetbox-input {
+    display: flex;
+    padding: 20px;
+}
+
+.tweetbox-input input {
+    flex: 1;
+    margin-left: 20px;
+    font-size: 20px;
+    border: none;
+    outline: none;
+}
+
+.tweetBox-tweetButton {
+    background-color: var(--twitter-color);
+    border: none;
+    color: white;
+    font-weight: 900;
+    border-radius: 30px;
+    width: 80px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: auto;
 }
