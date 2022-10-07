@@ -1,26 +1,69 @@
-/* .header{
-    height: 30px;
-    background-color: gray;
-} */
+*{
+    background-color:white
+    
+}
 .container{
     height: 100vh;
     display: grid;
-    grid-template-columns: 150px 1fr 200px;
-    gap: 20px;
+    grid-template-columns: 200px 1fr 300px;
     margin-right: 80px;
-    margin-left: 80px;    
+    margin-left: 80px; 
+    font-family: sans-serif; 
+    gap: 20px;
 }
 
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu:hover {
+    background-color: rgb(243, 240, 240);
+}
+
+.tweet-feed .home-2:hover{
+    background-color: rgb(243, 240, 240);
+}
+
+
+.tweet-feed .happening-1:hover{
+    background-color: rgb(243, 240, 240);
+}
+
+
+.tweet-feed .reacts-1:hover{
+    background-color: rgb(243, 240, 240);
+}
+
+
+.tweet-feed .reacts-2:hover{
+    background-color: rgb(243, 240, 240);
+}
+
+.side-bar .search:hover{
+    background-color: rgb(243, 240, 240);
+}
+
+.side-bar .happening-2:hover{
+    background-color: rgb(243, 240, 240);
+}
+
+.side-bar .follow:hover{
+    background-color: rgb(243, 240, 240);
+}
 /* This is for the left side of the column */
-.menu{
-    display: grid;
-    grid-template-rows: repeat(8, auto);
+
+.menu li{
+    list-style: none; 
+    margin-bottom: 25px;  
     
 }
 
 .menu img{
     height: 25px;
     width: 25px;
+    margin-right: 10px;
 }
 
 .menu a{
@@ -31,30 +74,55 @@
 
 
 .menu button{
+    height: 50px;
+    width: 155px;
     color: white;
     font-size: 23px;
-    background-color: blue;
-    border-radius: 20px;
+    background-color: rgb(46, 46, 245);
+    border-radius: 15px;
+    border: none;
+    border-radius: 25px;
     
 }
+
 
 /* This is for the middle part of the column */
 .tweet-feed{
     display: grid;
-    grid-template-rows: 50px 90px 1fr;
-    border-right: solid rgb(223, 133, 133);
+    grid-template-rows: 50px 120px 1fr;
+    border-right: solid  rgb(133, 133, 208);
     margin-right: 15px;
     margin-bottom: 15px;
-    padding: 10px;
     gap: 10px;
-    border-right: 1px solid blue ;
-    border-left: 1px solid blue ;
+    padding: 10px;
+    border-right: 1px solid  rgb(133, 133, 208);
+    border-left: 1px solid  rgb(133, 133, 208);
+   
     
 }
 
-.tweet-feed img{
-    height: 15px;
-    width: 15px;
+
+.home-2{
+    font-size: 23px; 
+    border-bottom: 1px solid  rgb(133, 133, 208);
+}
+
+.happening-1{
+    border-bottom: 1px solid  rgb(133, 133, 208);
+    margin-bottom: 0px;
+}
+.happening-1 input{
+    font-size: 25px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: rgb(221, 226, 229);
+    border-radius: 11px;
+}
+
+
+.happening-1 img{
+    height: 30px;
+    width: 30px;
    
 }
 
@@ -63,21 +131,38 @@
     grid-template-rows: repeat(auto, 1fr);
 }
 
-.image-feed{
-    display: grid;
+.image-feed li {
+    display: inline;
     grid-template-columns: repeat(6, 40px) auto;
-    border-bottom: solid rgb(93, 91, 91);
+    margin-right: 35px;
+    list-style: none;
+
 }
+
+
 
 .image-feed button{
-    background-color: blue;
-    font: white;
+    background-color: rgb(99, 99, 247);
+    font-family: sans-serif;
     font-size: 22px;
+    border-radius: 20px;
+    float: right;
+    margin-right: 20px;
+    border: none;
+    color: white;
+    height: 40px;
+    width: 120px;
 }
 
+.image-feed img{
+    width: 25px;
+    height: 25px;
+}
+
+
 .reacts img{
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
 }
 .girraff img{
     height: 300px;
@@ -86,12 +171,47 @@
 
 .reacts li{
     display: inline-block;
-    margin-right: 160px;
+    margin-right: 100px;
+    list-style: none;
 }
+
+
+.reacts li img{
+    height: 17px;
+    width: 17px;
+}
+
+.reacts-1{
+    border-bottom: 1px solid  rgb(133, 133, 208);
+    margin-bottom: 10px;
+}
+
+
+.reacts-2{
+    border-bottom: 1px solid  rgb(133, 133, 208);
+}
+
 
 /* This is for the right side of the column */
 .side-bar{
     display: grid;
-    grid-template-rows: repeat(3, 50px);
+    grid-template-rows: 50px 50px 1fr;
+    font-size: 25px;
     
+}
+
+.side-bar input{
+    font-size: 22px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(221, 226, 229);
+}
+
+.follow p{
+    background-color: rgb(247, 247, 251);
+    font-size: 20px;
+}
+.follow {
+    background-color: rgb(247, 247, 251);
+   
 }
