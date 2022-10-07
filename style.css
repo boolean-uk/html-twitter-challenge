@@ -181,12 +181,12 @@ h3 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem;
+  padding: 1rem;
 }
 
 .latest-icon {
   font-size: 2.2rem;
-  padding: 1rem;
+  padding: 0.3rem;
   border-radius: 50%;
   cursor: pointer;
 }
