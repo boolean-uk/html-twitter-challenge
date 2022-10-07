@@ -141,3 +141,29 @@ body {
     margin-top: 20px;
     margin-left: auto;
 }
+
+/* post */
+.post-avatar img {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.post {
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--twitter-background);
+    padding-bottom: 10px;
+}
+
+.post-body {
+    width: 450ps;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+.post-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
