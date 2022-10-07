@@ -9,8 +9,8 @@
 }
 
 .task-bar {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  /* display: grid; */
+  grid-template-columns: auto;
   position: relative;
   border-right: solid pink 5px;
   padding-right: 10px;
@@ -28,6 +28,7 @@
 }
 .twitter-logo {
   position: absolute;
+  background-color: rgb(255, 255, 255);
   width: 40px;
   right: 0;
 }
@@ -84,7 +85,7 @@
   text-align: center;
   margin: auto;
   margin-left: 5ch;
-  /* margin-bottom: 80ch; */
+  margin-bottom: 70ch;
   color: white;
   border-start-end-radius: 30%;
   border-end-end-radius: 30%;
@@ -92,40 +93,7 @@
   border-bottom-left-radius: 30%;
   width: 20ch;
 }
-.main-page {
-  position: relative;
-}
-.post-block {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
-  justify-content: center;
-  padding-left: 5px;
-}
-/* .post-block {
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
-  width: auto;
-  height: auto;
-} */
-.home {
-  margin-bottom: auto;
-  margin-top: 0ch;
-  top: 0;
-}
-.text-block {
-  position: relative;
-  margin-top: 15%;
-}
-
-.avatar {
-  background-color: white;
-  width: 10ch;
-  height: fit-content;
+.task-bar a:hover img {
+  background-color: rgb(0, 0, 255);
   border-radius: 50%;
-  border: solid black 2px;
-  margin-left: 10ch;
-  width: 8ch;
-}
-.prompt {
-  position: absolute;
 }

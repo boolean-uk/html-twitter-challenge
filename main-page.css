@@ -1,0 +1,70 @@
+.main-page {
+  position: relative;
+}
+.post-block {
+  display: grid;
+  grid-template-columns: auto 3fr 1fr;
+  justify-content: center;
+  padding-left: 5px;
+}
+
+.home {
+  margin-bottom: auto;
+  margin-top: 0ch;
+  top: 0;
+}
+.text-block {
+  position: relative;
+  margin-top: 10ch;
+  margin-right: 10ch;
+  padding-right: 10ch;
+
+  float: inline-end;
+}
+
+.avatar {
+  background-color: white;
+  width: 10ch;
+  height: fit-content;
+  border-radius: 50%;
+  border: solid black 2px;
+  margin-left: auto;
+  width: 8ch;
+}
+.prompt {
+  position: absolute;
+  text-decoration: underline;
+}
+.prompt-line prompt {
+  height: auto;
+  width: 200px;
+  position: absolute;
+}
+.prompt-line a {
+  height: auto;
+  width: auto;
+
+  margin-top: 1ch;
+}
+.post-bar-tweeter {
+  margin-right: auto;
+  align-items: end;
+}
+.post-list-icons {
+  position: absolute;
+  margin-top: 8ch;
+  padding-left: 0;
+}
+
+.post-bar-icons a {
+  width: auto;
+  display: inline-block;
+  align-items: center;
+  width: 3ch;
+  margin-top: 7ch;
+}
+.post-bar-icons a:hover {
+  cursor: grab;
+  background-color: blue;
+  border-radius: 50%;
+}
