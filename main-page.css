@@ -1,11 +1,15 @@
 .main-page {
+  display: grid;
+  grid-template-rows: 20% 1fr;
+  gap: 5px;
   position: relative;
 }
 .post-block {
   display: grid;
-  grid-template-columns: auto 3fr 1fr;
+  grid-template-columns: auto 2fr 1fr;
   justify-content: center;
   padding-left: 5px;
+  height: auto;
 }
 
 .home {
@@ -16,7 +20,7 @@
 .text-block {
   position: relative;
   margin-top: 10ch;
-  margin-right: 10ch;
+  margin-right: ;
   padding-right: 10ch;
 
   float: inline-end;
@@ -54,10 +58,10 @@
   position: absolute;
   margin-top: 8ch;
   padding-left: 0;
+  width: 5ch;
 }
 
 .post-bar-icons a {
-  width: auto;
   display: inline-block;
   align-items: center;
   width: 3ch;
@@ -67,4 +71,53 @@
   cursor: grab;
   background-color: blue;
   border-radius: 50%;
+}
+.tweeter {
+  text-align: center;
+  width: auto;
+  height: fit-content;
+  background-color: rgb(0, 0, 0);
+  margin-top: 8ch;
+  margin-right: 20%;
+  padding-right: 20px;
+  border-radius: 30%;
+}
+.tweet-button {
+  color: white;
+  text-decoration: dotted;
+}
+
+.main-page-feed {
+  margin: 0;
+}
+.main-page-feed p {
+  gap: 5px;
+
+  background-color: rgb(234, 231, 231);
+  border: solid 2px rgb(230, 80, 80);
+  margin: 3;
+}
+.main-feed-box {
+  /* display: grid;
+  grid-template-columns: 10ch 1fr; */
+  background-color: gainsboro;
+  border-bottom: solid black 2px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  padding-bottom: 30px;
+}
+.avatar-feed {
+  /* position: absolute; */
+  background-color: white;
+  width: 10ch;
+  height: fit-content;
+  border-radius: 50%;
+  border: solid black 2px;
+  margin-left: auto;
+  margin-top: 5%;
+  width: 6ch;
+}
+.actual-post {
+  display: inline-block;
 }
