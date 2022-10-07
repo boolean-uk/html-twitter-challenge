@@ -20,6 +20,7 @@ html {
 
 body {
   font-family: Helvetica, Arial, sans-serif;
+  height: 100vh;
 }
 
 /***************************************************/
@@ -27,7 +28,7 @@ body {
 /***************************************************/
 
 .container {
-  height: 100vh;
+  /* height: 100vh; */
   display: grid;
   grid-template-columns: 40rem 1fr 50rem;
   grid-template-rows: 1fr;
@@ -115,8 +116,9 @@ h3 {
   border-radius: 3rem;
   cursor: pointer;
   transition: all 1s;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
-  /* justify-self: start; */
+  justify-self: start;
 }
 
 .tweet-btn:hover {
@@ -502,46 +504,89 @@ footer p {
 /***************************************************/
 /* MEDIA QUERIES */
 /***************************************************/
-/* 
-@media screen and (max-width: 1400px) {
-  .container {
-    grid-template-columns: 250px 1fr 500px;
-  }
 
-  .tweet-btn {
-    padding: 12px 60px;
-  }
-
-  .searchbar,
-  .news-box,
-  .follow-box {
-    width: 300px;
-  }
-
-  .headline {
-    font-size: 14px;
-  }
-
-  .newsfeed {
-    font-size: 10px;
+/* 1400px */
+@media screen and (max-width: 87em) {
+  html {
+    font-size: 56.25%;
   }
 }
 
-@media screen and (max-width: 900px) {
+/* 1200px */
+@media screen and (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* 950px */
+@media screen and (max-width: 59em) {
   .container {
-    grid-template-columns: 250px 1fr 500px;
+    grid-template-columns: 30rem 1fr;
   }
 
   .newsfeed {
     display: none;
   }
 
+  .tweet-btn {
+    padding: 1.2rem 5rem;
+  }
+
   h2 {
-    font-size: 16px;
+    font-size: 1.8rem;
+  }
+
+  .user-btn {
+    grid-template-columns: 3rem 8rem 1fr;
+  }
+
+  .user-btn img {
+    height: 3rem;
+  }
+
+  .user-text,
+  .user-tag {
+    font-size: 1.2rem;
+  }
+
+  .user-icon {
+    font-size: 1.5rem;
   }
 }
 
-@media screen and (max-width: 499px) {
+/* 750px */
+@media screen and (max-width: 47em) {
+  .container {
+    grid-template-columns: 10rem 1fr;
+  }
+
+  .menu {
+    margin-left: 10rem;
+  }
+
+  .menu-heading {
+    display: none;
+  }
+
+  .tweet-btn {
+    padding: 1rem 1.3rem;
+    font-size: 1.4rem;
+  }
+
+  .user-btn {
+    pointer-events: none;
+  }
+
+  .user-text,
+  .user-tag,
+  .user-icon {
+    display: none;
+  }
+}
+
+/* 600px */
+@media screen and (max-width: 37.5em) {
   .container {
     grid-template-columns: 1fr;
   }
@@ -549,4 +594,4 @@ footer p {
   .menu {
     display: none;
   }
-} */
+}
