@@ -93,14 +93,14 @@
 .main-page-feed p {
   gap: 5px;
 
-  background-color: rgb(234, 231, 231);
+  background-color: rgba(234, 231, 231, 0);
   border: solid 2px rgb(230, 80, 80);
   margin: 3;
 }
 .main-feed-box {
   /* display: grid;
   grid-template-columns: 10ch 1fr; */
-  background-color: gainsboro;
+  background-color: rgba(240, 235, 235, 0.173);
   border-bottom: solid black 2px;
   margin-left: 5px;
   margin-right: 5px;
@@ -120,4 +120,15 @@
 }
 .actual-post {
   display: inline-block;
+}
+
+.main-feed-box-icons {
+  width: 20px;
+}
+.main-post-box-icons a:hover {
+  background-color: blue;
+  border-radius: 50%;
+}
+.main-post-box-icons {
+  margin-left: 65px;
 }

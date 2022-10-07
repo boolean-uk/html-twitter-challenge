@@ -1,0 +1,23 @@
+.news-feed {
+  display: grid;
+  grid-template-rows: repeat(5, 1fr);
+  border-left: solid pink;
+}
+.search-bar {
+  height: auto;
+  background-color: rgb(211, 223, 223);
+  gap: 10px;
+  margin-top: 5ch;
+  margin-bottom: 15ch;
+  margin-left: 10px;
+  margin-right: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
+.search-bar img {
+  width: 3ch;
+  /* margin-right: 10ch; */
+  margin-top: 2ch;
+  margin-bottom: 2ch;
+  left: 0;
+}
