@@ -250,7 +250,7 @@ h3 {
   .header{
     grid-template: 
     "img h1 search-bar" 50px /
-    100px 1fr 200px;
+    60px 1fr 200px;
   }
 
   body{
@@ -258,7 +258,7 @@ h3 {
     grid-template:
       "header header header" 50px
       "left-bar main right-bar" 1fr /
-      100px 1fr 200px;
+      60px 1fr 200px;
   }
 
   .left-bar-tweet-button {
