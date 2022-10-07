@@ -20,7 +20,6 @@ html {
 
 body {
   font-family: Helvetica, Arial, sans-serif;
-  height: 100vh;
 }
 
 /***************************************************/
@@ -28,14 +27,13 @@ body {
 /***************************************************/
 
 .container {
-  /* height: 100vh; */
+  height: 100vh;
   display: grid;
   grid-template-columns: 40rem 1fr 50rem;
   grid-template-rows: 1fr;
 }
 
 .menu {
-  /* background-color: #5500ff50; */
   justify-self: center;
   margin-top: 1rem;
   margin-left: 7rem;
@@ -48,10 +46,20 @@ body {
 }
 
 .main {
-  /* background-color: #50ff2250; */
   border-left: var(--border-grey);
   border-right: var(--border-grey);
+  /* overflow-x: hidden; */
 }
+
+/* Messes up some of my media queries :/ */
+/* .newsfeed,
+.menu {
+  position: fixed;
+}
+
+.main::-webkit-scrollbar {
+  display: none;
+} */
 
 /***************************************************/
 /* GENERAL / REUSABLE STYLES */
@@ -86,6 +94,10 @@ h3 {
 .side-title {
   font-weight: 800;
   margin-bottom: 1.2rem;
+}
+
+.like {
+  color: red;
 }
 
 /***************************************************/
@@ -248,7 +260,7 @@ h3 {
   padding: 1rem;
   display: grid;
   grid-template-columns: 5rem 50rem 5rem;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(3, auto);
   align-items: center;
   border-bottom: var(--border-grey);
   cursor: pointer;
@@ -519,6 +531,13 @@ footer p {
   }
 }
 
+/* 1050px */
+@media screen and (max-width: 66em) {
+  html {
+    font-size: 43%;
+  }
+}
+
 /* 950px */
 @media screen and (max-width: 59em) {
   .container {
@@ -526,6 +545,10 @@ footer p {
   }
 
   .newsfeed {
+    display: none;
+  }
+
+  .newsfeed-container {
     display: none;
   }
 
@@ -559,10 +582,6 @@ footer p {
 @media screen and (max-width: 47em) {
   .container {
     grid-template-columns: 10rem 1fr;
-  }
-
-  .menu {
-    margin-left: 10rem;
   }
 
   .menu-heading {
