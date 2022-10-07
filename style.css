@@ -235,3 +235,37 @@ h3 {
 }
 
 /* reusable end */
+
+@media screen and (min-width: 1600px) {
+  body {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .button h2 {
+    display: none;
+  }
+  .header{
+    grid-template: 
+    "img h1 search-bar" 50px /
+    100px 1fr 200px;
+  }
+
+  body{
+    display: grid;
+    grid-template:
+      "header header header" 50px
+      "left-bar main right-bar" 1fr /
+      100px 1fr 200px;
+  }
+
+  .left-bar-tweet-button {
+    width: 50px;
+  }
+
+  .left-bar-tweet-button h3 {
+    display: none;
+  }
+}
