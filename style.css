@@ -1,0 +1,271 @@
+body {
+  display: grid;
+  grid-template:
+    "header header header" 50px
+    "left-bar main right-bar" 1fr /
+    200px 1fr 200px;
+  height: 100vh;
+  font-family: sans-serif;
+  margin: 0;
+  background: black;
+  color: white;
+  margin-left: 3vw;
+  margin-right: 5vw;
+}
+
+
+/* Header start */
+.header {
+  grid-area: header;
+  display: grid;
+  grid-template: 
+    "img h1 search-bar" 50px /
+   200px 1fr 200px;
+  position: sticky; top: 0;
+}
+
+.header img {
+  width: 60px;
+}
+
+.header h1 {
+  border-left: solid 1px #2F3336;
+  border-right: solid 1px #2F3336;
+  font-size: large;
+  margin-left: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.header .search-bar {
+  display: inline-flex;
+  place-items: center;
+  background: #202327;
+  border-radius: 50px;
+  margin: 10px;
+  width: 225px;
+}
+
+.header .search-bar p {
+  margin: 0;
+  color: #71767B;
+  text-align: center;
+  line-height: 2;
+}
+
+.header .search-bar img {
+  width: 20px;
+  margin: 15px;
+}
+/* header end */
+
+
+/* twitter main start */
+.main {
+  border-top: solid 1px #2F3336;
+  border-left: solid 1px #2F3336;
+  border-right: solid 1px #2F3336;
+  height: 100vh;
+  padding-right: 10px;
+  margin-left: 10px;
+}
+
+.enter-tweet .text-box {
+  display: inline-flex;
+  margin: 20px;
+  gap: 50px;
+  color: #6A6F74;
+  line-height: 60px;
+}
+
+.tweets {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.tweet-cards {
+  border-top: solid 1px #2F3336;
+  display: grid;
+  grid-template:
+    "pfp1 name tag time" 50px
+    "message message message message" 100px /
+    60px 100px 100px 1fr 100px;
+  gap: 30px;
+  padding-top: 10px;
+}
+
+.pfp1 {grid-area: pfp1;}
+.name {grid-area: name;}
+.tag {grid-area: tag;}
+.time {grid-area: time;}
+.message {grid-area: message;}
+
+.tweet-cards-buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 20px;
+}
+
+.attachments {
+  display: inline-flex;
+  gap: 20px;
+  margin-left: 80px;
+  border-top: solid 1px #2F3336;
+}
+
+.attachments img {
+  width: 30px;
+}
+
+.main-tweet-button {
+  background: #FF2819;
+  width: 100px;
+  border-radius: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  margin-left: 300px;
+  margin-top: 10px;
+}
+
+.tweet-cards-buttons img {
+  width: 30px;
+}
+
+/* twitter main end */
+
+
+/* left bar start */
+.left-bar {
+  display: grid;
+  grid-template-rows: repeat(auto-fill, 60px);
+  grid-gap: 10px;
+  margin-top: 20px;
+}
+
+.button {
+  justify-content: start;
+  display: inline-flex;
+  
+  height: 50px;
+
+}
+
+.button img {
+  width: 30px;
+}
+
+.button img, h2 {
+  margin: 10px;
+}
+
+.button h2 {
+  line-height: 1.7;
+  color: #E7E9EA;
+  font-size: large;
+}
+
+.button h2:hover {
+  font-weight: 800;
+}
+
+.button h2:focus {
+  color: #FF2819;
+}
+
+.left-bar-tweet-button {
+  background: #FF2819;
+  width: 200px;
+  border-radius: 50px;
+  height: 50px;
+}
+
+.left-bar-tweet-button h3 {
+  text-align: center;
+  line-height: 50px;
+}
+/* left bar end */
+
+
+/* right bar start */
+.right-bar {
+  margin: 10px;
+}
+
+.box {
+  display: inline-flex;
+  background-color: #2F3336;
+  border-radius: 10px;
+  padding: 10px 5px 30px 20px;
+  width: 200px;
+  font-size: large;
+  margin-bottom: 20px;
+}
+
+
+
+/* right bar end */
+
+
+/* svg colours start */
+.filter-grey {
+  filter: invert(48%) sepia(8%) saturate(295%) hue-rotate(169deg) brightness(94%) contrast(85%);
+}
+
+.filter-red {
+  filter: invert(25%) sepia(61%) saturate(5964%) hue-rotate(352deg) brightness(108%) contrast(101%);
+}
+
+.filter-white {
+  filter: invert(100%) sepia(1%) saturate(1588%) hue-rotate(170deg) brightness(96%) contrast(92%);
+}
+/* svg colours end */
+
+
+/* reusable start */
+h3 {
+  margin: 0;
+}
+
+.pfp {
+  width: 60px;
+  border-radius: 50%;
+}
+
+/* reusable end */
+
+@media screen and (min-width: 1600px) {
+  body {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .button h2 {
+    display: none;
+  }
+  .header{
+    grid-template: 
+    "img h1 search-bar" 50px /
+    60px 1fr 200px;
+  }
+
+  body{
+    display: grid;
+    grid-template:
+      "header header header" 50px
+      "left-bar main right-bar" 1fr /
+      60px 1fr 200px;
+  }
+
+  .left-bar-tweet-button {
+    width: 50px;
+  }
+
+  .left-bar-tweet-button h3 {
+    display: none;
+  }
+}
