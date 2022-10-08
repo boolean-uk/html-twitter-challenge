@@ -32,7 +32,7 @@ background-color: white;
 }
 
 
-
+/* left-bar */
 .tweet-button{
     width: 150px;
     height: 40px;
@@ -46,29 +46,45 @@ background-color: white;
     background-color: lightblue
 }
 
-.search-bar{
-    display:grid;
-
-    width: 450px;
-    height: 40px;
-  
-    padding-left: 70px;
-    border: solid 4px lightgrey;
-    margin: 50px;
-    border-radius: 25px;
-    color: black;
-
-    background-color: lightgray
-
-}
 .user{
     margin: 50px;
     width: 200px;
     height: 80px;
-    border: solid 2px lightgray;
+    /* border: solid 2px lightgray; */
     color: black;
 }
 
+/* all icons */
+.logo{
+   padding-left: 60px;
+}
+.home{
+    padding-left: 60px;  
+}
+.explore{
+    padding-left: 60px; 
+}
+.notifs{
+    padding-left: 60px; 
+}
+.message{
+    padding-left: 60px; 
+}
+.bookmarks{
+    padding-left: 60px; 
+}
+.lists{
+    padding-left: 60px; 
+}
+.profile{
+    padding-left: 60px; 
+}
+.more{
+    padding-left: 60px; 
+}
+
+
+/* feed */
 .block{
     background-color: lightgray;
     height: 20px;
@@ -89,16 +105,40 @@ background-color: white;
 }
 .another-tweet{
     border: 2px solid lightgray;
-    height: 300px;
+    height: 280px;
 }
 
+/* right-bar */
+.search-bar{
+    
+    width: 450px;
+    height: 40px;
+  
+    padding-left: 70px;
+    border: solid 4px lightgrey;
+    margin: 50px;
+    border-radius: 25px;
+    color: black;
+
+    background-color: lightgray
+
+}
 
 .whats-happening{
     width: 450px;
-    height: 450px;
+    height: 300px;
     border: solid lightgray;
     background-color: lightgray;
     border-radius: 25px;
     margin: 50px;
 
+}
+
+.follow {
+    width: 450px;
+    height: 150px;
+    border: solid lightgray;
+    background-color: lightgray;
+    border-radius: 25px;
+    margin: 50px;
 }
