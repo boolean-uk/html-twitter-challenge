@@ -18,23 +18,87 @@ font-family: sans-serif;
 
 .left-bar{
 grid-area: left-bar;
-background-color: lightskyblue;;
+background-color: white;
 }
 
 .feed{
 grid-area: feed;
-background-color: lightgrey;
+background-color: white;
 }
 
 .right-bar{
 grid-area: right-bar;
-background-color: lightslategray;
-}
-
-.icon{
-    width: 50px;
-    height: 50px;
-    gap: 20px;
+background-color: white;
 }
 
 
+
+.tweet-button{
+    width: 150px;
+    height: 40px;
+  
+    padding-left: 30px;
+    border: solid 4px lightblue;
+    margin: 50px;
+    border-radius: 25px;
+    color: white;
+
+    background-color: lightblue
+}
+
+.search-bar{
+    display:grid;
+
+    width: 450px;
+    height: 40px;
+  
+    padding-left: 70px;
+    border: solid 4px lightgrey;
+    margin: 50px;
+    border-radius: 25px;
+    color: black;
+
+    background-color: lightgray
+
+}
+.user{
+    margin: 50px;
+    width: 200px;
+    height: 80px;
+    border: solid 2px lightgray;
+    color: black;
+}
+
+.block{
+    background-color: lightgray;
+    height: 20px;
+}
+
+.home-box{
+    border: solid 2px  lightgrey;
+}
+
+.tweet-box{
+    border: 2px solid lightgray;
+    height: 150px;
+}
+
+.retweet-box{
+    border: 2px solid lightgray;
+    height: 200px;
+}
+.another-tweet{
+    border: 2px solid lightgray;
+    height: 300px;
+}
+
+
+.whats-happening{
+    width: 450px;
+    height: 450px;
+    border: solid lightgray;
+    background-color: lightgray;
+    border-radius: 25px;
+    margin: 50px;
+
+}
