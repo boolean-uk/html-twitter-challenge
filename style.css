@@ -362,3 +362,41 @@ body {
   .who-to-follow {
     top: 435px;
   }
+
+  .footer {
+    position: sticky;
+    top: 490px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    margin-top: 15px;
+    font-size: .8em;
+    color: #888;
+    line-height: 1.5em;
+  }
+
+  .footer div {
+    margin-right: 10px;
+  }
+
+  @media screen and (max-width: 1150px) {
+    .main-container {
+        grid-template:
+            "left-bar main" 1fr /
+            275px 1fr;
+    }
+    .right-bar {
+        display: none;
+    }
+  }
+
+  @media screen and (max-width: 750px) {
+    .main-container {
+        grid-template:
+            "main" 1fr /
+            1fr;
+    }
+    .left-bar {
+        display: none;
+    }
+  }
