@@ -255,3 +255,25 @@ a {
     margin: 50px;
     padding-left: 50px;
 }
+
+@media screen and ( max-width: 1200px ) {
+    .container {
+      grid-template:
+      "left-bar feed  " 1fr/
+    1fr  1fr 
+    }
+    .right-bar {
+      display: none;
+    }
+  }
+
+  @media screen and ( max-width: 750px ) {
+    .container {
+      grid-template:
+      " feed " 1fr/
+       1fr
+    }
+    .right-bar .left-bar {
+      display: none;
+    }
+  }
