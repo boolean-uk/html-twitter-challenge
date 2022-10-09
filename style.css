@@ -100,10 +100,7 @@ ion-icon {
   box-shadow: grey 1px 1px;
   filter: brightness(90%);
 }
-.main-content {
-  display: grid;
-  grid-template-rows: auto auto;
-}
+
 .header {
   position: relative;
 }
@@ -112,6 +109,61 @@ ion-icon {
   top: 30%;
   right: 0;
 }
+.main-content {
+  display: grid;
+  grid-template-rows: auto auto;
+}
+.maketweet-section {
+  position: relative;
+  border-bottom: 1px solid grey;
+}
+.profile-pic img {
+  display: inline-block;
+  border-radius: 50%;
+  margin: 20px;
+  width: 15%;
+  height: 25%;
+}
+.writetweet {
+  display: grid;
+  grid-template-rows: max-content;
+  position: absolute;
+  top: 0;
+  left: 20%;
+  padding-top: 5%;
+  padding-left: 10px;
+}
+.tweet-input {
+  border: none;
+  font-size: xx-large;
+}
+.tweet-input:focus {
+  outline: none;
+}
+.writetweet ion-icon {
+  color: rgb(29, 120, 240);
+  padding: 10px;
+  width: 30px;
+  height: 40px;
+  margin-top: 20px;
+}
+.writetweet ion-icon:hover {
+  background-color: rgba(29, 120, 240, 0.486);
+  border-radius: 50%;
+}
+.writetweet .tweet {
+  margin-left: 80%;
+}
+.tweetfeed {
+  position: relative;
+  border: 1px solid rgba(128, 128, 128, 0.637);
+  grid-template-columns: max-content auto;
+}
+.tweetfeed {
+  display: grid;
+  grid-template-rows: auto;
+}
+
 .right-panel {
   border-left: 1px solid rgba(128, 128, 128, 0.637);
 }
@@ -198,15 +250,4 @@ ion-icon {
   margin-left: 50px;
   background-color: rgb(15, 20, 25);
   border: 1px solid rgb(15, 20, 25);
-}
-.profile-pic img {
-  display: inline-block;
-  border-radius: 50%;
-  margin: 20px;
-  width: 15%;
-  height: 25%;
-}
-.writetweet {
-  display: grid;
-  grid-auto-rows: auto;
 }
