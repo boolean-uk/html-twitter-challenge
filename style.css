@@ -20,6 +20,16 @@ body {
 .left-bar {
     height: 100vh;
     font-size: 1.2em;
+    position: fixed;
+    grid-area: left-bar;
+}
+
+.main {
+    grid-area: main;
+}
+
+.right-bar {
+    grid-area: right-bar;
 }
 
 .left-bar div a {
@@ -34,7 +44,7 @@ body {
     margin-bottom: 10px;
 }
 
-.left-bar div a:hover {
+.left-bar div a:hover, .profile-bottom:hover {
     background-color: rgb(228, 228, 228)
 }
 
@@ -55,6 +65,7 @@ body {
     text-align: center;
     padding: 5px 0;
     margin-top: 10px;
+    font-size: .9em;
 }
 
 .left-bar .tweet a:hover {
@@ -85,4 +96,37 @@ body {
     position: absolute;
     top: 15px;
     left: 15px;
+}
+
+.profile-bottom {
+    position: fixed;
+    bottom: 20px;
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    gap: 10px;
+    place-items: center;
+    border-radius: 40px;
+    padding: 10px;
+    
+}
+
+.profile-bottom img {
+    display: block;
+    border-radius: 50%;
+}
+
+.profile-bottom {
+    font-size: .8em
+}
+
+.profile-bottom svg {
+    display: block;
+}
+
+.profile-bottom .name {
+    font-weight: bold;
+}
+
+.profile-bottom .handle {
+    color: #536471;
 }
