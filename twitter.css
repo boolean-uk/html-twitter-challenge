@@ -1,0 +1,279 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+font-family: sans-serif;
+}
+
+.container{
+    height: 100vh;
+    display:grid;
+    grid-template: 
+    "left-bar feed right-bar " 1fr/
+    1fr  700px 1fr
+}
+
+.left-bar{
+grid-area: left-bar;
+background-color: white;
+
+}
+
+.feed{
+grid-area: feed;
+background-color: white;
+}
+
+.right-bar{
+grid-area: right-bar;
+background-color: white;
+}
+
+
+/* left-bar */
+.tweet-button{
+    width: 200px;
+    height: 40px;
+  
+    padding-left: 55px;
+    border: solid 4px lightblue;
+    margin: 50px;
+    border-radius: 25px;
+    color: white;
+
+    background-color: lightblue
+}
+
+.user{
+    margin: 50px;
+    width: 200px;
+    height: 80px;
+    color: black; 
+}
+
+a {
+    text-decoration: none;
+    color: black;   
+  }
+
+ a :hover {
+ color:lightblue;
+}
+  
+/* all icons */
+.logo{
+    padding-top: 10px;
+   padding-left: 60px;
+   padding-bottom: 20px;
+}
+.home{
+    padding-left: 60px; 
+    display: flex;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+.explore{
+    padding-left: 60px; 
+        display: flex;
+        gap: 10px;
+        padding-bottom: 20px;
+     
+}
+.notifs{
+    padding-left: 60px; 
+    display: flex;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+.message{
+    padding-left: 60px; 
+    display: flex;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+.bookmarks{
+    padding-left: 60px; 
+    display: flex;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+.lists{
+    padding-left: 60px;
+    display: flex;
+    gap: 10px; 
+    padding-bottom: 20px;
+}
+.profile{
+    padding-left: 60px; 
+    display: flex;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+.more{
+    padding-left: 60px; 
+    display: flex;
+    gap: 10px;
+    padding-bottom: 20px;
+}
+
+
+/* feed */
+.block{
+    background-color: lightgray;
+    height: 20px;
+}
+
+.home-box{
+    border: solid 2px  lightgrey;
+    display: flex;
+    gap: 585px;
+}
+
+.tweet-box{
+    border: 2px solid lightgray;
+    height: 150px;
+    padding-left: 10px;
+    padding-top: 10px;
+}
+.part1{
+    display: flex;
+    gap: 20px;
+}
+.wazzuuup{
+    padding-top: 20px;
+    font-size: larger;
+}
+.part2{
+    padding-top: 45px ;
+    padding-left: 20px;
+    display: flex;
+    gap: 320px;
+}
+.reactions{
+    display: flex;
+    gap: 30px;
+    padding-left: 20px;
+}
+.small-tweet-box{
+    background-color: lightblue;
+    border-radius: 50px;
+    height:40px ;
+    width: 90px;
+    padding-left: 15px;
+    padding-top: 10px;
+    color: white;
+}
+
+.retweet-box{
+    border: 2px solid lightgray;
+    height: 200px;
+}
+
+.retweet{
+    display: flex;
+    gap: 10px;
+}
+
+.person1{
+    display: flex;
+    gap: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+   
+}
+.actual-tweet1{
+    padding-left: 50px;
+    padding-top: 20px;
+}
+.reaction2{
+    display: flex;
+    gap: 70px;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.another-tweet{
+    border: 2px solid lightgray;
+    height: 200px;
+}
+.person2{
+    display: flex;
+    gap: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+   
+}
+.actual-tweet2{
+    padding-left: 50px;
+    padding-top: 20px;
+}
+.reaction3{
+    display: flex;
+    gap: 70px;
+    padding-left: 50px;
+    padding-top: 50px;
+}
+
+/* right-bar */
+.search-bar{
+    display: flex;
+    gap: 30px;
+    width: 450px;
+    height: 40px;
+  
+    padding-left: 50px;
+    padding-top: 5px;
+    border: solid 4px lightgrey;
+    margin: 50px;
+    margin-top: 5px;
+    border-radius: 25px;
+    color: black;
+
+    background-color: lightgray;
+}
+
+.whats-happening{
+    width: 450px;
+    height: 300px;
+    border: solid lightgray;
+    background-color: lightgray;
+    border-radius: 25px;
+    margin: 50px;
+    padding-left: 50px;
+
+}
+
+.follow {
+    width: 450px;
+    height: 150px;
+    border: solid lightgray;
+    background-color: lightgray;
+    border-radius: 25px;
+    margin: 50px;
+    padding-left: 50px;
+}
+
+@media screen and ( max-width: 1200px ) {
+    .container {
+      grid-template:
+      "left-bar feed  " 1fr/
+    1fr  1fr 
+    }
+    .right-bar {
+      display: none;
+    }
+  }
+
+  @media screen and ( max-width: 750px ) {
+    .container {
+      grid-template:
+      " feed " 1fr/
+       1fr
+    }
+    .right-bar .left-bar {
+      display: none;
+    }
+  }
