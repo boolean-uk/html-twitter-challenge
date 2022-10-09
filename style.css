@@ -30,7 +30,10 @@ body {
     border-right: 1px solid #eee;
 }
 
-
+.right-bar-container {
+    position: sticky;
+    top: 0px;
+}
 
 .right-bar {
     grid-area: right-bar;
@@ -112,7 +115,8 @@ body {
     place-items: center;
     border-radius: 40px;
     padding: 10px;
-    
+    cursor: pointer;
+
 }
 
 .profile-bottom img {
@@ -141,15 +145,15 @@ body {
     grid-template-columns: 1fr 50px;
     height: 50px;
     position: fixed;
-    width: 600px;
-    
+    width: 598px;
+    background-color: #ffffff88;
+    backdrop-filter: blur(6px);
+    border-right: 1px solid #eee;
 }
 
 .top-bar .home {
     font-weight: bold;
     font-size: 1.2em;
-    background-color: #ffffff88;
-    backdrop-filter: blur(6px);
     display: grid;
     place-items: center start;
     padding-left: 15px;
@@ -305,19 +309,13 @@ body {
     left: 23px; /* 18px + 5px */
   }
 
-  .search-bar-container {
-    position: sticky;
-    top: 0px;
-  }
-
   .whats-happening, .who-to-follow {
-    position: sticky;
-    top: 66px;
     border-radius: 20px;
     padding: 15px;
     background-color: #f7f9f9;
     margin-top: 10px;
     margin-left: 8px;
+    margin-bottom: 20px;
   }
 
   .whats-happening h3, .who-to-follow .h3 {
@@ -359,17 +357,11 @@ body {
     border-radius: 10px;
   }
 
-  .who-to-follow {
-    top: 435px;
-  }
-
   .footer {
-    position: sticky;
-    top: 490px;
     display: flex;
     flex-wrap: wrap;
     padding: 15px;
-    margin-top: 15px;
+    padding-top: 0;
     font-size: .8em;
     color: #888;
     line-height: 1.5em;
@@ -388,6 +380,10 @@ body {
     .right-bar {
         display: none;
     }
+
+    .top-bar {
+        width: 100%;
+    }
   }
 
   @media screen and (max-width: 750px) {
@@ -398,5 +394,9 @@ body {
     }
     .left-bar {
         display: none;
+    }
+
+    .top-bar {
+        width: 100%;
     }
   }
