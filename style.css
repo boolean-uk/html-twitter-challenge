@@ -26,7 +26,10 @@ body {
 
 .main {
     grid-area: main;
+    border-left: 1px solid #eee;
 }
+
+
 
 .right-bar {
     grid-area: right-bar;
@@ -66,6 +69,7 @@ body {
     padding: 5px 0;
     margin-top: 10px;
     font-size: .9em;
+    width: 100%;
 }
 
 .left-bar .tweet a:hover {
@@ -129,4 +133,87 @@ body {
 
 .profile-bottom .handle {
     color: #536471;
+}
+
+.top-bar {
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    height: 50px;
+    position: fixed;
+    width: 600px;
+    padding-left: 15px;
+}
+
+.top-bar .home {
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: #ffffff88;
+    backdrop-filter: blur(6px);
+    display: grid;
+    place-items: center start;
+}
+
+.top-bar .star-icon {
+    display: grid;
+    place-items: center start;
+}
+
+.new-tweet {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 15px;
+    padding-left: 15px;
+}
+
+.new-tweet img {
+    border-radius: 50%;
+}
+
+.new-tweet-grid .input {
+    color: #536471;
+    padding: 15px 5px;
+    font-size: 1.2em;
+    height: 60px;
+}
+
+.new-tweet-grid .icons {
+    padding-top: 20px;
+    margin-right: 20px;
+    border-top: 1px solid #eee;
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.new-tweet-grid .icons-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 20px);
+    width: 100%;
+    gap: 15px;
+}
+
+.tweet-button {
+    text-align: right;
+    width: 100%;
+}
+
+.tweet-button a {
+    background-color: rgb(26, 140, 216);
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: .9em;
+}
+
+.show-tweets {
+    display: grid;
+    width: 100%;
+    height: 55px;
+    place-content: center;
+    /* font-size: .9em; */
+    color: rgb(29, 155, 240);
+    border-bottom: 1px solid #eee
 }
