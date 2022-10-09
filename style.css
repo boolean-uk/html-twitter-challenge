@@ -27,6 +27,7 @@ body {
 .main {
     grid-area: main;
     border-left: 1px solid #eee;
+    border-right: 1px solid #eee;
 }
 
 
@@ -141,7 +142,7 @@ body {
     height: 50px;
     position: fixed;
     width: 600px;
-    padding-left: 15px;
+    
 }
 
 .top-bar .home {
@@ -151,6 +152,7 @@ body {
     backdrop-filter: blur(6px);
     display: grid;
     place-items: center start;
+    padding-left: 15px;
 }
 
 .top-bar .star-icon {
@@ -213,7 +215,150 @@ body {
     width: 100%;
     height: 55px;
     place-content: center;
-    /* font-size: .9em; */
     color: rgb(29, 155, 240);
     border-bottom: 1px solid #eee
 }
+
+.main .tweet {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    border-bottom: 1px solid #eee;
+    padding-right: 15px;
+}
+
+.tweet .image {
+    padding-left: 15px;
+    padding-top: 20px;
+
+}
+
+.tweet img {
+    border-radius: 50%;
+}
+
+.tweet .name-container {
+    padding-top: 20px;
+    padding-left: 5px;
+}
+
+.tweet .name {
+    font-weight: bold;
+}
+
+.tweet .twitter-at, .tweet .time {
+    color: #999
+}
+
+.tweet .content {
+    padding-left: 5px;
+    padding-top: 8px;
+    color: #333;
+    line-height: 1.3em;
+    font-size: .98em;
+
+}
+
+.tweet .tweet-icons-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.tweet-icons-grid a {
+    display: grid;
+    line-height: 50px;
+    place-items: center start;
+    grid-template-columns: 40px 1fr;
+    font-size: .8em;
+    color: #555;
+}
+
+.search-bar {
+    width: 100%;
+}
+
+/* Thanks Luciano for the code on Discord! */
+
+.right-bar {
+    padding-left: 15px;
+}
+
+.search-bar { /* WHOLE BAR */
+    position: relative; 
+    padding: 8px 5px;
+    border: none;
+  }
+
+.search { /* THE ACTUAL SEARCH INPUT */
+    width: 98%;
+    height: 40px;
+    background-color: #f7f9f9;
+    border-radius: 50px;
+    padding: 8px 16px;
+    padding-left: 60px; /* Need to add a space on the left for the i */
+    outline: none; /* Removes the default focus bar when focused */
+    border: none;
+  }
+  
+  .search-icon { /* ICON CSS */
+    position: absolute; /* Auto removes the space the i takes and give the possibily of overlaping other elements */
+    top: 16px; /* 8px + 8px */
+    left: 23px; /* 18px + 5px */
+  }
+
+  .search-bar-container {
+    position: sticky;
+    top: 0px;
+  }
+
+  .whats-happening, .who-to-follow {
+    position: sticky;
+    top: 66px;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: #f7f9f9;
+    margin-top: 10px;
+    margin-left: 8px;
+  }
+
+  .whats-happening h3, .who-to-follow .h3 {
+    margin-bottom: 20px;
+  }
+  
+  .whats-happening-grid {
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    gap: 10px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+  }
+
+  .whats-happening .top-line, .whats-happening .bottom-line {
+    font-size: .8em;
+    color: #888;
+    padding-bottom: 5px;
+  } 
+
+  .whats-happening .bottom-line a, .show-more a {
+    text-decoration: none;
+    color: rgb(29, 155, 240)
+  }
+
+  .whats-happening .bottom-line a:hover, .show-more a:hover {
+    text-decoration: underline;
+  }
+
+  .whats-happening .middle-line{
+    font-size: .9em;
+    padding-bottom: 5px;
+    font-weight: bold;
+  } 
+
+  .whats-happening img {
+    width: 62px;
+    height: 62px;
+    border-radius: 10px;
+  }
+
+  .who-to-follow {
+    top: 435px;
+  }
