@@ -163,9 +163,50 @@ background-color: white;
     border: 2px solid lightgray;
     height: 200px;
 }
+
+.retweet{
+    display: flex;
+    gap: 10px;
+}
+
+.person1{
+    display: flex;
+    gap: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+   
+}
+.actual-tweet1{
+    padding-left: 50px;
+    padding-top: 20px;
+}
+.reaction2{
+    display: flex;
+    gap: 70px;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
 .another-tweet{
     border: 2px solid lightgray;
-    height: 280px;
+    height: 200px;
+}
+.person2{
+    display: flex;
+    gap: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+   
+}
+.actual-tweet2{
+    padding-left: 50px;
+    padding-top: 20px;
+}
+.reaction3{
+    display: flex;
+    gap: 70px;
+    padding-left: 50px;
+    padding-top: 50px;
 }
 
 /* right-bar */
