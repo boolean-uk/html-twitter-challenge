@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: grid;
+    place-items: center;
+}
+
+.main-container {
+    height: 100vh;
+    display: grid;
+    grid-template:
+        "left-bar main right-bar" 1fr /
+        275px 600px 350px;
+}
