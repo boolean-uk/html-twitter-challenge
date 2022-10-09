@@ -1,0 +1,312 @@
+*{
+    box-sizing: border-box;
+}
+body{ margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* LAY OUT OF PAGE*/
+.main-grid {
+    display: grid;
+    grid-template: ". centered ." auto / 1fr auto 1fr;
+}
+.two-row-grid{
+    display: grid;
+    grid-template-rows: 50px auto;
+}
+.grid-auto__column {
+    display: grid;
+    grid-auto-flow: column;
+  
+    gap: 2px;
+  }
+.center-wrapper{
+    max-width: 1250px;
+    margin: 0 auto
+}
+.three-column-grid{
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+}
+
+.three-row-grid{
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+.two-column-grid__expand-two {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    column-gap: 18px;
+}
+.three-column-grid__expand-two {
+    display: grid;
+    grid-template-columns: 50px auto 50px;
+    column-gap: 5px;
+    padding: 10px;
+  }
+.three-row-grid__main{
+    display: grid;
+    grid-template-rows: 50px auto 1fr;
+
+}
+.two-column-grid{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    column-gap: 18px;
+}
+
+.nav-headers > *{
+    min-width: auto;
+    min-height: auto;
+}
+.nav-headers{
+font-size: 20px
+}
+.main-body > *{
+    padding: 2px;
+}
+/* Left Nav Bar*/
+
+
+
+.nav-bar{
+    width: 300px;
+    height: 100vh;
+}
+.news{
+    width: 300px;
+}
+.logo{
+    height: 60px;
+    
+}
+.profile{
+    height: 40px;
+}
+.twitter-logo{
+    height: 55px;
+    width: 55px;
+    margin-left: 10px;
+}
+.icons{
+    margin-top: 5px;
+    margin-left: 10px;
+    align-items: center;
+}
+.home-logo{
+    width: 35px;
+    height: 35px;
+}
+
+.tweet{
+    background-color: #1DA1F2;
+    border-radius: 50px;
+    height: 50px;    
+    width: 250px;
+    margin-top: 13px;
+}
+.tweet > *{
+    margin:0px;
+    justify-content: center;
+    text-align: center;
+    padding: 12px;
+    color: white;
+}
+#small-profile{
+    height: 35px;
+    width: 35px;
+}
+.profile-name > *{
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+color: #1DA1F2;
+}
+a:active{
+    color: rgb(228, 8, 74);
+    
+}
+
+@media screen and (max-width: 1580px) {
+    .main-body {
+            display: grid;
+            grid-template-columns: 70px 4fr 1.8fr;
+            background-color: var(--first-color-light);
+        }
+    .icons h2 {
+            display: none;
+        }
+    .tweet{
+        display: none;
+    }
+    .profile p ,
+    .profile .dots{
+        display: none;
+    }
+
+    }
+    .icons{
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+    
+    
+
+/* Main Section */
+main{
+    border: 1.5px solid #E1E8ED;
+}
+
+.sparkles{
+    height: 50px ;
+    width: 50px;
+}
+
+.home-main{
+    align-items: center;
+
+}
+.home{
+    margin: 15px;
+}
+
+.profile-icon{
+    height: 50px;
+    width: 50px;
+    padding: 5px;
+    margin-left: 5px;
+}
+.status-bar{
+    border-top: 1.5px solid #E1E8ED;
+    border-bottom: 1.5px solid #E1E8ED;
+    
+}
+.upper-bar{
+    align-items: center;
+}
+.happening{
+    font-size: 23px;
+    color: grey;
+    font-weight: 100;
+}
+.status-icons > *{
+    height: 25px;
+    width: 25px;
+    margin-left: 15px;
+}
+.lower-bar{
+    align-items: center;
+    column-gap: 145px;
+    margin-left: 58px;
+}
+.tweet-status > *{
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.tweet-status{
+    background-color: #1DA1F2;
+    border-radius: 50px;
+}
+.tweet-status h3{
+    display: grid;
+    place-content: center;
+    color: white;
+    height: 12px;
+    
+}
+.statements ul{
+    list-style: none;
+}
+
+.statement-icons {
+    height: 15px;
+    width: 15px;
+}
+
+.statements{
+    height: auto;
+    width: auto
+    ;
+}
+.boxes {
+    height: auto;
+    border-radius: 25px;
+}
+    
+.user{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-size: small;
+    color: #AAB8C2;
+}
+.profile-statement p {
+    color: black;
+font-weight: 500;
+
+}
+
+
+.paragraph{
+    font-size: 14px;}
+
+.right-icon{
+    height: 30px;
+    width: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* News Right side Bar */
+
+.search-bar{
+    background-color: #E1E8ED;
+    border-radius: 50px;
+    align-items: center;
+}
+.search-bar h3{
+    font-weight: lighter;
+    opacity: 0.5;
+    font-size: 15px;
+}
+
+.magnifying{
+    height: 30px;
+    width: 30px;
+
+}
+.news > *{
+    background-color: #F5F8FA;
+
+}
+.news{
+    margin-left: 30px;
+    place-content: center;
+
+}
+.box-right{
+    border-radius: 25x;
+    padding: 25px;
+}
+.mag{
+    height: 15px;
+    width: 15px;
+    margin-left: 15px;
+}
+.stylebox{
+    margin-left: 15px;
+}
