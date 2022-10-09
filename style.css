@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 body {
@@ -14,4 +15,74 @@ body {
     grid-template:
         "left-bar main right-bar" 1fr /
         275px 600px 350px;
+}
+
+.left-bar {
+    height: 100vh;
+    font-size: 1.2em;
+}
+
+.left-bar div a {
+    height: 50px;
+    display: inline-block;
+    line-height: 50px;
+    color: #000;
+    text-decoration: none;
+    padding-left: 15px;
+    padding-right: 30px;
+    border-radius: 40px;
+    margin-bottom: 10px;
+}
+
+.left-bar div a:hover {
+    background-color: rgb(228, 228, 228)
+}
+
+.active-page {
+    font-weight: bold;
+}
+
+.left-bar div a svg {
+    margin-bottom: -8px;
+    margin-right: 20px;
+}
+
+.left-bar .tweet a {
+    background-color: rgb(26, 140, 216);
+    color: white;
+    font-weight: bold;
+    display: block;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 10px;
+}
+
+.left-bar .tweet a:hover {
+    background-color: rgb(16, 122, 192);
+    color: white;
+}
+
+.left-bar .twitter-logo a {
+    padding: 10px;
+    height: auto;
+    line-height: auto;
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 0;
+    height: 40px;
+    margin-top: 5px;
+
+    position: relative;
+    width: 40px;
+}
+
+.left-bar .twitter-logo a:hover {
+    background-color: rgba(26, 140, 216, 0.082);
+    border-radius: 50%;
+}
+
+.left-bar .twitter-logo a svg {
+    position: absolute;
+    top: 15px;
+    left: 15px;
 }
