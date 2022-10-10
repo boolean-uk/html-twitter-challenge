@@ -18,9 +18,13 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <div class="container">
+    <!--link to websites where ill be taking mages and fonts from-->
     <!-- sidebar starts -->
     <div class="sidebar">
+      <!--create a class called sidebar where the twitter logo, contents and corresponding images will be-->
       <i class="fab fa-twitter"></i>
+      <!--set these options as active-->
       <div class="sidebarOption active">
         <span class="material-symbols-outlined"> home </span>
         <h2>Home</h2>
@@ -58,9 +62,10 @@
       <!-- create a button and allocate what it says-->
       <button class="sidebar-tweet">Tweet</button>
     </div>
+    </div>
     
     <!-- sidebar ends -->
-
+    <!--create a class for the middle of the page called feed. This will incorporate the header, tweetbox and posts sections-->
     <!--feed starts -->
     <div class="feed">
       <div class="feed-header">
@@ -70,11 +75,15 @@
     <div class="tweetbox">
       <form>
         <div class="tweetbox-input">
+          <!--link to image used for profile pic-->
       <img src="https://media.istockphoto.com/photos/multiethnic-group-of-students-going-out-of-the-university-picture-id1410409412?s=612x612" alt=""/>
+      <!--use a text input to put "whats happening next to profile image"-->
       <input type="text" placeholder="Whats Happening?" />
       </div>
+      <!--add another tweet button-->
       <button class="tweetBox-tweetButton">Tweet</button>
       </form>
+      <!--insert imgs for icons that will go at bottom of tweetbox-->
       <div class= "icons">
         <span class="material-symbols-outlined"> image </span>
         <span class="material-symbols-outlined"> gif_box </span>
@@ -87,29 +96,35 @@
 
 
       <!--post starts-->
+      <!--create another class for posts-->
       <div class="post">
+        <!--create a class for profile pic so that it can be copied and pasted should another post underneath be wanted-->
         <div class="post-avatar">
           <img src="https://media.istockphoto.com/photos/multiethnic-group-of-students-going-out-of-the-university-picture-id1410409412?s=612x612" alt=""/>
             </div>
-
+            <!--create some more classes for name, address, and verification img. style using css-->
             <div class="post-body">
               <div class="post-header">
                 <div class="poster-header-text">
                   <h3>
                     Martin Lynch
                     <span class="post-headerSpecial">
+                      <!--attach the verified symbol via link-->
                       <span class="material-symbols-outlined"> verified </span> @MartinLynch
                     </span>                    
                   </h3>
               </div>
+              <!-- assign text that will appear as a post-->
               <div class ="post-headerDescription">
                 <p>Good lord am i finding this assignment difficult lol</p>
         </div>
       </div>
+      <!--attach img via link. This will appear as a post-->
       <img
       src="https://media.istockphoto.com/photos/serious-overworked-health-care-workers-wearing-protective-face-masks-picture-id1292663193?s=612x612"
       alt=""
       />
+      <!--use links to  get imgs below post. I might return to make these active later-->
       <div class="post-footer">
         <span class="material-symbols-outlined"> chat_bubble </span>
         <span class="material-symbols-outlined"> repeat </span>
@@ -118,7 +133,8 @@
       </div>
       </div>
       </div>
-            <!--post starts-->
+<!--i will copy and paste the previous post and change the text and img so that it looks like 2 separate posts from the same person-->
+            <!--second post starts-->
             <div class="post">
               <div class="post-avatar">
                 <img src="https://media.istockphoto.com/photos/multiethnic-group-of-students-going-out-of-the-university-picture-id1410409412?s=612x612" alt=""/>
@@ -153,8 +169,9 @@
             </div>
           <!--post ends-->
           <!--feed ends-->
-
+          <!--Next I will finish off by creating the side menu to the right. -->
           <!--widget starts-->
+          
           <div class="widgets">
             <div class="widget-input">
               <span class="material-symbols-outlined"> search </span>
