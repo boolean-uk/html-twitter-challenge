@@ -1,0 +1,134 @@
+.main-page {
+  display: grid;
+  grid-template-rows: 20% 1fr;
+  gap: 5px;
+  position: relative;
+}
+.post-block {
+  display: grid;
+  grid-template-columns: auto 2fr 1fr;
+  justify-content: center;
+  padding-left: 5px;
+  height: auto;
+}
+
+.home {
+  margin-bottom: auto;
+  margin-top: 0ch;
+  top: 0;
+}
+.text-block {
+  position: relative;
+  margin-top: 10ch;
+  margin-right: ;
+  padding-right: 10ch;
+
+  float: inline-end;
+}
+
+.avatar {
+  background-color: white;
+  width: 10ch;
+  height: fit-content;
+  border-radius: 50%;
+  border: solid black 2px;
+  margin-left: auto;
+  width: 8ch;
+}
+.prompt {
+  position: absolute;
+  text-decoration: underline;
+}
+.prompt-line prompt {
+  height: auto;
+  width: 200px;
+  position: absolute;
+}
+.prompt-line a {
+  height: auto;
+  width: auto;
+
+  margin-top: 1ch;
+}
+.post-bar-tweeter {
+  margin-right: auto;
+  align-items: end;
+}
+.post-list-icons {
+  position: absolute;
+  margin-top: 8ch;
+  padding-left: 0;
+  width: 5ch;
+}
+
+.post-bar-icons a {
+  display: inline-block;
+  align-items: center;
+  width: 3ch;
+  margin-top: 7ch;
+}
+.post-bar-icons a:hover {
+  cursor: grab;
+  background-color: blue;
+  border-radius: 50%;
+}
+.tweeter {
+  text-align: center;
+  width: auto;
+  height: fit-content;
+  background-color: rgb(0, 0, 0);
+  margin-top: 8ch;
+  margin-right: 20%;
+  padding-right: 20px;
+  border-radius: 30%;
+}
+.tweet-button {
+  color: white;
+  text-decoration: dotted;
+}
+
+.main-page-feed {
+  margin: 0;
+}
+.main-page-feed p {
+  gap: 5px;
+
+  background-color: rgba(234, 231, 231, 0);
+  border: solid 2px rgb(230, 80, 80);
+  margin: 3;
+}
+.main-feed-box {
+  /* display: grid;
+  grid-template-columns: 10ch 1fr; */
+  background-color: rgba(240, 235, 235, 0.173);
+  border-bottom: solid black 2px;
+  margin-left: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  padding-bottom: 30px;
+}
+.avatar-feed {
+  /* position: absolute; */
+  background-color: white;
+  width: 10ch;
+  height: fit-content;
+  border-radius: 50%;
+  border: solid black 2px;
+  margin-left: auto;
+  margin-top: 5%;
+  width: 6ch;
+}
+.actual-post {
+  display: inline-block;
+}
+
+.main-feed-box-icons {
+  width: 20px;
+}
+.main-post-box-icons a:hover {
+  background-color: blue;
+  border-radius: 50%;
+}
+.main-post-box-icons {
+  margin-left: 65px;
+}
