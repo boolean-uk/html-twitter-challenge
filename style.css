@@ -5,8 +5,11 @@
 }
 
 div {
-    font-size: 10px;
+    font-size: 10px; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+p{
+    line-height: 1.5;
 }
 
 .container {
@@ -15,136 +18,215 @@ div {
     grid-template:
         "left main right" 1fr/
         3fr 5fr 3fr;
+        margin-right: 80px;
+        margin-left: 80px;
+        gap: 10px;
 }
 
-.left {
-    /* grid-area: left; */
-    display: grid;
-    grid-auto-flow: row;
-    background-color: antiquewhite;
-    padding-left: 25%;
-    row-gap: 0;
+.left-menu li {
+    list-style: none;
+
+}
+a {
+    text-decoration: none;
+    border: none;
+    border-radius: 25px;
+    color: black;
+    font-size: 18px;
+    border-left: 20px;
+    border-right: 30px;
+    
+    
     
 }
 
-.home, .explore, .list, .profile, .more, .message, .bookmark{
-    display: grid;
-    color:black;
-    padding:10px 5px 20px 8px;
-    border: hidden;
-    border-radius: 40px;
-    font-size: 15px;
-    height: 35px;
-    width:120px;
-    text-align:center;  
-    margin:auto;
-
-}
-/* .notifications {
-    display: inline-block;
-    color:black;
-    padding:5px;
-    border: groove;
-    border-radius: 40px;
-    font-size: 15px;
-    height: 40px;
-    width:180px;
-    text-align:center;  
-} */
-
-.message, .bookmark {
-    padding:10px 5px 20px 7px;   
-    text-align:right;  
-
-}       
-.home:hover, .explore:hover, .list:hover, .profile:hover, 
-.more:hover, .bookmark:hover, .message:hover, .notifications-grid:hover, .tweet:hover{
-    background-color:gray;
-    cursor: pointer;    
-
+ 
+.left-menu img{
+height: 20px;
+width: 20px;
+margin-left: 10px;
 }
 
-.tweet {
+.left-menu button{
+    height: 50px;
+    width: 220px;
     color: white;
-    background-color:dodgerblue;
-    border-radius: 20px;
-    border: solid;
-    border-color:dodgerblue;
-    font-size: 20px;
-    width: 200px;
-    height:10px;
-    text-align: center; 
-    padding: 10px 0px 30px 0px;
-    /* place-content: center; */
-    
+    background-color: dodgerblue;
+    border-radius: 25px;
+    border: none;
+
 }
 
-.logout {
+.profile-person, .sign-off, .logout {
     display: inline-block;
+    border-radius: 25px;
+    border: hidden;
     grid-auto-flow: column;
     padding:1px;
-    border: groove;
+    
+}
+
+.left-menu a:hover, img:hover, .profile-person:hover{
+    background-color: lightgray;
+    cursor: pointer;
+
+} 
+button:hover {
+    background-color:rgb(140, 140, 202);
+    cursor: pointer;
+}
+
+.main li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.main .retweet{
+    display: grid;
+    grid-template-rows: repeat(auto, 1fr);
+    font-size: 10px;
+    gap: 50px;
+    
+}
+
+
+.retweet-1 p, .retweet-2 p{
+    font-size: 15px;
+    font-weight: 300;
+}
+.retweet-1 a, .retweet-2 a{
+    font-size: 15px;
+    font-weight: 300;
 }
 
 
 .main {
     grid-area: main;
-    background-color: aquamarine;
-}
-
-
-.home-button, .explorebtn, .bookmarkbtn, .messagebtn, .morebtn, .profilebtn, .listbtn {
-    position: absolute;
-}
-
-.container.right {
-    grid-area: right;
     display: grid;
-    background-color: antiquewhite;
-}
-
-.searchtwtr{
-    display: grid;
-    border: groove; 
-    width:100%; 
-    height: 40px;
-    border-radius: 30px; 
-    text-align: center;
-    font-size: 15px;
+    grid-template-rows: 40px 70px 1fr;
+    border-right: solid lightgrey;
+    border-left: solid lightgray;
+    margin: right 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-right: 1px solid gray;
+    border-left: 1px solid grey;    
+    gap: 10px;
     
-} 
+ 
+    
+
+}
+.main-happening-1 {
+    border-bottom: 1px solid grey;
+    margin-bottom: 1px;
+
+}
+.main-home {
+    border-bottom: 1px solid grey;
+    font-size: 15px;
+}
+.main-happening-1 input {
+    font-size: 20px;
+    /* margin-top: 20px;
+    margin-bottom: 20px; */
+    border: none;
+    background-color: rgb (223. 227, 231);
+    border-radius: 10px;
+}
+.main-happening-1 img {
+    height: 30px;
+    width: 30px;
+}
+.icons li {
+    display: inline;
+    grid-template-columns: repeat(6, 40px)auto;
+    margin-right: 5px;
+    list-style: none;
+    
+
+}
+.icons button {
+    background-color:rgb(117, 213, 245);
+    font-size: 10px;
+    border-radius: 20px;
+    float: right; 
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: none;
+    color: white;
+    height: 20px;
+    width: 80px;
+    
+}
+
+.icons img, .retweet img{
+    width: 10px;
+    height: 10px;
+}
+.retweet, .retweet-1, .retweet-2 {
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    
+}
+.retweet li {
+    display: inline-block;
+    margin-right: 70px; 
+    list-style: none;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    
+
+}
+.retweet li img {
+    height: 15px;
+    width: 15px;
+}
+
+
+/* Right side bar */
+.right {
+    display: grid;
+    grid-template-rows: 50px 1fr 1fr;
+    
+    
+}
+
+.right input{
+    border-radius: 20px;
+    border: none;
+    font-size: 18px;
+    padding: 10px;
+    text-align: left;
+    width: 330px;
+}
 
 .happening, .follow {
     display: grid;
-    color:black;
-    padding: 5px;
+    grid-template-rows: repeat(auto, 1fr);
+    color: black;
     border: groove;
     border-radius: 10px;
-    font-size: 15px;
-    width: 100%;
-    height: 15%;
-    text-align: left;  
-    /* place-items: left; */
-    place-content: left;
-    gap:5px;
+    padding: 10px;
+   
+    text-align: left;
     
-}
-.notifications-grid {
-    display:grid;
-    grid-auto-flow: column;
-    /* display: inline-block; */
-    color:black;
-    padding:10px;
-    border: hidden;
-    border-radius: 40px;
-    /* font-size: 15px; */
-    height: 35px;
-    width:140px;
-    text-align:left;  
-    margin:auto;
-    
+    gap: 5px;
+
   }
 
-.logo {
-    width: 20px;
+
+.happening-1 a:hover, .happening-2 a:hover, .happening-3 a:hover,  
+.happening-4 a:hover, .happening-5 a:hover,  
+.following-1 a:hover, .following-2 a:hover, .following-3 a:hover,
+.happening-1 p:hover, .happening-2 p:hover, .happening-3 p:hover, .happening-4 p:hover, 
+.happening-5 p:hover, .following-1 p:hover, .following-2 p:hover, .following-3 p:hover{
+
+    background-color:lightgrey;
+    cursor: pointer;
 }
+
