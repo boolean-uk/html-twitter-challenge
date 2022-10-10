@@ -28,6 +28,8 @@ body {
     grid-area: main;
     border-left: 1px solid #eee;
     border-right: 1px solid #eee;
+    display: grid;
+    place-content: center;
 }
 
 .right-bar-container {
@@ -144,11 +146,11 @@ body {
     display: grid;
     grid-template-columns: 1fr 50px;
     height: 50px;
-    position: fixed;
-    width: 598px;
+    position: sticky;
     background-color: #ffffff88;
     backdrop-filter: blur(6px);
-    border-right: 1px solid #eee;
+
+    top: 0;
 }
 
 .top-bar .home {
@@ -161,11 +163,11 @@ body {
 
 .top-bar .star-icon {
     display: grid;
-    place-items: center start;
+    place-items: center;
 }
 
 .new-tweet {
-    margin-top: 60px;
+    margin-top: 20px;
     display: grid;
     grid-template-columns: 70px 1fr;
     border-bottom: 1px solid #eee;
