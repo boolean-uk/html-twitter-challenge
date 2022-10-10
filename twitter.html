@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter-Challenge</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"/>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+    <!--link to websites where ill be taking mages and fonts from-->
+    <!-- sidebar starts -->
+    <div class="sidebar">
+      <!--create a class called sidebar where the twitter logo, contents and corresponding images will be-->
+      <i class="fab fa-twitter"></i>
+      <!--set these options as active-->
+      <div class="sidebarOption active">
+        <span class="material-symbols-outlined"> home </span>
+        <h2>Home</h2>
+      </div>
+      <!--name all items on sidebar, attach images via link-->
+      <div class="sidebarOption">
+        <span class="material-symbols-outlined"> search </span>
+        <h2>Explore</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-symbols-outlined"> tag </span>
+        <h2>Notifications</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-symbols-outlined"> mail </span>
+        <h2>Messages</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-symbols-outlined"> bookmark </span>
+        <h2>Bookmarks</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-symbols-outlined"> person </span>
+        <h2>Profile</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-symbols-outlined"> more_horiz </span>
+        <h2>More</h2>
+      </div>
+      <!-- create a button and allocate what it says-->
+      <button class="sidebar-tweet">Tweet</button>
+    </div>
+    </div>
+    
+    <!-- sidebar ends -->
+    <!--create a class for the middle of the page called feed. This will incorporate the header, tweetbox and posts sections-->
+    <!--feed starts -->
+    <div class="feed">
+      <div class="feed-header">
+      <h2>Home</h2>
+    </div>
+    <!--tweetbox starts-->
+    <div class="tweetbox">
+      <form>
+        <div class="tweetbox-input">
+          <!--link to image used for profile pic-->
+      <img src="https://media.istockphoto.com/photos/multiethnic-group-of-students-going-out-of-the-university-picture-id1410409412?s=612x612" alt=""/>
+      <!--use a text input to put "whats happening next to profile image"-->
+      <input type="text" placeholder="Whats Happening?" />
+      </div>
+      <!--add another tweet button-->
+      <button class="tweetBox-tweetButton">Tweet</button>
+      </form>
+      <!--insert imgs for icons that will go at bottom of tweetbox-->
+      <div class= "icons">
+        <span class="material-symbols-outlined"> image </span>
+        <span class="material-symbols-outlined"> gif_box </span>
+        <span class="material-symbols-outlined"> leaderboard </span>
+        <span class="material-symbols-outlined"> sentiment_satisfied </span>
+        <span class="material-symbols-outlined"> event_repeat </span>
+      </div>
+      </div>
+      <!--tweetbox ends-->
+
+
+      <!--post starts-->
+      <!--create another class for posts-->
+      <div class="post">
+        <!--create a class for profile pic so that it can be copied and pasted should another post underneath be wanted-->
+        <div class="post-avatar">
+          <img src="https://media.istockphoto.com/photos/multiethnic-group-of-students-going-out-of-the-university-picture-id1410409412?s=612x612" alt=""/>
+            </div>
+            <!--create some more classes for name, address, and verification img. style using css-->
+            <div class="post-body">
+              <div class="post-header">
+                <div class="poster-header-text">
+                  <h3>
+                    Martin Lynch
+                    <span class="post-headerSpecial">
+                      <!--attach the verified symbol via link-->
+                      <span class="material-symbols-outlined"> verified </span> @MartinLynch
+                    </span>                    
+                  </h3>
+              </div>
+              <!-- assign text that will appear as a post-->
+              <div class ="post-headerDescription">
+                <p>Good lord am i finding this assignment difficult lol</p>
+        </div>
+      </div>
+      <!--attach img via link. This will appear as a post-->
+      <img
+      src="https://media.istockphoto.com/photos/serious-overworked-health-care-workers-wearing-protective-face-masks-picture-id1292663193?s=612x612"
+      alt=""
+      />
+      <!--use links to  get imgs below post. I might return to make these active later-->
+      <div class="post-footer">
+        <span class="material-symbols-outlined"> chat_bubble </span>
+        <span class="material-symbols-outlined"> repeat </span>
+        <span class="material-symbols-outlined"> favorite </span>
+        <span class="material-symbols-outlined"> publish </span>
+      </div>
+      </div>
+      </div>
+<!--i will copy and paste the previous post and change the text and img so that it looks like 2 separate posts from the same person-->
+            <!--second post starts-->
+            <div class="post">
+              <div class="post-avatar">
+                <img src="https://media.istockphoto.com/photos/multiethnic-group-of-students-going-out-of-the-university-picture-id1410409412?s=612x612" alt=""/>
+                  </div>
+      
+                  <div class="post-body">
+                    <div class="post-header">
+                      <div class="poster-header-text">
+                        <h3>
+                          Martin Lynch
+                          <span class="post-headerSpecial">
+                            <span class="material-symbols-outlined"> verified </span> @MartinLynch
+                          </span>                    
+                        </h3>
+                    </div>
+                    <div class ="post-headerDescription">
+                      <p>This just in! I am starting to get it! Copying and pasting is so bloody handy!</p>
+              </div>
+            </div>
+            <img
+            src="https://media.istockphoto.com/photos/asian-esports-team-holding-trophy-mock-up-cheque-cheering-winning-picture-id1410113854?s=612x612"
+            alt=""
+            />
+            <div class="post-footer">
+              <span class="material-symbols-outlined"> chat_bubble </span>
+              <span class="material-symbols-outlined"> repeat </span>
+              <span class="material-symbols-outlined"> favorite </span>
+              <span class="material-symbols-outlined"> publish </span>
+            </div>
+            </div>
+            </div>
+            </div>
+          <!--post ends-->
+          <!--feed ends-->
+          <!--Next I will finish off by creating the side menu to the right. -->
+          <!--widget starts-->
+          
+          <div class="widgets">
+            <div class="widget-input">
+              <span class="material-symbols-outlined"> search </span>
+              <input type="text" placeholder="Search Twitter" />
+            </div>
+            <div class="widgets-container">
+              <h2>Whats Happening?</h2>
+              <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Sunsets don&#39;t get much better than this one over <a href="https://twitter.com/GrandTetonNPS?ref_src=twsrc%5Etfw">@GrandTetonNPS</a>. <a href="https://twitter.com/hashtag/nature?src=hash&amp;ref_src=twsrc%5Etfw">#nature</a> <a href="https://twitter.com/hashtag/sunset?src=hash&amp;ref_src=twsrc%5Etfw">#sunset</a> <a href="http://t.co/YuKy2rcjyU">pic.twitter.com/YuKy2rcjyU</a></p>&mdash; US Department of the Interior (@Interior) <a href="https://twitter.com/Interior/status/463440424141459456?ref_src=twsrc%5Etfw">May 5, 2014</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+          </div>
+          <!--widget ends-->
+      
+  </body>
+</html>
