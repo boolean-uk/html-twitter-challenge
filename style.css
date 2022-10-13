@@ -86,6 +86,10 @@ body {
     color: white;
 }
 
+.tweet-mobile {
+    display: none;
+}
+
 .left-bar .tweet .tablet {
     display: none;
 }
