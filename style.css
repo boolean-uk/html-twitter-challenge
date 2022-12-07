@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     scroll-behavior: smooth;
+    color: #f4f5f5;
   }
 
 body {
@@ -11,20 +12,56 @@ body {
 }
 
 .container {
+    height: 100vh;
     display: grid;
     grid-template: 
-    "left topmiddle right" 0.2fr
-    "left middle right" 0.8fr /
+    "left feed right" 1fr /
     0.2fr 0.6fr 0.2fr;
 }
 
 .left {
     grid-area: left;
+    display: grid;
+    grid-template: 
+    "logo"0.1fr
+    "home"1fr
+    "explore"1fr
+    "notifications"1fr
+    "messages"1fr
+    "bookmarks"1fr
+    "profile"1fr
+    "more"1fr/
+    1fr;
 }
 
-.topmiddle {
-    grid-area: topmiddle;
+a {
+    /* border: 1px solid yellow; */
+    margin: 10px;
 }
+
+.logo > img {
+    width: 50px;
+    object-fit: cover;
+}
+
+button {
+    margin-bottom: 100px;
+}
+
+div, nav {
+    border: 1px solid white;
+}
+
+.logo, .home, .explore,
+.notifications, .messages,
+.bookmarks, .profile, .more, .QUACK {
+    margin-left: 20px;
+    margin-right: 10px;
+    text-align: center;
+    font-size: 28px;
+}
+
+/* DECS */
 
 .feed {
     grid-area: feed;
@@ -34,7 +71,36 @@ body {
     grid-area: right;
 }
 
-div, nav {
-    border: 1px solid white;
-    padding: 10px;
+.logo {
+    grid-area: logo;
+    margin-right: 83%;
+    margin-top: 25px;
+}
+
+.home {
+    grid-area: home;
+}
+
+.explore {
+    grid-area: explore;
+}
+
+.notifications {
+    grid-area: notifications;
+}
+
+.messages {
+    grid-area: messages;
+}
+
+.bookmarks {
+    grid-area: bookmarks;
+}
+
+.profile {
+    grid-area: profile;
+}
+
+.more {
+    grid-area: more;
 }
