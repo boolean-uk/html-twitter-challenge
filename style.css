@@ -1,0 +1,40 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+  }
+
+body {
+    background-color: #030e0d;
+}
+
+.container {
+    display: grid;
+    grid-template: 
+    "left topmiddle right" 0.2fr
+    "left middle right" 0.8fr /
+    0.2fr 0.6fr 0.2fr;
+}
+
+.left {
+    grid-area: left;
+}
+
+.topmiddle {
+    grid-area: topmiddle;
+}
+
+.feed {
+    grid-area: feed;
+}
+
+.right {
+    grid-area: right;
+}
+
+div, nav {
+    border: 1px solid white;
+    padding: 10px;
+}
