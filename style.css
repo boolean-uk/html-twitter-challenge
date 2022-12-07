@@ -61,3 +61,25 @@
     grid-template-rows: repeat(3, auto);
 }
 
+#searchBar {
+    display: inline-block;
+    height: fit-content;
+    padding: 5px;
+    border: black solid 1px;
+    border-radius: 10px;
+}
+
+#wHaps {
+    border: black solid 1px;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+#whoFollow {
+    border: black solid 1px;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
