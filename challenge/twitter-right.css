@@ -35,6 +35,10 @@
     background-color: #DDA15E;
 }
 
+.loop {
+    width: 25px;
+}
+
 .news p,
 .follow p {
     font-size: 20px;

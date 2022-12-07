@@ -19,8 +19,9 @@
 } */
 
 .mid-box {
-    border: lightcoral solid 1px;
-    /* gap: 8px; */
+    border-left: lightcoral solid 1px;
+    border-right: ;
+    
 }
 
 /* .inner-box {

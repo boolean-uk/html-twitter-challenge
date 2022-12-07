@@ -20,10 +20,19 @@
     /* background-color: antiquewhite; */
 }
 
-/* .homebar > h1 {
-    font-size: larger;
+.stars {
+    width: 30px;
+    fill: #BC6C25;
+    padding-top: 15px
 }
 
+.homebar > h1 {
+    font-size: 40px;
+    margin: 0;
+    padding-left: 30px;
+}
+
+/*
 .img {
     border-radius: 50%;
 }

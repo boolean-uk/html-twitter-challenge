@@ -46,3 +46,18 @@
 .tweetbutton {
     grid-area: tweetbutton;
 }
+
+
+
+/* left svg */
+
+.home,
+.explore,
+.notifications,
+.messages,
+.bookmarks,
+.profile,
+.more {
+        fill: #FEFAE0;
+        width: 20px;
+    }
