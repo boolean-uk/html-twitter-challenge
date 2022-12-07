@@ -18,11 +18,25 @@ a {
     color: black;
 }
 
+/* HEADER BAR  */
+
 .headerBar {
     display:grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 50px;
+    align-items: center;
+    justify-items: center;
+    padding: 20px 0 0 0;
 }
+
+.headerLogo {
+    padding: 0 170px 0 10px;
+}
+.headerLogo > img {
+    width: 30px;
+}
+
+/* MAIN CONTAINER  */
 
 .mainContainer {
     display:grid;
@@ -38,33 +52,94 @@ a {
     display: grid;
     grid-template-columns: 30px 100px;
     align-items: center;
-    margin: 10px 0 0 10px;
+    padding: 25px 0 0 10px;
 }
 
 .textHolder > span {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
-    margin: 0 0 0 20px;
+    padding: 0 0 0 20px;
     letter-spacing: 2px;
 }
+
+.home > .textHolder > span {
+    color: #1DA1F2;
+}
+
 .icon {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
 }
 
 .tweetButton {
     display: grid;
     border-radius: 25px;
-    height: 33px;
+    height: 40px;
     width: 150px;
     place-items: center;
-    margin: 10px 0 0 10px;
+    margin: 25px 0 0 10px;
 }
 
 .tweetButtonText {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 16px;
     color: white;
     letter-spacing: 2px;
+    
+}
+
+.profileBlock {
+    display: grid;
+    grid-template-columns: 40px 1fr 25px;
+    grid-template-rows: 20px 20px;
+    grid-template-areas: 
+    "pfp displayName profileSettings"
+    "pfp twitterHandle ."
+    ;
+    padding: 20px 0 10px 5px;
+    position: fixed;
+    bottom: 0;
+}
+
+.profilePicture {
+    grid-area: pfp;
+}
+
+.profilePicture > img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.displayName {
+    grid-area: displayName;
+}
+
+.displayName > span {
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 10px;
+    letter-spacing: 0.5px;
+}
+
+.twitterHandle {
+    grid-area: twitterHandle;
+}
+
+.twitterHandle > span {
+    font-size: 12px;
+    color: gray;
+    padding-left: 10px;
+}
+.profileSettings {
+    grid-area: profileSettings;
+    display: grid;
+    align-items: end;
+    justify-items: right;
+}
+
+.profileSettings > img {
+    width: 10px;
     
 }
