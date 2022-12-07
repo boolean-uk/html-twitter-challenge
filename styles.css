@@ -1,10 +1,28 @@
 .body {
-  margin: 0;
+  margin: none;
 }
 
 .header {
   grid-area: header;
   background-color: mediumspringgreen;
+  display: grid;
+  grid-template-columns: 40px 1fr 50px;
+  grid-template-areas: "title   .   toggle-feed";
+}
+
+h1 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  padding-left: 10px;
+}
+
+#title {
+  grid-area: title;
+}
+
+#toggle-icon {
+  grid-area: toggle-feed;
+  padding-top: 10px;
 }
 
 #logo {
@@ -14,10 +32,10 @@
 
 .main-frame {
   display: grid;
-  grid-template-columns: 200px 1fr 100px;
-  grid-template-rows: 80px 600px;
+  grid-template-columns: 200px 1fr 260px;
+  grid-template-rows: 55px 600px;
   grid-template-areas:
-    "left-side    header      header"
+    "left-side    header      right-side"
     "left-side    feed        right-side";
   /* I will add in margins later by adding some @media selectors. */
 }
@@ -83,7 +101,7 @@ ul {
 
 .feed {
   grid-area: feed;
-  background-color: linen;
+  background-color: lightgrey;
 }
 
 .right-side {
