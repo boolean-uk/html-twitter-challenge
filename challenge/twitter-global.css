@@ -1,0 +1,27 @@
+* {
+    background-color: #1e1e1e;
+    color: #FEFAE0;
+    box-sizing: border-box;
+}
+  
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 200px 1fr 200px/*minmax(200px, 1fr) minmax(500px, 3fr) minmax(200px, 1fr)*/;
+    grid-template-areas:
+        "left middle right";
+    gap: 5px;
+}
+
+.outer-box {
+    border: dotted white 2px;
+}
+
+.mid-box {
+    border: lightcoral solid 1px;
+    /* gap: 8px; */
+}
+
+.inner-box {
+    border: dashed 2px darkgrey;
+}

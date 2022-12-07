@@ -1,34 +1,23 @@
-* {
-    background-color: #1e1e1e;
-    color: antiquewhite;
-}
-
-.container {
-    height: 100vh;
-    display: grid;
-    grid-template-columns: minmax(200px, 1fr) minmax(500px, 3fr) minmax(200px, 1fr);
-    grid-template-areas:
-        "left middle right";
-    gap: 5px;
-
-}
+/* Left Menu */
 
 .left {
-    height: 100vh;
-
     grid-area: left;
-    background-color: aqua;
+    background-color: #DDA15E;
     display: grid;
-
-    grid-template-rows: 100vh;
-    grid-template-areas: 
-    "clickable";
+    grid-template-rows: repeat(11, minmax(45px,1fr));
 }
 
-.left >.clickable {
-    grid-area: clickable;
-    height: 100vh;
-    grid-template-rows: repeat(10, 50px);
+.left h2 {
+    padding-left: 20px;
+    font-size: large;
+}
+
+.left a {
+    text-decoration: none;
+}
+
+.left img {
+    padding-left: 20px;
 }
 
 .icon,
@@ -39,13 +28,22 @@
 .bookmarks,
 .lists,
 .profile,
-.more,
+.more {
+    display: grid;
+    grid-template-columns: 55px 1fr;
+    gap: 12px;
+
+    /* background-color: rgba(0, 255, 255, 0.431); */
+}
+
 .tweetbutton {
     display: grid;
-
-    /* grid-template-columns: minmax(30px, 1fr) min-max(70px, 2fr); */
-    background-color: rgba(0, 255, 255, 0.431);
-    gap: 5px;
+    align-items: center;         /* figure out how to center align*/
 }
 
 
+.left button {
+    background-color: #BC6C25;
+    padding:20px;
+    border-radius: 10px;
+}

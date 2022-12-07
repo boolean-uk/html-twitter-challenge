@@ -1,5 +1,36 @@
 /* middle */
 .middle {
     grid-area: middle;
-    background-color: blue;
+    background-color: #DDA15E;
+
+    display: grid;
+    grid-template: 
+    "homebar" 60px
+    "mkpost" 100px
+    "feeds" 1fr;
+
+    gap: 10px;
 }
+
+.homebar {
+   grid-area: homebar; 
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    /* background-color: antiquewhite; */
+}
+
+/* .homebar > h1 {
+    font-size: larger;
+}
+
+.img {
+    border-radius: 50%;
+}
+
+.mkpost {
+grid-area: mkpost;
+}
+
+.feeds {
+   grid-area: feeds; 
+} */
