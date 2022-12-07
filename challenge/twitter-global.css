@@ -2,6 +2,7 @@
     background-color: #1e1e1e;
     color: #FEFAE0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
   
 .container {
@@ -13,15 +14,15 @@
     gap: 5px;
 }
 
-.outer-box {
+/* .outer-box {
     border: dotted white 2px;
-}
+} */
 
 .mid-box {
     border: lightcoral solid 1px;
     /* gap: 8px; */
 }
 
-.inner-box {
+/* .inner-box {
     border: dashed 2px darkgrey;
-}
+} */

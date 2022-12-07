@@ -2,13 +2,38 @@
 
 .left {
     grid-area: left;
-    background-color: #DDA15E;
+    /* background-color: #1e1e1e;
     display: grid;
-    grid-template-rows: repeat(11, minmax(45px,1fr));
+    grid-template-rows: repeat(11, minmax(45px,1fr)); */
 }
 
-.left h2 {
-    padding-left: 20px;
+ul {
+    background-color: #1e1e1e;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+     padding: 15px;
+     font-weight: 700;
+    }
+    
+    .left button {
+        background-color: #BC6C25;
+        border-radius: 30px;
+    
+        font-size: 13px;
+        font-weight: 700;
+    
+        width: 160px;
+        height: 45px;
+    }
+    
+    
+    /* .left h2 {
     font-size: large;
 }
 
@@ -32,18 +57,15 @@
     display: grid;
     grid-template-columns: 55px 1fr;
     gap: 12px;
+}
 
-    /* background-color: rgba(0, 255, 255, 0.431); */
+.home h2 {
+    color: #BC6C25;
 }
 
 .tweetbutton {
     display: grid;
-    align-items: center;         /* figure out how to center align*/
-}
+    align-items: center;         /* figure out how to center align
+    
+    */
 
-
-.left button {
-    background-color: #BC6C25;
-    padding:20px;
-    border-radius: 10px;
-}
