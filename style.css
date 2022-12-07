@@ -50,7 +50,11 @@ body {
     align-items: center;
 }
 
-.left nav div:hover div {
+.left nav div a:hover div {
+    background-color: #222;
+}
+
+.left nav div a:focus div {
     background-color: #222;
 }
 
@@ -59,7 +63,11 @@ body {
     margin: 15px;
 }
 
-.left .post:hover a div {
+.left .post a:hover div {
+    background-color: #5bd8b9;
+}
+
+.left .post a:focus div {
     background-color: #5bd8b9;
 }
 
@@ -75,11 +83,49 @@ body {
 }
 
 .left .userinfo {
-    margin: 15px;
     margin-top: auto;
-    padding: 15px;
-    border: dashed 1px mediumspringgreen;
+    padding-bottom: 15px;
+    height: auto;
     border-radius: 25px;
+    color: white;
+}
+
+.left .userinfo div {
+    display: flex;
+    padding: 15px;
+    border-radius: 40px;
+}
+
+.left .userinfo a:hover div {
+    background-color: #222;
+}
+
+.left .userinfo a:focus div {
+    background-color: #222;
+}
+
+.left .userinfo div div {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+} 
+
+.left .userinfo h1 {
+    font-size: 24px;
+}
+
+.left .userinfo h2 {
+    font-size: 18px;
+    color: gray;
+    font-weight: thin;
+}
+
+.left .userinfo img{
+    margin-right: 15px;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 .right {
