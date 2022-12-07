@@ -1,0 +1,51 @@
+* {
+    background-color: #1e1e1e;
+    color: antiquewhite;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: minmax(200px, 1fr) minmax(500px, 3fr) minmax(200px, 1fr);
+    grid-template-areas:
+        "left middle right";
+    gap: 5px;
+
+}
+
+.left {
+    height: 100vh;
+
+    grid-area: left;
+    background-color: aqua;
+    display: grid;
+
+    grid-template-rows: 100vh;
+    grid-template-areas: 
+    "clickable";
+}
+
+.left >.clickable {
+    grid-area: clickable;
+    height: 100vh;
+    grid-template-rows: repeat(10, 50px);
+}
+
+.icon,
+.home,
+.explore,
+.notifications,
+.messages,
+.bookmarks,
+.lists,
+.profile,
+.more,
+.tweetbutton {
+    display: grid;
+
+    /* grid-template-columns: minmax(30px, 1fr) min-max(70px, 2fr); */
+    background-color: rgba(0, 255, 255, 0.431);
+    gap: 5px;
+}
+
+

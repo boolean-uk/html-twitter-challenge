@@ -1,0 +1,48 @@
+.clickable {
+    grid-area: clickable;
+    display: grid;
+    grid-template-rows: repeat(9, 1fr);
+    grid-template-areas:
+    "icon"
+    "home"
+    "explore"
+    "notifications"
+    "messages"
+    "bookmarks"
+    "lists"
+    "profile"
+    "more"
+    "tweetbutton";
+    gap: 5px;
+}
+
+.icon {
+    grid-area: icon ;
+}
+.home {
+    grid-area: home;
+}
+.explore {
+    grid-area: explore;
+}
+.notifications {
+    grid-area: notifications ;
+}
+.messages {
+    grid-area: messages;
+}
+.bookmarks {
+    grid-area: bookmarks;
+}
+.lists {
+    grid-area: lists;
+}
+.profile {
+    grid-area: profile;
+}
+.more {
+    grid-area: more;
+}
+.tweetbutton {
+    grid-area: tweetbutton;
+}

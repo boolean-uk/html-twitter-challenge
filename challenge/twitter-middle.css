@@ -1,0 +1,5 @@
+/* middle */
+.middle {
+    grid-area: middle;
+    background-color: blue;
+}

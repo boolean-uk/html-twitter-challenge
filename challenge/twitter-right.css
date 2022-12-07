@@ -1,0 +1,5 @@
+/* right */
+.right {
+    grid-area: right;
+    background-color: orchid;
+}
