@@ -1,0 +1,31 @@
+div{
+    border: 1px dotted;
+    margin: 1px;
+}
+
+body{
+    height: 1500px;
+    border: 1px solid;
+}
+
+#messageBox{
+    position: fixed sticky;
+    justify-self: bottom right;
+}
+
+#mainContainer
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100%;
+}
+
+footer
+{
+    position: fixed;
+    bottom: 5px;
+    width: 98%;
+    height: 100px;
+    border: 1px solid;
+    margin: 5px;
+}
