@@ -16,7 +16,7 @@ body {
     display: grid;
     grid-template: 
     "left feed right" 1fr /
-    0.2fr 0.6fr 0.2fr;
+    0.17fr 0.63fr 0.2fr;
 }
 
 .left {
@@ -48,8 +48,12 @@ i {
     margin-right: 10px;
 }
 
-.left > a:hover {
+
+.left > a:hover > i,
+.left > a:hover > span {
+    transition: color 0.3s ease;
     color: #69c694;
+    
 }
 
 .logo > img {
@@ -129,7 +133,7 @@ div, nav {
     grid-area: QUACK;
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1628px) {
     .logo, .home, .explore,
     .notifications, .messages,
     .bookmarks, .profile, .more, .QUACK  {
@@ -137,4 +141,19 @@ div, nav {
     }
 }
 
-@media only s
+@media screen and (max-width: 1395px) {
+    .left > a > span, .button {
+        display: none;
+    }
+    .container {
+    height: 100vh;
+    display: grid;
+    grid-template: 
+    "left feed right" 1fr /
+    100px 0.8fr 0.2fr;
+    }
+    .logo {
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
