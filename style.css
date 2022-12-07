@@ -1,4 +1,9 @@
+/* Global */
 
+* {
+    background-color: rgb(244, 253, 208);
+    /* color: antiquewhite; */
+}
 /* Main Grid */
 
 .mainContainer {
@@ -50,6 +55,10 @@
     margin-right: 50px;
 }
 
+#leftRavn p {
+    background-color: black;
+}
+
 /* centre body */
 
 .centreBody {
@@ -65,12 +74,47 @@
 }
 
 #topHome div:nth-child(2) {
-    color: red;
     display: grid;
     justify-content: right;
 }
 
-#iQuoth
+/* #iQuoth {
+
+} */
+
+#quothIcons {
+    border-bottom: black solid 2px;
+}
+
+.quothPosts {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "userPic userName"
+    "userPic quothText"
+    "feedIcons feedIcons";
+}
+
+.userPic {
+    grid-area: userPic;    
+}
+
+.userName {
+    grid-area: userName;
+}
+
+.quothText {
+    grid-area: quothText;
+}
+
+.feedIcons {
+    grid-area: feedIcons;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+}
+
 
 /* right menu  */
 
