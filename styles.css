@@ -1,0 +1,92 @@
+.body {
+  margin: 0;
+}
+
+.header {
+  grid-area: header;
+  background-color: mediumspringgreen;
+}
+
+#logo {
+  padding-left: 38px;
+  padding-top: 20px;
+}
+
+.main-frame {
+  display: grid;
+  grid-template-columns: 200px 1fr 100px;
+  grid-template-rows: 80px 600px;
+  grid-template-areas:
+    "left-side    header      header"
+    "left-side    feed        right-side";
+  /* I will add in margins later by adding some @media selectors. */
+}
+
+.left-side {
+  grid-area: left-side;
+  background-color: lightsteelblue;
+}
+
+.navigation {
+  display: grid;
+  grid-template-columns: 40px 110px;
+  grid-template-areas: "nav-icons nav-list";
+  padding-left: 40px;
+  padding-top: 25px;
+}
+
+.nav-icons {
+  grid-area: nav-icons;
+  display: grid;
+  grid-template-rows: repeat(7, 30px);
+  /* grid-template-columns: 30px; */
+  /* grid-template-areas: "nav-icons"; */
+  gap: 23px;
+  /* justify-content: right; */
+}
+
+.nav-list {
+  grid-area: nav-list;
+}
+
+.nav-list ul {
+  list-style-type: none;
+}
+
+li > a {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: blue;
+}
+
+li {
+  margin-bottom: 30px;
+}
+
+ul {
+  padding: 0;
+  margin-top: 6px;
+}
+
+#Tweeter {
+  background-color: rgb(30, 27, 226);
+  width: 170px;
+  height: 40px;
+  border-radius: 50px;
+  text-align: center;
+  color: aliceblue;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 25px;
+}
+
+.feed {
+  grid-area: feed;
+  background-color: linen;
+}
+
+.right-side {
+  grid-area: right-side;
+  background-color: mediumturquoise;
+}
