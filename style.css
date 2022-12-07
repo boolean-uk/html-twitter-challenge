@@ -48,6 +48,10 @@ a {
 
  /* LEFT MENU  */
 
+.leftColumn {
+    min-width: 200px;
+}
+
 .butCon {
     display: grid;
     grid-template-columns: 30px 100px;
@@ -87,6 +91,8 @@ a {
     letter-spacing: 2px;
     
 }
+
+/* PROFILE BLOCK  */
 
 .profileBlock {
     display: grid;
@@ -142,4 +148,57 @@ a {
 .profileSettings > img {
     width: 10px;
     
+}
+
+/* MAIN SECTION  */
+
+.midColumn {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 130px 1fr;
+    gap: 5px;
+}
+
+.newTweet {
+    background-color: grey;
+    display: grid;
+    grid-template-columns: 50px 30px 30px 30px 30px 30px 1fr 75px;
+    grid-template-rows: 60px 60px;
+    grid-template-areas: 
+    "pfp newText newText newText newText newText newText newText"
+    ".   pic     gif     poll    emoji   date    .       tweet"
+    ;
+    gap: 10px;
+}
+
+.tweetPFP {
+    grid-area: pfp;
+}
+
+.newTextHere {
+    grid-area: newText;
+}
+
+.insertPic {
+    grid-area: pic;
+}
+
+.insertGIF {
+    grid-area: gif;
+}
+
+.insertPoll {
+    grid-area: poll;
+}
+
+.insertEmoji {
+    grid-area: emoji;
+}
+
+.insertDate {
+    grid-area: date;
+}
+
+.tweetNowButton {
+    grid-area: tweet;
 }
