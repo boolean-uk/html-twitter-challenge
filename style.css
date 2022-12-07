@@ -24,19 +24,32 @@ body {
     display: grid;
     grid-template: 
     "logo"0.1fr
-    "home"1fr
-    "explore"1fr
-    "notifications"1fr
-    "messages"1fr
-    "bookmarks"1fr
-    "profile"1fr
-    "more"1fr/
+    "home"0.1fr
+    "explore"0.1fr
+    "notifications"0.1fr
+    "messages"0.1fr
+    "bookmarks"0.1fr
+    "profile"0.1fr
+    "more"0.1fr
+    "QUACK"0.1fr
+    "." 0.4fr/
     1fr;
 }
 
 a {
     /* border: 1px solid yellow; */
     margin: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+i {
+    font-size: 28px;
+    margin-right: 10px;
+}
+
+.left > a:hover {
+    color: #69c694;
 }
 
 .logo > img {
@@ -44,21 +57,27 @@ a {
     object-fit: cover;
 }
 
-button {
-    margin-bottom: 100px;
+.left > .button {
+    color: white;
+    background-color: #30635a;
+    border-radius: 50px;
+    text-align: center;
+    margin-right: 5rem;
+    padding-top: 11px;
 }
 
 div, nav {
     border: 1px solid white;
 }
 
-.logo, .home, .explore,
+.home, .explore,
 .notifications, .messages,
 .bookmarks, .profile, .more, .QUACK {
-    margin-left: 20px;
+    margin-left: 75px;
     margin-right: 10px;
-    text-align: center;
-    font-size: 28px;
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 /* DECS */
@@ -75,6 +94,7 @@ div, nav {
     grid-area: logo;
     margin-right: 83%;
     margin-top: 25px;
+    margin-left: 70px;
 }
 
 .home {
@@ -104,3 +124,17 @@ div, nav {
 .more {
     grid-area: more;
 }
+
+.QUACK {
+    grid-area: QUACK;
+}
+
+@media only screen and (max-width: 1440px) {
+    .logo, .home, .explore,
+    .notifications, .messages,
+    .bookmarks, .profile, .more, .QUACK  {
+        margin-left:35px
+    }
+}
+
+@media only s
