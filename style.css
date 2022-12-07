@@ -3,31 +3,46 @@
     margin: 0;
     font-family: monospace;
     box-sizing: border-box;
+    color: white    ;
+}
+
+html {
+    color-scheme: dark !important;
 }
 
 body {
+    scroll-behavior: smooth;
     background-color: #1e1e1e;
 }
 
 .container {
     display: grid;
     grid-template-columns: minmax(auto, 1fr) 600px 1fr;
-    grid-template-rows: 100vh;
-    gap: 20px;
+    grid-template-rows: 500vh;
+    gap: 15px;
 }
 
 .left {
     display: flex;
     flex-direction: column;
+    position: sticky;
+    top: 0px;
+    max-height: 100vh;
     width: min-content;
     justify-self: end;
     padding: 15px;
+    padding-right: 0;
 }
 
 .left a {
     text-decoration: none;
     color: white;
     font-size: 24px;
+}
+
+.left nav #currentpage span {
+    font-weight: bolder;
+    color: #47CEAC;
 }
 
 .left img {
@@ -69,6 +84,7 @@ body {
 
 .left .post a:focus div {
     background-color: #5bd8b9;
+    padding: 14px 30px;
 }
 
 .left .post a div {
@@ -126,6 +142,218 @@ body {
     height: 55px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.main {
+    border-left: solid 3px #222;
+    border-right: solid 3px #222;
+}
+
+.main header {
+    padding: 15px;
+    background-color: #1e1e1eE6;
+    position: sticky;
+    top: 0px;
+}
+
+.main .post {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 15px;
+    padding: 15px;
+    border: solid 0px #222;
+    border-bottom-width: 3px;
+}
+
+.main .post .composecontent {
+    padding-bottom: 15px;
+    padding-top: 5px;
+    
+}
+
+.main .post .useravatar {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.main .post input {
+    padding: 15px;
+    margin-bottom: 10px;
+    width: 100%;
+    border: none    ;
+    background-color: #222;
+    border-radius: 15px;
+}
+
+.main .post .composeoptions {
+    display: flex;
+    align-items: center;
+}
+
+.main .post .composeoptions .composeicons {
+    padding: 15px 10px;
+}
+
+.main .post .composeoptions .composeicons img {
+    width: 24px;
+    margin-right: 10px;
+}
+
+.main .post .composeoptions p {
+    margin-left: auto;  
+    padding: 10px 20px;
+    background-color: #47CEAC;
+    color: #1e1e1e;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.main .feed .postcontent .postlink {
+    color: #40e0d0;
+}
+
+.main .feed .postcontent .postlink:hover {
+    background-color: #40e0d033;
+    border-radius: 3px;
+}
+
+.main .feed a.wrap {
+    text-decoration: none;
+    color: white;
+}
+
+.main .feed .post .postcontent .contenthead {
+    display: flex;
+    align-items: center;
+}
+
+.main .feed .post .postcontent .contenthead .username {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.main .feed .post .postcontent .contenthead p {
+    color: gray;
+    margin-right: 5px;
+}
+
+.main .feed .post .postcontent .contenthead img{
+    width: 18px;
+    margin-left: auto;
+}
+
+.main .feed .post .postcontent p {
+    font-size: 16px;
+}
+
+.main .feed .post .postimage {
+    margin-top: 10px;
+    min-width: 494px;
+    max-width: 494px;
+    max-height: 494px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.main .feed .post .postvideo {
+    margin-top: 10px;
+    min-width: 494px;
+    max-width: 494px;
+    max-height: 494px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.main .feed .post .postaudio {
+    margin-top: 10px;
+    width: 100%;
+}
+
+audio::-webkit-media-controls-enclosure {
+    border:solid 5px #222;
+    background-color: #1e1e1e;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: #1e1e1e;
+}
+
+audio::-webkit-media-controls-mute-button {
+    background-color: #222;
+    border-radius: 50%;
+}
+
+audio::-webkit-media-controls-mute-button:hover {
+        background-color: #2e2e2e;
+}
+
+
+audio::-webkit-media-controls-play-button {
+    background-color: #222;
+    border-radius: 50%;
+}
+
+audio::-webkit-media-controls-play-button:hover {
+    background-color: #2e2e2e;
+}
+
+audio::-webkit-media-controls-time-remaining-display,
+audio::-webkit-media-controls-current-time-display {
+    color: #fff;
+    text-shadow: none;
+    font-family: monospace;
+}
+
+audio::-webkit-media-controls-timeline {
+    background-color: #222;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 25px;
+}
+
+audio::-webkit-media-controls-volume-slider {
+    background-color: #222;
+    border-radius: 25px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.main .feed .post .postcontent .postfooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.main .feed .post .postcontent .postfooter img {
+    width: 18px;
+}
+
+.main .feed .post .postcontent .postfooter div {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.main .feed .post .postcontent .postfooter div span {
+    margin: 0px 5px;
+}
+
+.main .feed .post .postcontent .postfooter a.comments:hover div,
+.main .feed .post .postcontent .postfooter a.share:hover div {
+    background-color: #40e0d0;
+}
+
+.main .feed .post .postcontent .postfooter a.reposts:hover div {
+    background-color: #00ff7f;
+}
+
+.main .feed .post .postcontent .postfooter a.likes:hover div {
+    background-color: #cd5c5c;
 }
 
 .right {
