@@ -1,27 +1,41 @@
+
 .body{
     background-color: whitesmoke;
     display: grid;
     grid-template-columns: 1fr 3fr 1fr;
     border: 5px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 100px 10px 100px;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+h3{
+    font-weight: bold;
+    font-size: 12px;
+}
+
+p{
+    font-size: 12px;
 }
 
 .left-menu-bar-section{
-
     padding-bottom: 100px;
-    border-right: black solid 1px;
 }
 
 .left-menu-bar-section img{
     height: 30px;
     width: 30px;
-    display: inline-block;
     padding: 5px;
  }
-
- .left-menu-bar-section p{
-    display: inline;
-    font-weight: bold;
-}
 
 .left-menu-bar-section > .left-menu-header{
     height: 40px;
@@ -31,89 +45,143 @@
 .left-menu-bar-section .nav{
     display: grid;
     grid-template-rows: repeat(7, 1fr);
-    background-color: red;
-    padding: 5px;
+    grid-template-columns: 50px 100px;
+    padding: 20px;
     gap: 5px;
+    justify-items: left;
     align-items: center;
+    margin-bottom: 50px;
 }
 
-.left-menu-bar-section .nav p {
-}
 
-.left-menu-bar-section > .tweet{
+.left-menu-bar-section .left-tweet-button{
     display: inline-block;
+    background-color: lightblue;
     color: white;
-    width: 100%;
-    background-color: blue;
-    border-radius: 40px;
+    padding: 10px 50px;
+    place-self: center;
+    margin-left: 20px;
 }
+
 
 /* Main Section */
 
 .main-section{
-    background-color: blue;
     display: grid;
     grid-template-rows: 40px 1fr 5fr;
+    border: 1px solid lightgray;
 }
 
 .main-section-header {
-    background-color: white;
-    border: 1px black solid;
+    border-bottom: 1px lightgray solid;
+
 }
 
-.main-section-header p {
+.main-section-header h2 {
     display: inline-block;
     padding-left: 10px;
     font-weight: bold;
 }
 
 .content-creation-container{
-    background-color: orange;
     padding-bottom: 10px;
+    border-bottom: 1px lightgray solid;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
     grid-template-columns: 1fr 10fr 1fr;
     gap: 10px;
     padding: 10px;
+    align-items: center;
+    
 }
 
 .content-creation-container .display-pic{
-    display: inline-block;
     height: 40px;
     width: 40px;
-    background-color: red;
+    border: black 1px solid;
     border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
 }
 
 .content-creation-container .type-box{
     grid-area: 1 / 2;
-    background-color: lightgray;
-    border: 1px solid black;
-    padding-left: 5px;
+    padding-left: 1px;
 }
 
 .content-creation-container .media-type{
     grid-area: 2 / 2 ;
-    background-color: yellow;
 }
 
 .content-creation-container .media-type img {
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
     display: inline-block;
+    padding-left: 5px;
 }
 
 .content-creation-container .tweet-button{
     grid-area: 2 / 3 ;
-    color: white;
     display: inline-block;
-    background-color: blue;
-    width: 100px;
-    border-radius: 20px;
-    padding: 2px;
-    font-weight: bold;
+    background-color: lightblue;
+    height: 40px;
+    width: 80px;
+    color: white;
+    place-self: center;
 }
 
+.feed {
+    margin-top: 10px;
+    background-color: pink;
+    grid-auto-rows: 1fr
 
+}
+
+/* Right-Menu-Bar */
+
+.right-menu-bar-section {
+    display: grid;
+    grid-template-rows: 40px 1fr 1fr;
+    row-gap: 5px;
+    margin: 0 auto;
+}
+
+.right-menu-bar-header .search-bar {
+    background-color: lightgray;
+    border-radius: 15px;
+}
+.right-menu-bar-header .search-bar img{
+    display: inline;
+}
+
+.right-menu-bar-header .search-bar p {
+    display: inline;
+}
+
+.whats-happening{
+    border-radius: 20px;
+    background-color: lightgray;
+    display: grid;
+    grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr 1fr;
+    padding: 12px;
+
+}
+
+.whats-happening-post{
+    border-bottom: gray solid 1px;
+    
+}
+
+.whats-happening-header{
+    border-bottom: gray solid 1px;
+}
+
+.whats-happening .whats-happening-show-more {
+    color: blue;
+}
+
+.who-to-follow{
+    background-color: lightgray;
+}
 
 
