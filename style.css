@@ -3,6 +3,18 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+.mainContainer .left {
+    grid-area: left;
+}
+.mainContainer .main {
+    grid-area: main;
+    border: lightgray solid 1px;
+    border-top: none;
+    border-bottom: none;
+}
+.mainContainer .right {
+    grid-area: right;
+}
 aside.left, aside.right {
     position: sticky;
     top: 0px;
@@ -31,6 +43,7 @@ aside.left, aside.right {
     border: none;
     border-radius: 20px;
     padding: 0.5rem 1rem;
+    text-decoration: none;
 }
 #divider {
     height: 10px;
@@ -45,14 +58,15 @@ aside.left, aside.right {
 }
 .mainContainer {
     display: grid;
-    grid-template-columns: 20% 60% 20%;
+    grid-template-columns: 16% 62% 20%;
     margin-left: 5px;
-    
+    grid-template-areas: 
+    "left main right"
+    ;
+    gap: 15px;
 }
-.left {
-    
+.mainContainer .left {
     height: 97vh;
-    
 }
 .navContainer {
     display: grid;
@@ -73,14 +87,18 @@ aside.left, aside.right {
 .navContainer .locations a {
     font-weight: 700;
     color: black;
-    text-decoration: none;
-    
+    text-decoration: none;    
 }
+.navContainer .locations a:hover {
+    color: #0080ff;
+}
+
 .left .tweetButton {
     border-radius: 20px;
     padding: 0.5rem 3rem;
     
 }
+
 .left .profile {
     position: absolute;
     bottom: 10px;
@@ -116,11 +134,14 @@ grid-area: more;
     color: black;
     font-weight: 900;
     font-size: large;
-    padding-bottom: ;
+    padding-bottom: 2px;
+    padding-left: 2px;
 }
 .tweetBox {
     display: grid;
     border: 1px solid lightgrey;
+    border-left: none;
+    border-right: none;
     position: relative;
     
 }
@@ -152,8 +173,13 @@ grid-area: more;
     bottom: 5px;
     right: 10px;
 }
+.tweetBox .tweetButton:hover {
+    background-color: #0080ff;
+}
 .tweet {
     border: 1px solid lightgrey;
+    border-left: none;
+    border-right: none;
     
 }
 .tweet .Retweets {
@@ -186,9 +212,7 @@ grid-area: more;
     margin-top: 5px;
     align-items: center;
 }
-.tweet .profileImg {
-    
-}
+
 .tweet .profileNickName {
     grid-area: nickName;
     
@@ -227,14 +251,17 @@ grid-area: more;
     background-color: darkgray;
     color: whitesmoke;
     margin-top: 0px;
+    margin-left: 5px;
+    display: grid;
 }
 .right .searchBar p {
     margin-top: 0px;
     margin-bottom: 0px;
-    padding-bottom: 5px;
+    padding-bottom: 2px;
+    justify-items: center;
 }
 .right .searchBar img {
-    height: 20px;
+    height: 17px;
     margin-left: 5px;
     margin-top: 5px;
 }
@@ -275,10 +302,6 @@ grid-area: more;
     color: #0080ff;
     text-decoration: none;
 }
-.RecomendedPost  {
-    /* display: grid;
-    grid-template-columns: 1fr 0.4fr; */
-}
 .RecommendedPost .accountCard {
     display: grid;
     grid-template-columns: 19px 1fr 19px 0.5fr;
@@ -304,4 +327,45 @@ grid-area: more;
     width: 100%;
     object-fit: fill;
     border-radius: 10px;
+}
+@media  screen and (max-width: 1030px) {
+    .mainContainer {
+        gap: 5px;
+    }
+}
+@media  screen and (max-width: 950px) {
+    .mainContainer {
+        grid-template-columns: 20% 80%;
+        grid-template-areas: 
+        "left main"
+        ;
+    }
+    .mainContainer .tweet {
+        border-right: none;
+    }
+   .mainContainer .right {
+    display: none;
+    
+   }
+   .mainContainer .left .navContainer .icons {
+    display: none;
+   }
+   .mainContainer .left .tweetButton {
+    padding: 0.5rem 1rem;
+   }
+}
+
+@media screen and (max-width: 530px) {
+    .mainContainer {
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "main"
+        ;
+    }
+    .mainContainer .left {
+        display: none;
+    }
+    .mainContainer .tweetBox {
+        border-left: 1px solid lightgrey;
+    }
 }
