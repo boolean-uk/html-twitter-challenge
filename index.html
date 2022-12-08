@@ -9,17 +9,26 @@
 </head>
 <body>
     <header>
-        <div class="headerBar">
+        <div class="headerBar bgColor">
             <div class="headerLogo">
-                <img src="./assets/icons/twitterLogo.svg" alt="twitter logo">
+                <img id="logo" src="./assets/icons/twitterLogo.svg" alt="twitter logo">
             </div>
-            <div class="homeBar"></div>
-            <div class="headerSearch"></div>
+            <div class="homeBar">
+                <div class="homeBarText">
+                    <span>Home</span>
+                </div>
+                <div class="homeBarStars">
+                    <img src="./assets/icons/starsIcon.svg" alt="favourite stars">
+                </div>
+            </div>
+            <div class="headerSearch">
+                <input id="searchBar" type="text" placeholder="Who's that pokemon...">
+            </div>
         </div>
     </header>
     <main>
         <div class="mainContainer">
-            <div class="leftColumn">
+            <div class="leftColumn bgColor">
                 <div class="leftMenu">
                     <nav class="leftNavigation">
                         <a class="lm lmHome" href="#">
@@ -109,7 +118,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="profileBlock">
+                <div class="profileBlock bgColor">
                     <div class="profilePicture">
                         <img src="./assets/profilePicture/charmanderTwitterPFP.png" alt="profile picture">
                     </div>
@@ -125,17 +134,154 @@
                 </div>
             </div>
             <div class="midColumn">
-                <div class="newTweet">
-                    <div class="tweetPFP"></div>
-                    <div class="newTextHere"></div>
-                    <div class="insertPic"></div>
-                    <div class="insertGIF"></div>
-                    <div class="insertPoll"></div>
-                    <div class="insertEmoji"></div>
-                    <div class="insertDate"></div>
-                    <div class="tweetNowButton"></div>
+                <div class="newTweet bgColor">
+                    <div class="tweetPFP">
+                        <img src="./assets/profilePicture/charmanderTwitterPFP.png" alt="profile picture">
+                    </div>
+                    <div class="newTextHere">
+                        <div class="whatsHappeningText">
+                            <span>What's Happening?</span>
+                        </div>
+                    </div>
+                    <div class="insertPic iconContainer">
+                        <img class="newTweetIcon" src="./assets/icons/pictureIcon.svg" alt="insert picture icon">
+                    </div>
+                    <div class="insertGIF iconContainer">
+                        <img class="newTweetIcon" src="./assets/icons/gifIcon.svg" alt="insert gif icon">
+                    </div>
+                    <div class="insertPoll iconContainer">
+                        <img class="newTweetIcon" src="./assets/icons/pollIcon.svg" alt="insert poll icon">
+                    </div>
+                    <div class="insertEmoji iconContainer">
+                        <img class="newTweetIcon" src="./assets/icons/smileIcon.svg" alt="insert emoji icon">
+                    </div>
+                    <div class="insertDate iconContainer">
+                        <img class="newTweetIcon" src="./assets/icons/calendarIcon.svg" alt="insert date icon">
+                    </div>
+                    <div class="tweetNowButtonCon">
+                        <div class="tweetNowButton twitBGColour">
+                            <span>Tweet</span>
+                        </div>
+                    </div>
                 </div>
-                <div class="postedTweets"></div>
+                <div class="postedTweets">
+                    <div class="individualTweets bgColor">
+                        <div class="indiTweetPFP">
+                            <img src="./assets/profilePicture/charmanderTwitterPFP.png" alt="profile picture">
+                        </div>
+                        <div class="indiTweetNames">
+                            <div class="indiTweetDisplayName">
+                                <span>The Real Charmer</span>
+                            </div>
+                            <div class="indiTweetUsername">
+                                <span>@totally_real_charmander</span>
+                            </div>
+                            <div class="indiTweetLittleDot">
+                                <span>-</span>
+                            </div>
+                            <div class="indiTweetTime">
+                                <span>25m</span>
+                            </div>
+                        </div>
+                        <div class="indiTweetMainText">
+                            <div class="indiTweet">
+                                <span><span class="blueText">@totally_real_bulbasaur @totally_real_squirtle</span> I'm clearly the best starter...</span>
+                            </div>
+                        </div>
+                        <div class="indiTweetIcons bgColor">
+                            <div class="indiTweetReply tastyPadding">
+                                <img class="indiTweetIconResizer" src="./assets/icons/messageBubbleIcon.svg" alt="reply icon">
+                            </div>
+                            <div class="indiTweetReTweet tastyPadding">
+                                <img class="indiTweetIconResizer" src="./assets/icons/repeatIcon.svg" alt="retweet icon">
+                            </div>
+                            <div class="indiTweetHeart tastyPadding">
+                                <img class="indiTweetIconResizer" src="./assets/icons/heartIcon.svg" alt="heart icon">
+                            </div>
+                            <div class="indiTweetUpload tastyPadding">
+                                <img class="indiTweetIconResizer" src="./assets/icons/uploadIcon.svg" alt="upload icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="individualTweets bgColor">
+                        <div class="indiTweetPFP">
+                            <img src="./assets/profilePicture/squirtleProfilePic.jpg" alt="profile picture">
+                        </div>
+                        <div class="indiTweetNames">
+                            <div class="indiTweetDisplayName">
+                                <span>Squirtle Squad Leader</span>
+                            </div>
+                            <div class="indiTweetUsername">
+                                <span>@totally_real_squirtle</span>
+                            </div>
+                            <div class="indiTweetLittleDot">
+                                <span>-</span>
+                            </div>
+                            <div class="indiTweetTime">
+                                <span>17m</span>
+                            </div>
+                        </div>
+                        <div class="indiTweetMainText">
+                            <div class="indiTweet">
+                                <span><span class="blueText">@totally_real_charmander</span> ... a mild breeze could put out your tail fire!</span>
+                            </div>
+                        </div>
+                        <div class="indiTweetIcons">
+                            <div class="indiTweetReply tastyPadding">
+                                <img class="indiTweetIconResizer" src="./assets/icons/messageBubbleIcon.svg" alt="reply icon">
+                            </div>
+                            <div class="indiTweetReTweet tastyPadding">
+                                <img class="indiTweetIconResizer" src="./assets/icons/repeatIcon.svg" alt="retweet icon">
+                            </div>
+                            <div class="indiTweetHeart tastyPadding">
+                                <img class="indiTweetIconResizer" src="./assets/icons/heartIcon.svg" alt="heart icon">
+                            </div>
+                            <div class="indiTweetUpload tastyPadding">
+                                <img class="indiTweetIconResizer" src="./assets/icons/uploadIcon.svg" alt="upload icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="individualTweets bgColor">
+                        <div class="indiTweetPFP">
+                            <img src="./assets/profilePicture/bulbasaurProfilePic.jpg" alt="profile picture">
+                        </div>
+                        <div class="indiTweetNames">
+                            <div class="indiTweetDisplayName">
+                                <span>Bantah-sawr</span>
+                            </div>
+                            <div class="indiTweetUsername">
+                                <span>@totally_real_bulbasaur</span>
+                            </div>
+                            <div class="indiTweetLittleDot">
+                                <span>-</span>
+                            </div>
+                            <div class="indiTweetTime">
+                                <span>3m</span>
+                            </div>
+                        </div>
+                        <div class="indiTweetMainText">
+                            <div class="indiTweet">
+                                <span><span class="blueText">@totally_real_charmander</span> simmer down bud... here is a detailed explanation of why youre wrong: 
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi dolorem, nostrum officiis repellendus officia maiores blanditiis, 
+                                mollitia accusamus sequi recusandae exercitationem labore sed consequatur facere similique reprehenderit unde magni voluptas. 1/19</span>
+                            </div>
+                        </div>
+                        <div class="indiTweetIcons">
+                            <div class="indiTweetReply tastyPadding">
+                                <img class="indiTweetIconResizer" src="./assets/icons/messageBubbleIcon.svg" alt="reply icon">
+                            </div>
+                            <div class="indiTweetReTweet tastyPadding">
+                                <img class="indiTweetIconResizer" src="./assets/icons/repeatIcon.svg" alt="retweet icon">
+                            </div>
+                            <div class="indiTweetHeart tastyPadding">
+                                <img class="indiTweetIconResizer" src="./assets/icons/heartIcon.svg" alt="heart icon">
+                            </div>
+                            <div class="indiTweetUpload tastyPadding">
+                                <img class="indiTweetIconResizer" src="./assets/icons/uploadIcon.svg" alt="upload icon">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="rightColumn">
                 <div class="whatsHappening"></div>
