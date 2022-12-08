@@ -3,7 +3,7 @@
     margin: 0;
     font-family: monospace;
     box-sizing: border-box;
-    color: white    ;
+    color: #ccc;
 }
 
 html {
@@ -15,9 +15,14 @@ body {
     background-color: #1e1e1e;
 }
 
+::placeholder {
+    color: #555;
+    font-weight: bold;
+}
+
 .container {
     display: grid;
-    grid-template-columns: minmax(auto, 1fr) 600px 1fr;
+    grid-template-columns: minmax(auto, 1fr) 600px minmax(auto, 1fr);
     grid-template-rows: 500vh;
     gap: 15px;
 }
@@ -32,17 +37,19 @@ body {
     justify-self: end;
     padding: 15px;
     padding-right: 0;
+    padding-bottom: 5px;
 }
 
 .left a {
     text-decoration: none;
     color: white;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .left nav #currentpage span {
     font-weight: bolder;
     color: #47CEAC;
+    font-size: 24px;
 }
 
 .left img {
@@ -84,23 +91,22 @@ body {
 
 .left .post a:focus div {
     background-color: #5bd8b9;
-    padding: 14px 30px;
 }
 
 .left .post a div {
+    width: auto;
     background-color: #47CEAC;
     border-radius: 25px;
-    padding: 14px;
+    padding: 10px;
 }
 
-.left .post a div h1 {
-    font-size: 24px;
+.left .post a div h1{
+    font-size: 20px;
     color: #1e1e1e;
 }
 
 .left .userinfo {
     margin-top: auto;
-    padding-bottom: 15px;
     height: auto;
     border-radius: 25px;
     color: white;
@@ -123,15 +129,16 @@ body {
 .left .userinfo div div {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     padding: 0;
 } 
 
 .left .userinfo h1 {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .left .userinfo h2 {
-    font-size: 18px;
+    font-size: 16px;
     color: gray;
     font-weight: thin;
 }
@@ -147,6 +154,11 @@ body {
 .main {
     border-left: solid 3px #222;
     border-right: solid 3px #222;
+}
+
+.main p,
+.main h2 {
+    color: white;
 }
 
 .main header {
@@ -193,16 +205,46 @@ body {
 }
 
 .main .post .composeoptions .composeicons {
-    padding: 15px 10px;
+    display: flex;
+    align-items: center;
 }
 
-.main .post .composeoptions .composeicons img {
+.main .post .composeoptions .composeicons a {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    color: #1e1e1e;
+    padding: 10px;
+}
+
+.main .post .composeoptions .composeicons svg {
     width: 24px;
-    margin-right: 10px;
 }
 
-.main .post .composeoptions p {
-    margin-left: auto;  
+.main .post .composeoptions a:hover {
+    background-color: #222;
+    border-radius: 50%;
+}
+
+.main .post .composeoptions a:focus {
+    background-color: #222;
+    border-radius: 50%;
+}
+
+.main .post .composeicons a:hover svg {
+    fill: #6ddcc0;
+}
+
+.main .post .composeicons a:focus svg {
+    fill: #6ddcc0;
+}
+
+.main .post .composeoptions a {
+    text-decoration: none;
+    margin-left: auto;
+}
+
+.main .post .composeoptions a p {  
     padding: 10px 20px;
     background-color: #47CEAC;
     color: #1e1e1e;
@@ -211,11 +253,20 @@ body {
     font-weight: bold;
 }
 
+.main .post .composeoptions a:hover p {
+    background-color: #5bd8b9;
+}
+
 .main .feed .postcontent .postlink {
     color: #40e0d0;
 }
 
 .main .feed .postcontent .postlink:hover {
+    background-color: #40e0d033;
+    border-radius: 3px;
+}
+
+.main .feed .postcontent .postlink:focus {
     background-color: #40e0d033;
     border-radius: 3px;
 }
@@ -328,35 +379,359 @@ audio::-webkit-media-controls-volume-slider {
     margin-top: 10px;
 }
 
-.main .feed .post .postcontent .postfooter img {
-    width: 18px;
-}
-
 .main .feed .post .postcontent .postfooter div {
     display: flex;
     align-items: center;
     padding: 5px;
     border-radius: 10px;
+    fill: #ccc;
+}
+
+.main .feed .post .postcontent .postfooter svg {
+    width: 18px;
+    fill: inherit;
 }
 
 .main .feed .post .postcontent .postfooter div span {
     margin: 0px 5px;
+    color: inherit;
 }
 
 .main .feed .post .postcontent .postfooter a.comments:hover div,
 .main .feed .post .postcontent .postfooter a.share:hover div {
     background-color: #40e0d0;
+    color: #1e1e1e;
+    fill: #1e1e1e;
+}
+
+.main .feed .post .postcontent .postfooter a.comments:focus div,
+.main .feed .post .postcontent .postfooter a.share:focus div {
+    background-color: #40e0d0;
+    color: #1e1e1e;
+    fill: #1e1e1e;
 }
 
 .main .feed .post .postcontent .postfooter a.reposts:hover div {
     background-color: #00ff7f;
+    color: #1e1e1e;
+    fill: #1e1e1e;
+}
+
+.main .feed .post .postcontent .postfooter a.reposts:focus div {
+    background-color: #00ff7f;
+    color: #1e1e1e;
+    fill: #1e1e1e;
 }
 
 .main .feed .post .postcontent .postfooter a.likes:hover div {
     background-color: #cd5c5c;
+    color: #1e1e1e;
+    fill: #1e1e1e;
+}
+
+.main .feed .post .postcontent .postfooter a.likes:focus div {
+    background-color: #cd5c5c;
+    color: #1e1e1e;
+    fill: #1e1e1e;
 }
 
 .right {
     width: 300px;
+    height: max-content;
     justify-self: start;
+}
+
+.right a {
+    text-decoration: none;
+}
+
+.right .search {
+    padding: 10px 0px;
+    background-color: #1e1e1eE6;
+    position: fixed;
+    top: 0px;   
+}
+
+.right .searchfield {
+    display: flex;
+    background-color: #222;
+    border: solid 3px #1e1e1e;
+    border-radius: 25px;
+}
+
+.right .search svg {
+    margin-left: 10px;
+    width: 25px;
+    fill: #555;    
+}
+
+.right .search input {
+    border: none;
+    background-color: #222;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.right .trendingarea {
+    margin-top: 61px;
+    border: solid 3px #222;
+    border-radius: 25px;
+}
+
+.right .trendingarea h1 {
+    padding: 0px 15px;
+    padding-top: 15px;
+    margin-bottom: 5px;
+}
+
+.right .trendingarea .trendingtopic {
+    padding: 10px 15px;
+    pointer-events: auto;
+}
+
+.right .trendingarea .trendingtopic:hover {
+    background-color: #222;
+}
+
+.right .trendingarea .trendingtopic:focus {
+    background-color: #222;
+}
+
+.right .trendingarea .trendingtopic aside {
+    float: right;
+}
+
+.right .trendingarea .trendingtopic aside svg {
+    width: 28px;
+    fill: #555;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.right .trendingarea .trendingtopic aside a:hover svg {
+    fill: #1e1e1e;
+    background-color: #555;
+}
+
+.right .trendingarea .trendingtopic aside a:focus svg {
+    fill: #1e1e1e;
+    background-color: #555;
+}
+
+.right .trendingarea .trendingtopic p {
+    color: #555;
+}
+
+.right .trendingarea .more {
+    padding: 20px 15px;
+    color: #47CEAC;
+    font-size: 16px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.right .trendingarea a.morewrap:hover p {
+    background-color: #222;
+}
+
+.right .trendingarea a.morewrap:focus p {
+    background-color: #222;
+}
+
+.right .whotofollow {
+    margin-top: 15px;
+    border: solid 3px #222;
+    border-radius: 25px;
+}
+
+.right .whotofollow h1.head {
+    padding: 0px 15px;
+    padding-top: 15px;
+    margin-bottom: 5px;
+}
+
+.right .recommendeduser {
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    pointer-events: auto;
+}
+
+.right .recommendeduser a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.right .recommendeduser:hover {
+    background-color: #222;
+}
+
+.right .recommendeduser:focus {
+    background-color: #222;
+}
+
+.right .recommendeduser:hover a.follow h2 {
+    background-color: #222;
+    border-color: #333;
+}
+
+.right .recommendeduser:focus a.follow h2 {
+    background-color: #222;
+    border-color: #333;
+}
+
+.right .recommendeduser a img {
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.right .recommendeduser a h1 {
+    font-size: 16px;
+}
+
+.right .recommendeduser a p {
+    color: #555;
+}
+
+.right .recommendeduser .follow {
+    margin-left: auto;
+}
+
+.right .recommendeduser a.follow h2 {
+    padding: 5px 10px;
+    border: solid 3px #222;
+    background-color: #1e1e1e;
+    border-radius: 25px;
+    color: #555;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.right .recommendeduser a.follow:hover h2 {
+    color: #1e1e1e;
+    background-color: #555;
+    border-color: #555;
+}
+
+.right .recommendeduser a.follow:focus h2 {
+    color: #1e1e1e;
+    background-color: #555;
+    border-color: #555;
+}
+
+.right .whotofollow .more {
+    padding: 20px 15px;
+    color: #47CEAC;
+    font-size: 16px;
+    border-radius: 0px 0px 15px 15px;
+}
+
+.right .whotofollow a.morewrap:hover p {
+    background-color: #222;
+}
+
+.right .whotofollow a.morewrap:focus p {
+    background-color: #222;
+}
+
+.right footer {
+    padding: 15px;
+}
+
+.right footer a {
+    color: #555;
+}
+
+.right footer a:hover {
+    color: #ccc;
+}
+
+.right footer a:focus {
+    color: #ccc;
+}
+
+@media screen and (max-width: 1175px) {
+    .container {
+        grid-template-columns: auto 1fr minmax(200px, 1fr);
+    }
+
+    .left {
+        width: 75px;
+    }
+
+    .left nav span {
+        display: none;
+    }
+
+    .left nav div div {
+        gap: 0;
+    }
+
+    .left .post {
+        display: none;
+    }
+
+    .left .userinfo {
+        padding: 0;
+    }
+
+    .left .userinfo div {
+        padding: 0;
+    }
+
+    .left .userinfo div div {
+        display: none;
+    }
+
+    .right {
+        max-width: 100%;
+        min-width: auto;
+    }
+}
+
+@media screen and (max-width: 965px) {
+    .right .recommendeduser .follow {
+        display: none;
+    }
+}   
+
+@media screen and (max-width: 942px) {
+    .container {
+        grid-template-columns: minmax(auto, 1fr) minmax(600px, 1fr) minmax(75px, 1fr);
+    }
+
+    .right {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .left {
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width: 600px) {
+    .main .feed .postcontent .postimage,
+    .main .feed .postcontent .postvideo  {
+        min-width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .main {
+        border-left: none;
+        border-right: none;
+    }
 }
