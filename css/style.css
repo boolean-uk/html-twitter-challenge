@@ -39,9 +39,8 @@ body{
 #leftSection
 {
     grid-area: left;
-    position: fixed;
-    height: 100vh;
     grid-template-rows: repeat(auto-fit, 50px);
+    justify-items: right;
 }
 
 #mainSection{
@@ -50,4 +49,94 @@ body{
 
 #rightSection{
     grid-area: right;
+}
+
+nav, #whackerIcon, #profileWidget, #mainSectionTitle
+{
+    position: fixed;
+}
+
+nav{
+    top: 10%;
+    height: 90%;
+    width: 100%;
+}
+
+#profileWidget, nav div
+{
+    height: 5%;
+    width: 20%;
+    margin-left: 10%;
+    border-radius: 9999px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+
+.link{
+    width: 50px;
+    height: 50px;
+}
+
+#profileWidget
+{
+    bottom: 5px;
+}
+
+#whackerIcon{
+    height: 50px;
+    width: 50px;
+    margin-left: 10%;
+}
+
+svg{
+    height: 100%;
+    width: 15%;
+}
+
+nav>div>a>span
+{
+    height: 100%;
+    width: 75%;
+}
+
+#mainSectionTitle
+{
+    margin-top: 0px;
+    height: 100px;
+    width: 32.33%;
+}
+
+#newWhackBox{
+    height: 150px;
+    margin-top: 100px;
+}
+
+#whackList
+{
+    height: 80%;
+    grid-template-rows: repeat(auto-fit, 150px);
+    gap:0px;
+}
+
+#searchBar{
+    height: 75px;
+    width: 32.3%;
+    position: fixed;
+    margin-top: 5px;
+    border-radius: 9999px;
+}
+
+#news
+{
+    margin-top: 100px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    height: 20%;
+}
+
+#whoFollow{
+    box-sizing: border-box;
+    border-radius: 25px;
+    height: 20%;
+
 }
