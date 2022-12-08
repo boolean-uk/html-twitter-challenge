@@ -139,9 +139,10 @@ a {
 
 .butCon {
     display: grid;
-    grid-template-columns: 30px 100px;
+    grid-template-columns: 30px 1fr;
     align-items: center;
-    padding: 25px 0 0 0;
+    padding: 12px 5px 12px 5px;
+    border-radius: 25px;
 }
 
 .textHolder > span {
@@ -176,6 +177,29 @@ a {
     letter-spacing: 2px;
     
 }
+
+.butCon:hover {
+    background-color: #e5e5e5;
+    box-shadow: 1px 1px 1px #c1c1c1;
+}
+
+.butCon:active {
+    background: #e5e5e5;
+    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+       -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+            box-shadow: inset 0px 0px 5px #c1c1c1;
+     outline: none;
+  }
+
+.tweetButton:hover {
+    background-color: #2383be;
+    box-shadow: 1px 1px 1px #12496b;
+}
+.tweetButton:active {
+    background: #1DA1F2;
+        box-shadow: inset 0px 0px 5px #12496b;
+     outline: none;
+  }
 
 /* PROFILE BLOCK  */
 
@@ -369,6 +393,18 @@ a {
 .tweetNowButton > span {
     color: white;
 }
+
+.tweetNowButton:hover {
+    background-color: #2383be;
+    box-shadow: 1px 1px 1px #12496b;
+}
+
+.tweetNowButton:active {
+    background: #1DA1F2;
+        box-shadow: inset 0px 0px 5px #12496b;
+     outline: none;
+  }
+
 
 /* TWEET DISPLAY AREA  */
 
