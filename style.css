@@ -93,13 +93,26 @@ a {
 .headerSearch {
     width: 100%;
     padding: 10px;
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    align-items: center;
+    justify-items: right;
+}
+.headerSearch > img {
+    background-color: rgb(233, 233, 233);
+    padding: 10px 0 10px 10px;
+    border-radius: 20px 0 0 20px;
 }
 #searchBar {
     border: none;
     width: 100%;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: 0 20px 20px 0;
     background-color: rgb(233, 233, 233);
+}
+
+#searchBar:hover {
+    background-color: rgb(216, 216, 216);
 }
 
 
@@ -379,6 +392,7 @@ a {
     "pfp icons"
     ;
     border-top: solid 1px rgb(233, 233, 233);
+    border-right: solid 1px rgb(233, 233, 233);
 }
 
 /* TOP ROW  */
@@ -465,4 +479,93 @@ a {
 
 .tastyPadding {
     padding-left: 20px;
+}
+
+/* RIGHT MENU  */
+
+.rightColumn {
+    padding: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 10px;
+    justify-items: center;
+}
+
+.whatsHappening {
+    padding: 10px;
+    display: grid;
+    width: 100%;
+    height: auto;
+    background-color: rgb(233, 233, 233);
+    border-radius: 15px;
+}
+
+.whatsHappening > span {
+    padding-bottom: 10px;
+    border-bottom: solid 1px rgb(224, 224, 224);
+}
+
+.whoFollow {
+    padding: 10px;
+    display: grid;
+    width: 100%;
+    height: auto;
+    background-color: rgb(233, 233, 233);
+    border-radius: 15px;
+}
+
+.whoFollow > span {
+    padding-bottom: 10px;
+    border-bottom: solid 1px rgb(224, 224, 224);
+}
+
+/* RESPONSIVE STUFF  */
+
+@media screen and (max-width: 920px) {
+    .mainContainer {
+        grid-template-columns: 1fr 2fr;
+    }
+        
+    
+    .rightColumn {
+        display: none;
+    }
+
+    .headerBar {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .headerSearch {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 685px) {
+    .leftColumn {
+        min-width: 30px;
+    }
+    header {
+        display: none;
+    }
+   
+    .newTweet {
+        padding-top: 10px;
+    }
+
+    .butCon {
+        grid-template-columns: 1fr;
+    }
+
+    .textHolder {
+        display: none;
+    }
+
+    .lmTweet {
+        display: none;
+    }
+
+    .profileBlock {
+        display: none;
+    }
 }
