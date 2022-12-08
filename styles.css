@@ -1,13 +1,18 @@
-.body {
+/* .body {
   margin: none;
-}
+} */
+
+/* * {
+  margin-left: 10px;
+} */
 
 .header {
   grid-area: header;
-  background-color: mediumspringgreen;
+  /* background-color: mediumspringgreen; */
   display: grid;
   grid-template-columns: 40px 1fr 50px;
   grid-template-areas: "title   .   toggle-feed";
+  border-bottom: solid grey 2px;
 }
 
 h1 {
@@ -26,30 +31,31 @@ h1 {
 }
 
 #logo {
-  padding-left: 38px;
+  padding-left: 24px;
   padding-top: 20px;
 }
 
 .main-frame {
   display: grid;
-  grid-template-columns: 200px 1fr 260px;
+  grid-template-columns: 0.5fr 260px 2fr 350px 0.5fr;
   grid-template-rows: 55px 600px;
   grid-template-areas:
-    "left-side    header      right-side"
-    "left-side    feed        right-side";
+    ".   left-side    header      right-side   ."
+    ".   left-side    feed        right-side   .";
   /* I will add in margins later by adding some @media selectors. */
 }
 
 .left-side {
   grid-area: left-side;
-  background-color: lightsteelblue;
+  border-right: solid grey 2px;
+  /* background-color: lightsteelblue; */
 }
 
 .navigation {
   display: grid;
   grid-template-columns: 40px 110px;
   grid-template-areas: "nav-icons nav-list";
-  padding-left: 40px;
+  padding-left: 26px;
   padding-top: 25px;
 }
 
@@ -89,22 +95,76 @@ ul {
 
 #Tweeter {
   background-color: rgb(30, 27, 226);
-  width: 170px;
+  width: 200px;
   height: 40px;
   border-radius: 50px;
   text-align: center;
   color: aliceblue;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
-  margin-left: 25px;
+  margin-left: 22px;
 }
 
 .feed {
   grid-area: feed;
-  background-color: lightgrey;
+  /* background-color: lightgrey; */
+}
+
+.composer {
+  display: grid;
+  grid-template-columns: 70px 180px 1fr 85px;
+  grid-template-rows: 70px 50px;
+  grid-template-areas:
+    "pic-message    pic-message     pic-message    pic-message "
+    "     .       composer-icons       .     tweet-composer";
+  border-bottom: solid grey 2px;
+}
+
+#pic-message {
+  grid-area: pic-message;
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  grid-template-areas: "profile-pic   default-message";
+  border-bottom: dotted grey 2px;
+  margin-left: 5px;
+  margin-right: 9px;
+}
+
+#profile-pic {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 50px;
+  padding: 10px;
+}
+
+#defualt-message p {
+  grid-area: default-message;
+}
+
+.composer-icons {
+  grid-area: composer-icons;
+}
+
+.composer-icons img {
+  height: 21px;
+  padding: 5px;
+}
+
+#Tweeter-composer {
+  grid-area: tweet-composer;
+  background-color: rgb(30, 27, 226);
+  width: 75px;
+  height: 36px;
+  border-radius: 50px;
+  margin-top: 6px;
+  text-align: center;
+  color: aliceblue;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .right-side {
   grid-area: right-side;
   background-color: mediumturquoise;
+  border-left: solid grey 2px;
 }
