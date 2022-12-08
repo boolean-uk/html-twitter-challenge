@@ -2,12 +2,12 @@
 
 .left {
     grid-area: left;
-    /* background-color: #1e1e1e;
-    display: grid;
-    grid-template-rows: repeat(11, minmax(45px,1fr)); */
+
 }
 
 ul {
+    position: sticky;
+    top: 0px;
     background-color: #1e1e1e;
 }
 

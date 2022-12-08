@@ -1,9 +1,15 @@
 /* middle */
- img {
-padding-top: 3px;
+.mid-box.homebar {
+    position: sticky;
+    top: 0px;
+}
+
+.pp.poster,
+.inner-box.pp {
+    padding-top: 3px;
     height: 50px;
     border-radius: 50%;
- }
+}
 
 .middle {
     grid-area: middle;
@@ -14,36 +20,37 @@ padding-top: 3px;
 
     display: grid;
     grid-template:
-        "homebar" 60px
+        "homebar" 40px
         "mkpost" 100px
         "feeds" 1fr/
         minmax(500px, 1fr);
 
-    gap: 10px;
+    /* gap: 10px; */
 }
 
 .mid-box {
     padding-left: 10px;
     padding-right: 10px;
-
 }
 
 /* Homebar section-- make sticky */
 .homebar {
     grid-area: homebar;
+
     display: grid;
     grid-template-columns: 1fr 50px;
-    /* background-color: antiquewhite; */
+
+    border-bottom: #DDA15E 1px solid;
 }
 
 #stars {
-    width: 30px;
+    width: 20px;
     fill: #BC6C25;
     padding-top: 15px
 }
 
 .homebar>h1 {
-    font-size: 40px;
+    font-size: 30px;
     margin: 0;
     padding-left: 30px;
 }
@@ -58,13 +65,14 @@ padding-top: 3px;
     grid-template-areas:
         "pp create"
         ".  icons";
+
+    border-bottom: #DDA15E 10px solid;
 }
 
 #pp {
     grid-area: pp;
 
     display: grid;
-
 }
 
 .pp {
@@ -95,7 +103,7 @@ padding-top: 3px;
 }
 
 .middle button {
-    /*figure out how to move whole button to the right*/
+/*figure out how to move whole button to the right*/
     display: grid;
     align-items: center;
 
@@ -115,22 +123,26 @@ padding-top: 3px;
 .post2,
 .post3 {
     display: grid;
-    border-bottom: red 1px solid;
+    border-bottom: #DDA15E 1px solid;
 
     grid-template-rows: 60px 2fr 1fr;
     grid-template-columns: 60px 1fr;
     grid-template-areas:
-        "pp userDetails"
+        "ppu userDetails"
         "post post"
-        "reactions reactions";
+        ". reactions";
+
+        font-size: 13px;
 }
 
 .poster {
-    grid-area: pp;
+    grid-area: ppu;
 }
 
 .posted {
     grid-area: post;
+    display: grid;
+    grid-template-rows: auto;
 }
 
 .userDetails {
@@ -142,7 +154,7 @@ padding-top: 3px;
 
 .grey {
     display: grid;
-    grid-template-columns: auto 1fr 30px
+    grid-template-columns: auto 1fr 
 }
 
 .username {
@@ -163,3 +175,36 @@ padding-top: 3px;
     width: 15px;
 }
 
+#post-img {
+    display: grid;
+    height: 150;
+    border-radius: 4px;
+}
+
+.posted section {
+    display: grid;
+    justify-content: center;
+}
+
+/* Reactions under the post */
+
+svg.react {
+    width: 15px;
+    fill: grey;
+}
+
+svg.react.likes,
+svg.react.retweet
+ {
+    width: 25px;
+}
+
+.reactions {
+    grid-area: reactions;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* column-gap: 15px; */
+
+    align-items: center;
+    align-content: center;
+}
