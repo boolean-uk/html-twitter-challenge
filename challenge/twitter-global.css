@@ -14,16 +14,6 @@
     gap: 5px;
 }
 
-/* .outer-box {
-    border: dotted white 2px;
-} */
-
-.mid-box {
-    border-left: lightcoral solid 1px;
-    border-right: ;
-    
+button:hover {
+    color: pink;
 }
-
-/* .inner-box {
-    border: dashed 2px darkgrey;
-} */

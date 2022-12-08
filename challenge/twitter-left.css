@@ -17,63 +17,28 @@ a {
 
 li {
     list-style: none;
-     padding: 15px;
-     font-weight: 700;
-    }
-    
-    .left button {
-        background-color: #BC6C25;
-        border-radius: 30px;
-    
-        font-size: 13px;
-        font-weight: 700;
-    
-        width: 160px;
-        height: 45px;
-    }
-    
-    .dino {
-        width: 50px;
-    }
+    padding: 15px;
+    font-weight: 700;
+}
+
+.left button {
+    background-color: #BC6C25;
+    border-radius: 30px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    width: 160px;
+    height: 45px;
+}
+
+#dino {
+    width: 50px;
+}
 
 svg {
-        fill: #FEFAE0;
-        width: 20px;
-    }
-    
-    /* .left h2 {
-    font-size: large;
+    fill: #FEFAE0;
+    width: 20px;
 }
 
-.left a {
-    text-decoration: none;
-}
-
-.left img {
-    padding-left: 20px;
-}
-
-.icon,
-.home,
-.explore,
-.notifications,
-.messages,
-.bookmarks,
-.lists,
-.profile,
-.more {
-    display: grid;
-    grid-template-columns: 55px 1fr;
-    gap: 12px;
-}
-
-.home h2 {
-    color: #BC6C25;
-}
-
-.tweetbutton {
-    display: grid;
-    align-items: center;         /* figure out how to center align
-    
-    */
 
