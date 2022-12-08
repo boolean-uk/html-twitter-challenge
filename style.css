@@ -1,0 +1,371 @@
+* {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.mainContainer .left {
+    grid-area: left;
+}
+.mainContainer .main {
+    grid-area: main;
+    border: lightgray solid 1px;
+    border-top: none;
+    border-bottom: none;
+}
+.mainContainer .right {
+    grid-area: right;
+}
+aside.left, aside.right {
+    position: sticky;
+    top: 0px;
+}
+.profileNickName {
+    font-size: 15px;
+    font-weight: bolder;
+}
+.profileName {
+    font-size: x-small;
+    color: darkgrey;
+}
+.logo {
+    margin-bottom: 15px;
+    height: 40px;
+}
+.profileImg {
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    
+}
+.tweetButton {
+    background-color: #0080ff ;
+    color: whitesmoke;
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+#divider {
+    height: 10px;
+    background-color: rgba(169, 169, 169, 0.352);
+}
+.articleImg {
+    display: grid;
+    margin-left: 75px;
+    margin-right: 60px;
+    margin-top: 10px;
+    
+}
+.mainContainer {
+    display: grid;
+    grid-template-columns: 16% 62% 20%;
+    margin-left: 5px;
+    grid-template-areas: 
+    "left main right"
+    ;
+    gap: 15px;
+}
+.mainContainer .left {
+    height: 97vh;
+}
+.navContainer {
+    display: grid;
+    grid-template-columns: 15% 85%;
+    margin-bottom: 15px;
+}
+.navContainer .icons {
+    display: grid;
+    gap: 15px;
+    
+}
+.navContainer .locations {
+    display: grid;
+    gap: 15px;
+    align-items: center;
+    
+}
+.navContainer .locations a {
+    font-weight: 700;
+    color: black;
+    text-decoration: none;    
+}
+.navContainer .locations a:hover {
+    color: #0080ff;
+}
+
+.left .tweetButton {
+    border-radius: 20px;
+    padding: 0.5rem 3rem;
+    
+}
+
+.left .profile {
+    position: absolute;
+    bottom: 10px;
+    display: grid;
+    grid-template-columns: 40px 80% 20%;
+    grid-template-rows: 15px 15px;
+    grid-template-areas: 
+    "profilImg profileNic . "
+    "profileImg profileName more"
+    ;
+    
+}
+.left .profile > .profileImg {
+    height: 30px;
+    width: 30px;
+    grid-area: profilImg;
+}
+.left .profile .profileNickName {
+    grid-area: profileNic;
+    font-size: small;
+    font-weight: bolder;
+}
+.left .profile .profileName {
+    grid-area: profileName;
+    font-size: x-small;
+    color: darkgrey;
+}
+.left .profile .more {
+grid-area: more;
+}
+.main .HomeNav {
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    font-size: large;
+    padding-bottom: 2px;
+    padding-left: 2px;
+}
+.tweetBox {
+    display: grid;
+    border: 1px solid lightgrey;
+    border-left: none;
+    border-right: none;
+    position: relative;
+    
+}
+.proImgAndText {
+    display: grid;
+    grid-template-columns: 65px 1fr;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.proImgAndText p {
+    color: darkgrey;
+}
+.tweetBox .icons ul {
+    display: grid;
+    grid-template-columns: repeat(5, 15px);
+    list-style: none;
+    gap: 10px;
+    margin-top: 5px;
+    padding-left: 75px;
+    margin-bottom: 10px;
+}
+.tweetBox .icons ul li img{
+    height: 20px;
+}
+.tweetBox .tweetButton {
+    background-color: #0080ff58 ;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+.tweetBox .tweetButton:hover {
+    background-color: #0080ff;
+}
+.tweet {
+    border: 1px solid lightgrey;
+    border-left: none;
+    border-right: none;
+    
+}
+.tweet .Retweets {
+    margin-top: 5px;
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: 45px 1fr;
+    align-items: center;
+
+}
+.tweet .Retweets img {
+    height: 15px;
+    
+}
+.tweet .Retweets p {
+    margin: 0;
+    font-size: x-small;
+    color: rgb(178, 177, 177);
+    font-weight: bold;
+}
+.profileImgAndTweet {
+    display: grid;
+    grid-template-columns: 65px 60px;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    ". nickName name"
+    ". text text"
+    ;
+    margin-left: 10px;
+    margin-top: 5px;
+    align-items: center;
+}
+
+.tweet .profileNickName {
+    grid-area: nickName;
+    
+}
+.tweet .profileName {
+    grid-area: name;
+}
+.tweet .text {
+    grid-area: text;
+    margin: 0;
+    font-size: small;
+    margin-right: 60px ;
+
+} 
+.reactionsBar ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding-left: 75px;
+}
+.reactionsBar ul li {
+    list-style: none;
+    
+}
+.reactionsBar ul li img {
+    height: 15px;
+}
+
+.tweet .articleImg img {
+    object-fit: cover;
+    height: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+}
+.right .searchBar {
+    border-radius: 20px;
+    background-color: darkgray;
+    color: whitesmoke;
+    margin-top: 0px;
+    margin-left: 5px;
+    display: grid;
+}
+.right .searchBar p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 2px;
+    justify-items: center;
+}
+.right .searchBar img {
+    height: 17px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.right .news {
+    background-color: lightgray;
+    border-radius: 20px;
+    padding: 8px;
+    display: grid;
+    margin-left: 10px;
+    margin-top: 10px;
+        
+}
+.right article {
+    border-top: darkgray solid 1px;
+}
+.right article .smallHeading {
+    color: darkgray;
+    font-size: x-small;
+    margin-bottom: 0;
+}
+.right article .bigHeading {
+    margin: 2px;
+}
+.right article .AnalyticsInfo {
+    color: darkgray;
+    font-size: x-small;
+    margin-top: 2px;
+}
+.right article .AnalyticsInfo a {
+    text-decoration: none;
+    color: #0080ff;
+    border: none;
+    padding: 0;
+}
+.right a {
+    border-top: darkgray solid 1px;
+    padding-bottom: 3px;
+    color: #0080ff;
+    text-decoration: none;
+}
+.RecommendedPost .accountCard {
+    display: grid;
+    grid-template-columns: 19px 1fr 19px 0.5fr;
+    margin-top: 2px;
+    justify-items: center;
+}
+.RecommendedPost .accountCard p {
+    margin: 0px;
+    margin-left: 2px;
+}
+.accountCard img {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+}
+.RecommendedPost .articleInfo {
+    display: grid;
+    grid-template-columns: 70% 25%;
+    
+}
+.RecommendedPost .articleInfo img {
+    max-height: 100%;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 10px;
+}
+@media  screen and (max-width: 1030px) {
+    .mainContainer {
+        gap: 5px;
+    }
+}
+@media  screen and (max-width: 950px) {
+    .mainContainer {
+        grid-template-columns: 20% 80%;
+        grid-template-areas: 
+        "left main"
+        ;
+    }
+    .mainContainer .tweet {
+        border-right: none;
+    }
+   .mainContainer .right {
+    display: none;
+    
+   }
+   .mainContainer .left .navContainer .icons {
+    display: none;
+   }
+   .mainContainer .left .tweetButton {
+    padding: 0.5rem 1rem;
+   }
+}
+
+@media screen and (max-width: 530px) {
+    .mainContainer {
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "main"
+        ;
+    }
+    .mainContainer .left {
+        display: none;
+    }
+    .mainContainer .tweetBox {
+        border-left: 1px solid lightgrey;
+    }
+}
