@@ -3,13 +3,27 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+aside.left, aside.right {
+    position: sticky;
+    top: 0px;
+}
+.profileNickName {
+    font-size: 15px;
+    font-weight: bolder;
+}
+.profileName {
+    font-size: x-small;
+    color: darkgrey;
+}
 .logo {
     margin-bottom: 15px;
     height: 40px;
 }
 .profileImg {
     border-radius: 50%;
-    height: 45px
+    height: 45px;
+    width: 45px;
+    
 }
 .tweetButton {
     background-color: #0080ff ;
@@ -18,15 +32,27 @@
     border-radius: 20px;
     padding: 0.5rem 1rem;
 }
-
+#divider {
+    height: 10px;
+    background-color: rgba(169, 169, 169, 0.352);
+}
+.articleImg {
+    display: grid;
+    margin-left: 75px;
+    margin-right: 60px;
+    margin-top: 10px;
+    
+}
 .mainContainer {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: 20% 60% 20%;
     margin-left: 5px;
     
 }
 .left {
-    position: relative;
+    
+    height: 97vh;
+    
 }
 .navContainer {
     display: grid;
@@ -69,7 +95,8 @@
 }
 .left .profile > .profileImg {
     height: 30px;
-    grid-area: profileImg;
+    width: 30px;
+    grid-area: profilImg;
 }
 .left .profile .profileNickName {
     grid-area: profileNic;
@@ -84,7 +111,13 @@
 .left .profile .more {
 grid-area: more;
 }
-
+.main .HomeNav {
+    text-decoration: none;
+    color: black;
+    font-weight: 900;
+    font-size: large;
+    padding-bottom: ;
+}
 .tweetBox {
     display: grid;
     border: 1px solid lightgrey;
@@ -97,6 +130,7 @@ grid-area: more;
     margin-left: 10px;
     margin-top: 5px;
 }
+
 .proImgAndText p {
     color: darkgrey;
 }
@@ -117,4 +151,157 @@ grid-area: more;
     position: absolute;
     bottom: 5px;
     right: 10px;
+}
+.tweet {
+    border: 1px solid lightgrey;
+    
+}
+.tweet .Retweets {
+    margin-top: 5px;
+    margin-left: 30px;
+    display: grid;
+    grid-template-columns: 45px 1fr;
+    align-items: center;
+
+}
+.tweet .Retweets img {
+    height: 15px;
+    
+}
+.tweet .Retweets p {
+    margin: 0;
+    font-size: x-small;
+    color: rgb(178, 177, 177);
+    font-weight: bold;
+}
+.profileImgAndTweet {
+    display: grid;
+    grid-template-columns: 65px 60px;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    ". nickName name"
+    ". text text"
+    ;
+    margin-left: 10px;
+    margin-top: 5px;
+    align-items: center;
+}
+.tweet .profileImg {
+    
+}
+.tweet .profileNickName {
+    grid-area: nickName;
+    
+}
+.tweet .profileName {
+    grid-area: name;
+}
+.tweet .text {
+    grid-area: text;
+    margin: 0;
+    font-size: small;
+    margin-right: 60px ;
+
+} 
+.reactionsBar ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    padding-left: 75px;
+}
+.reactionsBar ul li {
+    list-style: none;
+    
+}
+.reactionsBar ul li img {
+    height: 15px;
+}
+
+.tweet .articleImg img {
+    object-fit: cover;
+    height: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+}
+.right .searchBar {
+    border-radius: 20px;
+    background-color: darkgray;
+    color: whitesmoke;
+    margin-top: 0px;
+}
+.right .searchBar p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+}
+.right .searchBar img {
+    height: 20px;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+.right .news {
+    background-color: lightgray;
+    border-radius: 20px;
+    padding: 8px;
+    display: grid;
+    margin-left: 10px;
+    margin-top: 10px;
+        
+}
+.right article {
+    border-top: darkgray solid 1px;
+}
+.right article .smallHeading {
+    color: darkgray;
+    font-size: x-small;
+    margin-bottom: 0;
+}
+.right article .bigHeading {
+    margin: 2px;
+}
+.right article .AnalyticsInfo {
+    color: darkgray;
+    font-size: x-small;
+    margin-top: 2px;
+}
+.right article .AnalyticsInfo a {
+    text-decoration: none;
+    color: #0080ff;
+    border: none;
+    padding: 0;
+}
+.right a {
+    border-top: darkgray solid 1px;
+    padding-bottom: 3px;
+    color: #0080ff;
+    text-decoration: none;
+}
+.RecomendedPost  {
+    /* display: grid;
+    grid-template-columns: 1fr 0.4fr; */
+}
+.RecommendedPost .accountCard {
+    display: grid;
+    grid-template-columns: 19px 1fr 19px 0.5fr;
+    margin-top: 2px;
+    justify-items: center;
+}
+.RecommendedPost .accountCard p {
+    margin: 0px;
+    margin-left: 2px;
+}
+.accountCard img {
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+}
+.RecommendedPost .articleInfo {
+    display: grid;
+    grid-template-columns: 70% 25%;
+    
+}
+.RecommendedPost .articleInfo img {
+    max-height: 100%;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 10px;
 }
