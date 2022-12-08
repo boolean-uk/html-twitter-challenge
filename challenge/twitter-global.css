@@ -8,12 +8,17 @@
 .container {
     height: 100vh;
     display: grid;
+    grid-template-rows: 1fr 18px;
     grid-template-columns: 1fr 200px 560px 200px 1fr;
     grid-template-areas:
-        ". left middle right .";
+        ". left middle right ."
+        ". footer footer footer .";
     gap: 5px;
 }
 
+footer {
+    grid-area: footer;
+}
 button:hover {
-    color: pink;
+    background-color: #DDA15E;
 }

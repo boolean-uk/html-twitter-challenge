@@ -13,7 +13,6 @@
 
 .middle {
     grid-area: middle;
-    background-color: #DDA15E;
 
     border-left: #283618 2px solid;
     border-right: #283618 2px solid;
@@ -42,7 +41,9 @@
 
     border-bottom: #DDA15E 1px solid;
 }
-
+#left-home {
+    fill: #BC6C25;
+}
 #stars {
     width: 20px;
     fill: #BC6C25;
@@ -163,6 +164,10 @@
     font-weight: bold;
 }
 
+.username > span{
+    align-items: justify;
+}
+
 
 #usertag,
 #time {
@@ -175,6 +180,9 @@
     width: 15px;
 }
 
+svg.home {
+    fill: #BC6C25;
+}
 #post-img {
     display: grid;
     height: 150;
@@ -199,11 +207,13 @@ svg.react.retweet
     width: 25px;
 }
 
+svg.react:hover {
+   background-color: #606C38;
+}
 .reactions {
     grid-area: reactions;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    /* column-gap: 15px; */
 
     align-items: center;
     align-content: center;

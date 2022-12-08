@@ -3,8 +3,14 @@
 .right {
     grid-area: right;
     display: grid;
-    grid-template-rows: 45px 80px 80px;
+    grid-template-rows: 40px 80px 80px;
     gap: 15px;
+}
+
+.outer-box.right.right {
+    /* display: grid; */
+    position: sticky;
+    top: 0px;
 }
 
 .right p {
