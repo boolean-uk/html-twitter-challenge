@@ -4,11 +4,18 @@ body {
 .container {
     display: grid;
     grid-template:
-    " .    left-menu   main-cont   right-menu    .  " 600px /
-     50px    200px        1fr       200px      50px;
-    gap: 5px;
-    
+    ".    left-menu   main-cont   right-menu    .  " 1000px /
+     100px   250px        1fr       250px      100px;
+    gap: 5px; 
 }
+
+/*.main-cont {
+    width: 100%;
+   min-width: 500px;
+   max-width: 1200px;
+}*/
+
+
 /* LEFT MENU*/
 
 
@@ -18,9 +25,12 @@ body {
     gap: 20px;
     background-color: white;
     grid-template-rows: 350px 40px 60px;
+    position: fixed;
+    left: 150px;
 }
 .left-menu .icons {
     margin-top: 20px;
+    
 }
 
 .left-menu .icons ul li {
@@ -57,7 +67,11 @@ body {
     border: 2px solid violet;  
 }*/
 
-
+@media screen and (min-width: 80rem) {
+    .main-cont {
+       margin: 1em 2em ;
+    }
+}
 
 
 /* MAIN CONTAINER */
@@ -68,7 +82,11 @@ body {
     border-left: 2px solid lightgray;
     gap: 20px; 
     grid-template-rows: 150px 1fr;
+    overflow: scroll;
+    scroll-behavior: smooth;
+     
 }
+
 .main-cont .header {
     display: grid;
     grid-template-rows: 40px 1fr 40px;
@@ -116,7 +134,7 @@ body {
 
 .header .icons {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 4fr 1fr;
     gap: 20px;
     padding-left:50px ;
     justify-items: space-between;
@@ -124,8 +142,7 @@ body {
 }
 .header .icons .part1 {
     display: inline;
-    gap: 10px;
-    padding: 10px;
+    padding: 5px;
 }
 
 .header .icons .part1 a {
@@ -151,18 +168,18 @@ body {
     display: grid;
     border-top: lightgray solid 1px;
     grid-template-rows: repeat(auto-fit, 1fr);
+    
 }
 
 .main-cont .main .tweet1 {
 padding-left: 80px;
 display: grid;
-grid-template-rows: 35px 1fr;
+grid-template-rows: 35px auto 40px;
 position: relative;
+border-bottom: 1px solid lightgray ;
 }
 .main-cont .main .tweet1 img.profile {
     width: 50px;
-    height: 50px;
-    border-radius: 50%;
     position: absolute;
     left: 10px;
     top: 10px;
@@ -187,6 +204,7 @@ position: relative;
 .main-cont .main .tweet1 .first-column p {
    font-size: 15px;
    margin-top: 11px;
+   color: gray;
 }
 
 /* SECOND COLUMN}*/
@@ -195,7 +213,7 @@ position: relative;
     text-decoration: none;
 }
 .main-cont .main .tweet1 .second-column img {
-    width: 100%;
+    width:100%;
     border-radius: 20px;
 }
 
@@ -204,11 +222,134 @@ position: relative;
     line-height: 25px;
 }
 
+/* THIRD COLUMN */
+.main-cont .main .tweet1 .com-tag {
+    display: inline;
+    margin: 10px;
+}
+.main-cont .main .tweet1 .com-tag a{
+    color: black;
+    text-decoration: none;  
+}
+.main-cont .main .tweet1 .com-tag a svg{
+   padding: 60px;
+   width: 20px;
+   padding-top: 0;
+}
+
+/*TWEET2 */
+.main-cont .main .tweet2 {
+    padding-left: 80px;
+    display: grid;
+    grid-template-rows: 35px auto 40px;
+    position: relative;
+}
+
+.main-cont .main .tweet2 img.profile2{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
 
 
+.main-cont .main .tweet2 .first-column {
+    padding-left: 80px;
+    display: grid;
+    margin: 0;
+    grid-template-columns: 125px 40px;
+    align-items: center;
+    padding: 0;
+}
+.main-cont .main .tweet2 .first-column a.animal, h4 {
+    color: black;
+    margin: 0;
+    text-decoration: none;
+    font-size: 17px;
+    padding-right: 0;
+}
+
+.main-cont .main .tweet2 .first-column p {
+   font-size: 15px;
+   margin-top: 15px;
+   color: gray;
+}
+.main-cont .main .tweet2 .second-column iframe {
+    width: 100%;
+    height: auto;
+ }
+ 
+/* THIRD COLUMN */
+.main-cont .main .tweet2 .com-tag {
+    display: inline;
+    margin: 10px;
+}
+.main-cont .main .tweet2 .com-tag a{
+    color: black;
+    text-decoration: none;  
+}
+.main-cont .main .tweet2 .com-tag a svg{
+   padding: 60px;
+   width: 20px;
+   padding-top: 0;
+}
 
 
+/*TWEET3 */
+.main-cont .main .tweet3 {
+    padding-left: 80px;
+    display: grid;
+    grid-template-rows: 35px auto 40px;
+    position: relative;
+    border-top: 1px lightgray solid ;
+}
 
+.main-cont .main .tweet3 img.profile3{
+    border-radius: 50%;
+    width: 50px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+
+.main-cont .main .tweet3 .first-column {
+    padding-left: 80px;
+    display: grid;
+    margin: 0;
+    grid-template-columns: 50px 40px;
+    align-items: center;
+    padding: 0;
+}
+.main-cont .main .tweet3 .first-column a.me, h4 {
+    color: black;
+    margin: 0;
+    text-decoration: none;
+    font-size: 17px;
+    padding-right: 0;
+}
+
+.main-cont .main .tweet3 .first-column p {
+   font-size: 15px;
+   margin-top: 15px;
+   color: gray;
+}
+/* THIRD COLUMN */
+.main-cont .main .tweet3 .com-tag {
+    display: inline;
+    margin: 10px;
+}
+.main-cont .main .tweet3 .com-tag a{
+    color: black;
+    text-decoration: none;  
+}
+.main-cont .main .tweet3 .com-tag a svg{
+   padding: 60px;
+   width: 20px;
+   padding-top: 0;
+}
 
 
 
@@ -222,9 +363,11 @@ position: relative;
     display: grid;
     gap: 10px;
     background-color: white;
-    grid-template-rows: 50px 1fr;
-
+    grid-template-rows: 50px 500px;
+   
+    
 }
+
 /* RIGHT MENU - SEARCH BAR*/
 .right-menu .search-bar{
     display: grid;
