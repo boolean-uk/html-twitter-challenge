@@ -21,6 +21,10 @@ li {
     font-weight: 700;
 }
 
+.home a {
+    color: #BC6C25;
+}
+
 .left button {
     background-color: #BC6C25;
     border-radius: 30px;

@@ -164,11 +164,6 @@
     font-weight: bold;
 }
 
-.username > span{
-    align-items: justify;
-}
-
-
 #usertag,
 #time {
     color: grey;
