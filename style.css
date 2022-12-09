@@ -1,0 +1,626 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.twitBGColour {
+    background-color: #1DA1F2;
+}
+
+.twitFColour {
+    color: #1DA1F2;
+}
+
+body {
+    background-color: rgb(233, 233, 233);
+}
+
+.bgColor {
+    background-color: rgb(243, 243, 243);
+}
+
+a {
+    color: black;
+}
+
+/* HEADER BAR  */
+
+.headerBar {
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 50px;
+    align-items: center;
+    justify-items: center;
+}
+
+/* LOGO  */
+
+.headerLogo {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-items: right;
+    align-items: center;
+    min-width: 220px;
+    width: 100%;
+    height: 100%;
+    border-right: solid 1px rgb(233, 233, 233);
+}
+
+#logo {
+    width: 30px;
+}
+
+svg {
+    width: 30px; 
+}
+
+/* HOME BAR  */
+
+.homeBar {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    
+    border-right: solid 1px rgb(233, 233, 233);
+}
+
+.homeBarText {
+    display: grid;
+    align-items: center;
+    padding-left: 5px;
+}
+
+.homeBarText > span {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.homeBarStars {
+    display: grid;
+    align-items: center;
+    justify-items: right;
+    padding-right: 5px;
+}
+
+.homeBarStars > img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+}
+
+/* SEARCH BAR  */
+.headerSearch {
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    align-items: center;
+    justify-items: right;
+}
+.headerSearch > img {
+    background-color: rgb(233, 233, 233);
+    padding: 10px 0 10px 10px;
+    border-radius: 20px 0 0 20px;
+}
+#searchBar {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 0 20px 20px 0;
+    background-color: rgb(233, 233, 233);
+}
+
+#searchBar:hover {
+    background-color: rgb(216, 216, 216);
+}
+
+
+/* MAIN CONTAINER  */
+
+.mainContainer {
+    display:grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: auto;
+    justify-items: center;
+}
+
+
+ /* LEFT MENU  */
+
+.leftColumn {
+    min-width: 220px;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    justify-items: center;
+    border-right: solid 1px rgb(233, 233, 233);
+}
+
+.butCon {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    align-items: center;
+    padding: 12px 5px 12px 5px;
+    border-radius: 25px;
+}
+
+.textHolder > span {
+    font-size: 18px;
+    font-weight: bold;
+    padding: 0 0 0 20px;
+    letter-spacing: 2px;
+}
+
+.home > .textHolder > span {
+    color: #1DA1F2;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+}
+
+.tweetButton {
+    display: grid;
+    border-radius: 25px;
+    height: 40px;
+    width: 150px;
+    place-items: center;
+    margin: 25px 0 0 10px;
+}
+
+.tweetButtonText {
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    letter-spacing: 2px;
+    
+}
+
+.butCon:hover {
+    transform: scale(1.1);
+}
+
+.butCon:active {
+    transform: scale(1.0);
+    outline: none;
+}
+
+.tweetButton:hover {
+    background-color: #2383be;
+    box-shadow: 1px 1px 1px #12496b;
+    transform: scale(1.1);
+}
+.tweetButton:active {
+    background: #1DA1F2;
+    box-shadow: inset 0px 0px 5px #12496b;
+    transform: scale(1.0);
+    outline: none;
+}
+
+/* PROFILE BLOCK  */
+
+.profileBlock {
+    display: grid;
+    grid-template-columns: 40px 1fr 25px;
+    grid-template-rows: 20px 20px;
+    grid-template-areas: 
+    "pfp displayName profileSettings"
+    "pfp twitterHandle ."
+    ;
+    padding: 20px 10px 10px 5px;
+    position: fixed;
+    bottom: 0;
+    border-top: solid 1px rgb(233, 233, 233);
+}
+
+.profilePicture {
+    grid-area: pfp;
+}
+
+.profilePicture > img {
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.displayName {
+    grid-area: displayName;
+}
+
+.displayName > span {
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 10px;
+    letter-spacing: 0.5px;
+}
+
+.twitterHandle {
+    grid-area: twitterHandle;
+}
+
+.twitterHandle > span {
+    font-size: 12px;
+    color: gray;
+    padding-left: 10px;
+}
+.profileSettings {
+    grid-area: profileSettings;
+    display: grid;
+    align-items: end;
+    justify-items: right;
+}
+
+.profileSettings > img {
+    width: 10px;
+    
+}
+
+/* MAIN SECTION  */
+
+.midColumn {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr;
+    gap: 5px;
+}
+
+/* NEW TWEET BLOCK  */
+
+.newTweet {
+    display: grid;
+    grid-template-columns: 80px 40px 40px 40px 40px 40px 1fr 100px;
+    grid-template-rows: 60px auto;
+    grid-template-areas: 
+    "pfp newText newText newText newText newText newText newText"
+    ".   pic     gif     poll    emoji   date    .       tweet"
+    ;
+    gap: 10px;
+    border-right: solid 1px rgb(233, 233, 233);
+    border-top: solid 1px rgb(233, 233, 233);
+}
+
+/* NEW TEXT HERE STRUCTURE  */
+
+.newTextHere {
+    grid-area: newText;  
+    padding: 5px 5px 0 0;
+}
+
+.whatsHappeningText {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    border-bottom: solid 1px rgb(233, 233, 233);
+    border-radius: 5px;
+}
+
+.whatsHappeningText:hover {
+    background-color: rgb(231, 229, 229);
+}
+
+.whatsHappeningText > span {
+    padding-left: 10px;
+    color: rgb(160, 158, 158);
+}
+
+/* ICON STRUCTURE  */
+
+.iconContainer {
+    display: grid;
+    place-items: center;
+    padding-bottom: 10px;
+}
+
+.newTweetIcon {
+    height: 25px;
+    width: 25px;
+    object-fit: contain;
+}
+
+.insertPic {
+    grid-area: pic;
+}
+
+.insertPic .newTweetIcon {
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
+}
+
+.insertGIF {
+    grid-area: gif;
+}
+
+.insertPoll {
+    grid-area: poll;
+}
+
+.insertEmoji {
+    grid-area: emoji;
+}
+
+.insertEmoji .newTweetIcon {
+    height: 23px;
+    width: 23px;
+    object-fit: contain;
+}
+
+.insertDate {
+    grid-area: date;
+}
+
+.insertDate .newTweetIcon {
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
+}
+
+.newTweetIcon:hover {
+    transform: scale(1.2);
+}
+
+.newTweetIcon:active {
+    transform: scale(1.0);
+}
+
+.tweetPFP {
+    grid-area: pfp;
+    display: grid;
+    place-items: center;
+}
+
+.tweetPFP > img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+/* TWEET NOW BUTTON  */
+
+.tweetNowButtonCon {
+    grid-area: tweet;
+    padding-right: 10px;
+    padding-bottom: 15px;
+}
+
+.tweetNowButton {
+    display: grid;
+    place-items: center;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.tweetNowButton > span {
+    color: white;
+}
+
+.tweetNowButton:hover {
+    background-color: #2383be;
+    box-shadow: 1px 1px 1px #12496b;
+    transform: scale(1.1);
+}
+
+.tweetNowButton:active {
+    background: #1DA1F2;
+    box-shadow: inset 0px 0px 5px #12496b;
+    outline: none;
+    transform: scale(1.0);
+  }
+
+
+/* TWEET DISPLAY AREA  */
+
+.postedTweets {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, min-content);
+
+}
+
+.individualTweets {
+    width: 100%;
+    padding-top: 10px;
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 25px min-content 35px;
+    grid-template-areas: 
+    "pfp toprow"
+    "pfp maintext"
+    "pfp icons"
+    ;
+    border-top: solid 1px rgb(233, 233, 233);
+    border-right: solid 1px rgb(233, 233, 233);
+}
+
+/* TOP ROW  */
+
+.indiTweetPFP {
+    grid-area: pfp;
+    padding-left: 10px;
+}
+
+.indiTweetPFP > img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.indiTweetNames {
+    grid-area: toprow;
+    display: grid;
+    grid-template-columns: auto auto auto auto 1fr;
+    grid-template-rows: auto;
+
+}
+
+.indiTweetDisplayName > span {
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.indiTweetUsername > span {
+    font-size: 13px;
+    padding-left: 10px;
+    color: rgb(177, 177, 177);
+}
+
+.indiTweetLittleDot > span {
+    font-size: 8px;
+    padding-left: 5px;
+    color: rgb(177, 177, 177);
+}
+.indiTweetLittleDot {
+    display: grid;
+    align-items: center;
+}
+.indiTweetTime > span {
+    font-size: 13px;
+    padding-left: 5px;
+    color: rgb(177, 177, 177);
+}
+
+
+/* MAIN TEXT  */
+
+.indiTweetMainText {
+    grid-area: maintext;
+}
+
+.indiTweet {
+    padding: 5px 10px 30px 10px;
+}
+
+.indiTweet span {
+    font-size: 15px;
+}
+
+.indiTweet .blueText {
+    color: #1DA1F2;
+}
+
+/* INDIVIDUAL TWEET ICONS  */
+
+.indiTweetIcons {
+    grid-area: icons;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.indiTweetIconResizer {
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
+}
+
+.tastyPadding {
+    padding-left: 20px;
+}
+
+.indiTweetIconResizer:hover {
+    transform: scale(1.2);
+}
+
+.indiTweetIconResizer:active {
+    transform: scale(1.0);
+}
+
+/* RIGHT MENU  */
+
+.rightColumn {
+    padding: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 10px;
+    justify-items: center;
+}
+
+.whatsHappening {
+    padding: 10px;
+    display: grid;
+    width: 100%;
+    height: auto;
+    background-color: rgb(233, 233, 233);
+    border-radius: 15px;
+}
+
+.whatsHappening > span {
+    padding-bottom: 10px;
+    border-bottom: solid 1px rgb(224, 224, 224);
+}
+
+.whoFollow {
+    padding: 10px;
+    display: grid;
+    width: 100%;
+    height: auto;
+    background-color: rgb(233, 233, 233);
+    border-radius: 15px;
+}
+
+.whoFollow > span {
+    padding-bottom: 10px;
+    border-bottom: solid 1px rgb(224, 224, 224);
+}
+
+/* RESPONSIVE STUFF  */
+
+@media screen and (max-width: 920px) {
+    .mainContainer {
+        grid-template-columns: 1fr 2fr;
+    }
+        
+    
+    .rightColumn {
+        display: none;
+    }
+
+    .headerBar {
+        grid-template-columns: 1fr 2fr;
+    }
+
+    .headerSearch {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 685px) {
+    .leftColumn {
+        min-width: 30px;
+    }
+    header {
+        display: none;
+    }
+   
+    .newTweet {
+        padding-top: 10px;
+    }
+
+    .butCon {
+        grid-template-columns: 1fr;
+    }
+
+    .textHolder {
+        display: none;
+    }
+
+    .lmTweet {
+        display: none;
+    }
+
+    .profileBlock {
+        display: none;
+    }
+}
