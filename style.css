@@ -51,7 +51,10 @@ a {
 
 #logo {
     width: 30px;
-    
+}
+
+svg {
+    width: 30px; 
 }
 
 /* HOME BAR  */
