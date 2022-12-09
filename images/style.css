@@ -321,9 +321,11 @@ span{
     border-bottom: gray solid 1px;
 }
 
-.whats-happening-section .whats-happening-show-more p{
+#whats-happening-show-more a{
     color: #2FA44E;
+    font-size: 12px;
     padding-bottom: 0;
+    text-decoration: none;
 }
 
 .who-to-follow-section{
@@ -372,8 +374,14 @@ span{
     background-color: lightgray;
 }
 
-.who-to-follow-show-more p{
+#who-to-follow-show-more a{
     color: #2FA44E;
+    font-size: 12px;
+    text-decoration: none;
 }
 
+#who-to-follow-show-more a:hover{
+
+    color: lightgray;
+}
 
