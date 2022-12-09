@@ -1,0 +1,63 @@
+/* Left Menu */
+
+.left {
+    grid-area: left;
+}
+
+ul {
+    position: sticky;
+    top: 0px;
+    background-color: #1e1e1e;
+    display: grid;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    font-weight: 700;
+
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-template-rows: repeat(auto-fit, 60px);
+    align-items: center;
+}
+
+a:active,
+a:focus {
+    background-color: rgba(128, 128, 128, 0.342);
+    color: #606C38;
+
+    border-radius: 30px;
+}
+
+.hoverable>*:hover {
+    background-color: rgba(128, 128, 128, 0.342);
+    border-radius: 30px;
+}
+
+.home a {
+    color: #BC6C25;
+}
+
+.left button {
+    background-color: #BC6C25;
+    border-radius: 30px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    width: 160px;
+    height: 45px;
+}
+
+#dino {
+    width: 50px;
+}
+
+svg {
+    fill: #FEFAE0;
+    width: 20px;
+}

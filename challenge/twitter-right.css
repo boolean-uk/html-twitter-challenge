@@ -1,0 +1,56 @@
+/* right menu*/
+
+.right {
+    grid-area: right;
+    display: grid;
+    grid-template-rows: 40px 80px 80px;
+    gap: 15px;
+}
+
+.outer-box.right.right {
+    /* display: grid; */
+    position: sticky;
+    top: 0px;
+}
+
+.right p {
+    background-color: #DDA15E;
+    text-transform: capitalize;
+}
+
+.search,
+.news,
+.follow {
+    display: grid;
+
+    background-color: #DDA15E;
+    border-radius: 10px;
+}
+
+.search {
+    border-radius: 45px;
+    object-fit: cover;
+
+    grid-template-columns: 30px auto;
+    align-items: center;
+    background-color: #DDA15E;
+}
+
+.search svg {
+    padding-left: 10px;
+    background-color: #DDA15E;
+}
+
+.loop {
+    width: 25px;
+}
+
+.news p,
+.follow p {
+    font-size: 20px;
+
+    /* font-weight: strong; */
+    padding-left: 25px;
+    padding-bottom: 10px;
+    border-bottom: solid 2px #BC6C25;
+}
