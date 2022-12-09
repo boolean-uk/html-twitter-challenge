@@ -180,11 +180,9 @@ a {
 
 .butCon:hover {
     transform: scale(1.1);
-    /* box-shadow: 1px 1px 1px #c1c1c1; */
 }
 
 .butCon:active {
-    /* background: #e5e5e5; */
     transform: scale(1.0);
     outline: none;
 }
