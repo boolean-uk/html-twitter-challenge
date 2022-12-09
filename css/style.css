@@ -51,7 +51,7 @@ body{
     grid-area: right;
 }
 
-nav, #whackerIcon, #profileWidget, #mainSectionTitle
+nav, #wackerIcon, #profileWidget, #mainSectionTitle
 {
     position: fixed;
 }
@@ -82,7 +82,7 @@ nav{
     bottom: 5px;
 }
 
-#whackerIcon{
+#wackerIcon{
     height: 50px;
     width: 50px;
     margin-left: 10%;
@@ -106,15 +106,16 @@ nav>div>a>span
     width: 32.33%;
 }
 
-#newWhackBox{
+#newWackBox{
     height: 150px;
     margin-top: 100px;
 }
 
-#whackList
+#wackList
 {
     height: 80%;
     grid-template-rows: repeat(auto-fit, 150px);
+    grid-auto-rows: 150px;
     gap:0px;
 }
 
@@ -138,5 +139,4 @@ nav>div>a>span
     box-sizing: border-box;
     border-radius: 25px;
     height: 20%;
-
 }
