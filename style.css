@@ -83,7 +83,10 @@
     transform: scale(1.2);
     font-size:20px
 }
-
+.left-menu .icons >a:active > i,
+ .left-menu .icons >a:active > span{
+    color: blue;
+ }
 .tweet-btn > button:hover {
     transform: scale(1.1);
 
