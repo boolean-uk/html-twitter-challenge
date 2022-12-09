@@ -8,7 +8,7 @@
   }
 
 body {
-    background-color: #030e0d;
+    background-color: #030e0f;
 }
 
 .container {
@@ -20,6 +20,7 @@ body {
 }
 
 .left {
+    border-right: #30635a 1px solid;
     grid-area: left;
     display: grid;
     grid-template: 
@@ -36,11 +37,161 @@ body {
     1fr;
 }
 
+.feed {
+    display: grid;
+    grid-area: feed;
+    grid-template: 
+    "header" 0.05fr
+    "makeQuack" 0.1fr
+    "content" 0.85fr/
+    1fr;
+}
+
+.header {
+    border-bottom: #30635a 1px solid;
+    grid-area: header;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.homer {
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+.stars {
+    margin: 0px;
+}
+
+.makeQuack {
+    border-bottom: #30635a 1px solid;
+    grid-area: makeQuack;
+    display: grid;
+    grid-template:
+    "pfp typingBox typingBox" 1fr
+    ". midIcons midIcons" 1fr/
+    0.15fr 1fr 1fr;
+}
+
+.pfp {
+    grid-area: pfp;
+}
+
+.typingBox {
+    grid-area: typingBox;
+    margin: 15px 10px 0px 0px;
+    color: #30635a;
+    border: #30635a 1px solid;
+    border-radius: 5px;
+}
+
+.midIcons {
+    grid-area: midIcons;
+    align-self: center;
+    display: grid;
+    grid-template: "icn icn icn icn icn buttone" 1fr/ 
+    0.2fr 0.2fr 0.2fr 0.2fr 0.2fr 0.5fr;
+}
+
+.midIcons > .icn {
+    grid-area: icn;
+    margin-right: 10px;
+    align-self: center;
+}
+
+.midIcons > .buttone {
+    grid-area: buttone;
+    font-weight: bold;
+    background-color: #30635a;
+    border-radius: 50px;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    justify-self: right;
+}
+
+.content {
+    grid-area: content;
+}
+
+.makeQuack > img {
+    border-radius: 50px;
+    margin: 10px 0px 0px 10px;
+}
+
+/* .one > * {
+    border: #69c694 1px solid;
+} */
+
+.one {
+    display: grid;
+    grid-template:
+    "midpfp midname midname"0.5fr
+    "midpfp content1 content1"1fr
+    ". contentIcons contentIcons"0.6fr /
+    0.1fr 0.2fr 1fr;
+}
+
+.one > .pfp {
+    grid-area: midpfp;
+    border-radius: 50px;
+    margin: 5px 0px 0px 5px;
+}
+
+.inname {
+    margin: 5px 0px 0px 0px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.one > .name {
+    grid-area: midname;
+    align-content: center;
+    display: grid;
+    grid-template-columns: 140px 190px 1fr;
+}
+
+.name > i {
+    text-align: right;
+    margin: 0px;
+}
+
+.one > .content {
+    margin-left: 7px;
+}
+
+.name > .handle {
+    color: #69c694;
+    margin: 5px 0px 0px 0px;
+    text-align: center;
+}
+
+.one > .content {
+    grid-area: content1;
+}
+
+.one > .contentIcons {
+    grid-area: contentIcons;
+    margin: 0px
+}
+
+.one > .contentIcons > i {
+    margin: 0px 10% 0px 0px;
+    font-size: 25px;
+}
+
+.one > .contentIcons > i > span {
+    color: #69c694;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 5px;
+}
+
 a {
-    /* border: 1px solid yellow; */
     margin: 10px;
     text-decoration: none;
-    text-align: center;
+    /* text-align: center; */
 }
 
 i {
@@ -53,7 +204,23 @@ i {
 .left > a:hover > span {
     transition: color 0.3s ease;
     color: #69c694;
-    
+}
+
+.left > a:active > i,
+.left > a:active > span {
+    color: #30635a;
+}
+
+.bi-stars:hover {
+    transition: color 0.3s ease;
+    color: #69c694;
+}
+
+.bi-card-image:hover, .bi-filetype-gif:hover,
+.bi-bar-chart-steps:hover, .bi-emoji-smile:hover,
+.bi-calendar-plus:hover, .midIcons span:hover{
+    transition: color 0.3s ease;
+    color: #69c694;
 }
 
 .logo > img {
@@ -66,12 +233,8 @@ i {
     background-color: #30635a;
     border-radius: 50px;
     text-align: center;
-    margin-right: 5rem;
+    margin-right: 2rem;
     padding-top: 11px;
-}
-
-div, nav {
-    border: 1px solid white;
 }
 
 .home, .explore,
@@ -84,11 +247,13 @@ div, nav {
     font-weight: bold;
 }
 
-/* DECS */
-
-.feed {
-    grid-area: feed;
+.logo:hover {
+    -ms-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    transform: rotate(15deg);
 }
+
+/* DECS */
 
 .right {
     grid-area: right;
@@ -156,4 +321,30 @@ div, nav {
         margin-right: 0;
         margin-left: 0;
     }
+}
+
+@media screen and (max-width: 610px) {
+    .right {
+        display: none;
+    }
+    .container {
+        height: 100vh;
+        display: grid;
+        grid-template: 
+        "left feed feed" 1fr /
+        100px 0.8fr 0.2fr;
+        }
+}
+
+@media screen and (max-width: 510px) {
+    .left {
+        display: none;
+    }
+    .container {
+        height: 100vh;
+        display: grid;
+        grid-template: 
+        "feed feed feed" 1fr /
+        100px 0.8fr 0.2fr;
+        }
 }
