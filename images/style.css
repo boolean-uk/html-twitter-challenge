@@ -73,6 +73,13 @@ span{
     margin-bottom: 50px;
 }
 
+.left-menu-bar-section .nav a{
+    display: grid;
+    grid-template-columns: 40px auto;
+    align-items: center;
+    gap: 5px;
+}
+
 .left-menu-bar-section .nav span{
     font-weight: bold;
 
@@ -272,7 +279,10 @@ span{
     background-color: #EAE7E7;
     border-radius: 20px;
     /* border: 1px black solid; */
-    justify-items: center;
+    justify-items: start;
+    display: grid;
+    grid-template-columns: 40px auto;
+    align-items: center;
 
 }
 .right-menu-bar-header .search-bar img{
@@ -370,7 +380,7 @@ span{
     text-align: center;
 }
 
-.followButton:hover{
+.followButton:active{
     background-color: lightgray;
 }
 
@@ -380,7 +390,7 @@ span{
     text-decoration: none;
 }
 
-#who-to-follow-show-more a:hover{
+#who-to-follow-show-more a:active{
 
     color: lightgray;
 }
