@@ -14,8 +14,8 @@
 .middle {
     grid-area: middle;
 
-    border-left: #283618 2px solid;
-    border-right: #283618 2px solid;
+    border-left: #1e1e1e 30px solid;
+    border-right: #1e1e1e 30px solid;
 
     display: grid;
     grid-template:
@@ -203,7 +203,7 @@ svg.react.retweet
 }
 
 svg.react:hover {
-   background-color: #606C38;
+   fill: whitesmoke;
 }
 .reactions {
     grid-area: reactions;

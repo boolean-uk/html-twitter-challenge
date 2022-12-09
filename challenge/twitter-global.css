@@ -7,7 +7,13 @@
     scroll-behavior: smooth;
 }
 
+body {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
 .container {
+    
     height: 100vh;
     display: grid;
     grid-template-rows: 1fr 18px;
@@ -21,6 +27,12 @@
 footer {
     grid-area: footer;
 }
+
 button:hover {
     background-color: #DDA15E;
+    cursor: pointer;
+}
+button:active {
+    background-color: #DDA15E;
+    color: #606C38;
 }
