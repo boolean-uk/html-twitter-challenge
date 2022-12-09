@@ -17,6 +17,7 @@ body {
     grid-template: 
     "left feed right" 1fr /
     0.17fr 0.63fr 0.2fr;
+    gap: 10px;
 }
 
 .left {
@@ -332,10 +333,63 @@ i {
     transform: rotate(15deg);
 }
 
+.search i {
+    margin: 4px 0px 0px 7px;
+    font-size: 25px;
+}
+
+.right .search {
+    grid-area: search; 
+}
+
+.right .searchfield {
+    display: flex;
+    background-color: #030e0f;
+    border: solid 3px #30635a;
+    border-radius: 25px;
+}
+
+.right .search input {
+    border: none;
+    background-color: #030e0f;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 20px;
+    padding: 10px;
+}
+
+.right .searchfield, .search i {
+    margin: 5px 5% 0px 10px;
+}
+
 /* DECS */
 
 .right {
     grid-area: right;
+    border-left: #30635a 1px solid;
+    grid-template: 
+    "search" 1fr
+    "happen" 1fr
+    "whofollow" 1fr
+    "."1fr;
+}
+
+.whatshappening {
+    display: grid;
+    grid-area: happen;
+    border: #30635a 2px solid;
+    border-radius: 10px;
+    margin: 20px 5% 0px 10px;
+    height: 200px;
+}
+
+.whofollow {
+    display: grid;
+    grid-area: whofollow;
+    border: #30635a 2px solid;
+    border-radius: 10px;
+    margin: 20px 5% 0px 10px;
+    height: 200px;
 }
 
 .logo {
@@ -385,7 +439,7 @@ i {
     }
 }
 
-@media screen and (max-width: 1395px) {
+@media screen and (max-width: 1405px) {
     .left > a > span, .button {
         display: none;
     }
@@ -393,12 +447,15 @@ i {
     height: 100vh;
     display: grid;
     grid-template: 
-    "left feed right" 1fr /
+    "left feed feed" 1fr /
     100px 0.8fr 0.2fr;
     }
     .logo {
         margin-right: 0;
         margin-left: 0;
+    }
+    .right {
+        display: none;
     }
 }
 
