@@ -1,0 +1,345 @@
+*{
+    font-family:Arial, Helvetica, sans-serif;
+    margin:10px;
+    background-color: rgb(39, 39, 50);
+    color:white;
+    scroll-behavior: smooth;
+
+}
+/* main container */
+.container {
+    display:grid;
+    grid-template:
+    "left-menu main right-menu" 1fr /
+    0.35fr        1fr       0.5fr;
+    grid-gap:5px;
+    margin:0
+}
+/* left-menu */
+.left-menu{
+    grid-area:left-menu;
+    display:grid;
+    margin:10px;
+    grid-gap:10px
+
+}
+/* left-menu-icons */
+.left-menu .icons {
+    display:grid;
+    grid-template:
+    "Home"0.1fr
+    "Explore" 0.1fr
+    "Notifications"0.1fr
+    "Messages"0.1fr
+    "Bookmarks"0.1fr
+    "lists"0.1fr
+    "profile"0.1fr
+    "More"0.3fr/
+    1fr;
+}
+/* logo image*/
+.logo > img{
+    width:40px;
+    border-radius:50;
+    margin:5px;
+    padding-left:30px;
+    padding-top:10px
+}
+
+.left-menu .icons {
+    padding-left:20px;
+    margin-top:0;
+    
+}
+.icons > a {
+    text-decoration: none;
+    margin:10px
+}
+.icons > a > span {
+    margin:10px;
+    font-size:18px;
+    font-style: bold;
+}
+.icons > a > i{
+    font-size:18px
+}
+
+.tweet-btn >button{
+    width:200px;
+    height:40px;
+    margin:0;
+    font-size: 15px;
+    border-radius: 15px;
+    background-color: #1D9BF0;
+    color: white;
+    font-weight: 700;
+    border: 1px solid #1D9BF0;
+
+}
+
+ .left-menu .icons >a:hover > i,
+ .left-menu .icons >a:hover > span{
+    color:deeppink;
+    transform: scale(1.2);
+    font-size:20px
+}
+.left-menu .icons >a:active > i,
+ .left-menu .icons >a:active > span{
+    color: blue;
+ }
+.tweet-btn > button:hover {
+    transform: scale(1.1);
+
+}
+
+/* main-menu */
+.main{
+    grid-area:main;
+    display:grid;
+    grid-template:
+    "header" 0.3fr
+    "feed" 1fr /
+    1fr;
+    grid-gap:10px;
+    border-left:4px solid rgb(147, 147, 171);
+    border-right:4px solid rgb(147, 147, 171);
+    margin:0;
+    border-radius:20px;
+    
+}
+
+.main .header {
+    display:grid;
+    grid-template-rows: 50px 1fr 50px;
+    /* border-bottom: 1px solid grey; */
+    border-bottom: 7px solid rgb(147, 147, 171);
+}
+.header .main-Home, .upload {
+    display:grid;
+    grid-template-columns: 1fr auto;
+    margin:0;
+    border-bottom:1px solid rgb(147, 147, 171);
+
+}
+.header .profile-image {
+    display:grid;
+    grid-template-columns: auto 1fr;
+    margin:0;
+    border-bottom: 1px solid rgb(147, 147, 171);
+}
+.profile-image > img {
+    width:60px;
+    height:60px;
+    border-radius: 50px;
+    background-color: white;
+    margin:10px
+}
+.profile-image > img:hover {
+    width:80px;
+    height:80px;
+   
+}
+.profile-image > span {
+    padding-top:20px;
+    color:rgb(186, 184, 184)
+}
+.upload .t-button {
+    background-color: #1D9BF0;
+    border-radius: 15px;
+    width:100px;
+    font-weight: 600
+}
+.upload .H-icons > i{
+    color:#1D9BF0;
+}
+.upload .H-icons:hover > i {
+    transform: scale(1.1);
+    color:deeppink;
+   
+}
+.upload .t-button:hover{
+    transform:scale(1.1)
+
+}
+/* feed section */
+.main .feed {
+    display:grid;
+    grid-template-rows: 170px 1fr;
+    margin:0
+
+}
+.feed .news-feed {
+    display:grid;
+    grid-template-rows: 1fr 50px;
+    margin:0;
+    border-bottom: 1px solid blue;
+    
+}
+.news-feed .person1, .person2{
+    display:grid;
+    grid-template-columns: 70px 1fr; 
+    margin:0
+}
+
+
+.news-feed .person1 >img, 
+.news-feed .person2 >img {
+    width:60px;
+    height:60px;
+    object-fit:cover;
+    border-radius: 50%;
+    margin:5px;
+    padding-left:5px;
+}
+#Ben-Image {
+    width:400px;
+    height:200px;
+    object-fit: cover;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.news-feed .p-icons {
+    display:grid;
+    grid-template-columns: repeat(5, 1fr);
+    place-items: center;
+}
+.news-feed .person1, .person2 >p {
+    line-height: 1.3em;
+}
+
+/* right-menu */
+
+.right-menu {
+    grid-area:right-menu;
+    display:grid;
+    grid-template:
+    "search-bar"100px
+    "happening" 1fr/
+    1fr;
+    margin:10px;
+    grid-gap:10px;
+    border-radius: 15px;
+    /* background-color: rgb(79, 188, 242); */
+}
+
+.right-menu .search-bar{
+    background-color: rgb(241, 240, 237);
+    border-radius: 15px;
+    width: 90%;
+    height:40px;
+    margin-top:30px;
+    margin-left:5px;
+    margin-right:0;
+}
+
+.search-bar >span,.search-bar >i {
+    margin:0;
+    text-align:center;
+    background-color:rgb(241, 240, 237); 
+    color:black;
+    padding-left:5px;
+    margin-top:10px;    
+    
+}
+.right-menu .happening{
+    display:grid;
+    grid-template:
+    "section1" 0.1fr
+    "section2" 0.4fr
+    "section3" 0.3fr
+    "section4" 0.3fr
+    "section5" 0.4fr /
+    1fr;
+    margin:0;
+}
+
+.right-menu .section1, .section5{
+    font-weight:700;
+    font-size: 22px;
+    margin-left:0;
+    border-bottom: 1px solid grey;
+     
+}
+
+.right-menu .section2, .section5 {
+    display:grid;
+    grid-template-columns: auto 70px;
+    margin:0;
+    border-bottom: 1px solid grey ;
+}
+
+.right-menu .section2, .section5 >p{
+    font-size:15px;
+    margin:0;
+    font-weight: 600;
+}
+
+.right-menu .section2 >p >span,
+ .section5 > p >span {
+    font-size: 13px;
+    margin:0;
+    color:rgb(246, 160, 160);
+}
+
+.right-menu .section2 >img, 
+.section5 >img {
+    width: 60px;
+    height:60px;
+    margin:0;
+    border-radius: 10px;
+}
+
+.right-menu .section3, .section4{
+    font-size:15px;
+    margin:0;
+    border-bottom: 1px solid grey ;
+    padding-top:5px
+}
+
+.right-menu .section3 >p, .section4 > p {
+    margin:0;
+}
+
+
+@media screen and (max-width:1200px) {
+    .container {
+        display:grid;
+        grid-template:
+        "left-menu main" auto /
+        200px      1fr
+    }
+    
+    .right-menu{
+        display:none;
+    }
+}
+
+
+@media screen and (max-width:800px){
+    .left-menu .icons, .tweet-btn {
+        display:none
+    }
+     .container{
+        display:grid;
+        grid-template:
+        "left-menu main"1fr/
+        100px       1fr
+     }
+        .logo {
+            margin-left:0;
+            margin-right:0;
+        }
+    }
+
+    @media screen and (max-width:600px){
+        .container{
+            display:grid;
+            grid-template:
+           " main" 1fr/
+           1fr
+        }
+        .logo{
+            display:none;
+        }
+    }
