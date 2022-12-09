@@ -41,9 +41,11 @@
 
     border-bottom: #DDA15E 1px solid;
 }
+
 #left-home {
     fill: #BC6C25;
 }
+
 #stars {
     width: 20px;
     fill: #BC6C25;
@@ -53,6 +55,7 @@
 .homebar>h1 {
     font-size: 30px;
     margin: 0;
+    padding-top: 10px;
     padding-left: 30px;
 }
 
@@ -72,11 +75,16 @@
 
 #pp {
     grid-area: pp;
-
+    object-fit: cover;
     display: grid;
+    border-radius: 50%;
+    width: 50px;
+
+    margin-top: 10px;
 }
 
 .pp {
+    margin-top: 3px;
     width: 50px;
 }
 
@@ -104,7 +112,7 @@
 }
 
 .middle button {
-/*figure out how to move whole button to the right*/
+    /*figure out how to move whole button to the right*/
     display: grid;
     align-items: center;
 
@@ -133,7 +141,7 @@
         "post post"
         ". reactions";
 
-        font-size: 13px;
+    font-size: 13px;
 }
 
 .poster {
@@ -155,7 +163,7 @@
 
 .grey {
     display: grid;
-    grid-template-columns: auto 1fr 
+    grid-template-columns: auto 1fr
 }
 
 .username {
@@ -178,6 +186,7 @@
 svg.home {
     fill: #BC6C25;
 }
+
 #post-img {
     display: grid;
     height: 150;
@@ -197,14 +206,14 @@ svg.react {
 }
 
 svg.react.likes,
-svg.react.retweet
- {
+svg.react.retweet {
     width: 25px;
 }
 
 svg.react:hover {
-   fill: whitesmoke;
+    fill: whitesmoke;
 }
+
 .reactions {
     grid-area: reactions;
     display: grid;

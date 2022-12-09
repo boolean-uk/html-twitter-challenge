@@ -21,6 +21,7 @@
             "left middle" 100vh/
             80px minmax(300px, 1fr);
     }
+
     .nav {
         grid-template-columns: 50px;
         grid-template-rows: repeat(auto-fit, 60px);
@@ -59,14 +60,15 @@
 
 
     button.left-post {
-        width:45px;
+        width: 45px;
         border-radius: 50%;
     }
 
- .left-post  {
-   margin-left: 35px;
-   margin-top: 15px;
- }
+    .left-post {
+        margin-left: 35px;
+        margin-top: 15px;
+    }
+
     .middle {
         border-left: 15px solid #1e1e1e;
     }

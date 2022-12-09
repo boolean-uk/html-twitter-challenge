@@ -2,7 +2,8 @@
     background-color: #1e1e1e;
     color: #FEFAE0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 18px;
 
     scroll-behavior: smooth;
 }
@@ -13,7 +14,7 @@ body {
 }
 
 .container {
-    
+
     height: 100vh;
     display: grid;
     grid-template-rows: 1fr 18px;
@@ -32,7 +33,12 @@ button:hover {
     background-color: #DDA15E;
     cursor: pointer;
 }
+
 button:active {
     background-color: #DDA15E;
     color: #606C38;
+}
+
+.middle p {
+    font-size: larger;
 }
