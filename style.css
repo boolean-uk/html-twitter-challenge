@@ -179,27 +179,27 @@ a {
 }
 
 .butCon:hover {
-    background-color: #e5e5e5;
-    box-shadow: 1px 1px 1px #c1c1c1;
+    transform: scale(1.1);
+    /* box-shadow: 1px 1px 1px #c1c1c1; */
 }
 
 .butCon:active {
-    background: #e5e5e5;
-    -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
-       -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
-            box-shadow: inset 0px 0px 5px #c1c1c1;
-     outline: none;
-  }
+    /* background: #e5e5e5; */
+    transform: scale(1.0);
+    outline: none;
+}
 
 .tweetButton:hover {
     background-color: #2383be;
     box-shadow: 1px 1px 1px #12496b;
+    transform: scale(1.1);
 }
 .tweetButton:active {
     background: #1DA1F2;
-        box-shadow: inset 0px 0px 5px #12496b;
-     outline: none;
-  }
+    box-shadow: inset 0px 0px 5px #12496b;
+    transform: scale(1.0);
+    outline: none;
+}
 
 /* PROFILE BLOCK  */
 
@@ -328,7 +328,7 @@ a {
     grid-area: pic;
 }
 
-.insertPic > .newTweetIcon {
+.insertPic .newTweetIcon {
     height: 20px;
     width: 20px;
     object-fit: contain;
@@ -346,7 +346,7 @@ a {
     grid-area: emoji;
 }
 
-.insertEmoji > .newTweetIcon {
+.insertEmoji .newTweetIcon {
     height: 23px;
     width: 23px;
     object-fit: contain;
@@ -356,10 +356,18 @@ a {
     grid-area: date;
 }
 
-.insertDate > .newTweetIcon {
+.insertDate .newTweetIcon {
     height: 20px;
     width: 20px;
     object-fit: contain;
+}
+
+.newTweetIcon:hover {
+    transform: scale(1.2);
+}
+
+.newTweetIcon:active {
+    transform: scale(1.0);
 }
 
 .tweetPFP {
@@ -397,12 +405,14 @@ a {
 .tweetNowButton:hover {
     background-color: #2383be;
     box-shadow: 1px 1px 1px #12496b;
+    transform: scale(1.1);
 }
 
 .tweetNowButton:active {
     background: #1DA1F2;
-        box-shadow: inset 0px 0px 5px #12496b;
-     outline: none;
+    box-shadow: inset 0px 0px 5px #12496b;
+    outline: none;
+    transform: scale(1.0);
   }
 
 
@@ -515,6 +525,14 @@ a {
 
 .tastyPadding {
     padding-left: 20px;
+}
+
+.indiTweetIconResizer:hover {
+    transform: scale(1.2);
+}
+
+.indiTweetIconResizer:active {
+    transform: scale(1.0);
 }
 
 /* RIGHT MENU  */
