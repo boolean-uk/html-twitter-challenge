@@ -1,16 +1,17 @@
 * {
-    margin: 0;
+  margin: 0px;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
  
+     margin-right: 30px;
   }
 #twitterContainer{
 margin-top: 20px;
     display: grid;
   grid-template:
     "left mainFeedTwitter right" /
-    200px 700px 200px;
+   1fr 2fr 1fr;
 border: 1px solid black;
 
 }
@@ -59,7 +60,9 @@ border: 1px solid black;
   color: white;
 
 }
-
+.inputfield{
+  color: gray;
+}
 .menuTxt{
    margin-left: 10px;
    height: 0px;
