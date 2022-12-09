@@ -73,11 +73,17 @@ body {
 }
 
 .left nav div a:hover div {
+    transition: all .3s ease;
     background-color: #222;
 }
 
 .left nav div a:focus div {
+    transition: all .3s ease;
     background-color: #222;
+}
+
+.left nav div a:active div {
+    background-color: #2a2a2a;
 }
 
 .left .post {
@@ -86,10 +92,12 @@ body {
 }
 
 .left .post a:hover div {
+    transition: all .3s ease;
     background-color: #5bd8b9;
 }
 
 .left .post a:focus div {
+    transition: all .3s ease;
     background-color: #5bd8b9;
 }
 
@@ -119,10 +127,12 @@ body {
 }
 
 .left .userinfo a:hover div {
+    transition: all .3s ease;
     background-color: #222;
 }
 
 .left .userinfo a:focus div {
+    transition: all .3s ease;
     background-color: #222;
 }
 
@@ -222,20 +232,24 @@ body {
 }
 
 .main .post .composeoptions a:hover {
+    transition: all .3s ease;
     background-color: #222;
     border-radius: 50%;
 }
 
 .main .post .composeoptions a:focus {
+    transition: all .3s ease;
     background-color: #222;
     border-radius: 50%;
 }
 
 .main .post .composeicons a:hover svg {
+    transition: all .3s ease;
     fill: #6ddcc0;
 }
 
 .main .post .composeicons a:focus svg {
+    transition: all .3s ease;
     fill: #6ddcc0;
 }
 
@@ -254,6 +268,7 @@ body {
 }
 
 .main .post .composeoptions a:hover p {
+    transition: all .3s ease;
     background-color: #5bd8b9;
 }
 
@@ -262,11 +277,13 @@ body {
 }
 
 .main .feed .postcontent .postlink:hover {
+    transition: all .3s ease;
     background-color: #40e0d033;
     border-radius: 3px;
 }
 
 .main .feed .postcontent .postlink:focus {
+    transition: all .3s ease;
     background-color: #40e0d033;
     border-radius: 3px;
 }
@@ -338,7 +355,8 @@ audio::-webkit-media-controls-mute-button {
 }
 
 audio::-webkit-media-controls-mute-button:hover {
-        background-color: #2e2e2e;
+    transition: all .3s ease;
+    background-color: #2e2e2e;
 }
 
 
@@ -348,6 +366,7 @@ audio::-webkit-media-controls-play-button {
 }
 
 audio::-webkit-media-controls-play-button:hover {
+    transition: all .3s ease;
     background-color: #2e2e2e;
 }
 
@@ -399,6 +418,7 @@ audio::-webkit-media-controls-volume-slider {
 
 .main .feed .post .postcontent .postfooter a.comments:hover div,
 .main .feed .post .postcontent .postfooter a.share:hover div {
+    transition: all .3s ease;
     background-color: #40e0d0;
     color: #1e1e1e;
     fill: #1e1e1e;
@@ -406,30 +426,35 @@ audio::-webkit-media-controls-volume-slider {
 
 .main .feed .post .postcontent .postfooter a.comments:focus div,
 .main .feed .post .postcontent .postfooter a.share:focus div {
+    transition: all .3s ease;
     background-color: #40e0d0;
     color: #1e1e1e;
     fill: #1e1e1e;
 }
 
 .main .feed .post .postcontent .postfooter a.reposts:hover div {
+    transition: all .3s ease;
     background-color: #00ff7f;
     color: #1e1e1e;
     fill: #1e1e1e;
 }
 
 .main .feed .post .postcontent .postfooter a.reposts:focus div {
+    transition: all .3s ease;
     background-color: #00ff7f;
     color: #1e1e1e;
     fill: #1e1e1e;
 }
 
 .main .feed .post .postcontent .postfooter a.likes:hover div {
+    transition: all .3s ease;
     background-color: #cd5c5c;
     color: #1e1e1e;
     fill: #1e1e1e;
 }
 
 .main .feed .post .postcontent .postfooter a.likes:focus div {
+    transition: all .3s ease;
     background-color: #cd5c5c;
     color: #1e1e1e;
     fill: #1e1e1e;
@@ -492,10 +517,12 @@ audio::-webkit-media-controls-volume-slider {
 }
 
 .right .trendingarea .trendingtopic:hover {
+    transition: all .3s ease;
     background-color: #222;
 }
 
 .right .trendingarea .trendingtopic:focus {
+    transition: all .3s ease;
     background-color: #222;
 }
 
@@ -511,11 +538,13 @@ audio::-webkit-media-controls-volume-slider {
 }
 
 .right .trendingarea .trendingtopic aside a:hover svg {
+    transition: all .3s ease;
     fill: #1e1e1e;
     background-color: #555;
 }
 
 .right .trendingarea .trendingtopic aside a:focus svg {
+    transition: all .3s ease;
     fill: #1e1e1e;
     background-color: #555;
 }
@@ -532,10 +561,12 @@ audio::-webkit-media-controls-volume-slider {
 }
 
 .right .trendingarea a.morewrap:hover p {
+    transition: all .3s ease;
     background-color: #222;
 }
 
 .right .trendingarea a.morewrap:focus p {
+    transition: all .3s ease;
     background-color: #222;
 }
 
@@ -566,6 +597,7 @@ audio::-webkit-media-controls-volume-slider {
 }
 
 .right .recommendeduser:hover {
+    transition: all .3s ease;
     background-color: #222;
 }
 
@@ -574,11 +606,13 @@ audio::-webkit-media-controls-volume-slider {
 }
 
 .right .recommendeduser:hover a.follow h2 {
+    transition: all .3s ease;
     background-color: #222;
     border-color: #333;
 }
 
 .right .recommendeduser:focus a.follow h2 {
+    transition: all .3s ease;
     background-color: #222;
     border-color: #333;
 }
@@ -632,10 +666,12 @@ audio::-webkit-media-controls-volume-slider {
 }
 
 .right .whotofollow a.morewrap:hover p {
+    transition: all .3s ease;
     background-color: #222;
 }
 
 .right .whotofollow a.morewrap:focus p {
+    transition: all .3s ease;
     background-color: #222;
 }
 
@@ -648,10 +684,12 @@ audio::-webkit-media-controls-volume-slider {
 }
 
 .right footer a:hover {
+    transition: all .3s ease;
     color: #ccc;
 }
 
 .right footer a:focus {
+    transition: all .3s ease;
     color: #ccc;
 }
 
