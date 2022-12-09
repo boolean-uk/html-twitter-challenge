@@ -142,7 +142,7 @@ body {
 .inname {
     margin: 5px 0px 0px 0px;
     font-size: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 .one > .name {
@@ -157,14 +157,10 @@ body {
     margin: 0px;
 }
 
-.one > .content {
-    margin-left: 7px;
-}
-
 .name > .handle {
     color: #69c694;
     margin: 5px 0px 0px 0px;
-    text-align: center;
+    text-align: left;
 }
 
 .one > .content {
@@ -186,6 +182,89 @@ body {
     font-size: 15px;
     text-align: center;
     margin-left: 5px;
+}
+
+.two {
+    display: grid;
+    grid-template:
+    "midpfp midname midname"0.5fr
+    "midpfp content1 content1"1fr
+    ". contentIcons contentIcons"0.6fr /
+    0.1fr 0.2fr 1fr;
+}
+.two > .pfp {
+    grid-area: midpfp;
+    border-radius: 50px;
+    margin: 5px 0px 0px 5px;
+}
+.two > .name {
+    grid-area: midname;
+    align-content: center;
+    display: grid;
+    grid-template-columns: 140px 190px 1fr;
+}
+
+.two > .content {
+    grid-area: content1;
+    margin-right: 25px;
+}
+.two > .contentIcons {
+    grid-area: contentIcons;
+    margin: 0px
+}
+.two > .contentIcons > i {
+    margin: 0px 10% 0px 0px;
+    font-size: 25px;
+}
+.two > .contentIcons > i > span {
+    color: #69c694;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.three {
+    display: grid;
+    grid-template:
+    "midpfp midname midname"0.5fr
+    "midpfp content1 content1"1fr
+    ". contentIcons contentIcons"0.6fr /
+    0.1fr 0.2fr 1fr;
+}
+.three > .pfp {
+    grid-area: midpfp;
+    border-radius: 50px;
+    margin: 5px 0px 0px 5px;
+}
+.three > .name {
+    grid-area: midname;
+    align-content: center;
+    display: grid;
+    grid-template-columns: 140px 190px 1fr;
+}
+.three > .content {
+    grid-area: content1;
+    margin-right: 25px;
+}
+.three > .contentIcons {
+    grid-area: contentIcons;
+    margin: 0px
+}
+.three > .contentIcons > i {
+    margin: 0px 10% 0px 0px;
+    font-size: 25px;
+}
+.three > .contentIcons > i > span {
+    color: #69c694;
+    font-size: 15px;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.one, .two, .three {
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: #30635a 1px solid;
 }
 
 a {
