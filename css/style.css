@@ -1,27 +1,26 @@
 *
 {
     text-decoration: none;
+    color: aliceblue;
     text-align: justify;
 }
 
-div{
-    border: 1px dotted;
-    margin: 1px;
-}
-
-footer
-{
-    position: fixed;
-    bottom: 0px;
-    width: 99%;
-    height: 100px;
-    border: 1px solid;
-    margin: 0px;
-}
-
 body{
-    height: 1500px;
-    border: 1px solid;
+    height: 100vh;
+    background-color: rgb(24, 24, 24);
+    place-items: center;
+}
+
+nav{
+    top: 10%;
+    height: 90%;
+    width: 32%;
+    grid-template-rows: repeat(auto-fit, 50px);
+    gap:10px;
+}
+
+div{
+    margin: 1px;
 }
 
 .container
@@ -45,12 +44,13 @@ body{
 #leftSection
 {
     grid-area: left;
-    grid-template-rows: repeat(auto-fit, 50px);
     justify-items: right;
+    border-right: 2px solid darkcyan;
 }
 
 #mainSection{
     grid-area: center;
+    border-right: 2px solid darkcyan;
 }
 
 #rightSection{
@@ -62,25 +62,12 @@ nav, #wackerIcon, #profileWidget, #mainSectionTitle
     position: fixed;
 }
 
-nav{
-    top: 10%;
-    height: 90%;
-    width: 100%;
-}
-
 #profileWidget, nav div
 {
-    height: 5%;
-    width: 20%;
-    margin-left: 10%;
-    border-radius: 9999px;
+    display: block;
+    margin-left: 20%;
+    border-radius: 40px;
     box-sizing: border-box;
-    z-index: 1;
-}
-
-.link{
-    width: 50px;
-    height: 50px;
 }
 
 #profileWidget
@@ -94,22 +81,36 @@ nav{
     margin-left: 10%;
 }
 
-svg{
-    height: 100%;
-    width: 15%;
+
+nav div a
+{
+    height: 50px;
+    line-height: 50px;
+    padding: 20%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 1.5em;
 }
 
-nav>div>a>span
+nav div a:hover
 {
-    height: 100%;
-    width: 75%;
+    background-color:aqua;
+    transition: .2s;
 }
+nav div a:active
+{
+    background-color:blue;
+    transition: .2s;
+}
+
 
 #mainSectionTitle
 {
     margin-top: 0px;
     height: 100px;
     width: 32.33%;
+    border-bottom: 2px solid darkcyan;
+    backdrop-filter: blur(6px);
 }
 
 #newWackBox{
@@ -129,20 +130,112 @@ nav>div>a>span
     height: 75px;
     width: 32.3%;
     position: fixed;
-    margin-top: 5px;
-    border-radius: 9999px;
+    margin-top: 3px;
+    place-content: center;
+}
+
+#mainSectionTitle
+{
+    font-size: 1.2em;
+    padding-left: 10px;
+}
+
+#news, #whoFollow
+{
+    box-sizing: border-box;
+    border-radius: 25px;
+    height: 20%;
+    background-color: darkcyan;
+    padding: 5px;
+    padding-left: 20px;
+    margin: 10px;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 
 #news
 {
     margin-top: 100px;
-    box-sizing: border-box;
-    border-radius: 25px;
-    height: 20%;
 }
 
-#whoFollow{
-    box-sizing: border-box;
-    border-radius: 25px;
-    height: 20%;
+
+#newWackBox
+{
+    grid-template: 
+    "profile text text text text text text text" 2fr
+    "empty icon1 icon2 icon3 icon4 icon5 empty2 wack" 1fr/
+    1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 }
+
+#profileIcon{
+    grid-area: profile;
+}
+
+#quickWack{
+    grid-area: text;
+    background-color: rgb(158, 158, 158);
+    border-bottom: 2px solid darkcyan;
+}
+
+#searchWacker{
+    border-radius: 40px;
+    background-color: darkcyan;
+    height: 100%;
+    width: 100%;
+}
+
+#icon1{
+    grid-area: icon1;
+}
+
+#icon2{
+    grid-area: icon2;
+}
+
+#icon3{
+    grid-area: icon3;
+}
+
+#icon4{
+    grid-area: icon4;
+}
+
+#icon5{
+    grid-area: icon5;
+}
+
+#wackButton{
+    grid-area: wack;
+    text-align: center;
+    padding-top: 20%;
+}
+
+
+#wack a
+{
+    text-align: center;
+    width: 100%;
+}
+
+#newWackBox
+{
+    border-bottom: 25px solid darkcyan;
+}
+
+.wack
+{
+    grid-template: 
+    "profile namecontainer namecontainer namecontainer empty" 1fr
+    "profile text text text empty" 2fr
+    "empty2 comment rewack like share"1fr;
+    border-bottom: 2px solid darkcyan;
+}
+
+.profile{grid-area: profile;}
+.nameContainer{grid-area: namecontainer;}
+.nameContainer>p{display: inline-block;}
+.text{grid-area: text;}
+.comment{grid-area: comment;}
+.rewack{grid-area: rewack;}
+.like{grid-area: like;}
+.share{grid-area: share;}

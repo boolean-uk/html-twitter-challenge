@@ -11,108 +11,107 @@
 
   <body>
     <div id="mainContainer" class="container">
-        <div id="leftSection">
-          <div id="wackerIcon"></div>
-          <nav>
-            <div id="home"><a href="#" class="link">
-              <svg></svg>
+        <section id="leftSection">
+          <div id="wackerIcon">
+            <a href="#"></a>
+          </div>
+          <nav class="container">
+            <div id="home"><a href="#">
               <span>Home</span>
             </a></div>
-            <div id="explore"><a href="#" class="link">
-              <svg></svg>
+            <div id="explore"><a href="#">
               <span>Explore</span>
             </a></div>
-            <div id="notifications"><a href="#" class="link">
-              <svg></svg>
+            <div id="notifications"><a href="#">
               <span>Notifications</span>
             </a></div>
-            <div id="messages"><a href="#" class="link">
-              <svg></svg>
+            <div id="messages"><a href="#">
               <span>Messages</span>
             </a></div>
-            <div id="bookmarks"><a href="#" class="link">
-              <svg></svg>
+            <div id="bookmarks"><a href="#">
               <span>Bookmarks</span>
             </a></div>
-            <div id="lists"><a href="#" class="link">
-              <svg></svg>
+            <div id="lists"><a href="#">
               <span>Lists</span>
             </a></div>
-            <div id="profile"><a href="#" class="link">
-              <svg></svg>
+            <div id="profile"><a href="#">
               <span>Profile</span>
             </a></div>
-            <div id="more"><a href="#" class="link">
-              <svg></svg>
+            <div id="more"><a href="#">
               <span>More</span>
             </a></div>
-            <div id="wack"><a href="#" class="link">
-              <svg></svg>
+            <div id="wack"><a href="#">
               <span>Wack</span>
             </a></div>
           </nav>
-          <div id="profileWidget"><a href="#">
-            <svg></svg>
+          <!--<div id="profileWidget"><a href="#">
               <span></span>
-          </a></div>
-        </div>
+          </a></div>-->
+        </section>
 
-        <div id="mainSection">
+        <section id="mainSection">
           <div id="mainSectionTitle">
-            <p>Home</p>
+            <div>
+              <p>Home</p>
+            </div>
             <div id="starIcon"></div>
           </div>
           <div id="newWackBox" class="container">
             <div id="profileIcon"></div>
-            <p id="quickWack" class="textInputArea">Wack's up?</p>
-            <div class="addIcon"></div>
-            <div class="addIcon"></div>
-            <div class="addIcon"></div>
-            <div class="addIcon"></div>
-            <div class="addIcon"></div>
-            <div id="wackButton"></div>
+            <input id="quickWack" placeholder="Wack's up?"></input>
+            <div class="addIcon" id="icon1"></div>
+            <div class="addIcon" id="icon2"></div>
+            <div class="addIcon" id="icon3"></div>
+            <div class="addIcon" id="icon4"></div>
+            <div class="addIcon" id="icon5"></div>
+            <div id="wackButton">Wack</div>
           </div>
           <div id="wackList" class="container">
             <div class="wack container">
               <div class="wackProfilePicture"></div>
-              <p class="name"></p>
-              <p class="handle"></p>
-              <p class="time"></p>
-              <p class="text"></p>
-              <p class="comment"></p>
-              <p class="rewack"></p>
-              <p class="like"></p>
-              <p class="share"></p>
+              <div class="nameContainer">
+                <p class="namecontainer">test</p>
+                <p class="handle">#42</p>
+                <p class="time"> - 25m</p>
+              </div>
+              <p class="text">I'm getting closer to finish it :)</p>
+              <div class="comment"></div>
+              <div class="rewack"></div>
+              <div class="like"></div>
+              <div class="share"></div>
             </div>
             <div class="wack container">
               <div class="wackProfilePicture"></div>
-              <p class="name"></p>
-              <p class="handle"></p>
-              <p class="time"></p>
-              <p class="text"></p>
-              <p class="comment"></p>
-              <p class="rewack"></p>
-              <p class="like"></p>
-              <p class="share"></p>
+              <div class="nameContainer">
+                <p class="namecontainer">Boolean</p>
+                <p class="handle">#001</p>
+                <p class="time"> - yesterday</p>
+              </div>
+              <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <div class="comment"></div>
+              <div class="rewack"></div>
+              <div class="like"></div>
+              <div class="share"></div>
             </div>
             <div class="wack container">
               <div class="wackProfilePicture"></div>
-              <p class="name"></p>
-              <p class="handle"></p>
-              <p class="time"></p>
-              <p class="text"></p>
-              <p class="comment"></p>
-              <p class="rewack"></p>
-              <p class="like"></p>
-              <p class="share"></p>
+              <div class="nameContainer">
+                <p class="namecontainer">test</p>
+                <p class="handle">#42</p>
+                <p class="time"> - 2 days ago</p>
+              </div>
+              <p class="text">Here's some test text</p>
+              <div class="comment"></div>
+              <div class="rewack"></div>
+              <div class="like"></div>
+              <div class="share"></div>
             </div>
           </div>
-        </div>
+        </section>
 
-        <div id="rightSection">
+        <section id="rightSection">
           <div id="searchBar">
-            <svg></svg>
-            <p class="textInputArea">Search Wacker</p>
+            <input type="search" placeholder="Search Wacker" id="searchWacker"></input>
           </div>
           <div id="news">
             <p>wack's happening right meow</p>
@@ -121,10 +120,7 @@
           <div id="whoFollow">
             <p>Suggested Wackers</p>
           </div>
-        </div>
+        </section>
     </div>
-    <footer>
-        <div id="messageBox"></div>
-    </footer>
   </body>
 </html>
