@@ -1,0 +1,459 @@
+body {
+   font-family: sans-serif;
+}
+.container {
+    display: grid;
+    grid-template:
+    ".    left-menu   main-cont   right-menu    .  " 1000px /
+     100px   250px        1fr       250px      100px;
+    gap: 5px; 
+}
+
+/*.main-cont {
+    width: 100%;
+   min-width: 500px;
+   max-width: 1200px;
+}*/
+
+
+/* LEFT MENU*/
+
+
+.left-menu {
+    grid-area: left-menu;
+    display: grid;
+    gap: 20px;
+    background-color: white;
+    grid-template-rows: 350px 40px 60px;
+    position: fixed;
+    left: 150px;
+}
+.left-menu .icons {
+    margin-top: 20px;
+    
+}
+
+.left-menu .icons ul li {
+    list-style: none;
+    line-height: 35px;
+}
+.left-menu a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+}
+.left-menu .icons a.home{
+    color: rgb(94, 147, 221);
+}
+.left-menu a:hover {
+    color: rgb(94, 147, 221);
+}
+.left-menu svg:hover {
+    color: rgb(94, 147, 221);
+}
+.left-menu .box {
+    background-color: rgb(94, 147, 221);
+    color: white;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border-radius: 20px;
+    width: 150px;
+    margin-left: 20px;
+   
+}
+
+/*.my-twitter {
+    border: 2px solid violet;  
+}*/
+
+@media screen and (min-width: 80rem) {
+    .main-cont {
+       margin: 1em 2em ;
+    }
+}
+
+
+/* MAIN CONTAINER */
+.main-cont {
+    grid-area: main-cont;
+    display: grid;
+    border-right: 2px solid lightgray;
+    border-left: 2px solid lightgray;
+    gap: 20px; 
+    grid-template-rows: 150px 1fr;
+    overflow: scroll;
+    scroll-behavior: smooth;
+     
+}
+
+.main-cont .header {
+    display: grid;
+    grid-template-rows: 40px 1fr 40px;
+}
+
+.main-cont .header .main-home{
+    display: grid;
+    position: relative;
+    border-bottom: lightgray 1px solid;
+    align-items: center;
+}
+.main-home a{
+    font-size: 17px;
+    padding: 5px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.main-home svg{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    top: 10px;
+    right: 5px;
+  
+  
+}
+
+.main-cont .header .happening{
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    align-items: center;   
+}
+.main-cont .header .happening img{
+    border-radius: 50%;
+    width: 40px;
+    height:40px;
+    padding: 10px;
+}
+.main-cont .header .whats-happening{
+    padding-left: 40px;
+}
+
+.header .icons {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 20px;
+    padding-left:50px ;
+    justify-items: space-between;
+    display: grid;
+}
+.header .icons .part1 {
+    display: inline;
+    padding: 5px;
+}
+
+.header .icons .part1 a {
+    padding: 10px;
+}
+
+.main-cont .header .icons .part2{
+    padding: 10px;
+    background-color: rgb(118, 169, 234);
+    justify-content: center;
+    display: grid;
+    border-radius: 20px;
+    color: white;
+    width: 70px;
+    height: 15px;
+    margin-top: 3px;
+    border-bottom: 2px solid lightgray;
+}
+
+
+
+.main-cont .main {
+    display: grid;
+    border-top: lightgray solid 1px;
+    grid-template-rows: repeat(auto-fit, 1fr);
+    
+}
+
+.main-cont .main .tweet1 {
+padding-left: 80px;
+display: grid;
+grid-template-rows: 35px auto 40px;
+position: relative;
+border-bottom: 1px solid lightgray ;
+}
+.main-cont .main .tweet1 img.profile {
+    width: 50px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+/* FIRST COLUMN*/
+.main-cont .main .tweet1 .first-column {
+    padding-left: 80px;
+    display: grid;
+    margin: 0;
+    grid-template-columns: 50px 20px 40px;
+    align-items: center;
+    padding: 0;
+}
+.main-cont .main .tweet1 .first-column a.nasa, h4 {
+    color: black;
+    margin: 0;
+    text-decoration: none;
+}
+.main-cont .main .tweet1 img.blue-logo {
+    width: 15px;
+}
+.main-cont .main .tweet1 .first-column p {
+   font-size: 15px;
+   margin-top: 11px;
+   color: gray;
+}
+
+/* SECOND COLUMN}*/
+.main-cont .main .tweet1 .second-column a{
+    color: rgb(92, 173, 205);
+    text-decoration: none;
+}
+.main-cont .main .tweet1 .second-column img {
+    width:100%;
+    border-radius: 20px;
+}
+
+.main-cont .main .tweet1 .second-column p {
+    margin: 0;
+    line-height: 25px;
+}
+
+/* THIRD COLUMN */
+.main-cont .main .tweet1 .com-tag {
+    display: inline;
+    margin: 10px;
+}
+.main-cont .main .tweet1 .com-tag a{
+    color: black;
+    text-decoration: none;  
+}
+.main-cont .main .tweet1 .com-tag a svg{
+   padding: 60px;
+   width: 20px;
+   padding-top: 0;
+}
+
+/*TWEET2 */
+.main-cont .main .tweet2 {
+    padding-left: 80px;
+    display: grid;
+    grid-template-rows: 35px auto 40px;
+    position: relative;
+}
+
+.main-cont .main .tweet2 img.profile2{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+
+.main-cont .main .tweet2 .first-column {
+    padding-left: 80px;
+    display: grid;
+    margin: 0;
+    grid-template-columns: 125px 40px;
+    align-items: center;
+    padding: 0;
+}
+.main-cont .main .tweet2 .first-column a.animal, h4 {
+    color: black;
+    margin: 0;
+    text-decoration: none;
+    font-size: 17px;
+    padding-right: 0;
+}
+
+.main-cont .main .tweet2 .first-column p {
+   font-size: 15px;
+   margin-top: 15px;
+   color: gray;
+}
+.main-cont .main .tweet2 .second-column iframe {
+    width: 100%;
+    height: auto;
+ }
+ 
+/* THIRD COLUMN */
+.main-cont .main .tweet2 .com-tag {
+    display: inline;
+    margin: 10px;
+}
+.main-cont .main .tweet2 .com-tag a{
+    color: black;
+    text-decoration: none;  
+}
+.main-cont .main .tweet2 .com-tag a svg{
+   padding: 60px;
+   width: 20px;
+   padding-top: 0;
+}
+
+
+/*TWEET3 */
+.main-cont .main .tweet3 {
+    padding-left: 80px;
+    display: grid;
+    grid-template-rows: 35px auto 40px;
+    position: relative;
+    border-top: 1px lightgray solid ;
+}
+
+.main-cont .main .tweet3 img.profile3{
+    border-radius: 50%;
+    width: 50px;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+
+
+.main-cont .main .tweet3 .first-column {
+    padding-left: 80px;
+    display: grid;
+    margin: 0;
+    grid-template-columns: 50px 40px;
+    align-items: center;
+    padding: 0;
+}
+.main-cont .main .tweet3 .first-column a.me, h4 {
+    color: black;
+    margin: 0;
+    text-decoration: none;
+    font-size: 17px;
+    padding-right: 0;
+}
+
+.main-cont .main .tweet3 .first-column p {
+   font-size: 15px;
+   margin-top: 15px;
+   color: gray;
+}
+/* THIRD COLUMN */
+.main-cont .main .tweet3 .com-tag {
+    display: inline;
+    margin: 10px;
+}
+.main-cont .main .tweet3 .com-tag a{
+    color: black;
+    text-decoration: none;  
+}
+.main-cont .main .tweet3 .com-tag a svg{
+   padding: 60px;
+   width: 20px;
+   padding-top: 0;
+}
+
+
+
+
+
+
+
+/* RIGHT MENU*/
+.right-menu {
+    grid-area: right-menu;
+    display: grid;
+    gap: 10px;
+    background-color: white;
+    grid-template-rows: 50px 500px;
+   
+    
+}
+
+/* RIGHT MENU - SEARCH BAR*/
+.right-menu .search-bar{
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    font-size: 15px;
+    background-color: rgb(241, 238, 238);
+    border-radius: 20px;
+    color: grey;
+    position: relative;    
+}
+
+.right-menu .search-bar svg {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+
+/* RIGHT MENU - NEWS*/
+.right-menu .news{
+    display: grid;
+    grid-template-rows: 50px 100px 70px 70px 70px 50px;
+    background-color: rgb(245, 245, 245);
+    border-radius: 10px;
+    gap: 15px;
+}
+
+.right-menu .news .title {
+    display: grid;
+    font-weight: bolder;
+    font-size: 15px;
+    justify-content: flex-start;
+    align-content: center;
+    padding-left: 5px;
+}
+
+.right-menu .news .news1, .news2, .news3, .news4, .show-more {
+    display: grid;
+    
+}
+.right-menu .news .news1 span {
+    color:rgb(94, 147, 221) ;
+}
+
+.right-menu .news .news1:hover,
+.right-menu .news .news2:hover,
+.right-menu .news .news3:hover ,
+.right-menu .news .news4:hover ,
+.right-menu .news .show-more a:hover{
+    background-color:rgb(229, 226, 226);
+}
+.right-menu .news .news1 p ,
+.right-menu .news .news2 p,
+.right-menu .news .news3 p,
+.right-menu .news .news4 p{
+    margin: 0;
+    font-size: 12px;
+    color: gray;
+    padding-left: 10px;
+    text-decoration: none;
+}
+.right-menu .news .news1 h5,
+.right-menu .news .news2 h5,
+.right-menu .news .news3 h5,
+.right-menu .news .news4 h5 {
+    margin: 0;
+    padding: 0px;
+    padding-left: 10px;
+    text-decoration: none;
+    
+}
+.right-menu .news .news1 a ,
+.right-menu .news .news2 a,
+.right-menu .news .news3 a,
+.right-menu .news .news4 a{
+    text-decoration: none;
+    color: black;
+}
+.right-menu .news .show-more {
+    align-content: center;
+}
+
+.right-menu .news .show-more a{
+    color: rgb(94, 147, 221);
+    padding: 20px;
+    padding-left: 10px;
+    font-size: 15px;
+    text-decoration: none;
+}
