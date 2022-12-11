@@ -10,9 +10,7 @@
 }
 .leftcontainer{
     grid-area: left;
-    border: 1px solid grey;
     height: 750px;
-    width: 
     gap: 5px;
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -34,7 +32,7 @@
 }
     
 .middlecontainer{
-    border: 1px solid grey;
+    border: lightgrey 1px solid;
     grid-area: middle;
     height: 750px;
     gap: 5px;
@@ -53,8 +51,8 @@
     margin-top: 10px;
 }
 .topmidprofile{
+    border: 1px solid lightgray;
     display: grid;
-    border: 1px solid grey;
     grid-area: topmid;
     grid-template-rows: 1fr 1fr;
     grid-template-areas: 
@@ -110,7 +108,6 @@
     font-weight: bold;
 }
 .midmidprofile{
-    border: 1px solid grey;
     grid-area: midmid;
     display: grid;
     grid-template-columns: 1fr ;
@@ -162,7 +159,7 @@
 
 
 .rightcontainer{   
-    border: 1px solid grey;
+    border: 1px solid lightgray;
     grid-area: right;
     height: 750px;
     gap: 5px;
@@ -173,7 +170,7 @@
     background-color: lightgray;
     border-radius: 30px;
     margin: 5px;
-    border: 1px solid black;
+    border: 1px solid lightgray;
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-template-areas: "searchimg searchtwitter";
@@ -209,24 +206,24 @@
     font-size: x-small;
     color: blue;
 }
-.p11{
+.p21{
     font-size: x-small;
     font-weight: bold;
     margin: 5px;
 }
-.p12{
+.p22{
     color: gray;
     font-size: x-small;
     margin: 5px;
 }
-.p13{
+.p23{
     display: grid;
     grid-template-columns: 1fr 11fr;
     font-size: xx-small;
     color: grey;
 
 }
-.p13 img{
+.p23 img{
     width: 10px;
     margin-left: 10px;
     padding: 1px;
@@ -292,6 +289,7 @@
     grid-template-columns: 1fr 7fr;
     margin: 10px;
 }
+
 .tweetbutton{
     padding: 2px;
     color: white;
@@ -310,5 +308,58 @@ img{
     width: 30px;
     padding: 10px
 }
-
-.
+.p31{
+    font-size: x-small;
+    color: gray;
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+}
+.p31 span{
+    color: black
+}
+.p32{
+    font-weight: bold;
+    font-size: x-small;
+}
+.p33{
+    font-size: x-small;
+    color: gray;
+}
+.p41{
+    font-size: x-small;
+    color: gray;
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+}
+.p42{
+    font-weight: bold;
+    font-size: x-small;
+}
+.p43{
+    font-size: x-small;
+    color: gray;
+}
+.searchprofilepic{
+    width: 10px;
+}
+.p51{
+    font-size: x-small;
+    font-weight: bold;
+    display: grid;
+    grid-template-columns: 1px 10px 1px 1px ;
+}
+.p511{
+    font-size: x-small;
+    font-weight: bold;
+}
+.p512{
+    font-size: x-small;
+    color: gray;
+}
+.verifiedimg{
+    width: 10px;
+}
+.p53{
+    font-size: x-small;
+    font-weight: bold;
+}
