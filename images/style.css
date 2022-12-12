@@ -18,42 +18,36 @@ border: 1px solid black;
 
 .left{
     grid-area: left;
-  
     border-right: 1px solid;
     margin: 0px 0px 0px 30px;
     border: 1px solid black;
 }
-
+.hoverleft{
+  display: grid;
+  grid-template-columns:  30px auto;
+  margin-top: 10px;
+  margin-left: 30px;
+}
 .logoTwitter{
     padding-bottom: 40px;
   padding-top: 10px;
 }
 .menuItem{
   display: grid;
-  grid-template-columns: 30px 50px;
-  grid-template-rows: repeat(7,50px) ;
+ 
+  grid-template-rows: repeat(7,1fr) ;
   margin-top: 10px;
   margin-left: 30px;
 }
-.menuItem:hover{
-  background-color: #eee;
+  .hoverleft:hover{
+  background-color:gray;
   border-radius: 1em;
-}
-.leftProfilebottom:hover{
-  background-color: #eee;
+} 
+.leftProfilebottom:hover{ 
+  background-color:gry;
   border-radius: 2em;
 }
-.menuLogo:hover {
-  background-color: #eee;
-  border-radius: 2em;
 
-}
-
- .menuTxt:hover{
-  background-color: #eee;
-  border-radius: 2em;
-
- }
  .menuLogo img {
   margin-left: 10px; 
   margin-top: 0px;
