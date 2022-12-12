@@ -1,10 +1,18 @@
 .header {
   grid-area: header;
-  /* background-color: mediumspringgreen; */
   display: grid;
   grid-template-columns: 40px 1fr 50px;
   grid-template-areas: "title   .   toggle-feed";
   border-bottom: solid grey 2px;
+}
+.left-side,
+.header,
+.feed {
+  border-right: solid grey 2px;
+}
+.header,
+.feed {
+  min-width: 590px;
 }
 
 h1 {
@@ -44,8 +52,6 @@ h1 {
   grid-template-areas:
     "logo"
     "navigation";
-  border-right: solid grey 2px;
-  /* background-color: lightsteelblue; */
 }
 
 .navigation {
@@ -102,10 +108,16 @@ ul {
 
 .feed {
   grid-area: feed;
-  /* background-color: lightgrey; */
+  display: grid;
+  grid-template-rows: 128px 85px 85px;
+  grid-template-areas:
+    "composer"
+    "tweet"
+    "tweet-2";
 }
 
 .composer {
+  grid-area: composer;
   display: grid;
   grid-template-columns: 70px 180px 1fr 85px;
   grid-template-rows: 70px 50px;
@@ -121,11 +133,15 @@ ul {
   grid-template-columns: 80px 1fr;
   grid-template-areas: "profile-pic   default-message";
   border-bottom: dotted grey 2px;
+}
+
+#pic-message,
+.tweet {
   margin-left: 5px;
   margin-right: 9px;
 }
 
-#profile-pic {
+.profile-pic {
   object-fit: cover;
   border-radius: 50%;
   width: 50px;
@@ -158,15 +174,67 @@ ul {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.tweet svg {
+  height: 21px;
+}
+.tweet {
+  grid-area: tweet;
+  /* height: 40px; */
+  display: grid;
+  grid-template-columns: 70px 1fr 1fr;
+  grid-template-rows: 24px 1fr 30px;
+  grid-template-areas:
+    "tweet-profile-pic  tweet-info   tweet-info"
+    "tweet-profile-pic  tweet-text   tweet-text"
+    "tweet-profile-pic  tweet-icons  tweet-icons";
+}
+.tweet-info {
+  grid-area: tweet-info;
+  padding-top: 5px;
+}
+.tweet-text {
+  grid-area: tweet-text;
+}
+.tweet-icons {
+  grid-area: tweet-icons;
+  display: grid;
+  min-width: 280px;
+  max-width: 430px;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.tweet.tweet-2 {
+  grid-area: tweet-2;
+}
+
+.tweet,
+.tweet.tweet-2 {
+  border-bottom: solid grey 2px;
+}
+
 .right-side {
   grid-area: right-side;
-  background-color: mediumturquoise;
-  border-left: solid grey 2px;
+}
+.search {
+  background-color: #eff3f4;
+  border-radius: 15px;
+  width: 308px;
+  height: 44px;
+  margin-top: 10px;
+  margin-left: 23px;
 }
 
 @media screen and (max-width: 1000px) {
   .nav-list {
     display: none;
+  }
+  .right-side {
+    display: none;
+  }
+  .header,
+  .feed {
+    min-width: 334px;
+    max-width: 590px;
   }
 
   .left-side {
@@ -203,11 +271,11 @@ ul {
 
   .main-frame {
     display: grid;
-    grid-template-columns: 0.5fr 2fr 350px 0.5fr;
+    grid-template-columns: 0.5fr 2fr;
     grid-template-rows: 55px 600px;
     grid-template-areas:
-      "left-side    header      right-side   ."
-      "left-side    feed        right-side   .";
+      "left-side    header"
+      "left-side    feed";
   }
 
   * {
