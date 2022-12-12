@@ -137,7 +137,6 @@
     font-weight: bold;
 }
 
-
 .midmid1 p span{
     color: grey;
     font-weight: lighter;
@@ -156,7 +155,6 @@
     border: 1px solid grey;
     grid-area: lowmid;
 }
-
 
 .rightcontainer{   
     border: 1px solid lightgray;
@@ -232,6 +230,10 @@
     margin: 10px;
     width: 25px;
 }
+.twitterlogo :hover{
+    border: 1px solid black;
+
+}
 .leftcontainer img{
     width: 25px;
     margin-left: 15px;
@@ -242,22 +244,30 @@
     grid-template-columns: 1fr 7fr;
     margin: 10px;
 }
+.homeoption:hover{
+    text-decoration: underline 2px solid black;
+}
 .exploreoption{
     grid-area: explore; display: grid;
     grid-template-columns: 1fr 7fr;
     margin: 10px;
 }
+.exploreoption:hover{
+    text-decoration: underline 2px solid black;
+}
 .bottomleftprofile{
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 4fr 1fr;
     grid-row: 2fr 2fr;
 }
 .notificationsoption{
     display: grid;
     grid-template-columns: 1fr 7fr;
     margin: 10px;
-    grid-area: notifications;
-    
+    grid-area: notifications;   
+}
+.notificationsoption:hover{
+    text-decoration: underline 2px solid black;
 }
 .messagesoption{ 
     display: grid;
@@ -265,11 +275,18 @@
     margin: 10px;
     grid-area: messages;
 }
+.messagesoption:hover{
+    text-decoration: underline 2px solid black;
+}
 .bookmarksoption{
     grid-area: bookmarks;
     display: grid;
     grid-template-columns: 1fr 7fr;
     margin: 10px;
+}
+.bookmarksoption:hover{
+    text-decoration: underline 2px solid black;
+
 }
 .listsoption{
     grid-area: lists;
@@ -277,17 +294,27 @@
     grid-template-columns: 1fr 7fr;
     margin: 10px;
 }
+.listsoption:hover{
+    text-decoration: underline 2px solid black;
+
+}
 .profileoption{
     grid-area: profiles;
     display: grid;
     grid-template-columns: 1fr 7fr;
     margin: 10px;
 }
+.profileoption:hover{
+    text-decoration: underline 2px solid black;
+}
 .moreoption{
     grid-area: more;
     display: grid;
     grid-template-columns: 1fr 7fr;
     margin: 10px;
+}
+.moreoption:hover{
+    text-decoration: underline 2px solid black;
 }
 
 .tweetbutton{
@@ -297,6 +324,9 @@
     background-color: rgb(24, 166, 214);
     margin: 10px;
     text-align: center;
+}
+.tweetbutton:hover{
+    border: 2px lightblue solid;
 }
 .bottomleftprofile{
     display: grid;
