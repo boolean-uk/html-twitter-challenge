@@ -1,0 +1,247 @@
+/* Global */
+
+* {
+    background-color: rgb(244, 253, 208);
+    /* color: antiquewhite; */
+}
+/* Main Grid */
+
+.mainContainer {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 
+    "leftMenu centreBody rightMenu";
+}
+
+/* Left Menu */
+
+.mainContainer .leftMenu {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 1fr 40px;
+    grid-template-areas:
+    "logo" 
+    "leftItems"
+    "leftRavn";
+    gap: 30px;
+}
+
+#logo img{
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+#logo img:hover {
+    background-color: gray;
+    border: gray solid 1px;
+    border-radius: 50%;
+}
+
+#logo img::selection {
+    background-color: gray;
+    border: black solid 2px;
+    border-radius: 50%;
+}
+/* left menu icons */
+
+/* .mainContainer .leftMenu .iconsLeft {
+    grid-area: iconsLeft;
+    display: grid;
+    grid-template-rows: repeat(7, 40px);
+} */
+
+/* left menu item names */
+
+.mainContainer .leftMenu .leftItems {
+    grid-area: leftItems;
+    display: grid;
+    grid-template-rows: repeat(7, 50px);
+    grid-template-columns: 300px;
+    align-content: center;
+    gap: 30px;
+    justify-content: center;        
+}
+
+.mainContainer .leftMenu .leftItems button{
+    box-sizing: border-box;
+    padding: 10px; 
+    border: none;
+    font-size: 30px;      
+}
+
+.mainContainer .leftMenu .leftItems .button{
+    display: grid;
+    grid-template-rows: 50px;
+    align-content: center;
+    
+}
+
+.mainContainer .leftMenu .leftItems button:hover {
+    border: black solid 1px;
+    border-radius: 5px;
+    /* background-color: gray;        */
+}
+
+
+
+.mainContainer .leftMenu .leftItems button::selection {
+    border: black solid 1px;
+    border-radius: 5px;        
+}
+
+.mainContainer .leftMenu .leftItems span {
+    font-size: 30px;    
+}
+
+
+.mainContainer .leftMenu #leftRavn {
+    grid-area: leftRavn;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    color: white;
+    border: black solid 1px;
+    border-radius: 10px;
+    background-color: black;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: 25px;
+    padding: 10px;
+}
+
+#leftRavn:hover {
+    background-color: gray;
+}
+
+
+
+/* centre body */
+
+.centreBody {
+    margin-left: 5px;
+    margin-right: 5px;
+    display: grid;
+    grid-template-rows: 40px 60px 30px 1fr;
+}
+
+#topHome {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#topHome div:nth-child(2) {
+    display: grid;
+    justify-content: right;
+}
+
+
+
+#iQuoth span{
+    color: rgb(206, 206, 206);
+    align-content: center;    
+}
+
+#iQuoth > span > img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#quothIcons {
+    border-bottom: black solid 2px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+}
+
+#quothFeed {
+    margin-top: 40px;
+}
+.quothPosts {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "userPic userName"
+    "userPic quothText"
+    "feedIcons feedIcons";
+    margin-top: 20px;
+}
+
+.userPic {
+    grid-area: userPic;    
+}
+
+.userPic img {
+    width: 50px;    
+    height: 50px;
+    border-radius: 50%;
+    object-fit: fill;
+}
+
+.userName {
+    grid-area: userName;
+}
+
+.userName span:first-of-type {
+    font-weight: bold;
+}
+
+.userName span:nth-of-type(2) {
+    font-style: italic;
+}
+
+.quothText {
+    grid-area: quothText;
+}
+
+.quothText span:first-of-type {
+    font-style: italic;
+    font-weight: bolder;
+    color: rgb(58, 58, 131);
+}
+
+.feedIcons {
+    margin-top: 5px;
+    padding-bottom: 5px;
+    grid-area: feedIcons;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    border-bottom: black solid 1px;
+}
+
+/* right menu  */
+
+.mainContainer .rightMenu {
+    grid-area: rightMenu;
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+}
+
+#searchBar {
+    display: inline-block;
+    height: fit-content;
+    padding: 5px;
+    border: black solid 1px;
+    border-radius: 10px;
+}
+
+#wHaps {
+    border: black solid 1px;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
+#whoFollow {
+    border: black solid 1px;
+    border-radius: 10px;
+    padding: 5px;
+    margin-bottom: 20px;
+}
+
