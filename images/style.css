@@ -1,0 +1,397 @@
+
+.body{
+    background-color: rgb(234, 231, 231);
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 10px;
+    /* margin-left: min(500px);
+    margin-right: min(500px); */
+}
+
+h1{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+h2{
+    font-weight: bold;
+    font-size: 15px;
+}
+
+h3{
+    font-weight: bold;
+    font-size: 12px;
+}
+
+p{
+    font-size: 12px;
+}
+
+strong{
+    font-weight: bold;
+    font-size: 12px;
+}
+
+span{
+    font-size: 12px;
+}
+
+.left-menu-bar-section{
+    padding-bottom: 100px;
+    background-color: rgb(245, 245, 245);
+}
+
+.left-menu-bar-section img{
+    height: 30px;
+    width: 30px;
+    padding: 5px 10px 5px 5px;
+ }
+
+ .logo{
+    filter: invert(57%) sepia(10%) saturate(2812%) hue-rotate(83deg) brightness(89%) contrast(86%);
+ }
+
+ .logo:hover{
+    filter: invert(97%) sepia(0%) saturate(0%) hue-rotate(238deg) brightness(87%) contrast(96%);
+ }
+
+.left-menu-bar-section > .left-menu-header{
+    padding-top: 5px;
+    padding-left: 20px;
+    height: 40px;
+    object-fit: contain;
+}
+
+.left-menu-bar-section .nav{
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    padding: 20px;
+    gap: 5px;
+    justify-items: left; 
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.left-menu-bar-section .nav a{
+    display: grid;
+    grid-template-columns: 40px auto;
+    align-items: center;
+    gap: 5px;
+}
+
+.left-menu-bar-section .nav span{
+    font-weight: bold;
+
+}
+
+.left-menu-bar-section .nav .home:hover{
+    filter: invert(57%) sepia(10%) saturate(2812%) hue-rotate(83deg) brightness(89%) contrast(86%);
+}
+
+.left-menu-bar-section .nav .explore-icon:hover{
+    filter: invert(57%) sepia(10%) saturate(2812%) hue-rotate(83deg) brightness(89%) contrast(86%);
+}
+
+.left-menu-bar-section .nav .notifications-icon:hover{
+    filter: invert(57%) sepia(10%) saturate(2812%) hue-rotate(83deg) brightness(89%) contrast(86%);
+}
+
+.left-menu-bar-section .nav .messages-icon:hover{
+    filter: invert(57%) sepia(10%) saturate(2812%) hue-rotate(83deg) brightness(89%) contrast(86%);
+}
+
+.left-menu-bar-section .nav .bookmarks-icon:hover{
+    filter: invert(57%) sepia(10%) saturate(2812%) hue-rotate(83deg) brightness(89%) contrast(86%);
+}
+
+.left-menu-bar-section .nav .profile-icon:hover{
+    filter: invert(57%) sepia(10%) saturate(2812%) hue-rotate(83deg) brightness(89%) contrast(86%);
+}
+
+.left-menu-bar-section .nav .more-icon:hover{
+    filter: invert(57%) sepia(10%) saturate(2812%) hue-rotate(83deg) brightness(89%) contrast(86%);
+}
+
+.left-menu-bar-section .left-tweet-button{
+    /* display: inline-block; */
+    background-color: #2FA44E;
+    color: white;
+    padding: 10px 50px;
+    text-align: center;
+    border-radius: 30px;
+    margin: 10%;
+}
+
+.left-menu-bar-section .left-tweet-button:hover{
+    background-color: lightgray;
+}
+
+/* Main Section */
+
+.main-section{
+    display: grid;
+    grid-template-rows: 40px 150px 5fr;
+    border: 1px solid lightgray;
+    background-color: (245, 245, 245);
+    border-top: none
+
+}
+
+.main-section-header {
+    border-bottom: 1px lightgray solid;
+    background-color: rgb(245, 245, 245);;
+
+}
+
+.main-section-header h2 {
+    display: inline-block;
+    padding-left: 10px;
+    font-weight: bold;
+}
+
+.content-creation-container{
+    padding-bottom: 10px;
+    background-color: rgb(245, 245, 245);
+    border-bottom: 1px lightgray solid;
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: 40px 10fr 1fr;
+    gap: 10px;
+    padding: 10px;
+    align-items: center;
+    
+}
+
+.content-creation-container .display-pic{
+    height: 40px;
+    width: 40px;
+    border: black 1px solid;
+    border-radius: 50%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.content-creation-container .type-box{
+    grid-area: 1 / 2;
+}
+
+.content-creation-container .media-type{
+    grid-area: 2 / 2 ;
+}
+
+.content-creation-container .media-type img {
+    height: 20px;
+    width: 20px;
+    padding-left: 5px;
+}
+
+.content-creation-container .tweet-button{
+    grid-area: 2 / 3 ;
+    background-color: #2FA44E;
+    height: 40px;
+    width: 80px;
+    color: white;
+    border-radius: 20px;
+    place-self: center;
+    text-align: center;
+}
+
+.content-creation-container .tweet-button:hover{
+    background-color: lightgray;
+}
+
+/* Feed Section! */
+
+.feed {
+    margin-top: 10px;
+    grid-auto-rows: auto;
+    background-color: (245, 245, 245);
+}
+
+.post-in-feed{
+    display: grid;
+    border-bottom: 1px solid lightgray;
+    grid-template-columns: 40px auto 40px;
+    grid-template-rows: auto 20px;
+    gap: 10px;
+    padding: 10px;
+    background-color: rgb(245, 245, 245);
+}
+
+.post-in-feed-dp img{
+    height: 40px;
+    width: 40px;
+    border: black 1px solid;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.post-in-feed-details{
+    grid-area: 1 / 2;
+    display: grid;
+    /* grid-template-columns: repeat(3, auto);
+    grid-template-rows: 40px auto;
+    align-items: center;
+    justify-items: start;
+    gap: 1px */
+}
+
+.post-in-feed-details span{
+    color: lightgray;
+}
+
+.post-in-feed-details > .post-in-feed-tweet a {
+    color: #2FA44E;
+    text-decoration: none;
+}
+
+.post-in-feed-tweet{
+    grid-area: 2 / 1 / 3 / end;
+}
+
+
+.post-in-feed-react{
+    grid-area: 2 / 2;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+}
+
+.post-in-feed-react img{
+    height: 20px;
+    width: 20px;
+    object-fit: cover;
+}
+
+/* Right-Menu-Bar */
+
+.right-menu-bar-section {
+    padding: 10px;
+    padding-top: 5px;
+    background-color: rgb(245, 245, 245)
+}    
+
+.right-menu-bar-header .search-bar {
+    height: 30px;
+    width: auto;
+    background-color: #EAE7E7;
+    border-radius: 20px;
+    /* border: 1px black solid; */
+    justify-items: start;
+    display: grid;
+    grid-template-columns: 40px auto;
+    align-items: center;
+
+}
+.right-menu-bar-header .search-bar img{
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.search-bar span{
+
+}
+
+/* Whats Happening + who to follow */
+
+.right-menu-bar-main-section{
+    display: grid;
+    background-color: rgb(245, 245, 245);
+    justify-content: center;
+    place-items: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.whats-happening-section{
+    border-radius: 20px;
+    background-color: #EAE7E7;
+    display: grid;
+    grid-template-rows: 40px auto auto auto auto auto 40px;
+    padding: 12px;
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+
+}
+
+.whats-happening-post{
+    border-bottom: gray solid 1px;
+    
+}
+
+.whats-happening-header{
+    border-bottom: gray solid 1px;
+}
+
+#whats-happening-show-more a{
+    color: #2FA44E;
+    font-size: 12px;
+    padding-bottom: 0;
+    text-decoration: none;
+}
+
+.who-to-follow-section{
+    display: grid;
+    grid-template-rows: 40px auto auto auto auto 40px;
+    padding: 12px;
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #EAE7E7;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.who-to-follow-header{
+    border-bottom: gray solid 1px;
+    
+}
+
+.person-to-follow{
+    border-bottom: gray solid 1px;
+    display: grid;
+    grid-template-columns: 40px auto 60px;
+    gap: 10px;
+}
+
+.person-to-follow img{
+    height: 40px;
+    width: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: white solid 1px;
+    align-self: center;
+
+}
+
+.followButton{
+    width: 60px;
+    align-self: center;
+    background-color: #2FA44E;
+    color: white;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.followButton:active{
+    background-color: lightgray;
+}
+
+#who-to-follow-show-more a{
+    color: #2FA44E;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+#who-to-follow-show-more a:active{
+
+    color: lightgray;
+}
+
