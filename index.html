@@ -7,59 +7,178 @@
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
-  <body>
-    <!-- Header area fixed to the left sifed -->
-    <header class="header-container">
-      <div class="header-space">
-        <!-- Top of left bar -->
-        <div class="header-top-side">
-          <!-- Logo section -->
-          <div>Logo</div>
+  <body class="">
+    <div class="project-wrapper">
+      <!-- Header area fixed to the left sifed -->
+      <header class="header-container">
+        <div class="header-space">
+          <!-- Top of left bar -->
+          <div class="header-top-side">
+            <!-- Logo section -->
+            <div class="twitter-logo">
+              <a href="#">
+                <img src="./twitter-icon/twitter-bird-icon.svg" alt="" />
+              </a>
+            </div>
 
-          <!-- Menu area -->
-          <div>Menu</div>
+            <!-- Menu area -->
+            <div class="left-menu-type">
+              <div class="menu-list-content">
+                <div>
+                  <a href="#">
+                    <img
+                      src="./twitter-icon/twitter-home-icon.svg"
+                      alt=""
+                      class="menu-icon-image"
+                    />
+                    <b>Home</b>
+                  </a>
+                </div>
+              </div>
 
-          <!-- Tweet button position -->
-          <div>Tweet Button</div>
+              <div class="menu-list-content">
+                <div>
+                  <a href="#">
+                    <img
+                      src="./twitter-icon/twitter-explore-icon.svg"
+                      alt=""
+                      class="menu-icon-image"
+                    />
+                    <b>Explore</b>
+                  </a>
+                </div>
+              </div>
+
+              <div class="menu-list-content">
+                <div>
+                  <a href="#">
+                    <img
+                      src="./twitter-icon/twitter-notify-icon.svg"
+                      alt=""
+                      class="menu-icon-image"
+                    />
+                    <b>Notification</b>
+                  </a>
+                </div>
+              </div>
+
+              <div class="menu-list-content">
+                <div>
+                  <a href="#">
+                    <img
+                      src="./twitter-icon/twitter-message-icon.svg"
+                      alt=""
+                      class="menu-icon-image"
+                    />
+                    <b>Messages</b>
+                  </a>
+                </div>
+              </div>
+
+              <div class="menu-list-content">
+                <div>
+                  <a href="#">
+                    <img
+                      src="./twitter-icon/twitter-boomark-icon.svg"
+                      alt=""
+                      class="menu-icon-image"
+                    />
+                    <b>Bookmarks</b>
+                  </a>
+                </div>
+              </div>
+
+              <div class="menu-list-content">
+                <div>
+                  <a href="#">
+                    <img
+                      src="./twitter-icon/twitter-blue-icon.svg"
+                      alt=""
+                      class="menu-icon-image"
+                    />
+                    <b>Twitter Blue</b>
+                  </a>
+                </div>
+              </div>
+
+              <div class="menu-list-content">
+                <div>
+                  <a href="#">
+                    <img
+                      src="./twitter-icon/twitter-profile-icon.svg"
+                      alt=""
+                      class="menu-icon-image"
+                    />
+                    <b>Profile</b>
+                  </a>
+                </div>
+              </div>
+
+              <div class="menu-list-content">
+                <div>
+                  <a href="#">
+                    <img
+                      src="./twitter-icon/twitter-more-icon.svg"
+                      alt=""
+                      class="menu-icon-image"
+                    />
+                    <b>More</b>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tweet button position -->
+            <div class="tweet-button">
+              <button class="tweet-button">Tweet</button>
+            </div>
+          </div>
+
+          <!-- Bottom of left bar - settings -->
+          <div class="header-bottom-side">
+            <div>
+              <img src="./amazing.jpg" alt="" class="user-avatar" />
+            </div>
+            <div>
+              <p class="user-name">Amazing Naija Ltd</p>
+              <p class="handle">@desokan</p>
+            </div>
+            <div class="more-icon">
+              <img src="./twitter-icon/more-icon.svg" alt="" />
+            </div>
+          </div>
         </div>
+      </header>
 
-        <!-- Bottom of left bar - settings -->
-        <div class="header-bottom-side">
-          <div>User Image</div>
-          <div>Account Name</div>
-          <div>Icon</div>
+      <!-- Main Area with scroll bar-->
+      <main class="main-container">
+        <div class="main-space">
+          <div class="main-feed-rea">
+            <!-- Back to home link and two tabs -->
+            <div class="main-feed-home"></div>
+
+            <!-- User post area to write what's happening -->
+            <div class="main-feed-post-area"></div>
+
+            <!-- Main feed area with infinite height -->
+            <div class="main-feed-threads"></div>
+          </div>
+
+          <div class="main-right-side-bar">
+            <!-- Search bar area - top right -->
+            <div class="right-sidebar-search"></div>
+
+            <!-- Hightlights of what's happening where -->
+            <div class="right-sidebar-happening"></div>
+
+            <!-- Suggestion of who a user can follow -->
+            <div class="right-sidebar-to-follow"></div>
+
+            <!-- Terms of service and privacy area -->
+            <div class="right-sidebar-terms"></div>
+          </div>
         </div>
-      </div>
-    </header>
-
-    <!-- Main Area with scroll bar-->
-    <main class="main-container">
-      <div class="main-space">
-        <div class="main-feed-rea">
-          <!-- Back to home link and two tabs -->
-          <div class="main-feed-home"></div>
-
-          <!-- User post area to write what's happening -->
-          <div class="main-feed-post-area"></div>
-
-          <!-- Main feed area with infinite height -->
-          <div class="main-feed-threads"></div>
-        </div>
-
-        <div class="main-right-side-bar">
-          <!-- Search bar area - top right -->
-          <div class="right-sidebar-search"></div>
-
-          <!-- Hightlights of what's happening where -->
-          <div class="right-sidebar-happening"></div>
-
-          <!-- Suggestion of who a user can follow -->
-          <div class="right-sidebar-to-follow"></div>
-
-          <!-- Terms of service and privacy area -->
-          <div class="right-sidebar-terms"></div>
-        </div>
-      </div>
-    </main>
+      </main>
+    </div>
   </body>
 </html>
