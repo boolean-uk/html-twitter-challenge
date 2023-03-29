@@ -157,14 +157,15 @@
 
 /* MENU components styling */
         .logo {
-            grid-area: logo
+            grid-area: logo;
         }
         .menu_buttons {
-            grid-area: menu_buttons
+            grid-area: menu_buttons;
         }
         .tweet_button {
-            grid-area: tweet_button
-            }          
+            grid-area: tweet_button;
+            place-self: center;
+        }          
 /* TOPICS components styling */
         .search {
             grid-area: search;
@@ -175,3 +176,18 @@
         .follow {
             grid-area: follow;
         }
+
+/* BUTTON styling */
+button {
+    background-color: lightskyblue;
+}
+button:focus {
+    background-color: aquamarine;
+    color: darkmagenta;
+}
+button:active {
+    color: magenta;
+}
+button:hover{
+    cursor: pointer;
+}
