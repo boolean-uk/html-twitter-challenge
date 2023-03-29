@@ -5,7 +5,7 @@
 }
 
 /* default overrides */
-.grid, .left, .main, .right {
+.left, .main, .right {
     margin: 5px;
 }
 
@@ -19,19 +19,32 @@
     border: dotted 1px black;
     gap: 5px;
 }
-    /* LH menu bar */
-    
     /* common styling - top grid comps */
     .left, .main, .right {
         border: dashed 1px red;
+        background-color:lightseagreen;
     }
     /* individual styling - top grid comps */
     .left {
         grid-area: left;
+        display: grid;
+        grid-template-areas: ". menu";
+        grid-template-columns: 1fr 4fr;
     }
     .main {
         grid-area: main;
     }
-    .left {
+    .right {
         grid-area: right;
     }
+
+/* LH menu styling */
+.menu {
+    grid-area: menu;
+    border: dashed 1px blue;
+}
+
+/* main central feed styling */
+
+
+/* RH topics styling */
