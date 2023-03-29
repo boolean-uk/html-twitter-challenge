@@ -149,6 +149,45 @@ search {
     margin-top: 10px;
 }
 
+.tweet-text {
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+}
+
+.left-tweet:hover {
+    background-color: #1a8cd8;
+}
+
+/* Left Profile */
+
+.profile {
+    display: grid;
+    grid-template-areas:
+    "pic d-name dots"
+    "pic u-name .";
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 20px 20px;
+}
+
+.profile-picture {
+    grid-area: pic;
+}
+
+.display-name {
+    grid-area: d-name;
+}
+
+.user-name {
+    grid-area: u-name;
+}
+
+.dot-menu {
+    grid-area: dots;
+    /* width: 200px; */
+}
+
+
 
 
 
