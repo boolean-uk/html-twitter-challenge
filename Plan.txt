@@ -33,7 +33,7 @@ Then there's the 'button'.✅
 At the end of the columns I need a row (last one) which will contain a 'profile image, name/username and ... for settings'. (See Discord for reference).✅
 
 - Column 2: Main Feed
-I'll need at least 3 rows.
+# I'll need at least 3 rows.
 First row will be for text input with 5 icons and a 'button' to 'pubblish the post'(i.e. Linkedin).
 Second and extra rows will be the 'feed'. 
 
