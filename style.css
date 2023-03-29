@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+}
+
+.layout {
+    width: 100wh;
+    height: 800px;
+    display: grid;
+    grid-template-columns: 200px 1fr 300px;
+    padding:10px;
+}
+
+.right button {
+    width: 100%;
+    background-color: blueviolet;
+    border-radius: 50vh;
+}
+
+.right div {
+    background-color: aliceblue;
+    min-height: 100px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/* .right {
+    margin: 5px;
+
+} */
+
+.main{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
