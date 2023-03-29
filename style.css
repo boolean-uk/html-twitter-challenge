@@ -177,9 +177,28 @@
             grid-area: follow;
         }
 
+/* MENU BUTTONS */
+.menu_buttons ul {
+    display:grid;
+    grid-auto-flow: rows;
+    list-style: none;
+    background-color: lightcoral;
+    gap: 2px;
+    margin: 0;
+}
+    .menu_buttons ul li {
+        border: solid 1px black;
+        
+
+    }
+
+
 /* BUTTON styling */
 button {
     background-color: lightskyblue;
+    border: none;
+    border-radius: 15px;
+    width: fit-content;
 }
 button:focus {
     background-color: aquamarine;
