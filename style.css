@@ -10,16 +10,25 @@
     padding:10px;
 }
 
-.right button {
+button {
     width: 100%;
-    background-color: blueviolet;
+    background-color: beige;
     border-radius: 50vh;
+    border: 0;
+}
+
+.left button {
+    background-color: blue;
+    color: white;
+    height: 40px;
+    width: 195px;
+    /* margin: 10px 50px 0px 0px; */
 }
 
 .right div {
     background-color: aliceblue;
     min-height: 100px;
-    margin: 5px;
+    margin: 10px 5px;
     padding: 5px;
     border-radius: 10px;
 }
@@ -32,4 +41,68 @@
 .main{
     border-left: 1px solid black;
     border-right: 1px solid black;
+}
+
+.nav{
+    display: grid;
+    grid-template-areas: 
+    "i1 hom"
+    "i2 exp"
+    "i3 not"
+    "i4 mes"
+    "i5 boo"
+    "i6 pro"
+    "i7 mor";
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    height: 450px;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.nav a {
+    font-weight: bold;
+    font-size: 23px;
+    color: gray;
+    text-decoration: none;
+    /* background-color: blue; */
+}
+
+.hom {
+    grid-area: hom;
+}
+
+
+.exp {
+    grid-area: exp;
+}
+
+.not {
+    grid-area: not;
+}
+
+.mes {
+    grid-area: mes;
+}
+
+.boo {
+    grid-area: boo;
+}
+
+.pro {
+    grid-area: pro;
+}
+
+.mor {
+    grid-area: mor;
+}
+
+
+.bar:hover {
+    color: burlywood;
+    cursor: crosshair;
+}
+
+.bar:focus {
+    color: blue;
 }
