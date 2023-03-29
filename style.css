@@ -58,7 +58,10 @@ body {
   .nav-text {
     color: black;
     font-size: 18px;
-    font-weight: 700;
+  }
+
+  .active-nav {
+    font-weight: 800;
   }
 
   a {
@@ -169,7 +172,7 @@ body {
 }
 
 .for-you {
-    border-bottom: solid 2px #1d9bf0;
+    border-bottom: solid 5px #1d9bf0;
     font-weight: 600;
 }
 
@@ -184,7 +187,15 @@ body {
 
 .new-tweet {
     border: solid 1px red;
-    height: 200px;
+    height: 157px;
+    display: grid;
+    grid-template-columns: 48px 1fr 48px;
+    grid-template-rows: 100px 1fr;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "profile-picture-large tweet-input tweet-input"
+    ". tweet-controls main-tweet-button";
+    padding: 12px 12px 0 12px;
 }
 
 .a-tweet {
@@ -195,4 +206,36 @@ body {
 .right-sidebar {
     grid-area: right-sidebar;
     border: solid 1px green;
+}
+
+.profile-picture-large {
+    /* grid-area: profile-picture; */
+    border-radius: 50%;
+    height: 48px;
+    width: 48px;
+}
+
+.tweet-input {
+    grid-area: tweet-input;
+}
+
+.tweet-input > input {
+    width: 100%;
+    height: 100%;
+}
+
+.tweet-controls {
+    grid-area: tweet-controls;
+    display: grid;
+    grid-template-columns: repeat(5,40px);
+    align-items: left;
+}
+
+.main-tweet-button {
+    grid-area: main-tweet-button;
+}
+
+.tweet-control-button {
+    height: 15px;
+    background-color: palegreen;
 }
