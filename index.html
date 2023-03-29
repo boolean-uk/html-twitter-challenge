@@ -153,21 +153,40 @@
       <!-- Main Area with scroll bar-->
       <main class="main-container">
         <div class="main-space">
-          <div class="main-feed-rea">
+          <div class="main-feed-area">
             <!-- Back to home link and two tabs -->
-            <div class="main-feed-home"></div>
+            <div class="offset"></div>
+            <div>
+              <!-- User post area to write what's happening -->
+              <div class="main-feed-post-area"></div>
 
-            <!-- User post area to write what's happening -->
-            <div class="main-feed-post-area"></div>
+              <div class="main-feed-show-more"></div>
 
-            <!-- Main feed area with infinite height -->
-            <div class="main-feed-threads"></div>
+              <!-- Main feed area with infinite height -->
+              <div class="main-feed-threads"></div>
+            </div>
+
+            <div class="top-main-menu">
+              <div class="link-to-home">
+                <a href="#">Home</a>
+              </div>
+              <div class="main-menu-tab">
+                <a class="tablinks-container">
+                  <div class="tablinks">
+                    <button>For you</button>
+                  </div>
+                </a>
+
+                <a class="tablinks-container">
+                  <div class="tablinks">
+                    <button>Following</button>
+                  </div>
+                </a>
+              </div>
+            </div>
           </div>
 
           <div class="main-right-side-bar">
-            <!-- Search bar area - top right -->
-            <div class="right-sidebar-search"></div>
-
             <!-- Hightlights of what's happening where -->
             <div class="right-sidebar-happening"></div>
 
@@ -176,6 +195,14 @@
 
             <!-- Terms of service and privacy area -->
             <div class="right-sidebar-terms"></div>
+
+            <!-- Search bar area - top right -->
+            <div class="right-sidebar-search">
+              <div class="search-rounded">
+                <img src="./twitter-icon/search-icon.svg" alt="" />
+                <p>Search Twitter</p>
+              </div>
+            </div>
           </div>
         </div>
       </main>
