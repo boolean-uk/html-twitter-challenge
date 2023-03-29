@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    background-color: lightslategrey;
+    padding: 5px;
+}
+
+/* default overrides */
+.grid, .left, .main, .right {
+    margin: 5px;
+}
+
+
+/* overall grid layout */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr ;
+    grid-auto-rows: 100vh;
+    grid-template-areas: "left main right";
+    border: dotted 1px black;
+    gap: 5px;
+}
+    /* LH menu bar */
+    
+    /* common styling - top grid comps */
+    .left, .main, .right {
+        border: dashed 1px red;
+    }
+    /* individual styling - top grid comps */
+    .left {
+        grid-area: left;
+    }
+    .main {
+        grid-area: main;
+    }
+    .left {
+        grid-area: right;
+    }
