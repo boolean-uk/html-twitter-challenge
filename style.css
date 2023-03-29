@@ -6,7 +6,8 @@
 
 /* default overrides */
 .left, .main, .right,
-.menu, .home, .tweet, .feed, .topics {
+.menu, .home, .tweet, .feed, .topics
+.search, .happening, .follow {
     margin: 5px;
 }
 
@@ -73,4 +74,30 @@
 /* RH topics styling */
 .topics {
     grid-area: topics;
+    display: grid;
+    grid-template-areas:
+    "search"
+    "happening"
+    "follow"
+    ".";
+    grid-template-rows: 50px 300px 300px 1fr;
+    gap: 5px;
+
 }
+/* topics component styling */
+    /* common styling - RH comps */
+    .search, .happening, .follow {
+        border: dashed, 1px, green;
+        border-radius: 10px;
+        background-color: brown;
+    }
+    .search {
+        grid-area: search;
+        max-height: 50px;
+    }
+    .happening {
+        grid-area: happening;
+    }
+    .follow {
+        grid-area: follow;
+    }
