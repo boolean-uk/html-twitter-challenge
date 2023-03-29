@@ -5,10 +5,19 @@
 }
 
 /* default overrides */
-.left, .main, .right,
-.menu, .home, .compose, .feed, .topics,
-.logo, .menu_buttons, .tweet_button,
-.search, .happening, .follow {
+.left,
+    .menu, 
+        .logo, .menu_buttons, .tweet_button, 
+.main,
+    .home_bar,
+        .home, .spark,
+    .compose,
+        /*  */
+    .feed,
+        /*  */
+.right,
+    .topics,
+        .search, .happening, .follow {
     margin: 5px;
 }
 
@@ -27,12 +36,20 @@
         background-color:lightseagreen;
     }
 /* SUBGRID common styling */
-    /* common styling - sub grid comps */
-    .menu, .home, .compose, .feed, .topics {
+    /* LH */
+        .menu, 
+    /* main */
+        .home_bar, .compose, .feed, 
+    /* RH */
+        .topics {
         border: dashed 1px red;
     }
 /* INNER COMPS common styling  */
-    .logo, .menu_buttons, .tweet_button,   
+    /* LH */
+    .logo, .menu_buttons, .tweet_button,
+    /* main */
+    .home, .spark,
+    /* RH */
     .search, .happening, .follow {
         border: dashed 1px purple;
         border-radius: 10px;
@@ -49,7 +66,7 @@
         grid-area: main;
         display: grid;
         grid-template-areas:
-        "home"
+        "home_bar"
         "compose"
         "feed";
         grid-template-rows: 50px 100px 1fr;
@@ -62,15 +79,31 @@
         grid-template-columns: 4fr 1fr;
     }
 
-/* MAIN central feed styling */
+/* MAIN central feed grids styling */
+    .home_bar {
+        grid-area: home_bar;
+        display: grid;
+        grid-template-areas: "home . spark";
+        grid-template-columns: 50px 1fr 50px;
+        place-content: center;
+        place-items: center;
+    }
+    .compose {
+        grid-area: compose;
+    }
+    .feed {
+        grid-area: feed;
+    }
+/* MAIN components styling */
         .home {
             grid-area: home;
+            min-width: 100%;
+            min-height: 100%;
         }
-        .compose {
-            grid-area: compose;
-        }
-        .feed {
-            grid-area: feed;
+        .spark {
+            grid-area: spark;
+            min-width: 100%;
+            min-height: 100%
         }
 
 
