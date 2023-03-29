@@ -15,15 +15,20 @@ body {
     grid-area: left;
     border-right: solid 1px lightskyblue;
     font-size: 2rem;
+    display: grid;
+    justify-content: center;
 }
 
 .left>ul {
     list-style: none;
-    gap: 10px;
+    gap:
+}
+
+.left>ul>li {
+    margin-top: 20px;
 }
 
 .left>ul>li:hover {
-    font-size: 2.5rem;
     color: lightblue;
     cursor: pointer;
 }
@@ -32,6 +37,10 @@ body {
 .left * a {
     text-decoration: none;
     color: inherit
+}
+
+.left * img {
+    margin-right: 2rem;
 }
 
 .tweet {
@@ -43,8 +52,9 @@ body {
 }
 
 .top * .tweet {
-    width: 350px;
-    display: inline;
+    width: 5.5rem;
+    height: 2.4rem;
+    font-size: 2rem;
 }
 
 .top {
@@ -56,6 +66,61 @@ body {
 
 .top>div {
     border: solid 1px lightskyblue;
+}
+
+.tophome {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 2rem;
+    align-content: center;
+}
+
+.tophome>div+div {
+    display: grid;
+    justify-self: end;
+}
+
+.top .topinput {
+    display: grid;
+    grid-template-areas:
+        "post1 post2 ."
+        ". post3 post4";
+    grid-template-columns: 50px 1fr 100px;
+    grid-template-rows: 1fr 40px;
+}
+
+.topinput * img {
+    margin: 5px;
+}
+
+.post1 {
+    grid-area: post1;
+    display: grid;
+    place-self: center;
+
+}
+
+.post2 {
+    grid-area: post2;
+    display: grid;
+    align-self: center;
+    font-size: 1.5rem;
+    color: gray;
+}
+
+.post3 {
+    grid-area: post3;
+}
+
+.post4 {
+    grid-area: post4;
+}
+
+img.profilephoto {
+    object-fit: cover;
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
 }
 
 .right {
@@ -79,6 +144,10 @@ body {
     background-color: gray;
     border-radius: 5px;
     color: black;
+}
+
+.right>div>img {
+    display: inline;
 }
 
 .main {
