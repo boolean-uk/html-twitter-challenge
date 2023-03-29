@@ -6,11 +6,11 @@
 
 /* default overrides */
 .left, .main, .right,
-.menu, .home, .tweet, .feed, .topics
+.menu, .home, .compose, .feed, .topics,
+.logo, .menu_buttons, .tweet_button,
 .search, .happening, .follow {
     margin: 5px;
 }
-
 
 /* overall grid layout */
 .grid {
@@ -21,12 +21,24 @@
     border: dotted 1px black;
     gap: 5px;
 }
-    /* common styling - top grid comps */
+/* TOP GRID common styling */
     .left, .main, .right {
         border: dashed 1px blue;
         background-color:lightseagreen;
     }
-    /* individual styling - top grid comps */
+/* SUBGRID common styling */
+    /* common styling - sub grid comps */
+    .menu, .home, .compose, .feed, .topics {
+        border: dashed 1px red;
+    }
+/* INNER COMPS common styling  */
+    .logo, .menu_buttons, .tweet_button,   
+    .search, .happening, .follow {
+        border: dashed 1px purple;
+        border-radius: 10px;
+    }
+
+/* TOP GRID individual styling */
     .left {
         grid-area: left;
         display: grid;
@@ -38,9 +50,10 @@
         display: grid;
         grid-template-areas:
         "home"
-        "tweet"
+        "compose"
         "feed";
         grid-template-rows: 50px 100px 1fr;
+        gap: 5px;
     }
     .right {
         grid-area: right;
@@ -49,55 +62,60 @@
         grid-template-columns: 4fr 1fr;
     }
 
-/* subgrid styling */
-    /* common styling - sub grid comps */
-    .menu, .home, .tweet, .feed, .topics {
-        border: dashed 1px red;
+/* MAIN central feed styling */
+        .home {
+            grid-area: home;
+        }
+        .compose {
+            grid-area: compose;
+        }
+        .feed {
+            grid-area: feed;
+        }
+
+
+/* LH MENU styling */
+    .menu {
+        grid-area: menu;;
+        display: grid;
+        grid-template-areas:
+        "logo"
+        "menu_buttons"
+        "tweet_button"
+        ".";
+        grid-template-rows: 50px 300px 100px 1fr;
+        gap: 5px;
+    }
+/* RH TOPICS styling */
+    .topics {
+        grid-area: topics;
+        display: grid;
+        grid-template-areas:
+        "search"
+        "happening"
+        "follow"
+        ".";
+        grid-template-rows: 50px 300px 300px 1fr;
+        gap: 5px;
     }
 
-/* LH menu styling */
-.menu {
-    grid-area: menu;
-}
-
-/* main central feed styling */
-.home {
-    grid-area: home;
-}
-.tweet {
-    grid-area: tweet;
-}
-.feed {
-    grid-area: feed;
-}
-
-/* RH topics styling */
-.topics {
-    grid-area: topics;
-    display: grid;
-    grid-template-areas:
-    "search"
-    "happening"
-    "follow"
-    ".";
-    grid-template-rows: 50px 300px 300px 1fr;
-    gap: 5px;
-
-}
-/* topics component styling */
-    /* common styling - RH comps */
-    .search, .happening, .follow {
-        border: dashed, 1px, green;
-        border-radius: 10px;
-        background-color: brown;
-    }
-    .search {
-        grid-area: search;
-        max-height: 50px;
-    }
-    .happening {
-        grid-area: happening;
-    }
-    .follow {
-        grid-area: follow;
-    }
+/* MENU components styling */
+        .logo {
+            grid-area: logo
+        }
+        .menu_buttons {
+            grid-area: menu_buttons
+        }
+        .tweet_button {
+            grid-area: tweet_button
+            }          
+/* TOPICS components styling */
+        .search {
+            grid-area: search;
+        }
+        .happening {
+            grid-area: happening;
+        }
+        .follow {
+            grid-area: follow;
+        }
