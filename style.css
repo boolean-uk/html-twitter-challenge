@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  background-color: rgb(244, 248, 251);
 }
 
 .grid {
@@ -19,9 +20,16 @@
   border: 3px dotted black;
 }
 .index,
-.settings,
+.bottom-bar,
 .twitter-icon {
   border: 3px dotted darkred;
+}
+
+.profile-image,
+.username,
+.settings {
+  border: 2px dotted darkgreen;
+  padding: 3px;
 }
 
 /* Left bar */
@@ -32,7 +40,7 @@
   grid-template-areas:
     "twitter"
     "index"
-    "settings";
+    "bottom-bar";
 }
 
 .twitter-icon {
@@ -46,6 +54,7 @@
   grid-template-columns: 40px 1fr;
   padding: 5px;
   height: 35px;
+  align-items: center;
 }
 
 .start-tweet {
@@ -61,8 +70,17 @@
   background-color: red;
 } */
 
+.bottom-bar {
+  grid-area: bottom-bar;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  padding: 0 5px;
+}
+
 .settings {
-  grid-area: settings;
+  display: grid;
+  justify-self: right;
 }
 
 /* Main feed*/

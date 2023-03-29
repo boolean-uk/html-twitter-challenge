@@ -27,10 +27,10 @@ PLAN
 
 - Column 1: Left Bar
 Create a grid inside with 11 rows. ✅
-The first row needs to have just the 'twitter' icon.
-8 rows will have inside 2 columns. 1 for the icon 1 for the 'description'.
-Then there's the 'button'.
-At the end of the columns I need a row (last one) which will contain a 'profile image, name/username and ... for settings'. (See Discord for reference).
+The first row needs to have just the 'twitter' icon.✅
+8 rows will have inside 2 columns. 1 for the icon 1 for the 'description'.✅
+Then there's the 'button'.✅
+At the end of the columns I need a row (last one) which will contain a 'profile image, name/username and ... for settings'. (See Discord for reference).✅
 
 - Column 2: Main Feed
 I'll need at least 3 rows.
