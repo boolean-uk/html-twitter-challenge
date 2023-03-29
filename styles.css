@@ -1,17 +1,18 @@
 body {
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .grid {
   display: grid;
   grid-template: "left-bar main right-bar";
-  grid-template-columns: 280px 420px 350px;
+  grid-template-columns: 280px 650px 350px;
 }
 
 /* Left-bar */
 .left-bar {
   grid-area: left-bar;
-  background-color: lightblue;
+  background-color: peachpuff;
 
   /* Make a display grid within left-bar
   Rows - will determine how wide the rows are, for example, for option nav needs to be greater than tweet grid  */
@@ -25,7 +26,9 @@ body {
 
 .logo-grid-leftbar {
   grid-area: logo-grid-leftbar;
-  border: 1px dashed black;
+  width: 30px;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 .options-nav {
@@ -50,70 +53,120 @@ body {
 /* Options on left-bar */
 .home {
   grid-area: home;
-  border: 1px dashed black;
-  text-align: center;
+  text-align: left;
+  margin-left: 70px;
 }
 
 .explore {
   grid-area: explore;
-  border: 1px dashed black;
-  text-align: center;
+  text-align: left;
+  margin-left: 70px;
 }
 
 .notifications {
   grid-area: notifications;
-  border: 1px dashed black;
-  text-align: center;
+  text-align: left;
+  margin-left: 70px;
 }
 
 .messages {
   grid-area: messages;
-  border: 1px dashed black;
-  text-align: center;
+  text-align: left;
+  margin-left: 70px;
 }
 
 .bookmarks {
   grid-area: bookmarks;
-  border: 1px dashed black;
-  text-align: center;
+  text-align: left;
+  margin-left: 70px;
 }
 
 .lists {
   grid-area: lists;
-  border: 1px dashed black;
-  text-align: center;
+  text-align: left;
+  margin-left: 70px;
 }
 
 .profile {
   grid-area: profile;
-  border: 1px dashed black;
-  text-align: center;
+  text-align: left;
+  margin-left: 70px;
 }
 
 .more {
   grid-area: more;
-  border: 1px dashed black;
-  text-align: center;
+  text-align: left;
+  margin-left: 70px;
 }
 
 /* Tweet button on left-bar */
 .tweet-grid {
   grid-area: tweet-grid;
-  border: 1px dashed black;
+  justify-self: center;
 }
 
-/* button {
+.tweet-button1 {
   border-radius: 600px;
-} */
+  width: 200px;
+  height: 45px;
+  transform: translateY(100%);
+  background-color: #00acee;
+  color: white;
+  font-size: 15px;
+
+  border: none;
+}
 
 /* Main */
 .main {
   grid-area: main;
-  background-color: palevioletred;
+  background-color: peachpuff;
+
+  /* Make a display grid within the main. The main will have three rows - home-page, posting section and feed section  */
+  display: grid;
+  grid-template-rows: 50px 130px 620px;
+  grid-template-areas:
+    "home-page"
+    "posting-section"
+    "feed";
+}
+
+.home-page {
+  grid-area: home-page;
+  margin-left: 20px;
+}
+
+.posting-section {
+  grid-area: posting-section;
+  border: 1px dashed black;
+}
+
+.whats-happening {
+  margin-left: 100px;
+  margin-top: 35px;
+  font-size: 15px;
+  color: grey;
+}
+.tweet-button2 {
+  height: 35px;
+  width: 70px;
+  margin-left: 560px;
+  margin-top: 1px;
+  border-radius: 600px;
+  background-color: #00acee;
+  color: white;
+  font-size: 15px;
+  border: none;
+}
+
+.feed {
+  grid-area: feed;
+  border: 1px dashed black;
 }
 
 /* Right-bar */
 .right-bar {
   grid-area: right-bar;
-  background-color: coral;
+  background-color: peachpuff;
+  border: 1px black dashed;
 }
