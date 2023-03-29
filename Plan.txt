@@ -23,10 +23,10 @@ CORE
 
 PLAN
 
-1 - Create a grid with 3 columns.
+1 - Create a grid with 3 columns. ✅
 
 - Column 1: Left Bar
-Create a grid inside with 11 rows.
+Create a grid inside with 11 rows. ✅
 The first row needs to have just the 'twitter' icon.
 8 rows will have inside 2 columns. 1 for the icon 1 for the 'description'.
 Then there's the 'button'.

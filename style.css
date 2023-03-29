@@ -1,0 +1,73 @@
+/* General container */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.grid {
+  height: 98vh;
+  margin: 0 150px;
+
+  display: grid;
+  grid-template-columns: 200px 1fr 250px;
+  border: 3px double black;
+}
+
+/* Changes to multiple classes */
+.left-bar,
+.right-bar {
+  border: 3px dotted black;
+}
+.index,
+.settings,
+.twitter-icon {
+  border: 3px dotted darkred;
+}
+
+/* Left bar */
+.left-bar {
+  display: grid;
+  gap: 5px;
+  grid-template-rows: 50px 1fr 50px;
+  grid-template-areas:
+    "twitter"
+    "index"
+    "settings";
+}
+
+.twitter-icon {
+  grid-area: twitter;
+  padding: 5px;
+}
+
+.index {
+  display: grid;
+  grid-area: index;
+  grid-template-columns: 40px 1fr;
+  padding: 5px;
+  height: 35px;
+}
+
+.start-tweet {
+  background-color: darkblue;
+  color: #fff;
+  text-align: center;
+  padding: 7px;
+  margin: 10px;
+  border-radius: 50px;
+  box-shadow: 2px 2px 2px rgb(126, 123, 123);
+}
+/* .start-tweet:hover {
+  background-color: red;
+} */
+
+.settings {
+  grid-area: settings;
+}
+
+/* Main feed*/
+.main-feed {
+  border: 3px dotted red;
+}
+
+/* Right bar*/
