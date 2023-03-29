@@ -5,7 +5,8 @@
 }
 
 /* default overrides */
-.left, .main, .right {
+.left, .main, .right,
+.menu, .home, .tweet, .feed, .topics {
     margin: 5px;
 }
 
@@ -21,7 +22,7 @@
 }
     /* common styling - top grid comps */
     .left, .main, .right {
-        border: dashed 1px red;
+        border: dashed 1px blue;
         background-color:lightseagreen;
     }
     /* individual styling - top grid comps */
@@ -33,18 +34,43 @@
     }
     .main {
         grid-area: main;
+        display: grid;
+        grid-template-areas:
+        "home"
+        "tweet"
+        "feed";
+        grid-template-rows: 50px 100px 1fr;
     }
     .right {
         grid-area: right;
+        display: grid;
+        grid-template-areas: "topics .";
+        grid-template-columns: 4fr 1fr;
+    }
+
+/* subgrid styling */
+    /* common styling - sub grid comps */
+    .menu, .home, .tweet, .feed, .topics {
+        border: dashed 1px red;
     }
 
 /* LH menu styling */
 .menu {
     grid-area: menu;
-    border: dashed 1px blue;
 }
 
 /* main central feed styling */
-
+.home {
+    grid-area: home;
+}
+.tweet {
+    grid-area: tweet;
+}
+.feed {
+    grid-area: feed;
+}
 
 /* RH topics styling */
+.topics {
+    grid-area: topics;
+}
