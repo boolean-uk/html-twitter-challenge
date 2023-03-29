@@ -210,3 +210,6 @@ button:active {
 button:hover{
     cursor: pointer;
 }
+#menu_tweet {
+    background-color: lightsalmon;
+}
