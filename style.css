@@ -49,6 +49,8 @@
     .logo, .menu_buttons, .tweet_button,
     /* main */
     .home, .spark,
+    .pic, .type_here, .media_icons, .publish, 
+    .tweet,
     /* RH */
     .search, .happening, .follow {
         border: dashed 1px purple;
@@ -84,28 +86,49 @@
         grid-area: home_bar;
         display: grid;
         grid-template-areas: "home . spark";
-        grid-template-columns: 50px 1fr 50px;
+        grid-template-columns: 40px 1fr 40px;
         place-content: center;
         place-items: center;
     }
     .compose {
         grid-area: compose;
+        display: grid;
+        grid-template-areas:
+        "pic          type_here"
+        "media_icons    publish";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 2px;
     }
     .feed {
         grid-area: feed;
+        display: grid;
+        grid-auto-rows: max-content;
+        gap: 5px;
     }
+
 /* MAIN components styling */
+    /* HOME BAR */
         .home {
             grid-area: home;
-            min-width: 100%;
-            min-height: 100%;
         }
         .spark {
             grid-area: spark;
-            min-width: 100%;
-            min-height: 100%
         }
-
+    /* COMPOSE */
+        .pic {
+            grid-area: pic;
+        }
+        .type_here {
+            grid-area: type_here;
+        }
+        .media_icons {
+            grid-area: media_icons;
+        }
+        .publish {
+            grid-area: publish;
+        }
+    /* FEED */
 
 /* LH MENU styling */
     .menu {
