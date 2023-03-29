@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    grid-template-rows: 1.5fr 3fr;
+    grid-template-areas:
+        "left top right"
+        "left main right";
+}
+
+.left {
+    grid-area: left;
+    border-right: solid 1px lightskyblue;
+    font-size: 2rem;
+}
+
+.left>ul {
+    list-style: none;
+    gap: 10px;
+}
+
+.left>ul>li:hover {
+    font-size: 2.5rem;
+    color: lightblue;
+    cursor: pointer;
+}
+
+
+.left * a {
+    text-decoration: none;
+    color: inherit
+}
+
+.tweet {
+    background-color: lightblue;
+    color: white;
+    width: 15rem;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.top * .tweet {
+    width: 350px;
+    display: inline;
+}
+
+.top {
+    grid-area: top;
+    border: solid 1px lightskyblue;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.top>div {
+    border: solid 1px lightskyblue;
+}
+
+.right {
+    grid-area: right;
+    display: grid;
+    grid-template-rows: 30px 1fr;
+    row-gap: 15px;
+    margin-left: 25px;
+    margin-right: 40px;
+}
+
+.right>div:first-of-type {
+    display: grid;
+    background-color: lightgray;
+    border-radius: 20px;
+    align-items: center;
+    overflow: hidden;
+}
+
+.right>div+div {
+    background-color: gray;
+    border-radius: 5px;
+    color: black;
+}
+
+.main {
+    grid-area: main;
+    border: solid 1px lightskyblue;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.main>div {
+    border: solid 1px lightskyblue;
+}
+
+input {
+    border: none;
+    background-color: lightgray;
+    outline: none;
+}
