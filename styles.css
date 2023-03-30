@@ -144,7 +144,7 @@ body {
 .whats-happening {
   margin-left: 100px;
   margin-top: 35px;
-  font-size: 15px;
+  font-size: 20px;
   color: grey;
 }
 .tweet-button2 {
@@ -162,6 +162,44 @@ body {
 .feed {
   grid-area: feed;
   border: 1px dashed black;
+
+  /* Making a grid within feed so I can place the user-profile-pic as a column, tweet section username, feed-text and feed icons as rows*/
+
+  display: grid;
+  grid-template-rows: 120px 120px 120px;
+  grid-template-areas:
+    "feed-grid1"
+    "feed-grid2"
+    "feed-grid3";
+}
+
+.feed-grid1 {
+  grid-area: feed-grid1;
+  border: 1px dashed black;
+}
+
+.tweet-section-username {
+  position: relative;
+  left: 200px;
+}
+
+.feed-text {
+  position: relative;
+  left: 200px;
+}
+
+.feed-grid2 {
+  grid-area: feed-grid2;
+  border: 1px dashed black;
+}
+
+.feed-grid3 {
+  grid-area: feed-grid3;
+  border: 1px dashed black;
+}
+
+span {
+  color: grey;
 }
 
 /* Right-bar */
