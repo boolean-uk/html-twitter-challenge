@@ -226,8 +226,11 @@
 }
     .menu_buttons ul li {
         border: solid 1px black;
-        
-
+    }
+    .menu_buttons ul li img {
+        align-self: center;
+        height:20px;
+        padding: 0 10px 0 0;
     }
 
 
@@ -237,6 +240,8 @@ button {
     border: none;
     border-radius: 15px;
     width: fit-content;
+    display:inline-flex;
+    align-items: center;
 }
 button:focus {
     background-color: aquamarine;
