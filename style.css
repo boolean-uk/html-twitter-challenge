@@ -392,10 +392,11 @@ div {
 
     object-fit: container;
     height: auto;
-    width: 60%;
+    width: 40%;
     align-self: center;
     justify-self: center;
 }
+
 
 .home>div+div>svg>path {
     fill: #1DA1F2;
@@ -403,7 +404,7 @@ div {
 
 .user-name-and-at {
     display: grid;
-    grid-template-columns: 0.15fr 0.2fr;
+    grid-template-columns: 0.095fr 0.4fr;
 }
 
 .user-name-and-at>div,
@@ -435,8 +436,8 @@ div {
 }
 
 .user-options>.home-button>svg {
-    height: 80%;
-    width: 80%;
+    height: 13px;
+        width: auto;
 }
 
 .user-options>.home-button {
@@ -590,9 +591,31 @@ div {
     }
 
     #media-two>svg {
-        width: 0%
-    }
-}
+        width: 0%;
+        }
+        
+        /* .left-menu {
+                                                                                                                                                                                                                                                                                                                                                    display: grid;
+                                                                                                                                                                                                                                                                                                                                                    grid-template-columns: 1fr;
+                                                                                                                                                                                                                                                                                                                                                } */
+        
+        
+        .explore,
+        .explore.home {
+            width: 0%;
+            height: 0%;
+            font-size: 0px;
+        
+        }
+        
+        .explore-two {
+            justify-self: left;
+            margin-left: 0px;
+            height: 0px;
+            background-color: white;
+        }
+        
+        }
 
 
 @media screen and (min-width: 0px) and (max-width:800px) {
@@ -629,4 +652,8 @@ div {
     #media-two>svg {
         width: 0%
     }
+.left-menu {
+    display: grid;
+    grid-template-columns: 1fr;
+}
 }
