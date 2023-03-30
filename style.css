@@ -50,10 +50,11 @@ div {
 
 .main {
     grid-area: main;
-    background-color: ;
+
     display: grid;
     grid-template-rows: 0.25fr 0.6fr 3fr;
     row-gap: 5px;
+    
 }
 
 .right {
@@ -61,7 +62,7 @@ div {
     background-color: white;
     display: grid;
     grid-template-rows: 0.15fr 3fr;
-    margin-right: 20%;
+
 }
 
 .footer {
@@ -75,10 +76,7 @@ div {
 /* left grid structure */
 
 .left>div {
-    /* border: dotted 3px black; */
     margin: 10px;
-
-    /* margin-left: 20%; */
 }
 
 .left-menu>div {
@@ -106,8 +104,6 @@ div {
 
 .profile-menu>div {
     margin: 5px;
-
-
 }
 
 .name-tag {
@@ -142,18 +138,24 @@ div {
 
 
 
-.home-button {
+.home-button,
+.home-button.two {
     display: grid;
-    grid-template-columns: 0.15fr 1fr;
+    grid-template-columns: 0.2fr 1fr;
 
+}
+.home-button.two>button {
+    justify-content: left;
 }
 
 .explore.home {
+    display: grid;
     font-size: 17px;
     color: #1DA1F2;
     height: 60%;
     align-self: center;
     align-content: center;
+    justify-self: left;
     text-align: left;
     background-color: #FFFFFF;
     border: none;
@@ -161,6 +163,11 @@ div {
     font-weight: 600px;
 }
 
+.home-button.two {
+    display: grid;
+
+
+}
 
 
 .explore,
@@ -202,11 +209,23 @@ div {
     font-weight: 500;
 }
 
+#tweet-two {
+    background-color: #C1DEF7;
+}
 .explore-two:hover {
     background-color: white;
     color: #1DA1F2;
     border: solid 2px #1DA1F2;
 
+}
+.tweet-two .two {
+    background-color: #C1DEF7;
+}
+
+.tweet-two .two {
+    background-color: white;
+    color: #1DA1F2;
+    border: solid 2px #1DA1F2;
 }
 
 
@@ -243,7 +262,9 @@ div {
     display: grid;
     grid-template-columns: 95% 5%;
     align-content: center;
-    background-color: white
+    background-color: white;
+        border-radius: 20px;
+        padding-left: 15px;
 }
 
 .home>div {
@@ -257,6 +278,7 @@ div {
     display: grid;
     grid-template-columns: 5% 95%;
     background-color: white;
+    border-radius: 20px;
 }
 
 .picture {
@@ -310,7 +332,7 @@ div {
 }
 
 .post-icons>div>svg path {
-    fill: #1DA1F2
+    fill: #C1DEF7;
 }
 
 .post-icons>div>svg {
@@ -326,7 +348,7 @@ div {
 .tweets {
     display: grid;
     background-color: white;
-
+    border-radius: 20px;
 }
 
 .tweets>div {
@@ -436,16 +458,23 @@ div {
 
 /* right grid structure */
 
+
 .right>div {
     /* border: dotted 3px black; */
     margin: 10px;
+    background-color: #F7F9FA;
+        border-radius: 20px;
+        margin-right: 20%;
 }
 
 .right>div>input {
     width: 100%;
     height: 100%;
-    border-radius: 20px;
-    font-size: 17px;
+    border-radius: 25px;
+        font-size: 12px;
+        background-color: #F7F9FA;
+        padding: 17px;
+        border: 0;
 }
 
 
@@ -495,6 +524,15 @@ div {
 
 }
 
+#media {
+    width: 20%;
+    height: auto;
+}
+
+#media-two>svg {
+    width: auto;
+    height: 30%;
+}
 /* footer message grid structure */
 
 
