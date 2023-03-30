@@ -195,7 +195,14 @@
 /* MENU components styling */
         .logo {
             grid-area: logo;
+            padding: 0 0 0 10px;
         }
+            #twitter_badge {
+                width: 25px;
+                height: 25px;
+                object-fit:contain;
+                overflow: hidden;
+            }
         .menu_buttons {
             grid-area: menu_buttons;
             place-self: center;
