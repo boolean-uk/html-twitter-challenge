@@ -3,239 +3,441 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 
 body {
-    font-family: sans-serif;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Header */
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 275px 600px 390px 1fr;
+    grid-template-areas: ". header-logo home-bar search .";
+    grid-template-rows: 50px;
+    align-items: center;
+    justify-items: center;
+}
+
+/* Header Logo */
+
+.header-logo {
+    grid-area: header-logo;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    min-width: 220px;
     width: 100%;
-    height: 100vh;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 1fr 275px 990px 1fr;
-    grid-template-areas: ". left main .";
-    
+    height: 100%;
+    padding-left: 12px;
+    border-right: solid 1px lightgray;
 }
 
-.left {
+.twitter-logo {
+    width: 30px;
+}
+
+/* Header Home Button */
+
+.home-bar {
+    grid-area: home-bar;
+    width: 100%;
+    height: 100%;
+    padding-left: 5px;
+    display: grid;
+    padding-left: 10px;
+    border-right: solid 1px lightgray;
+    border-bottom: solid 1px lightgray;
+}
+
+.home-button {
+    display: grid;
+    align-items: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* Header Search Area */
+
+.search {
+    grid-area: search;
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    /* border: solid 1px red; */
+    padding: 12px;
+    grid-gap: 10px;
+    background-color: lightgrey;
+    border-radius: 100px;
+}
+
+.search-bar {
+    width: 280px;
+    border: none;
+    background-color: lightgray;
+    font-size: 16px;
+}
+
+.search-bar:focus {
+    outline: none;
+}
+
+
+/* Main Container */
+
+.main-container {
+    display: grid;
+    grid-template-columns: 1fr 275px 600px 390px 1fr;
+    grid-template-areas: ". left main right .";
+    grid-template-rows: auto;
+    /* border: solid 1px red; */
+    height: 100%;
+}
+
+/* Left Column */
+
+.left-column {
     grid-area: left;
-    /* border: solid 1px\ red; */
     display: grid;
-    /* grid-template-rows: repeat(auto, auto); */
-    align-content: flex-start;
-    /* grid-gap: 12px; */
-    grid-template-areas:
-    "navigation"
-    "profile";
-    grid-template-rows: 1fr auto;
-}
-
-
-.left > .navigation > img:nth-child(1) {
-    height: 40px;
-    padding-left: 15px;
-    padding-top: 15px;
-}
-
-.navigation {
-    grid-area: navigation;
+    grid-template-rows: auto auto 1fr;
+    height: 105%;
+    padding-top: 10px;
+    border-right: solid 1px lightgrey;
+    /* border-bottom: solid 1px blue; */
 }
 
 .nav-button {
     display: grid;
-    grid-template-columns: auto 1fr;
-    grid-gap: 10px;
-    place-items: center;
-    border-radius: 30px;
-    height: 50.25;
+    grid-template-columns: 26px 1fr;
+    align-items: center;
+    padding: 12px 24px 12px 12px;
+    margin-bottom: 10px;
     width: fit-content;
-    padding: 18px 15px;
-  }
-  
-  .nav-icon {
-    height: 25px;
-  }
-  
-  .nav-text {
-    color: black;
-    font-size: 18px;
-  }
+    border-radius: 50px;
+    grid-gap: 20px;
+    margin-left: 5px;
+}
 
-  .active-nav {
-    font-weight: 800;
-  }
+.nav-text > p {
+    font-size: 20px;
+}
 
-  a {
-    text-decoration: none;
-  }
+.nav-hover:hover .nav-button {
+    background-color: lightgrey;
+}
 
-  .tweet-button {
-    width: 233px;
-    height: 52px;
+.left-home > .nav-text > p {
+    font-weight: bold;
+}
+
+.left-tweet {
     display: grid;
     place-items: center;
+    width: 233px;
+    height: 52px;
     background-color: #1d9bf0;
     border-radius: 26px;
     margin-top: 10px;
-  }
+}
 
-  .tweet-button p {
+.tweet-button-text {
     font-size: 16px;
     font-weight: 700;
     color: white;
-  }
+}
 
-  .tweet-button:hover {
+.left-tweet:hover {
     background-color: #1a8cd8;
-  }
+}
 
-  a:hover .nav-button {
-    background-color: lightgrey;
-  }
+/* Left Profile */
 
 .profile {
-    grid-area: profile;
-    height: 65px;
     display: grid;
-    grid-template-columns: 40px 1fr 40px;
-    grid-template-areas: "profile-picture name-details profile-menu";
-    align-items: center;
-    padding: 0 12px;
-    grid-gap: 20px;
-    margin-bottom: 10px;
+    grid-template-areas:
+    "pic d-name dots"
+    "pic u-name dots";
+    grid-template-columns: 60px 1fr 1fr;
+    grid-template-rows: 20px 20px;
+    position: fixed;
+    bottom: 10px;
+    width: 240px;
+    border-radius: 40px;
+    padding: 12px;
+}
+
+.profile:hover {
+    background-color: lightgrey;
 }
 
 .profile-picture {
-    grid-area: profile-picture;
+    grid-area: pic;
     border-radius: 50%;
-    height: 40px;
+    overflow: hidden;
     width: 40px;
 }
 
-.name-details > .username {
-    font-size: 14px;
+.profile-picture > img {
+    width: 40px;
 }
 
-.profile > .profile-menu {
-    font-weight: 1000;
+.display-name {
+    grid-area: d-name;
 }
 
-.main {
+.user-name {
+    grid-area: u-name;
+}
+
+.dot-menu {
+    grid-area: dots;
+    justify-self: right;
+    align-self: center;
+}
+
+.dot-menu > img {
+    width: 20px;
+}
+
+
+/* Middle Column */
+
+.middle-column {
     grid-area: main;
+    /* max-height: 100%; */
+    width: 100%;
+    height: 90vh;
     /* border: solid 1px red; */
     display: grid;
-    grid-template-areas: "tweets right-sidebar";
-    grid-template-columns: 600px 1fr;
-    height: 100vh;
-}
-
-.tweets {
-    grid-area: tweets;
-    /* border: solid 1px green; */
-    display: grid;
-    grid-template-areas:
-    "main-header"
-    "feed";
-    height: 100vh;
-}
-
-.main-header {
-    grid-area: main-header;
-    /* border: solid 1px green; */
-    height: 106px;
-    position: fixed;
-    width: 600px;
-    z-index: 1;
-    background-color: rgba(255, 255, 255, 0.9);
-    display: grid;
-    grid-template-areas:
-    "home   home"
-    "for-you following";
-    grid-template-rows: 50% 50%;
-    grid-template-columns: 50% 50%;
-    border: solid 0.5px rgba(211, 211, 211, 0.5);
-}
-
-.home {
-    grid-area: home;
-    font-size: 20px;
-    padding: 14px;
-}
-
-.for-you, .following {
-    text-align: center;
-    align-self: end;
-    padding: 20px;
-}
-
-.for-you:hover, .following:hover {
-    background-color: lightgrey;
-}
-
-.for-you {
-    border-bottom: solid 5px #1d9bf0;
-    font-weight: 600;
-}
-
-
-.feed {
-    grid-area: feed;
-    grid-template-rows: repeat(auto, 400px);
-    overflow: hidden;
-    overflow-y: scroll;
-    padding-top: 106px;
+    grid-template-columns: auto;
+    grid-template-rows: auto 1fr;
+    border-right: solid 1px lightgrey;
 }
 
 .new-tweet {
-    border: solid 1px red;
-    height: 157px;
     display: grid;
-    grid-template-columns: 48px 1fr 48px;
-    grid-template-rows: 100px 1fr;
+    grid-template-areas:
+    "pic tweet tweet tweet tweet tweet tweet"
+    ". media gif poll emoji schedule button";
+    grid-template-columns: 60px 20px 20px 20px 20px 20px 1fr;
+    grid-template-rows: 52px 48px;
+    border-bottom: solid 5px lightgray;
+    align-items: center;
     grid-gap: 10px;
-    grid-template-areas: 
-    "profile-picture-large tweet-input tweet-input"
-    ". tweet-controls main-tweet-button";
-    padding: 12px 12px 0 12px;
+    padding: 8px 16px;
 }
 
-.a-tweet {
-    border: solid 1px black;
-    height: 400px;
-}
-
-.right-sidebar {
-    grid-area: right-sidebar;
-    border: solid 1px green;
-}
-
-.profile-picture-large {
-    /* grid-area: profile-picture; */
+.tweet-profile-picture {
+    grid-area: pic;
     border-radius: 50%;
-    height: 48px;
-    width: 48px;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
 }
 
-.tweet-input {
-    grid-area: tweet-input;
+.tweet-profile-picture > img {
+    width: 50px;
 }
 
-.tweet-input > input {
+.icon-container:hover {
+    scale: 1.25;
+}
+
+.tweet-text {
+    grid-area: tweet;
+    /* border-bottom: solid 0.5px lightgrey; */
+}
+
+.tweet-text-input {
     width: 100%;
-    height: 100%;
+    height: auto;
+    border: none;
+    font-size: 24px;
+    
 }
 
-.tweet-controls {
-    grid-area: tweet-controls;
+.tweet-text-input:focus {
+    outline: none;
+}
+
+.insert-media {
+    grid-area: media;
+}
+
+.insert-gif {
+    grid-area: gif;
+}
+
+.insert-poll {
+    grid-area: poll;
+}
+
+.insert-emoji {
+    grid-area: emoji;
+}
+
+.insert-schedule {
+    grid-area: schedule;
+}
+
+.tweet-button-container {
+    grid-area: button;
+    justify-self: right;
+    background-color: #8ecdf8;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+.new-tweet-button > p {
+    color: white;
+    font-weight: bold;
+}
+
+/* Tweet Feed */
+
+.tweet-feed {
+    width: 100%;
     display: grid;
-    grid-template-columns: repeat(5,40px);
-    align-items: left;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, min-content);
+
 }
 
-.main-tweet-button {
-    grid-area: main-tweet-button;
+.single-tweet {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 25px min-content 35px;
+    grid-template-areas:
+    "pic toptweet"
+    "pic middletweet"
+    "pic bottomtweet";
+    width: 100%;
+    column-gap: 10px;
+    border-bottom: solid 1px lightgrey;
 }
 
-.tweet-control-button {
-    height: 15px;
-    background-color: palegreen;
+.tweet-feed-profile-picture {
+    grid-area: pic;
+    padding-left: 10px;
+}
+
+.tweet-feed-profile-picture > img {
+    width: 45px;
+    height: 45px;
+    object-fit: cover;
+    border-radius: 25px;
+}
+
+.tweet-names {
+    grid-area: toptweet;
+    display: grid;
+    grid-template-columns: auto auto auto auto 1fr;
+    grid-template-rows: auto;
+}
+
+.tweet-display-name > p {
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.tweet-user-name > p {
+    font-size: 13px;
+    padding-left: 10px;
+    color: rgb(177, 177, 177);
+}
+
+.tweet-divider-dot > p {
+    font-size: 8px;
+    padding-left: 5px;
+    color: rgb(177, 177, 177);
+}
+
+.tweet-divider-dot {
+    display: grid;
+    align-items: center;
+}
+
+.tweet-time > p {
+    font-size: 13px;
+    padding-left: 5px;
+    color: rgb(177, 177, 177);
+}
+
+/* Tweet Text */
+
+.tweet-body {
+    grid-area: middletweet;
+}
+
+.tweet-body-text {
+    padding: 5px 10px 30px 10px;
+}
+
+.tweet-body-text > p {
+    font-size: 15px;
+}
+
+/* Tweet Icons */
+
+.tweet-icons {
+    grid-area: bottomtweet;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.tweet-icon {
+    height: 20px;
+    width: 20px;
+    object-fit: contain;
+}
+
+.tweet-icon:hover {
+    transform: scale(1.2);
+}
+
+/* Right Column */
+
+.right-column {
+    grid-area: right;
+    padding: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto auto 1fr;
+    gap: 10px;
+    justify-items: center;
+}
+
+.whats-happening {
+    padding: 10px;
+    display: grid;
+    width: 100%;
+    height: auto;
+    background-color: rgb(233, 233, 233);
+    border-radius: 15px;
+}
+
+.whats-happening > p {
+    padding-bottom: 10px;
+    border-bottom: solid 1px rgb(224, 224, 224);
+}
+
+.who-follow {
+    padding: 10px;
+    display: grid;
+    width: 100%;
+    height: auto;
+    background-color: rgb(233, 233, 233);
+    border-radius: 15px;
+}
+
+.who-follow > p {
+    padding-bottom: 10px;
+    border-bottom: solid 1px rgb(224, 224, 224);
 }
