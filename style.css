@@ -20,7 +20,12 @@
         .search, .happening, .follow {
     margin: 5px;
 }
-
+strong, em, b, img, h1, h2 {
+    background-color: transparent;
+}
+h2 {
+    font-size: medium;
+}
 /* overall grid layout */
 .grid {
     display: grid;
@@ -151,7 +156,7 @@
             width: 40px;
             padding: 0;
         }
-            #user, .pic img {
+            #user, #user2, .pic img {
                 height: 40px;
                 width: 40px;
                 border-radius: 50%;
@@ -164,12 +169,73 @@
         }
         .media_icons {
             grid-area: media_icons;
+            display: grid;
+            padding: 0;
+            grid-template-columns: repeat(5, 20px);
+            align-content: center;
+            justify-items: center;
+            gap: 5px;
         }
+            .media_icons img {
+                height: 20px;
+                width: 20px;
+                object-fit: contain;
+                place-self: start;
+                margin: 5px;
+                position: relative;
+                left: 40px;
+            }
         .publish {
             grid-area: publish;
             justify-self: right;
         }
     /* FEED */
+    /* TWEET styling */
+        /* outer grid */
+        .tweet {
+            display: grid;
+            grid-template-areas: "user tweet_content";
+            grid-template-columns: 50px 1fr;
+            grid-template-rows: minmax(50px, 250px);
+        }
+            #user {
+                grid-area: user;
+            }
+            
+            .tweet_content {
+                grid-area: tweet_content;
+                display: grid;
+                grid-template-areas: 
+                "username"
+                "content"
+                "interact";
+                grid-template-rows: 25px 1fr 25px;
+                gap: 2px;
+            }
+                .username, .content, .interact {
+                    border: red 1px solid;
+                }
+                .username {
+                    grid-area: username;
+                    display: inline-flex;
+                    align-items: center;
+                }
+                .content {
+                    grid-area: content;
+                }
+                .interact {
+                    grid-area: interact;
+                    padding: 0;
+                    display: grid;
+                    grid-auto-flow: column;
+                    align-content: center;
+                    justify-items: center;
+                }
+                    .interact img {
+                        height: 10px;
+                        width: 10px;
+                        object-fit: contain;
+                    }
 
 /* LH MENU styling */
     .menu {
@@ -195,7 +261,27 @@
         grid-template-rows: 50px 300px 300px 1fr;
         gap: 5px;
     }
-
+        .search {
+            display: grid;
+            grid-template-areas: "mag bar .";
+            grid-template-columns: 20px 100px 1fr;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+            background-color: lightsteelblue;
+        }
+            .search img {
+                grid-area: mag;
+                width: 20px;
+                height: 20px;
+            }
+            .search h3 {
+                grid-area: bar;
+                background-color: transparent;
+                font-size: small;
+            }
+            
 /* MENU components styling */
         .logo {
             grid-area: logo;
@@ -244,7 +330,6 @@
         padding: 0 10px 0 0;
     }
 
-
 /* BUTTON styling */
 button {
     background-color: lightskyblue;
@@ -267,53 +352,6 @@ button:hover{
 #menu_tweet {
     background-color: lightsalmon;
 }
-
-/* TWEET styling */
-    /* outer grid */
-    .tweet {
-        display: grid;
-        grid-template-areas: "user tweet_content";
-        grid-template-columns: 50px 1fr;
-        grid-template-rows: minmax(50px, 250px);
-    }
-        #user {
-            grid-area: user;
-        }
-        .tweet_content {
-            grid-area: tweet_content;
-            display: grid;
-            grid-template-areas: 
-            "username"
-            "content"
-            "interact";
-            grid-template-rows: 25px 1fr 25px;
-            gap: 2px;
-        }
-            .username, .content, .interact {
-                border: red 1px solid;
-            }
-            .username {
-                grid-area: username;
-                display: inline-flex;
-                align-items: center;
-            }
-            .content {
-                grid-area: content;
-            }
-            .interact {
-                grid-area: interact;
-                padding: 0;
-                display: grid;
-                grid-auto-flow: column;
-                align-content: center;
-                justify-items: center;
-            }
-                .interact img {
-                    height: 10px;
-                    width: 10px;
-                    object-fit: contain;
-                }
-
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 800px) {
