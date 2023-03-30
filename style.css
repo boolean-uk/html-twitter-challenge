@@ -24,7 +24,7 @@ body {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 200px 1fr 300px;
-  /* grid-template-rows: 100vh; */
+  column-gap: 10px;
   margin-left: 100px;
   margin-right: 100px;
   height: auto;
@@ -110,6 +110,10 @@ body {
   color: white;
 }
 
+/* #home { */
+/*   display: none; */
+/* } */
+
 .main {
   display: grid;
   grid-template-rows: 50px 150px 1fr;
@@ -138,7 +142,8 @@ body {
 
 .main .compose-grid > .compose-post {
   display: grid;
-  grid-template-rows: 1fr 1px 1fr;
+  grid-template-rows: 1fr 1fr;
+  border: none;
 }
 
 .main .compose-grid > .compose-post > .post-attachments {
