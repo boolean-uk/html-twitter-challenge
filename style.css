@@ -1,6 +1,6 @@
 * {
     scroll-behavior: smooth;
-    transition: ease all .1s;
+
 }
 
 body {
@@ -51,7 +51,6 @@ div {
 
 .main {
     grid-area: main;
-
     display: grid;
     grid-template-rows: 0.25fr 0.6fr 3fr;
     row-gap: 5px;
@@ -219,7 +218,7 @@ div {
     border: solid 2px #1DA1F2;
 
 }
-.tweet-two .two {
+.tweet-two.two {
     background-color: #C1DEF7;
 }
 
@@ -405,7 +404,7 @@ div {
 
 .user-name-and-at {
     display: grid;
-    grid-template-columns: 0.095fr 0.4fr;
+    grid-template-columns: 0.2fr 0.4fr;
 }
 
 .user-name-and-at>div,
@@ -615,6 +614,9 @@ div {
             height: 0px;
             background-color: white;
         }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                * {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    transition: ease all .25s;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                }
         
         }
 
@@ -657,4 +659,7 @@ div {
     display: grid;
     grid-template-columns: 1fr;
 }
+ * {
+     transition: ease all .25s;
+ }
 }
