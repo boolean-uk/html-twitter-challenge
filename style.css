@@ -36,10 +36,25 @@ body {
   grid-auto-flow: column;
   justify-content: left;
   align-items: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.navigation > .tweet-button {
+  padding: 0;
+}
+
+.navigation > div + div:hover {
+  background-color: grey;
+}
+
+.navigation > div + div + div + div + div + div + div + div + div + div + div:hover {
+  z-index: -1;
+  background-color: white;
 }
 
 .navigation img {
-  margin: 9px;
+  margin-right: 9px;
   width: 30px;
 }
 
