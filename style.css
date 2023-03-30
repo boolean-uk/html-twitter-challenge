@@ -246,6 +246,20 @@ button:hover{
         display: none;
     }
 }
-@media screen and (max-width: 400px) {
-    
+@media screen and (max-width: 500px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 100vh;
+        grid-template-areas: "main";
+        border: dotted 1px black;
+        gap: 5px;
+    }
+    .right {
+        display: none;
+    }
+    .left {
+        display: none;
+        max-width: none;
+    }
 }
