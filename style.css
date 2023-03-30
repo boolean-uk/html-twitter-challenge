@@ -48,12 +48,29 @@ body {
 }
 
 .navigation > div + div:hover {
-  background-color: #EEE
+  background-color: #EEE;
 }
 
-.navigation > div + div + div + div + div + div + div + div + div + div + div:hover {
+.navigation > div + div:active{
+  background-color: #CCC;
+}
+
+.navigation > div + div + div + div + div + div + div + div + div + div + div {
   z-index: -1;
+}
+.navigation > div + div + div + div + div + div + div + div + div + div + div:hover {
   background-color: white;
+}
+.navigation > div + div + div + div + div + div + div + div + div + div + div:active {
+  background-color: white;
+}
+
+.navigation .tweet-button:hover {
+  background-color: #2D92EB;
+
+}
+.navigation .tweet-button:active {
+  background-color: #4870AB;
 }
 
 .navigation img {
