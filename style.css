@@ -80,7 +80,9 @@
         grid-template-areas: "topics .";
         grid-template-columns: 4fr 1fr;
     }
-
+    .left, .right {
+        min-width: 200px;
+    }
 /* MAIN central feed grids styling */
     .home_bar {
         grid-area: home_bar;
@@ -90,17 +92,6 @@
         place-content: center;
         place-items: center;
     }
-    /* .compose {
-        grid-area: compose;
-        display: grid;
-        grid-template-areas:
-        "pic          type_here" 
-        "media_icons    publish" ;
-        grid-auto-columns: 40px 1fr;
-        grid-template-rows: 40px 40px;
-        gap: 2px;
-    } */
-
     .compose {
         display: grid;
         grid-template:
@@ -123,8 +114,6 @@
             grid-template-columns: 1fr 100px;
             padding: 2px;
         }
-
-
     .feed {
         grid-area: feed;
         display: grid;
@@ -166,7 +155,7 @@
         "menu_buttons"
         "tweet_button"
         ".";
-        grid-template-rows: 50px 300px 100px 1fr;
+        grid-template-rows: 50px 350px 50px 1fr;
         gap: 5px;
     }
 /* RH TOPICS styling */
@@ -188,6 +177,7 @@
         }
         .menu_buttons {
             grid-area: menu_buttons;
+            place-self: center;
         }
         .tweet_button {
             grid-area: tweet_button;
@@ -244,5 +234,18 @@ button:hover{
 
 /* MEDIA QUERIES */
 @media screen and (max-width: 800px) {
-
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-auto-rows: 100vh;
+        grid-template-areas: "left main";
+        border: dotted 1px black;
+        gap: 5px;
+    }
+    .right {
+        display: none;
+    }
+}
+@media screen and (max-width: 400px) {
+    
 }
