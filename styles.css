@@ -7,6 +7,7 @@ body {
   display: grid;
   grid-template: "left-bar main right-bar";
   grid-template-columns: 280px 650px 350px;
+  /* border: 1px dashed black; */
 }
 
 /* Left-bar */
@@ -31,9 +32,13 @@ body {
   margin-left: 20px;
 }
 
+.logo-grid-leftbar:hover {
+  cursor: pointer;
+}
+
 .options-nav {
   grid-area: options-nav;
-  border: 1px dashed black;
+  /* border: 1px dashed black; */
 
   /* Make a grid within options-nav for the options */
 
@@ -57,10 +62,18 @@ body {
   margin-left: 70px;
 }
 
+.home:hover {
+  cursor: pointer;
+}
+
 .explore {
   grid-area: explore;
   text-align: left;
   margin-left: 70px;
+}
+
+.explore:hover {
+  cursor: pointer;
 }
 
 .notifications {
@@ -69,10 +82,18 @@ body {
   margin-left: 70px;
 }
 
+.notifications:hover {
+  cursor: pointer;
+}
+
 .messages {
   grid-area: messages;
   text-align: left;
   margin-left: 70px;
+}
+
+.messages:hover {
+  cursor: pointer;
 }
 
 .bookmarks {
@@ -81,10 +102,18 @@ body {
   margin-left: 70px;
 }
 
+.bookmarks:hover {
+  cursor: pointer;
+}
+
 .lists {
   grid-area: lists;
   text-align: left;
   margin-left: 70px;
+}
+
+.lists:hover {
+  cursor: pointer;
 }
 
 .profile {
@@ -93,10 +122,18 @@ body {
   margin-left: 70px;
 }
 
+.profile:hover {
+  cursor: pointer;
+}
+
 .more {
   grid-area: more;
   text-align: left;
   margin-left: 70px;
+}
+
+.more:hover {
+  cursor: pointer;
 }
 
 /* Tweet button on left-bar */
@@ -117,6 +154,9 @@ body {
   border: none;
 }
 
+.tweet-button1:hover {
+  cursor: pointer;
+}
 /* Main */
 .main {
   grid-area: main;
@@ -136,9 +176,21 @@ body {
   margin-left: 20px;
 }
 
+.home-page:hover {
+  cursor: pointer;
+}
+
 .posting-section {
   grid-area: posting-section;
-  border: 1px dashed black;
+  /* border: 1px dashed black; */
+}
+
+.profile-picture {
+  width: 50px;
+  position: absolute;
+  bottom: 875px;
+  right: 1250px;
+  left: 350px;
 }
 
 .whats-happening {
@@ -147,7 +199,7 @@ body {
   font-size: 20px;
   color: grey;
 
-  /* Making inside 'what's happening a grid to fit the icons in */
+  /* Making grid inside 'what's happening a grid to fit the icons in */
   display: grid;
   grid-template-columns: 300px;
   grid-template-areas: uploading;
@@ -160,24 +212,65 @@ body {
 }
 .media-upload {
   width: 30px;
-  margin-left: 140px;
-  margin-bottom: 100px;
+  margin-left: 143px;
+}
+
+.media-upload:hover {
+  cursor: pointer;
 }
 
 .gif-upload {
   width: 25px;
-  position: absolute;
-  left: 470px;
-  top: 123px;
+  position: relative;
+  left: 190px;
+  bottom: 30px;
+}
+
+.gif-upload:hover {
+  cursor: pointer;
+}
+
+.poll-upload {
+  width: 25px;
+  position: relative;
+  left: 230px;
+  bottom: 58px;
+}
+
+.poll-upload:hover {
+  cursor: pointer;
+}
+
+.emoji-upload {
+  width: 25px;
+  position: relative;
+  left: 270px;
+  bottom: 85px;
+}
+
+.emoji-upload:hover {
+  cursor: pointer;
+}
+
+.schedule-upload {
+  width: 25px;
+  position: relative;
+  left: 310px;
+  bottom: 112px;
+}
+
+.schedule-upload:hover {
+  cursor: pointer;
 }
 
 .tweet-button2 {
-  /* height: 35px;
+  /* Positioning */
+  position: relative;
+  left: 550px;
+  bottom: 140px;
+  /* Design */
+  height: 35px;
   width: 70px;
-  position: absolute; */
-
-  /* margin-left: 560px;
-  margin-top: -50px; */
   border-radius: 600px;
   background-color: #00acee;
   color: white;
@@ -185,9 +278,13 @@ body {
   border: none;
 }
 
+.tweet-button2:hover {
+  cursor: pointer;
+}
+
 .feed {
   grid-area: feed;
-  border: 1px dashed black;
+  /* border: 1px dashed black; */
 
   /* Making a grid within feed so I can place the user-profile-pic as a column, tweet section username, feed-text and feed icons as rows*/
 
@@ -199,14 +296,27 @@ body {
     "feed-grid3";
 }
 
+.feed-grid1-profile-pic {
+  width: 50px;
+  position: relative;
+  bottom: 345px;
+  left: 80px;
+}
 .feed-grid1 {
   grid-area: feed-grid1;
-  border: 1px dashed black;
+  /* border: 1px dashed black; */
 }
 
 .tweet-section-username {
   position: relative;
   left: 150px;
+}
+
+.feed-grid2-profile-pic {
+  width: 50px;
+  position: relative;
+  bottom: 315px;
+  left: 80px;
 }
 
 .feed-text {
@@ -216,12 +326,19 @@ body {
 
 .feed-grid2 {
   grid-area: feed-grid2;
-  border: 1px dashed black;
+  /* border: 1px dashed black; */
+}
+
+.feed-grid3-profile-pic {
+  width: 50px;
+  position: relative;
+  bottom: 280px;
+  left: 80px;
 }
 
 .feed-grid3 {
   grid-area: feed-grid3;
-  border: 1px dashed black;
+  /* border: 1px dashed black; */
 }
 
 span {
@@ -232,7 +349,7 @@ span {
 .right-bar {
   grid-area: right-bar;
   background-color: #f5f8fa;
-  border: 1px black dashed;
+  /* border: 1px black dashed; */
 
   /* Making a grid within the right bar called right bar searches, within that, having 3 rows called search twitter bar, search what's happening and who to follow */
 
