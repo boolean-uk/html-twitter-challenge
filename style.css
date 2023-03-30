@@ -70,7 +70,7 @@ header,
   margin-right: 12px;
   padding-left: 5px;
 }
-nav button:nth-child(1) img {
+nav button:nth-child(1) > img {
   background-color: yellow;
   border-radius: 50%;
 }
@@ -78,18 +78,6 @@ nav button {
   font-size: 20px;
   font-weight: bold;
 }
-nav p {
-  position: absolute;
-  z-index: -1;
-  font-size: 21px;
-  font-weight: bolder;
-  top: 80px;
-  left: 155px;
-}
-#home {
-  color: yellow;
-}
-
 .tweet button {
   width: 80%;
   height: 50px;
@@ -228,6 +216,11 @@ span {
 .whats-happening > h3 {
     font-weight: bolder;
 }
+audio {
+  position: relative;
+  bottom: 60px;
+  left: 100px;
+}
 .showmore {
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -251,11 +244,11 @@ span {
     gap: 0;
     overflow: scroll;
 }
-.effect:hover, #home:hover {
+.effect:hover{
     cursor: pointer;
     color: red;
 }
-.effect:active, #home:active {
+.effect:active{
     font-size: 18px;
     color: blue;
 }
