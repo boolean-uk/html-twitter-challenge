@@ -42,8 +42,12 @@ header,
     bottom: 25px;
     right: 20px;
 }
-#legolas-image {
+.legolas-image {
     width: 80%;
+}
+.gandalf {
+    right: 41px;
+    margin-bottom: 10px;
 }
 #refresh {
     justify-content: end;
@@ -181,7 +185,7 @@ span {
     place-self: center end;
 }
 .content {
-    grid-template-rows: repeat(auto-fit, minmax(150px, auto));
+    grid-template-rows: repeat(auto-fit, 1fr);
     overflow: scroll;
 }
 .logo-grid > .logo-content {
