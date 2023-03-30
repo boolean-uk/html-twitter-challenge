@@ -118,6 +118,7 @@
     /* COMPOSE */
         .pic {
             grid-area: pic;
+            justify-self: left;
         }
         .type_here {
             grid-area: type_here;
@@ -127,6 +128,7 @@
         }
         .publish {
             grid-area: publish;
+            justify-self: right;
         }
     /* FEED */
 
@@ -212,4 +214,10 @@ button:hover{
 }
 #menu_tweet {
     background-color: lightsalmon;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 800px) {
+
 }
