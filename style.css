@@ -1,0 +1,273 @@
+* {
+    font-family: sans-serif;
+}
+body {
+  margin: 0;
+}
+.grid {
+  grid-template-columns: 300px 1fr 400px;
+  grid-template-rows: 100vh;
+}
+.left-bar,
+.right-bar,
+header,
+.text,
+.shadow-gap,
+.content {
+  border: solid 1px rgb(172, 172, 172);
+}
+.g, .grid {
+  display: grid;
+}
+.shadow-gap {
+    background-color: rgb(208, 208, 208);
+}
+.prof-border {
+  margin-left: 5px;
+  margin-bottom: 15px;
+  border: solid 1px black;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.profile-pic {
+  width: 100px;
+  position: relative;
+  bottom: 17px;
+  right: 30px;
+}
+.legollas {
+    width: 70px;
+    bottom: 25px;
+    right: 20px;
+}
+#legolas-image {
+    width: 80%;
+}
+#refresh {
+    justify-content: end;
+    padding-right: 5px;
+    padding-top: 5px;
+}
+.left-bar {
+  justify-content: end;
+  grid-template-rows: 1fr 8fr 1fr 2fr;
+}
+.left-bar > div:nth-child(1) > img, .prof-border {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.logo img {
+  position: relative;
+  top: 7px;
+  height: 30px;
+  width: 30px;
+  margin-right: 12px;
+  padding-left: 5px;
+}
+nav button:nth-child(1) img {
+  background-color: yellow;
+  border-radius: 50%;
+}
+nav button {
+  font-size: 20px;
+  font-weight: bold;
+}
+nav p {
+  position: absolute;
+  z-index: -1;
+  font-size: 21px;
+  font-weight: bolder;
+  top: 80px;
+  left: 155px;
+}
+#home {
+  color: yellow;
+}
+
+.tweet button {
+  width: 80%;
+  height: 50px;
+  background-image: radial-gradient(blue, black);
+  border: solid 1px black;
+  border-radius: 25px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.logo button {
+  text-align: start;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+}
+.logo,
+.profile,
+.tweet {
+  padding-top: 5px;
+  width: 200px;
+}
+.profile {
+  align-content: end;
+  grid-template-columns: 60px 1fr 40px;
+}
+.profile p {
+  margin: 0;
+}
+.profile > div + div > p:nth-child(1) {
+  margin-top: 10px;
+}
+span {
+  font-size: 13px;
+  color: gray;
+}
+.elipses-grid {
+    grid-template-columns: 1fr 50px;
+}
+.elipses {
+  margin-top: 20px;
+  margin-left: 15px;
+  width: 13px;
+  justify-self: end;
+  padding-right: 10px;
+}
+.logoz {
+    margin-top: 20px;
+    width: 30px;
+    height: 30px;
+}
+.logo-content {
+    width: 15px;
+    justify-self: end;
+}
+.main {
+  grid-template-rows: 68.41px 130px 10px 1fr;
+}
+.main header {
+    grid-template-columns: 1fr 50px;
+}
+.main header h2 {
+    padding-left: 10px;
+}
+.each-content, .text {
+    padding-left: 15px;
+    grid-template-columns: 70px 1fr;
+}
+.text {
+    grid-template-rows: 50px 1fr;
+}
+.text > div:nth-child(1) {
+    margin-top: 5px;
+}
+.text > p {
+    color: gray;
+    font-size: 20px;
+}
+.text-grid {
+    place-items: center;
+    grid-template-columns: 50px 50px 50px 50px 50px 1fr;
+    padding-right: 10px;
+}
+.text-grid > button {
+    width: 100px;
+    height: 50px;
+    background-image: radial-gradient(blue, black);
+    border: solid 1px black;
+    border-radius: 25px;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: bold;
+    place-self: center end;
+}
+.content {
+    grid-template-rows: repeat(auto-fit, minmax(150px, auto));
+    overflow: scroll;
+}
+.logo-grid > .logo-content {
+    justify-self: start;
+}
+.logo-grid {
+    grid-template-columns: repeat(5, 1fr);
+    padding-bottom: 20px;
+    border-bottom: solid 1px rgb(172, 172, 172);
+
+}
+.right-bar {
+    padding-left: 20px;
+    padding-right: 70px;
+    grid-template-rows: 68.41px 68.41px auto 68.41px;
+}
+.searchbar {
+    padding-top: 10px;
+}
+.searchbar > button {
+    width: 100%;
+    border-radius: 20px;
+    height: 40px;
+    border: none;
+    text-align: start;
+}
+.searchbar > input {
+    width: 80%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
+    bottom:30px;
+    left: 23px;
+    z-index: 1;
+}
+.whats-happening {
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.whats-happening > h3 {
+    font-weight: bolder;
+}
+.showmore {
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-bottom: 15px;
+}
+.showmore p {
+    color: rgb(80, 114, 226);
+}
+.showmore, .whats-happening {
+    padding-left: 10px;
+    background-color: rgba(208, 208, 208, 0.52);
+    border: solid 0.5px rgba(128, 128, 128, 0.69);
+}
+.items p {
+    background-color: rgba(208, 208, 208, 0.52);
+    border: solid 0.5px rgba(128, 128, 128, 0.69);
+    padding: 10px;
+    margin: 0;
+}
+.items {
+    gap: 0;
+    overflow: scroll;
+}
+.effect:hover, #home:hover {
+    cursor: pointer;
+    color: red;
+}
+.effect:active, #home:active {
+    font-size: 18px;
+    color: blue;
+}
+@media screen and (max-width: 1150px) {
+    .grid {
+        grid-template-columns: 300px 1fr;
+      }
+    .right-bar {
+        display: none;
+    }
+}
+@media screen and (max-width: 900px) {
+    .grid {
+        grid-template-columns: 100%;
+    }
+    .left-bar {
+        display: none;
+    }
+}
