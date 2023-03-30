@@ -1,0 +1,49 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family:Arial, Helvetica, sans-serif;
+ scroll-behavior: smooth; 
+}
+
+.twitterpage {
+    display: grid;
+    grid-template-columns: 275px auto 350px;
+    margin: 0 auto;
+}
+
+.logo {
+   height: 50px;
+   margin-bottom: 10px;
+   position: sticky;
+}
+
+.menu-items {
+    font-size: 19px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-weight: 700;
+}
+
+.menu-items:hover {
+    background: rgba(29, 161, 242, 0.1);
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.menu-items--active {
+    color: #1da0f2
+}
+
+.sidebar-menu-items-icons {
+    height: 50px;
+  margin-right: 20px ;
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-menu-items--active > .sidebar-menu-items-icons {
+    color: #1da0f2
+}
+
