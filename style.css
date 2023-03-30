@@ -17,6 +17,11 @@ button {
     border: 0;
 }
 
+.search {
+    height: 25px;
+    /* text-align: start; */
+}
+
 .left button {
     background-color: blue;
     color: white;
@@ -105,4 +110,106 @@ button {
 
 .bar:focus {
     color: blue;
+}
+
+/* .tweet > div {
+    display: inline-block;
+
+} */
+
+.pp {
+    border: 2px solid black;
+    height: 35px;
+    width: 35px;
+    grid-area: pp;
+    margin: 5px;
+    border-radius: 50%;
+
+
+}
+
+/* .tools {
+    display: inline-block
+}
+
+.create {
+    width: 100%;
+} */
+
+.tweet {
+    display: grid;
+    grid-template-areas:
+    "pp compose compose"
+    "pp tools done";
+    grid-template-columns: 60px 1fr 135px;
+    /* min-height: 150px; */
+    /* background-color: antiquewhite; */
+    border-bottom: 16px solid aliceblue;
+}
+
+.create {
+    grid-area: compose;
+    margin-top: 5px;
+
+}
+
+.tools {
+    grid-area: tools;
+}
+
+.tweet > button {
+    grid-area: done;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    margin: 10px;
+    width: 120px;
+
+}
+
+.main h1 {
+    padding: 10px;
+    display: inline;
+}
+
+.post {
+    display: grid;
+    grid-template-areas: "pp content";
+    grid-template-columns: 60px 1fr;
+    border-bottom: 1px solid grey;
+    min-height: 80px;
+    padding: 5px 0px;
+}
+
+.content {
+    grid-area: content;
+}
+
+.blue {
+    color:blue;
+}
+
+.gray {
+    color: gray;
+}
+
+/* screen resizing depending on view width*/
+
+@media screen and (max-width: 900px) {
+    .layout {
+      grid-template-columns: 200px 1fr;
+    }
+    .right {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .layout {
+        grid-template-columns: 1fr;
+    }
+    .left {
+        display: none;
+    }
+
 }
