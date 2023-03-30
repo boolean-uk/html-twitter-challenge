@@ -381,6 +381,10 @@ span {
   margin-left: 30px;
 }
 
+.search-whats-happening:hover {
+  cursor: pointer;
+}
+
 .who-to-follow {
   grid-area: who-to-follow;
   text-align: left;
