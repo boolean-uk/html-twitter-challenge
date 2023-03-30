@@ -19,7 +19,14 @@ button {
 
 .search {
     height: 25px;
-    /* text-align: start; */
+    text-align: start;
+    padding-left: 10px;
+}
+
+.search img {
+    height: 60%;
+    /* padding-top: 5px; */
+    
 }
 
 .left button {
@@ -63,6 +70,39 @@ button {
     height: 450px;
     align-items: center;
     margin: 10px 0;
+}
+
+.i1, .i2, .i3, .i4, .i5, .i6, .i7 {
+    width: 40%;
+    padding: 2px 0px 0px 10px;
+}
+
+.i1 {
+    grid-area: i1;
+}
+
+.i2 {
+    grid-area: i2;
+}
+
+.i3 {
+    grid-area: i3;
+}
+
+.i4 {
+    grid-area: i4;
+}
+
+.i5 {
+    grid-area: i5;
+}
+
+.i6 {
+    grid-area: i6;
+}
+
+.i7 {
+    grid-area: i7;
 }
 
 .nav a {
@@ -124,15 +164,45 @@ button {
     grid-area: pp;
     margin: 5px;
     border-radius: 50%;
-
-
+    overflow: hidden;
 }
 
+.pp > img {
+    /* object-fit: cover; */
+    /* height: 100%; */
+    /* width: 100%; */
+    
+}
 /* .tools {
     display: inline-block
+}*/
+
+.mon {
+    height: 100%;
 }
 
-.create {
+.man {
+    width: 100%
+    /* position: relative;
+    top: 0px; */
+}
+
+.brick {
+    height:70%;
+    object-fit: contain;
+    position:relative;
+    top:5px;
+
+}
+
+.joy {
+    height: 105%;
+    object-fit: cover;
+    position: relative;
+    right:9px;
+}
+
+/*.create {
     width: 100%;
 } */
 
@@ -145,6 +215,7 @@ button {
     /* min-height: 150px; */
     /* background-color: antiquewhite; */
     border-bottom: 16px solid aliceblue;
+    padding: 10px 0px 0px 0px;
 }
 
 .create {
@@ -191,6 +262,11 @@ button {
 
 .gray {
     color: gray;
+}
+
+.logo {
+    width: 40%;
+    padding: 10px;
 }
 
 /* screen resizing depending on view width*/
