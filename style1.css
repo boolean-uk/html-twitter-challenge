@@ -21,12 +21,6 @@
   /* position: relative; */
 }
 
-.main-feed-post-area {
-  background-color: #0d95d4;
-  height: 250px;
-}
-
-
 .top-main-menu {
   background-color: white;
   width: 600px;
@@ -37,7 +31,6 @@
   display: grid;
   grid-template-rows: 1fr 1fr;
 }
-
 
 .link-to-home {
   display: grid;
