@@ -1,5 +1,6 @@
 * {
     scroll-behavior: smooth;
+    transition: ease all .1s;
 }
 
 body {
