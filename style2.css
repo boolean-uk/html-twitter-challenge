@@ -1,0 +1,152 @@
+.main-feed-divider {
+  display: grid;
+  grid-template-rows: 55px 1fr;
+}
+
+.main-right-side-bar {
+  display: grid;
+  grid-template-rows: 55px 520px 340px 75px;
+  position: relative;
+  gap: 11px;
+}
+
+.right-sidebar-happening {
+  display: grid;
+  padding-top: 5px;
+  grid-template-rows: 50px repeat(5, 1fr) 55px;
+  gap: 7px;
+}
+
+.show-more {
+  padding: 15px 0 0 16px;
+}
+
+.show-more a {
+  color: #0d95d4;
+  text-decoration: none;
+}
+
+.show-more:hover {
+  background-color: #e1e6e6;
+  border-radius: 0 0 15px 15px;
+}
+
+.section-text {
+  font-size: 21px;
+  padding: 12px 16px;
+}
+
+.card-wrapper {
+  text-decoration: none;
+  font-size: 14px;
+  color: black;
+  position: relative;
+}
+
+.card-wrapper img {
+  height: 27px;
+  position: absolute;
+  top: 11px;
+  right: 15px;
+  border-radius: 25px;
+  padding: 5px;
+}
+
+.card-wrapper img:hover {
+  background-color: #0d95d4;
+}
+
+.card-wrapper :hover {
+  background-color: #e1e6e6;
+}
+
+.happening-card {
+  padding: 7px 15px;
+}
+
+.happening-card div:nth-child(1),
+.happening-card div:last-child {
+  color: rgb(134, 133, 133);
+}
+
+.right-sidebar-to-follow {
+  display: grid;
+  grid-template-rows: 50px 1fr 55px;
+  gap: 7px;
+}
+
+.follow-card {
+  padding: 7px 15px;
+  display: grid;
+  grid-template-columns: 0.6fr 2fr 1fr;
+  margin-top: 15px;
+  /* margin-bottom: 15px; */
+}
+
+.follow-card button {
+  background-color: black;
+  width: 100%;
+  padding: 9px 15px;
+  color: white;
+  border-radius: 25px;
+  border: none;
+}
+
+.right-sidebar-terms {
+  color: black;
+}
+
+.right-sidebar-terms a {
+  color: rgb(110, 109, 109);
+  text-decoration: none;
+  font-size: 13px;
+  margin-left: 15px;
+}
+
+.right-sidebar-terms p {
+  color: rgb(110, 109, 109);
+  text-decoration: none;
+  font-size: 13px;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+.right-sidebar-terms a:hover {
+  text-decoration: underline;
+}
+
+.right-sidebar-search {
+  background-color: white;
+  width: 350px;
+  height: 55px;
+  position: fixed;
+  display: grid;
+}
+
+/* Turns a block element into an inline and then move it to align it. */
+
+.right-sidebar-search img {
+  height: 17px;
+  filter: invert(36%) sepia(0%) saturate(306%) hue-rotate(291deg)
+    brightness(107%) contrast(83%);
+  display: grid;
+  align-self: center;
+}
+
+.right-sidebar-search p {
+  color: #696767;
+}
+
+.search-rounded {
+  background-color: #f2f3f3;
+  border-radius: 50px;
+  padding-left: 15px;
+  display: grid;
+  grid-template-columns: 25px 1fr;
+  place-content: center;
+}
+
+.search-rounded p {
+  display: inline;
+  margin-bottom: 5px;
+}
