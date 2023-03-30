@@ -50,7 +50,7 @@
     .logo, .menu_buttons, .tweet_button,
     /* main */
     .home, .spark,
-    .pic, .type_here, .media_icons, .publish, 
+    .type_here, .media_icons, 
     .tweet,
     /* RH */
     .search, .happening, .follow {
@@ -99,7 +99,7 @@
         "compose_top" 1fr
         "compose_bot" 1fr;
         gap: 2px;
-        padding: 0px;
+        padding: 2px;
     }
         .compose_top {
             grid-area: compose_top;
@@ -125,18 +125,22 @@
 
 /* MAIN components styling */
     /* HOME BAR */
-        .home, .spark {
-            grid-area: spark;
-            padding: 0 ;
-            width: 30px;
-            height: 30px;
-            overflow:hidden
-        }
         .home {
             grid-area: home;
+            height: 20px;
+            position: relative;
+            left: 15px;
+            padding: 0;
+            overflow: hidden;
+            display: inline-flex;
+            align-items: center;
         }
         .spark {
             grid-area: spark;
+            padding: 0;
+            width: 30px;
+            height: 30px;
+            overflow: hidden;
         }
         
     /* COMPOSE */
@@ -147,11 +151,11 @@
             width: 40px;
             padding: 0;
         }
-            .pic img {
+            #user, .pic img {
                 height: 40px;
                 width: 40px;
                 border-radius: 50%;
-                object-fit: contain;
+                object-fit: cover;
                 margin: 0;
                 padding: 0;
             }
@@ -176,7 +180,7 @@
         "menu_buttons"
         "tweet_button"
         ".";
-        grid-template-rows: 50px 350px 50px 1fr;
+        grid-template-rows: 50px 400px 50px 1fr;
         gap: 5px;
     }
 /* RH TOPICS styling */
@@ -263,6 +267,52 @@ button:hover{
 #menu_tweet {
     background-color: lightsalmon;
 }
+
+/* TWEET styling */
+    /* outer grid */
+    .tweet {
+        display: grid;
+        grid-template-areas: "user tweet_content";
+        grid-template-columns: 50px 1fr;
+        grid-template-rows: minmax(50px, 250px);
+    }
+        #user {
+            grid-area: user;
+        }
+        .tweet_content {
+            grid-area: tweet_content;
+            display: grid;
+            grid-template-areas: 
+            "username"
+            "content"
+            "interact";
+            grid-template-rows: 25px 1fr 25px;
+            gap: 2px;
+        }
+            .username, .content, .interact {
+                border: red 1px solid;
+            }
+            .username {
+                grid-area: username;
+                display: inline-flex;
+                align-items: center;
+            }
+            .content {
+                grid-area: content;
+            }
+            .interact {
+                grid-area: interact;
+                padding: 0;
+                display: grid;
+                grid-auto-flow: column;
+                align-content: center;
+                justify-items: center;
+            }
+                .interact img {
+                    height: 10px;
+                    width: 10px;
+                    object-fit: contain;
+                }
 
 
 /* MEDIA QUERIES */
