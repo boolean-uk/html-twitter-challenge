@@ -12,7 +12,7 @@ body {
 /* Left-bar */
 .left-bar {
   grid-area: left-bar;
-  background-color: peachpuff;
+  background-color: #f5f8fa;
 
   /* Make a display grid within left-bar
   Rows - will determine how wide the rows are, for example, for option nav needs to be greater than tweet grid  */
@@ -120,7 +120,7 @@ body {
 /* Main */
 .main {
   grid-area: main;
-  background-color: peachpuff;
+  background-color: #f5f8fa;
 
   /* Make a display grid within the main. The main will have three rows - home-page, posting section and feed section  */
   display: grid;
@@ -142,16 +142,42 @@ body {
 }
 
 .whats-happening {
-  margin-left: 100px;
-  margin-top: 35px;
+  margin-left: 140px;
+  margin-top: 10px;
   font-size: 20px;
   color: grey;
+
+  /* Making inside 'what's happening a grid to fit the icons in */
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-areas: uploading;
+  /* border: 1px solid black; */
 }
+
+.uploading {
+  grid-area: uploading;
+  /* border: 1px solid black; */
+}
+.media-upload {
+  width: 30px;
+  margin-left: 140px;
+  margin-bottom: 100px;
+}
+
+.gif-upload {
+  width: 25px;
+  position: absolute;
+  left: 470px;
+  top: 123px;
+}
+
 .tweet-button2 {
-  height: 35px;
+  /* height: 35px;
   width: 70px;
-  margin-left: 560px;
-  margin-top: 1px;
+  position: absolute; */
+
+  /* margin-left: 560px;
+  margin-top: -50px; */
   border-radius: 600px;
   background-color: #00acee;
   color: white;
@@ -180,12 +206,12 @@ body {
 
 .tweet-section-username {
   position: relative;
-  left: 200px;
+  left: 150px;
 }
 
 .feed-text {
   position: relative;
-  left: 200px;
+  left: 150px;
 }
 
 .feed-grid2 {
@@ -205,6 +231,42 @@ span {
 /* Right-bar */
 .right-bar {
   grid-area: right-bar;
-  background-color: peachpuff;
+  background-color: #f5f8fa;
   border: 1px black dashed;
+
+  /* Making a grid within the right bar called right bar searches, within that, having 3 rows called search twitter bar, search what's happening and who to follow */
+
+  display: grid;
+  grid-template-rows: 50px 340px 100px;
+  grid-template-areas:
+    "search-twitter-bar"
+    "search-whats-happening"
+    "who-to-follow";
+}
+
+.magnifying {
+  width: 25px;
+  position: absolute;
+  top: 10px;
+  margin-left: 30px;
+}
+
+.search-twitter-bar {
+  grid-area: search-twitter-bar;
+  color: grey;
+  margin-top: 15px;
+  margin-left: 70px;
+}
+
+.search-whats-happening {
+  grid-area: search-whats-happening;
+  text-align: left;
+  margin-left: 30px;
+}
+
+.who-to-follow {
+  grid-area: who-to-follow;
+  text-align: left;
+  margin-left: 30px;
+  margin-top: 30px;
 }
