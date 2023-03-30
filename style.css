@@ -232,8 +232,8 @@ h2 {
                     justify-items: center;
                 }
                     .interact img {
-                        height: 10px;
-                        width: 10px;
+                        height: 15px;
+                        width: 15px;
                         object-fit: contain;
                     }
 
@@ -354,7 +354,7 @@ button:hover{
 }
 
 /* MEDIA QUERIES */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 850px) {
     .grid {
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -367,7 +367,7 @@ button:hover{
         display: none;
     }
 }
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 600px) {
     .grid {
         display: grid;
         grid-template-columns: 1fr;
