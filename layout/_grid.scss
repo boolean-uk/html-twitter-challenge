@@ -1,0 +1,19 @@
+.three-column-grid__expand-two {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
+
+.three-row-grid__expand-two {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.two-column-grid-expand-two {
+  grid-template-columns: 10rem 1fr;
+}
+
+.four-column-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: flex-start;
+}

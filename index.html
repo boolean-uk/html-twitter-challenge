@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/f9c0780752.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="main.css" />
+    <title>Twitter Challenge</title>
+  </head>
+  <body>
+    <div class="container-wrapper">
+      <div class="container three-column-grid__expand-two center-wrapper-md">
+        <!-- LEFT SIDE -->
+        <aside class="left-side">
+          <div id="logo" class="logo">
+            <i class="fa-brands fa-twitter"></i>
+          </div>
+          <ul class="list-container text-heading">
+            <li class="list-item">
+              <div class="icon-wrapper">
+                <i class="fa-solid fa-house-chimney-window"></i>
+              </div>
+              <a href="#">Home</a>
+            </li>
+            <li class="list-item">
+              <div class="icon-wrapper">
+                <i class="fa-regular fa-hashtag"></i>
+              </div>
+              <a href="#"> Explore</a>
+            </li>
+            <li class="list-item">
+              <div class="icon-wrapper"><i class="fa-regular fa-bell"></i></div>
+              <a href="#">Notifications</a>
+            </li>
+            <li class="list-item">
+              <div class="icon-wrapper">
+                <i class="fa-regular fa-envelope"></i>
+              </div>
+              <a href="#"> Messages</a>
+            </li>
+            <li class="list-item">
+              <div class="icon-wrapper">
+                <i class="fa-regular fa-bookmark"></i>
+              </div>
+              <a href="#">Bookmarks</a>
+            </li>
+            <li class="list-item">
+              <div class="icon-wrapper">
+                <i class="fa-regular fa-rectangle-list"></i>
+              </div>
+              <a href="#">Lists</a>
+            </li>
+            <li class="list-item">
+              <div class="icon-wrapper"><i class="fa-regular fa-user"></i></div>
+              <a href="#">Profile</a>
+            </li>
+            <li class="list-item">
+              <div class="png"></div>
+              <a href="#">More</a>
+            </li>
+            <div class="tweet-btn">
+              <img class="feather" src="icons/feather.png" alt="feather" />
+              <button div="tweet-btn" id="tweet-btn">Tweet</button>
+            </div>
+          </ul>
+          <div class="profile three-column-grid__expand-two">
+            <div class="profile-image">
+              <img src="images/profile.png" alt="profile-image" />
+            </div>
+            <div class="profile-name">
+              <h4 class="text-md-bold">Tibor Toth</h4>
+              <p class="text-md">@Tibor4343234334</p>
+            </div>
+            <div class="more">
+              <i class="fa-solid fa-ellipsis"></i>
+            </div>
+          </div>
+        </aside>
+        <!-- CENTER -->
+        <div class="center-wrapper">
+          <main class="center">
+            <div class="header-wrapper">
+              <div class="header-icon profile-image">
+                <img
+                  class="image-header"
+                  src="images/profile.png"
+                  alt="profile image"
+                />
+                <h4 class="text-heading-bold">Home</h4>
+              </div>
+
+              <div class="icon">
+                <img src="icons/top-tweets.png" alt="tweets" />
+              </div>
+            </div>
+            <div
+              class="center-header border-bottom three-column-grid__expand-two"
+            >
+              <div class="profile-image header-image border-bottom">
+                <img src="images/profile.png" alt="profile-images" />
+              </div>
+              <div class="header-post border-bottom">
+                <div class="header-question text-heading cl-fade">
+                  <textarea
+                    type="text"
+                    id="textarea"
+                    name="w3review"
+                    rows="2"
+                    cols="50"
+                    placeholder="What's happening?"
+                  ></textarea>
+                </div>
+                <div class="header-reply text-md-bold">
+                  <i class="fa-solid fa-earth-europe"></i>Everyone can reply
+                </div>
+              </div>
+              <div class="header-icons">
+                <i class="fa-regular fa-image"></i
+                ><img src="icons/gif.png" alt="profile-images" />
+                <i class="fa-solid fa-square-poll-horizontal"></i>
+                <i class="fa-regular fa-face-smile"></i>
+                <i class="fa-regular fa-calendar-days"></i>
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="btn-wrapper">
+                <button class="header-btn">Tweet</button>
+              </div>
+            </div>
+            <div class="show-tweets pd-lg border-bottom">
+              <p class="text-md">Show 4 Tweets</p>
+            </div>
+            <div class="center-card pd-lg border-top">
+              <div class="profile-image card-image">
+                <img
+                  src="https://www.nasa.gov/sites/all/themes/custom/nasatwo/images/nasa-logo.svg"
+                  alt="nasa-profile-image"
+                />
+              </div>
+              <div class="center-card-title">
+                <span class="text-md-bold">NASA</span>
+                <img src="icons/tick.png" alt="verified" />
+                <span class="text-md">
+                  <span class="mail">@</span>
+                  <span class="color-grey">NASA - 18h</span>
+                </span>
+                <div class="center-card-title-icon">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </div>
+              </div>
+              <div class="center-card-main">
+                <p class="center-card-para text-md">
+                  Plants in space? Join our telecon Feb 18 at 1pm EST (18:00
+                  UTC) about the next resupply mission launching to the
+                  @Space_Station .
+                </p>
+                <p class="center-card-para text-md">
+                  Hear from NASA and @NorthropGrumman experts as they discuss
+                  sending science to space. Questions? Tag them #askNASA. Tune
+                  in: http://nasa.gov/live
+                </p>
+              </div>
+              <div class="center-card-images">
+                <div class="image-1 .card-images">
+                  <img
+                    src="https://pbs.twimg.com/media/FL10OOWXEAALota?format=jpg&name=large"
+                    alt="nasa-image"
+                  />
+                </div>
+                <div class="image-2 .card-images">
+                  <img
+                    src="https://pbs.twimg.com/media/FL10OoGXsAcNGXa?format=jpg&name=4096x4096"
+                    alt="nasa-image"
+                  />
+                </div>
+                <div class="image-3 .card-images">
+                  <img
+                    src="https://pbs.twimg.com/media/FL10PVWXsAAPh8q?format=jpg&name=4096x4096"
+                    alt="nasa-image"
+                  />
+                </div>
+              </div>
+              <div class="center-card-icons four-column-grid">
+                <div class="center-card-icons center-card-icons-1">
+                  <i class="fa-regular fa-comment"></i>
+                  <span class="color-grey">79</span>
+                </div>
+                <div class="center-card-icons center-card-icons-2">
+                  <i class="fa-solid fa-retweet"></i>
+                  <span class="color-grey">229</span>
+                </div>
+                <div class="center-card-icons center-card-icons-3">
+                  <i class="fa-regular fa-heart"></i>
+                  <span class="color-grey">11.5k</span>
+                </div>
+                <div class="center-card-icons center-card-icons-4">
+                  <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                </div>
+              </div>
+            </div>
+            <div class="center-card pd-lg border-top">
+              <div class="profile-image card-image">
+                <img
+                  src="https://pbs.twimg.com/profile_images/1337607516008501250/6Ggc4S5n_400x400.png"
+                  alt="profile-image"
+                />
+              </div>
+              <div class="center-card-title">
+                <span class="text-md-bold">Tesla</span>
+                <img src="icons/tick.png" alt="" />
+                <span class="text-md">
+                  <span class="mail">@</span>
+                  <span class="color-grey">Tesla - Feb 17</span>
+                </span>
+                <div class="center-card-title-icon">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </div>
+              </div>
+              <div class="center-card-main">
+                <p class="center-card-para text-md">
+                  You can now customize how your Tesla appears on the screen and
+                  app with the Car Colorizer
+                </p>
+              </div>
+              <div class="center-card-videos">
+                <iframe
+                  class="video"
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/lfjfGlGqd2Q"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div class="center-card-icons four-column-grid mg-top-sm">
+                <div class="center-card-icons center-card-icons-1">
+                  <i class="fa-regular fa-comment"></i>
+                  <span class="color-grey">377</span>
+                </div>
+                <div class="center-card-icons center-card-icons-2">
+                  <i class="fa-solid fa-retweet"></i>
+                  <span class="color-grey">10k</span>
+                </div>
+                <div class="center-card-icons center-card-icons-3">
+                  <i class="fa-regular fa-heart"></i>
+                  <span class="color-grey">1,150</span>
+                </div>
+                <div class="center-card-icons center-card-icons-4">
+                  <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                </div>
+              </div>
+            </div>
+            <div class="center-card pd-lg border-top">
+              <div class="profile-image card-image">
+                <img
+                  src="https://pbs.twimg.com/profile_images/1471252408185544712/i7WfrUZP_400x400.jpg"
+                  alt="profile-image"
+                />
+              </div>
+              <div class="center-card-title">
+                <span class="text-md-bold"> Raheem J. Kassam</span>
+                <img src="icons/tick.png" alt="" />
+                <span class="text-md">
+                  <span class="mail">@</span>
+                  <span class="color-grey">RaheemKassam · Feb 6</span>
+                </span>
+                <div class="center-card-title-icon">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </div>
+              </div>
+              <div class="center-card-main">
+                <p class="center-card-para text-md">
+                  Just want to remind you what they’re working on:
+                </p>
+              </div>
+              <div class="center-card-image mg-bottom-sm">
+                <img
+                  src="https://pbs.twimg.com/media/FK7Mf0yXsAAiKM3?format=jpg&name=small"
+                  alt="feed-image"
+                />
+              </div>
+              <div class="center-card-icons four-column-grid">
+                <div class="center-card-icons center-card-icons-1">
+                  <i class="fa-regular fa-comment"></i>
+                  <span class="color-grey">34</span>
+                </div>
+                <div class="center-card-icons center-card-icons-2">
+                  <i class="fa-solid fa-retweet"></i>
+                  <span class="color-grey">667</span>
+                </div>
+                <div class="center-card-icons center-card-icons-3">
+                  <i class="fa-regular fa-heart"></i>
+                  <span class="color-grey">3.5k</span>
+                </div>
+                <div class="center-card-icons center-card-icons-4">
+                  <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                </div>
+              </div>
+            </div>
+          </main>
+        </div>
+        <!-- RIGHT SIDE -->
+        <aside class="right-side">
+          <div class="searchbar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input class="search" type="text" placeholder="Search Twitter" />
+          </div>
+          <div class="news">
+            <div class="title text-md-bold"><h2>What's happening</h2></div>
+            <div class="news-card">
+              <div class="news-card-article">
+                <p class="text-sm">Wrestling · LIVE</p>
+                <div class="h4 text-lg-bold">2022 WWE Elimination Chamber</div>
+                <p class="text-sm">Trending with</p>
+                <div class="text-link">#WWEChamber, Lita</div>
+              </div>
+              <div class="news-card-left">
+                <img
+                  src="https://images.unsplash.com/photo-1533777528790-c6996cffa35e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80"
+                  alt="wrestling"
+                />
+              </div>
+            </div>
+            <div class="news-card">
+              <div class="news-card-article">
+                <p class="text-sm">Football · Trending</p>
+                <div class="h4 text-lg-bold">shane long</div>
+                <p class="text-sm">1,487 Tweets</p>
+                <!-- <div class="text-link">#WWEChamber, Lita</div> -->
+              </div>
+              <div class="news-card-left">
+                <div class="center-card-title-icon">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </div>
+              </div>
+            </div>
+            <div class="news-card">
+              <div class="news-card-article">
+                <p class="text-sm">Pop · Trending</p>
+                <div class="h4 text-lg-bold">#Starstruck</div>
+                <p class="text-sm">1,249 Tweets</p>
+              </div>
+              <div class="news-card-left">
+                <div class="center-card-title-icon">
+                  <i class="fa-solid fa-ellipsis"></i>
+                </div>
+              </div>
+            </div>
+            <div class="news-card">
+              <div class="news-card-article">
+                <p class="text-sm">World news · LIVE</p>
+                <div class="h4 text-lg-bold">
+                  Tensions in Ukraine mount as Zelensky calls for diplomatic
+                  solution
+                </div>
+              </div>
+              <div class="news-card-left">
+                <img
+                  src="https://c.ndtvimg.com/2022-01/6bm9qbeo_russia-army-reuters_625x300_25_January_22.jpg"
+                  alt="russia attack"
+                />
+              </div>
+            </div>
+            <div class="news-card">
+              <div class="news-card-article">
+                <p class="text-sm">Beijing 2022 · LIVE</p>
+                <div class="h4 text-lg-bold">
+                  Beijing 2022: Great Britain at the Olympic Winter Games
+                  &#127468;&#127463;
+                </div>
+              </div>
+              <div class="news-card-left">
+                <img
+                  src="https://compote.slate.com/images/005266c4-3c9f-416e-b2a4-f421e23ce879.jpeg?width=960&rect=1560x1040&offset=0x0"
+                  alt="olympic"
+                />
+              </div>
+            </div>
+            <div class="news-card">
+              <div class="news-card-article">
+                <p class="text-sm">Premier League · 4 hours ago</p>
+                <div class="h4 text-lg-bold">Arsenal FC vs Brentford FC</div>
+
+                <div class="text-link">Trending with Saka, #PremierLeague</div>
+              </div>
+              <div class="news-card-left">
+                <img
+                  src="https://resources.premierleague.com/photos/2021/09/28/219fdc0e-ff58-4986-ba5d-0666c4d82a6c/ARSDM2122New2.jpeg?width=500&height=333"
+                  alt="premier league"
+                />
+              </div>
+            </div>
+            <div class="card-bottom">
+              <p class="text-md card-bottom-text">Show More</p>
+            </div>
+          </div>
+          <div class="follow">
+            <div class="title follow-title text-md-bold">
+              <h2>Who to follow?</h2>
+            </div>
+            <div class="follow-card">
+              <div class="profile-image">
+                <img
+                  src="https://i.insider.com/5bbbaa1194750c0f7033b6a8?width=1000&format=jpeg&auto=webp"
+                  alt=""
+                />
+              </div>
+              <div class="follow-card-title">
+                <span class="text-md-bold">Hubble</span>
+                <img src="icons/tick.png" alt="verified" />
+                <span class="text-md card-description">
+                  <span class="mail">@</span>
+                  <span class="color-grey">NASAHubble</span>
+                </span>
+              </div>
+              <div class="follow-card-btn">
+                <button class="text-md-bold">Follow</button>
+              </div>
+            </div>
+            <div class="follow-card">
+              <div class="profile-image">
+                <img
+                  src="https://pbs.twimg.com/profile_images/977496875887558661/L86xyLF4_400x400.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="follow-card-title">
+                <span class="text-md-bold">vitalik.eth </span>
+                <img src="icons/tick.png" alt="verified" />
+                <span class="text-md card-description">
+                  <span class="mail">@</span>
+                  <span class="color-grey">VitalikButerin</span>
+                </span>
+              </div>
+              <div class="follow-card-btn">
+                <button class="text-md-bold">Follow</button>
+                <!-- <a class="text-md-bold" href="#">Follow</a> -->
+              </div>
+            </div>
+            <div class="follow-card">
+              <div class="profile-image">
+                <img
+                  src="https://pbs.twimg.com/profile_images/1115644092329758721/AFjOr-K8_400x400.jpg"
+                  alt="profile-image"
+                />
+              </div>
+              <div class="follow-card-title">
+                <span class="text-md-bold">jack</span>
+                <img src="icons/tick.png" alt="verified" />
+                <span class="text-md card-description">
+                  <span class="mail">@</span>
+                  <span class="color-grey">jack</span>
+                </span>
+              </div>
+              <div class="follow-card-btn">
+                <button class="text-md-bold">Follow</button>
+              </div>
+            </div>
+          </div>
+          <div class="links">
+            <ul>
+              <li><a class="text-sm" href="">Terms of Service</a></li>
+              <li><a class="text-sm" href="">Privacy Policy</a></li>
+              <li><a class="text-sm" href=""> Cookie Policy</a></li>
+              <li><a class="text-sm" href="">Accessibility</a></li>
+              <li><a class="text-sm" href=""> Ads info</a></li>
+              <li><a class="text-sm" href="">More</a></li>
+            </ul>
+            <p class="text-sm">© 2022 Twitter, Inc.</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </body>
+</html>

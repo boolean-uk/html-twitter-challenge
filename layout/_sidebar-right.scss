@@ -1,0 +1,171 @@
+.right-side {
+  width: 33rem;
+  padding: 0.6rem 1.2rem 0rem 1.2rem;
+  margin-bottom: 1.2rem;
+
+  .searchbar {
+    position: relative;
+    i {
+      position: absolute;
+      font-size: 2rem;
+      left: 24px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #a6b0b6;
+    }
+    .search {
+      width: 100%;
+      padding: 1.6rem 2rem 1.6rem 6rem;
+      background-color: #eff3f4;
+      border: none;
+      outline: none;
+      border-radius: 20rem;
+    }
+    .search::placeholder {
+      font-size: 1.5rem;
+      font-family: $roboto;
+    }
+    .search:focus {
+      background-color: #fff;
+      border: 1px solid $color-main;
+    }
+    input[type="text"] {
+      font-size: 1.5rem;
+      font-family: $roboto;
+      font-weight: 300;
+    }
+  }
+
+  .news {
+    margin-top: 1.5rem;
+    background-color: #f7f9f9;
+    border-radius: 12px;
+    .title {
+      padding: 1rem;
+    }
+  }
+
+  .news-card {
+    padding: 1.2rem 1.6rem;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    column-gap: 1rem;
+    &:hover {
+      background-color: $color-hover-light;
+      transition: 0.3s all;
+      cursor: pointer;
+    }
+  }
+
+  .news-card-left {
+    grid-row: 1/4;
+    grid-column: 2/3;
+    justify-self: flex-end;
+    display: flex;
+    align-items: start;
+    img {
+      margin: 0 auto;
+
+      width: 7rem;
+      height: 90%;
+      object-fit: cover;
+      border-radius: 15px;
+
+      @include respond(tab-middle) {
+        height: 60%;
+      }
+    }
+  }
+
+  .card-bottom-text {
+    color: $color-main;
+    padding: 1.4rem;
+    &:hover {
+      background-color: $color-hover-light;
+      transition: 0.3s all;
+      cursor: pointer;
+    }
+  }
+
+  .links ul {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 0.8rem;
+    margin: 1rem 0rem;
+  }
+
+  .links ul li {
+    list-style-type: none;
+    line-height: 2rem;
+    a {
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+        text-decoration-color: $color-main;
+      }
+    }
+  }
+
+  .follow {
+    display: grid;
+    margin-top: 1.5rem;
+    background-color: #f7f9f9;
+
+    border-radius: 12px;
+    .title.follow-title {
+      padding: 1rem;
+    }
+  }
+
+  .follow-card {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 1.2rem 1.6rem;
+    &:hover {
+      background-color: $color-hover-light;
+      transition: 0.3s all;
+      cursor: pointer;
+    }
+
+    &-title {
+      .card-description {
+        display: block;
+      }
+
+      &-icon {
+        display: inline;
+        padding: 0.6rem 0.8rem;
+        font-size: 1.6rem;
+        border-radius: 50%;
+        &:hover {
+          color: $color-main;
+          background-color: $color-hover-lightblue;
+          cursor: pointer;
+          transition: all 0.3s;
+        }
+      }
+
+      img {
+        margin: 0rem 0.2rem;
+      }
+    }
+
+    &-btn button {
+      text-decoration: none;
+      padding: 0.6rem 1.2rem;
+      background-color: black;
+      color: #fff;
+      border: none;
+      border-radius: 14px;
+      cursor: pointer;
+    }
+  }
+
+  @include respond(tab-middle) {
+    width: 28rem;
+  }
+  @include respond(tab-port) {
+    display: none;
+  }
+}

@@ -1,0 +1,156 @@
+.center {
+  overflow-y: scroll;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+
+  .header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-row: 1/2;
+    grid-column: 1/4;
+    position: sticky;
+    top: 0;
+    bottom: 100%;
+    z-index: 999999;
+    padding: 0.8rem 1.6rem 0.8rem 1.6rem;
+    background-color: rgba(255, 255, 255, 0.596);
+    backdrop-filter: blur(6px);
+    .icon {
+      justify-self: flex-end;
+      cursor: pointer;
+      align-self: start;
+      padding: 0.4rem 0.6rem;
+      &:hover {
+        background-color: $color-hover-light;
+        align-self: start;
+        border-radius: 50%;
+        transition: background-color 0.3s;
+      }
+    }
+  }
+
+  &-header {
+    padding: 0.2rem 1.6rem 0rem 1.6rem;
+  }
+
+  .profile-image.header-image {
+    grid-row: 1/3;
+  }
+  .header-post {
+    margin: 1.5rem 0rem 1rem 0rem;
+    grid-column: 2/4;
+    padding-bottom: 1rem;
+    .header-question {
+      margin-bottom: 1.4rem;
+    }
+    .header-reply {
+      color: $color-main;
+      padding: 0.3rem 0.8rem;
+      border-radius: 20rem;
+
+      .fa-earth-europe {
+        margin-right: 0.5rem;
+      }
+      &:hover {
+        background-color: #b2defc7e;
+        cursor: pointer;
+        display: inline-block;
+      }
+    }
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  .header-icons {
+    color: $color-main;
+    font-size: 2.5rem;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    img {
+      border-radius: 50%;
+      transform: translateY(-5px);
+      padding: 0.7rem;
+      &:hover {
+        background-color: #b2defc7e;
+        cursor: pointer;
+      }
+    }
+
+    & > i {
+      padding: 0.8rem;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      &:hover {
+        background-color: #b2defc7e;
+        cursor: pointer;
+      }
+    }
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  .header-btn {
+    align-self: start;
+    text-align: center;
+    border: transparent;
+    border-radius: 20rem;
+    color: #fff;
+    font-size: 1.6rem;
+    padding: 1rem 2rem;
+    background-color: $color-main;
+    &:hover {
+      background-color: $color-main-dark;
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  .show-tweets {
+    color: $color-main;
+    margin-top: 0.2rem;
+    text-align: center;
+    &:hover {
+      cursor: pointer;
+      transition: all 0.3s;
+      background-color: $color-hover-light;
+    }
+  }
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.profile-image.header-image {
+  @include respond(phone) {
+    display: none;
+  }
+}
+
+.header-icon.profile-image {
+  img.image-header {
+    display: none;
+    @include respond(phone) {
+      display: flex;
+
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+  @include respond(phone) {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+
+    gap: 2rem;
+  }
+}
