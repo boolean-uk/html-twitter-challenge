@@ -4,7 +4,11 @@
   font-weight: bold;
 }
 
-.main > .feed > .feed-post > div,
+hr {
+  color: #DDD;
+}
+
+.main > .feed > .feed-post > .feed-profile-pic,
 .main > .feed > .feed-post > div > div,
 .main .compose-grid > div { 
   margin: 4px;
@@ -108,14 +112,17 @@ body {
 
 .main {
   display: grid;
-  grid-template-rows: 60px 150px 1fr;
+  grid-template-rows: 50px 150px 1fr;
   min-height: 100vh;
 }
 
+.main {
+  background-color: #DDD;
+}
+
 .main > div {
-  margin: 4px;
-  border: 3px solid black;
-  border-radius: 7px;
+  margin: 2px;
+  background-color: white;
 }
 
 .main .compose-grid {
@@ -131,13 +138,14 @@ body {
 
 .main .compose-grid > .compose-post {
   display: grid;
-  grid-template-rows: 1fr 1fr;
+  grid-template-rows: 1fr 1px 1fr;
 }
 
 .main .compose-grid > .compose-post > .post-attachments {
   display: grid;
   grid-template-columns: 40px 40px 40px 40px 40px 1fr 200px;
   column-gap: 20px;
+  align-items: center;
 }
 
 .main .compose-grid > .compose-post  .tweet-button {
@@ -159,14 +167,15 @@ body {
 
 .main .feed {
   display: grid;
-  grid-template-rows: 200px 1px 200px 1px 200px 1px 200px 1px 200px 1px 200px 1px 200px 1px;
-  row-gap: 7px;
-  overflow: hidden;
+  grid-template-rows: repeat(auto-fit, 200px);
+  background-color: #DDD;
 }
 
 .main > .feed > .feed-post {
   display: grid;
   grid-template-columns: 90px 1fr;
+  margin-top: 2px;
+  background-color: #FFF;
 }
 
 .main > .feed > .feed-post > .feed-profile-pic {
