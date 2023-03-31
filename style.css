@@ -5,12 +5,10 @@
 
 body {
     margin: 0;
-    background-color: #F7F9FA;
+    background-color: white;
+
 }
 
-div {
-    /* border: dotted 3px black; */
-}
 
 .more-option-profile>svg {
 
@@ -43,9 +41,13 @@ div {
 
 .left {
     grid-area: left;
-    background-color: #FFFFFF;
+    background-color: white;
     display: grid;
     grid-template-rows: 1fr 0.1fr;
+    position: fixed;
+        left: 5%;
+        width: 15%;
+        padding-top: 2%;
 
 }
 
@@ -76,14 +78,7 @@ div {
 /* left grid structure */
 
 
-
 .left-menu>div {
-    margin-left: 20%;
-    padding-left: 20%;
-}
-
-.left-menu>div {
-    /* border: dotted 3px black; */
     margin: 10px;
     height: 50px;
 
@@ -126,10 +121,13 @@ div {
     object-fit: container;
     height: 50%;
     align-self: center;
-    justify-self: center;
+    justify-self: left;
 }
 
 
+.home-button.two>svg {
+    align-self: center;
+}
 .home-button.two>svg path {
     fill: #1DA1F2
 }
@@ -154,19 +152,14 @@ div {
     height: 60%;
     align-self: center;
     align-content: center;
-    justify-self: left;
-    text-align: left;
+    text-align: start;
     background-color: #FFFFFF;
     border: none;
     border-radius: 5px;
     font-weight: 600px;
 }
 
-.home-button.two {
-    display: grid;
 
-
-}
 
 
 .explore,
@@ -175,8 +168,8 @@ div {
     color: black;
     height: 60%;
     align-self: center;
-    align-content: center;
-    text-align: left;
+    align-content: end;
+        text-align: start;
     background-color: #FFFFFF;
     border: none;
     border-radius: 5px;
@@ -229,9 +222,9 @@ div {
 
 
 .harry {
-    object-fit: cover;
-    width: 100%;
-    height: auto;
+    object-fit: contain;
+        width: 50px;
+        height: 50px;
 }
 
 .name-tag>div {
@@ -251,10 +244,14 @@ div {
 
 
 /* main grid structure */
+.main {
+    background-color: #F7F9FA;
+    margin-top: 10px;
+}
 
 .main>div {
     /* border: dotted 3px black; */
-    margin: 10px;
+row-gap: 3px;
 }
 
 .home {
@@ -262,8 +259,7 @@ div {
     grid-template-columns: 95% 5%;
     align-content: center;
     background-color: white;
-        border-radius: 20px;
-        padding-left: 15px;
+
 }
 
 .home>div {
@@ -277,11 +273,12 @@ div {
     display: grid;
     grid-template-columns: 5% 95%;
     background-color: white;
-    border-radius: 20px;
+border: solid 2px #F7F9FA;
 }
 
 .picture {
-    margin: 5px;
+    /* margin: 5px; */
+        width: 50px;
 }
 
 .post-content {
@@ -346,15 +343,15 @@ div {
 
 .tweets {
     display: grid;
-    background-color: white;
-    border-radius: 20px;
+
 }
 
 .tweets>div {
-    margin: 5px;
+
     display: grid;
     grid-template-columns: 5% 95%;
     border: solid 2px #F7F9FA;
+    background-color: white;
 }
 
 .tweets>div>div {
@@ -475,6 +472,7 @@ div {
         background-color: #F7F9FA;
         padding: 17px;
         border: 0;
+    
 }
 
 
@@ -483,7 +481,6 @@ div {
     font-size: 17px;
     color: black;
     border: none;
-    /* 0.1fr  */
     font-weight: 600;
     padding: 20px;
     grid-auto-rows: max-content
@@ -558,15 +555,18 @@ div {
     padding: 10px;
 }
 
-@media screen and (min-width: 800px) and (max-width:1200px) {
+@media screen and (min-width: 800px) and (max-width:1300px) {
     .grid {
         grid-template-columns: 1fr 100vw;
         grid-template-rows: 1fr 100vh;
         grid-template-areas:
             "left main"
             "left main"
-            "left main";
-
+            "left main"
+            
+            }
+        .right {
+            display: none;
     }
 
     .footer {
@@ -576,6 +576,35 @@ div {
 
     }
 
+.left {
+    grid-area: left;
+    background-color: transparent;
+    display: grid;
+    grid-template-rows: 1fr;
+    position: static;
+    left: 1%;
+    margin-left: 10px;
+    width: 1fr;
+    padding-top: 2%;
+
+}
+
+.explore.home,
+.explore {
+    display: none;
+}
+
+.profile-menu {
+    display: none;
+}
+
+/* 
+    .left-menu {
+        position: static;
+    left: 0%;
+    width: auto;
+    padding-top: 2%; 
+    } */
     .footer>div>p {
         font-size: 18px;
         color: black;
@@ -593,10 +622,6 @@ div {
         width: 0%;
         }
         
-        /* .left-menu {
-                                                                                                                                                                                                                                                                                                                                                    display: grid;
-                                                                                                                                                                                                                                                                                                                                                    grid-template-columns: 1fr;
-                                                                                                                                                                                                                                                                                                                                                } */
         
         
         .explore,
@@ -608,10 +633,7 @@ div {
         }
         
         .explore-two {
-            justify-self: left;
-            margin-left: 0px;
-            height: 0px;
-            background-color: white;
+            display: none;
         }
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 * {
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     transition: ease all .25s;
@@ -638,6 +660,7 @@ div {
 
     }
 
+
     .footer>div>p {
         font-size: 18px;
         color: black;
@@ -654,6 +677,7 @@ div {
     #media-two>svg {
         width: 0%
     }
+
 .left-menu {
     display: grid;
     grid-template-columns: 1fr;
@@ -661,4 +685,12 @@ div {
  * {
      transition: ease all .25s;
  }
+.right {
+    display: none;
 }
+
+.left {
+    display: none;
+}
+}
+/* finsihed */
