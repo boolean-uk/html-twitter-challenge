@@ -1,6 +1,8 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .grid {
@@ -8,6 +10,7 @@ body {
   grid-template: "left-bar main right-bar";
   grid-template-columns: 280px 650px 350px;
   /* border: 1px dashed black; */
+  margin-top: 100px;
 }
 
 /* Left-bar */
@@ -29,7 +32,7 @@ body {
   grid-area: logo-grid-leftbar;
   width: 30px;
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: 68px;
 }
 
 .logo-grid-leftbar:hover {
@@ -173,7 +176,7 @@ body {
 
 .home-page {
   grid-area: home-page;
-  margin-left: 20px;
+  margin-left: 80px;
 }
 
 .home-page:hover {
@@ -363,9 +366,9 @@ span {
 
 .magnifying {
   width: 25px;
-  position: absolute;
-  top: 10px;
-  margin-left: 30px;
+  position: relative;
+  bottom: 476px;
+  left: 30px;
 }
 
 .search-twitter-bar {
