@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    grid-template-rows: 1.5fr 3fr;
+    grid-template-areas:
+        "left top right"
+        "left main right";
+}
+
+@media screen and (max-width:800px) {
+    body {
+        display: grid;
+        grid-template-columns: 290px 500px;
+        grid-template-rows: 200px 400px;
+    }
+
+}
+
+@media screen and (max-width:600px) {
+    body {
+        display: grid;
+        grid-template-columns: 580px;
+        grid-template-areas:
+            "top"
+            "main";
+    }
+}
+
+.left {
+    grid-area: left;
+    border-right: solid 1px lightskyblue;
+    font-size: 2rem;
+    display: grid;
+    justify-content: center;
+    overflow: hidden;
+    min-width: 280px;
+}
+
+.left>ul {
+    list-style: none;
+}
+
+.left>ul>li {
+    margin-top: 20px;
+}
+
+.left>ul>li:hover {
+    color: lightblue;
+    cursor: pointer;
+}
+
+
+.left * a {
+    text-decoration: none;
+    color: inherit
+}
+
+.left * img {
+    margin-right: 2rem;
+}
+
+.tweet {
+    background-color: lightblue;
+    color: white;
+    width: 15rem;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.top * .tweet {
+    width: 5.5rem;
+    height: 2.4rem;
+    font-size: 2rem;
+}
+
+.top {
+    grid-area: top;
+    border: solid 1px lightskyblue;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+}
+
+.top>div {
+    border: solid 1px lightskyblue;
+}
+
+.tophome {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 2rem;
+    align-content: center;
+}
+
+.tophome>div+div {
+    display: grid;
+    justify-self: end;
+}
+
+.tophome * img {
+    margin-right: 6px;
+}
+
+.top .topinput {
+    display: grid;
+    grid-template-areas:
+        "post1 post2 ."
+        ". post3 post4";
+    grid-template-columns: 50px 1fr 100px;
+    grid-template-rows: 1fr 40px;
+    overflow: hidden;
+}
+
+.topinput * img {
+    margin: 5px;
+}
+
+.post1 {
+    grid-area: post1;
+    display: grid;
+    place-self: center;
+
+}
+
+.post2 {
+    grid-area: post2;
+    display: grid;
+    align-self: center;
+    font-size: 1.5rem;
+    color: gray;
+}
+
+.post3 {
+    grid-area: post3;
+}
+
+.post4 {
+    grid-area: post4;
+}
+
+img.profilephoto {
+    object-fit: cover;
+    width: 35px;
+    height: 35px;
+    border-radius: 35px;
+}
+
+.right {
+    grid-area: right;
+    display: grid;
+    grid-template-rows: 30px 1fr;
+    row-gap: 15px;
+    margin-left: 25px;
+    margin-right: 40px;
+}
+
+.right>div:first-of-type {
+    display: grid;
+    background-color: lightgray;
+    border-radius: 20px;
+    align-items: center;
+    overflow: hidden;
+}
+
+.right>div+div {
+    background-color: gray;
+    border-radius: 5px;
+    color: black;
+    padding-left: 2px;
+}
+
+.right>div>img {
+    display: inline;
+}
+
+.main {
+    grid-area: main;
+    border: solid 1px lightskyblue;
+    display: grid;
+    grid-template-rows: repeat(autofit, 1fr);
+}
+
+.main>div {
+    border: solid 1px lightskyblue;
+    display: grid;
+    grid-template-areas:
+        "mainleft maintop"
+        ". mainbottom";
+    grid-template-columns: 50px 1fr;
+    grid-template-rows: 1fr 40px;
+}
+
+.mainleft {
+    grid-area: mainleft;
+    display: grid;
+    place-self: center;
+}
+
+.maintop {
+    grid-area: maintop;
+    display: grid;
+    align-self: center;
+}
+
+.mainbottom {
+    grid-area: mainbottom;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+input {
+    border: none;
+    background-color: lightgray;
+    outline: none;
+}
+
+span {
+    color: gray;
+    font-size: 0.9rem;
+}
