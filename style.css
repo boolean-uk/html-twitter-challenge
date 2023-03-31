@@ -313,12 +313,15 @@ body, html, .grid {
 
 /* BUTTON styling */
 button {
-    background-color: lightskyblue;
+    background-color: transparent;
     border: none;
     border-radius: 15px;
     width: fit-content;
     display:inline-flex;
     align-items: center;
+}
+.publish {
+    background-color: lightskyblue;
 }
 button:focus {
     background-color: aquamarine;
