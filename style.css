@@ -25,28 +25,26 @@
   border: 1px dotted rgba(137, 137, 137, 0.282);
 }
 
-.index,
 .bottom-bar,
 .main-feed {
-  border: 1px solid rgba(53, 2, 2, 0.322);
+  border: 1px solid rgba(53, 2, 2, 0.124);
   border-radius: 30px;
   margin-top: 5px;
-  padding: 5px;
+  padding: 0 5px;
 }
 
 .profile-image,
-.username,
-.settings {
-  border: 2px dotted rgba(0, 100, 0, 0.315);
+.username {
+  border: 2px dotted rgba(0, 100, 0, 0);
   padding: 3px;
   border-radius: 10px;
 }
 
-.write-bar,
 .post-typing,
-.image-profile,
-.post-icons {
-  border: 2px dotted darkcyan;
+.post-icons:hover {
+  border: 2px solid rgba(0, 139, 139, 0.204);
+  border-radius: 50px;
+  transition: ease-in-out 200ms;
 }
 
 .image-profile,
@@ -82,7 +80,7 @@ h3,
 }
 
 h4
-/*, .news*/ {
+/* , .news*/ {
   border-bottom: 1px solid grey;
 }
 
@@ -90,7 +88,7 @@ h4
   height: 30px;
 }
 
-img {
+.icon > img {
   height: 20px;
   padding-left: 10px;
 }
@@ -122,6 +120,16 @@ img {
   align-items: center;
 }
 
+.index:hover {
+  border: 1px solid rgba(53, 2, 2, 0.124);
+  border-radius: 30px;
+  background-color: #a5a0a032;
+  transition: ease-in-out 200ms;
+
+  margin-top: 5px;
+  padding: 5px 5px;
+}
+
 .start-tweet {
   background-color: darkblue;
   color: #fff;
@@ -148,19 +156,30 @@ img {
 .settings {
   display: grid;
   justify-self: right;
+  padding-right: 10px;
 }
 
+.image-profile {
+  height: 35px;
+}
+
+#avatar {
+  position: fixed;
+  bottom: 17px;
+  height: 40px;
+  width: 40px;
+}
 /* Post typing and setting bar */
 
 h3 {
-  padding: 5px 10px;
+  padding: 10px;
   border-bottom: 1px solid #a5a0a0;
   height: 30px;
   top: 0;
 }
 
 #tweet-bar {
-  height: 60px;
+  height: 66px;
   display: grid;
   grid-template-columns: 50px 1fr;
   grid-template-rows: 50px;
@@ -169,6 +188,7 @@ h3 {
 .write-bar {
   top: 41px;
 }
+
 .tweet-options {
   top: 105px;
 }
@@ -182,15 +202,24 @@ h3 {
   border-bottom: 1px solid #a5a0a0;
 }
 
+.post-typing {
+  padding: 10px;
+}
+
 #post-button {
   border: 2px dotted #a5a0a0;
   border-radius: 50px;
-  padding: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  width: 60px;
 }
 
 .post-icons {
   padding: 5px;
+  height: 30px;
+  width: 30px;
 }
+
 /* Main feed*/
 
 .main-feed {
@@ -200,12 +229,20 @@ h3 {
 }
 
 .image {
-  border: 2px dotted darkorange;
+  display: flex;
+
   border-radius: 50px;
-  text-align: center;
-  padding: 10px;
-  height: 30px;
-  width: 30px;
+  height: 50px;
+  width: 50px;
+}
+
+.V-image {
+  object-fit: cover;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  justify-content: center;
 }
 
 .post {

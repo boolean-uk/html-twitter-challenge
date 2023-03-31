@@ -15,10 +15,10 @@ TIPS
 
 CORE
 
-☑ Layout the main page elements (left-hand menu, tweet feed and right side-bar) using CSS Grid. CSS Grid should also be used to layout individual tweets.
-☑ Define the page contents using HTML with appropriate elements. HTML should be well formatted.
-☑ Style the page using a mixture of Type, ID and Class CSS selector types
-☑ Implement hover and selected state for the left-hand menu link
+☑ Layout the main page elements (left-hand menu, tweet feed and right side-bar) using CSS Grid. CSS Grid should also be used to layout individual tweets. ✅
+☑ Define the page contents using HTML with appropriate elements. HTML should be well formatted. ✅
+☑ Style the page using a mixture of Type, ID and Class CSS selector types. ✅
+☑ Implement hover and selected state for the left-hand menu link. 
 
 
 PLAN
@@ -34,8 +34,8 @@ At the end of the columns I need a row (last one) which will contain a 'profile 
 
 - Column 2: Main Feed
 # I'll need at least 3 rows.
-First row will be for text input with 5 icons and a 'button' to 'pubblish the post'(i.e. Linkedin).
-Second and extra rows will be the 'feed'. 
+First row will be for text input with 5 icons and a 'button' to 'pubblish the post'(i.e. Linkedin).✅
+Second part will be the 'feed'. ✅
 
 - Column 3: Right Bar
 3 rows grid.
@@ -44,3 +44,11 @@ The second one will be for 'News'.
 Third 'who to follow'
 
 2 - 
+
+
+STILL TO DO
+
+Finish extentions
+Add icons/imges everywhere
+Fix right bar
+Add more :hover and active state
