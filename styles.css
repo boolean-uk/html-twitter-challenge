@@ -37,6 +37,7 @@ body {
     display: grid;
     justify-content: center;
     overflow: hidden;
+    min-width: 280px;
 }
 
 .left>ul {
