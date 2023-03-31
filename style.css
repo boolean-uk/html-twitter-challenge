@@ -1,21 +1,21 @@
 * {
     margin: 0;
-    background-color: lightslategrey;
+    /* background-color: lightslategrey; */
     padding: 5px;
 }
 
 /* default overrides */
-.left,
+/* .left, */
     .menu, 
         .logo, .menu_buttons, .tweet_button, 
-.main,
+/* .main, */
     .home_bar,
         .home, .spark,
     .compose,
         /*  */
     .feed,
         /*  */
-.right,
+/* .right, */
     .topics,
         .search, .happening, .follow {
     margin: 5px;
@@ -26,6 +26,9 @@ strong, em, b, img, h1, h2 {
 h2 {
     font-size: medium;
 }
+body, html, .grid {
+    padding: 0;
+}
 /* overall grid layout */
 .grid {
     display: grid;
@@ -33,33 +36,34 @@ h2 {
     grid-auto-rows: 100vh;
     height: 100vh;
     grid-template-areas: "left main right";
-    border: dotted 1px black;
+    /* border: dotted 1px black; */
     gap: 5px;
 }
 /* TOP GRID common styling */
-    .left, .main, .right {
+    /* .left, .main, .right  */
+    /* {
         border: dashed 1px blue;
         background-color:lightseagreen;
-    }
+    } */
 /* SUBGRID common styling */
     /* LH */
-        .menu, 
+        /* .menu,  */
     /* main */
-        .home_bar, .compose, .feed, 
+        /* .home_bar, .compose, .feed,  */
     /* RH */
-        .topics {
+        /* .topics {
         border: dashed 1px red;
-    }
+    } */
 /* INNER COMPS common styling  */
     /* LH */
-    .logo, .menu_buttons, .tweet_button,
+    /* .logo, .menu_buttons, .tweet_button, */
     /* main */
-    .home, .spark,
-    .type_here, .media_icons, 
-    .tweet,
+    /* .home, .spark, */
+    /* .type_here, .media_icons,  */
+    .compose, .tweet,
     /* RH */
-    .search, .happening, .follow {
-        border: dashed 1px purple;
+    .happening, .follow {
+        border: solid 1px purple;
         border-radius: 10px;
     }
 
@@ -188,6 +192,7 @@ h2 {
         .publish {
             grid-area: publish;
             justify-self: right;
+            height:fit-content;
         }
     /* FEED */
     /* TWEET styling */
@@ -196,7 +201,7 @@ h2 {
             display: grid;
             grid-template-areas: "user tweet_content";
             grid-template-columns: 50px 1fr;
-            grid-template-rows: minmax(50px, 250px);
+            grid-template-rows: minmax(50px, 1fr);
         }
             #user {
                 grid-area: user;
@@ -212,16 +217,16 @@ h2 {
                 grid-template-rows: 25px 1fr 25px;
                 gap: 2px;
             }
-                .username, .content, .interact {
+                /* .username, .content, .interact {
                     border: red 1px solid;
-                }
+                } */
                 .username {
                     grid-area: username;
                     display: inline-flex;
                     align-items: center;
                 }
                 .content {
-                    grid-area: content;
+                    grid-area: content; 
                 }
                 .interact {
                     grid-area: interact;
@@ -258,7 +263,7 @@ h2 {
         "happening"
         "follow"
         ".";
-        grid-template-rows: 50px 300px 300px 1fr;
+        grid-template-rows: 50px 300px 150px 1fr;
         gap: 5px;
     }
         .search {
@@ -317,13 +322,13 @@ h2 {
     display:grid;
     grid-auto-flow: rows;
     list-style: none;
-    background-color: lightcoral;
+    /* background-color: lightcoral; */
     gap: 2px;
     margin: 0;
 }
-    .menu_buttons ul li {
-        border: solid 1px black;
-    }
+    /* .menu_buttons ul li {
+        border: solid black 1px;
+    } */
     .menu_buttons ul li img {
         align-self: center;
         height:20px;
@@ -351,6 +356,14 @@ button:hover{
 }
 #menu_tweet {
     background-color: lightsalmon;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    width: 150px;
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* MEDIA QUERIES */
