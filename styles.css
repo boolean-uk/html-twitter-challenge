@@ -33,7 +33,7 @@ body {
   grid-area: logo-grid-leftbar;
   width: 30px;
   margin-top: 20px;
-  margin-left: 70px;
+  margin-left: 30px;
 }
 
 .logo-grid-leftbar:hover {
@@ -64,6 +64,19 @@ body {
   grid-area: home;
   text-align: left;
   margin-left: 70px;
+
+  display: grid;
+  grid-template-columns: 20px;
+  grid-template-areas: "house-icon";
+  /* border: 1px solid black; */
+}
+
+.home-icon {
+  grid-area: house-icon;
+  width: 21px;
+  position: relative;
+  right: 40px;
+  top: 46px;
 }
 
 .home:hover {
@@ -74,6 +87,21 @@ body {
   grid-area: explore;
   text-align: left;
   margin-left: 70px;
+
+  position: relative;
+  bottom: 30px;
+
+  display: grid;
+  grid-template-columns: 20px;
+  grid-template-areas: "hashtag-icon";
+}
+
+.hashtag-icon {
+  grid-area: hashtag-icon;
+  width: 20px;
+  position: relative;
+  right: 40px;
+  top: 50px;
 }
 
 .explore:hover {
@@ -84,6 +112,22 @@ body {
   grid-area: notifications;
   text-align: left;
   margin-left: 70px;
+  /* border: 1px solid black; */
+
+  position: relative;
+  bottom: 55px;
+
+  display: grid;
+  grid-template-columns: 20px;
+  grid-template-areas: "notification-icon";
+}
+
+.notification-icon {
+  grid-area: notification-icon;
+  width: 20px;
+  position: relative;
+  right: 40px;
+  top: 46px;
 }
 
 .notifications:hover {
@@ -94,6 +138,21 @@ body {
   grid-area: messages;
   text-align: left;
   margin-left: 70px;
+
+  position: relative;
+  bottom: 80px;
+
+  display: grid;
+  grid-template-columns: 20px;
+  grid-template-areas: "message-icon";
+}
+
+.message-icon {
+  grid-area: message-icon;
+  width: 20px;
+  position: relative;
+  right: 40px;
+  top: 46px;
 }
 
 .messages:hover {
@@ -104,6 +163,21 @@ body {
   grid-area: bookmarks;
   text-align: left;
   margin-left: 70px;
+
+  position: relative;
+  bottom: 110px;
+
+  display: grid;
+  grid-template-columns: 20px;
+  grid-template-areas: "bookmark-icon";
+}
+
+.bookmark-icon {
+  grid-area: bookmark-icon;
+  width: 20px;
+  position: relative;
+  right: 40px;
+  top: 46px;
 }
 
 .bookmarks:hover {
@@ -114,6 +188,21 @@ body {
   grid-area: lists;
   text-align: left;
   margin-left: 70px;
+
+  position: relative;
+  bottom: 135px;
+
+  display: grid;
+  grid-template-columns: 20px;
+  grid-template-areas: "list-icon";
+}
+
+.list-icon {
+  grid-area: list-icon;
+  width: 20px;
+  position: relative;
+  right: 40px;
+  top: 48px;
 }
 
 .lists:hover {
@@ -124,6 +213,21 @@ body {
   grid-area: profile;
   text-align: left;
   margin-left: 70px;
+
+  position: relative;
+  bottom: 158px;
+
+  display: grid;
+  grid-template-columns: 20px;
+  grid-template-areas: "pic-icon";
+}
+
+.pic-icon {
+  grid-area: pic-icon;
+  width: 20px;
+  position: relative;
+  right: 40px;
+  top: 48px;
 }
 
 .profile:hover {
@@ -134,6 +238,21 @@ body {
   grid-area: more;
   text-align: left;
   margin-left: 70px;
+
+  position: relative;
+  bottom: 158px;
+
+  display: grid;
+  grid-template-columns: 20px;
+  grid-template-areas: "more-icon";
+}
+
+.more-icon {
+  grid-area: pic-icon;
+  width: 20px;
+  position: relative;
+  right: 145px;
+  bottom: 43px;
 }
 
 .more:hover {
