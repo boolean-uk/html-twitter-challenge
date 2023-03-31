@@ -34,7 +34,7 @@ body {
 
 .layout {
     display: grid;
-    grid-template-columns: 1fr 275px 600px 350px 1fr;
+    grid-template-columns: 1fr 275px 600px 390px 1fr;
     grid-template-areas:
     "l-margin left main right r-margin"
 }
@@ -502,14 +502,57 @@ footer > button > img {
     position: fixed;
     height: 100%;
     width: 350px;
+    margin-left: 40px;
+} 
+
+/* search */
+
+.right-search {
+    height: 50px;
+    border-radius: 25px;
+    margin: 6px 0px 12px;
+    padding: 12.5px;
     background-color: var(--theme-hover);
-}  
+}
+
+/* trending */
+
+.right-trending {
+    height: 482px;
+    border-radius: 25px;
+    margin: 12px 0px;
+    padding: 12.5px;
+    background-color: #1e2732;
+}
+
+/* suggestions */
+
+.right-suggestions {
+    height: 246px;
+    border-radius: 25px;
+    margin: 12px 0px;
+    padding: 12.5px;
+    background-color: #1e2732;
+}
+
+/* terms */
+
+.layout-right > .terms {
+    color: #8b98a5;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.layout-right > .terms > p> span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
 
 /* MEDIA QUERIES */
 
 /* hide right column when width falls below */
 
-@media screen and (max-width: 1224px) {
+@media screen and (max-width: 1264px) {
     .layout {
         display: grid;
         grid-template-columns: 1fr 275px 600px 1fr;
