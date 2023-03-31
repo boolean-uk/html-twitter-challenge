@@ -1,0 +1,54 @@
+TWITTER CHALLENGE 
+
+ISTRUCTION
+
+- Use the HTML elements you've learned about so far to define the page content
+- Use an external CSS stylesheet to style the page
+- Use CSS Grid for the layout and components
+- You should start without images and then add them later at the end of the exercise once the basic criteria has been met
+
+TIPS
+
+- Breakdown the page into sections
+- Pay attention to alignment and spacing
+- Work section by section until it looks good
+
+CORE
+
+☑ Layout the main page elements (left-hand menu, tweet feed and right side-bar) using CSS Grid. CSS Grid should also be used to layout individual tweets. ✅
+☑ Define the page contents using HTML with appropriate elements. HTML should be well formatted. ✅
+☑ Style the page using a mixture of Type, ID and Class CSS selector types. ✅
+☑ Implement hover and selected state for the left-hand menu link. 
+
+
+PLAN
+
+1 - Create a grid with 3 columns. ✅
+
+- Column 1: Left Bar
+Create a grid inside with 11 rows. ✅
+The first row needs to have just the 'twitter' icon.✅
+8 rows will have inside 2 columns. 1 for the icon 1 for the 'description'.✅
+Then there's the 'button'.✅
+At the end of the columns I need a row (last one) which will contain a 'profile image, name/username and ... for settings'. (See Discord for reference).✅
+
+- Column 2: Main Feed
+# I'll need at least 3 rows.
+First row will be for text input with 5 icons and a 'button' to 'pubblish the post'(i.e. Linkedin).✅
+Second part will be the 'feed'. ✅
+
+- Column 3: Right Bar
+3 rows grid.
+First one wil be 'home' with 'star icon' and search bar.
+The second one will be for 'News'.
+Third 'who to follow'
+
+2 - 
+
+
+STILL TO DO
+
+Finish extentions
+Add icons/imges everywhere
+Fix right bar
+Add more :hover and active state
