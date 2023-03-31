@@ -1,0 +1,378 @@
+* {
+    margin: 0;
+    padding: 5px;
+}
+
+/* default overrides */
+/* left */
+    .menu, 
+        .logo, .menu_buttons, .tweet_button, 
+/* main */
+    .home_bar,
+        .home, .spark,
+    .compose,
+    .feed,
+/* right */
+    .topics,
+        .search, .happening, .follow {
+    margin: 5px;
+}
+
+/* tag default styling overrides */
+strong, em, b, img, h1, h2 {
+    background-color: transparent;
+}
+h2 {
+    font-size: medium;
+}
+body, html, .grid {
+    padding: 0;
+}
+
+/* overall grid layout */
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr ;
+    grid-auto-rows: 100vh;
+    height: 100vh;
+    grid-template-areas: "left main right";
+    /* border: dotted 1px black; */
+    gap: 5px;
+}
+
+/* INNER COMPS common styling  */
+    .compose, .tweet,
+    /* RH */
+    .happening, .follow {
+        border: solid 1px purple;
+        border-radius: 10px;
+    }
+
+/* TOP GRID individual styling */
+    .left {
+        grid-area: left;
+        display: grid;
+        grid-template-areas: ". menu";
+        grid-template-columns: 1fr 4fr;
+    }
+    .main {
+        grid-area: main;
+        display: grid;
+        grid-template-areas:
+        "home_bar"
+        "compose"
+        "feed";
+        grid-template-rows: 50px 100px 1fr;
+        gap: 5px;
+    }
+    .right {
+        grid-area: right;
+        display: grid;
+        grid-template-areas: "topics .";
+        grid-template-columns: 4fr 1fr;
+    }
+    .left, .right {
+        min-width: 200px;
+    }
+
+/* MAIN central feed grids styling */
+    .home_bar {
+        grid-area: home_bar;
+        display: grid;
+        grid-template-areas: "home . spark";
+        grid-template-columns: 40px 1fr 40px;
+        place-content: center;
+        place-items: center;
+    }
+    .compose {
+        display: grid;
+        grid-template:
+        "compose_top" 1fr
+        "compose_bot" 1fr;
+        gap: 2px;
+        padding: 2px;
+    }
+        .compose_top {
+            grid-area: compose_top;
+            display: grid;
+            grid-template-areas: "pic type_here";
+            grid-template-columns: 50px 1fr;
+            padding: 2px;
+        }
+        .compose_bot {
+            grid-area: compose_bot;
+            display: grid;
+            grid-template-areas: "media_icons publish";
+            grid-template-columns: 1fr 100px;
+            padding: 2px;
+        }
+    .feed {
+        grid-area: feed;
+        display: grid;
+        grid-auto-rows: max-content;
+        gap: 5px;
+        overflow: scroll hidden hidden;
+    }
+
+/* MAIN components styling */
+    /* HOME BAR */
+        .home {
+            grid-area: home;
+            height: 20px;
+            position: relative;
+            left: 15px;
+            padding: 0;
+            overflow: hidden;
+            display: inline-flex;
+            align-items: center;
+        }
+        .spark {
+            grid-area: spark;
+            padding: 0;
+            width: 30px;
+            height: 30px;
+            overflow: hidden;
+        }
+        
+    /* COMPOSE */
+        .pic {
+            grid-area: pic;
+            justify-self: center;
+            height: 40px;
+            width: 40px;
+            padding: 0;
+        }
+            #user, #user2, .pic img {
+                height: 40px;
+                width: 40px;
+                border-radius: 50%;
+                object-fit: cover;
+                margin: 0;
+                padding: 0;
+            }
+        .type_here {
+            grid-area: type_here; 
+        }
+        .media_icons {
+            grid-area: media_icons;
+            display: grid;
+            padding: 0;
+            grid-template-columns: repeat(5, 20px);
+            align-content: center;
+            justify-items: center;
+            gap: 5px;
+        }
+            .media_icons img {
+                height: 20px;
+                width: 20px;
+                object-fit: contain;
+                place-self: start;
+                margin: 5px;
+                position: relative;
+                left: 40px;
+            }
+        .publish {
+            grid-area: publish;
+            justify-self: right;
+            height:fit-content;
+        }
+    /* FEED */
+    /* TWEET styling */
+        .tweet {
+            display: grid;
+            grid-template-areas: "user tweet_content";
+            grid-template-columns: 50px 1fr;
+            grid-template-rows: minmax(50px, 1fr);
+        }
+            #user {
+                grid-area: user;
+            }
+            
+            .tweet_content {
+                grid-area: tweet_content;
+                display: grid;
+                grid-template-areas: 
+                "username"
+                "content"
+                "interact";
+                grid-template-rows: 25px 1fr 25px;
+                gap: 2px;
+            }
+                .username {
+                    grid-area: username;
+                    display: inline-flex;
+                    align-items: center;
+                }
+                .content {
+                    grid-area: content; 
+                }
+                .interact {
+                    grid-area: interact;
+                    padding: 0;
+                    display: grid;
+                    grid-auto-flow: column;
+                    align-content: center;
+                    justify-items: center;
+                }
+                    .interact img {
+                        height: 15px;
+                        width: 15px;
+                        object-fit: contain;
+                    }
+
+/* LH MENU styling */
+    .menu {
+        grid-area: menu;;
+        display: grid;
+        grid-template-areas:
+        "logo"
+        "menu_buttons"
+        "tweet_button"
+        ".";
+        grid-template-rows: 50px 400px 50px 1fr;
+        gap: 5px;
+    }
+
+/* RH TOPICS styling */
+    .topics {
+        grid-area: topics;
+        display: grid;
+        grid-template-areas:
+        "search"
+        "happening"
+        "follow"
+        ".";
+        grid-template-rows: 50px 300px 150px 1fr;
+        gap: 5px;
+    }
+        .search {
+            display: grid;
+            grid-template-areas: "mag bar .";
+            grid-template-columns: 20px 100px 1fr;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            border-bottom-left-radius: 25px;
+            background-color: lightsteelblue;
+        }
+            .search img {
+                grid-area: mag;
+                width: 20px;
+                height: 20px;
+            }
+            .search h3 {
+                grid-area: bar;
+                background-color: transparent;
+                font-size: small;
+            }
+            
+/* MENU components styling */
+        .logo {
+            grid-area: logo;
+            padding: 0 0 0 10px;
+        }
+            #twitter_badge {
+                width: 25px;
+                height: 25px;
+                object-fit:contain;
+                overflow: hidden;
+            }
+        .menu_buttons {
+            grid-area: menu_buttons;
+            place-self: center;
+        }
+        .tweet_button {
+            grid-area: tweet_button;
+            place-self: center;
+        } 
+                 
+/* TOPICS components styling */
+        .search {
+            grid-area: search;
+        }
+        .happening {
+            grid-area: happening;
+        }
+        .follow {
+            grid-area: follow;
+        }
+        
+/* MENU BUTTONS */
+.menu_buttons ul {
+    display:grid;
+    grid-auto-flow: rows;
+    list-style: none;
+    gap: 2px;
+    margin: 0;
+}
+    .menu_buttons ul li img {
+        align-self: center;
+        height:20px;
+        padding: 0 10px 0 0;
+    }
+
+/* BUTTON styling */
+button {
+    background-color: transparent;
+    border: none;
+    border-radius: 15px;
+    width: fit-content;
+    display:inline-flex;
+    align-items: center;
+}
+.publish {
+    background-color: lightskyblue;
+}
+button:focus {
+    background-color: aquamarine;
+    color: darkmagenta;
+}
+button:active {
+    color: magenta;
+}
+button:hover{
+    cursor: pointer;
+}
+#menu_tweet {
+    background-color: lightsalmon;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    width: 150px;
+    display:inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 850px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-auto-rows: 100vh;
+        grid-template-areas: "left main";
+        border: dotted 1px black;
+        gap: 5px;
+    }
+    .right {
+        display: none;
+    }
+}
+@media screen and (max-width: 600px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-rows: 100vh;
+        grid-template-areas: "main";
+        border: dotted 1px black;
+        gap: 5px;
+    }
+    .right {
+        display: none;
+    }
+    .left {
+        display: none;
+        max-width: none;
+    }
+}

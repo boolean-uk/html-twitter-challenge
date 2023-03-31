@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter Challenge - Ian Grantham</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- overall grid -->
+    <section class="grid">
+
+        <!-- LH menu bar -->
+        <section class="left">
+
+            <section class="menu">
+                <div class="logo">
+                    <svg id="twitter_badge" xmlns="http://www.w3.org/2000/svg"  
+                    viewBox="0 0 333333 333333" 
+                    shape-rendering="geometricPrecision" 
+                    text-rendering="geometricPrecision" 
+                    image-rendering="optimizeQuality" 
+                    fill-rule="evenodd" clip-rule="evenodd">
+                        <path d="M333328 63295c-12254 5480-25456 9122-39241 10745 14123-8458 24924-21861 30080-37819-13200 
+                        7807-27871 13533-43416 16596-12499-13281-30252-21537-49919-21537-37762 0-68336 30591-68336 68330 0 
+                        5326 591 10537 1748 15562-56820-2880-107194-30081-140915-71467-6049 10435-9250 22300-9250 34367v8c0 
+                        23696 12031 44654 30389 56876-11202-333-21739-3457-30991-8519v854c0 33138 23554 60789 54852 67039-5734 
+                        1557-11787 2417-18023 2417-4417 0-8673-455-12905-1224 8742 27139 33975 46923 63857 47500-23430 
+                        18356-52858 29286-84939 29286-5537 0-10931-339-16318-984 30326 19458 66251 30727 104844 30727 
+                        125735 0 194551-104198 194551-194543 0-3002-67-5911-191-8852 13354-9553 24932-21609 34097-35333l31-31-6 
+                        4z" fill="#1da1f2"/>
+                    </svg>
+                </div>
+                <div class="menu_buttons">
+                    <ul>
+                        <li><button><img src="./assets/menu-icons/home.svg" alt="home icon"><strong>Home</strong></button></li>
+                        <li><button><img src="./assets/menu-icons/hashtag-outline-icon.svg" alt="explore icon"><strong>Explore</strong></button></li>
+                        <li><button><img src="./assets/menu-icons/notifications.svg" alt="notifications icon"><strong>Notifications</strong></button></li>
+                        <li><button><img src="./assets/menu-icons/messages.svg" alt="messages icon"><strong>Messages</strong></button></li>
+                        <li><button><img src="./assets/menu-icons/bookmarks.svg" alt="bookmarks icon"><strong>Bookmarks</strong></button></li>
+                        <li><button><img src="./assets/menu-icons/list-icon.svg" alt="lists icon"><strong>Lists</strong></button></li>
+                        <li><button><img src="./assets/menu-icons/profile.svg" alt="profile icon"><strong>Profile</strong></button></li>
+                        <li><button><img src="./assets/menu-icons/more.svg" alt="more icon"><strong>More</strong></button></li>
+                    </ul>
+                </div>
+                <div class="tweet_button">
+                    <button id="menu_tweet"><em><b>Woof</b></em></button>
+                </div>
+            </section>
+
+        </section>
+
+        <!-- main central feed -->
+        <section class="main">
+        
+            <section class="home_bar">
+                <div class="home">
+                    <h1>Woofer</h1>
+                </div>
+                <div class="spark">
+                    <img src="./assets/sparkle.svg" alt="sparkle icon">
+                </div>
+            </section>
+
+            <section class="compose">
+                <div class="compose_top">
+                    <div class="pic">
+                        <img src="./assets/profilepic.jpg" alt="user's profile picture">
+                    </div>
+                    <div class="type_here">
+                        <p>What's hap-pawning?</p>
+                    </div>
+                </div>
+                <div class="compose_bot">
+                    <div class="media_icons">
+                        <img src="./assets/compose-icons/media.svg" alt="media icon">
+                        <img src="./assets/compose-icons/gif.svg" alt="gif icon">
+                        <img src="./assets/compose-icons/poll.svg" alt="poll icon">
+                        <img src="./assets/compose-icons/emoji.svg" alt="emoji icon">
+                        <img src="./assets/compose-icons/schedule.svg" alt="schedule icon">
+                    </div>
+                    <button class="publish">
+                        <em><b>publish</b></em>
+                    </button>
+                </div>
+            </section>
+            
+            <section class="feed">
+                <div class="tweet">
+                    <img id="user" src="./assets/goodboi.jpg" alt="user profile picture">
+                    <div class="tweet_content">
+                        <p class="username">
+                            @GoodBoi
+                        </p>
+                        <p class="content">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur minus odit, similique unde perferendis voluptatem porro maiores.
+                        </p>
+                        <div class="interact">
+                            <img src="./assets/tweet-icons/reply.svg">
+                            <img src="./assets/tweet-icons/retweet.svg" alt="retweet icon">
+                            <img src="./assets/tweet-icons/like.svg" alt="like icon">
+                            <img src="./assets/tweet-icons/view.svg" alt="view icon">
+                            <img src="./assets/tweet-icons/share.svg" alt="share icon">
+                        </div>
+                    </div>
+                </div>
+                <div class="tweet">
+                    <img id="user2" src="./assets/yappsalot.jpg" alt="user2 profile picture">
+                    <div class="tweet_content">
+                        <p class="username">
+                            @Yappsalot
+                        </p>
+                        <p class="content">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit porro aliquam architecto soluta accusamus nobis atque facere nulla. Sit, voluptatibus?
+                        </p>
+                        <div class="interact">
+                            <img src="./assets/tweet-icons/reply.svg">
+                            <img src="./assets/tweet-icons/retweet.svg" alt="retweet icon">
+                            <img src="./assets/tweet-icons/like.svg" alt="like icon">
+                            <img src="./assets/tweet-icons/view.svg" alt="view icon">
+                            <img src="./assets/tweet-icons/share.svg" alt="share icon">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </section>
+
+        <!-- RH topics -->
+        <section class="right">
+            <section class="topics">
+                <div class="search">
+                    <img src="./assets/explore.svg" alt="search bar icon"> 
+                    <h3>Search Woofer</h3>
+                </div>
+                <div class="happening">
+                    <h2>What's happening?</h2>
+                </div>
+                <div class="follow">
+                    <h2>Dogs you may know!</h2>
+                </div>
+            </section>
+        </section>
+
+    </section>
+</body>
+</html>
