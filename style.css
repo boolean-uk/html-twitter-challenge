@@ -15,6 +15,11 @@ a {
     color: black;
 }
 
+button {
+    background: none;
+    border: none;
+}
+
 /* Main Layout */
 
 main {
@@ -53,6 +58,10 @@ main {
     height: 52px;
 }
 
+.nav-button:focus {
+    font-weight: bold;
+}
+
 .left-twitter:hover {
     background-color: lightgrey;
 }
@@ -65,9 +74,9 @@ main {
     background-color: lightgrey;
 }
 
-.left-home p {
+/* .left-home p {
     font-weight: 700;
-}
+} */
 
 /* Tweet Button */
 
