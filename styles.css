@@ -259,7 +259,7 @@ body {
   cursor: pointer;
 }
 
-/* Tweet button on left-bar */
+/* Tweet button on bottom left-bar */
 .tweet-grid {
   grid-area: tweet-grid;
   justify-self: center;
@@ -330,6 +330,7 @@ body {
   /* border: 1px solid black; */
 }
 
+/* Posting media */
 .uploading {
   grid-area: uploading;
   /* border: 1px solid black; */
@@ -406,6 +407,7 @@ body {
   cursor: pointer;
 }
 
+/* Main - middle-feed section */
 .feed {
   grid-area: feed;
   /* border: 1px dashed black; */
@@ -516,6 +518,7 @@ span {
   margin-top: 30px;
 }
 
+/* Media Queires */
 @media screen and (max-width: 900px) {
   .main {
     color: red;
