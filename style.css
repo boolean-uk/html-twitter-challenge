@@ -1,0 +1,324 @@
+* {
+    margin: 0;
+}
+
+.layout {
+    /* width */
+    height: 800px;
+    display: grid;
+    grid-template-columns: 200px 1fr 300px;
+    padding:10px;
+}
+
+button {
+    width: 100%;
+    background-color: beige;
+    border-radius: 50vh;
+    border: 0;
+}
+
+.search {
+    height: 25px;
+    text-align: start;
+    padding-left: 10px;
+}
+
+.search img {
+    height: 60%;
+    /* padding-top: 5px; */
+    
+}
+
+.left button {
+    background-color: blue;
+    color: white;
+    height: 40px;
+    width: 195px;
+    /* margin: 10px 50px 0px 0px; */
+    margin-bottom: 30px;
+}
+
+.right div {
+    background-color: aliceblue;
+    min-height: 100px;
+    margin: 10px 5px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/* .right {
+    margin: 5px;
+
+} */
+
+.main{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+
+.nav{
+    display: grid;
+    grid-template-areas: 
+    "i1 hom"
+    "i2 exp"
+    "i3 not"
+    "i4 mes"
+    "i5 boo"
+    "i6 pro"
+    "i7 mor";
+    grid-template-columns: 60px 1fr;
+    grid-template-rows: repeat(7, 1fr);
+    height: 450px;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.i1, .i2, .i3, .i4, .i5, .i6, .i7 {
+    width: 40%;
+    padding: 2px 0px 0px 10px;
+}
+
+.i1 {
+    grid-area: i1;
+}
+
+.i2 {
+    grid-area: i2;
+}
+
+.i3 {
+    grid-area: i3;
+}
+
+.i4 {
+    grid-area: i4;
+}
+
+.i5 {
+    grid-area: i5;
+}
+
+.i6 {
+    grid-area: i6;
+}
+
+.i7 {
+    grid-area: i7;
+}
+
+.nav a {
+    font-weight: bold;
+    font-size: 23px;
+    color: gray;
+    text-decoration: none;
+    /* background-color: blue; */
+}
+
+.hom {
+    grid-area: hom;
+}
+
+
+.exp {
+    grid-area: exp;
+}
+
+.not {
+    grid-area: not;
+}
+
+.mes {
+    grid-area: mes;
+}
+
+.boo {
+    grid-area: boo;
+}
+
+.pro {
+    grid-area: pro;
+}
+
+.mor {
+    grid-area: mor;
+}
+
+
+.bar:hover {
+    color: burlywood;
+    cursor: crosshair;
+}
+
+.bar:focus {
+    color: blue;
+}
+
+/* .tweet > div {
+    display: inline-block;
+
+} */
+
+.pp {
+    border: 2px solid black;
+    height: 35px;
+    width: 35px;
+    grid-area: pp;
+    margin: 5px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.pp > img {
+    /* object-fit: cover; */
+    /* height: 100%; */
+    /* width: 100%; */
+    
+}
+/* .tools {
+    display: inline-block
+}*/
+
+.mon {
+    height: 100%;
+}
+
+.man {
+    width: 100%
+    /* position: relative;
+    top: 0px; */
+}
+
+.brick {
+    height:70%;
+    object-fit: contain;
+    position:relative;
+    top:5px;
+
+}
+
+.joy {
+    height: 105%;
+    object-fit: cover;
+    position: relative;
+    right:9px;
+}
+
+/*.create {
+    width: 100%;
+} */
+
+.tweet {
+    display: grid;
+    grid-template-areas:
+    "pp compose compose"
+    "pp tools done";
+    grid-template-columns: 60px 1fr 135px;
+    /* min-height: 150px; */
+    /* background-color: antiquewhite; */
+    border-bottom: 16px solid aliceblue;
+    padding: 10px 0px 0px 0px;
+}
+
+.create {
+    grid-area: compose;
+    margin-top: 5px;
+
+}
+
+.tools {
+    grid-area: tools;
+}
+
+.tweet > button {
+    grid-area: done;
+    height: 40px;
+    background-color: blue;
+    color: white;
+    margin: 10px;
+    width: 120px;
+
+}
+
+.main h1 {
+    padding: 10px;
+    display: inline;
+}
+
+.post {
+    display: grid;
+    grid-template-areas: "pp content";
+    grid-template-columns: 60px 1fr;
+    border-bottom: 1px solid grey;
+    min-height: 80px;
+    padding: 5px 0px;
+}
+
+.content {
+    grid-area: content;
+}
+
+.blue {
+    color:blue;
+}
+
+.gray {
+    color: gray;
+}
+
+.logo {
+    width: 40%;
+    padding: 10px;
+}
+
+/*
+section created for altering some svg and things for extension properties/positions
+*/
+.main h1 {
+    display: inline-block;
+}
+
+.stars {
+    height: 30px;
+    float: right;
+    margin: 5px 5px 0px 0px;
+}
+
+.top-bar {
+    width: 100%;
+}
+
+.tools img {
+    height: 20px;
+    padding: 5px 5px;
+
+}
+
+.react {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.react img {
+    height: 20px;
+}
+
+/* screen resizing depending on view width*/
+
+@media screen and (max-width: 900px) {
+    .layout {
+      grid-template-columns: 200px 1fr;
+    }
+    .right {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .layout {
+        grid-template-columns: 1fr;
+    }
+    .left {
+        display: none;
+    }
+
+}
