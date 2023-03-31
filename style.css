@@ -75,9 +75,7 @@ div {
 
 /* left grid structure */
 
-.left>div {
-    margin: 10px;
-}
+
 
 .left-menu>div {
     margin-left: 20%;
@@ -95,10 +93,11 @@ div {
     display: grid;
     grid-template-columns: 0.3fr 1fr 0.3fr;
     position: fixed;
-    bottom: 2px;
+    bottom: 0px;
     max-width: 15%;
     left: 5%;
     background-color: white;
+    border-radius: 10%;
 
 }
 
