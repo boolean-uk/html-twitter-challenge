@@ -132,8 +132,17 @@ header > img {
   .main-section > .icon-bar {
     grid-area: icon-bar;
     border: 1px solid rgba(121, 121, 121, 0.5);
-    grid-template-areas: '.' '.' '.' '.';
+    grid-template: 
+    '.' 100px 
+    '.' 100px 
+    '.' 100px 
+    '.' 100px
+    '.' auto;
     place-items: center;
+  }
+
+  .main-section > .icon-bar > .container {
+    grid-area: container;
   }
 
 }
