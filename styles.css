@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -32,7 +32,7 @@ body {
   grid-area: logo-grid-leftbar;
   width: 30px;
   margin-top: 20px;
-  margin-left: 68px;
+  margin-left: 70px;
 }
 
 .logo-grid-leftbar:hover {
@@ -368,7 +368,7 @@ span {
   width: 25px;
   position: relative;
   bottom: 476px;
-  left: 30px;
+  left: 25px;
 }
 
 .search-twitter-bar {
