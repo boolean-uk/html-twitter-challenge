@@ -252,6 +252,9 @@ audio {
     font-size: 18px;
     color: blue;
 }
+.effect:focus {
+  color: green;
+}
 @media screen and (max-width: 1150px) {
     .grid {
         grid-template-columns: 300px 1fr;
