@@ -1,25 +1,24 @@
 * {
     margin: 0;
-    /* background-color: lightslategrey; */
     padding: 5px;
 }
 
 /* default overrides */
-/* .left, */
+/* left */
     .menu, 
         .logo, .menu_buttons, .tweet_button, 
-/* .main, */
+/* main */
     .home_bar,
         .home, .spark,
     .compose,
-        /*  */
     .feed,
-        /*  */
-/* .right, */
+/* right */
     .topics,
         .search, .happening, .follow {
     margin: 5px;
 }
+
+/* tag default styling overrides */
 strong, em, b, img, h1, h2 {
     background-color: transparent;
 }
@@ -29,6 +28,7 @@ h2 {
 body, html, .grid {
     padding: 0;
 }
+
 /* overall grid layout */
 .grid {
     display: grid;
@@ -39,27 +39,8 @@ body, html, .grid {
     /* border: dotted 1px black; */
     gap: 5px;
 }
-/* TOP GRID common styling */
-    /* .left, .main, .right  */
-    /* {
-        border: dashed 1px blue;
-        background-color:lightseagreen;
-    } */
-/* SUBGRID common styling */
-    /* LH */
-        /* .menu,  */
-    /* main */
-        /* .home_bar, .compose, .feed,  */
-    /* RH */
-        /* .topics {
-        border: dashed 1px red;
-    } */
+
 /* INNER COMPS common styling  */
-    /* LH */
-    /* .logo, .menu_buttons, .tweet_button, */
-    /* main */
-    /* .home, .spark, */
-    /* .type_here, .media_icons,  */
     .compose, .tweet,
     /* RH */
     .happening, .follow {
@@ -93,6 +74,7 @@ body, html, .grid {
     .left, .right {
         min-width: 200px;
     }
+
 /* MAIN central feed grids styling */
     .home_bar {
         grid-area: home_bar;
@@ -196,7 +178,6 @@ body, html, .grid {
         }
     /* FEED */
     /* TWEET styling */
-        /* outer grid */
         .tweet {
             display: grid;
             grid-template-areas: "user tweet_content";
@@ -217,9 +198,6 @@ body, html, .grid {
                 grid-template-rows: 25px 1fr 25px;
                 gap: 2px;
             }
-                /* .username, .content, .interact {
-                    border: red 1px solid;
-                } */
                 .username {
                     grid-area: username;
                     display: inline-flex;
@@ -254,6 +232,7 @@ body, html, .grid {
         grid-template-rows: 50px 400px 50px 1fr;
         gap: 5px;
     }
+
 /* RH TOPICS styling */
     .topics {
         grid-area: topics;
@@ -305,7 +284,8 @@ body, html, .grid {
         .tweet_button {
             grid-area: tweet_button;
             place-self: center;
-        }          
+        } 
+                 
 /* TOPICS components styling */
         .search {
             grid-area: search;
@@ -316,19 +296,15 @@ body, html, .grid {
         .follow {
             grid-area: follow;
         }
-
+        
 /* MENU BUTTONS */
 .menu_buttons ul {
     display:grid;
     grid-auto-flow: rows;
     list-style: none;
-    /* background-color: lightcoral; */
     gap: 2px;
     margin: 0;
 }
-    /* .menu_buttons ul li {
-        border: solid black 1px;
-    } */
     .menu_buttons ul li img {
         align-self: center;
         height:20px;
