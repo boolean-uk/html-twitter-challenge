@@ -1,0 +1,630 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 1fr  2fr auto;
+    grid-template-rows: 100vh;
+    grid-template-areas: 
+    "left main right"
+}
+
+#left-bar{
+    display: grid;
+    grid-area: left;
+    border: 2px solid rgb(228, 228, 228);
+    padding-left: 50px;
+}
+
+#twitter-logo > svg{
+    width: 30px;
+   
+    margin: 10px;
+    margin-left: 20px;
+    fill: rgb(29, 155, 240);
+}
+
+#home{
+    display: grid;
+    grid-template-columns: 30px auto;
+    margin: 10px;
+    margin-left: 20px;   
+    text-decoration: none;
+    color: black;
+    width: fit-content
+}
+
+#home:hover{
+    fill: rgb(29, 155, 240);
+    color: rgb(29, 155, 240);
+    cursor: pointer;
+}
+
+#home-text{
+    margin: 8px;
+    padding-left: 5px; 
+    
+}
+
+#explore{
+    display: grid;
+    grid-template-columns: 30px auto;
+    margin: 10px;
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+    width: fit-content
+
+}
+
+#explore:hover{
+    fill: rgb(29, 155, 240);
+    color: rgb(29, 155, 240);
+    cursor: pointer;
+}
+
+
+#explore-text{
+   
+    margin: 8px;
+    padding-left: 5px;
+
+    
+}
+
+#notifications{
+    display: grid;
+    margin: 10px;
+    margin-left: 20px;
+    grid-template-columns: 30px auto;
+    text-decoration: none;
+    color: black;
+    width: fit-content
+
+}
+
+#notifications:hover{
+    fill: rgb(29, 155, 240);
+    color: rgb(29, 155, 240);
+    cursor: pointer;
+}
+
+#notifications-text{
+    
+    margin: 8px;
+    padding-left: 5px;
+
+}
+
+
+#messages{
+    display: grid;
+    margin: 10px;
+    margin-left: 20px;
+    grid-template-columns: 30px auto;
+    text-decoration: none;
+    color: black;
+    width: fit-content
+
+}
+
+#messages:hover{
+    fill: rgb(29, 155, 240);
+    color: rgb(29, 155, 240);
+    cursor: pointer;
+}
+
+#messages-text{
+    
+    margin: 8px;
+    padding-left: 5px;
+
+    
+}
+
+
+#bookmarks{
+    display: grid;
+    margin: 10px;
+    margin-left: 20px;
+    grid-template-columns: 30px auto;
+    text-decoration: none;
+    color: black;
+    width: fit-content
+
+}
+
+#bookmarks:hover{
+    fill: rgb(29, 155, 240);
+    color: rgb(29, 155, 240);
+    cursor: pointer;
+}
+
+#bookmarks-text{
+    
+    margin: 8px;
+    padding-left: 5px;
+
+    
+}
+
+
+#lists{
+    display: grid;
+    margin: 10px;
+    margin-left: 20px;
+    grid-template-columns: 30px auto;
+    text-decoration: none;
+    color: black;
+    width: fit-content
+
+}
+
+#lists:hover{
+    fill: rgb(29, 155, 240);
+    color: rgb(29, 155, 240);
+    cursor: pointer;
+}
+
+#lists-text{
+  
+    margin: 8px;
+    padding-left: 5px;
+
+    
+}
+
+
+#profile{
+    display: grid;
+    margin: 10px;
+    margin-left: 20px;
+    grid-template-columns: 30px auto;
+    text-decoration: none;
+    color: black;
+    width: fit-content
+
+}
+
+#profile:hover{
+    fill: rgb(29, 155, 240);
+    color: rgb(29, 155, 240);
+    cursor: pointer;
+}
+
+
+#profile-text{
+    
+    margin: 8px;
+    padding-left: 5px;
+
+    
+}
+
+
+#more{
+    display: grid;
+    margin: 10px;
+    margin-left: 20px;
+    grid-template-columns: 30px auto;
+    text-decoration: none;
+    color: black;
+    width: fit-content
+
+}
+
+#more:hover{
+    fill: rgb(29, 155, 240);
+    color: rgb(29, 155, 240);
+    cursor: pointer;
+}
+
+#more-text{
+    margin: 8px;
+    padding-left: 5px;
+}
+
+
+#tweet > button{
+    margin: 10px;
+    margin-left: 20px;
+    background-color: rgb(29, 155, 240);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    width: 250px
+}
+
+#tweet > button:hover{
+    cursor: pointer;
+}
+
+
+#login-bar{
+    display: grid;
+    margin: 60px 5px 5px 5px;
+    grid-template-columns: 45px 200px 1fr;
+    color: black;
+    text-decoration: none;
+    padding: 5px;
+}
+
+#login-bar:hover{
+    background-color: rgba(128, 128, 128, 0.308);
+    border-radius: 50px;
+}
+
+#emoji-icon > svg{
+    height: 40px;
+    width: 40px;
+}
+
+#emoji-icon{
+    display: grid;
+    place-content: center;
+}
+
+
+#username-email{
+    display: grid;
+    grid-template-rows: repeat(2, 1fr)
+}
+
+#email{
+    color: rgb(82, 82, 187);
+}
+
+
+#three-dot-explorer{
+    display: grid;
+    place-content: center;
+}
+
+#three-dot-explorer > svg{
+    height: 15px;
+    width: 20px;
+}
+
+
+#main{
+    display: grid;
+    grid-area: main;
+    grid-auto-rows: max-content;
+    overflow-y: auto;
+    background-color: rgb(223, 223, 223);
+    border: 2px solid rgb(228, 228, 228);
+}
+
+#main::-webkit-scrollbar{
+    width: 10px;
+}
+
+#main::-webkit-scrollbar-thumb{
+    background: grey;
+    border-radius: 5px;
+}
+
+
+#compose-tweet {
+    display: grid;
+    
+    margin-bottom: 15px;
+    background-color: white;
+    
+}
+
+#title-bar {
+    display: grid;
+    height: fit-content;
+    padding: 15px 10px;
+    max-width: auto;
+    grid-template-columns: auto 1fr;
+    place-items: end;
+}
+
+#title-bar > p{
+    margin-bottom: 5px;
+}
+
+#title-bar >  svg{
+    height: 20px;
+    position: relative;
+    bottom: 3px;
+
+}
+
+
+
+#compose-bar{
+    display: grid;
+    height: fit-content;
+    padding: 0 10px;
+    max-width: auto;
+    grid-template-columns: auto 1fr;
+    
+}
+
+#compose-bar > svg{
+    height: 40px;
+    width: 40px;
+    margin-right: 3px;
+}
+
+#compose-bar > input{
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    font-size: 16px;
+    
+}
+#send-tweet{
+    display: grid;
+    
+    height: fit-content;
+    max-width: auto;
+    grid-template-columns: repeat(6, fit-content(100px)) 1fr;
+    place-items: end;
+    align-items: center;
+}
+
+#send-tweet >  svg{
+    height: 23px;
+    fill: rgb(29, 155, 240);
+    margin: 15px 2px;
+    
+
+}
+
+#send-tweet >  svg:nth-child(1){
+    margin-left: 60px;
+}
+
+#send-tweet >  input{
+    width: 90px;
+    padding: 10px 0;
+    border-radius: 50px;
+    outline: none;
+    border: none;
+    color: white;
+    background-color: rgb(29, 155, 240);
+    margin-right: 10px;
+}
+
+#send-tweet >  input:hover{
+   cursor: pointer;
+}
+
+.post{
+    display: grid;
+    
+    background-color: white;
+    grid-template-columns: auto 1fr;
+    padding: 5px;
+}
+
+.retweeted-post{
+    display: grid;
+    background-color: white;
+    grid-template-columns: auto 1fr;
+    padding: 5px;
+    
+}
+
+.user-icon{
+    padding-right: 20px;
+}
+
+.user-icon-retweet{
+    padding-right: 20px;
+}
+
+.retweeted-post > .user-icon-retweet > svg + svg{
+    height: 40px;
+    display: block;
+}
+
+.retweeted-post > .user-icon-retweet > svg:nth-child(1){
+    height: 16px;
+    display: block;
+    fill: rgb(83, 100, 113);
+    margin-left: 24px;
+}
+
+.post > .user-icon > svg{
+    height: 40px;
+    
+}
+
+.retweeted-post > .user-icon > svg{
+    height: 40px;
+    
+}
+
+.post-contents > p{
+    display: inline-block;
+    position: relative;
+    top: 8px;
+}
+
+.post-heading{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: auto 1fr;
+    place-items: end;
+}
+
+.post-heading > a:hover{
+    text-decoration: underline;
+}
+
+.post-heading-retweet > a:hover{
+    text-decoration: underline;
+}
+
+
+.post-heading-retweet{
+    display: grid;
+    grid-template-rows: auto 1fr;
+    grid-template-columns: auto 1fr;
+    place-items: end;
+
+}
+
+.post-heading > a{
+    text-decoration: none;
+    color: black;
+}
+
+.post-heading-retweet > a{
+    text-decoration: none;
+    color: black;
+}
+
+.retweet-heading{
+    width: fit-content;
+    color: rgb(83, 100, 113);
+    margin-right: 47px;
+}
+
+.post-heading > a > h4 > span{
+    font-weight: lighter;
+    color: rgb(82, 82, 187);
+}
+
+.post-heading-retweet > a > h4 > span{
+    font-weight: lighter;
+    color: rgb(82, 82, 187);
+}
+
+
+
+.post-heading > a > svg{
+    width: 20px;
+    height: 15px;
+    
+}
+
+.post-heading-retweet > a > svg{
+    width: 20px;
+    height: 15px;
+    
+}
+
+.post-contents > h4{
+    margin-bottom: 15px;
+}
+
+.post-options{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin-top: 30px;
+    
+}
+
+.post-options > a > svg{
+  height: 20px;  
+
+}
+
+.post-options > a > p{
+    display: inline-block;
+    position: relative;
+    bottom: 5px;
+   
+}
+
+.post-options > a{
+    text-decoration: none;
+    color: black;
+    width: fit-content;
+}
+
+.post-options > a:hover{
+    color: rgb(29, 155, 240);
+    fill: rgb(29, 155, 240);
+
+}
+
+.post-options > a:nth-child(2):hover{
+    color: rgb(1, 172, 1);
+    fill: rgb(1, 172, 1);
+
+}
+
+.post-options > a:nth-child(3):hover{
+    color: rgb(255, 73, 73);
+    fill: rgb(255, 73, 73);
+
+}
+
+
+#right-bar{
+    display: grid;
+    grid-area: right;
+    border: 2px solid rgb(228, 228, 228) ;
+    background: white;
+    position: relative;
+    width: fit-content;
+    grid-auto-rows: max-content;
+    gap: 5px;
+}
+
+#whats-happening{
+    padding: 20px 50px;
+    border-radius: 20px;
+    background-color: rgba(29, 156, 240, 0.185);
+    text-decoration: underline;
+}
+
+#who-to-follow{
+    padding: 20px 50px;
+    border-radius: 20px;
+    background-color: rgba(29, 156, 240, 0.185);
+    text-decoration: underline;
+}
+
+#right-bar > input {
+  width: 100%;
+  padding: 20px 60px 20px 20px;
+  display: block;
+  border-radius: 50px;
+  border: 2px solid rgb(228, 228, 228);
+  font-size: 17px;
+}
+
+#right-bar > button{
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px 30px;
+  
+}
+
+#right-bar > button > svg{
+    width: 20px;
+    fill: rgb(131, 131, 131);
+}
+
+#right-bar > button > svg:active{
+    fill: black;
+}
+
+#right-bar > input:focus{
+    background-color: rgba(128, 128, 128, 0.158);
+    border: 2px solid rgb(228, 228, 228);
+}
+
+
+@media screen and (max-width: 800px) {
+    #left-bar{
+        width: max-content;
+    }
+}
