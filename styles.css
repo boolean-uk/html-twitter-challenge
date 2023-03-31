@@ -326,6 +326,7 @@ body {
   display: grid;
   grid-template-columns: 300px;
   grid-template-areas: uploading;
+
   /* border: 1px solid black; */
 }
 
@@ -513,4 +514,28 @@ span {
   text-align: left;
   margin-left: 30px;
   margin-top: 30px;
+}
+
+@media screen and (max-width: 900px) {
+  .main {
+    color: red;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .right-bar {
+    /* width: 100%;
+    float: none;
+    min-height: 100px; */
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .left-bar {
+    /* width: 100%;
+    float: none;
+    min-height: 100px; */
+    overflow: hidden;
+  }
 }
