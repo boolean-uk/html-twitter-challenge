@@ -28,17 +28,17 @@ hr {
 /*   border-radius: 7px; */
 /* } */
 
-body > section {
-  height: auto;
-}
-
 body {
   min-height: 100vh;
   display: grid;
   grid-template-columns: 200px 1fr 300px;
   column-gap: 10px;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 15vw;
+  margin-right: 15vw;
+  height: auto;
+}
+
+body > section {
   height: auto;
 }
 
