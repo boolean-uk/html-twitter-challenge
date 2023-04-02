@@ -269,7 +269,10 @@ body {
   border-radius: 600px;
   width: 200px;
   height: 45px;
-  transform: translateY(100%);
+
+  /* transform: translateY(100%); */
+  position: relative;
+  right: 20px;
   background-color: #00acee;
   color: white;
   font-size: 15px;
@@ -511,7 +514,7 @@ span {
   cursor: pointer;
 }
 
-.who-to-follow {
+#who-to-follow {
   grid-area: who-to-follow;
   text-align: left;
   margin-left: 30px;
