@@ -373,7 +373,7 @@ body {
   width: 25px;
   position: relative;
   left: 270px;
-  bottom: 85px;
+  bottom: 88px;
 }
 
 .emoji-upload:hover {
@@ -384,7 +384,7 @@ body {
   width: 25px;
   position: relative;
   left: 310px;
-  bottom: 112px;
+  bottom: 115px;
 }
 
 .schedule-upload:hover {
@@ -394,8 +394,8 @@ body {
 .tweet-button2 {
   /* Positioning */
   position: relative;
-  left: 550px;
-  bottom: 140px;
+  left: 545px;
+  bottom: 155px;
   /* Design */
   height: 35px;
   width: 70px;
