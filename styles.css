@@ -81,6 +81,7 @@ body {
 
 .home:hover {
   cursor: pointer;
+  color: green;
 }
 
 .explore {
@@ -106,6 +107,7 @@ body {
 
 .explore:hover {
   cursor: pointer;
+  color: palevioletred;
 }
 
 .notifications {
@@ -132,6 +134,7 @@ body {
 
 .notifications:hover {
   cursor: pointer;
+  color: cyan;
 }
 
 .messages {
@@ -157,6 +160,7 @@ body {
 
 .messages:hover {
   cursor: pointer;
+  color: crimson;
 }
 
 .bookmarks {
@@ -182,6 +186,7 @@ body {
 
 .bookmarks:hover {
   cursor: pointer;
+  color: rgb(0, 255, 191);
 }
 
 .lists {
@@ -207,6 +212,7 @@ body {
 
 .lists:hover {
   cursor: pointer;
+  color: dodgerblue;
 }
 
 .profile {
@@ -232,6 +238,7 @@ body {
 
 .profile:hover {
   cursor: pointer;
+  color: darkgoldenrod;
 }
 
 .more {
@@ -257,6 +264,7 @@ body {
 
 .more:hover {
   cursor: pointer;
+  color: indigo;
 }
 
 /* Tweet button on bottom left-bar */
