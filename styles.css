@@ -124,14 +124,17 @@ header > img {
 .icon-text-container > a {
   text-decoration: none;
   color: black;
+  border-radius: 25px;
+  
 }
 
 .icon-text-container > a:hover {
   cursor: pointer;
+  background-color: rgb(198, 198, 198);
 }
 
 .icon-text-container > a:active {
-  border: 3px dotted black;
+  border: 3px solid black;
 }
 @media screen and (min-width: 1100px) {
   .main-section {
