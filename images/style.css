@@ -72,9 +72,13 @@ img {
 p {
 padding-top: 5px;
 padding-bottom: 20px;
-text-decoration-line: none;
+
 color: black;
 
+}
+
+a {
+    text-decoration: none; 
 }
 
 nav {
