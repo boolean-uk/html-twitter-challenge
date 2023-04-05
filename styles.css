@@ -1,0 +1,555 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  max-width: 1250px;
+  margin: 0 auto;
+  background-color: #f5f8fa;
+}
+
+.grid {
+  display: grid;
+  grid-template: "left-bar main right-bar";
+  grid-template-columns: 280px 650px 350px;
+  /* border: 1px dashed black; */
+  margin-top: 100px;
+}
+
+/* Left-bar */
+.left-bar {
+  grid-area: left-bar;
+  background-color: #f5f8fa;
+
+  /* Make a display grid within left-bar
+  Rows - will determine how wide the rows are, for example, for option nav needs to be greater than tweet grid  */
+  display: grid;
+  grid-template-rows: 50px 600px 150px;
+  grid-template-areas:
+    "logo-grid-leftbar"
+    "options-nav"
+    "tweet-grid";
+}
+
+.logo-grid-leftbar {
+  grid-area: logo-grid-leftbar;
+  width: 30px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+
+.logo-grid-leftbar:hover {
+  cursor: pointer;
+}
+
+.options-nav {
+  grid-area: options-nav;
+  /* border: 1px dashed black; */
+
+  /* Make a grid within options-nav for the options */
+
+  display: grid;
+  grid-template-rows: repeat (80px 8);
+  grid-template-areas:
+    "home"
+    "explore"
+    "notifications"
+    "messages"
+    "bookmarks"
+    "lists"
+    "profile"
+    "more";
+}
+
+/* Options on left-bar */
+.home {
+  grid-area: home;
+  text-align: left;
+  margin-left: 70px;
+
+  display: grid;
+  grid-template-columns: 20px;
+  grid-template-areas: "house-icon";
+  /* border: 1px solid black; */
+}
+
+.home-icon {
+  grid-area: house-icon;
+  width: 21px;
+  position: relative;
+  right: 40px;
+  top: 46px;
+}
+
+.home:hover {
+  cursor: pointer;
+  color: green;
+}
+
+.explore {
+  grid-area: explore;
+  text-align: left;
+  margin-left: 70px;
+
+  position: relative;
+  bottom: 30px;
+
+  display: grid;
+  grid-template-columns: 20px;
+  grid-template-areas: "hashtag-icon";
+}
+
+.hashtag-icon {
+  grid-area: hashtag-icon;
+  width: 20px;
+  position: relative;
+  right: 40px;
+  top: 50px;
+}
+
+.explore:hover {
+  cursor: pointer;
+  color: palevioletred;
+}
+
+.notifications {
+  grid-area: notifications;
+  text-align: left;
+  margin-left: 70px;
+  /* border: 1px solid black; */
+
+  position: relative;
+  bottom: 55px;
+
+  display: grid;
+  grid-template-columns: 20px;
+  grid-template-areas: "notification-icon";
+}
+
+.notification-icon {
+  grid-area: notification-icon;
+  width: 20px;
+  position: relative;
+  right: 40px;
+  top: 46px;
+}
+
+.notifications:hover {
+  cursor: pointer;
+  color: cyan;
+}
+
+.messages {
+  grid-area: messages;
+  text-align: left;
+  margin-left: 70px;
+
+  position: relative;
+  bottom: 80px;
+
+  display: grid;
+  grid-template-columns: 20px;
+  grid-template-areas: "message-icon";
+}
+
+.message-icon {
+  grid-area: message-icon;
+  width: 20px;
+  position: relative;
+  right: 40px;
+  top: 46px;
+}
+
+.messages:hover {
+  cursor: pointer;
+  color: crimson;
+}
+
+.bookmarks {
+  grid-area: bookmarks;
+  text-align: left;
+  margin-left: 70px;
+
+  position: relative;
+  bottom: 110px;
+
+  display: grid;
+  grid-template-columns: 20px;
+  grid-template-areas: "bookmark-icon";
+}
+
+.bookmark-icon {
+  grid-area: bookmark-icon;
+  width: 20px;
+  position: relative;
+  right: 40px;
+  top: 46px;
+}
+
+.bookmarks:hover {
+  cursor: pointer;
+  color: rgb(0, 255, 191);
+}
+
+.lists {
+  grid-area: lists;
+  text-align: left;
+  margin-left: 70px;
+
+  position: relative;
+  bottom: 135px;
+
+  display: grid;
+  grid-template-columns: 20px;
+  grid-template-areas: "list-icon";
+}
+
+.list-icon {
+  grid-area: list-icon;
+  width: 20px;
+  position: relative;
+  right: 40px;
+  top: 48px;
+}
+
+.lists:hover {
+  cursor: pointer;
+  color: dodgerblue;
+}
+
+.profile {
+  grid-area: profile;
+  text-align: left;
+  margin-left: 70px;
+
+  position: relative;
+  bottom: 158px;
+
+  display: grid;
+  grid-template-columns: 20px;
+  grid-template-areas: "pic-icon";
+}
+
+.pic-icon {
+  grid-area: pic-icon;
+  width: 20px;
+  position: relative;
+  right: 40px;
+  top: 48px;
+}
+
+.profile:hover {
+  cursor: pointer;
+  color: darkgoldenrod;
+}
+
+.more {
+  grid-area: more;
+  text-align: left;
+  margin-left: 70px;
+
+  position: relative;
+  bottom: 158px;
+
+  display: grid;
+  grid-template-columns: 20px;
+  grid-template-areas: "more-icon";
+}
+
+.more-icon {
+  grid-area: pic-icon;
+  width: 20px;
+  position: relative;
+  right: 145px;
+  bottom: 43px;
+}
+
+.more:hover {
+  cursor: pointer;
+  color: indigo;
+}
+
+/* Tweet button on bottom left-bar */
+.tweet-grid {
+  grid-area: tweet-grid;
+  justify-self: center;
+}
+
+.tweet-button1 {
+  border-radius: 600px;
+  width: 200px;
+  height: 45px;
+
+  /* transform: translateY(100%); */
+  position: relative;
+  right: 20px;
+  background-color: #00acee;
+  color: white;
+  font-size: 15px;
+
+  border: none;
+}
+
+.tweet-button1:hover {
+  cursor: pointer;
+}
+/* Main */
+.main {
+  grid-area: main;
+  background-color: #f5f8fa;
+
+  /* Make a display grid within the main. The main will have three rows - home-page, posting section and feed section  */
+  display: grid;
+  grid-template-rows: 50px 130px 620px;
+  grid-template-areas:
+    "home-page"
+    "posting-section"
+    "feed";
+}
+
+.home-page {
+  grid-area: home-page;
+  margin-left: 80px;
+}
+
+.home-page:hover {
+  cursor: pointer;
+}
+
+.posting-section {
+  grid-area: posting-section;
+  /* border: 1px dashed black; */
+}
+
+.profile-picture {
+  width: 50px;
+  position: absolute;
+  bottom: 875px;
+  right: 1250px;
+  left: 350px;
+}
+
+.whats-happening {
+  margin-left: 140px;
+  margin-top: 10px;
+  font-size: 20px;
+  color: grey;
+
+  /* Making grid inside 'what's happening a grid to fit the icons in */
+  display: grid;
+  grid-template-columns: 300px;
+  grid-template-areas: uploading;
+
+  /* border: 1px solid black; */
+}
+
+/* Posting media */
+.uploading {
+  grid-area: uploading;
+  /* border: 1px solid black; */
+}
+.media-upload {
+  width: 30px;
+  margin-left: 143px;
+}
+
+.media-upload:hover {
+  cursor: pointer;
+}
+
+.gif-upload {
+  width: 25px;
+  position: relative;
+  left: 190px;
+  bottom: 30px;
+}
+
+.gif-upload:hover {
+  cursor: pointer;
+}
+
+.poll-upload {
+  width: 25px;
+  position: relative;
+  left: 230px;
+  bottom: 58px;
+}
+
+.poll-upload:hover {
+  cursor: pointer;
+}
+
+.emoji-upload {
+  width: 25px;
+  position: relative;
+  left: 270px;
+  bottom: 88px;
+}
+
+.emoji-upload:hover {
+  cursor: pointer;
+}
+
+.schedule-upload {
+  width: 25px;
+  position: relative;
+  left: 310px;
+  bottom: 115px;
+}
+
+.schedule-upload:hover {
+  cursor: pointer;
+}
+
+.tweet-button2 {
+  /* Positioning */
+  position: relative;
+  left: 545px;
+  bottom: 155px;
+  /* Design */
+  height: 35px;
+  width: 70px;
+  border-radius: 600px;
+  background-color: #00acee;
+  color: white;
+  font-size: 15px;
+  border: none;
+}
+
+.tweet-button2:hover {
+  cursor: pointer;
+}
+
+/* Main - middle-feed section */
+.feed {
+  grid-area: feed;
+  /* border: 1px dashed black; */
+
+  /* Making a grid within feed so I can place the user-profile-pic as a column, tweet section username, feed-text and feed icons as rows*/
+
+  display: grid;
+  grid-template-rows: 120px 120px 120px;
+  grid-template-areas:
+    "feed-grid1"
+    "feed-grid2"
+    "feed-grid3";
+}
+
+.feed-grid1-profile-pic {
+  width: 50px;
+  position: relative;
+  bottom: 345px;
+  left: 80px;
+}
+.feed-grid1 {
+  grid-area: feed-grid1;
+  /* border: 1px dashed black; */
+}
+
+.tweet-section-username {
+  position: relative;
+  left: 150px;
+}
+
+.feed-grid2-profile-pic {
+  width: 50px;
+  position: relative;
+  bottom: 315px;
+  left: 80px;
+}
+
+.feed-text {
+  position: relative;
+  left: 150px;
+}
+
+.feed-grid2 {
+  grid-area: feed-grid2;
+  /* border: 1px dashed black; */
+}
+
+.feed-grid3-profile-pic {
+  width: 50px;
+  position: relative;
+  bottom: 280px;
+  left: 80px;
+}
+
+.feed-grid3 {
+  grid-area: feed-grid3;
+  /* border: 1px dashed black; */
+}
+
+span {
+  color: grey;
+}
+
+/* Right-bar */
+.right-bar {
+  grid-area: right-bar;
+  background-color: #f5f8fa;
+  /* border: 1px black dashed; */
+
+  /* Making a grid within the right bar called right bar searches, within that, having 3 rows called search twitter bar, search what's happening and who to follow */
+
+  display: grid;
+  grid-template-rows: 50px 340px 100px;
+  grid-template-areas:
+    "search-twitter-bar"
+    "search-whats-happening"
+    "who-to-follow";
+}
+
+.magnifying {
+  width: 25px;
+  position: relative;
+  bottom: 476px;
+  left: 25px;
+}
+
+.search-twitter-bar {
+  grid-area: search-twitter-bar;
+  color: grey;
+  margin-top: 15px;
+  margin-left: 70px;
+}
+
+.search-whats-happening {
+  grid-area: search-whats-happening;
+  text-align: left;
+  margin-left: 30px;
+}
+
+.search-whats-happening:hover {
+  cursor: pointer;
+}
+
+#who-to-follow {
+  grid-area: who-to-follow;
+  text-align: left;
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+/* Media Queires */
+@media screen and (max-width: 900px) {
+  .main {
+    color: red;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .right-bar {
+    /* width: 100%;
+    float: none;
+    min-height: 100px; */
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .left-bar {
+    /* width: 100%;
+    float: none;
+    min-height: 100px; */
+    overflow: hidden;
+  }
+}
