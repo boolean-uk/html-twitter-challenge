@@ -85,12 +85,18 @@ nav {
     cursor: pointer;
 }
 
+a:hover{
+     background-color: #71c9f8;
+
+}
+
 .tweet-button {
     display: grid;
     grid-area: tweet-button;
     align-items: center;
     justify-content: center;
     border: 3px dotted red;
+    
    
 } 
 
@@ -166,7 +172,7 @@ nav {
     border: 3px dotted yellow;
 }
 
-.post-section{
+.post-section {
     display: grid;
     grid-template-columns: 60px 1fr;
 }
