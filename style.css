@@ -75,6 +75,38 @@ display: grid;
     padding: 10px 15px;
 }
 
+.main_header {
+    top: 0;
+    z-index: 100;
+    border: 1px solid whitesmoke;
+    padding: 15px 30px;
+}
+
+.main_header h2 {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.tweetspace img {
+border-radius: 50%;
+height: 90px;
+}
+
+.tweetspace form {
+display: grid;
+padding: 20px;
+}
+.tweetspace {
+    padding-bottom: 10px;
+    border-bottom:8px whitesmoke ;
+    padding-right: 10px;
+}
+
+.tweetspace input {
+    display: grid;
+    padding: 20px;
+}
+
 .tweet-author {
     width: 70px;
     height: 70px;
@@ -149,7 +181,7 @@ color: grey;
 }
 
 .home-sectoin  {
-    display: flex;
+    display: grid;
 }
 
 .tweet-profile {
@@ -197,6 +229,7 @@ margin-top:2px  ;
         display: none;
     }
 }
+
 @media screen and (max-width: 600px) {
 
     .twitterpage {
