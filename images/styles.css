@@ -70,7 +70,7 @@
     margin-left: 50px;
     grid-template-rows: 1fr;
     grid-template-areas:
-        "topmessageoption1 topmessageoption2 topmessageoption3 topmessageoption4 topmessageoption5 ."
+        "topmessageoption1 topmessageoption2 topmessageoption3 topmessageoption4  ."
 }
 
 .topmid2 img {
