@@ -112,54 +112,10 @@
 
 .midmidprofile {
     grid-area: midmid;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr 1fr;
-    grid-template-areas:
-        "midmid1"
-        "midmid2";
+
 }
 
-.small.para {
-    font-weight: lighter;
-}
-
-.midmidprofile .midmid1 p {
-    font-size: x-small;
-    margin: 10px;
-    padding: ;
-    text-align: left;
-}
-
-.midmid1 .someoneretweeted {
-    color: grey;
-}
-
-.midmid1 {
-    grid-area: midmid1;
-    display: grid;
-    grid-template-columns: 1fr 20fr;
-    grid-template-rows: 1fr;
-    font-size: small;
-    font-weight: bold;
-}
-
-.midmid1 p span {
-    color: grey;
-    font-weight: lighter;
-    font-size: x-small;
-}
-
-.midmidprofile header {
-    font-size: x-small;
-    color: grey;
-    text-align: left;
-}
-
-.midmid2 {
-    grid-area: midmid2;
-}
-
+    
 .lowmidprofile {
     border: 1px solid grey;
     grid-area: lowmid;
@@ -451,4 +407,41 @@ img {
 .p53 {
     font-size: x-small;
     font-weight: bold;
+}
+.midmidprofile {
+    display: grid;
+    grid-template-rows: 5% 15% 80% ;
+}
+.grey-retweet {
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 50fr;
+}
+.grey-img {
+    width: 10px;
+}
+.grey-p {
+    font-size: xx-small;
+    color: gray;
+}
+.profilepicname {
+    display: grid;
+    grid-template-columns: 1fr 20fr
+}
+.tweet .para {
+    margin: 0%;
+}
+.profilepicname p {
+    font-size: smaller;
+}
+.profilepicname p span {
+    color: grey;
+    ;
+}
+
+.tweet img {
+    width: 20px;
+}
+.tweet p {
+    width: 20px;
 }
