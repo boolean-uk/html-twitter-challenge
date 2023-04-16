@@ -35,3 +35,53 @@ This will put into practice everything we have learned so far about HTML & CSS. 
 * &#9745; Include images using the `img` and `svg` tags.
     * Get the source for the icon images from the Twitter website as SVG and include them with `svg` tags
     * Use a local file for the profile image. Research how to use CSS to to make the profile image appear as a circle
+
+
+<div class="gridlayout">
+    <div class="gridlayout__left-sidebar">
+        <div class="logo">
+        </div>
+<div class="sidebar-menu">
+  <div class="sidebar-menu__item sidebar-menu__item--active">
+    <img src="/img/svg/home.svg" class="sidebar-menu__item-icon" />
+    Home
+  </div>
+  <div class="sidebar-menu__item">
+    <img src="/img/svg/explore.svg" class="sidebar-menu__item-icon" />
+    Explore
+  </div>
+
+  <div class="sidebar-menu__item">
+    <img src="/img/svg/notifications.svg" class="sidebar-menu__item-icon" />
+    Notifications
+  </div>
+
+  <div class="sidebar-menu__item">
+    <img src="img/svg/messages.svg" class="sidebar-menu__item-icon" />
+    Messages
+  </div>
+
+  <div class="sidebar-menu__item">
+    <img src="img/svg/bookmark.svg" class="sidebar-menu__item-icon" />
+    Bookmarks
+  </div>
+
+  <div class="sidebar-menu__item">
+    <img src="img/svg/list.svg" class="sidebar-menu__item-icon" />
+    Lists
+  </div>
+
+  <div class="sidebar-menu__item">
+    <img src="img/svg/profile.svg" class="sidebar-menu__item-icon" />
+    Profile
+  </div>
+
+  <div class="sidebar-menu__item">
+    <img src="img/svg/more.svg" class="sidebar-menu__item-icon" />
+    More
+  </div>
+</div>
+
+<div class="tweet-button">
+  <a href="https://twitter.com/" class="social-link Twitter">Tweet</a>
+</div>
