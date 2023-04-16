@@ -1,0 +1,367 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+
+ /* REMOVE SECTION */
+
+/* .left-menu,
+.left-menu div,
+.main,
+.main div,
+.right-menu,
+.right-menu div {
+    border: solid 1px;
+} */
+
+/* END OF REMOVE SECTION */
+
+
+/* WHOLE GRID LAYOUT */
+
+.container {
+
+    display: grid;
+    grid-template-columns: 0.25fr 0.5fr 0.25fr;
+    height: 100vh;
+    background-color: white;
+}
+
+/* LEFT COLUMN */
+
+.left-menu {
+    display: grid;
+    grid-template-rows: 0.1fr 0.3fr 0.6fr;
+    border-right: lightgrey solid 0.5px;
+
+}
+
+#viking-icon {
+    display: grid;
+    margin-top: 30px;
+    padding: 5px;
+}
+
+
+#viking-icon,
+.navigation-bar-left,
+.viking-button{
+    margin-left: 35px;
+    
+} 
+
+.navigation-bar-left {
+
+    display: grid;
+    grid-template-columns: 0.3fr 0.7fr;
+    /* grid-template-columns: 20px; */
+    
+}
+.icon-bar-left li {
+    list-style: none;
+    padding: 5px;
+}   
+
+
+.left-nav-text li {
+    list-style: none;
+    font-size: 0.35em;
+    padding: 10px;
+    
+}
+.left-nav-text ul a {
+    text-decoration: none;
+    color: black;
+}
+
+.hover:hover {
+    color: rgb(29, 155, 240);
+  }
+
+.viking-button {
+    justify-content: center;
+    padding-left: 7px;
+}
+
+.hover:active {
+    color: rgb(111, 129, 141);
+}
+
+#selected-state {
+    font-weight: bold;
+    color: rgb(29, 155, 240);
+}
+
+
+
+
+#viking-button-bottom-left,
+#viking-middle-button {
+    background-color: rgb(29, 155, 240);
+    border: none;
+    color: white;
+    padding: 5px 27px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 10px;
+    border-radius: 17px;
+  }
+
+.viking-button-two {
+    display: grid;
+    justify-items: end;
+}
+
+#viking-middle-button {
+    height: 24px; 
+    display: grid;
+    align-items: center;
+    background-color: rgb(140, 200, 240);
+    
+}
+
+
+
+#viking-button-bottom-left:hover,
+#viking-middle-button:hover {
+    background-color: rgb(97, 97, 228)
+}
+
+/* MIDDLE COLUMN */
+
+
+.main {
+    display: grid;
+    grid-template-rows: 0.2fr 0.8fr;
+    border-right: lightgrey solid 0.5px;
+    overflow-y: auto;
+    float: left;
+    max-height: 1000px;
+    
+
+}
+
+.main::-webkit-scrollbar {
+    display: none;
+  }
+
+
+
+.main-top {
+
+    display: grid;
+    grid-template-rows: 0.3fr 0.4fr 0.3fr;
+    border-bottom: rgb(243, 240, 240) solid 5px;
+}
+
+.home-top-bar {
+    display: grid;
+    grid-template-columns: 0.8fr 0.2fr;
+    border-bottom: lightgrey solid 0.5px;
+    
+}
+
+
+.whats-happening-box {
+    display: grid;
+    grid-template-columns: 0.2fr 0.8fr;
+    border-bottom: lightgrey solid 0.5px;
+    
+}
+
+textarea {
+    font-size: 10px;
+    border-style: none;
+    width: 100%;
+    resize: none;
+    color: #a7a7a79a;
+
+
+}
+
+.icon-box-and-viking-button {
+    display: grid;
+    grid-auto-flow: column;
+    margin-top: 1px;
+    margin-right: 1px;
+}
+
+.icon-box {
+    margin: 10px;
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(4, 0.25fr);
+}
+
+.main-scrolling {
+    display: grid;
+    grid-template-rows: repeat(5, 0.2fr);
+}
+
+.tweet-one {
+    display: grid;
+    grid-template-rows: 1fr 20px;
+    border-bottom: lightgrey solid 0.5px;
+}
+
+.text-inside-tweet {
+    font-size: 5px;
+}
+
+.icon-bar-within-tweet {
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+    padding: 3px;
+}
+
+.tweet-one-top {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: auto;
+    
+}
+
+.tweet-text {
+    font-size: 6px;
+    padding-right: 5px;   
+}
+
+.vikings-main {
+    border-radius: 50%;
+}
+
+.tweet-text h3,
+.grey-text {
+    display: inline;
+}
+
+.grey-text {
+    color: lightgrey;
+}
+
+
+.pictures {
+    border-radius: 80%;
+}
+
+#star {
+    margin: 10px;
+    color:rgb(29, 155, 240);
+}
+
+#home-top {
+    font-size: 0.6em;
+    margin: 10px;
+}
+
+/* RIGHT COLUMN */
+
+.right-menu {
+
+    display: grid;
+    grid-template-rows: 20px 60px 60px;
+    gap: 3px;
+    margin-left: 1px;
+}
+
+#search-bar-top-left {
+    display: grid;
+    grid-template-columns: 0.2fr 0.8fr;
+    background-color: rgb(243, 240, 240); 
+    border: none;
+    font-size: 8px; 
+    border-radius: 20px
+}
+
+#search-bar-top-left img {
+    margin-left: 10px;
+    margin-top: 2px;
+}
+
+#search-bar-top-left p {
+    text-align: left
+}
+
+.whats-happening-box-two {
+    display: inline;
+    background-color: rgb(243, 240, 240);
+    font-size: 5px; 
+    border-radius: 10px
+}
+.who-to-follow-box {
+    display: inline;
+    background-color: rgb(243, 240, 240);
+    font-size: 5px; 
+    border-radius: 10px
+}
+
+.who-to-follow-box h2,
+.whats-happening-box-two h2 {
+    margin-left: 10px;
+}
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 550px) {
+    .container {
+        display: grid;
+        grid-template-columns: 0.1fr 0.9fr;
+    }
+    .right-menu {
+        display: none;
+    }
+
+
+
+}
+
+@media screen and (max-width: 400px) {
+    .navigation-bar-left {
+        display: grid;
+        grid-template-columns: 0.3fr;
+    }
+    .left-nav-text {
+        display: none;
+    }
+    .viking-button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 20px 1fr;
+        min-width: 250px;
+    }
+    .left-menu {
+        grid-template-rows: 1fr;
+    }
+    .viking-button {
+        display: none;
+    } 
+    #viking-icon {
+        display: none;
+    } 
+
+    .navigation-bar-left {
+        grid-template-columns: 1fr
+    } 
+
+    .icon-bar-left li {
+        display: inline;
+    }
+
+    .main-top {
+        border-top: lightgrey solid 0.5px;
+    }
+    
+    
+    
+}
