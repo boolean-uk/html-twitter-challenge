@@ -1,0 +1,236 @@
+*{
+    margin:0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
+}
+html{
+    overflow:hidden;
+}
+.grid{
+    display: grid;
+    grid-template: "left main right";
+    grid-template-columns: 1fr 800px 1fr ;
+    
+}
+
+.header{
+    display:grid;
+    grid-template-columns:60px 740px;
+    padding-top: 15px;
+    font-weight: 500;
+    border: solid 2px  rgba(168, 168, 172, 0.226);
+}
+
+
+/* right bar */
+
+.rightsidebar{
+    grid-area: right;
+}
+
+
+.searchbar{
+    background-color: rgba(168, 168, 172, 0.226);
+    border-radius: 50px;
+    border-color: transparent;
+    padding: 0 20px 0 20px;
+    height:50px;
+    width:325px;
+    margin: 15px;
+    height: 1fr;
+}
+
+.search-twitter{
+    background-color: transparent;
+    border: none;
+    text-decoration: none;
+
+}
+
+.newsfeed{
+    display: grid;
+    grid-template-columns: 2fr;
+    grid-template-rows: auto;
+    margin: 15px;
+    margin-right:80px;
+    word-wrap: break-word;
+    border-radius: 25px;
+    gap: 5px;
+    background-color: rgba(168, 168, 172, 0.226)
+}
+
+.show-more{
+    padding: 15px;
+    color: skyblue;
+}
+.news > p{
+    color: grey;
+}
+
+.newsfeed > h4, .news{
+    border-bottom: solid 1px lightgrey;
+    padding: 15px;
+}
+.country-links{
+    text-decoration: none;
+    color:skyblue;
+}
+.bus-H{
+    height: 75px;
+    width: 75px;
+    border-radius: 20px;
+    float: right;
+    
+}
+
+/* middle box */
+
+.main{
+    grid-area: main;
+    width: 800px;
+    
+    
+}
+
+.maingrid{
+    display: grid;
+    grid-template-columns: 800px;
+   
+}
+
+.profileicon{
+    height: 30px;
+    width: 30px;
+    border: dotted 1px black;
+    border-radius: 50%;
+    margin-left: 15px;
+    margin-top: 10px;
+
+}
+.tweetb {  
+    color: white;
+    background-color: lightblue;
+    text-align: center;
+    text-decoration: underline;
+    border-radius: 50px;
+    margin: 10px 10px 10px 0;
+    width: 75px;
+    height:25px;
+    position: relative;
+    left: 650px ;
+    
+}
+.tweetb:hover{
+    color:green;
+}
+
+.maintext{
+    display: grid;
+    grid-template-columns:60px 740px;
+    color: rgb(0, 0, 0);
+    border: solid 2px  rgba(168, 168, 172, 0.226);
+    word-wrap: break-word;
+  
+} 
+
+.profile > p{
+    margin-left: 40px;
+    width: 745px;
+}
+.profileH{
+    border: dotted 1px black;
+    border-radius: 50%; 
+    width: 30px;
+    height: 30px; 
+    margin-top:5px;
+    margin-left: 15px;
+}
+.home-header{
+    border: solid 2px  rgba(168, 168, 172, 0.226);
+}
+
+.home-header > p{
+    margin-top: 10px;;
+    margin-left:60px;
+    height: 40px;
+    font-weight: 600;
+    
+}
+
+.profiletext{
+width: 740px;
+height:1fr;
+color: black;
+word-wrap: break-word;
+}
+
+.icons{
+    width:800px;
+    width: 60px;
+    display: inline-block; 
+}
+/* left box */
+
+.leftsidebar{
+    grid-area:left;
+    width: 1fr;
+    justify-self: right;
+}
+
+.buttons{
+    display: grid;
+    grid-template-rows: repeat(9, 1fr);
+       font-weight: 600;
+       margin-right: 25px;
+       
+}
+
+.home > p{
+    color: blue;
+    margin-left: 5px;
+}
+
+.home:hover{
+    color:green;
+}
+.nav:hover{
+    color: blue;
+}
+
+.buttons > div{
+    display:grid;
+    grid-template-columns: 1fr 100px;
+    margin: 10px;
+    width: 120px;
+    margin-left: 5px;
+ 
+}
+
+.tweet{
+    border-radius: 50px ;
+    text-align: right;
+    color: white;
+    background-color: lightblue;
+    width: 120px;    
+}
+.tweet:hover{
+    color:rgba(206, 192, 192, 0.87);
+    
+}
+
+.nav{
+    display:grid;
+    grid-template-columns: 20px 100px;
+}
+.nav > p{
+    margin-left: 5px;
+}
+svg{
+    object-fit: cover;
+    margin:0;
+    width: 20px;
+    height:20px;
+    color:blue;
+}
+.logo > svg{
+    color: blue;
+}
