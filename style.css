@@ -1,0 +1,577 @@
+* {
+  margin: 0;
+  font-family: Helvetica;
+}
+/*  here is the index for the whole css stylesheet
+1-  we've got (layout) the main template of the whole page
+2-  (search) bar on the top-right
+3-  main (header) of the page that contains "Home" + star
+4-  (navegation) part "nav" + "nav-L" 
+5-  (aside) part of the page that contains "what's happening" + "who to follow"
+6-  (post) part that contains top icons + input box + profile pic + tweet button
+7-  (happening) part that contains the actual posts
+8-  (effects) of the icons and buttons in the page 
+9-  (responsive) part*/
+/*
+
+
+
+1- the main template of the whole page*/
+.layout {
+  height: 400vh;
+  background-color: #fff;
+
+  display: grid;
+  grid-template:
+    "nav-L nav header    search" 53px
+    "nav-L nav post      aside" 127px
+    "nav-L nav happening aside" 1fr/
+    1fr 250px 550px 4fr;
+}
+/*
+
+
+
+2- the top right search bar  */
+.search {
+  grid-area: search;
+  background-color: #fff;
+  position: relative;
+  position: sticky;
+  top: 0;
+}
+/* the top right search input text box */
+.search input {
+  width: 6.3cm;
+  height: 0.9cm;
+  border-radius: 50px;
+  border: 1px solid #eff3f4;
+  background-color: #eff3f4;
+  position: absolute;
+  left: 1.2cm;
+  top: 0px;
+  font-size: 15px;
+  color: #86939d;
+  outline: none;
+  transition: 3s;
+}
+/* here is the search icon for the top right search bar */
+img[alt="search-icon"] {
+  width: 18px;
+  position: absolute;
+  left: 15px;
+  top: 10px;
+}
+/* the search box that contains the search icon and the input box */
+.search-button {
+  width: 7.6cm;
+  height: 1cm;
+  border-radius: 50px;
+  border: 1px solid #eff3f4;
+  background-color: #eff3f4;
+  position: absolute;
+  left: 0.7cm;
+  top: 4px;
+}
+/* 
+
+myself
+
+3- the main header of the whole page */
+header {
+  grid-area: header;
+  background-color: #fff;
+  border: 1px solid rgb(236, 231, 231);
+  border-top: none;
+  display: grid;
+  grid-template-columns: 14fr 1fr;
+  place-items: center;
+  padding: 10px;
+  position: relative;
+  position: sticky;
+  top: 0;
+}
+/* the "Home" in the main header */
+.home1 {
+  position: absolute;
+  left: 20px;
+  bottom: 10px;
+  font-size: 20px;
+}
+/* the star in the main header */
+.star {
+  width: 20px;
+  fill: rgb(29, 155, 240);
+  border: 1px solid #fff;
+  padding: 7px;
+  border-radius: 30px;
+  background-color: #fff;
+}
+/*
+
+
+
+4- here is the start of the navegation part */
+/* well this is just a placeholder of the very left part of the page */
+.nav-L {
+  grid-area: nav-L;
+}
+/* list of boxes that contains the nav labels + the icons */
+nav ul {
+  grid-area: nav;
+  display: grid;
+  grid-template-rows: repeat(11, 55px);
+  list-style-type: none;
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 0;
+}
+/* the navegation part  */
+nav {
+  position: relative;
+  position: sticky;
+  top: 0;
+}
+.logo {
+  width: 30px;
+  margin-top: 10px;
+  fill: rgb(29, 155, 240);
+  position: relative;
+  left: 11px;
+  border: 1px solid #fff;
+  border-radius: 30px;
+  padding: 11px;
+  background-color: #fff;
+}
+.nav-icons {
+  width: 25px;
+  margin-top: 10px;
+  position: relative;
+  left: 10px;
+  border: 1px solid #fff;
+  padding: 13px;
+  border-radius: 30px;
+  background-color: #fff;
+}
+#explore {
+  width: 25px;
+  margin-top: 10px;
+  position: relative;
+  left: 10px;
+  border: 1px solid #fff;
+  padding: 13px;
+  border-radius: 30px;
+  background-color: #fff;
+}
+.nav-search {
+  width: 25px;
+  margin-top: 10px;
+  position: relative;
+  left: 10px;
+  border: 1px solid #fff;
+  padding: 13px;
+  border-radius: 30px;
+  background-color: #fff;
+  display: none;
+}
+.tweet-icon {
+  display: none;
+  width: 25px;
+  margin-top: 10px;
+  position: relative;
+  left: 10px;
+  border: 1px solid rgb(29, 155, 240);
+  padding: 13px;
+  border-radius: 30px;
+  background-color: rgb(29, 155, 240);
+  fill: #fff;
+}
+label {
+  position: relative;
+  left: 15px;
+  bottom: 20px;
+}
+/* the tweet button of nav part + button of the post part */
+.tweet,
+.tweet-nav {
+  height: 35px;
+  width: 75px;
+  border-radius: 50px;
+  background-color: rgb(29, 155, 240);
+  border: 1px solid rgb(29, 155, 240);
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 2px;
+}
+.tweet-nav {
+  width: 180px;
+  margin-left: 0px;
+  position: relative;
+  top: 20px;
+}
+nav img[alt="myself"] {
+  width: 40px;
+  border-radius: 50px;
+  position: relative;
+  left: 5px;
+  bottom: 20px;
+  padding: 10px;
+  border: 1px solid #fff;
+  background-color: #fff;
+}
+/*
+
+
+
+5- the main aside part */
+aside {
+  grid-area: aside;
+  display: grid;
+  grid-template-rows: 13cm 8.1cm;
+}
+/* the two main boxes  */
+.people,
+.follow {
+  width: 7.8cm;
+  height: 13cm;
+  margin-left: 0.7cm;
+  background-color: #f7f9f9;
+  border-radius: 15px;
+  padding: 0.4cm;
+  box-sizing: border-box;
+  display: grid;
+}
+/* the first box "what's happening" */
+.people {
+  grid-template-rows: 1.3cm 1fr 1fr 1fr 1fr 1fr 1.3cm;
+}
+/* the blue script in the whole page */
+.blue {
+  color: rgb(29, 155, 240);
+}
+.people h4 {
+  font-weight: 700;
+  font-size: 15px;
+}
+/* the subboxes */
+.people p,
+.post-details {
+  font-size: 13px;
+  color: #95a0a8;
+  line-height: 20px;
+}
+/* the second box "who to follow" */
+.follow {
+  height: 8.1cm;
+  margin-top: 15px;
+  position: sticky;
+  top: 53px;
+}
+aside h3 {
+  font-weight: 900;
+}
+/*
+
+
+
+6- the main post area */
+.post {
+  grid-area: post;
+  border: 1px solid rgb(236, 231, 231);
+  border-top: none;
+  display: grid;
+  grid-template-columns: 65px 1fr;
+  padding-top: 10px;
+  padding-left: 18px;
+}
+/* the profile pic */
+.myself img {
+  width: 51px;
+  border-radius: 50px;
+}
+/* "what's happening" */
+.post input[type="text"] {
+  width: 380px;
+  height: 40px;
+  border: solid #fff;
+  font-size: 20px;
+  outline: none;
+}
+/* top icons container */
+.post ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 5fr 3fr;
+  padding-left: 0;
+}
+.top-icons {
+  width: 21px;
+  fill: rgb(29, 155, 240);
+  border: 1px solid #fff;
+  border-radius: 15px;
+  padding: 6px;
+}
+.tweet {
+  margin-left: 16px;
+}
+/*
+
+
+
+7- happening part (the actual posts)*/
+.happening {
+  grid-area: happening;
+  border: 1px solid rgb(236, 231, 231);
+  border-top: none;
+  display: grid;
+  grid-auto-rows: 580px 580px 690px;
+  grid-template-columns: 80px 1fr;
+}
+.first-post {
+  display: grid;
+  grid-template-rows: 80px 1fr 45px;
+  border-bottom: 1px solid rgb(236, 231, 231);
+}
+.post-heading {
+  margin-top: 15px;
+  line-height: 20px;
+}
+.happening img[alt="FCB"] {
+  width: 51px;
+  padding-top: 10px;
+  padding-left: 18px;
+}
+.left-side-post {
+  border-bottom: 1px solid rgb(236, 231, 231);
+}
+.happening img[alt="Phil"] {
+  width: 12cm;
+  border-radius: 15px;
+}
+/* the container of the post interaction */
+.happening ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding-left: 0;
+  padding-top: 15px;
+}
+.post-interaction {
+  width: 18px;
+  fill: #95a0a8;
+}
+img[src="cr77.jfif"] {
+  border-radius: 99px;
+}
+/*
+
+
+
+8- the effects of the icons and buttons in the page  */
+.tweet-nav:hover,
+.tweet-icon:hover {
+  background-color: #1a8cd8;
+  transition: 300ms;
+}
+header:hover {
+  cursor: pointer;
+}
+nav img[alt="myself"]:hover,
+.nav-icons:hover,
+.nav-search:hover,
+#explore:hover {
+  border: 1px solid #e7e7e8;
+  background-color: #e7e7e8;
+  transition: 300ms;
+}
+.star:hover,
+.top-icons:hover,
+.logo:hover {
+  border: 1px solid #e8f5fd;
+  background-color: #e8f5fd;
+  transition: 300ms;
+}
+.nav-icons:active,
+label:active {
+  fill: rgb(29, 155, 240);
+  transition: 0s;
+}
+/*
+
+
+
+9- responsive part*/
+@media screen and (max-width: 1130px) {
+  .layout {
+    display: grid;
+    grid-template:
+      "nav header search" 60px
+      "nav post aside" 150px
+      "nav happening aside" 1fr/
+      1fr 550px 4fr;
+  }
+  nav ul {
+    padding: 0;
+  }
+  .nav-L,
+  .test {
+    display: none;
+  }
+}
+@media screen and (max-width: 1094px) {
+  .layout {
+    display: grid;
+    grid-template:
+      "nav header search" 60px
+      "nav post aside" 150px
+      "nav happening aside" 1fr/
+      1fr 550px 4fr;
+  }
+  label {
+    display: none;
+  }
+  .tweet-nav,
+  #explore {
+    display: none;
+  }
+  .nav-search,
+  .tweet-icon {
+    display: grid;
+  }
+}
+@media screen and (max-width: 980px) {
+  .layout {
+    display: grid;
+    grid-template:
+      "nav header search" 60px
+      "nav post aside" 150px
+      "nav happening aside" 1fr/
+      1fr 550px 2fr;
+  }
+  .tweet-nav {
+    width: 65px;
+  }
+  .people,
+  .follow {
+    width: 5.6cm;
+  }
+  .search input {
+    width: 4.1cm;
+    transition: none;
+  }
+  .search-button {
+    width: 5.4cm;
+  }
+}
+@media screen and (max-width: 870px) {
+  .layout {
+    display: grid;
+    grid-template:
+      "nav header search" 60px
+      "nav post aside" 150px
+      "nav happening aside" 1fr/
+      70px 550px 1fr;
+  }
+
+  .people,
+  .follow,
+  .search input,
+  .search-button,
+  img[alt="search-icon"] {
+    display: none;
+  }
+  nav ul {
+    grid-auto-columns: 1fr;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 616px) {
+  .layout {
+    display: grid;
+    grid-template:
+      " header " 60px
+      " happening " 1fr
+      "nav" 60px/
+      1fr;
+  }
+  .search,
+  aside,
+  .post {
+    display: none;
+  }
+  .happening {
+    position: relative;
+  }
+  nav {
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+  }
+  nav ul {
+    grid-area: nav;
+    list-style-type: none;
+    display: grid;
+    grid-auto-rows: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 60px;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    background-color: #fff;
+    border-top: 1px solid rgb(236, 231, 231);
+  }
+
+  #explore,
+  #profile,
+  #more,
+  .logo,
+  .test1 {
+    display: none;
+  }
+  nav .myself {
+    position: fixed;
+    top: 17px;
+    left: 5px;
+  }
+  .tweet-icon {
+    position: fixed;
+    bottom: 80px;
+    right: 0;
+  }
+  .home1 {
+    left: 80px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .layout {
+    display: grid;
+    grid-template:
+      " header " 60px
+      " happening " 1fr
+      "nav" 60px/
+      1fr;
+  }
+  .happening img[alt="Phil"] {
+    width: 300px;
+  }
+  .happening {
+    grid-template-rows: 430px 430px 500px;
+  }
+}
+@media screen and (max-width: 384px) {
+  .layout {
+    display: grid;
+    grid-template:
+      " header " 60px
+      " happening " 1fr
+      "nav" 60px/
+      1fr;
+  }
+  .happening img[alt="Phil"] {
+    width: 200px;
+  }
+  .happening {
+    grid-template-rows: 330px 330px 380px;
+  }
+}
