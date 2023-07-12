@@ -1,0 +1,152 @@
+* {
+    font-family: fantasy;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;    
+}
+
+body {
+    background-color: peachpuff;
+    color: black;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 250px 2fr 250px;
+    grid-template-rows: 100px;
+    text-align: left;
+    grid-template-areas:  
+    "leftbar main rightbar";
+}   
+
+.leftbar {
+    margin-left: 10px;
+    border-right: 3px;
+    border-color: black;
+}   
+
+.logo {
+    padding-left: 90px;
+    height: 70px;
+    width: 250px;
+}
+
+.logobutton {
+    background-color: peachpuff;
+    border-style: hidden;   
+}
+
+
+.leftbuttons {    
+    grid-area: leftbuttons;
+    display: grid;
+    grid-template-rows: repeat(8, 75px);
+}
+
+.menu {
+    background-color: peachpuff;
+    border-style: hidden;
+    color: black;
+    border-radius:35px;
+    padding: 5px 20px;
+}
+
+.menu:hover {
+    padding: 5px 20px;   
+    border-radius:35px;
+    background-color: black;
+    color: orange;
+}
+
+.menu:active {
+    background-color: darkorange;
+    color: white;
+}
+
+.roar {
+    border-radius:35px;
+    padding: 5px 20px;
+    height: 40px; 
+    border-style: hidden; 
+    background-color: orange;
+    color: black;
+    justify-self: center;
+}
+
+.roar:hover {
+    background-color: black;
+    color: orange;
+}
+
+.roar:active {
+    background-color: darkorange;
+    color: white;
+}
+
+
+.profile {
+   
+}
+.feed {
+    display: grid;
+    grid-template-areas: 
+    "Home";
+    padding: 10px
+}
+
+.navbar {
+    padding: 5px;
+}
+
+.navbar.roar {
+    align-items: center;
+}
+
+.nav {
+    border-style: hidden; 
+    background-color: peachpuff;
+    color: black;
+    padding: 5px
+}
+
+.nav:hover {
+    background-color: orange;
+    border-radius: 5px;
+}
+
+.nav:active {
+    background-color: darkorange;
+}
+    
+
+.homebar {
+    padding: 10px
+}
+.rightbar {}
+.search {}
+
+.submit {
+    border-radius:35px;
+    padding: 5px 20px;
+    height: 40px; 
+    border-style: hidden; 
+    background-color: orange;
+    color: black;
+}
+
+.submit:hover {
+    background-color: black;
+    color: orange;
+}
+
+.submit:active {
+    background-color: darkorange;
+    color: white;
+}
+
+h1 {
+    font-size: 30px;
+}
+.trending {}
+.suggestions {}
