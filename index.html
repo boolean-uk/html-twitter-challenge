@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home / Twitter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="layout">
+
+<!-- LEFT COLUMN -->
+
+        <div class="layout-left-container">
+            <div class="layout-left">
+                <nav class="nav-container">
+                    <header>
+                        <button class="twitter-logo">
+                            <img src="svg/left-column/l-header-logo.svg" alt="">
+                        </button>
+                    </header>
+                    <div class="left-nav">
+                        <div>
+                            <button class="btn">
+                                <img src="svg/left-column/l-nav-1-home.svg">
+                                <span>Home</span>
+                            </button>
+                        </div>
+                        <div class="query-btn">
+                            <button class="btn-search">
+                                <img src="svg/left-column/l-nav-2-search.svg">
+                            </button>
+                            <button class="btn btn-explore">
+                                <img src="svg/left-column/l-nav-2-explore.svg">
+                                <span>Explore</span>
+                            </button>
+                        </div>
+                        <div>
+                            <button class="btn">
+                                <img src="svg/left-column/l-nav-3-notifications.svg">
+                                <span>Notifications</span>
+                            </button>
+                        </div>
+                        <div>
+                            <button class="btn">
+                                <img src="svg/left-column/l-nav-4-messages.svg">
+                                <span>Messages</span>
+                            </button>
+                        </div>
+                        <div>
+                            <button class="btn">
+                                <img src="svg/left-column/l-nav-5-bookmarks.svg">
+                                <span>Bookmarks</span>
+                            </button>
+                        </div>
+                        <div>
+                        <button class="btn">
+                            <img src="svg/left-column/l-nav-6-twitter-blue.svg">
+                            <span>Twitter Blue</span>
+                        </button>
+                        </div>
+                        <div>
+                            <button class="btn">
+                                <img src="svg/left-column/l-nav-7-profile.svg">
+                                <span>Profile</span>
+                            </button>
+                        </div>
+                        <div>
+                            <button class="btn">
+                                <img src="svg/left-column/l-nav-8-more.svg">
+                                <span>More</span>
+                            </button>
+                        </div>
+                    </div>
+                    <footer>
+                        <button>
+                            <img src="svg/left-column/l-nav-9-compose.svg">
+                            <span>Tweet</span>
+                        </button>
+                    </footer>
+                </nav>
+                <footer class="left-column-footer">
+                     <button>
+                        <div class="btn-image">
+                            <img src="images/boolean.jpg">
+                        </div>
+                        <div class="btn-handles">
+                            <p class="name">Boolean</p>
+                            <p class="profile-at">@booleanuk</p>
+                        </div>
+                        <div class="btn-more">
+                            <img src="svg/left-column/l-footer-more.svg">
+                        </div>
+                    </button>
+                </footer>
+            </div>
+        </div>
+
+<!-- MAIN COLUMN -->
+
+        <div class="layout-main">
+
+<!-- sticky header -->
+
+            <header class="main-header">
+                <h2>Home</h2>
+                <div class="main-sections">
+                    <button id="for-you-btn">
+                        <p class="text">For you</p>
+                        <div class="focus"></div>
+                    </button>
+                    <button id="following-btn">
+                        <p class="text">Following</p>
+                        <div class="focus"></div>
+                    </button>
+                </div>
+            </header>
+
+<!-- compose tweet -->
+
+            <section class="compose">
+                <div class="profile-pic-container">
+                    <img src="images/boolean.jpg">
+                </div>
+                <div class="container">
+                    <input type="text" placeholder="What's happening?">
+                    <div class="compose-footer">
+                        <div class="compose-icons">
+                            <div>
+                                <img src="svg/main-column/compose/compose-1-media.svg">
+                            </div>
+                            <div>
+                                <img src="svg/main-column/compose/compose-2-gif.svg">
+                            </div>
+                            <div>
+                                <img src="svg/main-column/compose/compose-3-poll.svg">
+                            </div>
+                            <div>
+                                <img src="svg/main-column/compose/compose-4-emoji.svg">
+                            </div>
+                            <div>
+                                <img src="svg/main-column/compose/compose-5-schedule.svg">
+                            </div>
+                            <div>
+                                <img src="svg/main-column/compose/compose-6-location.svg">
+                            </div>
+                        </div>
+                        <div class="tweet-btn">
+                            <button>Tweet</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+<!-- tweet feed -->
+            <section class="tweet">
+                <div class="author-pic-container">
+                    <img src="images/limmy.jpg">
+                </div>
+                <div class="container">
+                    <header>
+                        <div>
+                            <div>
+                                <span class="bld">twitch.tv/Limmy</span>
+                                <span>@DaftLimmy •</span>
+                                <span class="date">Mar 24</span>
+                            </div>
+                            <div class="tweet-more">
+                                <img src="svg/main-column/tweet/tweet-1-more.svg">
+                            </div>
+                        </div>
+                    </header>
+                    <div>
+                        <p>
+                        Check out Daft Punk's new single "Get Lucky" if you get the chance. Sound of the summer. 
+                        </p>
+                    </div>
+                    <footer>
+                        <div class="blue-hvr">
+                            <img class="ico-blue" src="svg/main-column/tweet/tweet-2-comment.svg">
+                        </div>
+                        <div class="green-hvr">
+                            <img class="ico-green" src="svg/main-column/tweet/tweet-3-retweet.svg">
+                        </div>
+                        <div class="red-hvr">
+                            <img class="ico-red" src="svg/main-column/tweet/tweet-4-like.svg">
+                        </div>
+                        <div class="blue-hvr">
+                            <img class="ico-blue" src="svg/main-column/tweet/tweet-5-views.svg">
+                        </div>
+                        <div class="blue-hvr">
+                            <img class="ico-blue" src="svg/main-column/tweet/tweet-6-share.svg">
+                        </div>
+                    </footer>
+                </div>
+            </section>
+            <section class="tweet">
+                <div class="author-pic-container">
+                    <img src="images/limmy.jpg">
+                </div>
+                <div class="container">
+                    <header>
+                        <div>
+                            <div>
+                                <span class="bld">twitch.tv/Limmy</span>
+                                <span>@DaftLimmy •</span>
+                                <span class="date">Mar 17</span>
+                            </div>
+                            <div class="tweet-more">
+                                <img src="svg/main-column/tweet/tweet-1-more.svg">
+                            </div>
+                        </div>
+                    </header>
+                    <div>
+                        <p>
+                        Check out Daft Punk's new single "Get Lucky" if you get the chance. Sound of the summer. 
+                        </p>
+                    </div>
+                    <footer>
+                        <div class="blue-hvr">
+                            <img class="ico-blue" src="svg/main-column/tweet/tweet-2-comment.svg">
+                        </div>
+                        <div class="green-hvr">
+                            <img class="ico-green" src="svg/main-column/tweet/tweet-3-retweet.svg">
+                        </div>
+                        <div class="red-hvr">
+                            <img class="ico-red" src="svg/main-column/tweet/tweet-4-like.svg">
+                        </div>
+                        <div class="blue-hvr">
+                            <img class="ico-blue" src="svg/main-column/tweet/tweet-5-views.svg">
+                        </div>
+                        <div class="blue-hvr">
+                            <img class="ico-blue" src="svg/main-column/tweet/tweet-6-share.svg">
+                        </div>
+                    </footer>
+                </div>
+            </section>
+            <section class="tweet">
+                <div class="author-pic-container">
+                    <img src="images/limmy.jpg">
+                </div>
+                <div class="container">
+                    <header>
+                        <div>
+                            <div>
+                                <span class="bld">twitch.tv/Limmy</span>
+                                <span>@DaftLimmy •</span>
+                                <span class="date">Mar 10</span>
+                            </div>
+                            <div class="tweet-more">
+                                <img src="svg/main-column/tweet/tweet-1-more.svg">
+                            </div>
+                        </div>
+                    </header>
+                    <div>
+                        <p>
+                        Check out Daft Punk's new single "Get Lucky" if you get the chance. Sound of the summer. 
+                        </p>
+                    </div>
+                    <footer>
+                        <div class="blue-hvr">
+                            <img class="ico-blue" src="svg/main-column/tweet/tweet-2-comment.svg">
+                        </div>
+                        <div class="green-hvr">
+                            <img class="ico-green" src="svg/main-column/tweet/tweet-3-retweet.svg">
+                        </div>
+                        <div class="red-hvr">
+                            <img class="ico-red" src="svg/main-column/tweet/tweet-4-like.svg">
+                        </div>
+                        <div class="blue-hvr">
+                            <img class="ico-blue" src="svg/main-column/tweet/tweet-5-views.svg">
+                        </div>
+                        <div class="blue-hvr">
+                            <img class="ico-blue" src="svg/main-column/tweet/tweet-6-share.svg">
+                        </div>
+                    </footer>
+                </div>
+            </section>
+            <section class="tweet">
+                <div class="author-pic-container">
+                    <img src="images/limmy.jpg">
+                </div>
+                <div class="container">
+                    <header>
+                        <div>
+                            <div>
+                                <span class="bld">twitch.tv/Limmy</span>
+                                <span>@DaftLimmy •</span>
+                                <span class="date">Mar 3</span>
+                            </div>
+                            <div class="tweet-more">
+                                <img src="svg/main-column/tweet/tweet-1-more.svg">
+                            </div>
+                        </div>
+                    </header>
+                    <div>
+                        <p>
+                        Check out Daft Punk's new single "Get Lucky" if you get the chance. Sound of the summer. 
+                        </p>
+                    </div>
+                    <footer>
+                        <div class="blue-hvr">
+                            <img class="ico-blue" src="svg/main-column/tweet/tweet-2-comment.svg">
+                        </div>
+                        <div class="green-hvr">
+                            <img class="ico-green" src="svg/main-column/tweet/tweet-3-retweet.svg">
+                        </div>
+                        <div class="red-hvr">
+                            <img class="ico-red" src="svg/main-column/tweet/tweet-4-like.svg">
+                        </div>
+                        <div class="blue-hvr">
+                            <img class="ico-blue" src="svg/main-column/tweet/tweet-5-views.svg">
+                        </div>
+                        <div class="blue-hvr">
+                            <img class="ico-blue" src="svg/main-column/tweet/tweet-6-share.svg">
+                        </div>
+                    </footer>
+                </div>
+            </section>
+            <section class="tweet">
+                <div class="author-pic-container">
+                    <img src="images/limmy.jpg">
+                </div>
+                <div class="container">
+                    <header>
+                        <div>
+                            <div>
+                                <span class="bld">twitch.tv/Limmy</span>
+                                <span>@DaftLimmy •</span>
+                                <span class="date">Feb 24</span>
+                            </div>
+                            <div class="tweet-more">
+                                <img src="svg/main-column/tweet/tweet-1-more.svg">
+                            </div>
+                        </div>
+                    </header>
+                    <div>
+                        <p>
+                        Check out Daft Punk's new single "Get Lucky" if you get the chance. Sound of the summer. 
+                        </p>
+                    </div>
+                    <footer>
+                        <div class="blue-hvr">
+                            <img class="ico-blue" src="svg/main-column/tweet/tweet-2-comment.svg">
+                        </div>
+                        <div class="green-hvr">
+                            <img class="ico-green" src="svg/main-column/tweet/tweet-3-retweet.svg">
+                        </div>
+                        <div class="red-hvr">
+                            <img class="ico-red" src="svg/main-column/tweet/tweet-4-like.svg">
+                        </div>
+                        <div class="blue-hvr">
+                            <img class="ico-blue" src="svg/main-column/tweet/tweet-5-views.svg">
+                        </div>
+                        <div class="blue-hvr">
+                            <img class="ico-blue" src="svg/main-column/tweet/tweet-6-share.svg">
+                        </div>
+                    </footer>
+                </div>
+            </section>
+            <section class="tweet">
+                <div class="author-pic-container">
+                    <img src="images/limmy.jpg">
+                </div>
+                <div class="container">
+                    <header>
+                        <div>
+                            <div>
+                                <span class="bld">twitch.tv/Limmy</span>
+                                <span>@DaftLimmy •</span>
+                                <span class="date">Feb 17</span>
+                            </div>
+                            <div class="tweet-more">
+                                <img src="svg/main-column/tweet/tweet-1-more.svg">
+                            </div>
+                        </div>
+                    </header>
+                    <div>
+                        <p>
+                        Check out Daft Punk's new single "Get Lucky" if you get the chance. Sound of the summer. 
+                        </p>
+                    </div>
+                    <footer>
+                        <div class="blue-hvr">
+                            <img class="ico-blue" src="svg/main-column/tweet/tweet-2-comment.svg">
+                        </div>
+                        <div class="green-hvr">
+                            <img class="ico-green" src="svg/main-column/tweet/tweet-3-retweet.svg">
+                        </div>
+                        <div class="red-hvr">
+                            <img class="ico-red" src="svg/main-column/tweet/tweet-4-like.svg">
+                        </div>
+                        <div class="blue-hvr">
+                            <img class="ico-blue" src="svg/main-column/tweet/tweet-5-views.svg">
+                        </div>
+                        <div class="blue-hvr">
+                            <img class="ico-blue" src="svg/main-column/tweet/tweet-6-share.svg">
+                        </div>
+                    </footer>
+                </div>
+            </section>
+            <section class="tweet">
+                <div class="author-pic-container">
+                    <img src="images/limmy.jpg">
+                </div>
+                <div class="container">
+                    <header>
+                        <div>
+                            <div>
+                                <span class="bld">twitch.tv/Limmy</span>
+                                <span>@DaftLimmy •</span>
+                                <span class="date">Feb 10</span>
+                            </div>
+                            <div class="tweet-more">
+                                <img src="svg/main-column/tweet/tweet-1-more.svg">
+                            </div>
+                        </div>
+                    </header>
+                    <div>
+                        <p>
+                        Check out Daft Punk's new single "Get Lucky" if you get the chance. Sound of the summer. 
+                        </p>
+                    </div>
+                    <footer>
+                        <div class="blue-hvr">
+                            <img class="ico-blue" src="svg/main-column/tweet/tweet-2-comment.svg">
+                        </div>
+                        <div class="green-hvr">
+                            <img class="ico-green" src="svg/main-column/tweet/tweet-3-retweet.svg">
+                        </div>
+                        <div class="red-hvr">
+                            <img class="ico-red" src="svg/main-column/tweet/tweet-4-like.svg">
+                        </div>
+                        <div class="blue-hvr">
+                            <img class="ico-blue" src="svg/main-column/tweet/tweet-5-views.svg">
+                        </div>
+                        <div class="blue-hvr">
+                            <img class="ico-blue" src="svg/main-column/tweet/tweet-6-share.svg">
+                        </div>
+                    </footer>
+                </div>
+            </section>
+            <section class="tweet">
+                <div class="author-pic-container">
+                    <img src="images/limmy.jpg">
+                </div>
+                <div class="container">
+                    <header>
+                        <div>
+                            <div>
+                                <span class="bld">twitch.tv/Limmy</span>
+                                <span>@DaftLimmy •</span>
+                                <span class="date">Feb 3</span>
+                            </div>
+                            <div class="tweet-more">
+                                <img src="svg/main-column/tweet/tweet-1-more.svg">
+                            </div>
+                        </div>
+                    </header>
+                    <div>
+                        <p>
+                        Check out Daft Punk's new single "Get Lucky" if you get the chance. Sound of the summer. 
+                        </p>
+                    </div>
+                    <footer>
+                        <div class="blue-hvr">
+                            <img class="ico-blue" src="svg/main-column/tweet/tweet-2-comment.svg">
+                        </div>
+                        <div class="green-hvr">
+                            <img class="ico-green" src="svg/main-column/tweet/tweet-3-retweet.svg">
+                        </div>
+                        <div class="red-hvr">
+                            <img class="ico-red" src="svg/main-column/tweet/tweet-4-like.svg">
+                        </div>
+                        <div class="blue-hvr">
+                            <img class="ico-blue" src="svg/main-column/tweet/tweet-5-views.svg">
+                        </div>
+                        <div class="blue-hvr">
+                            <img class="ico-blue" src="svg/main-column/tweet/tweet-6-share.svg">
+                        </div>
+                    </footer>
+                </div>
+            </section>
+            <section class="tweet">
+                <div class="author-pic-container">
+                    <img src="images/limmy.jpg">
+                </div>
+                <div class="container">
+                    <header>
+                        <div>
+                            <div>
+                                <span class="bld">twitch.tv/Limmy</span>
+                                <span>@DaftLimmy •</span>
+                                <span class="date">Jan 27</span>
+                            </div>
+                            <div class="tweet-more">
+                                <img src="svg/main-column/tweet/tweet-1-more.svg">
+                            </div>
+                        </div>
+                    </header>
+                    <div>
+                        <p>
+                        Check out Daft Punk's new single "Get Lucky" if you get the chance. Sound of the summer. 
+                        </p>
+                    </div>
+                    <footer>
+                        <div class="blue-hvr">
+                            <img class="ico-blue" src="svg/main-column/tweet/tweet-2-comment.svg">
+                        </div>
+                        <div class="green-hvr">
+                            <img class="ico-green" src="svg/main-column/tweet/tweet-3-retweet.svg">
+                        </div>
+                        <div class="red-hvr">
+                            <img class="ico-red" src="svg/main-column/tweet/tweet-4-like.svg">
+                        </div>
+                        <div class="blue-hvr">
+                            <img class="ico-blue" src="svg/main-column/tweet/tweet-5-views.svg">
+                        </div>
+                        <div class="blue-hvr">
+                            <img class="ico-blue" src="svg/main-column/tweet/tweet-6-share.svg">
+                        </div>
+                    </footer>
+                </div>
+            </section>
+            <section class="tweet">
+                <div class="author-pic-container">
+                    <img src="images/limmy.jpg">
+                </div>
+                <div class="container">
+                    <header>
+                        <div>
+                            <div>
+                                <span class="bld">twitch.tv/Limmy</span>
+                                <span>@DaftLimmy •</span>
+                                <span class="date">Jan 20</span>
+                            </div>
+                            <div class="tweet-more">
+                                <img src="svg/main-column/tweet/tweet-1-more.svg">
+                            </div>
+                        </div>
+                    </header>
+                    <div>
+                        <p>
+                        Check out Daft Punk's new single "Get Lucky" if you get the chance. Sound of the summer. 
+                        </p>
+                    </div>
+                    <footer>
+                        <div class="blue-hvr">
+                            <img class="ico-blue" src="svg/main-column/tweet/tweet-2-comment.svg">
+                        </div>
+                        <div class="green-hvr">
+                            <img class="ico-green" src="svg/main-column/tweet/tweet-3-retweet.svg">
+                        </div>
+                        <div class="red-hvr">
+                            <img class="ico-red" src="svg/main-column/tweet/tweet-4-like.svg">
+                        </div>
+                        <div class="blue-hvr">
+                            <img class="ico-blue" src="svg/main-column/tweet/tweet-5-views.svg">
+                        </div>
+                        <div class="blue-hvr">
+                            <img class="ico-blue" src="svg/main-column/tweet/tweet-6-share.svg">
+                        </div>
+                    </footer>
+                </div>
+            </section>
+            <section class="tweet">
+                <div class="author-pic-container">
+                    <img src="images/limmy.jpg">
+                </div>
+                <div class="container">
+                    <header>
+                        <div>
+                            <div>
+                                <span class="bld">twitch.tv/Limmy</span>
+                                <span>@DaftLimmy •</span>
+                                <span class="date">Jan 13</span>
+                            </div>
+                            <div class="tweet-more">
+                                <img src="svg/main-column/tweet/tweet-1-more.svg">
+                            </div>
+                        </div>
+                    </header>
+                    <div>
+                        <p>
+                        Check out Daft Punk's new single "Get Lucky" if you get the chance. Sound of the summer. 
+                        </p>
+                    </div>
+                    <footer>
+                        <div class="blue-hvr">
+                            <img class="ico-blue" src="svg/main-column/tweet/tweet-2-comment.svg">
+                        </div>
+                        <div class="green-hvr">
+                            <img class="ico-green" src="svg/main-column/tweet/tweet-3-retweet.svg">
+                        </div>
+                        <div class="red-hvr">
+                            <img class="ico-red" src="svg/main-column/tweet/tweet-4-like.svg">
+                        </div>
+                        <div class="blue-hvr">
+                            <img class="ico-blue" src="svg/main-column/tweet/tweet-5-views.svg">
+                        </div>
+                        <div class="blue-hvr">
+                            <img class="ico-blue" src="svg/main-column/tweet/tweet-6-share.svg">
+                        </div>
+                    </footer>
+                </div>
+            </section>
+            
+        </div>
+
+<!-- RIGHT COLUMN -->
+
+        <div class="layout-right-container">
+            <div class="layout-right">
+                <div class="right-search">Search Twitter</div>
+                <div class="right-trending">What's happening</div>
+                <div class="right-suggestions">Who to follow</div>
+                <div class="terms">
+                    <p>
+                        <span>Terms of Service</span> <span>Privacy Policy</span>   <span>Cookie Policy</span>
+                    </p>
+                    <p>
+                        <span>Accessibility</span> <span>Ads info</span> <span>More...</span>
+                    </p>
+                    <p>
+                        <span>© 2023 Twitter, Inc.</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
