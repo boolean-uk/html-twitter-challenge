@@ -1,12 +1,8 @@
 # Twitter Clone
 
-For this exercise, we will be building a clone of Twitter:
+In this project, I created a clone of Twitter. I used CSS and HTML to create the project and I put into practice my skills of layout using grid.
 
-![twitter](images/twitter.png)
-
-This will put into practice everything we have learned so far about HTML & CSS. The below image shows level of detail you should replicate from Twitter:
-
-![twitter clone](images/example.png)
+## [Final Output](https://twitter-clone-wheat-three-45.vercel.app/)
 
 ## Setup
 
