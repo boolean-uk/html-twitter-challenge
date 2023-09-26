@@ -18,7 +18,7 @@ main {
     height: 100%;
     grid-template:
     "nav  home  followers" 100vh /
-    minmax(320px, 1fr)   2fr   1fr
+    minmax(320px, 1fr)   2fr   minmax(320px, 1fr)
     ;
     padding: 0 7rem;
 }
@@ -118,5 +118,59 @@ nav {
 
 /* Followers */
 .followers {
+    display: grid;
     grid-area: followers;
+    grid-template: 55px 1fr 1fr / 1fr;
+    padding: 1rem 0;
+    row-gap: 10px;
+}
+
+/* Search Bar */
+
+.followers-search {
+    display: grid;
+    grid-template: 1fr / 1fr;
+    padding: 0.4rem;
+    place-items: center;
+    width: 100%;
+}
+
+.followers-search-bar {
+    display: grid;
+    align-items: center;
+    background-color: #E1E8ED;
+    border-radius: 25px;
+    width: 100%;
+    height: 100%;
+}
+
+.followers-search-bar-input {
+    position: relative;
+    left: 20px;
+}
+
+.followers-search-bar-input > input {
+    position: relative;
+    left: 10px;
+    height: 20px;
+    width: 250px;
+    background-color: #E1E8ED;
+    border: none;
+}
+.followers-search-bar-input > input:focus {
+    outline: none;
+}
+
+/* News */
+.followers-news, .followers-adds {
+    display: grid;
+    grid-template: 45px 1fr / 1fr;
+    background-color: #E1E8ED;
+    border-radius: 20px;
+}
+
+.followers-news-header, .followers-adds-header {
+    display: grid;
+    place-items: center;
+    border-bottom: 1px solid #aab8c260;
 }
