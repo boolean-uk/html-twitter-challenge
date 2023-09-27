@@ -27,7 +27,7 @@ section {
     background-color: rgb(39, 175, 209);
     height: 20px;
     color: white;
-    width: 100%;
+    width: 92%;
     border-radius: 40px;
     text-align: center;
     padding: 6px 0;
@@ -47,11 +47,23 @@ h2 {
     font-weight: bolder;
  }
 
+ h3 {
+    display: inline-block;
+    font-size: 12px;
+    padding-bottom: 5px;
+    font-family: "Tahoma", "Arial", sans-serif;
+    font-weight: bolder;
+    width:fit-content;
+ }
+
 a {
     color: rgb(24, 107, 128);
     font-size: 10px;
 }
 
+p {
+    font-size: 10px;
+}
 /*STYLES THE LEFT-MENU*/
 
 #left-menu main {
@@ -83,6 +95,7 @@ a {
     grid-template-rows: 100px auto;
 }
 
+/*top part - writing tweets*/
 #write-tweet {
     display: grid;
     grid-template-rows: 60px 40px;
@@ -119,26 +132,34 @@ a {
     width: 87px;
 }
 
-
+/*actual feed*/
 #feed {
     display: grid;
     grid-auto-rows: repeat(auto, fit-content);
 }
 
-
 .tweet {
-    padding: 5px 10px;
+    padding: 10px 10px;
+    gap: 5px;
     display: grid;
-    grid-template-columns: auto 40px;
-   border: 1px dotted grey;
+    grid-template-columns: 40px 1fr;
+    border: 1px dotted grey;
 }
 
-.tweet:nth-child(1) {
-    height: 100px;
+.tweet-content {
+    display: grid;
+    grid-template-rows: 40px repeat(2, auto-fit) 40px;
+    gap: 5px;
 }
 
-.tweet:nth-child(2) {
-    height: 400px;
+.react {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.react div {
+    border: 1px dotted grey;
+
 }
 
 /*STYLES THE RIGHT-MENU*/
