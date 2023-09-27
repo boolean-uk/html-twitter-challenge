@@ -35,7 +35,7 @@ background: linear-gradient(333deg, rgba(255,246,224,1) 0%, rgba(255,215,251,1) 
   list-style-type: none;
 }
 
-.nav ul li:hover {
+.nav ul li:hover, #active {
   background-color: #ff8ab75b;
   color: white;
   text-shadow: rgb(236, 72, 135) 1px 0 10px
@@ -53,9 +53,13 @@ background: linear-gradient(333deg, rgba(255,246,224,1) 0%, rgba(255,215,251,1) 
 }
 
 .tweet .timestamp {
-  color:rgba(236, 72, 135, 0.5);
   font-style: italic;
+  color: rgba(98, 27, 85, 0.5);
   font-size: smaller;
+}
+
+.tweet .handle {
+  color:rgba(236, 72, 135, 0.5);
 }
 
 .tweet .text {
@@ -75,11 +79,11 @@ background: linear-gradient(333deg, rgba(255,246,224,1) 0%, rgba(255,215,251,1) 
   color: rgb(132, 30, 69);
 }
 
-.tag::before {
+.tag:before {
   content: "#"
 }
 
-.mention::before {
+.mention:before, .handle:before {
   content: "@";
 }
 
