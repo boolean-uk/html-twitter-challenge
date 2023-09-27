@@ -5,6 +5,7 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
+    position: relative;
 }
 
 body {
@@ -29,11 +30,10 @@ section {
     width: 100%;
     border-radius: 40px;
     text-align: center;
-    padding: 10px 0;
+    padding: 6px 0;
 }
 
 .profile-pic {
-    display: inline-block;
     width: 40px;
     height: 40px;
     border-radius: 40px;
@@ -67,13 +67,15 @@ a {
     display: grid;
     grid-template-columns: 40px 1fr 40px;
     height: 40px;
+    position: sticky;
+    bottom: 5px;
 }
 #left-menu footer > div {
     border: 1px dotted grey;
 
 }
 
-/*STYLES THE NEWSSFEED*/
+/*STYLES THE NEWSFEED*/
 #tweet-container > main {
     display: grid;
     grid-template-rows: 100px auto;
@@ -81,12 +83,27 @@ a {
 
 #write-tweet {
     display: grid;
-    grid-template-rows: auto 60px;
+    grid-template-rows: 60px 40px;
+}
+
+#write-tweet input {
+    height: 40px;
+    border: none;
+}
+
+#write-tweet input::placeholder {
+    font-size: 18px;
+}
+
+#write-tweet  > div:nth-child(1) {
+    display: grid;
+    grid-template-columns: 50px 1fr;
 }
 
 #tweet-quick-menu {
     position: relative;
     display: grid;
+    height: 32px;
     grid-template-columns: repeat(5, 40px) 90px;
     border-bottom: 10px solid rgba(128, 128, 128, 0.264);
 }
@@ -97,7 +114,7 @@ a {
 #tweet-quick-menu .tweet-button {
     position: absolute;
     right: 5px;
-    width: 30%;
+    width: 87px;
 }
 
 
@@ -127,7 +144,12 @@ a {
 #right-menu > main > div {
     display: grid;
     grid-template-rows: 40px repeat(auto, 1fr) ;
+    background-color: rgb(230, 230, 240);
+    border-radius: 5px;
+    padding: 5px;
 }
+
+
 
 #right-menu > main > div > div {
     border: 1px dotted grey;
