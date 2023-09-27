@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  color: white;
+}
+
+/* ======== building blocks ======== */
+
+.col {
+  grid-auto-flow: column;
+}
+
+.container {
+  grid-template-columns: 200px 400px 300px;
+  justify-content: center;
+
+  background-color: black;
+}
+
+.grid {
+  display: grid;
+}
+
+.menu {
+  height: 100vh;
+}
+
+.pos-sticky {
+  position: sticky;
+  top: 0;
+}
+
+/* ======== header menu ======== */
+
+header.left {
+  background-color: aqua;
+}
+
+/* || V LOGO VERY IMPORTANT - I SPENT BILLIONS ON V.COM */
+
+.v {
+  font-size: 3rem;
+}
+
+.v::before {
+  content: "\1d54d"; /* we don't want anyone copy pasting our logo...*/
+}
+
+/* ======== main ======== */
+
+main {
+  background-color: burlywood;
+}
+
+/* ======== footer menu ======== */
+
+footer.right {
+  background-color: darkmagenta;
+}
+
+.home {
+  height: 80px;
+  
+  backdrop-filter: blur(1rem);
+}
+
+.home * {
+  filter: blur(0);
+}
+
+.post {
+  background-color: crimson;
+  font-size: 4rem;
+}
+
+.feed-item {
+  height: 200px
+}
+
+.feed-item:nth-child(2n) {
+  background-color: yellowgreen;
+}
