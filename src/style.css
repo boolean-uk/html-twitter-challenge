@@ -44,5 +44,23 @@ section {
 
 #left-menu main > div {
     border: 1px dotted grey;
+    
 }
 
+#left-menu footer {
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+    height: 40px;
+}
+#left-menu footer > div {
+    border: 1px dotted grey;
+
+}
+
+/*STYLES THE NEWSSFEED*/
+
+
+
+/*STYLES THE RIGHT-MENU*/
+
+/*STYLES THE MESSAGES BOX*
