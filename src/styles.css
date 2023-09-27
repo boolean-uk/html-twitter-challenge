@@ -118,6 +118,145 @@ body {
 .left-bar {
     grid-area: left-bar;
     border: 1px dashed black;
+
+    /* Left-grid */
+
+    display: grid;
+    grid-template: 
+    "left-bar-menu"
+    "left-tweet-button";
+    grid-template-rows: 500px 80px ;
+    padding: 5px;
+    gap: 5px;
+}
+
+.left-bar-menu {
+    grid-area: left-bar-menu;
+    border: 2px solid black;
+
+    /* Left menu */
+    display: grid;
+    grid-template: 
+    "home"
+    "explore"
+    "notifications"
+    "messages"
+    "bookmarks"
+    "lists"
+    "profile"
+    "more";
+
+    /* repeat(autofit, minmax(180px, 1fr) */
+    grid-template-rows: repeat(7, 1fr);
+    padding: 5px;
+    gap: 5px;
+}
+
+.home {
+    grid-area: home;
+    border: 1px dashed black;
+
+    /* display */
+    display: grid;
+    grid-template: "home-icon home-text";
+    grid-template-columns: 30px 1fr;
+    grid-template-rows: 30px;
+    padding: 5px;
+    gap: 5px;
+    /* place in the center, both boxes */
+    place-content: center;
+}
+
+.home-icon {
+    grid-area: home-icon;
+    border: 1px dashed black;
+
+}
+
+.home-icon-img {
+    width: 20px;
+    padding-top: 4px;
+    padding-left: 4px;
+}
+
+.home-text {
+    grid-area: home-text;
+    border: 1px dashed black;
+}
+
+.home-text > p {
+    padding-top:5px ;
+    padding-left: 5px;
+} 
+
+.explore {
+    grid-area: explore;
+    border: 1px dashed black;
+}
+
+.notifications {
+    grid-area: notifications;
+    border: 1px dashed black;
+
+    display: grid;
+    grid-template: "notification-icon notification-text";
+    grid-template-columns: 30px 1fr;
+    grid-template-rows: 30px;
+    padding: 5px;
+    gap: 5px;
+    /* place in the center, both boxes */
+    place-content: center;
+}
+
+.notification-icon {
+    grid-area: notification-icon;
+    border: 1px dashed black;
+}
+
+.notification-icon-img {
+    width: 20px;
+    padding-top: 4px;
+    padding-left: 4px;
+}
+
+.notification-text {
+    grid-area: notification-text;
+    border: 1px dashed black;
+}
+
+.notification-text > p {
+    padding-top:5px ;
+    padding-left: 5px;
+}
+
+.messages {
+    grid-area: messages;
+    border: 1px dashed black;
+}
+
+.bookmarks {
+    grid-area: bookmarks;
+    border: 1px dashed black;
+}
+
+.lists {
+    grid-area: lists;
+    border: 1px dashed black;
+}
+
+.profile {
+    grid-area: profile;
+    border: 1px dashed black;
+}
+
+.more {
+    grid-area: more;
+    border: 1px dashed black;
+}
+
+.left-tweet-button {
+    grid-area: left-tweet-button;
+    border: 1px dashed black;
 }
 
 .main-bar{
