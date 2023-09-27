@@ -17,7 +17,7 @@ body {
     display: grid;
     grid-template: 
     "header      header         header"    50px
-    "left-bar    main-bar       right-bar" 100vh
+    "left-bar    main-bar       right-bar" auto
     "footer      footer         footer"    50px /
     200px          1fr         400px;
 
@@ -418,6 +418,8 @@ body {
     gap: 5px;
     /* place in the center, both boxes */
     place-content: center;
+
+    
 }
 
 .more-icon {
@@ -441,6 +443,16 @@ body {
     padding-left: 5px;
 }
 
+.home, .explore, .notifications,.messages, .bookmarks, .lists, .profile,.more {
+    cursor: pointer;
+}
+
+.home:hover,.explore:hover, .notifications:hover,.messages:hover, .bookmarks:hover, .lists:hover, .profile:hover,.more:hover   {
+    color:  #26a7de
+}
+
+
+
 .left-tweet-button {
     grid-area: left-tweet-button;
     border: 1px dashed black;
@@ -455,9 +467,8 @@ body {
     border-radius: 20px;
     background-color: #26a7de;
     color: #E1E8ED ;
-    border: none
-   
-    
+    border: none;
+    cursor: pointer;
 }
 
 .main-bar{
@@ -473,5 +484,7 @@ body {
 .footer {
     grid-area: footer;
     border: 1px dashed black;
+    /* position: fixed;
+    bottom: 0; */
     
 }
