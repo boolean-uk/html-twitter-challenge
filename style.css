@@ -232,7 +232,9 @@ main {
   "icon text-input"
   "icon input-footer";
   grid-template-columns: auto 1fr;
+  grid-template-rows: 32px 1fr;
 
+  
   padding: 0.5rem;
   gap: 0.5rem;
 }
@@ -243,6 +245,20 @@ main {
 
 .text-input {
   grid-area: text-input;
+  align-items: center;
+}
+
+.text-input input {
+  background-color: #00000000;
+  border: none;
+}
+
+.text-input input:focus {
+  outline: none;
+}
+
+.post:focus-within {
+  box-shadow: 0 0 10px inset var(--accent-color);
 }
 
 .input-footer {
@@ -252,14 +268,20 @@ main {
   font-size: 0.75rem;
   justify-items: right;
   align-items: center;
+
+  gap: 1ch;
 }
 
 .input-footer .post-button{
   padding: 0.4rem 0.8rem;
 }
 
-.post-options {
+.post-options img {
   height: 1rem;
+}
+
+.post-options:hover {
+  background-color: #9050e050;
 }
 
 .feed-item {
