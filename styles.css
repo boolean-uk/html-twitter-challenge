@@ -20,7 +20,7 @@ body {
     grid-template-columns: 50px 1fr;
     row-gap: 20px;
     margin-left: 20px;
-    border: dotted blue 2px;
+    border-right: dotted blue 2px;
 
 }
 
@@ -28,6 +28,7 @@ body {
     text-decoration: none;
     color: black;
 }
+
 
 .nav:hover {
     color: rgb(75, 160, 235);
@@ -49,8 +50,34 @@ body {
     cursor: pointer;
 }
 
-.profile {
-    display: grid;
-    height: 50px;
-    width: 200px;
+.profile-photo {
+object-fit: cover;
+border: solid rgba(0, 0, 0, 0.117);
+border-radius: 50px;
+width: 50px;
+height: 50px;
 }
+
+.profile {
+    margin-left: 20px;
+}
+
+.profile p:nth-of-type(2) {
+    color: rgba(0, 0, 0, 0.525)
+}
+    /* @media screen and (max-width: 300px) {
+        .nav {
+            display: none;
+        }
+        .left-menu {
+            grid-template-columns: auto;
+        }
+        .profile {
+            display: none;
+        }
+        .tweet_button {
+            width: 50px;
+            position: relative;
+            right: 20px;
+        }
+    } */
