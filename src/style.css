@@ -1,3 +1,14 @@
+
+/*STYLES THE OVERAL LAYOUT*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+ h2 {
+    font-size: 20px;
+ }
 body {
     margin: 0 5%;
     height: 100vh;
@@ -8,4 +19,30 @@ body {
 section {
     border: 1px dotted grey;
     padding: 10px;
+    display: grid;
+    grid-template-rows: 40px 1fr;
 }
+/*RECURRENT STYLES*/
+
+.tweet-button {
+    background-color: rgb(39, 175, 209);
+    height: 20px;
+    color: white;
+    width: 100%;
+    border-radius: 40px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/*STYLES THE LEFT-MENU*/
+
+#left-menu main {
+    display: grid;
+    grid-template-rows: repeat(8, 40px);
+    gap: 10px;
+}
+
+#left-menu main > div {
+    border: 1px dotted grey;
+}
+
