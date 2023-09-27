@@ -290,6 +290,7 @@ main.grid {
 
 .feed-item {
   grid-template-areas: "icon feed-content";
+  grid-template-columns: auto 1fr;
 
   padding: 0.5rem;
   gap: 0.5rem;
@@ -325,7 +326,7 @@ main.grid {
   width: 100%;
   height: 180px;
   
-  object-fit: cover;
+  object-fit: contain;
 
   margin: 4px 0;
 
