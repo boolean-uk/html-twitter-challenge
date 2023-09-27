@@ -88,6 +88,15 @@ p {
     border: 1px dotted grey;
 
 }
+/*hover and selected styles for LEFT-MENU*/
+#left-menu main > div:hover {
+    color: orange;
+}
+#left-menu main > div:active {
+    background-color: rgba(255, 166, 0, 0.6);
+    color: white;
+}
+
 
 /*STYLES THE NEWSFEED*/
 #tweet-container > main {
