@@ -6,6 +6,10 @@
     color: white;
 }
 
+:root {
+    --border-color: rgba(128, 128, 128, 0.632);
+}
+
 .container {
     display: grid;
     grid-template-columns: minmax(30%, 1fr) minmax(70%, 1fr);
@@ -22,15 +26,17 @@
     gap: 5px;
     justify-content: end;
     align-items: center;
+    padding: 10px;
 }
 
 .x-logo {
     display: grid;
-    align-content: center;
+    align-self: start;
+    padding-top: 5px;
 }
 
 .x-logo > img {
-   width: 30px;
+   width: 20px;
 }
 
 .profile {
@@ -43,7 +49,68 @@
 /* MAIN */
 .main {
     display: grid;
-    grid-template-columns: 50% minmax(50%, 1fr) ;
+    grid-template-columns: 500px 300px 1fr;
 }
 
+/* MAIN CONTENT */
+.main-content {
+    display: grid;
+    grid-template-rows: repeat(2, 100px) 1fr;
+    gap: 10px;
+    border-left: solid 1px var(--border-color);
+    border-right: solid 1px var(--border-color);
+}
 
+.home {
+    display: grid; 
+    grid-template-rows: repeat(2, 1fr);
+    padding: 10px;
+    border-bottom: solid 1px var(--border-color);
+}
+
+.home-heading {
+    padding-top: 5px;
+}
+
+.switch-follow-view {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+}
+
+.create-post-main-feed {
+    padding: 10px;
+    border-bottom: solid 1px var(--border-color);
+}
+
+.main-feed {
+    padding: 10px;
+}
+
+/* RIGHT MENU */
+
+.right-menu {
+    display: grid;
+    grid-template-rows: 40px 100px repeat(2, auto) 80px;
+    gap: 10px;
+    padding: 10px;
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    gap: 10px;
+    align-items: center;
+
+    border: solid 1px gray;
+    border-radius: 25px;
+    padding-left: 10px;
+}
+
+.search-icon > img {
+    width: 20px;
+}
+
+.search-text {
+    color: gray;
+}
