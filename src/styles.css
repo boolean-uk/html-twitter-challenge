@@ -1,0 +1,87 @@
+/* Global reset */
+
+* {
+    margin: 0;
+    padding:0;
+}
+
+body {
+    background-color: bisque;
+}
+
+/* Containter */
+/* Make a grid for container */
+
+.container {
+    display: grid;
+    grid-template: 
+    "header      header         header"    50px
+    "left-bar    main-bar       right-bar" 100vh
+    "footer      footer         footer"    50px /
+    200px          1fr         400px;
+
+    border: 1px dashed black;
+    padding: 5px;
+    gap: 5px;
+}
+
+
+/* Header */
+
+.header {
+    grid-area: header;
+    border: 1px dashed black;
+
+    /* 200px the width of left-bar */
+
+    display: grid;
+    grid-template: 
+    "header-logo home-bar header-icon search-twitter-bar"
+    ;
+    grid-template-columns: 
+    194px 1fr 50px 395px;
+    padding: 5px;
+    gap: 5px;
+}
+
+.header-logo {
+    grid-area: header-logo;
+    border: 1px dashed black;
+}
+
+.home-bar {
+    grid-area: home-bar;
+    border: 1px dashed black;
+}
+
+.header-icon {
+    grid-area: header-icon;
+    border: 1px dashed black;
+}
+
+.search-twitter-bar {
+    grid-area: search-twitter-bar;
+    border: 1px dashed black;
+}
+
+/* Left-Bar */
+
+.left-bar {
+    grid-area: left-bar;
+    border: 1px dashed black;
+}
+
+.main-bar{
+    grid-area: main-bar;
+    border: 1px dashed black;
+}
+
+.right-bar {
+    grid-area: right-bar;
+    border: 1px dashed black;
+}
+
+.footer {
+    grid-area: footer;
+    border: 1px dashed black;
+}
