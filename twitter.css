@@ -43,8 +43,9 @@ header {
     font-size: 18px;
     font-weight: bold;
     margin-left: 60px;
-    margin-top: 80px;
-    gap: 30px;
+    margin-top: 20px;
+    
+    gap: 20px;
     grid-template: 
     
      "home" 30px
@@ -55,7 +56,7 @@ header {
      "lists" 30px
      "profile" 30px
      "more" 30px
-     "tweet" 30px/
+     "tweet" 10px/
        200px;
 }
 
@@ -74,8 +75,10 @@ a:hover {
     color: rgb(28, 155, 246);;
 }
 
+
 .tweet a {
     color: white;
+    margin-bottom: 50px;
 }
 
 .left-tab > .tweet {
@@ -85,7 +88,9 @@ a:hover {
     border-radius: 50px;
     padding-left: 37px;
     padding-top: 5px;
+    margin-top: 10px;
     margin-right: 80px;
+    margin-bottom: 350px;
     font-size: 15px;
     
 }
@@ -112,6 +117,7 @@ a:hover {
 }
 
 .search-bar {
+    color: grey;
     display: grid;
     text-align: center;
     place-items: center;
@@ -122,10 +128,12 @@ a:hover {
     margin-top: 20px;
     margin-right: 20px;
     border: solid 1px rgb(183, 177, 177);
+    background-color: rgb(242, 244, 246);
     border-radius: 50px;
 }
 
 .right-content {
+    display: grid;
     margin-top: 20px;
     margin-right: 20px;
     padding-left: 15px;
@@ -133,6 +141,8 @@ a:hover {
     border: solid 1px rgb(242, 244, 246);
     border-radius: 20px;
     background-color: rgb(242, 244, 246);
+    grid-template-rows: 40px repeat(4, 1fr);
+    
 }
 
 .right-content2{
@@ -145,3 +155,71 @@ a:hover {
     background-color: rgb(242, 244, 246);
 }
 
+.twitter-logo {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    right: 40px;
+
+}
+
+.bird-house {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 20px;
+    top: 65px;
+}
+
+.explore {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 23px;
+}
+
+.notifications {
+    width: 25;
+    height: 25px;
+    position: absolute;
+    left: 20px;
+    top: 165px;
+}
+
+.messages {
+    width: 25;
+    height: 25px;
+    position: absolute;
+    left: 10px;
+    top: 217px;
+}
+
+.bookmarks {
+    width: 30;
+    height: 30px;
+    position: absolute;
+    left: 10px;
+    top: 265px;
+}
+
+.lists {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 25px;
+}
+
+.profile {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 25px;
+}
+
+.more {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 25px;
+    top: 417px;
+}
