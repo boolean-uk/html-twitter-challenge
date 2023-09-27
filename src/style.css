@@ -1,0 +1,11 @@
+body {
+    margin: 0 5%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+section {
+    border: 1px dotted grey;
+    padding: 10px;
+}
