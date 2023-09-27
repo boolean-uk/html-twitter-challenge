@@ -6,7 +6,8 @@
 }
 
 body {
-    background-color: bisque;
+    background-color: whitesmoke;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
 }
 
 /* Containter */
@@ -49,9 +50,28 @@ body {
     border: 1px dashed black;
 }
 
+.header-logo-img {
+    width: 25px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.header-icon-img {
+    width: 25px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
 .home-bar {
     grid-area: home-bar;
     border: 1px dashed black;
+}
+
+.home-bar > p {
+    padding-left: 10px;
+    padding-top: 7px;
+    font-size: 20px;
+   
 }
 
 .header-icon {
@@ -61,6 +81,35 @@ body {
 
 .search-twitter-bar {
     grid-area: search-twitter-bar;
+    border: 1px dashed black;
+
+    display: grid;
+    grid-template: "magnifying-logo search-text";
+    grid-template-columns: 50px 1fr;
+    padding: 5px;
+    gap: 5px;
+}
+
+.magnifying-logo {
+    grid-area: magnifying-logo;
+    border: 1px dashed black;
+}
+
+.magnifying-logo-img {
+    width: 17px;
+    padding-left: 14px;
+    padding-top: 5px;
+}
+
+.search-text > p{
+    font-size: 15px;
+    padding-top: 4px;
+    padding-left: 6px;
+    color: grey;
+}
+
+.search-text {
+    grid-area: search-text;
     border: 1px dashed black;
 }
 
