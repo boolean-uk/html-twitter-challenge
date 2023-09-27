@@ -16,7 +16,6 @@ body {
 }
 
 section {
-    border: 1px dotted grey;
     padding: 10px;
     display: grid;
     grid-template-rows: 40px 1fr;
@@ -45,6 +44,7 @@ h2 {
     padding-bottom: 5px;
     font-family: "Tahoma", "Arial", sans-serif;
     font-weight: bolder;
+    margin-left: 10px;
  }
 
  h3 {
@@ -73,7 +73,6 @@ p {
 }
 
 #left-menu main > div {
-    border: 1px dotted grey;
     padding: 5px;  
 }
 
@@ -86,8 +85,8 @@ p {
 }
 #left-menu footer > div {
     border: 1px dotted grey;
-
 }
+
 /*hover and selected styles for LEFT-MENU*/
 #left-menu main > div:hover {
     color: orange;
@@ -99,43 +98,53 @@ p {
 
 
 /*STYLES THE NEWSFEED*/
-#tweet-container > main {
+#post-container {
+    border-left:  1px solid grey;
+    border-right:  1px solid grey;
+    padding: 10px 0 0 0;
+}
+
+#post-container > header {
+    border-bottom: 1px solid grey;
+}
+#post-container > main {
     display: grid;
-    grid-template-rows: 100px auto;
+    grid-template-rows: 120px auto;
 }
 
 /*top part - writing tweets*/
-#write-tweet {
+#write-post {
     display: grid;
     grid-template-rows: 60px 40px;
+    padding: 10px;
 }
 
-#write-tweet input {
+#write-post input {
     height: 40px;
     border: none;
 }
 
-#write-tweet input::placeholder {
+#write-post input::placeholder {
     font-size: 18px;
 }
 
-#write-tweet  > div:nth-child(1) {
+#write-post > div:nth-child(1) {
     display: grid;
     grid-template-columns: 50px 1fr;
 }
 
-#tweet-quick-menu {
+#post-quick-menu {
     position: relative;
+    width: 96%;
     display: grid;
     height: 32px;
-    grid-template-columns: repeat(5, 40px) 90px;
-    border-bottom: 10px solid rgba(128, 128, 128, 0.264);
+    grid-template-columns: repeat(5, 40px) 1fr 90px;
 }
-#tweet-quick-menu > div {
+#post-quick-menu > div {
     border: 1px dotted grey;
 }
 
-#tweet-quick-menu .tweet-button {
+#post-quick-menu .post-button {
     position: absolute;
     right: 5px;
     width: 87px;
@@ -143,19 +152,20 @@ p {
 
 /*actual feed*/
 #feed {
+    border-top: 10px solid rgba(128, 128, 128, 0.264);
     display: grid;
     grid-auto-rows: repeat(auto, fit-content);
 }
 
-.tweet {
+.post {
     padding: 10px 10px;
     gap: 5px;
     display: grid;
     grid-template-columns: 40px 1fr;
-    border: 1px dotted grey;
+    border-bottom: 1px solid grey;
 }
 
-.tweet-content {
+.post-content {
     display: grid;
     grid-template-rows: 40px repeat(2, auto-fit) 40px;
     gap: 5px;
@@ -168,7 +178,6 @@ p {
 
 .react div {
     border: 1px dotted grey;
-
 }
 
 /*STYLES THE RIGHT-MENU*/
@@ -179,12 +188,13 @@ p {
     background-color: rgb(245, 245, 245);
     border-radius: 5px;
     padding: 5px;
+    margin: 10px 0;
 }
 
 
 
 #right-menu > main > div > div {
-    border: 1px dotted grey;
+    border-bottom: 1px solid grey;
     height: 100px;
     padding: 5px;
 }
