@@ -73,7 +73,12 @@ ol {
 /* || Hover || */
 
 .hover:hover {
-  background-color: var(--hover-color);
+  cursor: pointer;
+  /* background-color: var(--hover-color); */
+  background-color: #ffffff25;
+}
+
+.hover-no-highlight:hover {
   cursor: pointer;
 }
 
@@ -183,28 +188,78 @@ header.menu {
 /* ======== main ======== */
 
 main {
-  background-color: burlywood;
-}
-
-/* ======== footer menu ======== */
-
-footer.right {
-  background-color: darkmagenta;
+  border-left: 2px solid #555;
+  border-right: 2px solid #555;
+  background-color: var(--bg-color)
 }
 
 .home {
-  height: 80px;
-
+  grid-template-rows: 40px 40px;
+  align-items: center;
+  border-bottom: 2px solid #555;
   backdrop-filter: blur(1rem);
 }
 
-.home * {
-  filter: blur(0);
+.home > * {
+  height: 100%;
+}
+
+.home-title {
+  padding: 1ch;
+}
+
+.feed-selection {
+  grid-template: 1fr / 1fr 1fr;
+  font-size: .75rem;
+}
+
+.active-feed {
+  text-decoration: underline 2px var(--accent-color);
+  text-underline-offset: 1ch;
+}
+
+.feed-selection .hover-no-highlight {
+  width: 100%;
+  justify-items: center;
+}
+
+.feed-selection .hover-no-highlight:hover {
+  background-color: #ffffff25;
 }
 
 .post {
-  background-color: crimson;
-  font-size: 4rem;
+  grid-template-areas: 
+  "icon text-input"
+  "icon input-footer";
+  grid-template-columns: auto 1fr;
+
+  padding: 0.5rem;
+  gap: 0.5rem;
+}
+
+.post > .icon {
+  grid-area: icon;
+}
+
+.text-input {
+  grid-area: text-input;
+}
+
+.input-footer {
+  grid-area: input-footer;
+  grid-template-columns: repeat(6, auto) 1fr;
+
+  font-size: 0.75rem;
+  justify-items: right;
+  align-items: center;
+}
+
+.input-footer .post-button{
+  padding: 0.4rem 0.8rem;
+}
+
+.post-options {
+  height: 1rem;
 }
 
 .feed-item {
@@ -212,5 +267,11 @@ footer.right {
 }
 
 .feed-item:nth-child(2n) {
-  background-color: yellowgreen;
+  background-color: #222;
+}
+
+/* ======== footer menu ======== */
+
+footer.right {
+  background-color: darkmagenta;
 }
