@@ -47,6 +47,11 @@ button {
     color: white;
 }
 
+button:hover {
+    transition: 0.5s;
+    background-color: rgb(0, 97, 136);
+}
+
 .main-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -166,6 +171,13 @@ button {
     margin: 10px;
 }
 
+.upload-icons .logo:hover {
+    padding: 5px;
+    border-radius: 50%;
+    background-color: rgb(207, 207, 207);
+    transition: 0.5s;
+}
+
 .tweet {
     margin-left: 400px;
 }
@@ -175,6 +187,11 @@ button {
     height: 50px;
     font-size: 15px;
     padding: 10px;
+}
+
+.tweet button:hover {
+    transition: 0.5s;
+    background-color: rgb(0, 97, 136);
 }
 
 .main-feed {
