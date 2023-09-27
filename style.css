@@ -8,6 +8,7 @@
 
 :root {
     --border-color: rgba(128, 128, 128, 0.632);
+    --box-background-color: rgb(23, 33, 33);
 }
 
 .container {
@@ -22,25 +23,63 @@
 .header {
     display: grid;
     grid-area: header;
+    grid-template-columns: 1fr auto;
     grid-template-rows: 50px 1fr 50px 80px;
+    grid-template-areas: 
+    ". logo"
+    ". nav-content"
+    ". post"
+    ". profile";
     gap: 5px;
-    justify-content: end;
-    align-items: center;
     padding: 10px;
 }
 
+/* X LOGO */
 .x-logo {
     display: grid;
+    grid-area: logo;
     align-self: start;
     padding-top: 5px;
 }
 
 .x-logo > img {
-   width: 20px;
+   width: 30px;
 }
 
+/* LEFT MENU */
+.main-nav {
+    grid-area: nav-content;
+    display: grid;
+    grid-template-rows: repeat(10, 50px);
+}
+
+.main-nav > div {
+    display: grid;
+    grid-template-columns: 50px 150px;
+    gap: 10px;
+    align-items: center;
+}
+
+/* ICON RESIZE */
+.main-nav > div > img {
+    width: 30px;
+    justify-self: center;
+}
+
+.main-nav .premium-menu > img {
+    width: 20px;
+}
+
+/* LEFT MENU CREATE POST */
+.left-menu-create-post {
+    display: grid;
+    grid-area: post;
+}
+
+/* PROFILE */
 .profile {
     display: grid;
+    grid-area: profile;
     position: sticky;
     bottom: 0;
 }
@@ -102,7 +141,7 @@
     gap: 10px;
     align-items: center;
 
-    border: solid 1px gray;
+    background-color: var(--box-background-color);
     border-radius: 25px;
     padding-left: 10px;
 }
@@ -113,4 +152,8 @@
 
 .search-text {
     color: gray;
+}
+
+.premium {
+
 }
