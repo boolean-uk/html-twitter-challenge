@@ -5,7 +5,7 @@
 
 .header-section {
         display: grid;
-        grid-template-columns: 220px 1fr 220px;
+        grid-template-columns: 320px 1fr 320px;
         grid-template-rows: 60px;
         grid-column-gap: 0px;
         grid-row-gap: 0px;
@@ -13,7 +13,7 @@
 
 .main-grid {
     display: grid;
-    grid-template-columns: 220px 1fr 220px;
+    grid-template-columns: 320px 1fr 320px;
     grid-template-rows: 1fr;
     grid-column-gap: 2px;
     grid-row-gap: 0px;
@@ -21,7 +21,7 @@
 
  .left-grid {
     display: grid;
-    grid-template-columns: 220px;
+    grid-template-columns: 320px;
     grid-template-rows: repeat(8, 1fr);
     grid-column-gap: 2px;
     grid-row-gap: 0px;
@@ -29,7 +29,7 @@
 
 .middle-grid {
     display: grid;
-    grid-template-columns: 560px;
+    grid-template-columns: 360px;
     grid-template-rows: 130px repeat(3, 107px);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
@@ -37,7 +37,7 @@
 
 .right-grid {
     display: grid;
-    grid-template-columns: 220px;
+    grid-template-columns: 320px;
     grid-template-rows: repeat(2, 100px);
     grid-column-gap: 2px;
     grid-row-gap: 0px;
