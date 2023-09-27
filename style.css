@@ -63,14 +63,7 @@ ol {
 
 .pos-sticky {
   position: sticky;
-}
-
-.stick-top {
   top: 0;
-}
-
-.stick-bot {
-  bottom: 0;
 }
 
 /* || Hover || */
