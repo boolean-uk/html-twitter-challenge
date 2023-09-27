@@ -1,51 +1,167 @@
-body {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 
   color: white;
+  font-family: sans-serif;
+}
+
+:root {
+  --icon-size: 2rem;
+
+  --accent-color: #95e;
+  --accent-hover: #84c;
+  --bg-color: #000;
+  --hover-color: #333;
 }
 
 /* ======== building blocks ======== */
 
-.col {
-  grid-auto-flow: column;
+ol {
+  list-style: none;
 }
+
+/* || Icons || */
+
+.icon {
+  height: var(--icon-size);
+  width: var(--icon-size);
+
+  place-content: center;
+  place-items: center;
+
+  padding: 5px;
+}
+
+.icon img {
+  object-fit: contain;
+
+  height: calc(var(--icon-size) - 1rem);
+}
+
+.round {
+  border-radius: 1000rem; /* unsure if this is good practice? D: */
+}
+
+/* || Grid || */
 
 .container {
   grid-template-columns: 200px 400px 300px;
   justify-content: center;
 
-  background-color: black;
+  background-color: var(--bg-color);
 }
 
 .grid {
   display: grid;
+  align-content: center;
 }
 
-.menu {
-  height: 100vh;
-}
+
+/* || Sticky || */
 
 .pos-sticky {
   position: sticky;
+}
+
+.stick-top {
   top: 0;
+}
+
+.stick-bot {
+  bottom: 0;
+}
+
+/* || Hover || */
+
+.hover:hover {
+  background-color: var(--hover-color);
+  cursor: pointer;
+}
+
+/* ======== side menus ======== */
+
+.menu {
+  height: 100vh;
+  align-content: start;
+
+  padding: 0.5rem;
+
+  gap: 1rem;
+}
+
+.menu-item {
+  grid-template-columns: var(--icon-size) min-content;
+
+  gap: 0.5rem;
+  padding: 0 1rem 0 0;
+
+  text-transform: capitalize;
+
+  align-items: center;
+}
+
+.menu-list {
+  grid-template-columns: min-content;
+  gap: 0.4rem;
 }
 
 /* ======== header menu ======== */
 
-header.left {
-  background-color: aqua;
+header.menu {
+  grid-template-rows: repeat(3, auto) 1fr auto;
 }
 
-/* || V LOGO VERY IMPORTANT - I SPENT BILLIONS ON V.COM */
+.post-button {
+  place-items: center;
+  background-color: var(--accent-color);
+  padding: 0.5rem;
+}
+
+.post-button:hover {
+  background-color: var(--accent-hover)
+}
+
+.user {
+  grid-template-columns: auto 1fr auto;
+
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.user-img img {
+  height: var(--icon-size);
+}
+
+.user-details {
+  align-content: center;
+  font-size: 0.5rem;
+}
+
+.name {
+  font-weight: bold;
+}
+
+/* || V LOGO || VERY IMPORTANT - I SPENT BILLIONS ON V.COM */
 
 .v {
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 
 .v::before {
-  content: "\1d54d"; /* we don't want anyone copy pasting our logo...*/
+  content: "\1d54d"; /* we don't want anyone copy pasting our logo!!!!!!!!*/
+  
+  position: relative;
+  top: 2px;
+}
+
+.menu-item .v {
+  font-size: 1.25rem;
+}
+
+.menu-item .v::before {
+  top: 1px;
 }
 
 /* ======== main ======== */
@@ -62,7 +178,7 @@ footer.right {
 
 .home {
   height: 80px;
-  
+
   backdrop-filter: blur(1rem);
 }
 
@@ -76,7 +192,7 @@ footer.right {
 }
 
 .feed-item {
-  height: 200px
+  height: 200px;
 }
 
 .feed-item:nth-child(2n) {
