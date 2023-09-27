@@ -104,10 +104,14 @@ padding-top: 10px;
         .left-menu {
             display: grid;
             grid-template-columns: 50px;
-            border-right: dotted blue 2px;
+            width: 50px;
         }
         .profile {
             display: none;
+        }
+        .profile-photo {
+            position: relative;
+            right: 10px;
         }
         .hoz-dots {
             display: none;
@@ -115,6 +119,8 @@ padding-top: 10px;
         .tweet_button {
             width: 50px;
             grid-column: 1;
+            position: relative;
+            right: 10px;
         }
         .twitter-logo{
             grid-column: 1;
