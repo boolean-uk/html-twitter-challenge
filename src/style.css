@@ -20,6 +20,14 @@ section {
     display: grid;
     grid-template-rows: 40px 1fr;
 }
+
+footer {
+    font-size: 10px;
+    height: fit-content;
+}
+
+
+
 /*RECURRENT STYLES*/
 
 .rounded-container {
@@ -38,10 +46,14 @@ section {
     border-radius: 40px;
     border: 1px dotted grey;
 }
+.icon {
+    height: 23px;
+}
 
 h2 {
+    display: inline-block;
     font-size: 18px;
-    padding-bottom: 5px;
+    margin-bottom: 5px;
     font-family: "Tahoma", "Arial", sans-serif;
     font-weight: bolder;
     margin-left: 10px;
@@ -66,14 +78,22 @@ p {
 }
 /*STYLES THE LEFT-MENU*/
 
+#clone-icon {
+    height: 40px;
+}
+
 #left-menu main {
+    margin-top: 10px;
     display: grid;
     grid-template-rows: repeat(8, 40px);
     gap: 10px;
 }
 
 #left-menu main > div {
-    padding: 5px;  
+    padding: 5px; 
+    display: grid;
+    grid-template-columns: 25px 1fr;
+    
 }
 
 #left-menu footer {
