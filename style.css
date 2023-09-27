@@ -14,6 +14,7 @@
   --accent-hover: #84c;
   --bg-color: #000;
   --hover-color: #333;
+  --text-color: #fff;
 }
 
 /* ======== building blocks ======== */
@@ -58,12 +59,15 @@ ol {
   align-content: center;
 }
 
-
 /* || Sticky || */
 
 .pos-sticky {
   position: sticky;
   top: 0;
+}
+
+.stick-bot {
+  bottom: 0;
 }
 
 /* || Hover || */
@@ -103,17 +107,34 @@ ol {
 /* ======== header menu ======== */
 
 header.menu {
-  grid-template-rows: repeat(3, auto) 1fr auto;
+  grid-template-rows: auto minmax(3.5rem, auto) 1fr auto;
+}
+
+.left .menu-list {
+  overflow-y: scroll;
+  align-content: start;
+}
+
+.left .menu-list::-webkit-scrollbar {
+  background-color: var(--bg-color);
+  width: 5px;
+}
+
+.left .menu-list::-webkit-scrollbar-thumb {
+  background-color: var(--text-color);
+  border-radius: 50000ch;
 }
 
 .post-button {
   place-items: center;
-  background-color: var(--accent-color);
+  align-self: start;
   padding: 0.5rem;
+
+  background-color: var(--accent-color);
 }
 
 .post-button:hover {
-  background-color: var(--accent-hover)
+  background-color: var(--accent-hover);
 }
 
 .user {
@@ -121,6 +142,8 @@ header.menu {
 
   gap: 0.5rem;
   padding: 0.5rem;
+
+  background-color: black;
 }
 
 .user-img img {
@@ -144,7 +167,7 @@ header.menu {
 
 .v::before {
   content: "\1d54d"; /* we don't want anyone copy pasting our logo!!!!!!!!*/
-  
+
   position: relative;
   top: 2px;
 }
