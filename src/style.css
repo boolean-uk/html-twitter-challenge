@@ -23,7 +23,7 @@ section {
 }
 /*RECURRENT STYLES*/
 
-.tweet-button {
+.rounded-container {
     background-color: rgb(39, 175, 209);
     height: 20px;
     color: white;
@@ -43,6 +43,8 @@ section {
 h2 {
     font-size: 18px;
     padding-bottom: 5px;
+    font-family: "Tahoma", "Arial", sans-serif;
+    font-weight: bolder;
  }
 
 a {
@@ -144,7 +146,7 @@ a {
 #right-menu > main > div {
     display: grid;
     grid-template-rows: 40px repeat(auto, 1fr) ;
-    background-color: rgb(230, 230, 240);
+    background-color: rgb(245, 245, 245);
     border-radius: 5px;
     padding: 5px;
 }
@@ -155,5 +157,11 @@ a {
     border: 1px dotted grey;
     height: 100px;
     padding: 5px;
+}
+
+
+#right-menu input {
+    background-color: rgb(240, 240, 240);
+    border: none;
 }
 /*STYLES THE MESSAGES BOX*
