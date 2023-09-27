@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: whitesmoke;
+    background-color: #F5F8FA;
     font-family: 'Franklin Gothic Medium', Arial, sans-serif;
 }
 
@@ -71,6 +71,7 @@ body {
     padding-left: 10px;
     padding-top: 7px;
     font-size: 20px;
+    padding-right: 10px;
    
 }
 
@@ -147,7 +148,7 @@ body {
     "more";
 
     /* repeat(autofit, minmax(180px, 1fr) */
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-rows: repeat(8, 1fr);
     padding: 5px;
     gap: 5px;
 }
@@ -192,6 +193,38 @@ body {
 .explore {
     grid-area: explore;
     border: 1px dashed black;
+
+
+    display: grid;
+    grid-template: "explore-icon explore-text";
+    grid-template-columns: 30px 1fr;
+    grid-template-rows: 30px;
+    padding: 5px;
+    gap: 5px;
+    /* place in the center, both boxes */
+    place-content: center;
+
+}
+
+.explore-icon  {
+    grid-area: explore-icon ;
+    border: 1px dashed black;
+}
+
+.explore-icon-img {
+    width: 20px;
+    padding-top: 4px;
+    padding-left: 4px;
+}
+
+.explore-text  {
+    grid-area: explore-text ;
+    border: 1px dashed black;
+}
+
+.explore-text  > p {
+    padding-top:5px ;
+    padding-left: 5px;
 }
 
 .notifications {
@@ -232,31 +265,199 @@ body {
 .messages {
     grid-area: messages;
     border: 1px dashed black;
+
+    display: grid;
+    grid-template: "messages-icon messages-text";
+    grid-template-columns: 30px 1fr;
+    grid-template-rows: 30px;
+    padding: 5px;
+    gap: 5px;
+    /* place in the center, both boxes */
+    place-content: center;
+}
+
+.messages-icon  {
+    grid-area: messages-icon;
+    border: 1px dashed black;
+}
+
+.messages-icon-img {
+    width: 20px;
+    padding-top: 4px;
+    padding-left: 4px;
+}
+
+
+
+.messages-text  {
+    grid-area: messages-text;
+    border: 1px dashed black;
+}
+
+.messages-text > p {
+    padding-top:5px ;
+    padding-left: 5px;
 }
 
 .bookmarks {
     grid-area: bookmarks;
     border: 1px dashed black;
+
+    display: grid;
+    grid-template: "bookmarks-icon bookmarks-text";
+    grid-template-columns: 30px 1fr;
+    grid-template-rows: 30px;
+    padding: 5px;
+    gap: 5px;
+    /* place in the center, both boxes */
+    place-content: center;
+}
+
+.bookmarks-icon {
+    grid-area: bookmarks-icon;
+    border: 1px dashed black;
+}
+
+.bookmarks-icon-img {
+    width: 20px;
+    padding-top: 4px;
+    padding-left: 4px;
+}
+
+.bookmarks-text {
+    grid-area: bookmarks-text;
+    border: 1px dashed black;
+}
+
+.bookmarks-text > p {
+    padding-top:5px ;
+    padding-left: 5px;
 }
 
 .lists {
     grid-area: lists;
     border: 1px dashed black;
+
+    display: grid;
+    grid-template: "lists-icon lists-text";
+    grid-template-columns: 30px 1fr;
+    grid-template-rows: 30px;
+    padding: 5px;
+    gap: 5px;
+    /* place in the center, both boxes */
+    place-content: center;
 }
+
+.lists-icon {
+    grid-area: lists-icon;
+    border: 1px dashed black;
+}
+
+.lists-text {
+    grid-area: lists-text;
+    border: 1px dashed black;
+}
+
+.lists-icon-img {
+    width: 20px;
+    padding-top: 4px;
+    padding-left: 4px;
+}
+
+.lists-text > p {
+    padding-top:5px ;
+    padding-left: 5px;
+}
+
 
 .profile {
     grid-area: profile;
     border: 1px dashed black;
+
+    display: grid;
+    grid-template: "profile-icon profile-text";
+    grid-template-columns: 30px 1fr;
+    grid-template-rows: 30px;
+    padding: 5px;
+    gap: 5px;
+    /* place in the center, both boxes */
+    place-content: center;
+}
+
+.profile-icon {
+    grid-area: profile-icon;
+    border: 1px dashed black;
+}
+
+.profile-icon-img {
+    width: 16px;
+    padding-top: 6px;
+    padding-left: 6px;
+}
+
+.profile-text {
+    grid-area: profile-text;
+    border: 1px dashed black;
+}
+
+.profile-text > p {
+    padding-top:5px ;
+    padding-left: 5px;
 }
 
 .more {
     grid-area: more;
     border: 1px dashed black;
+
+
+    display: grid;
+    grid-template: "more-icon more-text";
+    grid-template-columns: 30px 1fr;
+    grid-template-rows: 30px;
+    padding: 5px;
+    gap: 5px;
+    /* place in the center, both boxes */
+    place-content: center;
+}
+
+.more-icon {
+    grid-area: more-icon;
+    border: 1px dashed black;
+}
+
+.more-icon-img {
+    width: 20px;
+    padding-top: 4px;
+    padding-left: 4px;
+
+}
+.more-text {
+    grid-area: more-text;
+    border: 1px dashed black;
+}
+
+.more-text > p {
+    padding-top:5px ;
+    padding-left: 5px;
 }
 
 .left-tweet-button {
     grid-area: left-tweet-button;
     border: 1px dashed black;
+    padding-top: 20px;
+   
+
+}
+
+#tweet-button {
+    width: 100%;
+    height: 70%;
+    border-radius: 20px;
+    background-color: #26a7de;
+    color: #E1E8ED ;
+    border: none
+   
+    
 }
 
 .main-bar{
@@ -272,4 +473,5 @@ body {
 .footer {
     grid-area: footer;
     border: 1px dashed black;
+    
 }
