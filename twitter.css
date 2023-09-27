@@ -139,6 +139,7 @@ button:hover {
     align-items: center;
     border-bottom: solid 1px gray;
     background-color: white;
+    filter: drop-shadow(0px 5px 5px rgb(182, 182, 182));
 }
 
 .title {
@@ -240,6 +241,7 @@ button:hover {
 .feed > .lower {
     grid-area: 2 / 2 / 3 / 3;
     font-size: 20px;
+    color: black;
 }
 
 .right-nav {
@@ -284,6 +286,11 @@ button:hover {
     font-weight: bold;
     padding-bottom: 10px;
     border-bottom: solid 1px gray;
+}
+
+.trend > h3, p {
+    color: gray;
+    font-weight: lighter;
 }
 
 .who-to-follow {
