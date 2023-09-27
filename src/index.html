@@ -1,56 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Twitter Clone</title>
-</head>
-<body>
-  <div class="grid-container">
-    <!-- Navbar -->
-    <section class="nav-bar">
-      <div class="logo">logo</div>
-      <div class="nav-grid-container">
-        <nav>home</nav>
-        <nav>explore</nav>
-        <nav>notifications</nav>
-        <nav>messages</nav>
-        <nav>bookmarks</nav>
-        <nav>lists</nav>
-        <nav>profile</nav>
-        <nav>more</nav>
-        <div class="tweet">tweet</div>
-      </div>
-    </section>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Twitter Clone</title>
+  </head>
+  <body>
+    <div class="grid-container">
+      <!-- Navbar -->
+      <section class="nav-bar">
+        <img class="logo" src="src/assets/icons/twitter.svg" alt="Twitter Logo">
 
-    <!-- Main Content -->
-    <section class="main">
-      <!-- Header -->
-      <div class="grid-container-header">
-        <header class="home">Home</header>
-        <div class="sparkle">Sparkle</div>
-      </div>
-      
-      <!-- Write a Tweet Section -->
-      <div class="write-post">Write a tweet</div>
+        <div class="nav-grid-container">
+          <nav>Home</nav>
+          <nav>Explore</nav>
+          <nav>Notifications</nav>
+          <nav>Messages</nav>
+          <nav>Bookmarks</nav>
+          <nav>Profile</nav>
+          <nav>More</nav>
+          <div class="tweet">Tweet</div>
+        </div>
+      </section>
 
-      <!-- Post Container -->
-      <div class="grid-container-posts">
-        <span class="post">post</span>
-        <span class="post">post</span>
-        <span class="post">post</span>
-      </div>
-    </section>
+      <!-- Main Content -->
+      <section class="main">
+        <!-- Header -->
+        <div class="grid-container-header">
+          <header class="home">Home</header>
+          <div class="sparkle">Sparkle</div>
+        </div>
 
-    <!-- Right Sidebar -->
-    <section class="right-bar">
-      <div class="grid-container-right">
-        <span class="search">search</span>
-        <span class="news">What's New</span>
-        <span class="follow">Who to Follow</span>
-      </div>
-    </section>
-  </div>
-</body>
+        <!-- Write a Tweet Section -->
+        <div class="write-post">
+          <div class="circle"></div>
+        </div>
+
+        <!-- Post Container -->
+        <div class="grid-container-posts">
+          <span class="post">
+            <div class="circle"></div>
+          </span>
+          <span class="post">
+            <div class="circle"></div>
+          </span>
+          <span class="post">
+            <div class="circle"></div>
+         
+        </div>
+      </section>
+
+      <!-- Right Sidebar -->
+      <section class="right-bar">
+        <div class="grid-container-right">
+          <span class="search">search</span>
+          <span class="news">What's New</span>
+          <span class="follow">Who to Follow</span>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
