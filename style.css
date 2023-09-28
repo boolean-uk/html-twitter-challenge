@@ -23,8 +23,38 @@
 
 /* ======== building blocks ======== */
 
+input[type="text"] {
+  border: none;
+  background-color: #00000000;
+}
+
+input:focus {
+  outline: none;
+}
+
 ol {
   list-style: none;
+}
+
+h2 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  margin-bottom: 0.5rem;
+}
+
+.grey-text {
+  color: #999;
+}
+
+.button {
+  place-items: center;
+  align-self: start;
+  padding: 0.5rem;
+
+  background-color: var(--accent-color);
 }
 
 .name {
@@ -57,6 +87,18 @@ ol {
   border-radius: 1000rem; /* unsure if this is good practice? D: */
 }
 
+.smol-round {
+  border-radius: 1rem;
+}
+
+.smoller-round {
+  border-radius: 0.5rem;
+}
+
+.card {
+  padding: 1rem 0;
+}
+
 /* || Grid || */
 
 .container {
@@ -76,10 +118,6 @@ ol {
 .pos-sticky {
   position: sticky;
   top: 0;
-}
-
-.stick-bot {
-  bottom: 0;
 }
 
 /* || Hover || */
@@ -141,15 +179,6 @@ header.menu {
   border-radius: 50000ch;
 }
 
-.post-button {
-  place-items: center;
-  align-self: start;
-  padding: 0.5rem;
-
-  background-color: var(--accent-color);
-}
-
-
 .user {
   grid-template-columns: auto 1fr auto;
 
@@ -205,7 +234,6 @@ main.grid {
   backdrop-filter: blur(1rem);
 
   background-color: var(--accent-opc);
-  background-color: var(--issues);
 }
 
 .home > * {
@@ -242,10 +270,11 @@ main.grid {
   grid-template-columns: auto 1fr;
   grid-template-rows: 32px 1fr;
 
+  container-type: normal;
+  container-name: post;
+
   padding: 0.5rem;
   gap: 0.5rem;
-
-  background-color: var(--issues);
 
   border-bottom: 2px solid #555;
 }
@@ -262,13 +291,6 @@ main.grid {
 
 .text-input input[type="text"] {
   height: 32px;
-
-  border: none;
-  background-color: #00000000;
-}
-
-.text-input input:focus {
-  outline: none;
 }
 
 .post:focus-within {
@@ -305,13 +327,12 @@ main.grid {
   place-content: start;
 
   border-bottom: 2px solid #555;
-  
+
   min-height: 200px;
 }
 
 .feed-item > .icon {
   grid-area: icon;
-
 }
 
 .feed-content {
@@ -332,21 +353,18 @@ main.grid {
 .feed-attachment img {
   width: 100%;
   height: 180px;
-  
+
   object-fit: contain;
 
   margin: 4px 0;
 
-  border-radius: 1rem;
-
-  box-shadow: 1px 1px 2px var(--accent-opc)
+  box-shadow: 1px 1px 2px var(--accent-opc);
 }
 
 .feed-footer {
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto;
   justify-content: start;
-
 }
 
 .feed-footer-item {
@@ -370,4 +388,62 @@ main.grid {
 /* ======== footer menu ======== */
 
 footer.right {
+  font-size: 0.8rem;
 }
+
+footer.right .li-detail {
+  gap: 2px;
+}
+
+footer.right > div {
+  /* min-height: 40px; */
+}
+
+footer.right > :nth-child(2n + 1) {
+  background-color: #111;
+}
+
+footer.right > :nth-child(2n) {
+  background-color: #333;
+}
+
+.search {
+  grid-template-columns: auto 1fr;
+  padding: 0 0.5rem;
+}
+
+.search:focus-within {
+  box-shadow: 0 0 10px inset var(--accent-color);
+}
+
+.search input {
+  container-type: normal;
+  container-name: search;
+}
+
+.premium.card {
+  padding: 1rem;
+}
+
+.whats-happening h2 {
+  padding: 0 1rem;
+}
+
+.whats-happening ul {
+  gap: 0.5rem;
+  grid-auto-rows: auto;
+}
+
+.whats-happening li {
+  grid-template-columns: 1fr auto;
+  padding: 0 1rem;
+}
+
+.whats-happening .live img {
+  height: 48px;
+  width: 48px;
+  object-fit: cover;
+}
+
+/* ======== media & container queries ======== */
+
