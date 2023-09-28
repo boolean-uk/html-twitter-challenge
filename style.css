@@ -5,14 +5,13 @@
     box-sizing: border-box;
     font-family: sans-serif;
     color: rgb(219, 219, 219);
-    text-decoration: none;
     max-height: 100vh;
 }
 
 
 :root {
     --border-color: rgba(128, 128, 128, 0.632);
-    --box-background-color: rgb(23, 33, 33);
+    --box-background-color: rgb(32, 35, 39);
     --hover-bg-color: rgba(106, 106, 106, 0.362)
 }
 
@@ -73,6 +72,7 @@
 .main-nav > a {
     display: grid;
     align-content: center;
+    text-decoration: none;
 }
 
 .main-nav > a > div {
@@ -121,6 +121,7 @@
     padding: 15px 95px;
     border-radius: 25px;
     background-color: dodgerblue;
+    text-decoration: none;
 }
 
 .left-menu-create-post-link:hover {
@@ -141,6 +142,7 @@
     border-radius: 30px;
     padding: 10px 10px 10px 20px;
     bottom: 0;
+    text-decoration: none;
 }
 
 .profile-link:hover {
@@ -179,8 +181,7 @@
 /* MAIN CONTENT */
 .main-content {
     display: grid;
-    grid-template-rows: repeat(2, 100px) 1fr;
-    gap: 10px;
+    grid-template-rows: 100px 110px 1fr;
     border-left: solid 1px var(--border-color);
     border-right: solid 1px var(--border-color);
 }
@@ -188,44 +189,125 @@
 /* HOME */
 .home {
     display: grid; 
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: 50px 40px;
     padding: 10px;
     border-bottom: solid 1px var(--border-color);
 }
 
 .home-heading {
     padding-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .switch-follow-view {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
+    place-items: center;
+}
+
+.for-you {
+    font-weight: bold;
+    border-bottom: solid 4px dodgerblue;
+    padding-bottom: 16px;
+}
+
+.following {
+    color: gray;
 }
 
 /* CREATE NEW POST */
 .create-post-main-feed {
-    padding: 10px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 15px 15px 10px 15px;
     border-bottom: solid 1px var(--border-color);
+}
+
+.post-content {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+    gap: 5px;
+}
+
+.post-content > .profile-photo {
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.post-content > .post-text {
+    font-size: 20px;
+    color: gray;
+}
+
+.add-to-post {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    justify-items: center;
+}
+
+.add-to-post-attachments {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    gap: 5px;
+}
+
+.add-to-post-attachments > a {
+    border-radius: 30px;
+}
+
+.add-to-post-attachments > a:hover {
+    background-color: rgb(1, 39, 77);
+}
+
+.add-to-post-attachments > a > img {
+    display: grid;
+    align-self: center;
+    margin: 5px;
+    width: 20px;
+}
+
+.post-to-twitter {
+    display: grid;
+    align-content: center;
+    justify-self: end;
+}
+
+.post-to-twitter-text {
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 20px;
+    background-color: dodgerblue;
+    border-radius: 20px;
+}
+
+.post-to-twitter-text:hover {
+    background-color: rgb(0, 79, 158);
 }
 
 /* MAIN FEED */
 
+/* GENERIC POST ADJUSTMENTS */
 .main-feed {
     overflow-y: scroll;
 }
 
-.post {
+.main-feed > div {
     display: grid;
     grid-template-columns: 50px 1fr;
     grid-auto-rows: auto;
-    padding: 10px 15px;
+    padding: 15px 15px;
     border-bottom: solid 1px var(--border-color);
 }
 
 .user-photo-image {
+    object-fit: cover;
     width: 40px;
-    border-radius: 40px;
+    border-radius: 200px;
 }
 
 .tweet-content {
@@ -262,10 +344,8 @@
 
 .tweet-photo {
     display: grid;
-    justify-self: center;
-    object-fit: cover;
-    border-radius: 300px;
-    width: 250px
+    padding: 5px 0;
+    place-self: center;
 }
 
 .feed-tweet-actions {
@@ -303,12 +383,31 @@
     width: 15px;
 }
 
+/* SPECIFIC POST ADJUSTMENTS */
+
+.post-1 .tweet-photo {
+    border-radius: 20px;
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+}
+
+.post-2 .tweet-photo {
+
+    width: 450px;
+    border-radius: 20px;
+}
+
+.post-3 .tweet-text > a {
+    color: orange;
+}
+
 /* RIGHT MENU */
 
 .right-menu {
     display: grid;
-    grid-template-rows: 40px 100px repeat(2, auto) 80px;
-    gap: 10px;
+    grid-template-rows: 40px 120px repeat(2, auto) 80px;
+    gap: 15px;
     padding: 10px;
 }
 
@@ -332,5 +431,18 @@
 }
 
 .premium {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--box-background-color);
+}
 
+.premium-subheader {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.premium-text {
+    font-size: 15px;
+    font-weight: bold;
 }
