@@ -256,7 +256,6 @@ h2 {
 @media screen and (max-width: 800px) {
   .container {
     grid-template-areas: "nav main";
-    grid-template-columns: min-content, minmax(450px, 1fr);
   }
 
   .sidebar {
@@ -274,11 +273,8 @@ h2 {
   }
 
   .nav ul li {
-    height: 20px;
     border-radius: 100%;
-    place-self: center;
     margin: 5px;
-    justify-content: center;
   }
 
   .nav ul li span {
