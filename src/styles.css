@@ -21,7 +21,7 @@ body {
     "footer      footer         footer"    50px /
     200px          1fr         1fr;
 
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
     padding: 5px;
     gap: 5px;
 }
@@ -31,7 +31,7 @@ body {
 
 .header {
     grid-area: header;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 
     /* 200px the width of left-bar */
 
@@ -47,7 +47,7 @@ body {
 
 .header-logo {
     grid-area: header-logo;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .header-logo-img {
@@ -64,7 +64,7 @@ body {
 
 .home-bar {
     grid-area: home-bar;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .home-bar > p {
@@ -82,7 +82,7 @@ body {
 
 .search-twitter-bar {
     grid-area: search-twitter-bar;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 
     display: grid;
     grid-template: "magnifying-logo search-text";
@@ -104,8 +104,8 @@ body {
 
 .search-text > p{
     font-size: 15px;
-    padding-top: 4px;
-    padding-left: 6px;
+    padding-top: 5px;
+    padding-left: 77px;
     color: grey;
 }
 
@@ -118,7 +118,7 @@ body {
 
 .left-bar {
     grid-area: left-bar;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 
     /* Left-grid */
 
@@ -133,7 +133,7 @@ body {
 
 .left-bar-menu {
     grid-area: left-bar-menu;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 
     /* Left menu */
     display: grid;
@@ -155,7 +155,7 @@ body {
 
 .home {
     grid-area: home;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 
     /* display */
     display: grid;
@@ -170,7 +170,7 @@ body {
 
 .home-icon {
     grid-area: home-icon;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 
 }
 
@@ -182,7 +182,7 @@ body {
 
 .home-text {
     grid-area: home-text;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .home-text > p {
@@ -192,7 +192,7 @@ body {
 
 .explore {
     grid-area: explore;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 
 
     display: grid;
@@ -208,7 +208,7 @@ body {
 
 .explore-icon  {
     grid-area: explore-icon ;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .explore-icon-img {
@@ -219,7 +219,7 @@ body {
 
 .explore-text  {
     grid-area: explore-text ;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .explore-text  > p {
@@ -229,7 +229,7 @@ body {
 
 .notifications {
     grid-area: notifications;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 
     display: grid;
     grid-template: "notification-icon notification-text";
@@ -243,7 +243,7 @@ body {
 
 .notification-icon {
     grid-area: notification-icon;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .notification-icon-img {
@@ -254,7 +254,7 @@ body {
 
 .notification-text {
     grid-area: notification-text;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .notification-text > p {
@@ -264,7 +264,7 @@ body {
 
 .messages {
     grid-area: messages;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 
     display: grid;
     grid-template: "messages-icon messages-text";
@@ -278,7 +278,7 @@ body {
 
 .messages-icon  {
     grid-area: messages-icon;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .messages-icon-img {
@@ -291,7 +291,7 @@ body {
 
 .messages-text  {
     grid-area: messages-text;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .messages-text > p {
@@ -301,7 +301,7 @@ body {
 
 .bookmarks {
     grid-area: bookmarks;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 
     display: grid;
     grid-template: "bookmarks-icon bookmarks-text";
@@ -315,7 +315,7 @@ body {
 
 .bookmarks-icon {
     grid-area: bookmarks-icon;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .bookmarks-icon-img {
@@ -326,7 +326,7 @@ body {
 
 .bookmarks-text {
     grid-area: bookmarks-text;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .bookmarks-text > p {
@@ -336,7 +336,7 @@ body {
 
 .lists {
     grid-area: lists;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 
     display: grid;
     grid-template: "lists-icon lists-text";
@@ -350,12 +350,12 @@ body {
 
 .lists-icon {
     grid-area: lists-icon;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .lists-text {
     grid-area: lists-text;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .lists-icon-img {
@@ -372,7 +372,7 @@ body {
 
 .profile {
     grid-area: profile;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 
     display: grid;
     grid-template: "profile-icon profile-text";
@@ -386,7 +386,7 @@ body {
 
 .profile-icon {
     grid-area: profile-icon;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .profile-icon-img {
@@ -397,7 +397,7 @@ body {
 
 .profile-text {
     grid-area: profile-text;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .profile-text > p {
@@ -407,7 +407,7 @@ body {
 
 .more {
     grid-area: more;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 
 
     display: grid;
@@ -424,7 +424,7 @@ body {
 
 .more-icon {
     grid-area: more-icon;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .more-icon-img {
@@ -435,7 +435,7 @@ body {
 }
 .more-text {
     grid-area: more-text;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .more-text > p {
@@ -455,7 +455,7 @@ body {
 
 .left-tweet-button {
     grid-area: left-tweet-button;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
     padding-top: 20px;
    
 
@@ -478,7 +478,7 @@ body {
 
 .main-bar{
     grid-area: main-bar;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 
     /* Display in the middle */
 
@@ -496,7 +496,7 @@ body {
 
 .post-container {
     grid-area: post-container;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 
     /* Grid  */
     display: grid;
@@ -510,7 +510,7 @@ body {
 
 .whats-happening-container {
     grid-area: whats-happening-container;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 
     display: grid;
     grid-template: "profile-pic whats-happening-bar";
@@ -521,7 +521,7 @@ body {
 
 .profile-pic  {
     grid-area: profile-pic ;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
     border-radius: 50%;
    
 }
@@ -535,7 +535,7 @@ body {
 
 .whats-happening-bar {
     grid-area: whats-happening-bar;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .whats-happening-bar  > p{
@@ -549,7 +549,7 @@ body {
 
 .media-post-container {
     grid-area: media-post-container;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 
     display: grid;
     grid-template: "media-icons tweet-button-main-bar ";
@@ -561,7 +561,7 @@ body {
 
 .media-icons {
     grid-area: media-icons;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 
     display: grid;
     grid-template: "icon-boxes empty-space-icon";
@@ -573,7 +573,7 @@ body {
 
 .icon-boxes {
     grid-area: icon-boxes;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 
     display: grid;
     grid-template: "upload-pic upload-gif upload-stats upload-emoji upload-time" 
@@ -587,7 +587,7 @@ body {
 
 .upload-pic {
     grid-area: upload-pic;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 
 }
 
@@ -600,7 +600,7 @@ body {
 
 .upload-gif {
     grid-area: upload-gif;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 
 }
 
@@ -615,7 +615,7 @@ body {
 
 .upload-stats {
     grid-area: upload-stats;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 
 }
 
@@ -628,7 +628,7 @@ body {
 
 .upload-emoji {
     grid-area: upload-emoji;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 
 }
 
@@ -643,7 +643,7 @@ body {
 
 .upload-time {
     grid-area: upload-time;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 
 
 }
@@ -656,13 +656,13 @@ body {
 }
 .empty-space-icon {
     grid-area: empty-space-icon;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 
 .tweet-button-main-bar {
     grid-area: tweet-button-main-bar;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
     display: grid;
     align-items: center;
 }
@@ -684,7 +684,7 @@ body {
 
 .tweetOne-container {
     grid-area: tweetOne-container;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 
     display: grid;
     grid-template: "user-posting-pic tweeting-container ";
@@ -696,7 +696,7 @@ body {
 
 .user-posting-pic {
     grid-area: user-posting-pic;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
     /* border-radius: 20%; */
     
 }
@@ -711,7 +711,7 @@ body {
 
 .tweeting-container {
 grid-area: tweeting-container;
-border: 1px dashed black;
+/* border: 1px dashed black; */
 
 display: grid;
 grid-template: 
@@ -725,7 +725,7 @@ gap: 5px;
 
 .tag-name1 {
     grid-area: tag-name1;
-    border:  1px dashed black;;
+    /* border:  1px dashed black;; */
 }
 
 .tag-name1 > p {
@@ -759,12 +759,12 @@ color: #26a7de;
 
 .actual-tweet1 {
     grid-area: actual-tweet1;
-    border:  1px dashed black;;
+    /* border:  1px dashed black;; */
 }
 
 .actual-tweet-icon1 {
     grid-area: actual-tweet-icon1;
-    border:  1px dashed black;
+    /* border:  1px dashed black; */
     
     display: grid;
     grid-template: "tweet-icon-one tweet-icon-two tweet-icon-three tweet-icon-four";
@@ -775,7 +775,7 @@ color: #26a7de;
 
 .tweet-icon-one {
     grid-area:tweet-icon-one ;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .tweet-icon-one > img {
@@ -787,7 +787,7 @@ color: #26a7de;
 
 .tweet-icon-two {
     grid-area:tweet-icon-two ;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .tweet-icon-two > img {
@@ -799,7 +799,7 @@ color: #26a7de;
 
 .tweet-icon-three {
     grid-area:tweet-icon-three ;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .tweet-icon-three > img {
@@ -811,7 +811,7 @@ color: #26a7de;
 
 .tweet-icon-four {
     grid-area:tweet-icon-four ;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 
@@ -824,7 +824,7 @@ color: #26a7de;
 
 .tweetTwo-container {
     grid-area: tweetTwo-container;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 
     display: grid;
     grid-template: "user-posting-pic2 tweeting-container2 ";
@@ -835,12 +835,12 @@ color: #26a7de;
 
 .user-posting-pic2  {
     grid-area: user-posting-pic2 ;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .tweeting-container2 {
     grid-area: tweeting-container2;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 
     display: grid;
     grid-template: 
@@ -860,7 +860,7 @@ color: #26a7de;
     
     .tag-name2 {
         grid-area: tag-name2;
-        border: 1px dashed black;
+        /* border: 1px dashed black; */
     }
 
     .tag-name2 > p {
@@ -875,7 +875,7 @@ color: #26a7de;
 
     .actual-tweet2 {
         grid-area: actual-tweet2;
-        border: 1px dashed black;
+        /* border: 1px dashed black; */
     }
 
     .actual-tweet2 > p >span{
@@ -893,7 +893,7 @@ color: #26a7de;
 
     .actual-tweet-icon2 {
         grid-area: actual-tweet-icon2;
-        border: 1px dashed black;
+        /* border: 1px dashed black; */
 
         display: grid;
         grid-template: "tweet-icon-one2 tweet-icon-two2 tweet-icon-three2 tweet-icon-four2";
@@ -904,7 +904,7 @@ color: #26a7de;
 
     .tweet-icon-one2 {
         grid-area:tweet-icon-one2 ;
-        border: 1px dashed black;
+        /* border: 1px dashed black; */
     }
 
     .tweet-icon-one2 > img {
@@ -916,7 +916,7 @@ color: #26a7de;
 
     .tweet-icon-two2 {
         grid-area:tweet-icon-two2 ;
-        border: 1px dashed black;
+        /* border: 1px dashed black; */
     }
 
     .tweet-icon-two2 > img {
@@ -928,7 +928,7 @@ color: #26a7de;
 
     .tweet-icon-three2 {
         grid-area:tweet-icon-three2 ;
-        border: 1px dashed black;
+        /* border: 1px dashed black; */
     }
 
     .tweet-icon-three2 > img {
@@ -940,7 +940,7 @@ color: #26a7de;
 
     .tweet-icon-four2 {
         grid-area:tweet-icon-four2 ;
-        border: 1px dashed black;
+        /* border: 1px dashed black; */
     }
 
     .tweet-icon-four2 > img {
@@ -952,7 +952,7 @@ color: #26a7de;
 
     .tweetThree-container {
     grid-area: tweetThree-container;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 
     display: grid;
     grid-template: "user-posting-pic3 tweeting-container3 ";
@@ -963,7 +963,7 @@ color: #26a7de;
 
 .user-posting-pic3 {
     grid-area: user-posting-pic3;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .user-posting-pic3 > img {
@@ -975,7 +975,7 @@ color: #26a7de;
 
 .tweeting-container3 {
     grid-area: tweeting-container3;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 
     display: grid;
     grid-template: 
@@ -989,7 +989,7 @@ color: #26a7de;
 
 .tag-name3 {
     grid-area: tag-name3;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 
@@ -1005,7 +1005,7 @@ color: #26a7de;
 
 .actual-tweet3 {
     grid-area: actual-tweet3;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .actual-tweet3 > p >span{
@@ -1023,7 +1023,7 @@ color: #26a7de;
 
 .actual-tweet-icon3 {
     grid-area: actual-tweet-icon3;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 
 
         display: grid;
@@ -1035,7 +1035,7 @@ color: #26a7de;
 
 .tweet-icon-one3 {
     grid-area:tweet-icon-one3 ;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .tweet-icon-one3 > img {
@@ -1047,7 +1047,7 @@ color: #26a7de;
 
 .tweet-icon-two3 {
     grid-area:tweet-icon-two3 ;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .tweet-icon-two3 > img {
@@ -1059,7 +1059,7 @@ color: #26a7de;
 
 .tweet-icon-three3 {
     grid-area:tweet-icon-three3 ;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .tweet-icon-three3 > img {
@@ -1071,7 +1071,7 @@ color: #26a7de;
 
 .tweet-icon-four3 {
     grid-area:tweet-icon-four3 ;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .tweet-icon-four3 > img {
@@ -1088,39 +1088,17 @@ color: #26a7de;
 
     display: grid;
     grid-template: 
-    "search-twitter-right-bar"
+    
     "whats-happening-right"
     "who-to-follow-right";
     grid-template-rows: 
-    50px 200px 200px;
+    200px 200px;
     padding: 5px;
     gap: 5px;
 }
 
-.search-twitter-right-bar {
-    grid-area: search-twitter-right-bar;
-    border: 1px dashed black;
 
-    display: grid;
-    grid-template: 
-    "search-icon-right search-twitter-text-right";
-    grid-template-columns: 50px 1fr;
-    padding: 5px;
-    gap: 5px;
 
-    
-}
-
-.search-icon-right  {
-    grid-area: search-icon-right ;
-    border: 1px dashed black;
-}
-
-.search-icon-right > img {
-    width: 17px;
-    padding-left: 14px;
-    padding-top: 10px;
-}
 
 
 .search-twitter-text-right {
