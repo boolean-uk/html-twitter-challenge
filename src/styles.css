@@ -486,9 +486,10 @@ body {
     grid-template:
     "post-container"
      "tweetOne-container"
-     "tweetTwo-container";
+     "tweetTwo-container"
+     "tweetThree-container";
      grid-template-rows:
-     1fr 2fr 2fr ;
+     1fr 1fr 1fr 1fr ;
      padding: 5px;
      gap: 5px;
 }
@@ -684,10 +685,59 @@ body {
 .tweetOne-container {
     grid-area: tweetOne-container;
     border: 1px dashed black;
+
+    display: grid;
+    grid-template: "user-posting-pic tweeting-container ";
+    grid-template-columns: 60px 1fr;
+    padding: 5px;
+    gap: 5px;
+
+}
+
+.user-posting-pic {
+    grid-area: user-posting-pic;
+    border: 1px dashed black;
+
+   
+    
+}
+
+.tweeting-container {
+grid-area: tweeting-container;
+border: 1px dashed black;
+
+display: grid;
+grid-template: 
+"tag-name1"
+"actual-tweet1"
+"actual-tweet-icon1";
+grid-template-rows: 1fr 1fr 2fr;
+padding: 5px;
+gap: 5px;
+}
+
+.tag-name1 {
+    grid-area: tag-name1;
+    border:  1px dashed black;;
+}
+
+.actual-tweet1 {
+    grid-area: actual-tweet1;
+    border:  1px dashed black;;
+}
+
+.actual-tweet-icon1 {
+    grid-area: actual-tweet-icon1;
+    border:  1px dashed black;;
 }
 
 .tweetTwo-container {
     grid-area: tweetTwo-container;
+    border: 1px dashed black;
+}
+
+.tweetThree-container {
+    grid-area: tweetThree-container;
     border: 1px dashed black;
 }
 
