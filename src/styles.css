@@ -1024,13 +1024,141 @@ color: #26a7de;
 .actual-tweet-icon3 {
     grid-area: actual-tweet-icon3;
     border: 1px dashed black;
+
+
+        display: grid;
+        grid-template: "tweet-icon-one3 tweet-icon-two3 tweet-icon-three3 tweet-icon-four3";
+       grid-template-columns: repeat(4, 90px);
+        padding: 5px;
+        gap: 5px;
+}
+
+.tweet-icon-one3 {
+    grid-area:tweet-icon-one3 ;
+    border: 1px dashed black;
+}
+
+.tweet-icon-one3 > img {
+    width: 15px;
+    padding-top: 20px;
+    padding-left: 35px;
+  
+}
+
+.tweet-icon-two3 {
+    grid-area:tweet-icon-two3 ;
+    border: 1px dashed black;
+}
+
+.tweet-icon-two3 > img {
+    width: 15px;
+    padding-top: 20px;
+    padding-left: 35px;
+  
+}
+
+.tweet-icon-three3 {
+    grid-area:tweet-icon-three3 ;
+    border: 1px dashed black;
+}
+
+.tweet-icon-three3 > img {
+    width: 15px;
+    padding-top: 20px;
+    padding-left: 35px;
+  
+}
+
+.tweet-icon-four3 {
+    grid-area:tweet-icon-four3 ;
+    border: 1px dashed black;
+}
+
+.tweet-icon-four3 > img {
+    width: 15px;
+    padding-top: 20px;
+    padding-left: 35px;
+  
 }
 
 
 .right-bar {
     grid-area: right-bar;
     border: 1px dashed black;
+
+    display: grid;
+    grid-template: 
+    "search-twitter-right-bar"
+    "whats-happening-right"
+    "who-to-follow-right";
+    grid-template-rows: 
+    50px 200px 200px;
+    padding: 5px;
+    gap: 5px;
 }
+
+.search-twitter-right-bar {
+    grid-area: search-twitter-right-bar;
+    border: 1px dashed black;
+
+    display: grid;
+    grid-template: 
+    "search-icon-right search-twitter-text-right";
+    grid-template-columns: 50px 1fr;
+    padding: 5px;
+    gap: 5px;
+
+    
+}
+
+.search-icon-right  {
+    grid-area: search-icon-right ;
+    border: 1px dashed black;
+}
+
+.search-icon-right > img {
+    width: 17px;
+    padding-left: 14px;
+    padding-top: 10px;
+}
+
+
+.search-twitter-text-right {
+    grid-area: search-twitter-text-right;
+    border: 1px dashed black;
+}
+
+
+.search-twitter-text-right > p{
+    font-size: 15px;
+    padding-top: 9px;
+    padding-left: 6px;
+    color: grey;
+}
+
+.whats-happening-right {
+    grid-area: whats-happening-right;
+    border: 1px dashed black;
+   
+}
+
+.whats-happening-right > p {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
+
+.who-to-follow-right {
+    grid-area: who-to-follow-right;
+    border: 1px dashed black;
+
+}
+
+.who-to-follow-right >p {
+    padding-left: 10px;
+    padding-top: 10px;
+}
+
 
 .footer {
     grid-area: footer;
