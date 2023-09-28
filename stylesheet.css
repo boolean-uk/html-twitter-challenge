@@ -14,7 +14,7 @@ body {
 .container {
   display: grid;
   grid-template-areas: "nav main sidebar";
-  grid-template-columns: minmax(225px, 1fr) minmax(min-content, 2fr) minmax(290px, 1fr);
+  grid-template-columns: minmax(225px, 300px) minmax(min-content, 2fr) minmax(290px, 1fr);
 }
 
 .nav {
@@ -71,11 +71,15 @@ body {
 }
 
 .createNew .button {
-  background-color: rgb(236, 72, 135);
-  color: rgba(255, 255, 255, 1);
   font-weight: bold;
   padding: 10px;
   border-radius: 20px;
+  border: 1px solid rgb(236, 72, 135); 
+}
+
+.button:hover {
+  background-color: rgb(236, 72, 135);
+  color: rgba(255, 255, 255, 1);
 }
 
 .createNew .OptionsAndSave {
@@ -120,11 +124,14 @@ body {
   background-color: rgba(255, 255, 255, 1);
 }
 
+.profileName + .handle, .handle + .timestamp {
+  margin-left: 10px;
+}
+
 .tweet .timestamp {
   font-style: italic;
   color: rgba(98, 27, 85, 0.5);
   font-size: smaller;
-  margin-left: 10px;
 }
 
 .tweet .handle {
