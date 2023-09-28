@@ -527,7 +527,7 @@ body {
 
 .profile-pic > img {
     width: 30px;
-    padding-top: 4px;
+    padding-top: 10px;
     padding-left: 4.5px;
   
 }
@@ -539,7 +539,7 @@ body {
 
 .whats-happening-bar  > p{
     font-size: 15px;
-    padding-top: 10px;
+    padding-top: 18px;
     padding-left: 10px;
     color: grey;
 }
@@ -549,6 +549,136 @@ body {
 .media-post-container {
     grid-area: media-post-container;
     border: 1px dashed black;
+
+    display: grid;
+    grid-template: "media-icons tweet-button-main-bar ";
+    grid-template-columns: 1fr 100px;
+    padding: 5px;
+    gap: 5px;
+
+}
+
+.media-icons {
+    grid-area: media-icons;
+    border: 1px dashed black;
+
+    display: grid;
+    grid-template: "icon-boxes empty-space-icon";
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 30px; */
+    padding: 5px;
+    gap: 5px;
+}
+
+.icon-boxes {
+    grid-area: icon-boxes;
+    border: 1px dashed black;
+
+    display: grid;
+    grid-template: "upload-pic upload-gif upload-stats upload-emoji upload-time" 
+    ;
+    grid-template-columns: repeat(5, 30px);
+    
+    padding: 5px;
+    gap: 5px;
+
+}
+
+.upload-pic {
+    grid-area: upload-pic;
+    border: 1px dashed black;
+
+}
+
+.upload-pic > img {
+    width: 20px;
+    padding-top: 3px;
+    padding-left: 3px;
+   
+}
+
+.upload-gif {
+    grid-area: upload-gif;
+    border: 1px dashed black;
+
+}
+
+
+.upload-gif > img {
+    width: 20px;
+    padding-top: 3px;
+    padding-left: 3px;
+   
+}
+
+
+.upload-stats {
+    grid-area: upload-stats;
+    border: 1px dashed black;
+
+}
+
+.upload-stats > img {
+    width: 20px;
+    padding-top: 3px;
+    padding-left: 3px;
+   
+}
+
+.upload-emoji {
+    grid-area: upload-emoji;
+    border: 1px dashed black;
+
+}
+
+.upload-emoji > img {
+    width: 20px;
+    padding-top: 3px;
+    padding-left: 3px;
+   
+}
+
+
+
+.upload-time {
+    grid-area: upload-time;
+    border: 1px dashed black;
+
+
+}
+
+.upload-time > img {
+    width: 20px;
+    padding-top: 3px;
+    padding-left: 3px;
+   
+}
+.empty-space-icon {
+    grid-area: empty-space-icon;
+    border: 1px dashed black;
+}
+
+
+.tweet-button-main-bar {
+    grid-area: tweet-button-main-bar;
+    border: 1px dashed black;
+    display: grid;
+    align-items: center;
+}
+
+.tweet-button-main-bar > button {
+    width: 100%;
+    height: 70%;
+    border-radius: 20px;
+    background-color: #26a7de;
+    color: #E1E8ED ;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.tweet-button-main-bar > button:hover {
+    color: black;
 }
 
 .tweetOne-container {
