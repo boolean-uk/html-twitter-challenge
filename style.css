@@ -140,7 +140,7 @@ nav {
     display: grid;
     grid-area: home;
     grid-template: auto 1fr / 1fr;
-    padding: 1rem 0;
+    padding-top: 1rem;
     border: 1px solid #aab8c260;
     min-width: 492px;
 }
@@ -269,6 +269,20 @@ nav {
     overflow-y: scroll;
 }
 
+.home-feed::-webkit-scrollbar {
+  width: 5px;
+  height: 10px;
+}
+
+.home-feed::-webkit-scrollbar-thumb {
+  background: #aab8c2;
+  border-radius: 5px;
+}
+
+.home-feed::-webkit-scrollbar-thumb:hover {
+    background: #E1E8ED;
+}
+
 .home-feed-tweet {
     display: grid;
     grid-template: 70px 40px / 90px 1fr;
@@ -352,7 +366,7 @@ nav {
 .followers {
     display: grid;
     grid-area: followers;
-    grid-template: 55px 1fr 1fr / 1fr;
+    grid-template: 55px 409px 478px / 1fr;
     padding: 1rem 0;
     padding-left: 2rem;
     row-gap: 10px;
@@ -432,6 +446,11 @@ nav {
 }
 
 /* News */
+
+.followers-news{
+    max-height: 409px;
+}
+
 .followers-news-content {
     display: grid;
     grid-template-rows: 1fr 85px 1fr 40px;
@@ -508,7 +527,13 @@ nav {
     }
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1462px) {
+    main {
+        padding: 0 4%;
+    }
+}
+
+@media screen and (max-width: 1290px) {
     .followers {
         display: none;
     }
@@ -539,6 +564,12 @@ nav {
 
 @media screen and (max-width: 492px) {
     .home-main-tweet-out-bottom-right > button {
+        display: none;
+    }
+}
+
+@media screen and (max-height: 980px) {
+    .followers-adds {
         display: none;
     }
 }
