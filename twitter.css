@@ -1,14 +1,11 @@
-*{
-    margin:0;
-    box-sizing: border-box;
+*{  box-sizing: border-box;
     font-family: sans-serif;
+    
 
 }
 .Container{
     display: grid;
-    grid-template:
-    " left-menu     main      right-menu " 630px/
-      1fr           1fr       1fr;
+    grid-template-columns: 275px auto 350px; /*it can also be written like this instead of writing them out if it has just one column for example no footer and header and other blocks*/
     outline : 3px solid pink;
-    padding:10px;
+    margin: 0 auto; /*this gives space to the webage at the top . ı.e it places it at the center Also position fixed does not work on grid*/
 }
