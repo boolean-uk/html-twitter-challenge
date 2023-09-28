@@ -236,7 +236,7 @@
 
 .emojis {
     padding-top: 45px;
-    padding-left: 30px;
+    padding-left: 25px;
 }
 
 .search-bar {
@@ -282,7 +282,7 @@
     background-color: #1991db;
 }
 
-.whats-happening-tab {
+.news1 {
     font-size: large;
     font-weight: bold;
     background-color: whitesmoke;
@@ -293,7 +293,7 @@
     text-align: center;
 }
 
-.who-to-follow {
+.news2 {
     font-size: large;
     font-weight: bold;
     background: whitesmoke;
@@ -303,3 +303,26 @@
     place-items: center;
     text-align: center;
 }
+.news3 {
+    font-size: large;
+    font-weight: bold;
+    background: whitesmoke;
+    border-bottom: 1px solid silver;
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.news4 {
+    font-size: large;
+    font-weight: bold;
+    background: whitesmoke;
+    border-bottom: 1px solid silver;
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+
