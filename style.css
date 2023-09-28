@@ -158,6 +158,18 @@ p {
   cursor: pointer;
 }
 
+/* || Scroll Bar || */
+
+::-webkit-scrollbar {
+  background-color: var(--bg-color);
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--text-color);
+  border-radius: 50000ch;
+}
+
 /* ======== side menus ======== */
 
 .menu {
@@ -199,20 +211,18 @@ p {
 .left .menu-list {
   overflow-y: scroll;
   align-content: start;
+
+  /* TODO: Firefox scrollbars are messing with Chrome patchwork, to fix. */
+
+  scrollbar-width: thin;
+  scrollbar-color: white black;
+  scrollbar-gutter: stable both-edges;
+
+  background-color: var(--issues);
 }
 
 .no-scroll {
   margin-right: 5px;
-}
-
-.left .menu-list::-webkit-scrollbar {
-  background-color: var(--bg-color);
-  width: 5px;
-}
-
-.left .menu-list::-webkit-scrollbar-thumb {
-  background-color: var(--text-color);
-  border-radius: 50000ch;
 }
 
 .user-img img {
@@ -382,15 +392,20 @@ main.grid {
   font-size: 0.9rem;
 }
 
-.feed-attachment img {
-  width: 100%;
+.feed-attachment {
+  background-color: var(--bg-color);
+  /* background-color: red; */
+  box-shadow: 1px 1px 2px var(--accent-opc);
   height: 180px;
 
+  margin-bottom: 0.5rem;
+}
+
+.feed-attachment img {
+  width: 100%;
+  height: 100%;
+
   object-fit: contain;
-
-  margin: 4px 0;
-
-  box-shadow: 1px 1px 2px var(--accent-opc);
 }
 
 .feed-footer {
@@ -424,14 +439,16 @@ footer.right {
 
   font-size: 0.8rem;
   padding-top: 0;
+
+  overflow-y: scroll;
+
+  scrollbar-width: thin;
+  scrollbar-color: white black;
+  scrollbar-gutter: stable both-edges;
 }
 
 footer.right .li-detail {
   gap: 2px;
-}
-
-footer.right > div {
-  /* min-height: 40px; */
 }
 
 footer.right .search-container {
@@ -444,8 +461,6 @@ footer.right .search-container {
   grid-template-columns: auto 1fr;
   padding: 0 0.5rem;
   background-color: #111;
-
-  background-color: var(--issues);
 }
 
 .search:focus-within {
@@ -495,12 +510,6 @@ footer.right .search-container {
   .left {
     justify-items: center;
     justify-content: center;
-  }
-
-  .left .menu-list {
-    /* position: relative;
-    left: 3px; */
-    /* padding: 0; */
   }
 
   .left .menu-item {
@@ -558,6 +567,10 @@ footer.right .search-container {
 
   main.grid {
     overflow-y: scroll;
+
+    scrollbar-width: thin;
+    scrollbar-color: white black;
+    scrollbar-gutter: stable both-edges;
   }
 
   .left.menu {
