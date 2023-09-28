@@ -264,7 +264,7 @@ color: rgba(128, 128, 128, 0.695);
 }
 
 .content img{
-    width: 512px;
+    width: 400px;
     object-fit: contain;
 }
 
@@ -333,9 +333,9 @@ color: rgba(128, 128, 128, 0.695);
 }
 
 .whats-happening {
-    height: 50%;
     display: grid;
-    grid-template-rows:   50px 1fr 1fr 1fr 40px;   /* UUUUUURRRRGGGG */
+    grid-template-rows:   50px repeat(auto-fit, 1fr) 50px;
+    height: 50%;
     background-color: rgba(221, 220, 232, 0.123); 
     border-radius: 20px;
     margin-top: 20px;
