@@ -40,12 +40,23 @@ footer {
     padding: 6px 0;
 }
 
-.profile-pic {
+
+.profile-pic-container {
+    display: block;
     width: 40px;
     height: 40px;
     border-radius: 40px;
     border: 1px dotted grey;
+    background-image: url("../assets/img/pexels-aisling-kerr-16904943.jpg");
+    background-size: contain;
 }
+
+.profile-pic-container > img {
+    width: 50px;
+    height: auto;
+    object-fit: cover;
+}
+
 .icon {
     height: 23px;
 }
