@@ -7,6 +7,21 @@ h1 {
     font-size: 20px;
 }
 
+
+
+button {
+    font-size: 15px;
+    font-weight: 700;
+    color: white;
+    border-radius: 50px;
+    border: none;
+    background-color: rgb(29, 155, 240);
+}
+
+button:hover {
+    background-color: rgb(26, 140, 216);
+}
+
 .main-container {
     display: grid;
     height: 100vh;
@@ -19,13 +34,24 @@ h1 {
     grid-area: header;
 }
 
-
 .header-button {
-    display: grid;
-    grid-template-columns: 50px 1fr;
+    border-radius: 50px;
     padding: 12px;
+    place-content: center;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    grid-auto-rows: 48px;
 }
 
+.header-button:hover {
+    background-color: rgba(15, 20, 25, 0.1);
+    cursor: pointer;
+}
+
+#header-tweet {
+    width: 230px;
+    height: 50px;
+}
 
 .main-content {
     grid-area: main-content;
@@ -34,17 +60,8 @@ h1 {
     grid-template-rows: 55px 120px 1fr;
     grid-template-areas:
     "home-bar right-container"
-    "tweet-box right-container"
-    "tweet-container right-container";
-}
-
-button {
-    font-size: 15px;
-    font-weight: 700;
-    color: white;
-    border-radius: 15px;
-    border: none;
-    background-color: rgb(29, 155, 240);
+    "tweet-now-box right-container"
+    "tweets-container right-container";
 }
 
 .home-bar {
@@ -52,40 +69,17 @@ button {
     border: solid 1px rgb(247, 249, 249);
 }
 
-.right-container div {
+.tweets-container {
+    grid-area: tweets-container;
+    border: solid 1px rgb(247, 249, 249);
+}
+
+.tweet-now-box {
+    grid-area: tweet-now-box;
+    border: solid 1px rgb(247, 249, 249);
     padding: 16px;
-    margin-bottom: 16px;
-    margin-left: 16px;
-    background-color: lightgray;
-    border-radius: 20px;
-}
-.tweet-container {
-    grid-area: tweet-container;
-    border: solid 1px rgb(247, 249, 249);
-}
-
-.tweet {
     display: grid;
-    border: solid 1px rgb(247, 249, 249);
-    padding: 12px;
-    padding-left: 16px;
-    grid-template-columns: 50px 1fr;
-}
-
-.sender img {
-    border-radius: 50%;
-}
-
-
-.search {
-    grid-area: search;
-}
-
-.tweet-box {
-    grid-area: tweet-box;
-    border: solid 1px rgb(247, 249, 249);
-    display: grid;
-    grid-template-columns: 50px 1fr;
+    grid-template-columns: 50px 1fr 1fr;
     grid-auto-rows: 50px;
     grid-template-areas:
     "pfp text-input"
@@ -101,11 +95,56 @@ button {
 .controls {
     grid-area: controls;
     display: grid;
-    grid-template-columns: repeat(auto-fit, 20px);
+    grid-template-columns: repeat(auto-fit, 20px) 65px;
     gap: 10px;
     padding-top: 15px;
     padding-bottom: 15px;
 }
+
+#post-tweet {
+    height: 35px;
+    width: 65px;
+}
+
+
+
+.tweet {
+    display: grid;
+    border: solid 1px rgb(247, 249, 249);
+    padding: 12px;
+    padding-left: 16px;
+    grid-template-columns: 50px 1fr;
+}
+
+.sender img {
+    border-radius: 50%;
+}
+
+.tweet-controls {
+    grid-area: right;
+}
+
+
+
+
+
+
+.right-container div {
+    padding: 16px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    background-color: rgb(247, 249, 249);
+    border-radius: 20px;
+}
+
+#search {
+    border: none;
+    outline: none;
+    place-items: center;
+    background-color: rgb(247, 249, 249);
+    display: inline;
+}
+
 
 
 
