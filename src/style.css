@@ -59,6 +59,7 @@ footer {
 
 .icon {
     height: 23px;
+    place-self: center;
 }
 
 h2 {
@@ -99,6 +100,7 @@ p {
 }
 
 #left-menu {
+    padding-left: 50px;
     height: calc(100vh - 20px);
 }
 
@@ -138,9 +140,14 @@ p {
     height: 40px;
     position: sticky;
     bottom: 5px;
+    padding: 5px;
 }
-#left-menu footer > div {
-    border: 1px dotted grey;
+#left-menu footer > div:nth-child(2) {
+    padding: 3px 0 0 5px;
+}
+
+#left-menu footer > div:nth-child(3) {
+    padding: 10px 5px;
 }
 
 /*hover and selected styles for LEFT-MENU*/
@@ -324,7 +331,6 @@ p {
         margin: 0;
     }
     #post-container {
-        width: auto;
         min-width: none;
         max-width: 1fr;
         overflow-y: auto;
