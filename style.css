@@ -100,12 +100,12 @@ nav {
     width: 320px;
 }
 
-.nav-profile-img {
+.nav-profile-img, .follower-profile-img {
     display: grid;
     place-items: center;
 }
 
-.nav-profile-img-pic {
+.nav-profile-img-pic, .follower-profile-img-pic {
     background-image: url(images/assets/pokeball.gif);
     background-size: cover;
     border: 1px solid #fff;
@@ -115,13 +115,13 @@ nav {
     overflow: hidden;
 }
 
-.nav-profile-info {
+.nav-profile-info, .follower-profile-info {
     display: grid;
     align-items: center;
     padding: 0.6rem 0;
 }
 
-.nav-profile-info > p {
+.nav-profile-info > p, .follower-profile-info > p {
     font-weight: bold;
 }
 
@@ -479,6 +479,26 @@ nav {
     grid-template-rows: repeat(5, 1fr) 40px;
 }
 
+.follower {
+    display: grid;
+    grid-template: 1fr / 80px 1fr 80px;
+    padding: 0.7rem 0;
+}
+
+.follower-profile-img-pic {
+    border: 1px solid #E1E8ED;
+}
+
+.follower-profile-more {
+    display: grid;
+    place-items: center;
+}
+
+.follower-profile-more > i:hover {
+    transition: all ease-in 200ms;
+    color: #26a7de;
+    cursor: pointer;
+}
 
 /* Responsive */
 
