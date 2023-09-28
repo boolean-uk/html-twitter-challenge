@@ -1,0 +1,186 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(56, 56, 56);
+    justify-content: center;
+}
+
+.main-grid {
+    display: grid;
+    grid-template: 100% / 400px 700px 400px;
+}
+
+.navigation {
+    display: grid;
+    padding: 50px;
+    color: white;
+    gap: 20px;
+}
+
+.navigation img {
+    width: 100px;
+    height: 100px;
+}
+
+.navigation h4 {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.navigation h4:hover {
+    color: orange
+}
+
+.navigation h3 {
+    font-size: 30px;
+    font-weight: 400;
+    border-radius: 50px;
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+    text-align: center;
+    padding: 10px;
+}
+
+.middle {
+    color: white;
+    border-width: 2px;
+    border-color: rgb(82, 82, 82);
+    border-style: solid;
+}
+
+.middle h1 {
+    font-size: 40px;
+    padding: 20px;
+}
+
+.middle-top {
+    display: grid;
+    grid-template: 42px / 80px 612px;
+    padding: 20px;
+    gap: 5px
+}
+
+.middle-top img {
+    width: 55px;
+    border-radius: 50px;
+    margin-left: 20px;
+}
+
+.middle-top input {
+    border: 2px solid rgb(82, 82, 82);
+    font-size: 25px;
+    height: 60px;
+    padding-left: 10px;
+    border-top-left-radius: 5px;
+}
+
+.icons-and-tweet-button {
+    display: grid;
+    grid-template: 50px / 200px 120px;
+    border: 2px solid rgb(82, 82, 82);
+    justify-content: right;
+    gap: 20px;
+    padding: 5px;
+}
+
+.icons-and-tweet-button p a {
+    text-decoration: none;
+    color: white
+}
+
+.icons-and-tweet-button p a:hover {
+    color: orange
+}
+
+.tweet p {
+    border: 2px solid white;
+    border-radius: 50px;
+    font-size: 25px;
+    padding: 8px;
+    text-align: center;
+}
+
+.tweets {
+    display: grid;
+    grid-template: 100% / 80px 580px;
+    justify-content: left;
+    padding: 20px
+}
+
+.tweets img {
+    width: 55px;
+    border-radius: 50px;
+}
+
+.tweets h4 {
+    font-size: 20px;
+}
+
+.tweets h4 span {
+    font-weight: 300;
+    padding-right: 20px;
+}
+
+.tweets a {
+    color: rgb(255, 179, 79);
+    text-decoration: none;
+}
+
+.right-side {
+    padding: 20px;
+    gap: 20px;
+}
+
+.search-bar input {
+    width: 100%;
+    border-radius: 50px;
+    height: 30px;
+    padding: 10px;
+    border: 2px solid rgb(82, 82, 82);
+    font-size: 20px;
+    margin:10px;
+}
+
+.whats-happening {
+    width: 100%;
+    color: white;
+    border: solid 2px rgb(82, 82, 82);
+    padding: 10px;
+    margin:10px;
+}
+
+.who-to-follow {
+    width: 100%;
+    color: white;
+    border: solid 2px rgb(82, 82, 82);
+    padding: 10px;
+    margin:10px;
+}
+
+.who-to-follow h3 {
+    padding-bottom: 10px;
+}
+
+.who-to-follow img {
+    width: 55px;
+    border-radius: 50px;
+    display: inline-block
+}
+
+.accounts-to-follow {
+    display: flex;
+    justify-content: left;
+    padding: 10px;
+}
+
+.account-name {
+    padding: 5px;
+    margin-left: 5px;
+}
+
+.username {
+    font-weight: 400;
+    margin-left: 10px
+}
