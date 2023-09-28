@@ -1,36 +1,35 @@
-
+* {
+    margin: 0;
+    border: none;
+    padding: 1px;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
 
 /* GRID LAYOUT FOR THE SECTIONS BELOW */
 
-.header-section {
-        display: grid;
-        grid-template-columns: 320px 1fr 320px;
-        grid-template-rows: 60px;
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
-}
-
 .main-grid {
     display: grid;
-    grid-template-columns: 320px 1fr 320px;
+    grid-template-columns: 320px 777px 320px;
     grid-template-rows: 1fr;
-    grid-column-gap: 2px;
+    grid-column-gap: 0px;
     grid-row-gap: 0px;
  }
 
  .left-grid {
     display: grid;
     grid-template-columns: 320px;
-    grid-template-rows: repeat(8, 1fr);
-    grid-column-gap: 2px;
+    grid-template-rows: 60px repeat(8, 1fr);
+    grid-column-gap: 1px;
     grid-row-gap: 0px;
+    border-right: 1px solid silver;
+    height: 100vh;
     }
 
-.middle-grid {
+.tweetfeed-grid {
     display: grid;
-    grid-template-columns: 360px;
-    grid-template-rows: 130px repeat(3, 107px);
+    grid-template-columns: 1fr;
+    grid-template-rows: 47.69px repeat(3, 200px);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
 }
@@ -38,24 +37,269 @@
 .right-grid {
     display: grid;
     grid-template-columns: 320px;
-    grid-template-rows: repeat(2, 100px);
+    grid-template-rows: repeat(4, 100px);
     grid-column-gap: 2px;
     grid-row-gap: 0px;
+    border-left: 1px solid silver;
 }
+
 /* END OF GRID LAYOUT SECTION */
 
-.left-grid{
-    background-color: blue;
+/* LEFT-MENU */
+
+.logo img {
+    height: 60px;
+    width: 100px;
+    padding-left: 80px;
 }
 
-.middle-grid {
-    background-color: red;
+.home-button {
+    display: grid;
+    grid-template: 1fr/ 32px 1fr;
+    align-items: center;
 }
 
-.right-grid {
-    background-color: aqua;
+.home-button p {
+    padding-left: 80px;
+    font-size: large;
+    font-weight: bold;
 }
 
-.header-section {
-    background-color: white;
+.home-button span{
+    padding-left: 80px;
+}
+
+.explore-button {
+    display: grid;
+    grid-template: 1fr/ 32px 1fr;
+    align-items: center;
+}
+
+.explore-button p {
+    padding-left: 80px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.explore-button span{
+    padding-left: 80px;
+}
+
+.notifications-button {
+    display: grid;
+    grid-template: 1fr/ 32px 1fr;
+    align-items: center;
+}
+
+.notifications-button p {
+    padding-left: 80px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.notifications-button span{
+    padding-left: 78px;
+}
+
+.messages-button {
+    display: grid;
+    grid-template: 1fr/ 32px 1fr;
+    align-items: center;
+}
+
+.messages-button p {
+    padding-left: 80px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.messages-button span{
+    padding-left: 80px;
+}
+
+.bookmarks-button {
+    display: grid;
+    grid-template: 1fr/ 32px 1fr;
+    align-items: center;
+}
+
+.bookmarks-button p {
+    padding-left: 80px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.bookmarks-button span{
+    padding-left: 80px;
+}
+
+.profile-button {
+    display: grid;
+    grid-template: 1fr/ 32px 1fr;
+    align-items: center;
+}
+
+.profile-button p {
+    padding-left: 80px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.profile-button span{
+    padding-left: 80px;
+}
+
+.more-button {
+    display: grid;
+    grid-template: 1fr/ 32px 1fr;
+    align-items:center;
+}
+
+.more-button p {
+    padding-left: 80px;
+    font-size: large;
+    font-weight: bold;
+}
+
+.more-button span{
+    padding-left: 80px;
+}
+
+.tweet-button button {
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    padding: 25px 80px;
+    border-radius: 100px;
+    font-size: 16px;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+/* LEFT MENU ENDS */
+
+/* TWEETFEED CLASSES */
+
+.home-tab {
+    border-bottom: 1px solid silver;
+    margin-top: 8px;
+    margin-left: 5px;
+}
+
+.whats-happening-box {
+    border-bottom: 1px solid silver;
+    display: grid;
+    grid-template-columns: 250px 527px;
+    grid-template-rows: repeat(2, 100px);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+.whats-happening-box .picandtext {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    align-items: center;
+}
+
+.picandtext p {
+    padding-bottom: 35px;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 15px;
+    color: silver;
+}
+
+.whats-happening-box img {
+    margin-left: 15px;
+    border-radius: 50px;
+}
+
+.second-tweet-button {
+    display: grid;
+    align-items: end;
+    padding-left: 320px;
+    padding-bottom: 20px;
+}
+
+.whats-happening-box button {
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-size: 16px;
+    margin-left: 40px;
+    cursor: pointer;
+    width: 150px;
+    height: 70px;
+}
+
+.emojis {
+    padding-top: 45px;
+    padding-left: 30px;
+}
+
+.search-bar {
+    border-bottom: solid 1px silver;
+}
+
+.tweet1 {
+    border-bottom: 1px solid silver;
+}
+
+.tweet2 {
+    border-bottom: 1px solid silver;
+}
+
+.tweet3 {
+    border-bottom: 1px solid silver;
+}
+
+/* TWEETFEED CLASSES END */
+
+/* RIGHT MENU CLASSES */
+
+.search-bar {
+    display: grid;
+    place-items: center;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+    padding: 5px;
+    color: white;
+}
+
+.search-bar input {
+    border-radius: 50px;
+    font-size: 14px;
+    padding: 10px 50px;
+    border: none;
+    outline: none;
+    background-color: #1da1f2;
+    cursor: pointer;
+}
+
+.search-bar:hover {
+    background-color: #1991db;
+}
+
+.whats-happening-tab {
+    font-size: large;
+    font-weight: bold;
+    background-color: whitesmoke;
+    border-bottom: 1px solid silver;
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+.who-to-follow {
+    font-size: large;
+    font-weight: bold;
+    background: whitesmoke;
+    border-bottom: 1px solid silver;
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+    text-align: center;
 }
