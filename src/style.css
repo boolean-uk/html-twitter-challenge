@@ -106,6 +106,7 @@
   grid-template-rows: repeat(3, 200px);
   justify-content: center;
   border: 1px solid #97b6e8;
+  border-top: 10px solid #97b6e8;
   padding: 30px;
 }
 
@@ -169,4 +170,11 @@ top: 100px;
   padding: 10px;
   background-color: #3a75d4;
   color: aliceblue;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+      width: 100%;
+      padding: 10px;
+  }
 }
