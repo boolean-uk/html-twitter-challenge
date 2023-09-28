@@ -8,4 +8,32 @@
     grid-template-columns: 275px auto 350px; /*it can also be written like this instead of writing them out if it has just one column for example no footer and header and other blocks*/
     outline : 3px solid pink;
     margin: 0 auto; /*this gives space to the webage at the top . ı.e it places it at the center Also position fixed does not work on grid*/
+    min-height: 650px;
+}
+.right {
+    position:fixed;
+}
+img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+  }
+.home{
+   Margin: 10px 10px 10px 10px; 
+   height: 100px;
+   outline: 3px solid pink;
+}
+   
+
+.left-menu {
+    outline: 3px solid pink;
+}
+.right-menu {
+    outline: 3px solid pink;
+}
+.tweet {
+    Margin: 10px 10px 10px 10px; 
+}
+.tweet1 {
+    outline: 3px solid pink;
 }
