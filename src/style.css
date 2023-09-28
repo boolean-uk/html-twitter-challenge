@@ -32,7 +32,6 @@
 .nav-grid-container {
   display: grid;
   grid-template-rows: repeat(9, 60px);
-  border-right: 1px solid #97b6e8;
 }
 
 .nav-grid-container nav,
@@ -50,7 +49,8 @@
   padding-top: 10px;
 }
 
-.tweet{
+.tweet,
+.write-tweet{
   border:1px solid #97b6e8;
   border-radius: 15px;
   background-color: #3a75d4;
@@ -58,6 +58,16 @@
   width: 170px;
   justify-self: center;
 }
+
+.write-tweet{
+  width: 100px;
+  height: 45px;
+  justify-self: right;
+  margin-right: 20px;
+  border-radius: 30px;
+  
+}
+
 
 .main {
 
@@ -90,14 +100,25 @@
 .right-bar {
   grid-area: right-bar;
   background-color: #e2eef3;
-  border-left: 1px solid #97b6e8;
 }
 
 .write-post {
-  padding: 70px 20px;
+  padding: 50px 20px;
   font-size: 25px;
   font-weight: bold;
   border: 1px solid #97b6e8;
+}
+
+.write-post .circle{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: solid 2px black;
+  background-color: white;
+  text-align: center;
+  color: white;
+  position: absolute;
+top: 100px;
 }
 
 .write-post-contents{
@@ -105,6 +126,14 @@
   padding-left: 80px;
   
 }
+
+.write-icons{
+  display: grid;
+  grid-template-columns: repeat(5, 50px) 250px;
+  margin-top: 50px;
+  padding-left: 50px;
+}
+
 
 .grid-container-posts {
   display: grid;
@@ -145,19 +174,10 @@
 .post-container{
   display: grid;
   grid-template-columns: repeat(4, 80px);
+  padding-top: 70px;
 }
 
-.write-post .circle{
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: solid 2px black;
-  background-color: white;
-  text-align: center;
-  color: white;
-  position: absolute;
-top: 100px;
-}
+
 
 .grid-container-right {
   padding-top: 10px;
@@ -192,3 +212,29 @@ top: 100px;
 }
 
 
+
+
+@media screen and (max-width: 800px) {
+  .nav-bar {
+    display: none;}
+  
+    .right-bar {
+        display: none;}
+  
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+           "main";}
+  }
+  
+  @media screen and (max-width: 1000px) {
+        .right-bar {
+            display: none;}
+  
+        .grid-container {
+            display: grid;
+            grid-template-columns: 300 px 1fr;
+            grid-template-areas:
+               "left main";}
+    }
