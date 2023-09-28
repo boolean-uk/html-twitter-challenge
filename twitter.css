@@ -35,13 +35,22 @@ header {
     width: 30px;
     height: 30px;
     position: absolute;
-    left: 600px;
+    left: 650px;
 }
 
 .sub-header {
     color: grey;
     padding-top: 20px;
     padding-left: 60px;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 210px;
+    top: 60px;
+
 }
 
 .post {
@@ -165,6 +174,77 @@ a:hover {
     top: 470px;
     left: 30px;
 }
+
+.twitter-logo {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    right: 40px;
+
+}
+
+.bird-house {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 20px;
+    top: 65px;
+}
+
+.explore {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 23px;
+}
+
+.notifications {
+    width: 25;
+    height: 25px;
+    position: absolute;
+    left: 20px;
+    top: 165px;
+}
+
+.messages {
+    width: 25;
+    height: 25px;
+    position: absolute;
+    left: 10px;
+    top: 217px;
+}
+
+.bookmarks {
+    width: 30;
+    height: 30px;
+    position: absolute;
+    left: 10px;
+    top: 265px;
+}
+
+.lists {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 25px;
+}
+
+.profile {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 23px;
+    top: 367px;
+}
+
+.more {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 25px;
+    top: 417px;
+}
+
 
 .main-content {
     display: grid;
@@ -384,7 +464,7 @@ a:hover {
     display: grid;
     grid-area: right-tab;
     margin-left: 20px;
-    grid-template-rows: 50px 200px  80px;
+    grid-template-rows: 50px 580px  80px;
 }
 
 .search-bar {
@@ -403,6 +483,14 @@ a:hover {
     border-radius: 50px;
 }
 
+.search-icon {
+position: absolute; 
+height: 18px;
+width: 18px;
+top: 30px;
+left: 770px;
+}
+
 .right-content {
     display: grid;
     margin-top: 20px;
@@ -412,7 +500,7 @@ a:hover {
     border: solid 1px rgb(242, 244, 246);
     border-radius: 20px;
     background-color: rgb(242, 244, 246);
-    grid-template-rows: 40px repeat(4, 1fr);
+    grid-template-rows: 40px repeat(auto-fit, 1fr);
     
 }
 
@@ -421,86 +509,103 @@ a:hover {
     margin-right: 20px;
     padding-left: 15px;
     padding-top: 10px;
+    padding-right: 80px;
     border: solid 1px rgb(242, 244, 246);
     border-radius: 20px;
     background-color: rgb(242, 244, 246);
 }
 
-.twitter-logo {
-    width: 30px;
-    height: 30px;
-    position: relative;
-    right: 40px;
-
+.right-title {
+font-weight: bold;
+font-size: 20px;
+border-bottom: solid 0.5px rgb(226, 225, 225);
 }
 
-.bird-house {
-    width: 25px;
-    height: 25px;
+.news {
+    color: grey;
+    padding-top: 5px;
+}
+
+.fire {
     position: absolute;
-    left: 20px;
-    top: 65px;
+    height: 50px;
+    border-radius: 10px;
+    left: 912px;
+    top: 180px;
 }
 
-.explore {
-    width: 20px;
+.fire-content {
+    text-align: start;
+    padding-right: 90px;
+    border-bottom: solid 0.5px rgb(226, 225, 225);
+}
+
+.news2 {
+ padding-top:10px;
+}
+
+.news2-content {
+color: grey;
+padding-top: 5px;
+padding-bottom: 5px;
+}
+
+
+.news-content2 {
+color: grey;
+padding-left: 20px;
+text-align: start;
+padding-top: 15px; 
+padding-bottom: 5px;
+border-bottom: solid 0.5px rgb(226, 225, 225);
+}
+
+.arrow {
+    position: absolute;
     height: 20px;
-    position: absolute;
-    left: 23px;
-}
-
-.notifications {
-    width: 25;
-    height: 25px;
-    position: absolute;
-    left: 20px;
-    top: 165px;
-}
-
-.messages {
-    width: 25;
-    height: 25px;
-    position: absolute;
-    left: 10px;
-    top: 217px;
-}
-
-.bookmarks {
-    width: 30;
-    height: 30px;
-    position: absolute;
-    left: 10px;
-    top: 265px;
-}
-
-.lists {
     width: 20px;
-    height: 20px;
-    position: absolute;
-    left: 25px;
+    top: 360px;
 }
 
-.profile {
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    left: 23px;
-    top: 367px;
+.politics {
+color: grey;
 }
 
-.more {
-    width: 25px;
-    height: 25px;
-    position: absolute;
-    left: 25px;
-    top: 417px;
+.politics-content {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
 }
 
-.profile-pic {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    left: 210px;
-    top: 60px;
+.stats {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: solid 0.5px rgb(226, 225, 225);
+}
 
+
+.politics2 {
+    color: grey;
+}
+
+ .politics-content2 {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.stats2 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: solid 0.5px rgb(226, 225, 225);
+}
+
+.show-more a {
+
+        color: rgb(28, 155, 246) ;
 }
