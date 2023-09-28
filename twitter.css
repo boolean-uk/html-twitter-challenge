@@ -63,12 +63,20 @@ button:hover {
 
 .left-nav {
     display: grid;
-    grid-template-rows: 100px fit-content(500px) 100px;
+    grid-template-rows: 100px 900px 100px;
     gap: 20px;
     position: sticky;
     top: 0;
     background-color: white;
     padding: 0 20px;
+}
+
+@media screen and (max-width: 1400px) {
+    .left-nav .item > a {
+        display: none;}
+    .tweet-btn {
+        display: none;
+    }
 }
 
 .logo {
@@ -121,6 +129,7 @@ button:hover {
     font-size: 15px;
     color: gray;
 }
+
 
 .main-body {
     grid-area: 1 / 2 / 3 / 3;
@@ -255,6 +264,16 @@ button:hover {
     background-color: white;
 }
 
+@media screen and (max-width: 1900px) {
+    .right-nav {
+        width: 200px;} 
+}
+
+@media screen and (max-width: 1400px) {
+    .right-nav {
+        display: none;}
+}
+
 .search {
     display: grid;
     grid-template-columns: 100px 1fr;
@@ -265,6 +284,13 @@ button:hover {
     border-radius: 50px;
     height: min-content;
     color: gray;
+}
+
+@media screen and (max-width: 1900px) {
+    .search {
+        width: 150px;} 
+    .search > h2 {
+        display: none;}
 }
 
 .trends {
@@ -293,6 +319,13 @@ button:hover {
     font-weight: lighter;
 }
 
+@media screen and (max-width: 1900px) {
+    .trends {
+        width: 150px;} 
+    .trend {
+        display: none;}
+}
+
 .who-to-follow {
     display: grid;
     grid-template-rows: 100px min-content;
@@ -316,5 +349,14 @@ button:hover {
     row-gap: 15px;
     align-items: center;
     padding-left: 20px;
+}
+
+@media screen and (max-width: 1900px) {
+    .who-to-follow {
+        width: 150px;} 
+    .who-to-follow > h2 {
+        visibility: hidden;}  
+    .followers .profile-info {
+        visibility: hidden;}
 }
 
