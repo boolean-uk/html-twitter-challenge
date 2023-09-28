@@ -121,7 +121,7 @@ main > h2 {
     padding-left: 5px;
 }
 
-.profile-pic > img {
+.profile-pic > img, .user > img {
     width: 60px;
     height: 60px;
     object-fit: cover;
@@ -129,13 +129,7 @@ main > h2 {
 
 }
 
-.create {
-    /* background-color: aquamarine; */
-}
-
 .p {
-    
-    /* background-color: blueviolet; */
     margin: 0px;
     padding: 0px;
     color: grey;
@@ -151,7 +145,6 @@ main > h2 {
     grid-template-areas:
     "icons . button";
     grid-template-columns: 220px 1fr 100px;
-    /* height: 100px; */
 }
 
 .options {
@@ -186,10 +179,33 @@ main > h2 {
 }
 
 .tweet {
-    height: 200px;
-    background-color: burlywood;
+    /* height: 200px; */
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    /* background-color: burlywood; */
 }
 
+.user {
+    /* background-color: yellow; */
+    padding: 5px
+}
+
+.feed {
+    /* background-color: aqua; */
+    padding-right: 10px;
+}
+
+.feed > div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* background-color: blueviolet; */
+}
+
+.interact > img {
+    width: 30px;
+    height: 30px;
+    /* place-self: start; */
+}
 
 
 /* Section for styling right side */
