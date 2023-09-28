@@ -20,7 +20,7 @@ body {
   grid-area: "nav";
   font-weight: bold;
   font-size: 20px;
-  color: rgb(236, 72, 135);
+  color: #454545;
 }
 
 .nav, .sidebar {
@@ -86,6 +86,12 @@ body {
   grid-gap: 8px;
 }
 
+
+.feed {
+  scroll-behavior: smooth;
+  overscroll-behavior: auto;
+}
+
 .tweet {
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 10px;
@@ -95,6 +101,12 @@ body {
   grid-gap: 20px;
   grid-template-columns: 50px 1fr;
   box-shadow: 5px 5px 10px rgba(98, 27, 85, 0.1);
+}
+
+.tweet:hover {
+  cursor: pointer;
+
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .tweet .timestamp {
@@ -151,7 +163,6 @@ body {
 }
 
 .news p, .followSuggestions p {
-  line-height: 100%;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
@@ -185,7 +196,61 @@ h2 {
   object-fit: fill;
 }
 
+.embeddedMedia {
+  margin: 10px 0;
+  background-color: black;
+  border-radius: 5px;
+  object-fit: fill;
+  overflow: hidden;
+  display: grid;
+  max-height: 400px;
+  place-content: center;
+  place-items: center;
+}
+
+.embeddedMedia > img {
+  width: 90%;
+  object-fit: fill;
+}
+
 .icon {
-  height: 2rem;
+  height: 16px;
   margin: 0 1rem;
+}
+
+.icon path {
+  fill: rgb(236, 72, 135, 0.5);
+}
+
+.pastelrainbow {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(142deg, rgba(255,6,201,0.3) 0%, rgba(255,4,0,0.3) 10%, rgba(255,189,0,0.3) 23%, rgba(239,255,0,0.3) 34%, rgba(132,255,38,0.3) 44%, rgba(29,218,255,0.3) 54%, rgba(26,105,255,0.3) 69%, rgba(174,38,255,0.3) 81%, rgba(251,31,255,0.3) 93%, rgba(255,6,201,0.3) 100%);
+}
+
+.pink {color: rgba(255,6,201,1);
+fill:  rgba(255,6,201,1)}
+.red {  color: rgba(255,4,0,1);
+fill: color: rgba(255,4,0,1);}
+.orange {color: rgba(255,189,0,1);
+fill:color: rgba(255,189,0,1) }
+.yellow {color: rgb(255, 251, 0) }
+.green {color: rgb(111, 236, 38)}
+.blue {color: rgba(29,218,255,1)}
+.darkblue {color: rgba(26,105,255,1)}
+.violet {color: rgba(174,38,255,1)}
+.magenta{color: rgba(251,31,255,1)}
+
+
+@media screen and width <= 1265 {
+  
+  .container {
+    grid-template-areas: "nav main";
+    grid-template-columns: minmax(275px, 300px) 1fr minmax(200px, 275px);
+    height: 100vh;
+  }
+
+  .sidebar {
+    display: none;
+  }
+
 }
