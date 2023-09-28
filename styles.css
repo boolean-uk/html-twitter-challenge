@@ -1,7 +1,8 @@
 * {
     margin: 0px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 
 .container {
     display: grid;
@@ -14,13 +15,14 @@
 /* LEFT MENU */
 .left-menu {
     display: grid;
-    grid-template-rows: repeat(auto-fit, 40px) ;
+    grid-template-rows:  repeat(9, 40px) 60px 1fr ;
     grid-template-columns: 50px 1fr;
     row-gap: 20px;
 
     width: 250px;
     margin-left: 20px;
     padding-top: 10px;
+    align-items: end;
 }
 
 .twitter-logo {
@@ -76,7 +78,7 @@ grid-column: 1;
 
 .profile {
     margin-left: 10px;
-padding-top: 10px;
+    padding-top: 10px;
 }
 
 .profile p:nth-of-type(2) {
@@ -88,17 +90,18 @@ padding-top: 10px;
     place-self: center;
 }
 
-@media screen and (max-width: 300px) {
+@media screen and (max-width: 900px) {
+
+        .container {
+        display: grid;
+        grid-template-columns: 70px 2fr 1.4fr;
+        }
         .nav {
             display: none;
         }
         .left-menu {
-            display: none;
-        }
-        .left-menu {
             display: grid;
-            grid-template-columns: 50px;
-            width: 50px;
+            grid-template-columns: 1fr;
         }
         .profile {
             display: none;
@@ -132,7 +135,139 @@ padding-top: 10px;
 
 .main {
     display: grid;
-    grid-template-rows: 50px repeat(autofit 1fr);
+    grid-template-rows: 209px 10px /*repeat(auto-fit, 1fr)*/;
     border-left: rgba(128, 128, 128, 0.185) solid 1px;
     border-right: rgba(128, 128, 128, 0.185) solid 1px;
 }
+
+.home {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    border-bottom: rgba(128, 128, 128, 0.185) solid 1.2px;
+}
+
+.home h1, .home img {
+    margin: 10px;
+}
+
+textarea {
+    border: none;
+    color: rgba(128, 128, 128, 0.391);
+    font-size: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.post-bar {
+    display: grid;
+    grid-template-columns: 60px auto;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.post-buttons {
+    display: grid;
+    grid-template-columns: repeat(5, auto) 2fr 1fr;
+
+    place-items: end;
+}
+
+.post-nav-button {
+    background-color: white;
+    border: none;
+    border-radius: 50px;
+    position: relative;
+    left: 50px;
+    bottom: 10px;
+    
+}
+
+.post-nav-button:hover {
+    background-color: rgba(49, 149, 236, 0.328);
+}
+
+.post-nav-button:active {
+    background-color: rgba(49, 149, 236, 0.796);
+}
+
+.post-nav {
+    width: 30px;
+    height: 30px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.tweet-button2{
+    background-color: rgba(75, 160, 235, 0.373);
+    border: none;
+    border-radius: 50px;
+    margin: 10px;
+    height: 40px;
+    width: 80px;
+    color: white;
+    font-weight: bold;
+    grid-column: 7;
+}
+
+.tweet-button2:hover {
+    background-color: rgb(75, 160, 235);
+}
+
+.tweet-button2:active {
+    background-color: rgb(77, 172, 254) ;
+}
+.spacer {
+    background-color: rgba(128, 128, 128, 0.025);
+    border-top: rgb(128, 128, 128, 0.068) solid 1.2px;
+    border-bottom: rgba(128, 128, 128, 0.068) solid 1.2px;
+}
+
+.feed {
+    overflow-y: auto;
+    margin-right: 10px;
+}
+
+.feed-post-grid {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    margin-top: 20px;
+    padding-left: 20px;
+    border-bottom: rgba(128, 128, 128, 0.068) solid 1.2px;
+}
+
+.name-profile-settings {
+    display: grid;
+    grid-template-columns: .3fr .5fr 2fr .1fr;
+    color: rgb(0, 0, 0);
+}
+
+.name-profile-settings p{
+color: rgba(128, 128, 128, 0.695);
+}
+
+.name-profile-settings img {
+    grid-column: 4;
+    padding-right: 10px;
+}
+
+.content p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: black;
+}
+
+.content {
+    width: 600px;
+    object-fit: cover;
+}
+
+.content-container{
+   display: grid;
+   grid-template-rows: auto;
+}
+
+
+
+
