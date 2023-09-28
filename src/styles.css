@@ -966,6 +966,13 @@ color: #26a7de;
     border: 1px dashed black;
 }
 
+.user-posting-pic3 > img {
+    width: 40px;
+    padding-top: 5px;
+    padding-left: 9px;
+}
+
+
 .tweeting-container3 {
     grid-area: tweeting-container3;
     border: 1px dashed black;
@@ -985,10 +992,34 @@ color: #26a7de;
     border: 1px dashed black;
 }
 
+
+.tag-name3 > p {
+    padding-top: 5px;
+    padding-left: 4px;
+    font-size: 13px;
+}
+
+.at3 {
+    color: grey;
+}
+
 .actual-tweet3 {
     grid-area: actual-tweet3;
     border: 1px dashed black;
 }
+
+.actual-tweet3 > p >span{
+    font-size: 13px;
+    padding-top: 5px;
+    padding-left: 4px;
+    color: #26a7de;
+    }
+    
+    .actual-tweet3 > p {
+        font-size: 12px;
+        padding-top: 5px;
+        padding-left: 4px;
+    }
 
 .actual-tweet-icon3 {
     grid-area: actual-tweet-icon3;
