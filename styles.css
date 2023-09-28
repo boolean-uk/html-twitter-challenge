@@ -332,15 +332,39 @@ color: rgba(128, 128, 128, 0.695);
     padding-top: 3px;
 }
 
-.right-menu-lower-grid {
+.whats-happening {
+    height: 50%;
     display: grid;
-    grid-template-rows:  50px repeat(auto-fit, 1fr) 50px;
+    grid-template-rows:   50px 1fr 1fr 1fr 40px;   /* UUUUUURRRRGGGG */
     background-color: rgba(221, 220, 232, 0.123); 
     border-radius: 20px;
     margin-top: 20px;
 }
 
-.right-menu-lower-grid div{
+.border{
     border-bottom:  rgba(128, 128, 128, 0.185) solid 1.2px;
-    margin: 10px;
+}
+
+.item {
+    padding: 10px;
+}
+
+.hover:hover{
+    background-color: rgba(221, 220, 232, 0.599);
+    border-radius: 20px;
+}
+
+.light-grey {
+    color: rgba(128, 128, 128, 0.83);
+}
+
+.font-change {
+    font-family: sans-serif;
+}
+
+.Showmore {
+    color: rgba(75, 160, 235, 0.575);
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
 }
