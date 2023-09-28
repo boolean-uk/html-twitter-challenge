@@ -697,10 +697,17 @@ body {
 .user-posting-pic {
     grid-area: user-posting-pic;
     border: 1px dashed black;
-
-   
+    /* border-radius: 20%; */
     
 }
+
+.user-posting-pic > img {
+    width: 40px;
+    padding-top: 5px;
+    padding-left: 9px;
+}
+
+
 
 .tweeting-container {
 grid-area: tweeting-container;
@@ -719,6 +726,16 @@ gap: 5px;
 .tag-name1 {
     grid-area: tag-name1;
     border:  1px dashed black;;
+}
+
+.tag-name1 > p {
+    padding-top: 5px;
+    padding-left: 4px;
+    font-size: 13px;
+}
+
+.at {
+    color: grey;
 }
 
 .actual-tweet1 {
