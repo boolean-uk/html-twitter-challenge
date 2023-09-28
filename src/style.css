@@ -76,6 +76,11 @@ a {
 p {
     font-size: 10px;
 }
+
+::-webkit-scrollbar {
+    border: none;
+}
+
 /*STYLES THE LEFT-MENU*/
 
 #clone-icon {
@@ -84,15 +89,14 @@ p {
 
 #left-menu {
     height: calc(100vh - 20px);
-    position: sticky;
-    top: 0;
 }
 
 #left-menu main {
     margin-top: 10px;
     display: grid;
-    grid-template-rows: repeat(8, 40px);
+    grid-template-rows: repeat(8, 40px) 50px;
     gap: 10px;
+    height:fit-content;
 }
 
 #left-menu main > div {
@@ -101,6 +105,21 @@ p {
     grid-template-columns: 25px 1fr;
     
 }
+
+#left-menu main .rounded-container{
+    display: inline-block;
+    max-width: 250px;
+    height: 40px;
+    place-self: center;
+}
+
+#left-menu main .rounded-container h2 {
+    display: inline-block;
+    width: fit-content;
+    place-self: center;
+    margin: 10px 0 0 0;
+}
+
 
 #left-menu footer {
     display: grid;
