@@ -246,12 +246,20 @@ a:hover {
 }
 
 
+@media screen and (max-width: 401px) {
+    .left-tab{
+        display: none;
+    }
+}
+
+
 .main-content {
     display: grid;
     grid-area: main-content;
     margin-top: 15px;
     grid-template-rows: repeat(4, 150px);
 }
+
 
 .main-content > div {
     padding-top: 10px;
@@ -467,6 +475,12 @@ a:hover {
     grid-template-rows: 50px 580px  80px;
 }
 
+@media screen and (max-width: 700px) {
+    .right-tab{
+        display: none;
+    }
+}
+
 .search-bar {
     color: grey;
     display: grid;
@@ -514,6 +528,8 @@ left: 770px;
     border-radius: 20px;
     background-color: rgb(242, 244, 246);
 }
+
+
 
 .right-title {
 font-weight: bold;
