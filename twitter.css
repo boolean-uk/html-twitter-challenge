@@ -18,11 +18,14 @@ img {
     height: 50%;
     object-fit: cover;
   }
-.home{
+.home{ 
+   display: grid;
    Margin: 10px 10px 10px 10px; 
-   height: 100px;
+   height: 150px;
    outline: 3px solid pink;
+   
 }
+
    
 
 .left-menu {
@@ -34,6 +37,52 @@ img {
 .tweet {
     Margin: 10px 10px 10px 10px; 
 }
+.tweet {
+    outline: 3px solid pink;
+    padding: 5px;
+}
 .tweet1 {
     outline: 3px solid pink;
+}
+.tweet1 img {
+    height:30px;
+    width: 30px;
+    border-radius: 50%;
+    
+
+
+}
+.tweet2{
+    outline: 3px solid pink;
+}
+.tweet2 img {
+    height:30px;
+    width: 30px;
+    border-radius: 50%;
+    
+
+}
+.tweet3 {
+    outline: 3px solid pink;
+}
+.tweet3 img {
+    height:30px;
+    width: 30px;
+    border-radius: 50%;
+    
+}
+.Question {
+    display:grid;
+    outline:3px solid pink;
+    height:100px;
+
+}
+.Question img {
+    height:30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.box {
+outline: 3px solid red;
 }
