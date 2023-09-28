@@ -8,8 +8,15 @@ div {
     border-width: 1px;
 }
 
+h1 {
+    font-size: 20px;
+}
+
+
+
 .main-container {
     display: grid;
+    padding-top: 10px;
     height: 100vh;
     grid-template-columns: 1fr 260px 990px 1fr;
     grid-template-areas:
@@ -18,6 +25,12 @@ div {
 
 .header {
     grid-area: header;
+}
+
+.header-button {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    padding: 12px;
 }
 
 .main-content {
@@ -43,6 +56,8 @@ div {
 
 .post-box-container {
     grid-area: post-box-container;
+    display: grid;
+    grid-template-columns: 32px 1fr;
 }
 .happening {
     grid-area: happening;

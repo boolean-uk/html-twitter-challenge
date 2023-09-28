@@ -10,34 +10,63 @@
   <body>
     <div class="main-container">
       <header class="header">
-          <div class="logo">logo</div>
-          <div class="home">home</div>
-          <div class="explore">explore</div>
-          <div class="notifications">notifications</div>
-          <div class="messages">messages</div>
-          <div class="bookmarks">bookmarks</div>
-          <div class="profile">profile</div>
-          <div class="more">more</div>
+        <img src="src/images/x-logo.svg" width="32px">
+        <nav>
+          <div class="header-button">
+            <img src="src/images/home.svg" width="26px">
+            <h1>Home</h1>
+          </div>
+          <div class="header-button">
+            <img src="src/images/magnifying glass.svg" width="26px">
+            <h1>Explore</h1>
+          </div>
+          <div class="header-button">
+            <img src="src/images/bell.svg" width="26px">
+            <h1>Notifications</h1>
+          </div>
+          <div class="header-button">
+            <img src="src/images/messages.svg" width="26px">
+            <h1>Messages</h1>
+          </div>
+          <div class="header-button">
+            <img src="src/images/bookmark.svg" width="26px">
+            <h1>Bookmarks</h1>
+          </div>
+          <div class="header-button">
+            <img src="src/images/lists.svg" width="26px">
+            <h1>Lists</h1>
+          </div>
+          <div class="header-button">
+            <img src="src/images/profile.svg" width="26px">
+            <h1>Profile</h1>
+          </div>
+          <div class="header-button">
+            <img src="src/images/more.svg" width="26px">
+            <h1>More</h1>
+          </div>
+        </nav>
+          
       </header>
 
       <div class="main-content">
-        <div class="home-bar">Home</div>
+        <div class="home-bar"><h1>Home</h1></div>
         <div class="post-box-container">
           <div class="pfp"></div>
           <div class="tweet-box">
-            <div class="text-input">
-              <input type="text" placeholder="What is happening?!">
-            </div>
             <div class="pfp">
               <img src="src/images/users.svg" width="32px">
             </div>
+            <input class="text-input" type="text" placeholder="What is happening?!">
           </div>
         </div>
 
         <div class="tweet-container">
           <div class="tweet">
             <div class="sender">
-              <img src="src/images/users.svg" width="32px">
+              <span>
+                <img src="src/images/users.svg" width="32px">
+                <p class="name">Elon Musk</p>
+              </span>
             </div>
             <div class="tweet-content">
               <p>woo tweet content here!!!</p>
