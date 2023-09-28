@@ -1,0 +1,14 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+
+}
+.Container{
+    display: grid;
+    grid-template:
+    " left-menu     main      right-menu " 630px/
+      1fr           1fr       1fr;
+    outline : 3px solid pink;
+    padding:10px;
+}
