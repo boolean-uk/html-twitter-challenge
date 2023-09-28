@@ -1,37 +1,36 @@
-# Twitter Clone
+# _Trextter_ - A [Twitter](twitter.com) clone.
 
-For this exercise, we will be building a clone of Twitter:
+😎 Check how the project is [here](https://lucianosimoni.github.io/html-twitter-challenge/) 👈
 
-![twitter](images/twitter.png)
+The project name is the mix between the word T-rex and Twitter (cool right? 😁).
+It was supposed to be a simple twitter design 🙂
 
-This will put into practice everything we have learned so far about HTML & CSS. The below image shows level of detail you should replicate from Twitter:
+_Trextter_ uses a combination of **HTML**, **CSS** and **JavaScript**, all to show as much as possible of what I was thinking during those few days of creation.
 
-![twitter clone](images/example.png)
+## External components used in the project
 
-## Setup
-1. Fork this repository to your account.
-2. Clone the forked repository to your local machine
-3. Open a Pull Request back to the upstream repo
+- [**Material Design 3**](https://m3.material.io/)
+  - _As a design documentation on how components should be presented._
+- [**Google Icons**](https://fonts.google.com/icons)
+- [**Dice Bear**](https://avatars.dicebear.com/)
+  - Generates random **svg** face drawings. Used as profile pictures.
 
-## Instructions
-- Use the HTML elements you've learned about so far to define the page content
-- Use an external CSS stylesheet to style the page
-- Use CSS Grid for the layout and components
-- You should start *without* images and then add them later at the end of the exercise once the basic criteria has been met
+![result](result.gif)
 
-### Tips
-- Breakdown the page into sections
-- Pay attention to alignment and spacing
-- Work section by section until it looks good
+## Assesment Criteria - Boolean
 
-## Assesment Criteria
-* &#9745; Layout the main page elements (left-hand menu, tweet feed and right side-bar) using CSS Grid. CSS Grid should also be used to layout individual tweets.
-* &#9745; Define the page contents using HTML with appropriate elements. HTML should be well formatted.
-* &#9745; Style the page using a mixture of Type, ID and Class CSS selector types
-* &#9745; Implement hover and selected state for the left-hand menu links.
+- [x] Layout the main page elements (left-hand menu, tweet feed and right side-bar) using CSS Grid. CSS Grid should also be used to layout individual tweets.
+- [x] Define the page contents using HTML with appropriate elements. HTML should be well formatted.
+- [x] Style the page using a mixture of Type, ID and Class CSS selector types
+- [x] Implement hover and selected state for the left-hand menu links.
 
-### Extension Criteria
-* &#9745; Make the layout responsive so that the side-bars are removed on lower resolution devices
-* &#9745; Include images using the `img` and `svg` tags.
-    * Get the source for the icon images from the Twitter website as SVG and include them with `svg` tags
-    * Use a local file for the profile image. Research how to use CSS to to make the profile image appear as a circle
+**Extension Criteria**
+
+- [x] Make the layout responsive so that the side-bars are removed on lower resolution devices
+- [x] Include images using the `img` and `svg` tags.
+- [x] ~~ Get the source for the icon images from the Twitter website as SVG and include them with `svg` tags.
+  - _Used the [Google Material Symbols (icons)](https://fonts.google.com/icons) to get my icons. Found it smarter than adding each one with huge links_
+- [x] ~~ Use a local file for the profile image. Research how to use CSS to to make the profile image appear as a circle.
+  - _Choose to use [Dice Bear](https://avatars.dicebear.com/) to get my profile pictures 🙂. Randomizing the profile based on each name._
+
+![A t-rex image](https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/160/microsoft/310/t-rex_1f996.png)
