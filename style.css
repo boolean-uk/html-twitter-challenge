@@ -12,7 +12,7 @@
 :root {
     --border-color: rgba(128, 128, 128, 0.632);
     --box-background-color: rgb(32, 35, 39);
-    --hover-bg-color: rgba(106, 106, 106, 0.362)
+    --hover-bg-color: rgba(106, 106, 106, 0.362);
 }
 
 .container {
@@ -175,7 +175,8 @@
 /* MAIN */
 .main {
     display: grid;
-    grid-template-columns: 600px 300px 1fr;
+    grid-template-columns: 600px 350px 1fr;
+    gap: 20px;
 }
 
 /* MAIN CONTENT */
@@ -406,11 +407,12 @@
 
 .right-menu {
     display: grid;
-    grid-template-rows: 40px 120px repeat(2, auto) 80px;
+    grid-template-rows: 40px 120px 530px auto 80px;
     gap: 15px;
     padding: 10px;
 }
 
+/* SEARCH BAR */
 .search {
     display: grid;
     grid-template-columns: 20px 1fr;
@@ -430,6 +432,7 @@
     color: gray;
 }
 
+/* PREMIUM */
 .premium {
     padding: 10px;
     border-radius: 20px;
@@ -445,4 +448,127 @@
 .premium-text {
     font-size: 15px;
     font-weight: bold;
+}
+
+/* WHAT'S HAPPENING */
+.trending {
+    display: grid;
+    grid-template-rows: 50px 1fr 50px;
+    /* gap: 10px; */
+
+    border-radius: 20px;
+    background-color: var(--box-background-color);
+}
+
+.trending-subheader {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 0 15px 15px;
+}
+
+.trending-cards {
+    display: grid;
+    grid-template-rows: 100px repeat(4, 80px);
+}
+
+/* TRENDING HEADLINE */
+.trending-headline {
+    display: grid;
+    grid-template-columns: 1fr 110px;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.trending-headline:hover {
+    background-color: var(--hover-bg-color);
+}
+
+.headline-status {
+    font-size: 14px;
+    color: gray;
+}
+
+.headline-content-text {
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.headline-image {
+    display: grid;
+    justify-self: end;
+    width: 100px;
+    border-radius: 30px;
+}
+
+/* TRENDING SUBCARDS */
+.trending-subcard {
+    padding: 10px 0 5px 15px;
+}
+
+.trending-subcard-link {
+    text-decoration: none;
+}
+
+.trending-subcard-link > div {
+    padding-bottom: 4px;
+}
+
+.trending-subcard:hover {
+    background-color: var(--hover-bg-color);
+}
+
+.trending-subcard-status {
+    font-size: 14px;
+    color: gray;
+}
+
+.trending-subcard-text {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.trending-subcard-posts {
+    font-size: 14px;
+    color: gray;
+}
+
+.test {
+    display: grid;
+    justify-content: end;
+    align-content: center;
+
+    position: relative;
+    bottom: 80%;
+    right: 5%;
+}
+
+.trending-subcard-menu {
+    padding: 5px;
+    border-radius: 60px;
+}
+
+.trending-subcard-menu:hover {
+    background-color: rgba(30, 143, 255, 0.546);
+}
+
+.trending-subcard-menu > img {
+    width: 20px;
+}
+
+/* SHOW MORE */
+.show-more {
+    display: grid;
+    align-items: center;
+    padding-left: 15px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.show-more:hover {
+    background-color: var(--hover-bg-color);
+}
+
+.show-more-link {
+    text-decoration: none;
+    color: dodgerblue;
 }
