@@ -471,10 +471,97 @@ body {
     cursor: pointer;
 }
 
+#tweet-button:hover {
+    color: black;
+}
+
+
 .main-bar{
     grid-area: main-bar;
     border: 1px dashed black;
+
+    /* Display in the middle */
+
+    display: grid;
+    grid-template:
+    "post-container"
+     "tweetOne-container"
+     "tweetTwo-container";
+     grid-template-rows:
+     1fr 2fr 2fr ;
+     padding: 5px;
+     gap: 5px;
 }
+
+.post-container {
+    grid-area: post-container;
+    border: 1px dashed black;
+
+    /* Grid  */
+    display: grid;
+    grid-template:
+    "whats-happening-container" 
+    "media-post-container";
+    grid-template-rows: 1fr 1fr;
+    padding: 5px;
+    gap: 5px;
+}
+
+.whats-happening-container {
+    grid-area: whats-happening-container;
+    border: 1px dashed black;
+
+    display: grid;
+    grid-template: "profile-pic whats-happening-bar";
+    grid-template-columns: 40px 1fr;
+    padding: 5px;
+    gap: 5px;
+}
+
+.profile-pic  {
+    grid-area: profile-pic ;
+    border: 1px dashed black;
+    border-radius: 50%;
+   
+}
+
+.profile-pic > img {
+    width: 30px;
+    padding-top: 4px;
+    padding-left: 4.5px;
+  
+}
+
+.whats-happening-bar {
+    grid-area: whats-happening-bar;
+    border: 1px dashed black;
+}
+
+.whats-happening-bar  > p{
+    font-size: 15px;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: grey;
+}
+
+
+
+.media-post-container {
+    grid-area: media-post-container;
+    border: 1px dashed black;
+}
+
+.tweetOne-container {
+    grid-area: tweetOne-container;
+    border: 1px dashed black;
+}
+
+.tweetTwo-container {
+    grid-area: tweetTwo-container;
+    border: 1px dashed black;
+}
+
+
 
 .right-bar {
     grid-area: right-bar;
