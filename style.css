@@ -280,11 +280,15 @@ main.grid {
 
 .feed-selection div {
   width: 100%;
-  justify-items: center;
+  place-items: center;
 }
 
 .feed-selection .hover-no-highlight:hover {
   background-color: #ffffff25;
+}
+
+.prime {
+  align-content: start;
 }
 
 .post {
@@ -355,8 +359,6 @@ main.grid {
   place-content: start;
 
   border-top: 2px solid #555;
-
-  min-height: 200px;
 }
 
 .feed-item > .icon {
@@ -365,6 +367,8 @@ main.grid {
 
 .feed-content {
   grid-area: feed-content;
+
+  grid-auto-flow: row;
 }
 
 .feed-header {
@@ -546,8 +550,10 @@ footer.right .search-container {
     "main"
     "header";
 
+    height: 100vh;
+
     grid-template-columns: 1fr;
-    grid-template-rows: 95vh 5vh;
+    grid-template-rows: 1fr 60px;
   }
 
   main.grid {
@@ -556,28 +562,30 @@ footer.right .search-container {
 
   .left.menu {
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
+    grid-template-rows: 1fr;
 
-    height: 5vh;
+    height: 100%;
 
-    align-content: center;
+    align-items: center;
 
     padding: 0;
 
     border-top: 2px solid #555;
+
+    z-index: 1;
   }
 
   .left .v-icon {
-    display: none;
+    position: absolute;
+    bottom: calc(100vh - 40px);
   }
 
   .left .menu-list {
     grid-template-columns: repeat(4, 1fr);
 
-
     width: 100%;
 
-    overflow-y: none;
+    overflow-y: visible;
     place-items: center;
   }
 
@@ -600,8 +608,13 @@ footer.right .search-container {
 
   .left .compose {
     position: absolute;
-    bottom: 6vh;
-    right: 2vh;
+    bottom: 5rem;
+    right: 1rem;
+
+    height: 48px;
+    width: 48px;
+
+    box-shadow: 0 0 5px white;
   }
 
 }
