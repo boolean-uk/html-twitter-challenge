@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    font-family: "TwitterChirp",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+}
+
+div {
+    border: solid;
+    border-width: 1px;
+}
+
+.main-container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 260px 990px 1fr;
+    grid-template-areas:
+    ". header main-content ."
+}
+
+.header {
+    grid-area: header;
+}
+
+.main-content {
+    grid-area: main-content;
+    display: grid;
+    grid-template-columns: minmax(1fr, 600px) 350px;
+    grid-template-rows: 55px 120px 1fr 1fr;
+    grid-template-areas:
+    "home-bar search"
+    "post-box-container happening"
+    "tweet-container happening"
+    "tweet-container who-to-follow"
+
+}
+
+.home-bar {
+    grid-area: home-bar;
+}
+
+.search {
+    grid-area: search;
+}
+
+.post-box-container {
+    grid-area: post-box-container;
+}
+.happening {
+    grid-area: happening;
+}
+.tweet-container {
+    grid-area: tweet-container;
+}
+
+.who-to-follow {
+    grid-area: who-to-follow;
+}
