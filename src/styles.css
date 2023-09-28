@@ -19,7 +19,7 @@ body {
     "header      header         header"    50px
     "left-bar    main-bar       right-bar" auto
     "footer      footer         footer"    50px /
-    200px          1fr         400px;
+    200px          1fr         1fr;
 
     border: 1px dashed black;
     padding: 5px;
