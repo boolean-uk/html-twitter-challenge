@@ -17,13 +17,13 @@
             <div class="icon grid">
               <img src="https://img.icons8.com/ffffff/home" alt="home" />
             </div>
-            <span>home</span>
+            <span class="media-collapse">home</span>
           </li>
           <li class="hover round grid menu-item">
             <div class="icon grid">
               <img src="https://img.icons8.com/ffffff/search" alt="explore" />
             </div>
-            <span>explore</span>
+            <span class="media-collapse">explore</span>
           </li>
           <li class="hover round grid menu-item">
             <div class="icon grid">
@@ -32,19 +32,19 @@
                 alt="notifications"
               />
             </div>
-            <span>notifications</span>
+            <span class="media-collapse">notifications</span>
           </li>
           <li class="hover round grid menu-item">
             <div class="icon grid">
               <img src="https://img.icons8.com/ffffff/mail" alt="messages" />
             </div>
-            <span>messages</span>
+            <span class="media-collapse">messages</span>
           </li>
           <li class="hover round grid menu-item">
             <div class="icon grid">
               <img src="https://img.icons8.com/ffffff/list" alt="lists" />
             </div>
-            <span>lists</span>
+            <span class="media-collapse">lists</span>
           </li>
           <li class="hover round grid menu-item">
             <div class="icon grid">
@@ -53,34 +53,37 @@
                 alt="bookmark"
               />
             </div>
-            <span>bookmarks</span>
+            <span class="media-collapse">bookmarks</span>
           </li>
           <li class="hover round grid menu-item">
             <div class="icon grid">
               <img src="https://img.icons8.com/ffffff/city" alt="communities" />
             </div>
-            <span>communities</span>
+            <span class="media-collapse">communities</span>
           </li>
           <li class="hover round grid menu-item">
             <div class="icon grid">
               <div class="v"></div>
             </div>
-            <span>premium</span>
+            <span class="media-collapse">premium</span>
           </li>
           <li class="hover round grid menu-item">
             <div class="icon grid">
               <img src="https://img.icons8.com/ffffff/user" alt="profile" />
             </div>
-            <span>profile</span>
+            <span class="media-collapse">profile</span>
           </li>
           <li class="hover round grid menu-item">
             <div class="icon grid">
               <img src="https://img.icons8.com/ffffff/more" alt="more" />
             </div>
-            <span>more</span>
+            <span class="media-collapse">more</span>
           </li>
         </ol>
-        <div class="button round grid hover">Post</div>
+        <div class="button round grid hover media-collapse">Post</div>
+        <div class="icon button round grid hover media-replace">
+          <img src="https://img.icons8.com/ffffff/pen" alt="" />
+        </div>
         <div class="grid hover user round">
           <div class="icon grid round user-img">
             <img
@@ -90,10 +93,10 @@
             />
           </div>
           <div class="user-details grid">
-            <div class="name">Edon Vusk</div>
-            <div>@V</div>
+            <div class="name media-collapse">Edon Vusk</div>
+            <div class="media-collapse">@V</div>
           </div>
-          <div class="icon grid more">
+          <div class="icon grid more media-collapse">
             <img src="https://img.icons8.com/ffffff/more" alt="more" />
           </div>
         </div>
@@ -128,7 +131,7 @@
               <div class="post-options icon hover round grid">
                 <img src="https://img.icons8.com/9050e0/gif" alt="find gif" />
               </div>
-              <div class="post-options icon hover round grid">
+              <div class="post-options icon hover round grid ballot">
                 <img
                   src="https://img.icons8.com/9050e0/ballot"
                   alt="create poll"
@@ -140,7 +143,7 @@
                   alt="insert emoji"
                 />
               </div>
-              <div class="post-options icon hover round grid">
+              <div class="post-options icon hover round grid calendar">
                 <img
                   src="https://img.icons8.com/9050e0/calendar"
                   alt="schedule post"
@@ -307,11 +310,13 @@
         </div>
       </main>
       <footer class="right menu grid">
-        <div class="search grid round pos-sticky">
-          <div class="icon grid">
-            <img src="https://img.icons8.com/ffffff/search" alt="explore" />
+        <div class="search-container pos-sticky">
+          <div class="search grid round">
+            <div class="icon grid">
+              <img src="https://img.icons8.com/ffffff/search" alt="explore" />
+            </div>
+            <input type="text" placeholder="Search" />
           </div>
-          <input type="text" placeholder="Search" />
         </div>
         <div class="smol-round card premium">
           <h2>Subscribe to Premium</h2>
