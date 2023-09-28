@@ -24,7 +24,7 @@ header {
     grid-template-rows: 50px 150px;
 }
 
-.main-header {
+#main-header {
     height: 40px;
     padding-top: 10px;
     padding-left: 15px;
