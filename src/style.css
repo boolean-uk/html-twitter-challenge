@@ -14,13 +14,7 @@
     "nav-bar main right-bar";
 }
 
-.nav-bar {
-
-  grid-area: nav-bar;
-  background-color: #e2eef3;
-
-}
-
+/*logo section*/
 .logo {
 
   padding-bottom: 10px;
@@ -29,9 +23,19 @@
 }
 
 
+
+/* nav bar section*/
+.nav-bar {
+
+  grid-area: nav-bar;
+  background-color: #e2eef3;
+
+}
+
+
 .nav-grid-container {
   display: grid;
-  grid-template-rows: repeat(9, 60px);
+  grid-template-rows: repeat(8, 60px);
   justify-content: center; 
   align-content: center;
 }
@@ -60,6 +64,9 @@
   padding-top: 10px;
 }
 
+
+/*tweet button section*/
+
 .tweet,
 .write-tweet{
   border:1px solid #97b6e8;
@@ -78,11 +85,9 @@
 }
 
 
-.main {
 
-  grid-area: main;
-  background-color: #e2eef3;
-}
+
+/*header section*/
 
 .grid-container-header {
   display: grid;
@@ -106,10 +111,19 @@
   font-size: 20px;
 }
 
-.right-bar {
-  grid-area: right-bar;
+
+
+/* main section*/
+
+.main {
+
+  grid-area: main;
   background-color: #e2eef3;
 }
+
+
+
+/*writing post section*/
 
 .write-post {
   padding: 50px 20px;
@@ -145,6 +159,9 @@ top: 100px;
 }
 
 
+/*posts section*/
+
+
 .grid-container-posts {
   display: grid;
   grid-template-rows: repeat(3, 200px);
@@ -172,6 +189,11 @@ top: 100px;
   margin: 15px;
 }
 
+.profile-pic {
+  width: 50px;
+  height: 50px;
+}
+
 .post-contents{
   padding-top:20px ;
   padding-left: 75px;
@@ -187,6 +209,13 @@ top: 100px;
   padding-top: 70px;
 }
 
+
+/*right bar section*/
+
+.right-bar {
+  grid-area: right-bar;
+  background-color: #e2eef3;
+}
 
 
 .grid-container-right {
@@ -219,11 +248,13 @@ top: 100px;
   padding: 10px;
   background-color: #3a75d4;
   color: aliceblue;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 
 
-
+/* media screen section*/
 @media screen and (max-width: 800px) {
   .nav-bar {
     display: none;}
