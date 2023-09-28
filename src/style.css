@@ -76,7 +76,7 @@
 .sparkle {
   padding: 10px;
   grid-area: sparkle;
-  text-align: end;
+  justify-self: end;
 }
 
 .home {
@@ -171,4 +171,5 @@ top: 100px;
   background-color: #3a75d4;
   color: aliceblue;
 }
+
 
