@@ -83,9 +83,9 @@ p {
 }
 
 #left-menu {
-    height: 100vh;
+    height: calc(100vh - 20px);
     position: sticky;
-    top:0;
+    top: 0;
 }
 
 #left-menu main {
@@ -128,7 +128,7 @@ p {
     border-left:  1px solid grey;
     border-right:  1px solid grey;
     padding: 10px 0 0 0;
-    height: 100vh;
+    height: calc(100vh - 10px);
 }
 
 #post-container > header {
@@ -186,7 +186,7 @@ p {
     border-top: 10px solid rgba(128, 128, 128, 0.264);
     display: grid;
     grid-auto-rows: repeat(auto, fit-content);
-    height: calc(100vh - 40px);
+    height: calc(100vh - 200px);
     overflow: auto;
     position: absolute;
     top: 200px;
@@ -218,8 +218,12 @@ p {
 
 /*STYLES THE RIGHT-MENU*/
 
+#right-menu {
+    height: calc(100vh - 20px)
+}
+
 #right-menu > main {
-    height: calc(100vh - 40px);
+    height: calc(100vh - 55px);
     overflow: auto;
     position: absolute;
     top: 40px;
