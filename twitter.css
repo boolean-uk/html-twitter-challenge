@@ -3,18 +3,18 @@
     padding: 0px;
     font-family: sans-serif;
     gap: 2px;
-
 }
 
 
 .container {
     display: grid;
+    height: 100vh;
     grid-template: 
 
 
 "left-tab    header          right-tab" 200px
 "left-tab    main-content    right-tab" 1fr/
-  200px       1fr              300px;
+  200px       500px              300px;
 }
 
 header {
@@ -31,10 +31,80 @@ header {
     border-bottom: solid 0.5px rgb(226, 225, 225);
 }
 
+.star {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 600px;
+}
+
 .sub-header {
     color: grey;
     padding-top: 20px;
-    padding-left: 80px;
+    padding-left: 60px;
+}
+
+.post {
+    font-size: 12px;
+    color: white;
+    border-radius: 50px;
+    border: solid 1px rgb(28, 155, 246);
+    background-color: rgb(28, 155, 246);
+    margin-top: 67px;
+    margin-left: 345px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+.post > button {
+    color: white;
+    background-color: rgb(28, 155, 246);
+    border: none;
+    
+}
+
+.picture-icon {
+    width: 23px;
+    height: 23px;
+    position: absolute;
+    left: 280px;
+    top: 167px;
+}
+
+.gif {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 316px;
+    top: 165px;
+}
+
+.stats-bar {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 357px;
+    top: 165px;
+}
+
+.smiley-face {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 390px;
+    top: 167px;
+}
+
+.calender {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 425px;
+    top: 167px;
 }
 
 .left-tab {
@@ -82,17 +152,18 @@ a:hover {
 }
 
 .left-tab > .tweet {
+    position: absolute;
     color: white;
     border: solid 1px rgb(28, 155, 246);
     background-color: rgb(28, 155, 246);
     border-radius: 50px;
-    padding-left: 37px;
-    padding-top: 5px;
-    margin-top: 10px;
-    margin-right: 80px;
-    margin-bottom: 350px;
+    padding-left: 55px;
+    padding-top: 15px;
+    padding-right: 50px;
+    padding-bottom:10px;
     font-size: 15px;
-    
+    top: 470px;
+    left: 30px;
 }
 
 .main-content {
@@ -108,6 +179,206 @@ a:hover {
     border: solid 0.5px rgb(226, 225, 225);
    
 }
+
+.content-profile {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 210px;
+    top: 225px;
+}
+
+
+.message-icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 340px;
+}
+
+.retweet-icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 340px;
+    left: 320px;
+}
+
+.like-icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 340px;
+    left: 390px;
+}
+
+.save-icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 340px;
+    left: 460px;
+}
+
+.tip-icon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 340px;
+    left: 530px;
+}
+
+
+.content-profile2 {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 210px;
+    top: 378px;
+}
+
+
+
+.message-icon2 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 492px;
+}
+
+.retweet-icon2 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 492px;
+    left: 320px;
+    
+}
+
+.like-icon2 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 492px;
+    left: 390px;
+}
+
+.save-icon2 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 492px;
+    left: 460px;
+}
+
+.tip-icon2 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 492px;
+    left: 530px;
+}
+
+
+.content-profile3 {
+     position: absolute;
+     width: 35px;
+     height: 35px;
+     left: 210px;
+     top: 528px;
+}
+
+
+.message-icon3 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 645px;
+}
+
+.retweet-icon3 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 645px;
+    left: 320px;
+    
+}
+
+.like-icon3 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 645px;
+    left: 390px;
+}
+
+.save-icon3 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 645px;
+    left: 460px;
+}
+
+.tip-icon3 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 645px;
+    left: 530px;
+}
+
+
+.content-profile4 {
+    position: absolute;
+     width: 35px;
+     height: 35px;
+     left: 210px;
+     top: 685px;
+}
+
+
+.message-icon4 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 799px;
+}
+
+.retweet-icon4 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 799px;
+    left: 320px;
+    
+}
+
+.like-icon4 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 799px;
+    left: 390px;
+}
+
+.save-icon4 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 799px;
+    left: 460px;
+}
+
+.tip-icon4 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 799px;
+    left: 530px;
+}
+
 
 .right-tab {
     display: grid;
@@ -213,7 +484,8 @@ a:hover {
     width: 25px;
     height: 25px;
     position: absolute;
-    left: 25px;
+    left: 23px;
+    top: 367px;
 }
 
 .more {
@@ -222,4 +494,13 @@ a:hover {
     position: absolute;
     left: 25px;
     top: 417px;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 210px;
+    top: 60px;
+
 }
