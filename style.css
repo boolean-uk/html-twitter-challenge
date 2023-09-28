@@ -11,7 +11,7 @@
   --icon-size: 2rem;
 
   --accent-color: #95e;
-  --accent-hover: #84c;
+  --accent-hover: #a6f;
   --accent-opc: #9050e040;
 
   --bg-color: #000;
@@ -59,6 +59,18 @@ p {
 
 .name {
   font-weight: bold;
+}
+
+.user {
+  grid-template-columns: auto 1fr auto;
+
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.user-details {
+  align-content: center;
+  font-size: 0.8rem;
 }
 
 .user-name {
@@ -127,6 +139,10 @@ p {
   background-color: var(--accent-opc);
 }
 
+.button.hover:hover {
+  background-color: var(--accent-hover);
+}
+
 .hover-no-highlight:hover {
   cursor: pointer;
 }
@@ -179,22 +195,8 @@ header.menu {
   border-radius: 50000ch;
 }
 
-.user {
-  grid-template-columns: auto 1fr auto;
-
-  gap: 0.5rem;
-  padding: 0.5rem;
-
-  background-color: black;
-}
-
 .user-img img {
   height: var(--icon-size);
-}
-
-.user-details {
-  align-content: center;
-  font-size: 0.5rem;
 }
 
 /* || V LOGO || VERY IMPORTANT - I SPENT BILLIONS ON V.COM */
@@ -407,7 +409,7 @@ footer.right > :nth-child(2n) {
   background-color: #333;
 }
 
-.search {
+.search { /* TODO: sticky not staying at top */
   grid-template-columns: auto 1fr;
   padding: 0 0.5rem;
 }
@@ -417,15 +419,15 @@ footer.right > :nth-child(2n) {
 }
 
 .search input {
-  container-type: normal;
-  container-name: search;
+  background-color: var(--issues);
 }
 
 .premium.card {
   padding: 1rem;
 }
 
-.whats-happening h2 {
+.whats-happening h2,
+.follow h2 {
   padding: 0 1rem;
 }
 
@@ -443,6 +445,10 @@ footer.right > :nth-child(2n) {
   height: 48px;
   width: 48px;
   object-fit: cover;
+}
+
+.right li.grid {
+  padding: 0.5rem 1rem;
 }
 
 /* ======== media & container queries ======== */
