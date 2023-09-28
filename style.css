@@ -185,14 +185,20 @@ p {
 
 /* ======== header menu ======== */
 
-header.menu {
+.left.menu {
   grid-template-rows: auto minmax(3.5rem, auto) 1fr auto;
   grid-template-columns: auto;
+
+  padding-right: 0;
 }
 
 .left .menu-list {
   overflow-y: scroll;
   align-content: start;
+}
+
+.no-scroll {
+  margin-right: 5px;
 }
 
 .left .menu-list::-webkit-scrollbar {
@@ -425,6 +431,8 @@ footer.right .search-container {
   grid-template-columns: auto 1fr;
   padding: 0 0.5rem;
   background-color: #111;
+
+  background-color: var(--issues);
 }
 
 .search:focus-within {
@@ -473,28 +481,28 @@ footer.right .search-container {
 
   .left {
     justify-items: center;
-    justify-content: center;
+    justify-content: center;    
   }
   
   .left .menu-list {
-    position: relative;
-    left:5px;
-    padding: 0;
+    /* position: relative;
+    left: 3px; */
+    /* padding: 0; */
   }
   
   .left .menu-item {
     padding: 0;
     grid-template-columns: auto;
   }
-
+  
   .left .media-collapse {
     display: none;
   }
-
+  
   .left .media-replace {
     visibility: visible;
   }
-
+  
   .left .user {
     gap: 0;
   }
