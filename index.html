@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter Clone</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!--    LEFT BAR    -->
+      <div class="left-bar">
+        <div class="left-bar-header">
+          <div class="logo-container">
+            <img class="logo" src="./images/icons/twitter-icon.svg" alt="" />
+          </div>
+        </div>
+
+        <!--     QUICK ACCESS SECTIONS    -->
+        <div class="quick-access active">
+          <div class="logo-container">
+            <img class="logo" src="./images/icons/home.svg" alt="" />
+          </div>
+          <h2>Home</h2>
+        </div>
+
+        <div class="quick-access">
+          <div class="logo-container">
+            <img class="logo" src="./images/icons/hash.svg" alt="" />
+          </div>
+          <h2>Explore</h2>
+        </div>
+
+        <div class="quick-access">
+          <div class="logo-container">
+            <img class="logo" src="./images/icons/notifications.svg" alt="" />
+          </div>
+          <h2>Notifications</h2>
+        </div>
+
+        <div class="quick-access">
+          <div class="logo-container">
+            <img class="logo" src="./images/icons/messages.svg" alt="" />
+          </div>
+          <h2>Messages</h2>
+        </div>
+
+        <div class="quick-access">
+          <div class="logo-container">
+            <img class="logo" src="./images/icons/bookmarks.svg" alt="" />
+          </div>
+          <h2>Bookmarks</h2>
+        </div>
+
+        <div class="quick-access">
+          <div class="logo-container">
+            <img class="logo" src="./images/icons/lists.svg" alt="" />
+          </div>
+          <h2>Lists</h2>
+        </div>
+
+        <div class="quick-access">
+          <div class="logo-container">
+            <img class="logo" src="./images/icons/profile.svg" alt="" />
+          </div>
+          <h2>Profile</h2>
+        </div>
+
+        <div class="quick-access">
+          <div class="logo-container">
+            <img class="logo" src="./images/icons/more.svg" alt="" />
+          </div>
+          <h2>More</h2>
+        </div>
+
+        <!--  TWEET BUTTON   -->
+        <div class="tweet-button">Tweet</div>
+
+        <div class="profile">
+          <div class="profile-info">
+            <div class="logo-container">
+              <img class="logo" src="./images/icons/man.svg" alt="" />
+            </div>
+            <div class="name">
+              <h2>Name</h2>
+              <p>@nicolas_dev_</p>
+            </div>
+          </div>
+
+          <div class="dots-icon">
+            <img class="dots-icon" src="./images/icons/dots.svg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <!--    MAIN      -->
+      <div class="main">
+        <div class="main-header">
+          <h2>Home</h2>
+          <div class="logo-container">
+            <img class="logo" src="./images/icons/star.svg" alt="" />
+          </div>
+        </div>
+
+        <!--    Tweet area     What's happening?-->
+        <div class="tweet-container">
+          <div class="tweet-img logo-container">
+            <img class="logo" src="./images/icons/man.svg" alt="" />
+          </div>
+          <input value="What's happening?" />
+        </div>
+
+        <div class="icons-button">
+          <div class="icons">
+            <img class="logo" src="./images/icons/gallery.svg" alt="" />
+            <img class="logo" src="./images/icons/gif.svg" alt="" />
+            <img class="logo" src="./images/icons/status.svg" alt="" />
+            <img class="logo" src="./images/icons/smile.svg" alt="" />
+            <img class="logo" src="./images/icons/notes.svg" alt="" />
+          </div>
+          <button>Tweet</button>
+        </div>
+
+        <!--     CONTENTS      -->
+        <div class="content-container">
+          <div class="content-img logo-container">
+            <img class="logo" src="./images/icons/man.svg" alt="" />
+          </div>
+          <div class="content">
+            <div class="host">
+              <p>
+                <strong>woki GITer of COINs</strong>
+                <span class="grayed-text">@owocki 26m</span>
+              </p>
+              <div class="dots-icon">
+                <img class="logo" src="./images/icons/dots.svg" alt="" />
+              </div>
+            </div>
+            <p>me as an engineer, 2015 the CEOs vision is so hand-wavey</p>
+            <p>me as a CEO, 2021: (waves hands) this is my vision</p>
+            <div class="twitted-icons-container">
+              <div class="twitted-icon">
+                <img
+                  class="logo"
+                  src="./images/icons/message-small.svg"
+                  alt=""
+                />
+              </div>
+              <div class="twitted-icon">
+                <img
+                  class="logo"
+                  src="./images/icons/looping-arrow.svg"
+                  alt=""
+                />
+                <p class="grayed-text">3</p>
+              </div>
+              <div class="twitted-icon">
+                <img class="logo" src="./images/icons/heart.svg" alt="" />
+                <p class="grayed-text">22</p>
+              </div>
+              <div class="twitted-icon">
+                <img class="logo" src="./images/icons/share.svg" alt="" />
+              </div>
+              <div class="twitted-icon">
+                <img class="logo" src="./images/icons/triangle.svg" alt="" />
+                <p class="grayed-text">Tip</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="content-container">
+          <div class="content-img logo-container">
+            <img class="logo" src="./images/icons/group.svg" alt="" />
+          </div>
+          <div class="group-docs content">
+            <p>
+              <strong>Group Docs</strong
+              ><span class="grayed-text"> @GroupDocs</span>
+            </p>
+            <p>
+              GroupDocs total for .NET is a compilation of every .NET
+              <span
+                ><a href="#"
+                  >#API offered by <span><a href="#">@GroupDocs</a></span></a
+                ></span
+              >. We compile it on a daily basis to ensure that it contains the
+              most up-to-date versions of each our .NET document
+              <span><a href="#">#automation</a></span> APIs
+            </p>
+            <p>
+              Read more <span><a href="#">bit.ly/3474181o</a></span>
+            </p>
+            <div class="main-body-image">
+              <img
+                class="logo group-docs"
+                src="./images/groupDocs.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--    RIGHT BAR     -->
+      <div class="right-bar">
+        <div stuy class="right-bar-header">
+          <button class="logo-container">
+            <img class="logo" src="./images/icons/search.svg" alt="" />
+          </button>
+          <input type="text" value="Search Twitter" />
+        </div>
+
+        <h2>What's happening?</h2>
+
+        <div class="right-bar-content-img">
+          <div class="right-bar-content-text">
+            <p class="grayed-text">News LIVE</p>
+            <h3>
+              Bus hijacked by protasters and set alight on sixth night of unrest
+              in Nothern Ireland
+            </h3>
+            <p class="grayed-text">
+              Trending with
+              <span><a href="#">Belfast, Nothern Ireland</a></span>
+            </p>
+          </div>
+          <div class="right-bar-img">
+            <img class="logo" src="./images/icons/bus-on-fire.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="right-bar-content">
+          <h2>#MeetRichardSons</h2>
+          <p class="grayed-text">
+            Brand new comady from David's favourite couple returns at 10pm
+          </p>
+          <p class="grayed-text">Promoted by Dave</p>
+        </div>
+
+        <div class="empty-content">
+          <div class="right-bar-host">
+            <p class="grayed-text">Politics - Tranding</p>
+            <div class="dots-icon">
+              <img class="logo" src="./images/icons/dots.svg" alt="" />
+            </div>
+          </div>
+          <h3>Alex Jones</h3>
+          <p class="grayed-text empty-content-p">46.5k Tweets</p>
+        </div>
+
+        <div class="empty-content">
+          <div class="right-bar-host">
+            <p class="grayed-text">Politics - Tranding</p>
+            <div class="dots-icon">
+              <img class="logo" src="./images/icons/dots.svg" alt="" />
+            </div>
+          </div>
+          <h3>Hong Kong</h3>
+          <p class="grayed-text empty-content-p">36k Tweets</p>
+        </div>
+
+        <div class="right-bar-content-img">
+          <div class="right-bar-content-text">
+            <div class="right-bar-host">
+              <div class="right-bar-host-container">
+                <div class="right-bar-host-logo"></div>
+                <h3>Bloomberg Quick...</h3>
+              </div>
+              <p class="grayed-text">News LIVE</p>
+            </div>
+            <h3>
+              New Zealand is virtually Covid-free. Just don't try to buy a home
+              here.
+            </h3>
+            <p class="grayed-text">
+              Trending with
+              <span><a href="#">Belfast, Nothern Ireland</a></span>
+            </p>
+          </div>
+          <div class="right-bar-img">
+            <img class="logo" src="./images/icons/castle.jpg" alt="" />
+          </div>
+        </div>
+
+        <p style="font-size: 13px"><a href="#">Show more</a></p>
+
+        <div class="messages">
+          <h2>Messages</h2>
+          <div class="messages-icons">
+            <div class="logo-container">
+              <img class="logo" src="./images/icons/messages.svg" alt="" />
+            </div>
+            <div class="logo-container">
+              <img class="logo" src="./images/icons/go-up.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

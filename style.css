@@ -1,0 +1,629 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.grayed-text {
+    opacity: .8;
+}
+
+.logo:hover, .icon:hover, button:hover {
+    cursor: pointer;
+}
+
+
+
+
+/*      SETTING CONTAINER IN A GRID     */
+
+.container {
+    display: grid;
+    grid-template: 
+    "left-bar       main       right-bar" 1fr/
+    20fr            55fr       25fr;
+    /* gap: 1rem; */
+    /* border: 2px dotted blue; */
+    padding: 1rem 15rem;
+    /* align-content: center; */
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 1080px){
+    .container {
+        padding: 1rem 10rem;
+    }
+}
+
+@media screen and (max-width: 980px){
+    .container {
+        padding: 1rem 5rem;
+    }
+}
+
+@media screen and (max-width: 880px){
+    .container {
+        padding: 1rem 0rem;
+    }
+}
+
+@media screen and (max-width: 765px){
+    .container {
+        display: grid;
+        grid-template: 
+        "left-bar    left-bar"  15rem
+        "main        right-bar" 1fr/
+        1fr          1fr;
+        gap: 1;
+    }
+
+    .left-bar {
+        grid-area: left-bar;
+        grid-auto-flow: column;
+    }
+
+    .main {
+        grid-area: main;
+    }
+
+    .right-bar {
+        grid-area: right-bar;
+    }
+
+    .left-bar .quick-access h2 {
+        display: none;
+    }
+
+}
+
+
+
+/*       LEFT BAR           */
+.left-bar {
+    grid-area: left-bar;
+    /* border: 2px dotted darkgreen; */
+    /* padding: 1rem; */
+    display: grid;
+    grid-auto-flow: row;
+    align-content: flex-start;
+    row-gap: 2rem;
+}
+
+.logo-container {
+    height: 4rem;
+    width: 4rem;
+    /* border: 2px dotted green; */
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.logo {
+    width: 80%;
+    background-size: cover;
+}
+
+.quick-access {
+    /* padding-top: 2rem; */
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.quick-access:hover {
+    color: #1DA1F2;
+    cursor: pointer;
+}
+
+.quick-access h2 {
+    font-size: 15px
+}
+
+.active{
+    color: #1DA1F2;
+}
+
+
+.tweet-button {
+    display: grid;
+    justify-content: center;
+    margin: 2rem 0;
+    font-size: 15px;
+    padding: 1rem 0;
+    background-color: #1DA1F2;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.tweet-button:hover {
+    cursor: pointer;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.profile-info {
+    display: flex;
+    gap: 1rem;
+}
+
+.profile p {
+   font-size: 15px;
+   opacity: .8;
+}
+
+.dots-icon {
+    height: 4rem;
+    /* border: .5px dotted green; */
+    width: 4rem;
+}
+
+.profile:hover {
+    cursor: pointer;
+}
+
+/*    LEFT BAR OPTIMIZING */
+@media screen and (max-width: 1100px){
+    .left-bar h2 {
+        font-size: 13px;
+    }
+
+    .left-bar {
+        margin-right: 0;
+    }
+
+    .logo-container {
+        height: 3.5rem;
+        width: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 770px){
+
+    .left-bar {
+        width: 10rem;
+    }
+
+    .left-bar .quick-access h2 {
+        display: none;
+    }
+
+   .left-bar .tweet-button {
+    font-size: 13px;
+    width: 5rem;
+   }
+
+   .profile {
+    display: grid;
+   }
+}
+
+@media screen and (min-width: 765px) and (max-width: 770px){
+    .left-bar .quick-access h2 {
+        display: block;
+    }
+
+    .left-bar .tweet-button {
+        width: 12rem;
+    }
+}
+
+@media screen and (max-width: 765px) {
+    .container {
+        display: grid;
+        grid-template: 
+        "left-bar    left-bar"  10rem
+        "main        right-bar" 1fr/
+        60fr         40fr;
+        gap: 1;
+        padding: 1rem 0;
+    }
+
+    .left-bar {
+        grid-area: left-bar;
+        grid-auto-flow: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .left-bar .profile {
+        display: flex;
+        align-items: center;
+    }
+
+    .twitter-icon {
+        display: none;
+    }
+
+    .left-bar-header{
+        display: none;
+    }
+
+}
+
+
+/*       MAIN           */
+.main {
+    grid-area: main;
+    margin-right: 1rem;
+    /* border: 2px dotted darkgreen; */
+}
+
+.main-header {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+/* .main-header-icon {
+    height: 50px;
+    width: 50px;
+    border: 2px dotted green;
+} */
+
+.main-header h2 {
+    font-size: 20px;
+}
+
+.tweet-img{
+    position: relative;
+    bottom: 1rem;
+}
+
+
+.tweet-container {
+    display: grid;
+    grid-auto-flow: column;
+    gap: .5rem;
+    /* border: 2px dotted green; */
+    justify-content: flex-start;
+    align-items: center;
+}
+
+input{
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    padding-top: 1rem;
+    font-size: 15px;
+    opacity: .8;
+    border: none;
+}
+
+
+.icons-button {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    /* border: 1px dotted green; */
+    padding: 5px;
+    padding-left: 5rem;
+    height: 50px;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.icons {
+    height: 25px;
+    width: 25px;
+    /* border: 1px dotted green; */
+    display: flex;
+    gap: 1.5rem;
+}
+
+.icons.logo{
+    height: 100%;
+}
+
+.icons-button button {
+    background-color: #1DA1F2;
+    border: none;
+    border-radius: 20px;
+    padding: 1rem .5rem;
+    width: 70px;
+    color: white;
+    font-weight: bold;
+    justify-self: end;
+}
+
+
+/*     CONTENTS    */ 
+.content-container {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 10fr 90fr;
+    /* gap: .5rem; */
+}
+
+.host {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1rem;
+}
+
+
+.host p {
+    font-size: 13px;
+    /* margin-bottom: .5rem; */
+}
+
+.host + p {
+    margin-bottom: 1.5rem;
+}
+
+/* .content {
+    position: relative;
+    left: -2rem;
+} */
+
+.content p {
+    font-size: 13px;
+}
+
+
+.twitted-icons-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    margin-right: 2rem
+    /* position: relative;
+    right: 4rem; */
+}
+
+.twitted-icon {
+    height: 20px;
+    width: 20px;
+    /* border: 1px dotted green; */
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        justify-content: center;
+    
+}
+
+.twitted-icon:hover {
+    cursor: pointer;
+}
+
+.group-docs {
+    margin-top: 1rem;
+}
+
+.group-docs p:first-of-type{
+    margin-bottom: 1rem;
+    font-size: 13px;
+}
+
+.group-docs p {
+    font-size: 13px;
+}
+
+.main-body-image {
+    height: 270px;
+    margin-top: 1rem;
+    margin-right: 1rem;
+    border-radius: 15px;
+    /* border: 2px dotted green; */
+
+}
+
+.main-body-image .logo {
+    height: 100%;
+    width: 100%;
+}
+
+/*       RIGHT BAR           */
+.right-bar {
+    grid-area: right-bar;
+    /* border: 2px dotted darkgreen; */
+    display: grid;
+    grid-auto-flow: row;
+    align-content: flex-start;
+    gap: 2rem;
+    margin-left: 1rem;
+}
+
+.right-bar-header {
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+}
+
+.right-bar-header button {
+    margin: 0 1rem;
+    opacity: .8;
+    border: none;
+}
+
+.right-bar-content-img {
+    display: flex;
+    margin-top: 2rem;
+}
+
+.right-bar-img {
+    height: 60px;
+    width: 120px;
+    /* border: 1px dotted green; */
+    margin: 0 1rem;
+}
+
+.right-bar-img .logo {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.right-bar-content-text h3{
+    margin: .5rem 0;
+    line-height: 18px;
+}
+
+
+.right-bar-content {
+    width: 20rem;
+}
+
+.right-bar-host {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 1rem;
+}
+
+.right-bar-content p:first-of-type {
+    font-size: 13px;
+    margin: .5rem 0;
+}
+
+.empty-content-p{
+    margin-top: .5rem;
+}
+
+.empty-content h3 {
+    font-size: 15px;
+}
+
+.right-bar-host {
+    align-items: center;
+}
+
+.right-bar-host-logo {
+    height: 20px;
+    width: 20px;
+    /* border: 1px dotted green; */
+}
+
+.right-bar-host-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    align-items: center;
+}
+
+.right-bar-content-img:last-of-type {
+    margin-top: 1rem;
+}
+
+.messages {
+    display: flex;
+    justify-content: space-between;
+}
+
+.messages-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+    .right-bar {
+        display: none;
+    }
+
+    .main {
+        width: 100vw;
+        padding: 0 2rem;
+    }
+
+    .left-bar .profile{
+       display: none;
+    }
+
+    .left-bar {
+        width: 100%;
+        justify-content: space-evenly;
+        gap: 1rem;
+    }
+}
+
+/*  ADJUSTING ALL FOR SMALLER SCREENS   */
+
+@media screen and (max-width: 435px){
+    .left-bar {
+        gap: 0;
+    }
+
+    .left-bar .logo {
+        height: 2rem;
+        width: 2rem;
+    }
+
+    .left-bar .tweet-button {
+        width: 4rem;
+        height: 3rem;
+        align-items: center;
+        font-size: 11px;
+    }
+
+    .quick-access {
+        padding: 0, .5rem;
+        margin: 0;
+    }
+
+    .main .logo {
+        height: 2.5rem;
+        width: 2.5rem;
+    }
+
+    .main-header h2 {
+        font-size: 14px;
+    }
+
+    .icons .logo {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .twitted-icon .logo {
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .icons-button button {
+        font-size: 11px;
+        width: fit-content;
+    }
+
+    .main-body-image .logo {
+        height: 80%;
+        width: 100%;
+    }
+
+
+}
+
+/* .messages-icon {
+    height: 100%;
+    width: 100%;
+    border: 2px dotted green;
+} */
+
+/* @media screen and (max-width: 1080px) and (min-width: 500px) {
+    .container {
+        padding: 1rem, 0;
+    }
+} */
+
+/* @media screen and (max-width: 900px){
+    .container {
+        padding: 1rem 0;
+    }
+} */
