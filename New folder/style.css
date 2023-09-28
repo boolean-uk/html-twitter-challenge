@@ -1,0 +1,13 @@
+*body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.container{
+    border: 5px solid rgb(45, 20, 23);
+    display: grid;
+    grid-template :"left main right"100%
+                   "left main right"100%/
+                   1fr   2fr   1fr;
+}
+
