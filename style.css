@@ -40,15 +40,13 @@ body{
     border: 2px solid royalblue;
     border-top: none;
     margin: 0;
-    display: grid;
-    grid-template-columns: 100px 1fr;
-    grid-auto-rows:50px;
 
 }
 
 .content > div:nth-child(1) {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-bottom: 20px;
     justify-items: end;    
 }
 
@@ -62,15 +60,83 @@ body{
     grid-template-columns: 1fr 2fr 2fr 1fr;
     box-sizing: border-box;
 }
-.post{
-    border: 2px solid royalblue;
+.post{    
     border-top: none;
     margin: 0;
     grid-column: 1/5;
     display: grid;
     grid-template-columns: 100px 1fr;
 }
-/* tweet */
+
+/*buttons and inputs */
+
+input{
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin : 0 auto;
+    box-sizing: border-box;
+}
+
+.btn-icon-img{
+    place-self: end;
+}
+.btn {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    background-color:#4285f4;
+    cursor: pointer;
+    grid-column: span 2;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+.left-side > .btn:hover {
+    background-color: #2a5db0;
+    box-shadow: 0 0 5px #2a5db0;
+}
+/* typography and images */
+
+
+h3{
+    justify-self: start;
+    margin: 0;
+    padding: 0;
+    color: black;
+    font-weight: bolder;
+}
+
+.left-side > img {
+    width: 25px;
+}
+
+.icon-img {
+    grid-column: 2/5;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+
+.icon-img >img {
+    width: 25px;
+    margin: 0px;
+}
+
+.profile-img {
+    grid-column: 1;
+    width: 50px;
+    border-radius: 50%;
+}
+span {
+    color: #ccc;
+}
+
+
+/* tweet the most problematic so far*/
 .tweet-post{
     display: grid;    
     grid-template: 
@@ -99,81 +165,12 @@ body{
 }
 .icon2{
     grid-area: icon2;
-    justify-self: start;
 }
 .icon3{
     grid-area: icon3;
 }
 .icon4{
     grid-area: icon4;
-}
-
-
-
-/* typography and images */
-
-input{
-    width: 100%;
-    height: auto;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin : 0 auto;
-    box-sizing: border-box;
-}
-
-h3{
-    justify-self: start;
-    margin: 0;
-    padding: 0;
-    color: black;
-    font-weight: bolder;
-}
-
-.left-side > img {
-    width: 25px;
-}
-
-.icon-img {
-    grid-column: 2/5;
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
-    place-self:center;
-}
-
-.icon-img > .btn {
-    grid-column: 7;
-}
-
-.icon-img >img {
-    width: 25px;
-    margin: 0px;
-}
-
-.profile-img {
-    grid-column: 1;
-    width: 50px;
-    border-radius: 50%;
-}
-.btn {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 15px;
-    margin-bottom: 10px;
-    box-sizing: border-box;
-    background-color:#4285f4;
-    cursor: pointer;
-    grid-column: span 2;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-}
-span {
-    color: #ccc;
-}
-
-.left-side > .btn:hover {
-    background-color: #2a5db0;
-    box-shadow: 0 0 5px #2a5db0;
 }
 
 
