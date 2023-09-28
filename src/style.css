@@ -152,6 +152,15 @@ p {
     color: white;
 }
 
+#left-menu main > div:last-child:hover {
+    box-shadow: 2px 2px 5px grey;
+    color: white;
+}
+#left-menu main > div:last-child:active {
+    background-color: rgba(255, 166, 0, 0.6);
+    color: white;
+}
+
 
 /*STYLES THE NEWSFEED*/
 #post-container {
@@ -159,11 +168,13 @@ p {
     border-right:  1px solid grey;
     padding: 10px 0 0 0;
     height: calc(100vh - 10px);
+    min-width: 400px;
 }
 
 #post-container > header {
     border-bottom: 1px solid grey;
     position: absolute;
+    width: 100%;
     top: 10px;
 }
 #post-container > main {
@@ -173,6 +184,7 @@ p {
 
 /*top part - writing tweets*/
 #write-post {
+    width: 95%;
     position: absolute;
     top: 50px;
     display: grid;
@@ -182,6 +194,7 @@ p {
 
 #write-post input {
     height: 40px;
+    width: calc(1fr- 100px);
     border: none;
 }
 
@@ -199,18 +212,15 @@ p {
     width: 96%;
     display: grid;
     height: 32px;
-    grid-template-columns: repeat(5, 40px) 1fr 90px;
+    grid-template-columns: repeat(5, 40px) minmax(40px, 1fr) 90px;
 }
 #post-quick-menu > div {
     border: 1px dotted grey;
 }
 
-#post-quick-menu .post-button {
-    position: absolute;
-    right: 5px;
-    width: 87px;
+#post-quick-menu .rounded-container:hover {
+    box-shadow: 2px 2px 5px grey;
 }
-
 /*actual feed*/
 #feed {
     border-top: 10px solid rgba(128, 128, 128, 0.264);
@@ -219,7 +229,7 @@ p {
     height: calc(100vh - 200px);
     overflow: auto;
     position: absolute;
-    top: 200px;
+    top: 170px;
 }
 
 .post {
@@ -307,20 +317,34 @@ p {
 
     body {
         padding: 0;
+        width: 100vw;
+        height: calc(100vh - 20px);
     }
     #main-container {
         margin: 0;
     }
     #post-container {
-        width: 100vw;
+        width: auto;
+        min-width: none;
+        max-width: 1fr;
         overflow-y: auto;
+    }
+    .feed {
+        max-width: 1fr;
+    }
+    .post {
+        width: 100%;
+    }
+
+    .post-content {
+        width: 300px;
     }
 
     #bottom-menu {
         height: 40px;
-        width: 100%;
+        width: 100vw;
         position:fixed;
-        bottom: 0;
+        bottom: 5px;
         content-visibility: visible;
         display: grid;
         grid-template-columns: repeat(8, 1fr);
