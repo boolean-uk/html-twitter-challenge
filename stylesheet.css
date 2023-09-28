@@ -152,8 +152,12 @@ body {
   font-weight: bold;
 }
 
-.tag:hover, .mention:hover {
+.tag:hover, .mention:hover, .handle:hover {
   color: rgb(132, 30, 69);
+}
+
+.timestamp:hover {
+  text-decoration: underline;
 }
 
 .tag:before, .news p::before {
