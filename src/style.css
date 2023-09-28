@@ -36,17 +36,19 @@
 .nav-grid-container {
   display: grid;
   grid-template-rows: repeat(8, 60px);
-  justify-content: center; 
+  justify-content: center;
   align-content: center;
 }
 
-.navigation{
+.navigation {
   text-align: center;
   font-weight: bold;
   font-size: 25px;
   justify-self: center;
   align-self: center;
+  transition: 0.5s;
 }
+
 
 .nav-grid-container nav,
 .tweet {
@@ -55,7 +57,7 @@
   font-weight: bold;
   font-size: 25px;
   justify-self: start;
-  
+
 }
 
 
@@ -65,11 +67,79 @@
 }
 
 
+/* hover effect section */
+.home {
+  color: black;
+  transition: 0.3s;
+}
+
+.explore {
+  color: black;
+  transition: 0.3s;
+}
+
+.notifications {
+  color: black;
+  transition: 0.3s;
+}
+
+.messages {
+  color: black;
+  transition: 0.3s;
+}
+
+.bookmarks {
+  color: black;
+  transition: 0.3s;
+}
+
+.profile {
+  color: black;
+  transition: 0.3s;
+}
+
+.more{
+  color: black;
+  transition: 0.3s;
+}
+
+
+
+.home:hover {
+  color: antiquewhite;
+}
+
+.explore:hover {
+  color: antiquewhite;
+}
+
+.notifications:hover {
+  color: antiquewhite;
+}
+
+.messages:hover {
+  color: antiquewhite;
+}
+
+.bookmarks:hover {
+  color: antiquewhite;
+}
+
+.profile:hover {
+  color: antiquewhite;
+}
+
+.more:hover {
+  color: antiquewhite;
+}
+
+
+
 /*tweet button section*/
 
 .tweet,
-.write-tweet{
-  border:1px solid #97b6e8;
+.write-tweet {
+  border: 1px solid #97b6e8;
   border-radius: 15px;
   background-color: #3a75d4;
   color: aliceblue;
@@ -77,7 +147,7 @@
   justify-self: center;
 }
 
-.write-tweet{
+.write-tweet {
   width: 100px;
   height: 45px;
   border-radius: 30px;
@@ -133,7 +203,7 @@
 
 }
 
-.write-post .circle{
+.write-post .circle {
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -142,16 +212,16 @@
   text-align: center;
   color: white;
   position: absolute;
-top: 100px;
+  top: 100px;
 }
 
-.write-post-contents{
+.write-post-contents {
   text-align: left;
   padding-left: 70px;
-  
+
 }
 
-.write-icons{
+.write-icons {
   display: grid;
   grid-template-columns: repeat(5, 50px);
   margin-top: 50px;
@@ -194,16 +264,16 @@ top: 100px;
   height: 50px;
 }
 
-.post-contents{
-  padding-top:20px ;
+.post-contents {
+  padding-top: 20px;
   padding-left: 75px;
 }
 
-.post-contents span{
+.post-contents span {
   color: rgb(97, 95, 95);
 }
 
-.post-container{
+.post-container {
   display: grid;
   grid-template-columns: repeat(4, 80px);
   padding-top: 70px;
@@ -232,7 +302,7 @@ top: 100px;
   border: 1px solid #97b6e8;
 }
 
-.search{
+.search {
   width: 230px;
   border-radius: 15px;
   padding: 5px;
@@ -241,7 +311,7 @@ top: 100px;
 }
 
 .news,
-.follow{
+.follow {
   text-decoration: underline;
   width: 300px;
   border-radius: 10px;
@@ -257,25 +327,30 @@ top: 100px;
 /* media screen section*/
 @media screen and (max-width: 800px) {
   .nav-bar {
-    display: none;}
-  
-    .right-bar {
-        display: none;}
-  
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-           "main";}
+    display: none;
   }
-  
-  @media screen and (max-width: 1000px) {
-        .right-bar {
-            display: none;}
-  
-        .grid-container {
-            display: grid;
-            grid-template-columns: 300 px 1fr;
-            grid-template-areas:
-               "left main";}
-    }
+
+  .right-bar {
+    display: none;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "main";
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .right-bar {
+    display: none;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 300 px 1fr;
+    grid-template-areas:
+      "left main";
+  }
+}
