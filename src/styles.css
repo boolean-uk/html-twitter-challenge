@@ -19,7 +19,7 @@ body {
     "header      header         header"    50px
     "left-bar    main-bar       right-bar" auto
     "footer      footer         footer"    50px /
-    200px          1fr         1fr;
+    200px        1fr         510px;
 
     /* border: 1px dashed black; */
     padding: 5px;
@@ -40,7 +40,7 @@ body {
     "header-logo home-bar header-icon search-twitter-bar"
     ;
     grid-template-columns: 
-    194px 1fr 50px 395px;
+    167px 480px 50px 500px;
     padding: 5px;
     gap: 5px;
 }
@@ -54,6 +54,7 @@ body {
     width: 25px;
     padding-left: 13px;
     padding-top: 5px;
+    cursor: pointer;
 }
 
 .header-icon-img {
@@ -68,51 +69,49 @@ body {
 }
 
 .home-bar > p {
-    padding-left: 10px;
+    padding-left: 50px;
     padding-top: 7px;
     font-size: 20px;
     padding-right: 10px;
+    cursor: pointer;
    
 }
 
 .header-icon {
     grid-area: header-icon;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 }
 
 .search-twitter-bar {
     grid-area: search-twitter-bar;
-    /* border: 1px dashed black; */
+    /* border: 1px solid silver; */
+    
 
     display: grid;
-    grid-template: "magnifying-logo search-text";
-    grid-template-columns: 50px 1fr;
+    grid-template: " search-text";
+    grid-template-columns: 1fr;
     padding: 5px;
     gap: 5px;
 }
 
-.magnifying-logo {
-    grid-area: magnifying-logo;
-    border: 1px dashed black;
-}
 
-.magnifying-logo-img {
-    width: 17px;
-    padding-left: 14px;
-    padding-top: 5px;
-}
+
 
 .search-text > p{
     font-size: 15px;
-    padding-top: 5px;
-    padding-left: 77px;
+    padding-top: 4px;
+    padding-left: 40px;
     color: grey;
 }
 
 .search-text {
     grid-area: search-text;
-    border: 1px dashed black;
+    border: 1px solid silver;
+    border-radius: 20px;
+
+   
 }
+
 
 /* Left-Bar */
 
@@ -134,6 +133,7 @@ body {
 .left-bar-menu {
     grid-area: left-bar-menu;
     /* border: 2px solid black; */
+  
 
     /* Left menu */
     display: grid;
@@ -496,7 +496,7 @@ body {
 
 .post-container {
     grid-area: post-container;
-    /* border: 1px dashed black; */
+    border-bottom:1px solid silver;
 
     /* Grid  */
     display: grid;
@@ -530,6 +530,7 @@ body {
     width: 30px;
     padding-top: 10px;
     padding-left: 4.5px;
+    cursor: pointer;
   
 }
 
@@ -595,6 +596,7 @@ body {
     width: 20px;
     padding-top: 3px;
     padding-left: 3px;
+    cursor: pointer;
    
 }
 
@@ -609,7 +611,7 @@ body {
     width: 20px;
     padding-top: 3px;
     padding-left: 3px;
-   
+    cursor: pointer;
 }
 
 
@@ -623,6 +625,7 @@ body {
     width: 20px;
     padding-top: 3px;
     padding-left: 3px;
+    cursor: pointer;
    
 }
 
@@ -636,6 +639,7 @@ body {
     width: 20px;
     padding-top: 3px;
     padding-left: 3px;
+    cursor: pointer;
    
 }
 
@@ -652,6 +656,7 @@ body {
     width: 20px;
     padding-top: 3px;
     padding-left: 3px;
+    cursor: pointer;
    
 }
 .empty-space-icon {
@@ -1084,7 +1089,7 @@ color: #26a7de;
 
 .right-bar {
     grid-area: right-bar;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
 
     display: grid;
     grid-template: 
@@ -1092,7 +1097,7 @@ color: #26a7de;
     "whats-happening-right"
     "who-to-follow-right";
     grid-template-rows: 
-    200px 200px;
+    280px 50px;
     padding: 5px;
     gap: 5px;
 }
@@ -1101,46 +1106,44 @@ color: #26a7de;
 
 
 
-.search-twitter-text-right {
-    grid-area: search-twitter-text-right;
-    border: 1px dashed black;
-}
-
-
-.search-twitter-text-right > p{
-    font-size: 15px;
-    padding-top: 9px;
-    padding-left: 6px;
-    color: grey;
-}
 
 .whats-happening-right {
     grid-area: whats-happening-right;
-    border: 1px dashed black;
+    /* border: 1px dashed black;
+     */
+     border-bottom:1px solid silver;
    
 }
 
 .whats-happening-right > p {
-    padding-left: 10px;
-    padding-top: 10px;
+    padding-left: 35px;
+    padding-top: 15px;
+    
+}
+
+
+.trending {
+    color: grey;
+    line-height: 1px;
 }
 
 
 .who-to-follow-right {
     grid-area: who-to-follow-right;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
+    border-bottom:1px solid silver;
 
 }
 
 .who-to-follow-right >p {
-    padding-left: 10px;
-    padding-top: 10px;
+    padding-left: 35px;
+    padding-top: 15px;
 }
 
 
 .footer {
     grid-area: footer;
-    border: 1px dashed black;
+    /* border: 1px dashed black; */
     /* position: fixed;
     bottom: 0; */
     
