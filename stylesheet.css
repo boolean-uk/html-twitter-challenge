@@ -14,7 +14,7 @@ body {
 .container {
   display: grid;
   grid-template-areas: "nav main sidebar";
-  grid-template-columns: minmax(225px, 300px) minmax(min-content, 2fr) minmax(290px, 1fr);
+  grid-template-columns: minmax(225px, 300px) minmax(min-content, 2fr) minmax(350px, 1fr);
 }
 
 /* REMOVE the default formatting of links for the nav bar and side*/
@@ -285,7 +285,7 @@ h2 {
   background-attachment: fixed;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .container {
     grid-template-areas: "nav main";
     grid-template-columns: minmax(225px, 300px) minmax(min-content, 2fr);
@@ -296,14 +296,18 @@ h2 {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   #logo {
     display: none;
   }
-  
+
   .container {
     grid-template-areas: "nav main";
     grid-template-columns: 80px 1fr;
+  }
+  
+  .sidebar {
+    display: none;
   }
 
   .nav ul li {
@@ -312,10 +316,6 @@ h2 {
   }
 
   .nav ul li span {
-    display: none;
-  }
-
-  .sidebar {
     display: none;
   }
 }
