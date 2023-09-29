@@ -17,6 +17,12 @@
   200px       500px              300px;
 }
 
+@media screen and (max-width: 400px) {
+
+}
+
+/* header */
+
 header {
     display: grid;
     grid-area: header;
@@ -30,7 +36,7 @@ header {
     padding-left: 15px;
     border-bottom: solid 0.5px rgb(226, 225, 225);
 }
-
+ /* main-header star symbol/logo */
 .star {
     width: 30px;
     height: 30px;
@@ -44,6 +50,11 @@ header {
     padding-left: 60px;
 }
 
+.change-text {
+    outline: none;
+}
+
+/* sub-header profile logo img */
 .profile-pic {
     width: 40px;
     height: 40px;
@@ -53,6 +64,8 @@ header {
 
 }
 
+
+/* Contains 5 img's and tweet post button */
 .post {
     font-size: 12px;
     color: white;
@@ -76,6 +89,7 @@ header {
     
 }
 
+/* 5 post img's */
 .picture-icon {
     width: 23px;
     height: 23px;
@@ -116,6 +130,7 @@ header {
     top: 167px;
 }
 
+/* Start of the left-tab */
 .left-tab {
     display: grid;
     grid-area: left-tab;
@@ -160,6 +175,7 @@ a:hover {
     margin-bottom: 50px;
 }
 
+/* Blue tweet button */
 .left-tab > .tweet {
     position: absolute;
     color: white;
@@ -175,6 +191,7 @@ a:hover {
     left: 30px;
 }
 
+/* left-tab symbols/img's */
 .twitter-logo {
     width: 30px;
     height: 30px;
@@ -246,13 +263,13 @@ a:hover {
 }
 
 
-@media screen and (max-width: 401px) {
+@media screen and (max-width: 400px) {
     .left-tab{
         display: none;
     }
 }
 
-
+/* Start of the main-content */
 .main-content {
     display: grid;
     grid-area: main-content;
@@ -260,6 +277,15 @@ a:hover {
     grid-template-rows: repeat(4, 150px);
 }
 
+@media screen and (max-width: 700px) and (min-width: 401px){
+   header, .main-content {
+        margin-right: 20px;
+    }
+    .post > button {
+       margin-right: -30px;
+
+    }
+}
 
 .main-content > div {
     padding-top: 10px;
@@ -268,6 +294,7 @@ a:hover {
    
 }
 
+/* This section will contain all the rows of img's from the main-content */
 .content-profile {
     position: absolute;
     width: 35px;
@@ -466,8 +493,10 @@ a:hover {
     top: 799px;
     left: 530px;
 }
+/* End of main-content img's */
 
 
+/* start of right-tab content */
 .right-tab {
     display: grid;
     grid-area: right-tab;
@@ -495,6 +524,7 @@ a:hover {
     border: solid 1px rgb(183, 177, 177);
     background-color: rgb(242, 244, 246);
     border-radius: 50px;
+    outline: none;
 }
 
 .search-icon {
@@ -502,7 +532,7 @@ position: absolute;
 height: 18px;
 width: 18px;
 top: 30px;
-left: 770px;
+left: 790px;
 }
 
 .right-content {
