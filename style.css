@@ -207,6 +207,20 @@ main > h2 {
     /* place-self: start; */
 }
 
+.name > span {
+    font-weight: bold;
+    color: black;
+}
+
+.name {
+    color: lightslategray;
+}
+
+.at > span {
+    color:rgb(173, 27, 27);
+
+}
+
 
 /* Section for styling right side */
 .right {
