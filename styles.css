@@ -87,11 +87,17 @@ grid-column: 1;
 }
 
 .hoz-dots {
-    margin-left: 10px;
+
+    width: 30px;
     place-self: center;
 }
 
-@media screen and (max-width: 900px) {
+.hoz-dots:hover {
+    background-color:rgba(49, 149, 236, 0.328);
+    border-radius: 50px;
+}
+
+@media screen and (max-width: 1300px) {
 
         .container {
         display: grid;
@@ -111,7 +117,7 @@ grid-column: 1;
             position: relative;
             right: 10px;
         }
-        .hoz-dots {
+        .hoz-dots-left {
             display: none;
         }
         .tweet_button {
@@ -136,7 +142,7 @@ grid-column: 1;
 
 .main {
     display: grid;
-    grid-template-rows: 209px 10px /*repeat(auto-fit, 1fr)*/;
+    grid-template-rows: 209px 10px;
     border-left: rgba(128, 128, 128, 0.185) solid 1px;
     border-right: rgba(128, 128, 128, 0.185) solid 1px;
 }
@@ -252,7 +258,6 @@ color: rgba(128, 128, 128, 0.695);
 
 .name-profile-settings img {
     grid-column: 4;
-    padding-right: 10px;
 }
 
 .content p {
@@ -309,8 +314,9 @@ color: rgba(128, 128, 128, 0.695);
 
 .right-menu {
     display: grid;
-    grid-template-rows: 50px auto;
+    grid-template-rows: 50px 2fr 1fr;
     margin-left: 30px;
+    height: fit-content;
 }
 
 /* SEARCH BAR */
@@ -318,7 +324,7 @@ color: rgba(128, 128, 128, 0.695);
 .search-bar {
     display: grid;
     grid-template-columns: 50px 1fr;
-height: 50px;
+    height: 50px;
     background-color: rgba(128, 128, 128, 0.191);
     border-radius: 50px;
     margin-top: 5px;
@@ -341,7 +347,8 @@ height: 50px;
 
 .whats-happening {
     display: grid;
-    grid-template-rows: 50px minmax(50px, auto) minmax(50px, auto) minmax(50px, auto) 50px;
+    grid-template-rows: 50px repeat(3, auto) 50px;
+    height: fit-content;
     background-color: rgba(221, 220, 232, 0.123); 
     border-radius: 20px;
     margin-top: 20px;
@@ -361,6 +368,18 @@ height: 50px;
 }
 
 .hover:hover{
+    background-color: rgba(221, 220, 232, 0.599);
+}
+
+.hover2:hover{
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+    background-color: rgba(221, 220, 232, 0.599);
+}
+
+.hover3:hover{
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
     background-color: rgba(221, 220, 232, 0.599);
 }
 
@@ -389,8 +408,18 @@ height: 50px;
 
 .who-to-follow {
 display: grid;
-grid-template-rows: repeat(auto-fit, minmax(50px, auto));
+grid-template-rows: 50px 1fr 1fr 50px;
 background-color: rgba(221, 220, 232, 0.123);
+height: fit-content;
 border-radius: 20px;
 margin-top: 20px;
+}
+
+.profile-right-menu {
+    display: grid;
+    grid-template-columns: 50px 2fr 1fr;
+}
+
+@media screen and (max-width: 1300px){
+
 }
