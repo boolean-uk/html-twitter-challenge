@@ -272,9 +272,10 @@ a:hover {
 /* Start of the main-content */
 .main-content {
     display: grid;
+    overflow: scroll;
     grid-area: main-content;
     margin-top: 15px;
-    grid-template-rows: repeat(4, 150px);
+    grid-template-rows: repeat(6, 150px);
 }
 
 @media screen and (max-width: 700px) and (min-width: 401px){
@@ -296,202 +297,301 @@ a:hover {
 
 /* This section will contain all the rows of img's from the main-content */
 .content-profile {
-    position: absolute;
+    position: relative;
     width: 35px;
     height: 35px;
-    left: 210px;
-    top: 225px;
+    left: -45px;
+    top: -35px;
 }
 
 
 .message-icon {
-    position: absolute;
+    position: relative;
     width: 20px;
     height: 20px;
-    top: 340px;
+    top: 64px;
 }
 
 .retweet-icon {
-    position: absolute;
+    position: relative;
     width: 20px;
     height: 20px;
-    top: 340px;
-    left: 320px;
+    top: 64px;
+    left: 46px;
 }
 
 .like-icon {
-    position: absolute;
+    position: relative;
     width: 20px;
     height: 20px;
-    top: 340px;
-    left: 390px;
+    top: 64px;
+    left: 80px;
 }
 
 .save-icon {
-    position: absolute;
+    position: relative;
     width: 20px;
     height: 20px;
-    top: 340px;
-    left: 460px;
+    top: 64px;
+    left: 125px;
 }
 
 .tip-icon {
-    position: absolute;
+    position: relative;
     width: 20px;
     height: 20px;
-    top: 340px;
-    left: 530px;
+    top: 64px;
+    left: 180px;
 }
 
 
 .content-profile2 {
-    position: absolute;
+    position: relative;
     width: 35px;
     height: 35px;
-    left: 210px;
-    top: 378px;
+    left: -45px;
+    top: -35px;
 }
 
 
 
 .message-icon2 {
-    position: absolute;
+    position: relative;
     width: 20px;
     height: 20px;
-    top: 492px;
+    top: 63px;
 }
 
 .retweet-icon2 {
-    position: absolute;
+    position: relative;
     width: 20px;
     height: 20px;
-    top: 492px;
-    left: 320px;
+    top: 63px;
+    left: 47px;
     
 }
 
 .like-icon2 {
-    position: absolute;
+    position: relative;
     width: 20px;
     height: 20px;
-    top: 492px;
-    left: 390px;
+    top: 63px;
+    left: 82px;
 }
 
 .save-icon2 {
-    position: absolute;
+    position: relative;
     width: 20px;
     height: 20px;
-    top: 492px;
-    left: 460px;
+    top: 63px;
+    left: 125px;
 }
 
 .tip-icon2 {
-    position: absolute;
+    position: relative;
     width: 20px;
     height: 20px;
-    top: 492px;
-    left: 530px;
+    top: 63px;
+    left: 180px;
 }
 
 
 .content-profile3 {
-     position: absolute;
+     position: relative;
      width: 35px;
      height: 35px;
-     left: 210px;
-     top: 528px;
+     left: -45px;
+     top: -35px;
 }
 
 
 .message-icon3 {
-    position: absolute;
+    position: relative;
     width: 20px;
     height: 20px;
-    top: 645px;
+    top: 64px;
 }
 
 .retweet-icon3 {
-    position: absolute;
+    position: relative;
     width: 20px;
     height: 20px;
-    top: 645px;
-    left: 320px;
+    top: 64px;
+    left: 47px;
     
 }
 
 .like-icon3 {
-    position: absolute;
+    position: relative;
     width: 20px;
     height: 20px;
-    top: 645px;
-    left: 390px;
+    top: 64px;
+    left: 82px;
 }
 
 .save-icon3 {
-    position: absolute;
+    position: relative;
     width: 20px;
     height: 20px;
-    top: 645px;
-    left: 460px;
+    top: 64px;
+    left: 125px;
 }
 
 .tip-icon3 {
-    position: absolute;
+    position: relative;
     width: 20px;
     height: 20px;
-    top: 645px;
-    left: 530px;
+    top: 64px;
+    left: 180px;
 }
 
 
 .content-profile4 {
-    position: absolute;
+    position: relative;
      width: 35px;
      height: 35px;
-     left: 210px;
-     top: 685px;
+     left: -45px;;
+     top: -35px;
 }
 
 
 .message-icon4 {
-    position: absolute;
+    position: relative;
     width: 20px;
     height: 20px;
-    top: 799px;
+    top: 65px;
 }
 
 .retweet-icon4 {
-    position: absolute;
+    position: relative;
     width: 20px;
     height: 20px;
-    top: 799px;
-    left: 320px;
+    top: 65px;
+    left: 47px;
     
 }
 
 .like-icon4 {
-    position: absolute;
+    position: relative;
     width: 20px;
     height: 20px;
-    top: 799px;
-    left: 390px;
+    top: 65px;
+    left: 82px;
 }
 
 .save-icon4 {
-    position: absolute;
+    position: relative;
     width: 20px;
     height: 20px;
-    top: 799px;
-    left: 460px;
+    top: 65px;
+    left: 125px;
 }
 
 .tip-icon4 {
-    position: absolute;
+    position: relative;
     width: 20px;
     height: 20px;
-    top: 799px;
-    left: 530px;
+    top: 65px;
+    left: 180px;
+}
+
+.content-profile5 {
+    position: relative;
+     width: 35px;
+     height: 35px;
+     left: -45px;;
+     top: -35px;
+}
+
+
+.message-icon5 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 65px;
+}
+
+.retweet-icon5 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 65px;
+    left: 47px;
+    
+}
+
+.like-icon5 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 65px;
+    left: 82px;
+}
+
+.save-icon5 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 65px;
+    left: 125px;
+}
+
+.tip-icon5 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 65px;
+    left: 180px;
+}
+
+
+.content-profile6 {
+    position: relative;
+     width: 35px;
+     height: 35px;
+     left: -45px;;
+     top: -35px;
+}
+
+
+.message-icon6 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 66px;
+}
+
+.retweet-icon6 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 66px;
+    left: 47px;
+    
+}
+
+.like-icon6 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 66px;
+    left: 82px;
+}
+
+.save-icon6 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 66px;
+    left: 125px;
+}
+
+.tip-icon6 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 66px;
+    left: 180px;
 }
 /* End of main-content img's */
 
