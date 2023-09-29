@@ -600,7 +600,7 @@ footer.right .search-container {
   }
 
   .left .v-icon {
-    position: absolute;
+    position: fixed;
     bottom: calc(100vh - 40px);
   }
 
