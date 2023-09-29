@@ -184,8 +184,6 @@
 .main-content {
     display: grid;
     grid-template-rows: 100px 110px 1fr;
-    border-left: solid 1px var(--border-color);
-    border-right: solid 1px var(--border-color);
 }
 
 /* HOME */
@@ -194,6 +192,8 @@
     grid-template-rows: 50px 40px;
     padding: 10px;
     border-bottom: solid 1px var(--border-color);
+    border-left: solid 1px var(--border-color);
+    border-right: solid 1px var(--border-color);
 }
 
 .home-heading {
@@ -224,6 +224,8 @@
     grid-template-rows: repeat(2, 1fr);
     padding: 15px 15px 10px 15px;
     border-bottom: solid 1px var(--border-color);
+    border-left: solid 1px var(--border-color);
+    border-right: solid 1px var(--border-color);
 }
 
 .post-content {
@@ -294,9 +296,6 @@
 /* MAIN FEED */
 
 /* GENERIC POST ADJUSTMENTS */
-.main-feed {
-    /* overflow-y: scroll; */
-}
 
 .main-feed > div {
     display: grid;
@@ -304,6 +303,9 @@
     grid-auto-rows: auto;
     padding: 15px 15px;
     border-bottom: solid 1px var(--border-color);
+    border-left: solid  1px var(--border-color);
+    border-right: solid  1px var(--border-color);
+
 }
 
 .user-photo-image {
@@ -352,8 +354,8 @@
 
 .feed-tweet-actions {
     display: grid;
-    grid-template-columns: 1fr 20px;
-    gap: 40px;
+    grid-template-columns: 1fr 30px;
+    gap: 30px;
     align-items: center;
 }
 
@@ -362,27 +364,128 @@
     grid-template-columns: repeat(4, 1fr);
 }
 
-.direct-tweet-reaction > div {
+.direct-tweet-reaction > a {
     display: grid;
-    grid-template-columns: 20px auto;
+    grid-template-columns: 30px auto;
     align-items: center;
 }
 
-.direct-tweet-reaction > div > div {
+.direct-tweet-reaction > a > div {
+    display: grid;
+    align-items: center;
     color: gray;
     font-size: 12px;
+    width: fit-content;
 }
 
-.direct-tweet-reaction > div > img {
-    width: 18px;
+.direct-tweet-reaction > a > div > img {
+    width: 30px;
+    padding: 4px;
+    border-radius: 30px;
 }
 
-.direct-tweet-reaction > div > .reply {
-    width: 15px;
+/* REPLY REACTIONS */
+.reply-reactions {
+    text-decoration: none;
 }
 
-.direct-tweet-reaction > div > .views {
-    width: 15px;
+.reply-reactions:hover .reply {
+    filter: invert(41%) sepia(46%) saturate(2810%) hue-rotate(195deg) brightness(103%) contrast(102%);
+}
+
+.reply-reactions:hover > div:nth-of-type(1) {
+    border-radius: 30px;
+    background-color: rgba(30, 143, 255, 0.274);
+}
+
+.reply-reactions:hover > .reply-count {
+    color: dodgerblue;
+}
+
+/* REPOST REACTIONS */
+.repost-reaction {
+    text-decoration: none;
+}
+
+.repost-reaction:hover .repost {
+    filter: invert(46%) sepia(89%) saturate(1171%) hue-rotate(88deg) brightness(94%) contrast(101%);
+}
+
+.repost-reaction:hover > div:nth-of-type(1) {
+    border-radius: 30px;
+    background-color: #02a01445;
+}
+
+.repost-reaction:hover .repost-count {
+    color: #03ba18;
+}
+
+/* LIKE REACTIONS */
+.like-reaction {
+    text-decoration: none;
+}
+
+.like-reaction:hover .like {
+    filter: invert(20%) sepia(62%) saturate(7458%) hue-rotate(318deg) brightness(85%) contrast(100%);
+}
+
+.like-reaction:hover > div:nth-of-type(1) {
+    border-radius: 30px;
+    background-color: #d80b7834;
+}
+
+.like-reaction:hover > .like-count {
+    color: #d80b78;
+}
+
+/* VIEW REACTIONS */
+.views-reaction {
+    text-decoration: none;
+}
+
+.views-reaction:hover .views {
+    filter: invert(41%) sepia(46%) saturate(2810%) hue-rotate(195deg) brightness(103%) contrast(102%);
+}
+
+.views-reaction:hover > div:nth-of-type(1) {
+    border-radius: 30px;
+    background-color: rgba(30, 143, 255, 0.274);
+}
+
+.views-reaction:hover > .view-count {
+    color: dodgerblue;
+}
+
+/* SHARE REACTIONS */
+
+.share {
+    display: grid;
+    align-items: center;
+    justify-self: start;
+    width: 22px;
+}
+
+.share-image-bg {
+    width: fit-content;
+    padding: 4px;
+}
+
+.share-reaction:hover .share {
+    filter: invert(41%) sepia(46%) saturate(2810%) hue-rotate(195deg) brightness(103%) contrast(102%);
+}
+
+.share-reaction:hover > div {
+    border-radius: 30px;
+    background-color: rgba(30, 143, 255, 0.274);
+}
+
+/* OTHER ICON ADJUSTMENTS */
+.direct-tweet-reaction > a > div > .reply {
+    width: 28px;
+}
+
+.direct-tweet-reaction > a> div > .views {
+    width: 27px;
 }
 
 /* SPECIFIC POST ADJUSTMENTS */
@@ -429,12 +532,13 @@
     position: fixed;
     top: 0;
     z-index: 1;
-    padding: 10px 20px 10px 0;
+    padding: 10px 20px 5px 0;
     width: 350px;
 }
 
 .search {
     display: grid;
+    gap: 10px;
     grid-template-columns: 20px 1fr;
     padding: 10px 0;
     align-self: center;
@@ -443,6 +547,19 @@
     background-color: var(--box-background-color);
     border-radius: 25px;
     padding-left: 10px;
+    text-decoration: none;
+}
+
+.search:hover {
+    border: solid 1px dodgerblue;
+}
+
+.search:hover > .search-icon {
+    filter: invert(41%) sepia(46%) saturate(2810%) hue-rotate(195deg) brightness(103%) contrast(102%);
+}
+
+.search:hover > .search-text {
+    color: dodgerblue;
 }
 
 .search-icon > img {
@@ -612,7 +729,6 @@
 .follow-suggestions {
     display: grid;
     grid-template-rows: repeat(3, auto);
-    padding: 0 15px 15px 15px;
 }
 
 .follow-user {
@@ -620,6 +736,12 @@
     grid-template-columns: 50px 1fr 80px;
     padding: 10px 0;
     align-items: center;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.follow-user:hover {
+    background-color: var(--hover-bg-color);
 }
 
 .follow-user-photo {
@@ -641,14 +763,16 @@
     color: gray;
 }
 
-.follow-button {
-    display: grid;
-    justify-items: center;
+.follow-link {
     background-color: white;
-    border-radius: 30px;
+    width: 80px;
+    border: 0;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-align: center;
 }
 
-.follow-button:hover {
+.follow-link:hover {
     background-color: rgba(39, 145, 251, 0.847);
     color: white;
 }
@@ -665,16 +789,17 @@
     color: rgb(197, 196, 196);
 }
 
-.friends {
+/* MESSAGES */
+.messages {
    display: grid;
     justify-items: end;
     position: fixed;
     bottom: 0;
-    width: 500px;
+    width: 450px;
     height: 50px;
 }
 
-.friends-link {
+.messages-link {
     display: grid;
     align-items: center;
 
@@ -683,20 +808,20 @@
     box-shadow: 0 0 6px 2px rgba(255, 255, 255, 0.626);
     text-decoration: none;
 
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 }
 
-.friends-grid {
+.messages-grid {
     display: grid;
     grid-template-columns: 1fr repeat(2, 30px);
 }
 
-.friends-grid > img {
+.messages-grid > img {
     width: 20px;
 }
 
-.friends-text {
+.messages-text {
     font-size: 20px;
     font-weight: bold;
     padding-left: 20px;
