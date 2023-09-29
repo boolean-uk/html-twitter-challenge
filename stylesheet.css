@@ -17,6 +17,13 @@ body {
   grid-template-columns: minmax(225px, 300px) minmax(min-content, 2fr) minmax(290px, 1fr);
 }
 
+/* REMOVE the default formatting of links for the nav bar and side*/
+
+.nav a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .nav {
   grid-area: "nav";
   font-weight: bold;
@@ -40,7 +47,7 @@ body {
   list-style-type: none;
 }
 
-.nav ul li > img + span {
+.nav ul li img + span {
   margin-left: 10px;
 }
 
@@ -186,6 +193,8 @@ body {
   overflow-x: none;
   overflow-y: scroll;
 }
+
+.main::-webkit-scrollbar { display: none; }
 
 .sidebar {
   grid-area: "sidebar";
