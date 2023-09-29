@@ -1,0 +1,362 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: #000000;
+}
+
+a:hover {
+    transition: 0.5s;
+    color: deepskyblue;
+}
+
+b {
+    font-weight: bold;
+    color: black;
+}
+
+input {
+    cursor: text;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #e7e7e7;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    text-align: center;
+    font-size: 25px;
+    width: 400px;
+    padding: 30px 50px;
+    margin: 30px 0;
+    border-radius: 50px;
+    background-color: deepskyblue;
+    color: white;
+}
+
+button:hover {
+    transition: 0.5s;
+    background-color: rgb(0, 97, 136);
+}
+
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.left-nav {
+    display: grid;
+    grid-template-rows: 100px 900px 100px;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 0 20px;
+}
+
+@media screen and (max-width: 1400px) {
+    .left-nav .item > a {
+        display: none;}
+    .tweet-btn {
+        display: none;
+    }
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+}
+
+.nav {
+    display: grid;
+    gap: 10px;
+    align-content: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 30%;
+}
+
+.nav .item {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.profile {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.pfp {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    justify-content: center;
+}
+
+.profile-info {
+    display: grid;
+    grid-template-rows: max-content max-content;
+}
+
+.profile-info h4 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.profile-info p {
+    font-size: 15px;
+    color: gray;
+}
+
+
+.main-body {
+    grid-area: 1 / 2 / 3 / 3;
+    display: grid;
+    grid-template-rows: 300px 1fr;
+    row-gap: 30px;
+    border-left: solid 1px gray;
+    border-right: solid 1px gray;
+}
+
+.main-body-header {
+    position: sticky;
+    top: 0;
+    display: grid;
+    grid-template-rows: repeat(3, 100px);
+    align-items: center;
+    border-bottom: solid 1px gray;
+    background-color: white;
+    filter: drop-shadow(0px 5px 5px rgb(182, 182, 182));
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: solid 1px gray;
+    padding-left: 20px;
+}
+
+.tweet-box {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    column-gap: 20px;
+    align-items: center;
+    font-size: 30px;
+    color: gray;
+    padding: 0 20px;
+}
+
+.upload-icons {
+    display: inline-flex;
+    align-items: center;
+    padding-left: 100px;
+    padding-right: 20px;
+}
+
+.upload-icons .logo {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+.upload-icons .logo:hover {
+    padding: 5px;
+    border-radius: 50%;
+    background-color: rgb(207, 207, 207);
+    transition: 0.5s;
+}
+
+.tweet {
+    margin-left: 400px;
+}
+
+.tweet button {
+    width: 130px;
+    height: 50px;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.tweet button:hover {
+    transition: 0.5s;
+    background-color: rgb(0, 97, 136);
+}
+
+.main-feed {
+    display: grid;
+    grid-template-rows: repeat(3, max-content);
+    grid-auto-rows: minmax(100px, auto);
+    background-color: white;
+}
+
+.post {
+    height: max-content;
+    padding: 20px;
+    border-bottom: solid 1px gray;
+}
+
+.tweet-icons {
+    display: inline-flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: space-evenly;
+    padding-top: 10px;
+    padding-left: 100px;
+    padding-right: 20px;
+}
+
+.tweet-icons .logo {
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+}
+
+.feed {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    column-gap: 20px;
+    align-items: center;
+    font-size: 25px;
+    color: gray;
+    padding: 0 20px;
+}
+
+.feed .pfp {
+    grid-area: 1 / 1 / 3 / 2;
+}
+
+.feed > .lower {
+    grid-area: 2 / 2 / 3 / 3;
+    font-size: 20px;
+    color: black;
+}
+
+.right-nav {
+    display: grid;
+    grid-template-rows: 100px 500px 500px;
+    grid-template-columns: 400px;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+    padding: 20px;
+    background-color: white;
+}
+
+@media screen and (max-width: 1900px) {
+    .right-nav {
+        width: 200px;} 
+}
+
+@media screen and (max-width: 1400px) {
+    .right-nav {
+        display: none;}
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    column-gap: 20px;
+    align-items: center;
+    font-size: 15px;
+    background-color: rgb(235, 235, 235);
+    border-radius: 50px;
+    height: min-content;
+    color: gray;
+}
+
+@media screen and (max-width: 1900px) {
+    .search {
+        width: 150px;} 
+    .search > h2 {
+        display: none;}
+}
+
+.trends {
+    display: grid;
+    grid-template-rows: min-content repeat(4, 100px);
+    font-size: 20px;
+    padding: 25px;
+    background-color: rgb(235, 235, 235);
+    border-radius: 50px;
+}
+
+.trend {
+    border-bottom: solid 1px gray;
+    padding: 10px;
+}
+
+.trends > h1 {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: solid 1px gray;
+}
+
+.trend > h3, p {
+    color: gray;
+    font-weight: lighter;
+}
+
+@media screen and (max-width: 1900px) {
+    .trends {
+        width: 150px;} 
+    .trend {
+        display: none;}
+}
+
+.who-to-follow {
+    display: grid;
+    grid-template-rows: 100px min-content;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+    border-radius: 50px;
+    padding: 25px;
+}
+
+.who-to-follow > h2 {
+    font-size: 30px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    border-bottom: solid 1px gray;
+}
+
+.followers {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    column-gap: 20px;
+    row-gap: 15px;
+    align-items: center;
+    padding-left: 20px;
+}
+
+@media screen and (max-width: 1900px) {
+    .who-to-follow {
+        width: 150px;} 
+    .who-to-follow > h2 {
+        visibility: hidden;}  
+    .followers .profile-info {
+        visibility: hidden;}
+}
+
