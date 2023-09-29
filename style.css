@@ -664,3 +664,40 @@
 .follow-link:hover {
     color: rgb(197, 196, 196);
 }
+
+.friends {
+   display: grid;
+    justify-items: end;
+    position: fixed;
+    bottom: 0;
+    width: 500px;
+    height: 50px;
+}
+
+.friends-link {
+    display: grid;
+    align-items: center;
+
+    width: 400px;
+    background-color: black;
+    box-shadow: 0 0 6px 2px rgba(255, 255, 255, 0.626);
+    text-decoration: none;
+
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+.friends-grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 30px);
+}
+
+.friends-grid > img {
+    width: 20px;
+}
+
+.friends-text {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 20px;
+}
