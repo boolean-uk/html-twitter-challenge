@@ -9,7 +9,6 @@ body {
   padding: 0;
   background: rgb(255, 239, 245);
   height: 100vh;
-  min-width: 600px;
 }
 
 .container {
@@ -139,7 +138,6 @@ body {
 }
 
 .tweet .content {
-  word-wrap: break-word;
 }
 
 .tweet:hover {
@@ -261,14 +259,15 @@ h2 {
   border-radius: 5px;
   object-fit: fill;
   overflow: hidden;
-  max-height: 400px;
-  place-content: center;
+  display: grid;
+  grid-gap: 3px;
   place-items: center;
 }
 
 .embeddedMedia > img {
-  width: 90%;
-  object-fit: fill;
+  place-content: center;
+  object-fit: cover;
+  max-width: 100%;
 }
 
 .icon {
