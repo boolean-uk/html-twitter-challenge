@@ -451,7 +451,6 @@ footer.right .search-container {
 }
 
 .search {
-  /* TODO: sticky not staying at top */
   grid-template-columns: auto 1fr;
   padding: 0 0.5rem;
   background-color: #111;
@@ -580,7 +579,6 @@ footer.right .search-container {
     grid-template-rows: 1fr 60px;
   }
 
-  
   /* TODO: scrollbar is cutting off the feed border */
   main.grid {
     overflow-y: scroll;
