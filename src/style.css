@@ -339,7 +339,7 @@ p {
     border-radius: 5px;
     position: fixed;
     bottom: 10px;
-    right: 5px;
+    right: 10px;
     border: 1px solid rgba(128, 128, 128, 0.264);
     height: 30px;
     background-color: white;
@@ -359,11 +359,17 @@ p {
     width: 190px;
 }
 
-#message-box:hover {
-    width: 200px;
+#message-box:hover{
+    width: 300px;
+    background-color: rgba(255, 166, 0);
 }
 
-#message-box:hover #inbox {
+#message-box:hover > h2 {
+    color: white;
+    background-color: rgba(255, 166, 0);
+}
+
+#message-box:focus #inbox {
     
     /*behavior*/
     overflow: scroll;
@@ -378,9 +384,11 @@ p {
 
     /*dimensions*/
     height: 200px;
+    width: 300px;
     padding: 5px;
     position: fixed;
-    bottom: 2px;  
+    bottom: 10px;  
+    right: 10px;
 }
 
 
@@ -405,6 +413,11 @@ p {
         padding: 0;
         margin: 0;
         width: 0;
+        content-visibility: hidden;
+    }
+
+    #message-box {
+        visibility: hidden;
         content-visibility: hidden;
     }
 
@@ -444,4 +457,42 @@ p {
         place-items: center;
         background-color: white;
     }
+
+    #phone-select-more .icon {
+        pointer-events: none;
+    }  
+
+    #phone-select-more {
+        height: 100%;
+        width: 100%;
+        padding-top: 12px;
+    }
+
+    #phone-select-more > div {
+        visibility: hidden;
+    }
+
+
+
+    #phone-select-more:focus {
+        background-color: rgba(255, 147, 24, 0.604);
+        box-shadow: 2px 2px 8px grey;
+        border-radius: 20px;
+        height: 400px;
+        padding: 5px;
+        width: 60px;
+        position: fixed;
+        bottom: 10px;
+        right: 20px;
+        display: grid;
+        grid-template-rows: repeat(auto, 1fr);
+        gap: 10%;
+        place-content: center;
+    }
+
+    #phone-select-more:focus div {
+        visibility: visible;
+    }
+
+
 }
