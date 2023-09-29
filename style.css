@@ -6,6 +6,7 @@
     font-family: sans-serif;
     color: rgb(219, 219, 219);
     max-height: 100vh;
+    scroll-behavior: smooth;
 }
 
 
@@ -175,15 +176,27 @@
 /* MAIN */
 .main {
     display: grid;
-    grid-template-columns: 600px 350px 1fr;
+    grid-template-columns: 550px 350px 1fr;
+    grid-template-areas: "main-body right-menu .";
     gap: 20px;
     overflow-y: scroll;
 }
 
 /* MAIN CONTENT */
+
+.hide-scroll {
+    overflow: hidden;
+}
+
 .main-content {
     display: grid;
+    grid-area: main-body;
     grid-template-rows: 100px 110px 1fr;
+    overflow-y: scroll;
+    margin-right: 100%;
+    padding-right: 100%;
+    position: fixed;
+    bottom: 0;
 }
 
 /* HOME */
@@ -226,6 +239,10 @@
     border-bottom: solid 1px var(--border-color);
     border-left: solid 1px var(--border-color);
     border-right: solid 1px var(--border-color);
+
+    position: sticky;
+    top: 0;
+    background-color: black;
 }
 
 .post-content {
@@ -305,7 +322,6 @@
     border-bottom: solid 1px var(--border-color);
     border-left: solid  1px var(--border-color);
     border-right: solid  1px var(--border-color);
-
 }
 
 .user-photo-image {
@@ -511,18 +527,18 @@
 
 .right-menu {
     display: grid;
+    grid-area: right-menu;
     grid-template-rows: 50px 1fr;
     gap: 10px;
     padding: 10px;
-    padding-top: 80px;
 }
 
 .right-menu-stop-scroll {
     display: grid;
-    grid-template-rows:110px 530px auto 80px;
+    grid-template-rows:110px 530px 450px 80px;
     gap: 10px;
-    position: sticky;
-    top: -10%;
+    height: fit-content;
+    padding-top: 60px;
     z-index: 0;
 }
 
@@ -713,9 +729,10 @@
     font-size: 15px;
 }
 
+/* WHO TO FOLLOW */
 .who-to-follow {
     display: grid;
-    grid-template-rows: 50px 1fr 50px;
+    grid-template-rows: 50px 200px 50px;
     background-color: var(--box-background-color);
     border-radius: 20px;
 }
