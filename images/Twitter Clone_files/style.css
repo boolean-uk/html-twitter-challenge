@@ -18,7 +18,7 @@
 .nav{
     display: grid;
     padding: 10px;
-
+    
 }
 
 /*   .nav-icons{
@@ -34,11 +34,11 @@
     padding: 15px;
     margin-bottom: 10px;
 }  
-/* .nav-icons:hover{
+.nav-icons:hover{
     background-color:rgb(59, 143, 228);
     cursor: pointer;
 }
-  */
+ 
 .nav-icons > p{
     font-family: sans-serif;
     font-weight: bold;
@@ -46,15 +46,7 @@
 }
 
 .nav-icons:first-of-type{
-    display: inline-block;
-
-}
-
-.nav-icons:first-of-type > i:last-of-type{
-    font-size: 1.5rem;
-    margin-left: 100px;
-    color: black;
-    cursor: pointer;
+    padding-top: 0;
 }
 
 .nav-icons:nth-of-type(1), .nav-icons:nth-of-type(2){
@@ -202,7 +194,6 @@
     }
     .tweet-box .tweet-header >i {
         justify-self: end;
-     
     }
     .tweet-box .tweet{
         display: grid;
@@ -233,8 +224,6 @@
     .tweet .tweet-heading > i{
         justify-self: end;
         color: rgb(128, 128, 128);
-      
-        align-self: center;
     }
 
 
