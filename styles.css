@@ -334,7 +334,7 @@ color: rgba(128, 128, 128, 0.695);
 
 .whats-happening {
     display: grid;
-    grid-template-rows:   50px repeat(auto-fit, 1fr) 50px;
+    grid-template-rows:   50px repeat(auto-fit, 1fr) 50px; /* NEED TO FIX */
     height: 50%;
     background-color: rgba(221, 220, 232, 0.123); 
     border-radius: 20px;
