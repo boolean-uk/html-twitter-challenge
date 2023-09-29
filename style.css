@@ -390,7 +390,6 @@ main.grid {
 
 .feed-attachment {
   background-color: var(--bg-color);
-  /* background-color: red; */
   box-shadow: 1px 1px 2px var(--accent-opc);
   height: 180px;
 
@@ -479,6 +478,10 @@ footer.right .search-container {
 .whats-happening li {
   grid-template-columns: 1fr auto;
   padding: 0 1rem;
+}
+
+.whats-happening img {
+  align-self: center;
 }
 
 .whats-happening .live img {
@@ -647,6 +650,15 @@ footer.right .search-container {
   .calendar {
     display: none;
   }
+
+  .feed-header {
+  grid-template-columns: 60px 1fr auto;
+  }
+
+  .feed-header .user-name {
+    word-break: break-all;
+  }
+
 }
 
 @media screen and (max-width: 300px) {
