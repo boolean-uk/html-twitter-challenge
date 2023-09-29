@@ -83,6 +83,7 @@ input{
     place-self: end;
 }
 .btn {
+    height: fit-content;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 15px;
@@ -203,8 +204,8 @@ span {
     .description{
         display: none;
     }
-    .left-side {
-        grid-auto-columns: 50px;    
+    .left-side > img {
+        grid-column: 1/3;
     }
 }
 
