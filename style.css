@@ -580,12 +580,10 @@ footer.right .search-container {
     grid-template-rows: 1fr 60px;
   }
 
+  
+  /* TODO: scrollbar is cutting off the feed border */
   main.grid {
     overflow-y: scroll;
-
-    scrollbar-width: thin;
-    scrollbar-color: white black;
-    scrollbar-gutter: stable both-edges;
   }
 
   .left.menu {
