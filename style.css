@@ -135,8 +135,8 @@ p {
   top: 0;
 }
 
-.pos-abs {
-  position: absolute;
+.pos-fix {
+  position: fixed;
 }
 
 .pos-static {
@@ -159,6 +159,8 @@ p {
 }
 
 /* || Scroll Bar || */
+
+/* TODO: Firefox and chrome deal with scrollbars differently gosh darn :( */
 
 ::-webkit-scrollbar {
   background-color: var(--bg-color);
@@ -212,13 +214,7 @@ p {
   overflow-y: scroll;
   align-content: start;
 
-  /* TODO: Firefox scrollbars are messing with Chrome patchwork, to fix. */
-
-  scrollbar-width: thin;
-  scrollbar-color: white black;
-  scrollbar-gutter: stable both-edges;
-
-  background-color: var(--issues);
+  /* background-color: var(--issues); */
 }
 
 .no-scroll {
@@ -439,12 +435,6 @@ footer.right {
 
   font-size: 0.8rem;
   padding-top: 0;
-
-  overflow-y: scroll;
-
-  scrollbar-width: thin;
-  scrollbar-color: white black;
-  scrollbar-gutter: stable both-edges;
 }
 
 footer.right .li-detail {
@@ -456,11 +446,17 @@ footer.right .search-container {
   background: linear-gradient(var(--bg-color) 60%, #00000000 40%);
 }
 
+.search-container {
+  top: 0px;
+}
+
 .search {
   /* TODO: sticky not staying at top */
   grid-template-columns: auto 1fr;
   padding: 0 0.5rem;
   background-color: #111;
+
+  width: 284px;
 }
 
 .search:focus-within {
@@ -494,6 +490,22 @@ footer.right .search-container {
 
 .right li.grid {
   padding: 0.5rem 1rem;
+}
+
+.legal-stuff {
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2px;
+}
+
+.legal-stuff a {
+  font-size: 0.6rem;
+  color: #888;
+
+  text-decoration: none;
+}
+
+.legal-stuff a:hover {
+  text-decoration: underline;
 }
 
 /* ======== media & container queries ======== */
@@ -534,6 +546,10 @@ footer.right .search-container {
   .container {
     grid-template-columns: auto 400px 250px;
   }
+
+  .search {
+    width: 234px;
+  }
 }
 
 @media screen and (max-width: 740px) {
@@ -553,11 +569,10 @@ footer.right .search-container {
 }
 
 @media screen and (max-width: 480px) {
-
   .container {
     grid-template-areas:
-    "main"
-    "header";
+      "main"
+      "header";
 
     height: 100vh;
 
@@ -611,7 +626,7 @@ footer.right .search-container {
     height: 24px;
   }
 
-  .left .menu-list > :nth-child(n+5) {
+  .left .menu-list > :nth-child(n + 5) {
     display: none;
   }
 
@@ -629,7 +644,6 @@ footer.right .search-container {
 
     box-shadow: 0 0 5px white;
   }
-
 }
 
 @media screen and (max-width: 420px) {
