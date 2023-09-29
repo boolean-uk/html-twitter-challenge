@@ -184,6 +184,10 @@ body {
   padding: 0;
 }
 
+.main__content .main__tweet .tweet__one .first__column span p {
+  color: brown;
+}
+
 .main__content .main__tweet .tweet__one .first__column a.manu,
 h4 {
   color: red;
@@ -191,8 +195,8 @@ h4 {
   text-decoration: none;
 }
 
-.main__content .main__tweet .tweet__one img.blue-logo {
-  width: 15px;
+.first__column span p {
+  padding-left: 50px;
 }
 
 .main__content .main__tweet .tweet__one .first__column p {
@@ -305,4 +309,155 @@ h4 {
   grid-template-rows: 35px auto 40px;
   position: relative;
   border-top: 1px lightgray solid;
+}
+
+.main__content .main__tweet .tweet__three img.profile__three {
+  border-radius: 50%;
+  width: 50px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+
+.main__content .main__tweet .tweet__three .first__column {
+  padding-left: 80px;
+  display: grid;
+  margin: 0;
+  grid-template-columns: 50px 40px;
+  align-items: center;
+  padding: 0;
+}
+
+.main__content .main__tweet .tweet__three .first__column a.me,
+h4 {
+  color: black;
+  margin: 0;
+  text-decoration: none;
+  font-size: 17px;
+  padding-right: 0;
+}
+
+.main__content .main__tweet .tweet__three .first__column p {
+  font-size: 15px;
+  margin-top: 15px;
+  margin-right: 3rem;
+  color: gray;
+}
+
+/* THIRD COLUMN */
+.main__content .main__tweet .tweet__three .com__tag {
+  display: inline;
+  margin: 10px;
+}
+
+.main__content .main__tweet .tweet__three .com__tag a {
+  color: black;
+  text-decoration: none;
+}
+
+.main__content .main__tweet .tweet__three .com__tag a svg {
+  padding: 60px;
+  width: 20px;
+  padding-top: 0;
+}
+
+/* RIGHT MENU*/
+.right__menu {
+  grid-area: right__menu;
+  display: grid;
+  gap: 10px;
+  background-color: white;
+  grid-template-rows: 50px 500px;
+}
+
+/* RIGHT MENU - SEARCH BAR*/
+.right__menu .search__bar {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  font-size: 15px;
+  background-color: rgb(241, 238, 238);
+  border-radius: 20px;
+  color: grey;
+  position: relative;
+}
+
+.right__menu .search__bar svg {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+/* RIGHT MENU - NEWS*/
+.right__menu .news {
+  display: grid;
+  grid-template-rows: 50px 100px 70px 70px 70px 50px;
+  background-color: rgb(245, 245, 245);
+  border-radius: 10px;
+  gap: 15px;
+}
+
+.right__menu .news .title {
+  display: grid;
+  font-weight: bolder;
+  font-size: 15px;
+  justify-content: flex-start;
+  align-content: center;
+  padding-left: 5px;
+}
+
+.right__menu .news .news__one,
+.news__two,
+.news__three,
+.news__four,
+.show__more {
+  display: grid;
+}
+.right__menu .news .news__one span {
+  color: red;
+}
+
+.right__menu .news .news__one:hover,
+.right__menu .news .news__two:hover,
+.right__menu .news .news__three:hover,
+.right__menu .news .news__four:hover,
+.right__menu .news .show__more a:hover {
+  background-color: rgb(229, 226, 226);
+}
+.right__menu .news .news__one p,
+.right__menu .news .news__two p,
+.right__menu .news .news__three p,
+.right__menu .news .news__four p {
+  margin: 0;
+  font-size: 12px;
+  color: gray;
+  padding-left: 10px;
+  text-decoration: none;
+}
+.right__menu .news .news__one h5,
+.right__menu .news .news__two h5,
+.right__menu .news .news__three h5,
+.right__menu .news .news__four h5 {
+  margin: 0;
+  padding: 0px;
+  padding-left: 10px;
+  text-decoration: none;
+}
+.right__menu .news .news__one a,
+.right__menu .news .news__two a,
+.right__menu .news .news__three a,
+.right__menu .news .news__four a {
+  text-decoration: none;
+  color: black;
+}
+.right__menu .news .show__more {
+  align-content: center;
+}
+
+.right__menu .news .show__more a {
+  color: rgb(94, 147, 221);
+  padding: 20px;
+  padding-left: 10px;
+  font-size: 15px;
+  text-decoration: none;
 }
