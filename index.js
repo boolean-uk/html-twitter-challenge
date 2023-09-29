@@ -71,7 +71,7 @@ navBar.addEventListener('click', function() {
 
         for (let i = 0; i < navIconText.length; i++) {
             if (navIconText[i].style.display === 'block' || navIconText[i].style.display === '') {
-                navIconText[i].style.display = 'none'; // Or set to any other desired value
+                navIconText[i].style.display = 'none'; 
             } else {
                 navIconText[i].style.display = 'block';
             }
