@@ -1,0 +1,140 @@
+
+.container {
+    display: grid;
+    height: 100vh;
+    margin: 5px;
+    border: solid 1px white;
+    border-radius: 30px;
+    /* background-color: pink; */
+
+
+    grid-template: 
+    "header                header               header" 50px
+    "left-side            main-side            right-side" minmax(400px, 1fr) /
+    /* "footer                footer               footer" 50px / */
+      200px                  1fr                     250px;
+}
+
+
+.header {
+    grid-area: header;
+    border: solid 1px white;
+    background-color: white;
+}
+
+.left-grid {
+    display: inline-block;
+    grid-area: left-side;
+    border: solid 1px lightskyblue;
+    background-color: white;
+}
+
+.main-grid {
+    display: grid;
+    grid-area: main-side;
+    border: solid 1px lightskyblue;
+
+
+    grid-template: 
+    "home            home               home" 200px
+    "main             main               main"  1fr;
+
+    gap: 10px;
+}
+
+.main-grid > div:nth-of-type(1) {
+    grid-area: home;
+    border: solid 2px lightskyblue;
+    background-color: white;
+}
+
+.main-grid > div:nth-of-type(2) {
+    grid-area: main;
+    border: solid 2px lightskyblue;
+    background-color: white;
+}
+
+.main-grid > .second-main > div  {
+    border: solid 1px lightskyblue;
+}
+
+.right-grid {
+    grid-area: right-side;
+    border: solid 1px lightskyblue;
+    background-color: white;
+}
+
+.image {
+    margin: 10px;
+    margin-left: 40px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    /* text-align: center; */
+    color: red;
+}
+
+
+
+.more {
+    background-color: lightskyblue;
+    border-radius: 20px;
+    padding: 15px;
+    margin-top: 15px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+}
+
+div > b {
+    position: relative;
+    bottom: 25px;
+    left: 0px;
+}
+
+
+.image-main {
+    margin: 5px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    /* text-align: center; */
+    color: red;
+}
+
+.home {
+    color: lightskyblue;
+}
+
+.right-grid p {
+    background-color: lightskyblue;
+
+    padding:25px;
+    border: solid 1px lightskyblue;
+
+    margin-left: 15px;
+    margin-right: 15px;
+    border-radius: 30px;
+    margin-top: 0;
+}
+
+.right-grid > .search_bar {
+    background-color: lightskyblue;
+    border-radius: 30px;
+    border: lightskyblue;
+
+    padding: 10px;
+    margin-top: 10px;
+
+}
+
+
+.user-Names {
+    position: relative;
+    bottom: 20px;
+    left: 0;
+}
+
+.comment {
+    color: lightskyblue;
+}
