@@ -21,20 +21,19 @@
     
 }
 
-
-/* .nav-icons{
+/*   .nav-icons{
     display: grid;
     grid-auto-flow: column;
     column-gap: 20px;
-    background-color: cornflowerblue;
-} */
-
-.nav-icons{
+   
+}  */
+ 
+ .nav-icons{
     display: flex;
     column-gap: 20px;
     padding: 15px;
-} 
-
+}  
+ 
 .nav-icons > p{
     font-family: sans-serif;
     font-weight: bold;
@@ -145,6 +144,7 @@
 .input-area .input-icon-container{
     display: grid;
     grid-auto-flow: column;
+    color:rgb(22, 120, 218);
     align-items: center;
     padding: 10px;
 }
@@ -207,6 +207,9 @@
         grid-auto-flow: column;
     }
 
+    .tweet-heading > p{
+        font-weight: bold;
+    }
      .tweet-message > .tweet-heading span{
         color: rgb(128, 128, 128);
         font-size: 0.5rem;
@@ -221,7 +224,7 @@
 
     .tweet .tweet-message  p, p:nth-of-type(2){
         font-family: sans-serif;
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         margin-top: 10px;
         color: rgba(0, 0, 0, 0.844);
     }
@@ -243,7 +246,7 @@
     }
 
     .tweetbox-two > i{
-        font-size: 48px;
+        font-size: 40px;
         color:rgb(22, 120, 218);
         justify-self: end;
        
@@ -253,6 +256,11 @@
         font-family: sans-serif;
         font-size: 0.6rem;
         font-weight: bold;
+    }
+
+    .group-text >p:first-of-type span{
+        color: rgb(128, 128, 128);
+        font-weight: normal;
     }
 
     .group-text p{
@@ -267,14 +275,260 @@
     .group-text a:hover{
         text-decoration: none;
         color:rgb(124, 170, 216);
+    
     }
 
     .group-text a span{
         display: block;
     }
 
-/* .container .right-side{
-    
-   
 
-} */
+    .group-docs-design{
+        background: linear-gradient(to right, #6044b9  0%, #13073d 100%);
+        height: 200px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0px 20px 50px 20px;
+        place-content: center;
+        position: relative;
+        
+    }
+
+    .group-docs-design .wave{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .group-docs-design > i{
+        font-size: 50px;
+        border: 4px solid rgb(81, 127, 11);
+        background-color: rgba(255, 255, 255, 0.489);
+        z-index: 1;
+        border-radius: 50%;
+        padding: 10px;
+        color: white;
+        justify-self: end;
+        place-self: center; 
+      
+    }
+
+    .group-docs-design-content >p:first-of-type{
+        font-size: 0.9rem;
+        font-family: sans-serif;
+        color: #ffffffe6;
+        font-weight: bold;
+    }
+    .group-docs-design-content >p:first-of-type span{
+        font-weight: normal;
+    }
+
+    .group-docs-design-content p{
+        font-size: 0.6rem;
+        font-family: sans-serif;
+        color: #ffffffe6;
+      
+    }
+
+     .wave-logo {
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: left;
+        column-gap: 5px;
+        position: absolute;
+        bottom:20px;
+        place-items: center;
+        z-index: 1;
+        color: #13073d;
+    }
+
+ 
+
+
+    .wave-logo > i{
+        font-size: 20px;
+        color:rgb(22, 120, 218);
+
+    }
+
+    .wave-logo > p{
+        color: #13073d;
+        font-weight: bolder;
+    }
+
+
+    /* Styling right side */
+ .rightside-container{
+   display: grid;
+   grid-auto-rows: row;
+   row-gap: 10px;
+
+} 
+.rightside-container .input{
+    position: relative;
+    margin: 0 10px 0 10px; 
+}
+
+.rightside-container .input > i {
+    position: absolute;
+    color: rgb(128, 128, 128);
+    top: 0;
+    left: 8%;
+    transform: translate(-50%, 50%);
+}
+
+.input > input::placeholder {
+    padding: 30px;
+}
+
+.rightside-container input{
+    border-radius: 50px;
+    width: 100%;
+   cursor:text;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.209);
+}
+
+.input > input::placeholder {
+    padding: 35px;
+   
+}
+
+.happening {
+    margin: 0 10px 0 10px;
+
+
+}
+.happening > p{
+    width: 100%;
+    font-size: 0.7rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    background-color: rgba(128, 128, 128, 0.209);
+    padding: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.happening > div p:first-of-type{
+    font-family: sans-serif;
+    font-size: 0.7rem;
+    color: rgba(0, 0, 0, 0.654);
+    font-weight: normal;
+}
+.happening > div p{
+    font-family: sans-serif;
+    font-size: 0.7rem;
+    font-weight: bold;
+    line-height: 15px;
+}
+
+.happening > .news p:last-of-type{
+    font-family: sans-serif;
+    font-size: 0.7rem;
+    color: rgba(0, 0, 0, 0.654);
+    font-weight: normal;
+
+}
+
+.news{
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 10px;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.209);
+}
+
+.news p span a{
+    color:black;
+    font-size: 0.7;
+}
+
+.news p span a:hover{
+    color: rgba(0, 0, 0, 0.497);
+    font-size: 0.7;
+}
+.news a{
+    text-decoration: none;
+    color:rgb(22, 120, 218);
+}
+
+.news a:hover{
+    text-decoration: none;
+    color:rgb(124, 170, 216);
+  
+}
+.news img{
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.meet{
+    margin: 0 10px 0 10px;
+    background-color: rgba(128, 128, 128, 0.209);
+    padding: 10px;
+
+}
+.meet > p:first-of-type{
+    font-size: 0.8rem;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.meet > p{
+    font-size: 0.8rem;
+    font-family: sans-serif;
+    
+}
+
+.meet .prompted > p{
+    display: inline-block;
+    font-weight: normal;
+    font-family: sans-serif;
+    font-size: 0.7rem;
+    color: rgba(0, 0, 0, 0.703);
+
+}
+
+.treding-box{
+    margin: 0 10px 0 10px;
+    background-color: rgba(128, 128, 128, 0.209);
+    padding: 10px;
+
+}
+
+.treding-box .trending{
+    display: grid;
+    grid-auto-flow: column;
+    color: rgb(107, 106, 106);
+    
+
+    
+}
+
+.treding-box .trending > i{
+    justify-self: end;
+}
+
+.treding-box .trending > p{
+    font-family: sans-serif;
+    font-size: 0.6rem;
+
+    
+
+}
+
+.treding-box P:first-of-type{
+    font-family: sans-serif;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.treding-box P:last-of-type{
+    font-family: sans-serif;
+    font-size: 0.7rem;
+     color: rgb(107, 106, 106);
+    
+}
