@@ -1148,3 +1148,18 @@ color: #26a7de;
     bottom: 0; */
     
 }
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+ .right-bar {
+       display: none;
+   }
+}
+
+
+@media (max-width: 300px) {
+    .left-bar{
+        background-color: grey;
+      }
+   }
