@@ -288,6 +288,7 @@ h2 {
 @media screen and (max-width: 800px) {
   .container {
     grid-template-areas: "nav main";
+    grid-template-columns: minmax(225px, 300px) minmax(min-content, 2fr);
   }
 
   .sidebar {
@@ -299,6 +300,7 @@ h2 {
   #logo {
     display: none;
   }
+  
   .container {
     grid-template-areas: "nav main";
     grid-template-columns: 80px 1fr;
