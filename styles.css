@@ -87,9 +87,15 @@ grid-column: 1;
 }
 
 .hoz-dots {
-
     width: 30px;
     place-self: center;
+}
+
+.hoz-dots-left {
+    width: 30px;
+    place-self: center;
+    position: relative;
+    left: 20px;
 }
 
 .hoz-dots:hover {
@@ -274,11 +280,6 @@ color: rgba(128, 128, 128, 0.695);
     object-fit: cover;
 }
 
-.content-container{
-   display: grid;
-   grid-template-rows: auto;
-}
-
 .feed-nav {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -420,6 +421,43 @@ margin-top: 20px;
     grid-template-columns: 50px 2fr 1fr;
 }
 
-@media screen and (max-width: 1300px){
+@media screen and (max-width: 1500px){
+.container {
+    margin-left: 5%;
+    margin-right: 15%;
+}
+}
 
+@media screen and (max-width: 1100px){
+    .container {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+@media screen and (max-width: 950px){
+        .container {
+            margin-left: 0%;
+            margin-right: 0%;
+    }
+}
+
+@media screen and (max-width: 950px){
+            .right-menu{
+                display: none;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 70px 1fr;
+    }
+}
+
+@media screen and (max-width: 530px){
+    .left-menu{
+        display: none;
+}
+.container {
+display: grid;
+grid-template-columns: 1fr;
+}
 }
