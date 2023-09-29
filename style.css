@@ -434,7 +434,7 @@ footer.right {
   grid-area: footer;
 
   font-size: 0.8rem;
-  padding-top: 0;
+  padding-top: calc(1rem + 42px);
 }
 
 footer.right .li-detail {
