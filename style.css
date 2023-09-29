@@ -1,0 +1,330 @@
+body {
+    margin: 0px;
+}
+
+.main-container {
+    height: 1000px;
+    background-color: rgb(173, 27, 27);
+    display: grid;
+    grid-template-areas:
+    "left main right" ;
+    grid-template-columns: 250px 1fr 250px;
+    gap: 3px;
+}
+
+.left {
+    grid-area: left;
+    background-color: aliceblue;
+}
+
+main {
+    grid-area: main;
+    background-color: aliceblue;
+    height: 1000px;
+}
+
+.right {
+    grid-area: right;
+    background-color: aliceblue;
+}
+
+/* Section for styling left side */
+.left > div {
+    display: inline-block;
+}
+
+.icons {
+    width: 50px;
+}
+
+.icons > img {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+
+.buttons {
+    width: 80px;
+    position: relative;
+    bottom: 25px;
+    left: 10px;
+    & button {
+        display: block;
+        margin: 10px;
+        margin-bottom: 50px;
+    }
+    
+}
+
+#special {
+    margin-bottom: 0px;
+}
+
+button {
+    font-size: larger;
+    border: none;
+    background-color: aliceblue;
+}
+
+button:hover {
+    color: orange;
+    text-decoration: underline;
+}
+
+button:focus {
+    color: rgb(173, 27, 27);
+}
+
+.post {
+    width: 90%;
+    padding: 10px;
+    border-radius: 21px;
+    margin-left: 10px;
+    color:aliceblue;
+    background-color: rgb(173, 27, 27);
+    position: relative;
+    bottom: 40px;
+}
+
+.post:focus {
+    color:blueviolet;
+}
+
+/* Section for styling main */
+main > h2 {
+    padding-left: 20px;
+    display: inline-block;
+}
+
+.main > hr {
+    color: rgb(173, 27, 27);
+    background-color: rgb(173, 27, 27);
+}
+
+.star {
+    width: 50px;
+    position: absolute;
+    right: 280px;
+    top: 10px;
+}
+
+.Create-tweet {
+    /* background-color: beige; */
+    /* height: 150px; */
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    padding-top: 0px;
+}
+
+.profile-pic {
+    /* background-color: black; */
+    padding-left: 5px;
+}
+
+.profile-pic > img, .user > img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 30px;
+
+}
+
+.p {
+    margin: 0px;
+    padding: 0px;
+    color: grey;
+}
+
+.p > p {
+    margin: 0px;
+    padding: 10px;
+}
+
+.bottom {
+    display: grid;
+    grid-template-areas:
+    "icons . button";
+    grid-template-columns: 220px 1fr 100px;
+}
+
+.options {
+    grid-area: icons;
+    /* background-color: blue; */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 5px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+.options > img {
+    height: 30px;
+    /* color:rgb(173, 27, 27) */
+}
+
+.bottom > button {
+    grid-area: button;
+    background-color: rgb(173, 27, 27);
+    color: white;
+    border-radius: 12.5px;
+    height: 25px;
+    margin: 5px;
+}
+
+#thick {
+    background-color: rgb(173, 27, 27);
+    margin: 0px;
+    padding: 0px;
+    height: 10px;
+}
+
+.tweet {
+    /* height: 200px; */
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    /* background-color: burlywood; */
+}
+
+.user {
+    /* background-color: yellow; */
+    padding: 5px
+}
+
+.feed {
+    /* background-color: aqua; */
+    padding-right: 10px;
+}
+
+.feed > div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* background-color: blueviolet; */
+}
+
+.interact > img {
+    width: 30px;
+    height: 30px;
+    /* place-self: start; */
+}
+
+.name > span {
+    font-weight: bold;
+    color: black;
+}
+
+.name {
+    color: lightslategray;
+}
+
+.at > span {
+    color:rgb(173, 27, 27);
+
+}
+
+
+/* Section for styling right side */
+.right {
+    padding:10px;
+
+}
+
+.right > div {
+    background-color: rgb(173, 27, 27);
+    border-radius: 15px;
+    margin: 0px;
+}
+
+.search {
+    height: 40px;
+    font-weight:500;
+    & p {
+        display: inline-block;
+        text-align: center;
+        position: relative;
+        left: 25px;
+        bottom: 14px;
+    }
+}
+
+.search-icon {
+    height: 30px;
+    padding: 5px;
+}
+
+.crack, .who {
+    height: 120px;
+    & h3 {
+        padding-left: 10px;
+        padding-top: 10px;
+        margin-top: 10px;
+    }
+}
+
+/* Logo creation - ignore this as it was for a bit of fun */
+.logo {
+    width:70px;
+    height: 70px;
+    background-color: rgb(173, 27, 27);
+    /* display: block; */
+    margin: 10px;
+    border-radius: 35px;
+    overflow: hidden;
+    border: black 2px solid;
+}
+
+.face {
+    width: 15px; 
+    height: 15px; 
+    background-color: black;
+    border-radius: 50%;
+}
+
+#right-eye {
+    position: relative;
+    left: 40px;
+}
+
+#left-eye {
+    position: relative;
+    top: 15px;
+    left: 15px;
+}
+
+
+
+#mouth {
+    width: 100px;
+    height: 8px;
+    position: relative;
+    top: 15px;
+    border-radius: 0px;
+}
+
+
+/* Media quiries */
+@media screen and (min-width: 701px) and (max-width: 1000px) {
+    .main-container {
+        grid-template-areas: "left main";
+        grid-template-columns: 250px 1fr;
+    }
+    .right {
+        display: none;
+    }
+    .star {
+        right: 30px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .main-container {
+        grid-template-areas: "main";
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+    .left, .right {
+        display: none;
+    }
+    .star {
+        right: 30px;
+    }
+}
