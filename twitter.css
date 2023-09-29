@@ -252,7 +252,33 @@
 
 .tweet1 {
     border-bottom: 1px solid silver;
+    display: grid;
+    grid-template-columns: 779px;
+    grid-template-rows: 150px 50px;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
 }
+
+.tweet1 .tweetbox {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+    align-items: center;
+    padding-bottom: 40px;
+}
+
+.tweetbox img {
+    margin-left: 15px;
+    border-radius: 50px;
+}
+
+.tweetbox p {
+    padding-bottom: 3px;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-top: 15px;
+    color: black;
+}
+
 
 .tweet2 {
     border-bottom: 1px solid silver;
