@@ -334,9 +334,60 @@ p {
     background-color: rgb(240, 240, 240);
     border: none;
 }
-/*STYLES THE MESSAGES BOX*
+/*STYLES THE MESSAGES BOX*/
+#message-box {
+    border-radius: 5px;
+    position: fixed;
+    bottom: 10px;
+    right: 5px;
+    border: 1px solid rgba(128, 128, 128, 0.264);
+    height: 30px;
+    background-color: white;
+    box-shadow: 2px 2px 2px;
+    color: rgba(80, 80, 80);
+}
+
+#message-box > h2 {
+    visibility:visible;   
+    background-color: white; 
+}
+
+#inbox {
+    visibility: hidden;
+    display: grid;
+    grid-template-rows: repeat(auto, minmax(15px, 1fr));
+    width: 190px;
+}
+
+#message-box:hover {
+    width: 200px;
+}
+
+#message-box:hover #inbox {
+    
+    /*behavior*/
+    overflow: scroll;
+    visibility: visible;   
+    content-visibility: visible;
+
+    /*colors*/
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: -2px -2px 10px rgb(141, 141, 141);
+    border: 1px solid rgba(128, 128, 128, 0.264);
+
+    /*dimensions*/
+    height: 200px;
+    padding: 5px;
+    position: fixed;
+    bottom: 2px;  
+}
 
 
+#message-box:hover > div > div{
+    border-top: 1px solid rgba(128, 128, 128, 0.264);
+    padding-bottom: 5px;
+}
 
 
 /*FOR BIGGER DEVICES (laptops, tablets,...)*/
