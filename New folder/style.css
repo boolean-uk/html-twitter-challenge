@@ -1,0 +1,562 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.first{
+    border: 1px solid  rgb(203, 200, 200);
+}
+.lifeinfinland{
+    color: #00acee;
+}
+
+.header{
+    display: grid;
+    grid-template-columns: minmax(260px,300px) minmax(400px,1fr) 300px;
+    background-color: #ffffff;
+    height:40px;
+}
+.logo{
+    font-size: 30px;
+    color: #00acee;
+    padding-left: 60px;
+}
+
+
+.left-header{
+    background-color: rgb(255, 255, 255);
+    padding-top:5px;
+}
+
+.main-header{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 10px;
+    border-bottom: none;
+}
+.main-header > a:nth-child(1){
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: .3s;
+}
+.main-header > a:nth-child(1):hover{
+    color: #00acee;
+    transition: .3s;
+}
+.main-header > a:nth-child(2){
+    text-decoration: none;
+    display: grid;
+    justify-content: end;
+}
+
+.right-header{
+    padding: 9px;
+    background-color: rgb(233, 230, 230);
+    border-radius: 50px;
+    margin: 3px 15px;
+}
+.right-header > input{
+    border: none;
+    padding: 2px;
+    background-color: rgb(233, 230, 230);
+    outline: none;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: minmax(260px,300px) minmax(400px,1fr) 300px;
+    height: 93vh;
+}
+
+.left-container{
+    display: grid;
+    grid-template-rows: 420px 1fr  40px ;
+    min-width: 300px;
+}
+
+.left-top{
+    display: grid;
+    grid-template-columns: 100px minmax(100px,200px);
+
+
+}
+
+.left-container-logo > ul{
+    display: grid;
+    padding: 10px 60px;
+    line-height: 30px;
+
+}
+.left-container-logo > ul > li{
+    list-style: none;
+    font-size: 25px;
+    line-height: 50px;
+}
+
+.left-container-logo > ul > li a{
+    color:#00acee ;
+}
+
+.left-container-name{
+    background-color:rgb(255, 255, 255) ;
+    padding: 10px 3px;
+}
+.left-container-name ul li{
+    list-style-type: none;
+    font-size:17px;
+    line-height: 50px;
+    padding-right: 2px;
+}
+.left-container-name ul li a{
+    text-decoration: none;
+    color:#000000 ;
+    font-weight:bold ;
+    transition: .3s;
+}
+.left-container-name ul li a:hover{
+    color:#00acee ;
+}
+
+.left-mid{
+    display: grid;
+    grid-template-rows: 40px  1fr;
+    padding: 0px 40px;
+}
+.left-mid input{
+    background-color: #00acee;
+    color: white;
+    border-radius: 40px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+    font-size: 15px;
+    transition: .3s;
+}
+.left-mid input:hover{
+    background-color: #48cbff;
+}
+
+.left-bottom{
+    display: grid;
+    grid-template-columns:40px  1fr  40px;
+    padding: 5px 40px;
+    border-right: none;
+}
+.left-bottom img{
+    position: relative;
+    border-radius: 50%;
+}
+.left-bottom a{
+    text-decoration: none;
+    color: #000000;
+}
+.left-bottom a:hover{
+    text-decoration: none;
+    color:#00acee ;
+}
+.left-bottom a p{
+   font-size: 13px;
+}
+.left-bottom i{
+    padding-top: 13px;
+ }
+ .left-bottom i:hover{
+    color: #00acee;
+ }
+
+.main-container{
+    overflow-y: scroll;
+    display: grid;
+    grid-template-rows: auto;
+}
+.status-bar{
+    display: grid;
+    grid-template-columns: 50px 1fr 100px;
+    padding: 8px;
+    min-height: 90px;
+    background-color: rgb(255, 255, 255);
+}
+.status-bar img{
+    border-radius: 50%;
+}
+.posting ul li a{
+    color: #00acee;
+}
+.posting ul li a:hover{
+    color: #3999be;
+}
+.posting ul li{
+    list-style: none;
+}
+.posting ul {
+    display: grid;
+    grid-template-columns: repeat(5,30px);
+}
+.posting{
+    padding: 10px 0;
+}
+#status{
+    line-height: 40px;
+    width: 90%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+}
+.tweet-button input{
+    display: grid;
+   background-color: #64c9f1;
+   color: #ffffff;
+   padding: 10px 20px;
+   outline: none;
+   border: none;
+   border-radius: 20px;
+   transition: .3s;
+}
+.tweet-button input:hover{
+    background-color: #00acee;
+
+}
+.tweet-button{
+    padding-top: 40px;
+    padding-left: 20px;
+}
+.myname{
+    font-size: larger;
+}
+
+.address a:nth-child(1) strong{
+    color: black;
+    text-decoration: underline black;
+} 
+
+.tweet1{
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    padding: 10px;
+    border-left: none;
+    border-right: none;
+}
+
+.tweet1 .profile-picture img{
+    border-radius: 50%;
+}
+.tweet1 .text-part .address a{
+    color:#7d8384;
+}
+.tweet1 .text-part .address a:hover{
+    color:#00acee;
+}
+.address a:nth-child(2){
+    text-decoration: none;
+}
+
+.comments ul {
+    list-style: none;
+}
+.comments ul li a{
+    color: #7d8384;
+    text-decoration: none;
+}
+.comments ul li a:hover{
+    color:#00acee ;
+}
+.comments ul{
+    padding-top: 3px;
+    display: grid;
+    grid-auto-flow: column;
+}
+.text{
+    padding: 4px 0;
+}
+
+.tweet2{
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    padding: 10px;
+}
+.tweet2 .profile-picture img{
+    border-radius: 50%;
+}
+.tweet2 .text-part .address a{
+    color:#7d8384;
+}
+.tweet2 .text-part .address a:hover{
+    color:#00acee;
+}
+
+
+
+
+.right-container{
+    overflow-y: scroll;
+    margin-top: 5px;
+    display: grid;
+    grid-template-rows: 320px 1fr 150px;
+}
+.top-right h3{
+    display: grid;
+    place-content: center;
+}
+.top-right h3:hover{
+    color: #00acee;
+}
+
+.top-right{
+    background-color: #eaeaea;
+    display: grid;
+    grid-template-rows: 40px 39px;
+    margin: 20px;
+    border-radius: 30px;
+    min-height: 230px;
+}
+.tofollow{ 
+    display: grid;
+    grid-template-rows: repeat(4,60px);
+}
+
+.ElonMusk{
+    display: grid;
+    grid-template-columns: 50px 1fr 70px;
+    padding: 10px;
+}
+.person-name a:nth-child(2){
+    color: #00acee;
+    text-decoration: none;
+    font-size: 13px;
+}
+.person-name a:nth-child(2):hover{
+    color: #76c9e9;
+}
+.ElonMusk input{
+    background-color: #00acee;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: white;
+}
+.ElonMusk img{
+    border-radius: 50%;
+}
+.ElonMusk input:hover{
+    background-color: #49bae7;
+}
+.person-name a:nth-child(1){
+    color: black;
+}
+.person-name a:nth-child(1):hover{
+    color:#00acee;
+}
+
+.rickygervais{
+    display: grid;
+    grid-template-columns: 50px 1fr 70px;
+    padding: 10px;
+    border-right: none;
+    border-left: none;
+}
+
+.person-name a:nth-child(2):hover{
+    color: #76c9e9;
+}
+.rickygervais input{
+    background-color: #00acee;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: white;
+}
+.rickygervais input:hover{
+    background-color: #49bae7;
+}
+.person-name a:nth-child(1){
+    color: black;
+}
+.person-name a:nth-child(1):hover{
+    color:#00acee;
+}
+.rickygervais img{
+    border-radius: 50%;
+}
+
+.TheRock{
+    display: grid;
+    grid-template-columns: 50px 1fr 70px;
+    padding: 10px;
+}
+
+.person-name a:nth-child(2):hover{
+    color: #76c9e9;
+}
+.TheRock input{
+    background-color: #00acee;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: white;
+}
+.TheRock input:hover{
+    background-color: #49bae7;
+}
+.person-name a:nth-child(1){
+    color: black;
+}
+.person-name a:nth-child(1):hover{
+    color:#00acee;
+}
+.TheRock img{
+    border-radius: 50%;
+}
+.more ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.more:hover{
+    background-color: #d2d3d3;
+    border-radius: 30px;
+    margin: 0;
+}
+.more ul li{
+    list-style-type: none;
+}
+.more{
+    display: grid;
+    place-content: center;
+}
+
+.bottom-left{ 
+    display: grid;
+    grid-template-rows: auto;
+    background-color: #eaeaea;
+    margin: 0 20px;
+   border-radius: 30px;
+
+}
+.bottom-left h3{
+    display: grid;
+    line-height: 40px;
+    place-content: center;
+    transition: .3s;
+}
+.bottom-left h3:hover{
+    color: #00acee;
+}
+.top1{
+    display: grid;
+    grid-template-columns: 1fr 80px;
+    padding: 5px;
+}
+.news a:nth-child(1){
+    color: #787575;
+    transition: .3s;
+    text-decoration: none;
+}
+.news a:nth-child(1):hover{
+    color:#00acee;
+}
+.news a:nth-child(3){
+    color: #7b7a7a;
+    transition: .3s;
+    text-decoration: none;
+    font-size: 12px;
+}
+.news a:nth-child(3):hover{
+    color: #00acee;
+}
+
+.news a:nth-child(3) span{
+    color:#00acee;
+    transition: .3s;
+}
+.news p{
+    font-size: 15px;
+}
+
+.top2{
+    padding: 5px;
+}
+.news a:nth-child(1){
+    color: #100101;
+    transition: .3s;
+    text-decoration: none;
+}
+.news a:nth-child(1):hover{
+    color:#00acee;
+}
+.news a:nth-child(3){
+    color: #100101;
+    transition: .3s;
+    text-decoration: none;
+    font-size: 12px;
+}
+.news a:nth-child(3):hover{
+    color: #00acee;
+}
+
+.news a:nth-child(3) span{
+    color:#00acee;
+    transition: .3s;
+}
+.news p{
+    font-size: 15px;
+    color: #7b7a7a;
+}
+
+.top3{
+    display: grid;
+    grid-template-columns: 1fr 20px;
+    padding: 8px;
+}
+.top3 a:nth-child(1){
+    color: #7b7a7a;
+    transition: .3s;
+    text-decoration: none;
+}
+.top3 a:nth-child(1):hover{
+    color:#00acee;
+}
+.top3 a:nth-child(3){
+    color: #7b7a7a;
+    transition: .3s;
+    text-decoration: none;
+    font-size: 12px;
+}
+.top3 a:nth-child(3):hover{
+    color: #00acee;
+}
+.top3 p{
+    color: #000000;
+}
+
+
+.more-news{
+    min-height: 50px;
+    display: grid;
+    place-content: center;
+    border-radius: 40px;
+}
+.more-news:hover{
+   background-color: #d2d3d3;
+}
+
+.message{
+    position:absolute;
+    display: grid;
+    grid-template-columns: 202px 30px 30px;
+    line-height: 30px;
+    padding: 10px;
+    bottom: 0px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.message:hover{
+    background-color: #6fb5d1;
+}
+.message a{
+    text-decoration: none;
+    color: rgb(13, 13, 13);
+}
