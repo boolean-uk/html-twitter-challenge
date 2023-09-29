@@ -177,6 +177,7 @@
     display: grid;
     grid-template-columns: 600px 350px 1fr;
     gap: 20px;
+    overflow-y: scroll;
 }
 
 /* MAIN CONTENT */
@@ -294,7 +295,7 @@
 
 /* GENERIC POST ADJUSTMENTS */
 .main-feed {
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }
 
 .main-feed > div {
@@ -407,16 +408,36 @@
 
 .right-menu {
     display: grid;
-    grid-template-rows: 40px 120px 530px auto 80px;
-    gap: 15px;
+    grid-template-rows: 50px 1fr;
+    gap: 10px;
     padding: 10px;
+    padding-top: 80px;
+}
+
+.right-menu-stop-scroll {
+    display: grid;
+    grid-template-rows:110px 530px auto 80px;
+    gap: 10px;
+    position: sticky;
+    top: -10%;
+    z-index: 0;
 }
 
 /* SEARCH BAR */
+.search-bg {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    padding: 10px 20px 10px 0;
+    width: 350px;
+}
+
 .search {
     display: grid;
     grid-template-columns: 20px 1fr;
-    gap: 10px;
+    padding: 10px 0;
+    align-self: center;
     align-items: center;
 
     background-color: var(--box-background-color);
@@ -434,7 +455,7 @@
 
 /* PREMIUM */
 .premium {
-    padding: 10px;
+    padding: 15px;
     border-radius: 20px;
     background-color: var(--box-background-color);
 }
@@ -454,7 +475,6 @@
 .trending {
     display: grid;
     grid-template-rows: 50px 1fr 50px;
-    /* gap: 10px; */
 
     border-radius: 20px;
     background-color: var(--box-background-color);
@@ -532,26 +552,28 @@
     color: gray;
 }
 
-.test {
+.trending-subcard-menu {
+    width: 30px;
     display: grid;
-    justify-content: end;
-    align-content: center;
+    place-items: center;
 
     position: relative;
     bottom: 80%;
-    right: 5%;
+    left: 85%;
 }
 
-.trending-subcard-menu {
+.trending-subcard-menu-link {
     padding: 5px;
+    width: 30px;
+    height: 30px;
     border-radius: 60px;
 }
 
-.trending-subcard-menu:hover {
+.trending-subcard-menu-link:hover {
     background-color: rgba(30, 143, 255, 0.546);
 }
 
-.trending-subcard-menu > img {
+.trending-subcard-menu-link > img {
     width: 20px;
 }
 
@@ -571,4 +593,74 @@
 .show-more-link {
     text-decoration: none;
     color: dodgerblue;
+    font-size: 15px;
+}
+
+.who-to-follow {
+    display: grid;
+    grid-template-rows: 50px 1fr 50px;
+    background-color: var(--box-background-color);
+    border-radius: 20px;
+}
+
+.who-to-follow-subheader {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 0 15px 15px;
+}
+
+.follow-suggestions {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    padding: 0 15px 15px 15px;
+}
+
+.follow-user {
+    display: grid;
+    grid-template-columns: 50px 1fr 80px;
+    padding: 10px 0;
+    align-items: center;
+}
+
+.follow-user-photo {
+    width: 40px;
+    border-radius: 60px;
+}
+
+.follow-user-details {
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.follow-user-name {
+    font-weight: bold;
+    padding-bottom: 3px;
+}
+
+.follow-user-handle {
+    color: gray;
+}
+
+.follow-button {
+    display: grid;
+    justify-items: center;
+    background-color: white;
+    border-radius: 30px;
+}
+
+.follow-button:hover {
+    background-color: rgba(39, 145, 251, 0.847);
+    color: white;
+}
+
+.follow-link {
+    padding: 8px 0;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+}
+
+.follow-link:hover {
+    color: rgb(197, 196, 196);
 }
