@@ -62,6 +62,12 @@ footer {
     place-self: center;
 }
 
+.icon:hover {
+    width: 25px;
+    box-shadow: 2px 2px 2px orange;
+    background-color: rgb(227, 253, 255);
+} 
+
 h2 {
     display: inline-block;
     font-size: 18px;
@@ -97,7 +103,9 @@ p {
 
 #clone-icon {
     height: 40px;
+    pointer-events: none;
 }
+
 
 #left-menu {
     padding-left: 50px;
@@ -221,9 +229,11 @@ p {
     height: 32px;
     grid-template-columns: repeat(5, 40px) minmax(40px, 1fr) 90px;
 }
-#post-quick-menu > div {
-    border: 1px dotted grey;
-}
+#post-quick-menu .icon {
+    width: 20px;
+    margin: 5px;
+} 
+
 
 #post-quick-menu .rounded-container:hover {
     box-shadow: 2px 2px 5px grey;
