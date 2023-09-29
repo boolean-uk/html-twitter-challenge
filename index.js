@@ -60,10 +60,8 @@ navBar.addEventListener('click', function() {
    
     if (navExpanded) {
         container.style.gridTemplateColumns = '1fr 2fr 1fr';
-        navBar.style.marginLeft = '25px';
     } else {
-        container.style.gridTemplateColumns = '100px 2fr 1fr';
-        navBar.style.marginLeft = '5px';
+        container.style.gridTemplateColumns = '100px auto 1fr';
     }
   
         navExpanded = !navExpanded;
