@@ -1,0 +1,498 @@
+
+/*STYLES THE OVERAL LAYOUT*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    position: relative;
+}
+
+#main-container {
+    margin: 0 5%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+section {
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 40px 1fr;
+}
+
+footer {
+    font-size: 10px;
+    height: fit-content;
+}
+
+
+
+/*RECURRENT STYLES*/
+
+.rounded-container {
+    background-color: rgb(39, 175, 209);
+    height: 20px;
+    color: white;
+    width: 92%;
+    border-radius: 40px;
+    text-align: center;
+    padding: 6px 0;
+}
+
+
+.profile-pic-container {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    border: 1px dotted grey;
+    background-image: url("../assets/img/pexels-aisling-kerr-16904943.jpg");
+    background-size: contain;
+}
+
+.profile-pic-container > img {
+    width: 50px;
+    height: auto;
+    object-fit: cover;
+}
+
+.icon {
+    height: 23px;
+    place-self: center;
+}
+
+.icon:hover {
+    width: 25px;
+    box-shadow: 2px 2px 2px orange;
+    background-color: rgb(227, 253, 255);
+    transition: 0.1s;
+} 
+
+
+ 
+
+
+h2, h2 > a {
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 5px;
+    font-family: "Tahoma", "Arial", sans-serif;
+    font-weight: bolder;
+    margin-left: 10px;
+    color: black;
+ }
+
+ h3 {
+    display: inline-block;
+    font-size: 12px;
+    padding-bottom: 5px;
+    font-family: "Tahoma", "Arial", sans-serif;
+    font-weight: bolder;
+    width:fit-content;
+ }
+
+a {
+    color: rgb(24, 107, 128);
+    font-size: 10px;
+    text-decoration: none;
+}
+
+p {
+    font-size: 10px;
+}
+
+::-webkit-scrollbar {
+    border: none;
+}
+
+/*STYLES THE LEFT-MENU*/
+
+#clone-icon {
+    height: 40px;
+    pointer-events: none;
+}
+
+
+#left-menu {
+    padding-left: 50px;
+    height: calc(100vh - 20px);
+}
+
+#left-menu main {
+    margin-top: 10px;
+    display: grid;
+    grid-template-rows: repeat(8, 40px) 50px;
+    gap: 10px;
+    height:fit-content;
+}
+
+#left-menu main > div,
+#left-menu main > a {
+    padding: 5px; 
+    display: grid;
+    grid-template-columns: 25px 1fr;
+    
+}
+
+#left-menu main .rounded-container{
+    display: inline-block;
+    max-width: 250px;
+    height: 40px;
+    place-self: center;
+}
+
+#left-menu main .rounded-container h2 {
+    display: inline-block;
+    width: fit-content;
+    place-self: center;
+    margin: 10px 0 0 0;
+    color: white;
+}
+
+
+#left-menu footer {
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+    height: 40px;
+    position: sticky;
+    bottom: 5px;
+    padding: 5px;
+}
+#left-menu footer > div:nth-child(2) {
+    padding: 3px 0 0 5px;
+}
+
+#left-menu footer > div:nth-child(3) {
+    padding: 10px 5px;
+}
+
+/*hover and selected styles for LEFT-MENU*/
+#left-menu main  a:hover h2 {
+    color: orange;
+}
+#left-menu main a:active {
+    background-color: rgba(255, 166, 0, 0.6);
+    color: white;
+}
+
+#left-menu main a:focus {
+    background-color: rgba(255, 166, 0, 0.6);
+    color: white;
+    transition: 0.5s;
+}
+
+#left-menu main a:focus h2 {
+    color: white;
+}
+
+
+#left-menu main > div:last-child:hover {
+    box-shadow: 2px 2px 5px grey;
+}
+
+#left-menu main > div:last-child:hover h2 {
+    color: white;
+}
+#left-menu main > div:last-child:active {
+    background-color: rgba(255, 166, 0, 0.6);
+    color: white;
+}
+
+
+/*STYLES THE NEWSFEED*/
+#post-container {
+    border-left:  1px solid grey;
+    border-right:  1px solid grey;
+    padding: 10px 0 0 0;
+    height: calc(100vh - 10px);
+    min-width: 400px;
+}
+
+#post-container > header {
+    border-bottom: 1px solid grey;
+    position: absolute;
+    width: 100%;
+    top: 10px;
+}
+#post-container > main {
+    display: grid;
+    grid-template-rows: 120px auto;
+}
+
+/*top part - writing tweets*/
+#write-post {
+    width: 95%;
+    position: absolute;
+    top: 50px;
+    display: grid;
+    grid-template-rows: 60px 40px;
+    padding: 10px;
+}
+
+#write-post input {
+    height: 40px;
+    width: calc(1fr- 100px);
+    border: none;
+}
+
+#write-post input::placeholder {
+    font-size: 18px;
+}
+
+#write-post > div:nth-child(1) {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+
+#post-quick-menu {
+    position: relative;
+    width: 96%;
+    display: grid;
+    height: 32px;
+    grid-template-columns: repeat(5, 40px) minmax(40px, 1fr) 90px;
+}
+#post-quick-menu .icon {
+    width: 20px;
+    margin: 5px;
+} 
+#post-quick-menu h2 {
+   color: white;
+}
+
+#post-quick-menu .rounded-container:hover {
+    box-shadow: 2px 2px 5px grey;
+}
+/*actual feed*/
+#feed {
+    border-top: 10px solid rgba(128, 128, 128, 0.264);
+    display: grid;
+    grid-auto-rows: repeat(auto, fit-content);
+    height: calc(100vh - 200px);
+    overflow: auto;
+    position: absolute;
+    top: 170px;
+}
+
+.post {
+    padding: 10px 10px;
+    gap: 5px;
+    display: grid;
+    min-height:200px;
+    grid-template-columns: 40px 1fr;
+    border-bottom: 1px solid grey;
+}
+
+.post-content {
+    display: grid;
+    grid-template-rows: 40px repeat(2, auto-fit) 40px;
+    gap: 5px;
+}
+
+.react {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.react div {
+    border: 1px dotted grey;
+}
+
+/*STYLES THE RIGHT-MENU*/
+
+#right-menu {
+    height: calc(100vh - 20px)
+}
+
+#right-menu > main {
+    height: calc(100vh - 55px);
+    overflow: auto;
+    position: absolute;
+    top: 40px;
+    width: 100%;
+    margin: 10px;
+}
+
+#right-menu > main > div {
+    display: grid;
+    grid-template-rows: 40px repeat(auto, 1fr) ;
+    background-color: rgb(245, 245, 245);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+
+#right-menu > main > div > div {
+    border-bottom: 1px solid grey;
+    height: 100px;
+    padding: 5px;
+}
+
+
+#right-menu input {
+    background-color: rgb(240, 240, 240);
+    border: none;
+}
+/*STYLES THE MESSAGES BOX*/
+#message-box {
+    border-radius: 5px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.264);
+    height: 30px;
+    background-color: white;
+    box-shadow: 2px 2px 2px;
+    color: rgba(80, 80, 80);
+}
+
+#message-box > h2 {
+    visibility:visible;   
+    background-color: white; 
+}
+
+#inbox {
+    visibility: hidden;
+    display: grid;
+    grid-template-rows: repeat(auto, minmax(15px, 1fr));
+    width: 190px;
+}
+
+#message-box:hover{
+    width: 300px;
+    background-color: rgba(255, 166, 0);
+}
+
+#message-box:hover > h2 {
+    color: white;
+    background-color: rgba(255, 166, 0);
+}
+
+#message-box:focus #inbox {
+    
+    /*behavior*/
+    overflow: scroll;
+    visibility: visible;   
+    content-visibility: visible;
+
+    /*colors*/
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: -2px -2px 10px rgb(141, 141, 141);
+    border: 1px solid rgba(128, 128, 128, 0.264);
+
+    /*dimensions*/
+    height: 200px;
+    width: 300px;
+    padding: 5px;
+    position: fixed;
+    bottom: 10px;  
+    right: 10px;
+}
+
+
+#message-box:hover > div > div{
+    border-top: 1px solid rgba(128, 128, 128, 0.264);
+    padding-bottom: 5px;
+}
+
+
+/*FOR BIGGER DEVICES (laptops, tablets,...)*/
+
+    #bottom-menu {
+        width: 0;
+        content-visibility: hidden;
+    }
+
+/*FOR SMALLER RESOLUTION DEVICES*/
+
+@media screen and (max-width:480px) {
+    #left-menu, 
+    #right-menu {
+        padding: 0;
+        margin: 0;
+        width: 0;
+        content-visibility: hidden;
+    }
+
+    #message-box {
+        visibility: hidden;
+        content-visibility: hidden;
+    }
+
+    body {
+        padding: 0;
+        width: 100vw;
+        height: calc(100vh - 20px);
+    }
+    #main-container {
+        margin: 0;
+    }
+    #post-container {
+        min-width: none;
+        max-width: 1fr;
+        overflow-y: auto;
+    }
+    .feed {
+        max-width: 1fr;
+    }
+    .post {
+        width: 100%;
+    }
+
+    .post-content {
+        width: 300px;
+    }
+
+    #bottom-menu {
+        height: 40px;
+        width: 100vw;
+        position:fixed;
+        bottom: 5px;
+        content-visibility: visible;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding: 0 0 10px 0;
+        place-items: center;
+        background-color: white;
+    }
+
+    #phone-select-more .icon {
+        pointer-events: none;
+    }  
+
+    #phone-select-more {
+        height: 100%;
+        width: 100%;
+        padding-top: 12px;
+    }
+
+    #phone-select-more > div {
+        visibility: hidden;
+    }
+
+
+
+    #phone-select-more:focus {
+        background-color: rgba(255, 147, 24, 0.604);
+        box-shadow: 2px 2px 8px grey;
+        border-radius: 20px;
+        height: 400px;
+        padding: 5px;
+        width: 60px;
+        position: fixed;
+        bottom: 10px;
+        right: 20px;
+        display: grid;
+        grid-template-rows: repeat(auto, 1fr);
+        gap: 10%;
+        place-content: center;
+    }
+
+    #phone-select-more:focus div {
+        visibility: visible;
+    }
+
+
+}
