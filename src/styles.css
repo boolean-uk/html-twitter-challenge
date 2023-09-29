@@ -703,7 +703,7 @@ body {
 
 .user-posting-pic > img {
     width: 40px;
-    padding-top: 5px;
+    padding-top: 22px;
     padding-left: 9px;
 }
 
@@ -725,12 +725,12 @@ gap: 5px;
 
 .tag-name1 {
     grid-area: tag-name1;
-    /* border:  1px dashed black;; */
+    /* border:  1px dashed black; */
 }
 
 .tag-name1 > p {
-    padding-top: 5px;
-    padding-left: 4px;
+    padding-top: 25px;
+    padding-left: 9px;
     font-size: 13px;
 }
 
@@ -854,8 +854,8 @@ color: #26a7de;
 
     .user-posting-pic2 > img {
         width: 45px;
-        padding-top: 5px;
-        padding-left: 6px;
+        padding-top: 22px;
+    padding-left: 9px;
     }
     
     .tag-name2 {
@@ -864,8 +864,8 @@ color: #26a7de;
     }
 
     .tag-name2 > p {
-        padding-top: 5px;
-        padding-left: 4px;
+        padding-top: 25px;
+    padding-left: 9px;
         font-size: 13px;
     }
 
@@ -968,7 +968,7 @@ color: #26a7de;
 
 .user-posting-pic3 > img {
     width: 40px;
-    padding-top: 5px;
+    padding-top: 22px;
     padding-left: 9px;
 }
 
@@ -994,8 +994,8 @@ color: #26a7de;
 
 
 .tag-name3 > p {
-    padding-top: 5px;
-    padding-left: 4px;
+    padding-top: 25px;
+    padding-left: 9px;
     font-size: 13px;
 }
 
