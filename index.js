@@ -10,8 +10,8 @@ const caution = document.getElementById('caution')
 const navBar = document.getElementById('navbar')
 const container = document.getElementById('container')
 const everyIcons =document.getElementsByTagName('i')
-
-
+const searchIcon = document.getElementById('search-icon')
+const searchInput = document.getElementById('search-input')
 
 
 
@@ -144,3 +144,18 @@ navBar.addEventListener('click', function(){
         clicked = 'closed'
     }
 })
+
+
+searchInput.addEventListener('click', function(event) {
+    event.stopPropagation()
+    searchIcon.style.display = 'none';
+});
+
+window.addEventListener('click', function(e) {
+    if(searchInput.value && e.target !== searchIcon){
+        searchIcon.style.display = 'none';
+    }
+    else{
+        searchIcon.style.display = 'block';
+    }
+});
