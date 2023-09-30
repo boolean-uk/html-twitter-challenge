@@ -11,7 +11,7 @@
     height: 100vh;
     background-color: white;
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-columns: auto 2fr 1fr;
   
 }
 
@@ -250,8 +250,11 @@
         color: rgb(128, 128, 128);
         font-size: 0.6rem;
         margin-top: 10px;
+     
     }
-
+    .tweet-message-icons > i{
+        cursor: pointer;
+    }
     .tweetbox-two{
         display: grid;
         grid-template-columns: 80px 1fr;
@@ -547,27 +550,14 @@
     
 }
 
-
-@media only screen and (max-width:600px){
-
-    .container{
-        width: 100%;
-        height: 100vh;
-        background-color: white;
-        display: grid;
-        grid-template-columns: 1fr auto;
-      
-    }
-    .right-side{
-        display: none;
+    @media only screen and (max-width: 600px) {
+        .container {
+            grid-template-columns: auto 1fr '';
+        }
+        
+        .container > :nth-child(3) {
+            display: none;
+        }
     }
 
-    .nav-icons{
-        display: grid;
-      
-        justify-content: center;
-        text-align: center;
-        padding: 15px;
-        margin-bottom: 10px;
-    }  
-}
+    
