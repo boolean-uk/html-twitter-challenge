@@ -645,5 +645,350 @@ html {
 }
 
 
-/* Search bar */
-.searchbar {}
+/* NEWS */
+.news {
+    width: 350px;
+    margin-left: 30px;
+    margin-right: 10px;
+    min-height: 1181px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* search bar */
+
+.searchbar {
+    position: sticky;
+    top: 0;
+    min-height: 32px;
+    margin-bottom: 12px;
+    width: 100%;
+    height: 53px;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+}
+
+.searchbar__content {
+    width: 100%;
+    height: 44px;
+    background-color: rgb(32, 35, 39);
+    display: grid;
+    grid-template-columns: 44px 1fr;
+    align-items: center;
+    border-radius: 100px;
+}
+
+.searchbar__content-icon {
+    display: flex;
+    align-items: center;
+    padding-left: 12px;
+}
+
+.searchbar__content-icon svg {
+    width: 44px;
+    height: 18.75px;
+    fill: rgb(113, 118, 123);
+}
+
+.searchbar__content-input {
+    height: 100%;
+    background: none;
+    border: none;
+    color: rgb(231, 233, 234);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    word-wrap: break-word;
+    padding: 12px;
+}
+
+.searchbar__content-input:placeholder {
+    font-weight: 400;
+}
+
+/* subscribe */
+
+.subscribe {
+    width: 100%;
+    background-color: rgb(22, 24, 28);
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 12px 16px;
+}
+
+.subscribe__title {
+    font-weight: 800;
+    line-height: 24px;
+    font-size: 20px;
+    color: rgb(231, 233, 234);
+    word-wrap: break-word;
+    margin-bottom: 10px;
+}
+
+.subsctibe__text {
+    color: rgb(231, 233, 234);
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    word-wrap: break-word;
+    margin-bottom: 10px;
+}
+
+.subsctibe__button {
+    border: none;
+    background: none;
+    background-color: rgb(29, 155, 240);
+    cursor: pointer;
+    width: fit-content;
+    min-width: 36px;
+    min-height: 36px;
+    border-radius: 100px;
+    padding: 0 16px;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+/* happening */
+.happening {
+    width: 100%;
+    background-color: rgb(22, 24, 28);
+    margin-bottom: 16px;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.happening__title {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+}
+
+.happening__title-text {
+    font-weight: 800;
+    line-height: 24px;
+    font-size: 20px;
+    color: rgb(231, 233, 234);
+}
+
+.happening__item {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+}
+
+.happening__item:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.happening__item-subtitle {
+    color: rgb(113, 118, 123);
+    line-height: 16px;
+    font-size: 13px;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.happening__item-title {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    word-wrap: break-word;
+    margin-top: 2px;
+    color: rgb(231, 233, 234);
+}
+
+.happening__item-count {
+    margin-top: 4px;
+    color: rgb(113, 118, 123);
+    line-height: 16px;
+    font-size: 13px;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.happening__item-button {
+    width: 34.75px;
+    height: 34.75px;
+    position: absolute;
+    top: 6px;
+    right: 8px;
+    margin-left: 20px;
+    min-height: 20px;
+    background: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: all 0.1s ease-in;
+}
+
+.happening__item-button:hover {
+    background-color: rgba(29, 155, 240, 0.1);
+}
+
+.happening__item-button svg {
+    width: 18.75px;
+    height: 18.75px;
+    fill: rgb(113, 118, 123);
+    transition: all 0.1s ease-in;
+}
+
+.happening__item-button:hover svg {
+    fill: rgb(29, 155, 240);
+}
+
+/* follow */
+.follow {
+    width: 100%;
+    background-color: rgb(22, 24, 28);
+    margin-bottom: 16px;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.follow__title {
+    width: 100%;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+}
+
+.follow__title-text {
+    font-weight: 800;
+    line-height: 24px;
+    font-size: 20px;
+    color: rgb(231, 233, 234);
+    word-wrap: break-word;
+}
+
+.follow__content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.follow__item {
+    display: grid;
+    grid-template-columns: 40px 1fr;
+    column-gap: 12px;
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: all 0.1s ease-in;
+}
+
+.follow__item:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+
+}
+
+.follow__logo {
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.follow__item:nth-child(1) .follow__logo {
+    background-image: url(https://www.logo.wine/a/logo/Tesla%2C_Inc./Tesla%2C_Inc.-Logomark-White-Dark-Background-Logo.wine.svg);
+}
+
+.follow__item:nth-child(2) .follow__logo {
+    background-image: url(https://static.dezeen.com/uploads/2023/07/x-logo-twitter-elon-musk_dezeen_2364_col_0.jpg);
+}
+
+.follow__item:nth-child(3) .follow__logo {
+    background-image: url(https://i.pinimg.com/1200x/66/d0/11/66d0115c90e3325a5372aeb37d0f1728.jpg);
+}
+
+.follow__description {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.follow__user {
+    display: flex;
+    flex-direction: column;
+}
+
+.follow__user-name {
+    cursor: pointer;
+    color: rgb(231, 233, 234);
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+
+.follow__user-nickname {
+    cursor: pointer;
+    color: rgb(113, 118, 123);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    word-wrap: break-word;
+}
+
+.follow__description-button {
+    min-width: 78px;
+    margin-left: 12px;
+    background-color: rgb(239, 243, 244);
+    min-height: 32px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    color: rgb(15, 20, 25);
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 20px;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+.follow__more {
+    border-radius: 0 0 16px 16px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 16px;
+    transition: all 0.1s ease-in;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.follow__more:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.follow__more-text {
+    color: rgb(29, 155, 240);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    word-wrap: break-word;
+}
