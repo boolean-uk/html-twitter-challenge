@@ -1,0 +1,292 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif,system-ui;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+
+}
+
+body, ul,li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+  
+
+/* Style the main container */
+main {
+    display: grid;
+    grid-template-columns: 180px 1fr 300px;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Style section for leftbar */
+.left-sidebar{
+    display: grid;
+    grid-template-rows: 150px 1fr  200px;
+}
+.lefttop {
+    display:grid;
+    align-items: center;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #e1e8ed;
+}
+  
+.twitterlogo {
+    max-width: 50px;
+    height: auto;
+    margin-right: 10px;
+    align-items: center;
+ }
+  
+.downlogo {
+    display: grid;
+    align-items: center;
+    margin-right: 10px;
+}
+  
+.birdcage {
+    max-width: 30px;
+    height: auto;
+    color: #1da1f2;
+}
+  
+h2 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: bold;
+    color: black;
+}
+
+
+/* Styles for the Twitter-like navigation menu */
+.icon {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+  
+.leftlogo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    padding: 10px;
+    border-radius: 9999px;
+}
+  
+.leftlogo:hover {
+    background-color: #f0f0f0;
+}
+  
+.logo img {
+    max-width: 24px;
+    height: auto;
+    margin-right: 10px;
+}
+  
+h2 {
+    font-size: 16px;
+    margin: 0;
+}
+  
+
+/* Style the client status box */
+#clientstatus {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff; 
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#clientstatus .lefttweet {
+    background-color: #1da1f2;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#clientstatus .lefttweet:hover {
+    background-color: #1990e6; 
+}
+
+/* Style the tweet feed section */
+.tweet-feed {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    grid-template-columns: 1fr 1fr;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 1fr 20px;
+    background-color:white;
+  }
+  
+.top h2 {
+    font-size: 25px;
+    margin: 0; 
+}
+  
+.top img.sparkles {
+    grid-auto-flow: column;
+    max-width: 25px;
+    height: auto; 
+    color: #1da1f2;
+    margin-right: 2px; 
+}
+
+/* Style the "What's happening" section */
+.heppening {
+    display: grid;
+    grid-template-columns: 1fr 125px;
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.heppening img {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+
+.happening p{
+    text-align: center;
+}
+
+.heppening a:hover {
+    text-decoration: underline;
+}
+
+.heppening button {
+    background-color: #1da1f2;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Style the newsfeed items */
+.newsfeed {
+    display: grid;
+    width: 50px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.newsfeed img {
+    width: 20%;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.newsfeed a {
+    text-decoration: none;
+    color: #333;
+}
+
+.newsfeed a:hover {
+    text-decoration: underline;
+}
+
+/* Style the right sidebar */
+.right-sidebar {
+    display: grid;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the search input and icon */
+.right-sidebar .search {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+}
+
+.right-sidebar .materail-icon {
+    background-color: #1da1f2;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Style the "What's happening" section in the right sidebar */
+.whathappening {
+    margin-top: 20px;
+}
+
+.whathappening img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+.whathappening a {
+    text-decoration: none;
+    color: #333;
+}
+
+.whathappening a:hover {
+    text-decoration: underline;
+}
+
+.whathappening p {
+    margin-bottom: 10px;
+}
+
+/* Style the trend and politics sections */
+.trend, .politics {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.trend img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Responsive Styles (for smaller screens) */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
