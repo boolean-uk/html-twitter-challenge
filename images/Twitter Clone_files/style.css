@@ -1,0 +1,539 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&family=Noto+Sans+JP&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+  
+}
+
+.nav{
+    display: grid;
+    padding: 10px;
+    
+}
+
+/*   .nav-icons{
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 20px;
+   
+}  */
+ 
+ .nav-icons{
+    display: flex;
+    column-gap: 20px;
+    padding: 15px;
+    margin-bottom: 10px;
+}  
+.nav-icons:hover{
+    background-color:rgb(59, 143, 228);
+    cursor: pointer;
+}
+ 
+.nav-icons > p{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+.nav-icons:first-of-type{
+    padding-top: 0;
+}
+
+.nav-icons:nth-of-type(1), .nav-icons:nth-of-type(2){
+    color:rgb(22, 120, 218);
+}
+
+.tweet-button{
+    display: grid;
+    place-items: center;
+    height: 40px;
+    border-radius: 30px;
+    margin-top: 5px;
+    text-align: center;
+    background-color: cornflowerblue;
+    justify-content: center;
+}
+
+.nav-footer {
+    display: grid;
+    position: sticky;
+    background-color: #fff;
+    bottom: 0;
+    grid-auto-flow: column;
+    margin-top: 50px;
+    place-items: center;
+    justify-content: space-between;
+}
+.nav-footer > img{
+     width: 40px;
+     height: 40px;
+     object-fit: cover;
+     border-radius: 50%;
+     border: 1px solid cornflowerblue;;
+}
+
+.nav-footer > img:hover{
+    border: 2px solid cornflowerblue;
+    background-color: rgb(69, 84, 112);
+}
+.nav-footer .user-details > p:first-of-type{
+    font-family: 'Montserrat Alternates';
+    font-weight: bold;
+    font-size: 0.5rem;
+  
+
+}
+
+.nav-footer .user-details > p:last-of-type{
+
+    font-weight: bold;
+    font-size: 0.7rem;
+  
+
+}
+/* End of Nav  */
+
+.container .middle-content{
+    background-color:rgb(255, 255, 255);
+    border: 1px solid rgba(128, 128, 128, 0.21);
+
+}
+
+.middle-content .header{
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.header  .fa-hand-sparkles{
+    color:rgb(22, 120, 218);
+}
+
+.middle-content .header > p{
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+
+.header-post {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    grid-auto-flow: column;
+    box-shadow:  5px 5px 15px rgba(0, 0, 0, 0.2);
+
+}
+.header-post > img {
+    justify-self: end;
+}
+
+.header-post  input{
+    padding: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+.input-area .input-icon-container{
+    display: grid;
+    grid-auto-flow: column;
+    color:rgb(22, 120, 218);
+    align-items: center;
+    padding: 10px;
+}
+
+
+
+ .input-icon-container .input-area-icon {
+    justify-self: start;
+
+}
+
+.input-icon-container .input-area-icon  > i{
+    margin-left: 10px;
+}
+
+.input-icon-container > p{
+    background-color: cornflowerblue;
+    font-family: sans-serif;
+    border-radius: 30px;
+    color: #fff;
+    justify-self: end;
+    padding: 7px;
+    
+    }
+
+.tweet-box{
+    box-shadow:  5px 5px 15px rgba(0, 0, 0, 0.2);
+    margin: 10px 0 10px 0;
+    padding: 10px;
+
+}
+    .tweet-box .tweet-header{
+        display: grid;
+        grid-template-columns: 80px  1fr;
+        column-gap: 10px;
+        padding: 7px 0 7px 0;
+        color: rgb(128, 128, 128);
+        font-family: sans-serif;
+        font-size: 0.6rem;
+        font-weight: bold;
+      
+    }
+    .tweet-box .tweet-header >i {
+        justify-self: end;
+    }
+    .tweet-box .tweet{
+        display: grid;
+        grid-template-columns: 80px  1fr;
+        column-gap: 10px;
+    }
+
+
+    .tweet-box .tweet > img{
+        justify-self: end;
+    }   
+
+
+    .tweet .tweet-heading{
+        display: grid;
+        grid-auto-flow: column;
+    }
+
+    .tweet-heading > p{
+        font-weight: bold;
+    }
+     .tweet-message > .tweet-heading span{
+        color: rgb(128, 128, 128);
+        font-size: 0.5rem;
+        font-weight: normal;
+      
+    }
+    .tweet .tweet-heading > i{
+        justify-self: end;
+        color: rgb(128, 128, 128);
+    }
+
+
+    .tweet .tweet-message  p, p:nth-of-type(2){
+        font-family: sans-serif;
+        font-size: 0.6rem;
+        margin-top: 10px;
+        color: rgba(0, 0, 0, 0.844);
+    }
+
+
+    .tweet .tweet-message-icons{
+        display: grid;
+        grid-auto-flow: column;
+        color: rgb(128, 128, 128);
+        font-size: 0.6rem;
+        margin-top: 10px;
+    }
+
+    .tweetbox-two{
+        display: grid;
+        grid-template-columns: 80px 1fr;
+        column-gap: 10px;
+        padding: 10px;
+    }
+
+    .tweetbox-two > i{
+        font-size: 40px;
+        color:rgb(22, 120, 218);
+        justify-self: end;
+       
+    }
+
+    .group-text >p:first-of-type{
+        font-family: sans-serif;
+        font-size: 0.6rem;
+        font-weight: bold;
+    }
+
+    .group-text >p:first-of-type span{
+        color: rgb(128, 128, 128);
+        font-weight: normal;
+    }
+
+    .group-text p{
+        font-family: sans-serif;
+        font-size: 0.6rem;
+        line-height: 17px;
+    }
+    .group-text a{
+        text-decoration: none;
+        color:rgb(22, 120, 218);
+    }
+    .group-text a:hover{
+        text-decoration: none;
+        color:rgb(124, 170, 216);
+    
+    }
+
+    .group-text a span{
+        display: block;
+    }
+
+
+    .group-docs-design{
+        background: linear-gradient(to right, #6044b9  0%, #13073d 100%);
+        height: 200px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0px 20px 50px 20px;
+        place-content: center;
+        position: relative;
+        
+    }
+
+    .group-docs-design .wave{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .group-docs-design > i{
+        font-size: 50px;
+        border: 4px solid rgb(81, 127, 11);
+        background-color: rgba(255, 255, 255, 0.489);
+        z-index: 1;
+        border-radius: 50%;
+        padding: 10px;
+        color: white;
+        justify-self: end;
+        place-self: center; 
+      
+    }
+
+    .group-docs-design-content >p:first-of-type{
+        font-size: 0.9rem;
+        font-family: sans-serif;
+        color: #ffffffe6;
+        font-weight: bold;
+    }
+    .group-docs-design-content >p:first-of-type span{
+        font-weight: normal;
+    }
+
+    .group-docs-design-content p{
+        font-size: 0.6rem;
+        font-family: sans-serif;
+        color: #ffffffe6;
+      
+    }
+
+     .wave-logo {
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: left;
+        column-gap: 5px;
+        position: absolute;
+        bottom:20px;
+        place-items: center;
+        z-index: 1;
+        color: #13073d;
+    }
+
+ 
+
+
+    .wave-logo > i{
+        font-size: 20px;
+        color:rgb(22, 120, 218);
+
+    }
+
+    .wave-logo > p{
+        color: #13073d;
+        font-weight: bolder;
+    }
+
+
+    /* Styling right side */
+ .rightside-container{
+   display: grid;
+   grid-auto-rows: row;
+   row-gap: 10px;
+
+} 
+.rightside-container .input{
+    position: relative;
+    margin: 0 10px 0 10px; 
+}
+
+.rightside-container .input > i {
+    position: absolute;
+    color: rgb(128, 128, 128);
+    top: 0;
+    left: 8%;
+    transform: translate(-50%, 50%);
+}
+
+.input > input::placeholder {
+    padding: 30px;
+}
+
+.rightside-container input{
+    border-radius: 50px;
+    width: 100%;
+   cursor:text;
+    height: 30px;
+    outline: none;
+    border: none;
+    background-color: rgba(128, 128, 128, 0.209);
+}
+
+.input > input::placeholder {
+    padding: 35px;
+   
+}
+
+.happening {
+    margin: 0 10px 0 10px;
+
+
+}
+.happening > p{
+    width: 100%;
+    font-size: 0.7rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    background-color: rgba(128, 128, 128, 0.209);
+    padding: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.happening > div p:first-of-type{
+    font-family: sans-serif;
+    font-size: 0.7rem;
+    color: rgba(0, 0, 0, 0.654);
+    font-weight: normal;
+}
+.happening > div p{
+    font-family: sans-serif;
+    font-size: 0.7rem;
+    font-weight: bold;
+    line-height: 15px;
+}
+
+.happening > .news p:last-of-type{
+    font-family: sans-serif;
+    font-size: 0.7rem;
+    color: rgba(0, 0, 0, 0.654);
+    font-weight: normal;
+
+}
+
+.news{
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 10px;
+    padding: 10px;
+    background-color: rgba(128, 128, 128, 0.209);
+}
+
+.news p span a{
+    color:black;
+    font-size: 0.7;
+}
+
+.news p span a:hover{
+    color: rgba(0, 0, 0, 0.497);
+    font-size: 0.7;
+}
+.news a{
+    text-decoration: none;
+    color:rgb(22, 120, 218);
+}
+
+.news a:hover{
+    text-decoration: none;
+    color:rgb(124, 170, 216);
+  
+}
+.news img{
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.meet{
+    margin: 0 10px 0 10px;
+    background-color: rgba(128, 128, 128, 0.209);
+    padding: 10px;
+
+}
+.meet > p:first-of-type{
+    font-size: 0.8rem;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.meet > p{
+    font-size: 0.8rem;
+    font-family: sans-serif;
+    
+}
+
+.meet .prompted > p{
+    display: inline-block;
+    font-weight: normal;
+    font-family: sans-serif;
+    font-size: 0.7rem;
+    color: rgba(0, 0, 0, 0.703);
+
+}
+
+.treding-box{
+    margin: 0 10px 0 10px;
+    background-color: rgba(128, 128, 128, 0.209);
+    padding: 10px;
+
+}
+
+.treding-box .trending{
+    display: grid;
+    grid-auto-flow: column;
+    color: rgb(107, 106, 106);
+    
+
+    
+}
+
+.treding-box .trending > i{
+    justify-self: end;
+}
+
+.treding-box .trending > p{
+    font-family: sans-serif;
+    font-size: 0.6rem;
+
+    
+
+}
+
+.treding-box P:first-of-type{
+    font-family: sans-serif;
+    font-size: 0.7rem;
+    font-weight: bold;
+}
+
+.treding-box P:last-of-type{
+    font-family: sans-serif;
+    font-size: 0.7rem;
+     color: rgb(107, 106, 106);
+    
+}
