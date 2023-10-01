@@ -15,7 +15,7 @@ const searchInput = document.getElementById('search-input')
 
 
 
-
+/* 
 for (let i = 0; i < navIcon.length; i++) {
     navIcon[i].addEventListener('mouseover', function () {
         navIcon[i].style.backgroundColor = 'cornflowerblue';
@@ -29,7 +29,7 @@ for (let i = 0; i < navIcon.length; i++) {
         home.style.color = '';
     });
 }
-
+ */
 
 const clickUparrowIcon = () =>{
     let clickUparrow = 'active'
@@ -135,13 +135,17 @@ navBar.addEventListener('click', function(){
 
     }
 
-    if(clicked === 'closed'){
-        container.style.gridTemplateColumns = '100px 2fr 1fr';
-        clicked = 'opened'
-    }
-    else{
-        container.style.gridTemplateColumns = 'auto 2fr 1fr';
-        clicked = 'closed'
+    for(let i = 0; i < navIcon; i++){
+        if(clicked === 'closed'){
+            container.style.gridTemplateColumns = '100px 2fr 1fr';
+            navIcon[i].style.justifyContent ='center'
+            clicked = 'opened'
+        }
+        else{
+            container.style.gridTemplateColumns = '1fr 2fr 1fr';
+            navIcon[i].style.justifyContent = ''
+            clicked = 'closed'
+        }
     }
 })
 
