@@ -25,6 +25,11 @@ img {
 }
 .ticon-logo img {
     width:30px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.ticon-logo {
+    height: 50px;
 }
 .ticon-home img {
     width: 40px;
@@ -34,8 +39,57 @@ img {
     grid-auto-flow: column;
 
 }
-   
+.ticon-Explore img {
+    width: 30px;
+}
+.ticon-Explore {
+    display: grid;
+    grid-auto-flow:column;
+}
+.ticon-Notifications img {
+    width: 30px;
+}
+.ticon-Notifications {
+    display: grid;
+    grid-auto-flow: column;
+}
+.ticon-Messages img{
+    width: 30px;
+}
+.ticon-Messages {
+    display: grid;
+    grid-auto-flow:column;
+}
+.ticon-Bookmarks img {
+    width:30px;
+}
+.ticon-Bookmarks {
+    display: grid;
+    grid-auto-flow: column;
+}
+.ticon-Lists img {
+    width: 30px;
+}
+.ticon-Lists {
+    display: grid;
+    grid-auto-flow: column;
+}
+.ticon-Profile img {
+    width: 30px;
 
+
+}
+.ticon-Profile {
+    display: grid;
+    grid-auto-flow: column;
+}
+.ticon-More img {
+    width: 30px;
+}
+.ticon-More {
+    display: grid;
+    grid-auto-flow:column
+}
 .left-menu {
     outline: 3px solid pink;
     
@@ -138,4 +192,12 @@ outline: 3px solid red;
     left: 400px;
     margin: 10px;
     
+}
+.left-menu .icons {
+    display: grid;
+    grid-auto-flow: row;
+    height: 420px;
+    gap: 5px; 
+    margin:auto;
+    outline: 3px solid pink;
 }
