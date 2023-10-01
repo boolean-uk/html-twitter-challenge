@@ -8,6 +8,7 @@ const heart = document.getElementById('heart')
 const uparrow = document.getElementById('uparrow')
 const caution = document.getElementById('caution')
 const navBar = document.getElementById('navbar')
+const retweet = document.getElementById('retweet')
 const container = document.getElementById('container')
 const everyIcons =document.getElementsByTagName('i')
 const searchIcon = document.getElementById('search-icon')
@@ -109,9 +110,8 @@ clickRetweet();
 
 
 
-let clicked = 'closed'
+
 navBar.addEventListener('click', function(){
-    const retweet = document.getElementById('retweet')
     for (let i = 0; i < navIconText.length; i++) {
         if (navIconText[i].style.display === 'block' || navIconText[i].style.display === '') {
             navIconText[i].style.display = 'none'; 
@@ -120,7 +120,9 @@ navBar.addEventListener('click', function(){
         }
 
     }
+
     for(let i = 0; i < navIcon; i++){
+        let clicked = 'closed'
         if(clicked === 'closed'){
             container.style.gridTemplateColumns = '25px 2fr 1fr';
             navIcon[i].style.justifyContent ='center'
@@ -132,7 +134,6 @@ navBar.addEventListener('click', function(){
             clicked = 'closed'
         }
     }
-
 })
 
 
