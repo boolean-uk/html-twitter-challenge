@@ -1,25 +1,31 @@
 
-body, h1, h2, h3, ul, li {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif,system-ui;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+
+}
+
+body, ul,li {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-
-
-body {
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
+  
 
 /* Style the main container */
 main {
     display: grid;
-    grid-template-columns: 200px 1fr 350px;
+    grid-template-columns: 180px 1fr 300px;
     gap: 20px;
-    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    background-color: #fff;
 }
 
 /* Style section for leftbar */
@@ -27,56 +33,72 @@ main {
     display: grid;
     grid-template-rows: 150px 1fr  200px;
 }
-.left-sidebar .top ul {
-    list-style: none;
-    padding: 0;
-}
-
-.left-sidebar .top li {
-    position: relative;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
+.lefttop {
+    display:grid;
     align-items: center;
-    gap: 10px;
-    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border-bottom: 1px solid #e1e8ed;
 }
-
-.left-sidebar .top i.fa-brands {
-    font-size: 50px;
-    position: relative;
-    color: #1da1f2; 
-    margin-left: 50px;
-}
-
-
-.left-sidebar .top i.fa {
-    font-size: 30px;
-    position:relative ;
-    color: #1da1f2; 
-    margin-left: 50px;
-}
-
-
-.left-sidebar .icon {
-    margin-top: 20px;
-}
-
-.left-sidebar .icon ul {
-    list-style: none;
-    padding: 0;
-}
-
-.left-sidebar .icon li {
-    gap: 10px;
-    margin-bottom: 10px;
-}
-
-.left-sidebar .icon i {
-    font-size: 15px;
+  
+.twitterlogo {
+    max-width: 50px;
+    height: auto;
     margin-right: 10px;
-    vertical-align: middle;
-    color: #333; 
+    align-items: center;
+ }
+  
+.downlogo {
+    display: grid;
+    align-items: center;
+    margin-right: 10px;
 }
+  
+.birdcage {
+    max-width: 30px;
+    height: auto;
+    color: #1da1f2;
+}
+  
+h2 {
+    font-size: 20px;
+    margin: 0;
+    font-weight: bold;
+    color: black;
+}
+
+
+/* Styles for the Twitter-like navigation menu */
+.icon {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+  
+.leftlogo {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    padding: 10px;
+    border-radius: 9999px;
+}
+  
+.leftlogo:hover {
+    background-color: #f0f0f0;
+}
+  
+.logo img {
+    max-width: 24px;
+    height: auto;
+    margin-right: 10px;
+}
+  
+h2 {
+    font-size: 16px;
+    margin: 0;
+}
+  
 
 /* Style the client status box */
 #clientstatus {
@@ -109,39 +131,48 @@ main {
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    grid-template-columns: 1fr 1fr;
 }
 
-.tweet-feed h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
+.top {
+    display: grid;
+    grid-template-columns: 1fr 20px;
+    background-color:white;
+  }
+  
+.top h2 {
+    font-size: 25px;
+    margin: 0; 
 }
-
-.tweet-feed header img {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
+  
+.top img.sparkles {
+    grid-auto-flow: column;
+    max-width: 25px;
+    height: auto; 
+    color: #1da1f2;
+    margin-right: 2px; 
 }
 
 /* Style the "What's happening" section */
 .heppening {
+    display: grid;
+    grid-template-columns: 1fr 125px;
     margin-top: 20px;
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
-    background-color: #f9f9f9;
 }
 
 .heppening img {
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     vertical-align: middle;
     margin-right: 10px;
+    border-radius: 50px;
 }
 
-.heppening a {
-    text-decoration: none;
-    color: #333;
+.happening p{
+    text-align: center;
 }
 
 .heppening a:hover {
@@ -161,6 +192,7 @@ main {
 /* Style the newsfeed items */
 .newsfeed {
     display: grid;
+    width: 50px;
     margin-top: 20px;
     border: 1px solid #ddd;
     border-radius: 5px;
@@ -170,7 +202,7 @@ main {
 }
 
 .newsfeed img {
-    width: 40px;
+    width: 20%;
     height: 40px;
     border-radius: 50%;
     margin-right: 10px;
@@ -246,8 +278,8 @@ main {
 }
 
 .trend img {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     margin-right: 10px;
 }
