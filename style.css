@@ -14,7 +14,7 @@ body {
 .left__menu {
   grid-area: left__menu;
   display: grid;
-  gap: 20px;
+  gap: 10px;
   background-color: white;
   grid-template-rows: 350px 40px 60px;
   position: fixed;
@@ -213,13 +213,14 @@ h4 {
 }
 
 .main__content .main__tweet .tweet__one .second__column img {
-  width: 50%;
+  width: 70%;
   border-radius: 20px;
 }
 
-.main__content .main__tweet .tweet__one .second__column p {
-  margin: 0;
-  line-height: 25px;
+.tweet__two .second__column img {
+  width: 70%;
+  border-radius: 20px;
+  height: 50vh;
 }
 
 /* THIRD COLUMN */
@@ -278,11 +279,6 @@ h4 {
   font-size: 15px;
   margin-top: 15px;
   color: gray;
-}
-
-.main__content .main__tweet .tweet__two .second__column iframe {
-  width: 100%;
-  height: auto;
 }
 
 /* THIRD COLUMN */
