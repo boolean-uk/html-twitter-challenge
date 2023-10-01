@@ -18,7 +18,7 @@ const searchInput = document.getElementById('search-input')
 
 
 
-const clickUparrowIcon = () =>{
+ const clickUparrowIcon = () =>{
     let clickUparrow = 'active'
     uparrow.addEventListener('click', function(){
         if( clickUparrow  === 'active'){
@@ -108,7 +108,7 @@ const clickRetweet = () =>{
 }
 clickRetweet();
 
-
+ 
 
 
 navBar.addEventListener('click', function(){

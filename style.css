@@ -21,12 +21,6 @@
 
 }
 
-/*   .nav-icons{
-    display: grid;
-    grid-auto-flow: column;
-    column-gap: 20px;
-   
-}  */
  
  .nav-icons{
     display: grid;
@@ -35,11 +29,7 @@
     padding: 15px;
     margin-bottom: 10px;
 }  
-/*  .nav-icons:hover{
-    background-color:rgb(59, 143, 228);
-    cursor: pointer;
-} */
-  
+
 .nav-icons > p{
     font-family: sans-serif;
     font-weight: bold;
@@ -58,6 +48,7 @@
     background-color: #6044b9;
     cursor: pointer;
 } 
+
 
 
 
@@ -574,7 +565,7 @@
     @media only screen and (max-width: 600px) {
    
         .container{
-            grid-template-columns: '25px 2fr 1fr';;
+            grid-template-columns: '25px 2fr 1fr';
         }
         .nav-icons{
             place-items: center;
