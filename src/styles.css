@@ -1304,6 +1304,67 @@ color: #26a7de;
     border: 1px dashed black;
 }
 
+/* FIVE ICONS */
+.actual-tweet-icon5 {
+    grid-area: actual-tweet-icon5;
+    border: 1px dashed black;
+
+
+        display: grid;
+        grid-template: "tweet-icon-one5 tweet-icon-two5 tweet-icon-three5 tweet-icon-four5";
+       grid-template-columns: repeat(4, 90px);
+        padding: 5px;
+        gap: 5px;
+}
+
+
+.tweet-icon-one5 {
+    grid-area:tweet-icon-one5 ;
+    /* border: 1px dashed black; */
+}
+
+.tweet-icon-one5 > img {
+    width: 15px;
+    padding-top: 20px;
+    padding-left: 35px;
+  
+}
+
+.tweet-icon-two5 {
+    grid-area:tweet-icon-two5 ;
+    /* border: 1px dashed black; */
+}
+
+.tweet-icon-two5 > img {
+    width: 15px;
+    padding-top: 20px;
+    padding-left: 35px;
+  
+}
+
+.tweet-icon-three5 {
+    grid-area:tweet-icon-three5 ;
+    /* border: 1px dashed black; */
+}
+
+.tweet-icon-three5 > img {
+    width: 15px;
+    padding-top: 20px;
+    padding-left: 35px;
+  
+}
+
+.tweet-icon-four5 {
+    grid-area:tweet-icon-four5 ;
+    /* border: 1px dashed black; */
+}
+
+.tweet-icon-four5 > img {
+    width: 15px;
+    padding-top: 20px;
+    padding-left: 35px;
+  
+}
 
 /* SIX */
 .tweetSix-container {
@@ -1380,6 +1441,71 @@ color: #26a7de;
     grid-area: actual-tweet-icon6;
     border: 1px dashed black;
 }
+
+/* ICONS SIX */
+
+.actual-tweet-icon6 {
+    grid-area: actual-tweet-icon6;
+    border: 1px dashed black;
+
+
+        display: grid;
+        grid-template: "tweet-icon-one6 tweet-icon-two6 tweet-icon-three6 tweet-icon-four6";
+       grid-template-columns: repeat(4, 90px);
+        padding: 5px;
+        gap: 5px;
+}
+
+
+.tweet-icon-one6 {
+    grid-area:tweet-icon-one6 ;
+    /* border: 1px dashed black; */
+}
+
+.tweet-icon-one6 > img {
+    width: 15px;
+    padding-top: 20px;
+    padding-left: 35px;
+  
+}
+
+.tweet-icon-two6 {
+    grid-area:tweet-icon-two6 ;
+    /* border: 1px dashed black; */
+}
+
+.tweet-icon-two6 > img {
+    width: 15px;
+    padding-top: 20px;
+    padding-left: 35px;
+  
+}
+
+.tweet-icon-three6 {
+    grid-area:tweet-icon-three6 ;
+    /* border: 1px dashed black; */
+}
+
+.tweet-icon-three6 > img {
+    width: 15px;
+    padding-top: 20px;
+    padding-left: 35px;
+  
+}
+
+.tweet-icon-four6 {
+    grid-area:tweet-icon-four6 ;
+    /* border: 1px dashed black; */
+}
+
+.tweet-icon-four6 > img {
+    width: 15px;
+    padding-top: 20px;
+    padding-left: 35px;
+  
+}
+
+/* RIGHTBAR */
 
 .right-bar {
     grid-area: right-bar;
