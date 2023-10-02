@@ -1,0 +1,203 @@
+*{  box-sizing: border-box;
+    font-family: sans-serif;
+    
+
+}
+.Container{
+    display: grid;
+    grid-template-columns: 275px auto 350px; /*it can also be written like this instead of writing them out if it has just one column for example no footer and header and other blocks*/
+    outline : 3px solid pink;
+    margin: 0 auto; /*this gives space to the webage at the top . ı.e it places it at the center Also position fixed does not work on grid*/
+    min-height: 650px;
+}
+
+img {
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+  }
+.home{ 
+   display: grid;
+   Margin: 10px 10px 10px 10px; 
+   height: 150px;
+   outline: 3px solid pink;
+   
+}
+.ticon-logo img {
+    width:30px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+.ticon-logo {
+    height: 50px;
+}
+.ticon-home img {
+    width: 40px;
+}
+.ticon-home {
+    display: grid;
+    grid-auto-flow: column;
+
+}
+.ticon-Explore img {
+    width: 30px;
+}
+.ticon-Explore {
+    display: grid;
+    grid-auto-flow:column;
+}
+.ticon-Notifications img {
+    width: 30px;
+}
+.ticon-Notifications {
+    display: grid;
+    grid-auto-flow: column;
+}
+.ticon-Messages img{
+    width: 30px;
+}
+.ticon-Messages {
+    display: grid;
+    grid-auto-flow:column;
+}
+.ticon-Bookmarks img {
+    width:30px;
+}
+.ticon-Bookmarks {
+    display: grid;
+    grid-auto-flow: column;
+}
+.ticon-Lists img {
+    width: 30px;
+}
+.ticon-Lists {
+    display: grid;
+    grid-auto-flow: column;
+}
+.ticon-Profile img {
+    width: 30px;
+
+
+}
+.ticon-Profile {
+    display: grid;
+    grid-auto-flow: column;
+}
+.ticon-More img {
+    width: 30px;
+}
+.ticon-More {
+    display: grid;
+    grid-auto-flow:column
+}
+.left-menu {
+    outline: 3px solid pink;
+    
+}
+
+
+.right-menu {
+    outline: 3px solid pink;
+}
+.right {
+   position: fixed;
+   Margin: 10px 10px 10px 10px;
+   display: grid; 
+}
+.Whats-happening {
+    height:50px;
+    background-color:pink;
+    color: white;
+    outline: 3px solid pink;
+    margin-top: 10px;
+}
+.numbers {
+    display: grid;
+    grid-auto-flow: row;
+    height: 400px;
+    gap: 10px; 
+    margin-top: 5px;
+}
+.search {
+    height: 50px;
+    outline: 3px solid pink;
+    color:grey;
+    background-color:pink;
+ 
+
+}
+.seemore {
+    height: 50px;
+    outline: 3px solid pink;
+    color:grey;
+    background-color:pink;
+ 
+
+}
+.tweet {
+    Margin: 10px 10px 10px 10px; 
+}
+.tweet {
+    outline: 3px solid pink;
+    padding: 5px;
+}
+.tweet1 {
+    outline: 3px solid pink;
+}
+.tweet1 img {
+    height:30px;
+    width: 30px;
+    border-radius: 50%;
+    
+
+
+}
+.tweet2{
+    outline: 3px solid pink;
+}
+.tweet2 img {
+    height:30px;
+    width: 30px;
+    border-radius: 50%;
+    
+
+}
+.tweet3 {
+    outline: 3px solid pink;
+}
+.tweet3 img {
+    height:30px;
+    width: 30px;
+    border-radius: 50%;
+    
+}
+.Question {
+    display:grid;
+    outline:3px solid pink;
+    height:100px;
+
+}
+.Question img {
+    height:30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.box {
+outline: 3px solid red;
+}
+.button {
+    color: blue;
+    position:relative;
+    left: 400px;
+    margin: 10px;
+    
+}
+.left-menu .icons {
+    display: grid;
+    grid-auto-flow: row;
+    height: 420px;
+    gap: 5px; 
+    margin:auto;
+    outline: 3px solid pink;
+}
