@@ -19,7 +19,7 @@ body {
     "header      header         header"    50px
     "left-bar    main-bar       right-bar" auto
     "footer      footer         footer"    50px /
-    200px        1fr         510px;
+    200px        1fr         400px;
 
     /* border: 1px dashed black; */
     padding: 5px;
@@ -478,7 +478,7 @@ body {
 
 .main-bar{
     grid-area: main-bar;
-    /* border: 1px dashed black; */
+    border: 1px dashed black;
 
     /* Display in the middle */
 
@@ -487,11 +487,16 @@ body {
     "post-container"
      "tweetOne-container"
      "tweetTwo-container"
-     "tweetThree-container";
+     "tweetThree-container"
+     "tweetFour-container"
+     "tweetFive-container"
+     "tweetSix-container";
      grid-template-rows:
-     160px 1fr 1fr 1fr ;
+     160px 1fr 1fr 1fr 1fr 1fr 1fr ;
      padding: 5px;
      gap: 5px;
+     overflow-y: scroll;
+     
 }
 
 .post-container {
@@ -716,7 +721,7 @@ body {
 
 .tweeting-container {
 grid-area: tweeting-container;
-/* border: 1px dashed black; */
+border: 1px dashed black;
 
 display: grid;
 grid-template: 
@@ -957,7 +962,7 @@ color: #26a7de;
 
     .tweetThree-container {
     grid-area: tweetThree-container;
-    /* border: 1px dashed black; */
+    border: 1px dashed black;
 
     display: grid;
     grid-template: "user-posting-pic3 tweeting-container3 ";
@@ -968,7 +973,7 @@ color: #26a7de;
 
 .user-posting-pic3 {
     grid-area: user-posting-pic3;
-    /* border: 1px dashed black; */
+    border: 1px dashed black;
 }
 
 .user-posting-pic3 > img {
@@ -980,7 +985,7 @@ color: #26a7de;
 
 .tweeting-container3 {
     grid-area: tweeting-container3;
-    /* border: 1px dashed black; */
+    border: 1px dashed black;
 
     display: grid;
     grid-template: 
@@ -994,7 +999,7 @@ color: #26a7de;
 
 .tag-name3 {
     grid-area: tag-name3;
-    /* border: 1px dashed black; */
+    border: 1px dashed black;
 }
 
 
@@ -1010,7 +1015,7 @@ color: #26a7de;
 
 .actual-tweet3 {
     grid-area: actual-tweet3;
-    /* border: 1px dashed black; */
+    border: 1px dashed black;
 }
 
 .actual-tweet3 > p >span{
@@ -1028,7 +1033,7 @@ color: #26a7de;
 
 .actual-tweet-icon3 {
     grid-area: actual-tweet-icon3;
-    /* border: 1px dashed black; */
+    border: 1px dashed black;
 
 
         display: grid;
@@ -1086,6 +1091,233 @@ color: #26a7de;
   
 }
 
+/* More Tweets */
+
+/* FOUR */
+.tweetFour-container {
+    grid-area: tweetFour-container;
+    border: 1px dashed black;
+
+    display: grid;
+    grid-template: "user-posting-pic4 tweeting-container4 ";
+    grid-template-columns: 60px 1fr;
+    padding: 5px;
+    gap: 5px;
+}
+
+.user-posting-pic4 {
+    grid-area: user-posting-pic4;
+    border: 1px dashed black;
+}
+
+.user-posting-pic4 > img {
+    width: 40px;
+    padding-top: 22px;
+    padding-left: 9px;
+}
+
+
+.tweeting-container4 {
+    grid-area: tweeting-container4;
+    border: 1px dashed black;
+
+    display: grid;
+    grid-template: 
+    "tag-name4"
+    "actual-tweet4"
+    "actual-tweet-icon4";
+    grid-template-rows: 1fr 1fr 2fr;
+    padding: 5px;
+    gap: 5px
+}
+
+.tag-name4 {
+    grid-area: tag-name4;
+    border: 1px dashed black;
+}
+
+.tag-name4 > p {
+    padding-top: 25px;
+    padding-left: 9px;
+    font-size: 13px;
+}
+
+.at4 {
+    color: grey;
+}
+
+.actual-tweet4 {
+    grid-area: actual-tweet4;
+    border: 1px dashed black;
+}
+
+.actual-tweet4 > p >span{
+    font-size: 13px;
+    padding-top: 5px;
+    padding-left: 4px;
+    color: #26a7de;
+    }
+    
+    .actual-tweet4 > p {
+        font-size: 12px;
+        padding-top: 5px;
+        padding-left: 4px;
+    }
+
+
+   
+/* FIVE */
+.tweetFive-container {
+    grid-area: tweetFive-container;
+    border: 1px dashed black;
+
+    display: grid;
+    grid-template: "user-posting-pic5 tweeting-container5 ";
+    grid-template-columns: 60px 1fr;
+    padding: 5px;
+    gap: 5px;
+}
+
+.user-posting-pic5 {
+    grid-area: user-posting-pic5;
+    border: 1px dashed black;
+}
+
+.user-posting-pic5 > img {
+    width: 40px;
+    padding-top: 22px;
+    padding-left: 9px;
+}
+
+
+.tweeting-container5 {
+    grid-area: tweeting-container5;
+    border: 1px dashed black;
+
+    display: grid;
+    grid-template: 
+    "tag-name5"
+    "actual-tweet5"
+    "actual-tweet-icon5";
+    grid-template-rows: 1fr 1fr 2fr;
+    padding: 5px;
+    gap: 5px
+}
+
+.tag-name5 {
+    grid-area: tag-name5;
+    border: 1px dashed black;
+}
+
+.tag-name5 > p {
+    padding-top: 25px;
+    padding-left: 9px;
+    font-size: 13px;
+}
+
+.at5 {
+    color: grey;
+}
+
+.actual-tweet5 {
+    grid-area: actual-tweet5;
+    border: 1px dashed black;
+}
+
+.actual-tweet5 > p >span{
+    font-size: 13px;
+    padding-top: 5px;
+    padding-left: 4px;
+    color: #26a7de;
+    }
+    
+    .actual-tweet5 > p {
+        font-size: 12px;
+        padding-top: 5px;
+        padding-left: 4px;
+    }
+
+.actual-tweet-icon5 {
+    grid-area: actual-tweet-icon5;
+    border: 1px dashed black;
+}
+
+
+/* SIX */
+.tweetSix-container {
+    grid-area: tweetSix-container;
+    border: 1px dashed black;
+
+    display: grid;
+    grid-template: "user-posting-pic6 tweeting-container6 ";
+    grid-template-columns: 60px 1fr;
+    padding: 5px;
+    gap: 5px;
+}
+
+.user-posting-pic6 {
+    grid-area: user-posting-pic6;
+    border: 1px dashed black;
+}
+
+.user-posting-pic6 > img {
+    width: 40px;
+    padding-top: 22px;
+    padding-left: 9px;
+}
+
+
+.tweeting-container6 {
+    grid-area: tweeting-container6;
+    border: 1px dashed black;
+
+    display: grid;
+    grid-template: 
+    "tag-name6"
+    "actual-tweet6"
+    "actual-tweet-icon6";
+    grid-template-rows: 1fr 1fr 2fr;
+    padding: 5px;
+    gap: 5px
+}
+
+.tag-name6 {
+    grid-area: tag-name6;
+    border: 1px dashed black;
+}
+
+.tag-name6 > p {
+    padding-top: 25px;
+    padding-left: 9px;
+    font-size: 13px;
+}
+
+.at6 {
+    color: grey;
+}
+
+.actual-tweet6 {
+    grid-area: actual-tweet6;
+    border: 1px dashed black;
+}
+
+.actual-tweet6 > p >span{
+    font-size: 13px;
+    padding-top: 5px;
+    padding-left: 4px;
+    color: #26a7de;
+    }
+    
+    .actual-tweet6 > p {
+        font-size: 12px;
+        padding-top: 5px;
+        padding-left: 4px;
+    }
+
+.actual-tweet-icon6 {
+    grid-area: actual-tweet-icon6;
+    border: 1px dashed black;
+}
 
 .right-bar {
     grid-area: right-bar;
@@ -1098,7 +1330,7 @@ color: #26a7de;
     "who-to-follow-right";
     grid-template-rows: 
     280px 50px;
-    padding: 5px;
+    padding: 10px;
     gap: 5px;
 }
 
