@@ -1164,6 +1164,68 @@ color: #26a7de;
         padding-left: 4px;
     }
 
+/* FOUR-ICONS */
+
+.actual-tweet-icon4 {
+    grid-area: actual-tweet-icon4;
+    border: 1px dashed black;
+
+
+        display: grid;
+        grid-template: "tweet-icon-one4 tweet-icon-two4 tweet-icon-three4 tweet-icon-four4";
+       grid-template-columns: repeat(4, 90px);
+        padding: 5px;
+        gap: 5px;
+}
+
+
+.tweet-icon-one4 {
+    grid-area:tweet-icon-one4 ;
+    /* border: 1px dashed black; */
+}
+
+.tweet-icon-one4 > img {
+    width: 15px;
+    padding-top: 20px;
+    padding-left: 35px;
+  
+}
+
+.tweet-icon-two4 {
+    grid-area:tweet-icon-two4 ;
+    /* border: 1px dashed black; */
+}
+
+.tweet-icon-two4 > img {
+    width: 15px;
+    padding-top: 20px;
+    padding-left: 35px;
+  
+}
+
+.tweet-icon-three4 {
+    grid-area:tweet-icon-three4 ;
+    /* border: 1px dashed black; */
+}
+
+.tweet-icon-three4 > img {
+    width: 15px;
+    padding-top: 20px;
+    padding-left: 35px;
+  
+}
+
+.tweet-icon-four4 {
+    grid-area:tweet-icon-four4 ;
+    /* border: 1px dashed black; */
+}
+
+.tweet-icon-four4 > img {
+    width: 15px;
+    padding-top: 20px;
+    padding-left: 35px;
+  
+}
 
    
 /* FIVE */
