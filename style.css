@@ -1,0 +1,894 @@
+/* GLOBAL RESET */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: rgb(219, 219, 219);
+    max-height: 100vh;
+    scroll-behavior: smooth;
+}
+
+
+:root {
+    --border-color: rgba(128, 128, 128, 0.632);
+    --box-background-color: rgb(32, 35, 39);
+    --hover-bg-color: rgba(106, 106, 106, 0.362);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: minmax(25%, 1fr) minmax(75%, 1fr);
+    grid-template-areas: "header main";
+    background-color: black;
+}
+
+/* HEADER */
+.header {
+    display: grid;
+    grid-area: header;
+    grid-template-columns: 1fr 250px;
+    grid-template-rows: 45px 1fr 70px 1fr;
+    grid-template-areas: 
+    ". logo"
+    ". nav-content"
+    ". post"
+    ". profile";
+    gap: 5px;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 800px) {
+    .header {
+        display: none;
+    }
+}
+
+/* X LOGO */
+.x-logo {
+    display: grid;
+    grid-area: logo;
+    align-self: center;
+    margin-left: 2px;
+}
+
+.x-logo > a {
+    width: fit-content;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.x-logo > a > img {
+   display: grid;
+   align-self: center;
+   width: 25px;
+}
+
+.x-logo:hover > a {
+    background-color: var(--hover-bg-color);
+}
+
+/* LEFT MENU */
+.main-nav {
+    grid-area: nav-content;
+    display: grid;
+    grid-template-rows: repeat(9, 43px);
+    gap: 8px;
+}
+
+.main-nav > a {
+    display: grid;
+    align-content: center;
+    text-decoration: none;
+}
+
+.main-nav > a > div {
+    display: grid;
+    grid-template-columns: 50px auto;
+    gap: 10px;
+    align-items: center;
+
+    width: fit-content;
+    padding: 8px 25px 8px 0;
+    border-radius: 20px;
+}
+
+.main-nav > a > div > div {
+    width: auto;
+    display: inline;
+    font-size: 20px;
+}
+
+.main-nav > a:hover > div {
+    background-color: var(--hover-bg-color);
+}
+
+/* ICON RESIZE */
+.main-nav > a > div > img {
+    width: 30px;
+    justify-self: center;
+}
+
+.main-nav .premium-menu  > img {
+    width: 25px;
+    height: 30px;
+}
+
+/* LEFT MENU CREATE POST */
+.left-menu-create-post {
+    display: grid;
+    grid-area: post;
+    place-content: center;
+    justify-self: start;
+}
+
+.left-menu-home-text {
+    font-size: 4px;
+}
+
+@media screen and (max-width: 1000px) {
+    .left-menu-create-post {
+        display: none;
+    }
+}
+
+.left-menu-create-post-link {
+    font-size: 17px;
+    font-weight: bold;
+    padding: 15px 95px;
+    border-radius: 25px;
+    background-color: dodgerblue;
+    text-decoration: none;
+}
+
+.left-menu-create-post-link:hover {
+    background-color: rgb(0, 119, 239);
+}
+
+/* PROFILE */
+.profile {
+    display: grid;
+    grid-area: profile;
+    align-content: end;
+}
+
+@media screen and (max-width: 1000px) {
+    .profile {
+        display: none;
+    }
+}
+
+.profile-link {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 50px 1fr 30px;
+    border-radius: 30px;
+    padding: 10px 10px 10px 20px;
+    bottom: 0;
+    text-decoration: none;
+}
+
+.profile-link:hover {
+    background-color: var(--hover-bg-color);
+}
+
+.profile .profile-photo {
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(117, 114, 114, 0.155);
+    border-radius: 40px;
+}
+
+.profile-text {
+    font-size: 15px;
+    line-height: 22px;
+}
+
+.profile-text > .user-handle {
+    color: gray
+}
+
+.profile-menu-dots-icon {
+    display: grid;
+    justify-self: end;
+    width: 20px;
+}
+
+/* MAIN */
+.main {
+    display: grid;
+    grid-template-columns: 600px 350px 1fr;
+    grid-template-areas: "main-body right-menu .";
+    gap: 20px;
+    overflow-y: scroll;
+}
+
+/* MAIN CONTENT */
+
+.hide-scroll {
+    overflow: hidden;
+}
+
+.main-content {
+    display: grid;
+    grid-area: main-body;
+    grid-template-rows: 100px 110px 1fr;
+    overflow-y: scroll;
+    margin-right: 100%;
+    padding-right: 100%;
+    position: fixed;
+    bottom: 0;
+    background-color: black;
+
+}
+
+.main-content > div {
+    width: 600px;
+}
+
+@media screen and (max-width: 1300px) {
+    .main {
+    grid-template-columns: 530px 320px 1fr;
+    }
+    .main-content > div {
+        width: 530px;
+    }
+}
+
+/* HOME */
+.home {
+    display: grid; 
+    grid-template-rows: 50px 40px;
+    padding: 10px 15px;
+    border-bottom: solid 1px var(--border-color);
+    border-left: solid 1px var(--border-color);
+    border-right: solid 1px var(--border-color);
+}
+
+.home-heading {
+    padding-top: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.switch-follow-view {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+}
+
+.for-you {
+    font-weight: bold;
+    border-bottom: solid 4px dodgerblue;
+    padding-bottom: 16px;
+}
+
+.following {
+    color: gray;
+}
+
+/* CREATE NEW POST */
+.create-post-main-feed {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    padding: 15px 15px 10px 15px;
+    border-bottom: solid 1px var(--border-color);
+    border-left: solid 1px var(--border-color);
+    border-right: solid 1px var(--border-color);
+
+    position: sticky;
+    top: 0;
+    background-color: black;
+}
+
+.post-content {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+    gap: 5px;
+}
+
+.post-content > .profile-photo {
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.post-content > .post-text {
+    font-size: 20px;
+    color: gray;
+}
+
+.add-to-post {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    justify-items: center;
+}
+
+.add-to-post-attachments {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: center;
+    gap: 5px;
+}
+
+.add-to-post-attachments > a {
+    border-radius: 30px;
+}
+
+.add-to-post-attachments > a:hover {
+    background-color: rgb(1, 39, 77);
+}
+
+.add-to-post-attachments > a > img {
+    display: grid;
+    align-self: center;
+    margin: 5px;
+    width: 20px;
+}
+
+.post-to-twitter {
+    display: grid;
+    align-content: center;
+    justify-self: end;
+}
+
+.post-to-twitter-text {
+    font-weight: bold;
+    text-decoration: none;
+    padding: 8px 20px;
+    background-color: dodgerblue;
+    border-radius: 20px;
+}
+
+.post-to-twitter-text:hover {
+    background-color: rgb(0, 79, 158);
+}
+
+/* MAIN FEED */
+
+/* GENERIC POST ADJUSTMENTS */
+
+.main-feed > div {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    grid-auto-rows: auto;
+    padding: 15px 15px;
+    border-bottom: solid 1px var(--border-color);
+    border-left: solid  1px var(--border-color);
+    border-right: solid  1px var(--border-color);
+}
+
+.user-photo-image {
+    object-fit: cover;
+    width: 40px;
+    border-radius: 200px;
+}
+
+.tweet-content {
+    display: grid;
+    grid-template-rows: 20px 1fr 30px;
+    gap: 5px;
+}
+
+.feed-user-details {
+    display: grid;
+    grid-template-columns: 1fr auto;
+}
+
+.feed-user-details > .feed-username {
+    font-size: 14px;
+}
+
+.feed-user-details > .feed-username > span {
+    color: gray;
+}
+
+.feed-user-menu {
+    display: grid;
+    place-self: center;
+    text-align: center;
+    width: 20px;
+}
+
+.single-tweet-content {
+    display: grid;
+    grid-auto-rows: min-content;
+    gap: 10px;
+}
+
+.tweet-photo {
+    display: grid;
+    padding: 5px 0;
+    place-self: center;
+}
+
+.feed-tweet-actions {
+    display: grid;
+    grid-template-columns: 1fr 30px;
+    gap: 30px;
+    align-items: center;
+}
+
+.direct-tweet-reaction {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.direct-tweet-reaction > a {
+    display: grid;
+    grid-template-columns: 30px auto;
+    align-items: center;
+}
+
+.direct-tweet-reaction > a > div {
+    display: grid;
+    align-items: center;
+    color: gray;
+    font-size: 12px;
+    width: fit-content;
+}
+
+.direct-tweet-reaction > a > div > img {
+    width: 30px;
+    padding: 4px;
+    border-radius: 30px;
+}
+
+/* REPLY REACTIONS */
+.reply-reactions {
+    text-decoration: none;
+}
+
+.reply-reactions:hover .reply {
+    filter: invert(41%) sepia(46%) saturate(2810%) hue-rotate(195deg) brightness(103%) contrast(102%);
+}
+
+.reply-reactions:hover > div:nth-of-type(1) {
+    border-radius: 30px;
+    background-color: rgba(30, 143, 255, 0.274);
+}
+
+.reply-reactions:hover > .reply-count {
+    color: dodgerblue;
+}
+
+/* REPOST REACTIONS */
+.repost-reaction {
+    text-decoration: none;
+}
+
+.repost-reaction:hover .repost {
+    filter: invert(46%) sepia(89%) saturate(1171%) hue-rotate(88deg) brightness(94%) contrast(101%);
+}
+
+.repost-reaction:hover > div:nth-of-type(1) {
+    border-radius: 30px;
+    background-color: #02a01445;
+}
+
+.repost-reaction:hover .repost-count {
+    color: #03ba18;
+}
+
+/* LIKE REACTIONS */
+.like-reaction {
+    text-decoration: none;
+}
+
+.like-reaction:hover .like {
+    filter: invert(20%) sepia(62%) saturate(7458%) hue-rotate(318deg) brightness(85%) contrast(100%);
+}
+
+.like-reaction:hover > div:nth-of-type(1) {
+    border-radius: 30px;
+    background-color: #d80b7834;
+}
+
+.like-reaction:hover > .like-count {
+    color: #d80b78;
+}
+
+/* VIEW REACTIONS */
+.views-reaction {
+    text-decoration: none;
+}
+
+.views-reaction:hover .views {
+    filter: invert(41%) sepia(46%) saturate(2810%) hue-rotate(195deg) brightness(103%) contrast(102%);
+}
+
+.views-reaction:hover > div:nth-of-type(1) {
+    border-radius: 30px;
+    background-color: rgba(30, 143, 255, 0.274);
+}
+
+.views-reaction:hover > .view-count {
+    color: dodgerblue;
+}
+
+/* SHARE REACTIONS */
+
+.share {
+    display: grid;
+    align-items: center;
+    justify-self: start;
+    width: 22px;
+}
+
+.share-image-bg {
+    width: fit-content;
+    padding: 4px;
+}
+
+.share-reaction:hover .share {
+    filter: invert(41%) sepia(46%) saturate(2810%) hue-rotate(195deg) brightness(103%) contrast(102%);
+}
+
+.share-reaction:hover > div {
+    border-radius: 30px;
+    background-color: rgba(30, 143, 255, 0.274);
+}
+
+/* OTHER ICON ADJUSTMENTS */
+.direct-tweet-reaction > a > div > .reply {
+    width: 28px;
+}
+
+.direct-tweet-reaction > a> div > .views {
+    width: 27px;
+}
+
+/* SPECIFIC POST ADJUSTMENTS */
+
+.post-1 .tweet-photo {
+    border-radius: 20px;
+    object-fit: cover;
+    width: 400px;
+    height: 400px;
+}
+
+.post-2 .tweet-photo {
+
+    width: 450px;
+    border-radius: 20px;
+}
+
+.post-3 .tweet-text > a {
+    color: orange;
+}
+
+/* RIGHT MENU */
+
+.right-menu {
+    display: grid;
+    grid-area: right-menu;
+    grid-template-rows: 50px 1fr;
+    gap: 10px;
+    padding: 10px;
+}
+
+@media screen and (max-width: 900px) {
+    .right-menu {
+        display: none;
+    }
+}
+
+.right-menu-stop-scroll {
+    display: grid;
+    grid-template-rows: 110px 530px 450px 80px;
+    gap: 15px;
+    padding-top: 60px;
+    z-index: 0;
+}
+
+/* SEARCH BAR */
+.search-bg {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    padding: 10px 20px 5px 0;
+    width: 350px;
+}
+
+@media screen and (max-width: 1300px) {
+    .search-bg {
+        width: 320px;
+    }
+}
+
+.search {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 20px 1fr;
+    padding: 10px 0;
+    align-self: center;
+    align-items: center;
+
+    background-color: var(--box-background-color);
+    border-radius: 25px;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+.search:hover {
+    border: solid 1px dodgerblue;
+}
+
+.search:hover > .search-icon {
+    filter: invert(41%) sepia(46%) saturate(2810%) hue-rotate(195deg) brightness(103%) contrast(102%);
+}
+
+.search:hover > .search-text {
+    color: dodgerblue;
+}
+
+.search-icon > img {
+    width: 20px;
+}
+
+.search-text {
+    color: gray;
+}
+
+/* PREMIUM */
+.premium {
+    padding: 15px;
+    border-radius: 20px;
+    background-color: var(--box-background-color);
+}
+
+.premium-subheader {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+
+.premium-text {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* WHAT'S HAPPENING */
+.trending {
+    display: grid;
+    grid-template-rows: 50px 1fr 50px;
+
+    border-radius: 20px;
+    background-color: var(--box-background-color);
+}
+
+.trending-subheader {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 0 15px 15px;
+}
+
+.trending-cards {
+    display: grid;
+    grid-template-rows: 100px repeat(4, 80px);
+}
+
+/* TRENDING HEADLINE */
+.trending-headline {
+    display: grid;
+    grid-template-columns: 1fr 110px;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.trending-headline:hover {
+    background-color: var(--hover-bg-color);
+}
+
+.headline-status {
+    font-size: 14px;
+    color: gray;
+}
+
+.headline-content-text {
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.headline-image {
+    display: grid;
+    justify-self: end;
+    width: 100px;
+    border-radius: 30px;
+}
+
+/* TRENDING SUBCARDS */
+.trending-subcard {
+    padding: 10px 0 5px 15px;
+}
+
+.trending-subcard-link {
+    text-decoration: none;
+}
+
+.trending-subcard-link > div {
+    padding-bottom: 4px;
+}
+
+.trending-subcard:hover {
+    background-color: var(--hover-bg-color);
+}
+
+.trending-subcard-status {
+    font-size: 14px;
+    color: gray;
+}
+
+.trending-subcard-text {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.trending-subcard-posts {
+    font-size: 14px;
+    color: gray;
+}
+
+.trending-subcard-menu {
+    width: 30px;
+    display: grid;
+    place-items: center;
+
+    position: relative;
+    bottom: 80%;
+    left: 85%;
+}
+
+.trending-subcard-menu-link {
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border-radius: 60px;
+}
+
+.trending-subcard-menu-link:hover {
+    background-color: rgba(30, 143, 255, 0.546);
+}
+
+.trending-subcard-menu-link > img {
+    width: 20px;
+}
+
+/* SHOW MORE */
+.show-more {
+    display: grid;
+    align-items: center;
+    padding-left: 15px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.show-more:hover {
+    background-color: var(--hover-bg-color);
+}
+
+.show-more-link {
+    text-decoration: none;
+    color: dodgerblue;
+    font-size: 15px;
+}
+
+/* WHO TO FOLLOW */
+.who-to-follow {
+    display: grid;
+    grid-template-rows: 50px 200px 50px;
+    background-color: var(--box-background-color);
+    border-radius: 20px;
+}
+
+.who-to-follow-subheader {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px 0 15px 15px;
+}
+
+.follow-suggestions {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+}
+
+.follow-user {
+    display: grid;
+    grid-template-columns: 50px 1fr 80px;
+    padding: 10px 0;
+    align-items: center;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.follow-user:hover {
+    background-color: var(--hover-bg-color);
+}
+
+.follow-user-photo {
+    width: 40px;
+    border-radius: 60px;
+}
+
+.follow-user-details {
+    font-size: 14px;
+    padding-left: 10px;
+}
+
+.follow-user-name {
+    font-weight: bold;
+    padding-bottom: 3px;
+}
+
+.follow-user-handle {
+    color: gray;
+}
+
+.follow-link {
+    background-color: white;
+    width: 80px;
+    border: 0;
+    border-radius: 20px;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+.follow-link:hover {
+    background-color: rgba(39, 145, 251, 0.847);
+    color: white;
+}
+
+.follow-link {
+    padding: 8px 0;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    color: black;
+}
+
+.follow-link:hover {
+    color: rgb(197, 196, 196);
+}
+
+/* MESSAGES */
+.messages {
+   display: grid;
+    justify-items: end;
+    position: fixed;
+    bottom: 0;
+    width: 450px;
+    height: 50px;
+}
+
+.messages-link {
+    display: grid;
+    align-items: center;
+
+    width: 400px;
+    background-color: black;
+    box-shadow: 0 0 6px 2px rgba(255, 255, 255, 0.626);
+    text-decoration: none;
+
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.messages-grid {
+    display: grid;
+    grid-template-columns: 1fr repeat(2, 30px);
+}
+
+.messages-grid > img {
+    width: 20px;
+}
+
+.messages-text {
+    font-size: 20px;
+    font-weight: bold;
+    padding-left: 20px;
+}
