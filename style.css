@@ -9,14 +9,14 @@ body{
 .container{
     display: grid;
     grid-template-columns: auto 200px minmax(400px, 900px) 200px auto;
-    width: 80vw;
+    width: 100vw;
+    height: 100vh;
 }
 
 .left-side{
     grid-column: 2;
     position: sticky;
     top: 0;
-    height: 70vh;
     padding: 20px;
     border: 2px solid black;
     display: grid;
