@@ -35,11 +35,9 @@ div.home-icon {
     display: grid;
     margin-top: 20px;
     padding-left: 70px;
-
-}
-
-img.home-icon {
-    
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: start;
 
 }
 
