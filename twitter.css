@@ -4,7 +4,8 @@
 
 .bigcontainer {
   display: grid;
-  grid-template-columns: 5fr 10fr 5fr;
+  height: 100vh;
+  grid-template-columns: 3fr 10fr 5fr;
   grid-template-areas: "left middle right";
   background-color: whitesmoke;
   gap: 5px;
@@ -12,8 +13,9 @@
 
 .leftcontainer {
   grid-area: left;
-  height: 750px;
+  height: 100vh;
   gap: 5px;
+  width: 200px;
 }
 
 .leftcontainer p {
@@ -21,6 +23,7 @@
 }
 
 .middlecontainer {
+  height: 100vh;
   border: lightgrey 1px solid;
   grid-area: middle;
   height: 750px;
@@ -42,6 +45,7 @@
 }
 
 .topmidprofile {
+  height: 100;
   border: 1px solid lightgray;
   display: grid;
   grid-area: topmid;
@@ -238,7 +242,6 @@
 .bottomleftprofile {
   display: grid;
   grid-template-columns: 4fr 1fr;
-  grid-row: 2fr 2fr;
 }
 
 .notificationsoption {
@@ -323,10 +326,24 @@
 .bottomleftprofile {
   display: grid;
   grid-area: bottomprofile;
-  grid-template-columns: 1fr 7fr;
-  margin: 10px;
+  grid-template-areas:
+    "img name"
+    ".mail";
+  grid-template-columns: 1fr 10fr;
+  grid-template-rows: 1fr 10fr;
+  margin-top: 95px;
 }
-
+.bottomleftprofile p {
+  grid-area: name;
+}
+.bottomleftprofile span {
+  font-size: x-small;
+  color: grey;
+  grid-area: mail;
+}
+.bottomleftprofile img {
+  grid-area: img;
+}
 img {
   width: 30px;
   padding: 10px;
