@@ -14,7 +14,7 @@ body{
     display: grid;
     grid-template: 
    "left-side                main                    right-side" 1fr/
-   minmax(36px,250px)       minmax(500px,1fr)      minmax(20px,310px) ;
+   minmax(36px,250px)       minmax(600px,1fr)      minmax(250px,310px) ;
   /*   border: 2px solid black;*/
    
 }
@@ -122,7 +122,7 @@ body{
 .img{
     grid-area: img;
     padding-top: 5px;
-    padding-left: 5px;
+    padding-left: 0px;
 }
 .name{
     grid-area: name;
@@ -315,7 +315,7 @@ grid-template:
 }
 .right-container2{
     grid-area: right-container2;
-    border: 1px solid rgb(211, 204, 204);
+  /*  border: 1px solid rgb(211, 204, 204);*/
     
     margin: 5px 30px;
     border-radius: 2px;
@@ -334,14 +334,14 @@ grid-template:
 .right-container1-part1{
     grid-area: right-container1-part1;
     background-color: #eaeaea;
-    border: 1px solid rgb(211, 204, 204);/*set border-bottom*/
-     padding:6px 10px;
+  /*  border: 1px solid rgb(211, 204, 204);/*set border-bottom*/
+     padding: 6px 10px;
      font-size: 18px;
 }
 .right-container1-part2{
     grid-area: right-container1-part2;
     background-color: #eaeaea;
-    border: 1px solid rgb(211, 204, 204);/*set border-bottom*/
+  /*  border: 1px solid rgb(211, 204, 204);/*set border-bottom*/
      padding:4px 0px;
      display: grid;
      grid-template:
@@ -355,7 +355,7 @@ grid-template:
     
 }
 .right-container1-part3{
-    border: 1px solid rgb(211, 204, 204);
+  /* border: 1px solid rgb(211, 204, 204);*/
     background-color: #eaeaea;
     display: grid;
     grid-template:
@@ -367,7 +367,7 @@ grid-template:
     padding: 5px 10px;
 }
 .right-container1-part4{
-    border: 1px solid rgb(211, 204, 204);
+ /*   border: 1px solid rgb(211, 204, 204);*/
     background-color: #eaeaea;
     display: grid;
     grid-template:
@@ -379,7 +379,7 @@ grid-template:
     padding: 3px 10px;
 }
 .right-container1-part5{
-    border: 1px solid rgb(211, 204, 204);
+  /*  border: 1px solid rgb(211, 204, 204);*/
     background-color: #eaeaea;
     display: grid;
     grid-template:
@@ -391,7 +391,7 @@ grid-template:
     padding: 3px 10px;
 }
 .right-container1-part6{
-    border: 1px solid rgb(211, 204, 204);
+  /*  border: 1px solid rgb(211, 204, 204);*/
     background-color: #eaeaea;
     display: grid;
     grid-template:
@@ -411,7 +411,7 @@ grid-template:
   
 }
 .right-container1-part7{
-    border: 1px solid rgb(211, 204, 204);
+ /*   border: 1px solid rgb(211, 204, 204);*/
     background-color: #eaeaea;
     display: grid;
     grid-template:
@@ -424,7 +424,7 @@ grid-template:
     padding: 12px 10px;
 }
 .right-container1-part8{
-    border: 1px solid rgb(211, 204, 204);
+  /*  border: 1px solid rgb(211, 204, 204);*/
     background-color: #f5f0f0;
     display: grid;
     grid-template:
@@ -444,3 +444,8 @@ grid-template:
     padding: 7px 5px;
 }
 
+@media only screen and (max-width:800px) {
+ .tweet{
+    display:none;
+}
+}
