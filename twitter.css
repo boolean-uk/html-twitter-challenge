@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-left: 0 auto;
+    margin-right: 0 auto;
+}
+
+.container {
+    display: grid;
+    grid-template: 
+    "left-bar   main   right-bar" 
+    "left-bar   main   right-bar";
+    margin: 0 auto;
+    margin-left: auto;
+
+}
+
+.left-bar {
+    display: block;
+    background-color: white;
+    width: 300px;
+    position:fixed;
+}
+
+.logo {
+    padding-left: 55px;
+    padding-bottom: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding-left: 50px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 600;
+}
+
+a:hover {
+    color: rgb(29 161 242);
+}
+
+
+.home-logo, .explore-logo, .notifications-logo, .more-logo {
+    color: rgb(1, 1, 10);
+    padding: 10px;
+    padding-right: 25px;
+    padding-top: 20px;
+}
+
+.messages-logo, .bookmarks-logo, .lists-logo, .profile-logo {
+    color: rgb(1, 1, 10);
+    padding: 10px;
+    padding-right: 25px;
+    padding-top: 20px;
+
+}
+
+.main-tweet {
+    background-color: rgb(29, 161, 242);
+    width: 180px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    margin-top: 10px;
+}
+
+.main-tweet:hover {
+    color: rgb(29 161 242);
+    background-color: white;
+    border: solid;
+}
+
+.main {
+    background-color: white;
+    border: solid;
+    border-width: 1px;
+    border-color: grey;
+    width: auto;
+    margin-left: 300px;
+}
+
+.home-bar {
+    display: grid;
+    grid-template: 
+    "home    star" 1fr/
+    1fr;
+    padding: 15px;
+}
+
+.star {
+    color: rgb(29 161 242);
+    opacity: 50%;
+}
+
+.home {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.post {
+    display: grid;
+    grid-template: 
+    "img   input";
+    grid-template-columns: 65px auto;
+}
+
+#post-placeholder {
+    border: none;
+    float: inline-start;
+    grid-area: input;
+    justify-content: start;
+}
+
+img {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+    padding: 5px;
+    margin: 5px;
+} 
+
+input {
+    width: 600px;
+    border: none;
+}
+
+
+
+.icons {
+    display: grid;
+    
+    grid-template-columns: 10% 10% 10% 10% 10% 35% 15%;
+    column-gap: 0px;
+    color:  rgb(29 161 242);
+    padding-top: 30px;
+}
+
+
+
+.image-icon, .gif-icon {
+    color: blue;
+}
+
+
+.post-tweet {
+    grid-column: 7;
+    background-color:  rgb(29 161 242);
+    color: white;
+    padding:10px   ;
+    border: none;
+    border-radius: 20px;
+    opacity: 50%;
+    width:  60%;
+    justify-self: center;
+}
+
+.post-tweet:hover {
+    background-color:  rgb(4, 98, 156);
+}
+
+.material-symbols-outlined {
+    color:   rgb(29 161 242);
+    opacity: 50%;
+}
+
+.tweet1 {
+    display: grid;
+    grid-template: 
+    "  clara "
+    "  text1 ";
+    padding-top: 20px;
+}
+
+.tweet2, .tweet3 {
+    padding-top: 20px;
+}
+
+.clara, .text1 {
+    padding-left: 60px;
+    position: relative;
+    bottom: 50px;
+    padding-right: 20px;
+}
+
+
+span {
+    font-weight: 100;
+    color: rgb(8, 1, 1);
+    opacity: 50%;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    list-style: none;
+}
+
+#line-break {
+    opacity: 8%;
+    border:solid 5px;
+    border-color: rgb(29 161 242);
+}
+
+p {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-top: 5px;
+    font-size: large;
+}
+
+.right-bar {
+    
+    width: 300px;
+   
+}
+
+
+.search-twitter {
+    padding: 10px;
+    width: 100px;
+}
+
+.input {
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgb(230, 228, 228);
+    width: 290.2px;
+}
+
+
+.events, .follow-options {
+    background-color: rgb(230, 228, 228);
+    width: 290.2px;
+    
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 18px;
+    border-width: 1px;
+    margin-top: 5px;
+    border-bottom-width: 3px;
+    text-align: start;
+    
+}
+
+
+a {
+    font-size: medium;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 200;
+}
+
+
+.news {
+    color: rgb(158, 155, 155);
+    margin-top: 0px;
+    font-size: 15px;
+}
+
+#woman {
+   border-radius: 0;
+}
+
+.option1 {
+    display: grid;
+    grid-auto-flow: column;
+}
+
+#follow-button {
+    background-color:  rgb(29 161 242);
+    border-radius: 20px;
+    padding: 10px;
+   
+}
+
+.isaiah {
+    position: relative;
+    right: 40px;
+    top: 10px;
+}
+
+#isaiah-image{
+   object-fit: contain;
+   border-radius: 50%;
+   height: 40px;
+   width: 50px;
+
+}
+
+.blue {
+    color: rgb(29 161 242);
+}
+
+#follow-button:hover {
+    background-color: white;
+}
