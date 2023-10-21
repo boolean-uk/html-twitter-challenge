@@ -1,0 +1,451 @@
+* {
+  margin-block-start: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.bigcontainer {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 3fr 10fr 5fr;
+  grid-template-areas: "left middle right";
+  background-color: whitesmoke;
+  gap: 5px;
+}
+
+.leftcontainer {
+  grid-area: left;
+  margin-left: 50px;
+
+  height: 100vh;
+  gap: 5px;
+  width: 200px;
+}
+
+.bottomleftprofile {
+  display: grid;
+  grid-area: bottomprofile;
+  grid-template-areas:
+    "img name"
+    ".mail";
+  grid-template-columns: 1fr 10fr;
+  grid-template-rows: 1fr 10fr;
+  margin-top: 95px;
+}
+
+.bottomleftprofile p {
+  grid-area: name;
+}
+.bottomleftprofile span {
+  font-size: x-small;
+  color: grey;
+  grid-area: mail;
+}
+.bottomleftprofile img {
+  grid-area: img;
+}
+.leftcontainer p {
+  margin: 10px;
+}
+
+.middlecontainer {
+  margin: 50px;
+  height: 100vh;
+  border: lightgrey 1px solid;
+  grid-area: middle;
+  height: 750px;
+  gap: 5px;
+  display: grid;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    "header"
+    "topmid"
+    "midmid"
+    "lowmid";
+}
+
+.header {
+  grid-area: header;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.topmidprofile {
+  height: 100;
+  border: 1px solid lightgray;
+  display: grid;
+  grid-area: topmid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "topmid1"
+    "topmid2";
+}
+
+.topmid1 {
+  grid-area: topmid1;
+  display: grid;
+  grid-template-columns: 1fr 20fr;
+}
+
+.topmid1 p {
+  color: grey;
+  font-size: small;
+}
+
+.topmid2 {
+  grid-area: topmid2;
+  display: grid;
+  grid-template-columns: 0.1fr 0.1fr 0.1fr 0.1fr 0.1fr 20fr;
+  margin-left: 50px;
+  grid-template-areas: "topmessageoption1 topmessageoption2 topmessageoption3 topmessageoption4 topmessageoption5 . tweetoptionbutton";
+}
+
+.topmid2 img {
+  width: 10px;
+}
+
+.topmessageoption1 {
+  grid-area: topmessageoption1;
+}
+
+.topmessageoption2 {
+  grid-area: topmessageoption2;
+}
+
+.topmessageoption3 {
+  grid-area: topmessageoption3;
+}
+
+.topmessageoption4 {
+  grid-area: topmessageoption4;
+}
+
+.topmessageoption5 {
+  grid-area: topmessageoption5;
+}
+.topoptiontweet {
+  grid-area: tweetoptionbutton;
+}
+
+.topmid2 .topoptiontweet p {
+  background-color: lightblue;
+  border-radius: 20px;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-size: small;
+  display: inline;
+  justify-content: right;
+  margin: 20px;
+  font-weight: bold;
+}
+
+.midmidprofile {
+  grid-area: midmid;
+}
+.optionInteraction {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.optionInteraction img {
+  width: 15px;
+}
+.lowmidprofile {
+  border-top: 1px solid black;
+  grid-area: lowmid;
+}
+.lowmidprofile .twitterad {
+  width: 100px;
+  position: absolute;
+  grid-area: twitterad;
+}
+.rightcontainer {
+  margin-right: 50px;
+  border: 1px solid lightgray;
+  grid-area: right;
+  height: 750px;
+  gap: 5px;
+  display: grid;
+  grid-template-rows: 1fr 0.1fr 2fr 2fr 2fr 2fr;
+}
+
+.search {
+  background-color: lightgray;
+  border-radius: 30px;
+  margin: 5px;
+  border: 1px solid lightgray;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-areas: "searchimg searchtwitter";
+  color: gray;
+  height: 40px;
+  justify-content: center;
+  font-size: small;
+}
+
+.search img {
+  width: 15px;
+  grid-area: searchimg;
+}
+
+.searchtwitter .p1 {
+  grid-area: searchtwitter;
+}
+
+.news1 .p1 {
+  font-size: x-small;
+  color: grey;
+}
+
+.news1 .p2 {
+  font-size: x-small;
+  font-weight: bold;
+}
+
+.news1 .p3 {
+  color: gray;
+  font-size: x-small;
+}
+
+.news1 img {
+  display: inline;
+}
+.news3 img {
+  margin-right: 40p;
+  margin-left: 300px;
+  width: 100px;
+  border-radius: 20px;
+}
+.news5 img {
+}
+.news1 .p3 span {
+  font-size: x-small;
+  color: blue;
+}
+
+.p21 {
+  font-size: x-small;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.p22 {
+  color: gray;
+  font-size: x-small;
+  margin: 5px;
+}
+
+.p23 {
+  display: grid;
+  grid-template-columns: 1fr 11fr;
+  font-size: xx-small;
+  color: grey;
+}
+
+.p23 img {
+  width: 10px;
+  margin-left: 10px;
+  padding: 1px;
+}
+
+.twitterlogo {
+  margin: 10px;
+  width: 25px;
+}
+
+.twitterlogo :hover {
+  border: 1px solid black;
+}
+
+.leftcontainer img {
+  width: 25px;
+  margin-left: 15px;
+}
+
+.homeoption {
+  color: lightblue;
+  grid-area: home;
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  margin: 10px;
+}
+
+.homeoption:hover {
+  text-decoration: underline 2px solid black;
+}
+
+.exploreoption {
+  grid-area: explore;
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  margin: 10px;
+}
+
+.exploreoption:hover {
+  text-decoration: underline 2px solid black;
+}
+
+.notificationsoption {
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  margin: 10px;
+  grid-area: notifications;
+}
+
+.notificationsoption:hover {
+  text-decoration: underline 2px solid black;
+}
+
+.messagesoption {
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  margin: 10px;
+  grid-area: messages;
+}
+
+.messagesoption:hover {
+  text-decoration: underline 2px solid black;
+}
+
+.bookmarksoption {
+  grid-area: bookmarks;
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  margin: 10px;
+}
+
+.bookmarksoption:hover {
+  text-decoration: underline 2px solid black;
+}
+
+.listsoption {
+  grid-area: lists;
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  margin: 10px;
+}
+
+.listsoption:hover {
+  text-decoration: underline 2px solid black;
+}
+
+.profileoption {
+  grid-area: profiles;
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  margin: 10px;
+}
+
+.profileoption:hover {
+  text-decoration: underline 2px solid black;
+}
+
+.moreoption {
+  grid-area: more;
+  display: grid;
+  grid-template-columns: 1fr 7fr;
+  margin: 10px;
+}
+
+.moreoption:hover {
+  text-decoration: underline 2px solid black;
+}
+
+.tweetbutton {
+  padding: 2px;
+  color: white;
+  border-radius: 20px;
+  background-color: rgb(24, 166, 214);
+  margin: 10px;
+  text-align: center;
+}
+
+.tweetbutton:hover {
+  border: 2px lightblue solid;
+}
+
+img {
+  width: 30px;
+  padding: 10px;
+}
+
+.p31 {
+  font-size: x-small;
+  color: gray;
+  display: grid;
+  grid-template-columns: 10fr 1fr;
+}
+
+.p31 span {
+  color: black;
+}
+
+.p32 {
+  font-weight: bold;
+  font-size: x-small;
+}
+
+.p33 {
+  font-size: x-small;
+  color: gray;
+}
+
+.p41 {
+  font-size: x-small;
+  color: gray;
+  display: grid;
+  grid-template-columns: 10fr 1fr;
+}
+
+.p42 {
+  font-weight: bold;
+  font-size: x-small;
+}
+
+.p43 {
+  font-size: x-small;
+  color: gray;
+}
+
+.news5 {
+  display: grid;
+  grid-template-columns: 5fr 5fr 5fr 45fr 90fr;
+  grid-template-rows: 5fr;
+}
+
+.midmidprofile {
+  display: grid;
+  grid-template-rows: 5% 10% 85%;
+}
+.grey-retweet {
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 1fr 50fr;
+}
+.grey-img {
+  width: 10px;
+}
+.grey-p {
+  font-size: xx-small;
+  color: gray;
+}
+.profilepicname {
+  display: grid;
+  grid-template-columns: 1fr 9fr 20fr;
+}
+.tweet .para {
+  margin: 0%;
+}
+.profilepicname p {
+  font-size: smaller;
+}
+.profilepicname p span {
+  color: grey;
+}
+
+.tweet img {
+  width: 20px;
+}
+.tweet p {
+  width: 20px;
+}
