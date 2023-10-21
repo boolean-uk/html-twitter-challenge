@@ -1,0 +1,734 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    gap: 2px;
+}
+
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template: 
+
+
+"left-tab    header          right-tab" 200px
+"left-tab    main-content    right-tab" 1fr/
+  200px       500px              300px;
+}
+
+
+/* header */
+
+header {
+    display: grid;
+    grid-area: header;
+    border: solid 0.5px rgb(226, 225, 225);
+    grid-template-rows: 50px 150px;
+}
+
+#main-header {
+    height: 40px;
+    padding-top: 10px;
+    padding-left: 15px;
+    border-bottom: solid 0.5px rgb(226, 225, 225);
+}
+ /* main-header star symbol/logo */
+.star {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: 400px;
+}
+
+.sub-header {
+    color: grey;
+    padding-top: 20px;
+    padding-left: 60px;
+
+}
+
+
+.change-text {
+    outline: none;
+}
+
+/* sub-header profile logo img */
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    left: -50px;
+    top: -30px;
+
+}
+
+
+/* Contains 5 img's and tweet post button */
+.post {
+    font-size: 12px;
+    color: white;
+    border: solid 1px rgb(28, 155, 246);
+    background-color: rgb(28, 155, 246);
+    border-radius: 50px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: 350px;
+    margin-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+
+    /* Remove margin-left, margin-right, and margin-bottom */
+}
+
+.post > button {
+    color: white;
+    background-color: rgb(28, 155, 246);
+    border: none;
+}
+/* 5 post img's */
+.picture-icon {
+    width: 23px;
+    height: 23px;
+    position: relative;
+    left: -360px;
+    top: -5px;
+}
+
+.gif {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: -316px;
+    top: -33px;
+}
+
+.stats-bar {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    left: -265px;
+    top: -65px;
+}
+
+.smiley-face {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    left: -245px;
+    top: -62px;
+}
+
+.calender {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    left: -165px;
+    top: -90px;
+}
+
+/* Start of the left-tab */
+.left-tab {
+    display: grid;
+    grid-area: left-tab;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 60px;
+    margin-top: 20px;
+    
+    gap: 20px;
+    grid-template: 
+    
+     "home" 30px
+     "explore" 30px
+     "notifications" 30px
+     "messages" 30px
+     "bookmarks" 30px
+     "lists" 30px
+     "profile" 30px
+     "more" 30px
+     "tweet" 10px/
+       200px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(28, 155, 246);
+}
+
+.home a{
+    color: rgb(28, 155, 246);;
+}
+
+
+.tweet a {
+    color: white;
+    margin-bottom: 50px;
+}
+
+/* Blue tweet button */
+.left-tab > .tweet {
+    position: absolute;
+    color: white;
+    border: solid 1px rgb(28, 155, 246);
+    background-color: rgb(28, 155, 246);
+    border-radius: 50px;
+    padding-left: 55px;
+    padding-top: 15px;
+    padding-right: 50px;
+    padding-bottom:10px;
+    font-size: 15px;
+    top: 470px;
+    left: 30px;
+}
+
+/* left-tab symbols/img's */
+.twitter-logo {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    right: 40px;
+
+}
+
+.bird-house {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 20px;
+    top: 65px;
+}
+
+.explore {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 23px;
+}
+
+.notifications {
+    width: 25;
+    height: 25px;
+    position: absolute;
+    left: 20px;
+    top: 165px;
+}
+
+.messages {
+    width: 25;
+    height: 25px;
+    position: absolute;
+    left: 10px;
+    top: 217px;
+}
+
+.bookmarks {
+    width: 30;
+    height: 30px;
+    position: absolute;
+    left: 10px;
+    top: 265px;
+}
+
+.lists {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 25px;
+}
+
+.profile {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 23px;
+    top: 367px;
+}
+
+.more {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 25px;
+    top: 417px;
+}
+
+
+/* Start of the main-content */
+.main-content {
+    display: grid;
+    overflow: scroll;
+    grid-area: main-content;
+    margin-top: 15px;
+    grid-template-rows: repeat(6, 150px);
+}
+
+
+.main-content > div {
+    padding-top: 10px;
+    padding-left: 50px;
+    border: solid 0.5px rgb(226, 225, 225);
+   
+}
+
+/* This section will contain all the rows of img's from the main-content */
+.content-profile {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    left: -45px;
+    top: -35px;
+}
+
+
+.message-icon {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 64px;
+}
+
+.retweet-icon {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 64px;
+    left: 46px;
+}
+
+.like-icon {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 64px;
+    left: 80px;
+}
+
+.save-icon {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 64px;
+    left: 125px;
+}
+
+.tip-icon {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 64px;
+    left: 180px;
+}
+
+
+.content-profile2 {
+    position: relative;
+    width: 35px;
+    height: 35px;
+    left: -45px;
+    top: -35px;
+}
+
+
+
+.message-icon2 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 63px;
+}
+
+.retweet-icon2 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 63px;
+    left: 47px;
+    
+}
+
+.like-icon2 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 63px;
+    left: 82px;
+}
+
+.save-icon2 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 63px;
+    left: 125px;
+}
+
+.tip-icon2 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 63px;
+    left: 180px;
+}
+
+
+.content-profile3 {
+     position: relative;
+     width: 35px;
+     height: 35px;
+     left: -45px;
+     top: -35px;
+}
+
+
+.message-icon3 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 64px;
+}
+
+.retweet-icon3 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 64px;
+    left: 47px;
+    
+}
+
+.like-icon3 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 64px;
+    left: 82px;
+}
+
+.save-icon3 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 64px;
+    left: 125px;
+}
+
+.tip-icon3 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 64px;
+    left: 180px;
+}
+
+
+.content-profile4 {
+    position: relative;
+     width: 35px;
+     height: 35px;
+     left: -45px;;
+     top: -35px;
+}
+
+
+.message-icon4 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 65px;
+}
+
+.retweet-icon4 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 65px;
+    left: 47px;
+    
+}
+
+.like-icon4 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 65px;
+    left: 82px;
+}
+
+.save-icon4 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 65px;
+    left: 125px;
+}
+
+.tip-icon4 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 65px;
+    left: 180px;
+}
+
+.content-profile5 {
+    position: relative;
+     width: 35px;
+     height: 35px;
+     left: -45px;;
+     top: -35px;
+}
+
+
+.message-icon5 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 65px;
+}
+
+.retweet-icon5 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 65px;
+    left: 47px;
+    
+}
+
+.like-icon5 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 65px;
+    left: 82px;
+}
+
+.save-icon5 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 65px;
+    left: 125px;
+}
+
+.tip-icon5 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 65px;
+    left: 180px;
+}
+
+
+.content-profile6 {
+    position: relative;
+     width: 35px;
+     height: 35px;
+     left: -45px;;
+     top: -35px;
+}
+
+
+.message-icon6 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 66px;
+}
+
+.retweet-icon6 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 66px;
+    left: 47px;
+    
+}
+
+.like-icon6 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 66px;
+    left: 82px;
+}
+
+.save-icon6 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 66px;
+    left: 125px;
+}
+
+.tip-icon6 {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 66px;
+    left: 180px;
+}
+/* End of main-content img's */
+
+
+/* start of right-tab content */
+.right-tab {
+    display: grid;
+    grid-area: right-tab;
+    margin-left: 20px;
+    grid-template-rows: 50px 580px  80px;
+}
+
+
+.search-bar {
+    color: grey;
+    display: grid;
+    text-align: center;
+    place-items: center;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-right: 60px;
+    padding-bottom: 10px;
+    margin-top: 20px;
+    margin-right: 20px;
+    border: solid 1px rgb(183, 177, 177);
+    background-color: rgb(242, 244, 246);
+    border-radius: 50px;
+    outline: none;
+}
+
+.search-icon {
+position: absolute; 
+height: 18px;
+width: 18px;
+top: 30px;
+left: 790px;
+}
+
+.right-content {
+    display: grid;
+    margin-top: 20px;
+    margin-right: 20px;
+    padding-left: 15px;
+    padding-top: 10px;
+    border: solid 1px rgb(242, 244, 246);
+    border-radius: 20px;
+    background-color: rgb(242, 244, 246);
+    grid-template-rows: 40px repeat(auto-fit, 1fr);
+    
+}
+
+.right-content2{
+    margin-top: 20px;
+    margin-right: 20px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-right: 80px;
+    border: solid 1px rgb(242, 244, 246);
+    border-radius: 20px;
+    background-color: rgb(242, 244, 246);
+}
+
+
+
+.right-title {
+font-weight: bold;
+font-size: 20px;
+border-bottom: solid 0.5px rgb(226, 225, 225);
+}
+
+.news {
+    color: grey;
+    padding-top: 5px;
+}
+
+.fire {
+    position: absolute;
+    height: 50px;
+    border-radius: 10px;
+    left: 912px;
+    top: 180px;
+}
+
+.fire-content {
+    text-align: start;
+    padding-right: 90px;
+    border-bottom: solid 0.5px rgb(226, 225, 225);
+}
+
+.news2 {
+ padding-top:10px;
+}
+
+.news2-content {
+color: grey;
+padding-top: 5px;
+padding-bottom: 5px;
+}
+
+
+.news-content2 {
+color: grey;
+padding-left: 20px;
+text-align: start;
+padding-top: 15px; 
+padding-bottom: 5px;
+border-bottom: solid 0.5px rgb(226, 225, 225);
+}
+
+.arrow {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 360px;
+}
+
+.politics {
+color: grey;
+}
+
+.politics-content {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+
+.stats {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: solid 0.5px rgb(226, 225, 225);
+}
+
+
+.politics2 {
+    color: grey;
+}
+
+ .politics-content2 {
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.stats2 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: solid 0.5px rgb(226, 225, 225);
+}
+
+.show-more a {
+
+        color: rgb(28, 155, 246) ;
+}
