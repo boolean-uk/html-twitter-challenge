@@ -1,0 +1,1592 @@
+/* Global reset */
+
+* {
+    margin: 0;
+    padding:0;
+}
+
+body {
+    background-color: #F5F8FA;
+    font-family: 'Franklin Gothic Medium', Arial, sans-serif;
+}
+
+/* Containter */
+/* Make a grid for container */
+
+.container {
+    display: grid;
+    grid-template: 
+    "header      header         header"    50px
+    "left-bar    main-bar       right-bar" auto
+    "footer      footer         footer"    50px /
+    200px        1fr         400px;
+
+    /* border: 1px dashed black; */
+    padding: 5px;
+    gap: 5px;
+}
+
+
+/* Header */
+
+.header {
+    grid-area: header;
+    /* border: 1px dashed black; */
+
+    /* 200px the width of left-bar */
+
+    display: grid;
+    grid-template: 
+    "header-logo home-bar header-icon search-twitter-bar"
+    ;
+    grid-template-columns: 
+    167px 480px 50px 500px;
+    padding: 5px;
+    gap: 5px;
+}
+
+.header-logo {
+    grid-area: header-logo;
+    /* border: 1px dashed black; */
+}
+
+.header-logo-img {
+    width: 25px;
+    padding-left: 13px;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.header-icon-img {
+    width: 25px;
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+.home-bar {
+    grid-area: home-bar;
+    /* border: 1px dashed black; */
+}
+
+.home-bar > p {
+    padding-left: 50px;
+    padding-top: 7px;
+    font-size: 20px;
+    padding-right: 10px;
+    cursor: pointer;
+   
+}
+
+.header-icon {
+    grid-area: header-icon;
+    /* border: 1px dashed black; */
+}
+
+.search-twitter-bar {
+    grid-area: search-twitter-bar;
+    /* border: 1px solid silver; */
+    
+
+    display: grid;
+    grid-template: " search-text";
+    grid-template-columns: 1fr;
+    padding: 5px;
+    gap: 5px;
+}
+
+
+
+
+.search-text > p{
+    font-size: 15px;
+    padding-top: 4px;
+    padding-left: 40px;
+    color: grey;
+}
+
+.search-text {
+    grid-area: search-text;
+    border: 1px solid silver;
+    border-radius: 20px;
+
+   
+}
+
+
+/* Left-Bar */
+
+.left-bar {
+    grid-area: left-bar;
+    /* border: 1px dashed black; */
+
+    /* Left-grid */
+
+    display: grid;
+    grid-template: 
+    "left-bar-menu"
+    "left-tweet-button";
+    grid-template-rows: 500px 80px ;
+    padding: 5px;
+    gap: 5px;
+}
+
+.left-bar-menu {
+    grid-area: left-bar-menu;
+    /* border: 2px solid black; */
+  
+
+    /* Left menu */
+    display: grid;
+    grid-template: 
+    "home"
+    "explore"
+    "notifications"
+    "messages"
+    "bookmarks"
+    "lists"
+    "profile"
+    "more";
+
+    /* repeat(autofit, minmax(180px, 1fr) */
+    grid-template-rows: repeat(8, 1fr);
+    padding: 5px;
+    gap: 5px;
+}
+
+.home {
+    grid-area: home;
+    /* border: 1px dashed black; */
+
+    /* display */
+    display: grid;
+    grid-template: "home-icon home-text";
+    grid-template-columns: 30px 1fr;
+    grid-template-rows: 30px;
+    padding: 5px;
+    gap: 5px;
+    /* place in the center, both boxes */
+    place-content: center;
+}
+
+.home-icon {
+    grid-area: home-icon;
+    /* border: 1px dashed black; */
+
+}
+
+.home-icon-img {
+    width: 20px;
+    padding-top: 4px;
+    padding-left: 4px;
+}
+
+.home-text {
+    grid-area: home-text;
+    /* border: 1px dashed black; */
+}
+
+.home-text > p {
+    padding-top:5px ;
+    padding-left: 5px;
+} 
+
+.explore {
+    grid-area: explore;
+    /* border: 1px dashed black; */
+
+
+    display: grid;
+    grid-template: "explore-icon explore-text";
+    grid-template-columns: 30px 1fr;
+    grid-template-rows: 30px;
+    padding: 5px;
+    gap: 5px;
+    /* place in the center, both boxes */
+    place-content: center;
+
+}
+
+.explore-icon  {
+    grid-area: explore-icon ;
+    /* border: 1px dashed black; */
+}
+
+.explore-icon-img {
+    width: 20px;
+    padding-top: 4px;
+    padding-left: 4px;
+}
+
+.explore-text  {
+    grid-area: explore-text ;
+    /* border: 1px dashed black; */
+}
+
+.explore-text  > p {
+    padding-top:5px ;
+    padding-left: 5px;
+}
+
+.notifications {
+    grid-area: notifications;
+    /* border: 1px dashed black; */
+
+    display: grid;
+    grid-template: "notification-icon notification-text";
+    grid-template-columns: 30px 1fr;
+    grid-template-rows: 30px;
+    padding: 5px;
+    gap: 5px;
+    /* place in the center, both boxes */
+    place-content: center;
+}
+
+.notification-icon {
+    grid-area: notification-icon;
+    /* border: 1px dashed black; */
+}
+
+.notification-icon-img {
+    width: 20px;
+    padding-top: 4px;
+    padding-left: 4px;
+}
+
+.notification-text {
+    grid-area: notification-text;
+    /* border: 1px dashed black; */
+}
+
+.notification-text > p {
+    padding-top:5px ;
+    padding-left: 5px;
+}
+
+.messages {
+    grid-area: messages;
+    /* border: 1px dashed black; */
+
+    display: grid;
+    grid-template: "messages-icon messages-text";
+    grid-template-columns: 30px 1fr;
+    grid-template-rows: 30px;
+    padding: 5px;
+    gap: 5px;
+    /* place in the center, both boxes */
+    place-content: center;
+}
+
+.messages-icon  {
+    grid-area: messages-icon;
+    /* border: 1px dashed black; */
+}
+
+.messages-icon-img {
+    width: 20px;
+    padding-top: 4px;
+    padding-left: 4px;
+}
+
+
+
+.messages-text  {
+    grid-area: messages-text;
+    /* border: 1px dashed black; */
+}
+
+.messages-text > p {
+    padding-top:5px ;
+    padding-left: 5px;
+}
+
+.bookmarks {
+    grid-area: bookmarks;
+    /* border: 1px dashed black; */
+
+    display: grid;
+    grid-template: "bookmarks-icon bookmarks-text";
+    grid-template-columns: 30px 1fr;
+    grid-template-rows: 30px;
+    padding: 5px;
+    gap: 5px;
+    /* place in the center, both boxes */
+    place-content: center;
+}
+
+.bookmarks-icon {
+    grid-area: bookmarks-icon;
+    /* border: 1px dashed black; */
+}
+
+.bookmarks-icon-img {
+    width: 20px;
+    padding-top: 4px;
+    padding-left: 4px;
+}
+
+.bookmarks-text {
+    grid-area: bookmarks-text;
+    /* border: 1px dashed black; */
+}
+
+.bookmarks-text > p {
+    padding-top:5px ;
+    padding-left: 5px;
+}
+
+.lists {
+    grid-area: lists;
+    /* border: 1px dashed black; */
+
+    display: grid;
+    grid-template: "lists-icon lists-text";
+    grid-template-columns: 30px 1fr;
+    grid-template-rows: 30px;
+    padding: 5px;
+    gap: 5px;
+    /* place in the center, both boxes */
+    place-content: center;
+}
+
+.lists-icon {
+    grid-area: lists-icon;
+    /* border: 1px dashed black; */
+}
+
+.lists-text {
+    grid-area: lists-text;
+    /* border: 1px dashed black; */
+}
+
+.lists-icon-img {
+    width: 20px;
+    padding-top: 4px;
+    padding-left: 4px;
+}
+
+.lists-text > p {
+    padding-top:5px ;
+    padding-left: 5px;
+}
+
+
+.profile {
+    grid-area: profile;
+    /* border: 1px dashed black; */
+
+    display: grid;
+    grid-template: "profile-icon profile-text";
+    grid-template-columns: 30px 1fr;
+    grid-template-rows: 30px;
+    padding: 5px;
+    gap: 5px;
+    /* place in the center, both boxes */
+    place-content: center;
+}
+
+.profile-icon {
+    grid-area: profile-icon;
+    /* border: 1px dashed black; */
+}
+
+.profile-icon-img {
+    width: 16px;
+    padding-top: 6px;
+    padding-left: 6px;
+}
+
+.profile-text {
+    grid-area: profile-text;
+    /* border: 1px dashed black; */
+}
+
+.profile-text > p {
+    padding-top:5px ;
+    padding-left: 5px;
+}
+
+.more {
+    grid-area: more;
+    /* border: 1px dashed black; */
+
+
+    display: grid;
+    grid-template: "more-icon more-text";
+    grid-template-columns: 30px 1fr;
+    grid-template-rows: 30px;
+    padding: 5px;
+    gap: 5px;
+    /* place in the center, both boxes */
+    place-content: center;
+
+    
+}
+
+.more-icon {
+    grid-area: more-icon;
+    /* border: 1px dashed black; */
+}
+
+.more-icon-img {
+    width: 20px;
+    padding-top: 4px;
+    padding-left: 4px;
+
+}
+.more-text {
+    grid-area: more-text;
+    /* border: 1px dashed black; */
+}
+
+.more-text > p {
+    padding-top:5px ;
+    padding-left: 5px;
+}
+
+.home, .explore, .notifications,.messages, .bookmarks, .lists, .profile,.more {
+    cursor: pointer;
+}
+
+.home:hover,.explore:hover, .notifications:hover,.messages:hover, .bookmarks:hover, .lists:hover, .profile:hover,.more:hover   {
+    color:  #26a7de
+}
+
+
+
+.left-tweet-button {
+    grid-area: left-tweet-button;
+    /* border: 1px dashed black; */
+    padding-top: 20px;
+   
+
+}
+
+#tweet-button {
+    width: 100%;
+    height: 70%;
+    border-radius: 20px;
+    background-color: #26a7de;
+    color: #E1E8ED ;
+    border: none;
+    cursor: pointer;
+}
+
+#tweet-button:hover {
+    color: black;
+}
+
+/* MAIN */
+.main-bar{
+    grid-area: main-bar;
+    /* border: 1px dashed black; */
+
+    /* Display in the middle */
+
+    display: grid;
+    grid-template:
+    "post-container"
+     "tweetOne-container"
+     "tweetTwo-container"
+     "tweetThree-container"
+     "tweetFour-container"
+     "tweetFive-container"
+     "tweetSix-container";
+     grid-template-rows:
+     160px 1fr 1fr 1fr 1fr 1fr 1fr ;
+     padding: 5px;
+     gap: 5px;
+
+     /* Scrolling */
+    max-height: 800px;
+     overflow-y: scroll;
+     border-left: 1px solid #ccc;
+     border-right: 1px solid #ccc;
+     padding: 20px;
+     margin: 0;
+     
+}
+
+.post-container {
+    grid-area: post-container;
+    border-bottom:1px solid silver;
+
+    /* Grid  */
+    display: grid;
+    grid-template:
+    "whats-happening-container" 
+    "media-post-container";
+    grid-template-rows: 70px 70px;
+    padding: 5px;
+    gap: 5px;
+}
+
+.whats-happening-container {
+    grid-area: whats-happening-container;
+    /* border: 1px dashed black; */
+
+    display: grid;
+    grid-template: "profile-pic whats-happening-bar";
+    grid-template-columns: 40px 1fr;
+    padding: 5px;
+    gap: 5px;
+}
+
+.profile-pic  {
+    grid-area: profile-pic ;
+    /* border: 1px dashed black; */
+    border-radius: 50%;
+   
+}
+
+.profile-pic > img {
+    width: 30px;
+    padding-top: 10px;
+    padding-left: 4.5px;
+    cursor: pointer;
+  
+}
+
+.whats-happening-bar {
+    grid-area: whats-happening-bar;
+    /* border: 1px dashed black; */
+}
+
+.whats-happening-bar  > p{
+    font-size: 15px;
+    padding-top: 20px;
+    padding-left: 10px;
+    color: grey;
+}
+
+
+
+.media-post-container {
+    grid-area: media-post-container;
+    /* border: 1px dashed black; */
+
+    display: grid;
+    grid-template: "media-icons tweet-button-main-bar ";
+    grid-template-columns: 1fr 100px;
+    padding: 5px;
+    gap: 5px;
+
+}
+
+.media-icons {
+    grid-area: media-icons;
+    /* border: 1px dashed black; */
+
+    display: grid;
+    grid-template: "icon-boxes empty-space-icon";
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 30px; */
+    padding: 5px;
+    gap: 5px;
+}
+
+.icon-boxes {
+    grid-area: icon-boxes;
+    /* border: 1px dashed black; */
+
+    display: grid;
+    grid-template: "upload-pic upload-gif upload-stats upload-emoji upload-time" 
+    ;
+    grid-template-columns: repeat(5, 30px);
+    
+    padding: 5px;
+    gap: 5px;
+
+}
+
+.upload-pic {
+    grid-area: upload-pic;
+    /* border: 1px dashed black; */
+
+}
+
+.upload-pic > img {
+    width: 20px;
+    padding-top: 3px;
+    padding-left: 3px;
+    cursor: pointer;
+   
+}
+
+.upload-gif {
+    grid-area: upload-gif;
+    /* border: 1px dashed black; */
+
+}
+
+
+.upload-gif > img {
+    width: 20px;
+    padding-top: 3px;
+    padding-left: 3px;
+    cursor: pointer;
+}
+
+
+.upload-stats {
+    grid-area: upload-stats;
+    /* border: 1px dashed black; */
+
+}
+
+.upload-stats > img {
+    width: 20px;
+    padding-top: 3px;
+    padding-left: 3px;
+    cursor: pointer;
+   
+}
+
+.upload-emoji {
+    grid-area: upload-emoji;
+    /* border: 1px dashed black; */
+
+}
+
+.upload-emoji > img {
+    width: 20px;
+    padding-top: 3px;
+    padding-left: 3px;
+    cursor: pointer;
+   
+}
+
+
+
+.upload-time {
+    grid-area: upload-time;
+    /* border: 1px dashed black; */
+
+
+}
+
+.upload-time > img {
+    width: 20px;
+    padding-top: 3px;
+    padding-left: 3px;
+    cursor: pointer;
+   
+}
+.empty-space-icon {
+    grid-area: empty-space-icon;
+    /* border: 1px dashed black; */
+}
+
+
+.tweet-button-main-bar {
+    grid-area: tweet-button-main-bar;
+    /* border: 1px dashed black; */
+    display: grid;
+    align-items: center;
+}
+
+.tweet-button-main-bar > button {
+    width: 100%;
+    height: 70%;
+    border-radius: 20px;
+    background-color: #26a7de;
+    color: #E1E8ED ;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.tweet-button-main-bar > button:hover {
+    color: black;
+}
+
+.tweetOne-container {
+    grid-area: tweetOne-container;
+    /* border: 1px dashed black; */
+
+    display: grid;
+    grid-template: "user-posting-pic tweeting-container ";
+    grid-template-columns: 60px 1fr;
+    padding: 5px;
+    gap: 5px;
+
+}
+
+.user-posting-pic {
+    grid-area: user-posting-pic;
+    /* border: 1px dashed black; */
+    /* border-radius: 20%; */
+    
+}
+
+.user-posting-pic > img {
+    width: 40px;
+    padding-top: 22px;
+    padding-left: 9px;
+}
+
+
+
+.tweeting-container {
+grid-area: tweeting-container;
+/* border: 1px dashed black; */
+
+display: grid;
+grid-template: 
+"tag-name1"
+"actual-tweet1"
+"actual-tweet-icon1";
+grid-template-rows: 1fr 1fr 2fr;
+padding: 5px;
+gap: 5px;
+}
+
+.tag-name1 {
+    grid-area: tag-name1;
+    /* border:  1px dashed black; */
+}
+
+.tag-name1 > p {
+    padding-top: 25px;
+    padding-left: 9px;
+    font-size: 13px;
+}
+
+.tagging  {
+    padding-top: 11px;
+    padding-left: 4px;
+    font-size: 13px;
+}
+
+.actual-tweet1 > p >span{
+font-size: 13px;
+padding-top: 5px;
+padding-left: 4px;
+color: #26a7de;
+}
+
+.actual-tweet1 > p {
+    font-size: 12px;
+    padding-top: 5px;
+    padding-left: 4px;
+}
+
+.at {
+    color: grey;
+}
+
+.actual-tweet1 {
+    grid-area: actual-tweet1;
+    /* border:  1px dashed black;; */
+}
+
+.actual-tweet-icon1 {
+    grid-area: actual-tweet-icon1;
+    /* border:  1px dashed black; */
+    
+    display: grid;
+    grid-template: "tweet-icon-one tweet-icon-two tweet-icon-three tweet-icon-four";
+   grid-template-columns: repeat(4, 90px);
+    padding: 5px;
+    gap: 5px;
+}
+
+.tweet-icon-one {
+    grid-area:tweet-icon-one ;
+    /* border: 1px dashed black; */
+}
+
+.tweet-icon-one > img {
+    width: 15px;
+    padding-top: 20px;
+    padding-left: 36px;
+  
+}
+
+.tweet-icon-two {
+    grid-area:tweet-icon-two ;
+    /* border: 1px dashed black; */
+}
+
+.tweet-icon-two > img {
+    width: 15px;
+    padding-top: 20px;
+    padding-left: 35px;
+  
+}
+
+.tweet-icon-three {
+    grid-area:tweet-icon-three ;
+    /* border: 1px dashed black; */
+}
+
+.tweet-icon-three > img {
+    width: 15px;
+    padding-top: 20px;
+    padding-left: 35px;
+  
+}
+
+.tweet-icon-four {
+    grid-area:tweet-icon-four ;
+    /* border: 1px dashed black; */
+}
+
+
+.tweet-icon-four > img {
+    width: 15px;
+    padding-top: 20px;
+    padding-left: 35px;
+  
+}
+
+.tweetTwo-container {
+    grid-area: tweetTwo-container;
+    /* border: 1px dashed black; */
+
+    display: grid;
+    grid-template: "user-posting-pic2 tweeting-container2 ";
+    grid-template-columns: 60px 1fr;
+    padding: 5px;
+    gap: 5px;
+}
+
+.user-posting-pic2  {
+    grid-area: user-posting-pic2 ;
+    /* border: 1px dashed black; */
+}
+
+.tweeting-container2 {
+    grid-area: tweeting-container2;
+    /* border: 1px dashed black; */
+
+    display: grid;
+    grid-template: 
+    "tag-name2"
+    "actual-tweet2"
+    "actual-tweet-icon2";
+    grid-template-rows: 1fr 1fr 2fr;
+    padding: 5px;
+    gap: 5px
+    }
+
+    .user-posting-pic2 > img {
+        width: 45px;
+        padding-top: 22px;
+    padding-left: 9px;
+    }
+    
+    .tag-name2 {
+        grid-area: tag-name2;
+        /* border: 1px dashed black; */
+    }
+
+    .tag-name2 > p {
+        padding-top: 25px;
+    padding-left: 9px;
+        font-size: 13px;
+    }
+
+    .at2 {
+        color: grey;
+    }
+
+    .actual-tweet2 {
+        grid-area: actual-tweet2;
+        /* border: 1px dashed black; */
+    }
+
+    .actual-tweet2 > p >span{
+        font-size: 13px;
+        padding-top: 5px;
+        padding-left: 4px;
+        color: #26a7de;
+        }
+        
+        .actual-tweet2 > p {
+            font-size: 12px;
+            padding-top: 5px;
+            padding-left: 4px;
+        }
+
+    .actual-tweet-icon2 {
+        grid-area: actual-tweet-icon2;
+        /* border: 1px dashed black; */
+
+        display: grid;
+        grid-template: "tweet-icon-one2 tweet-icon-two2 tweet-icon-three2 tweet-icon-four2";
+       grid-template-columns: repeat(4, 90px);
+        padding: 5px;
+        gap: 5px;
+    }
+
+    .tweet-icon-one2 {
+        grid-area:tweet-icon-one2 ;
+        /* border: 1px dashed black; */
+    }
+
+    .tweet-icon-one2 > img {
+        width: 15px;
+        padding-top: 20px;
+        padding-left: 35px;
+      
+    }
+
+    .tweet-icon-two2 {
+        grid-area:tweet-icon-two2 ;
+        /* border: 1px dashed black; */
+    }
+
+    .tweet-icon-two2 > img {
+        width: 15px;
+        padding-top: 20px;
+        padding-left: 35px;
+      
+    }
+
+    .tweet-icon-three2 {
+        grid-area:tweet-icon-three2 ;
+        /* border: 1px dashed black; */
+    }
+
+    .tweet-icon-three2 > img {
+        width: 15px;
+        padding-top: 20px;
+        padding-left: 35px;
+      
+    }
+
+    .tweet-icon-four2 {
+        grid-area:tweet-icon-four2 ;
+        /* border: 1px dashed black; */
+    }
+
+    .tweet-icon-four2 > img {
+        width: 15px;
+        padding-top: 20px;
+        padding-left: 35px;
+      
+    }
+
+    .tweetThree-container {
+    grid-area: tweetThree-container;
+    /* border: 1px dashed black; */
+
+    display: grid;
+    grid-template: "user-posting-pic3 tweeting-container3 ";
+    grid-template-columns: 60px 1fr;
+    padding: 5px;
+    gap: 5px;
+}
+
+.user-posting-pic3 {
+    grid-area: user-posting-pic3;
+    /* border: 1px dashed black; */
+}
+
+.user-posting-pic3 > img {
+    width: 40px;
+    padding-top: 22px;
+    padding-left: 9px;
+}
+
+
+.tweeting-container3 {
+    grid-area: tweeting-container3;
+    /* border: 1px dashed black; */
+
+    display: grid;
+    grid-template: 
+    "tag-name3"
+    "actual-tweet3"
+    "actual-tweet-icon3";
+    grid-template-rows: 1fr 1fr 2fr;
+    padding: 5px;
+    gap: 5px
+}
+
+.tag-name3 {
+    grid-area: tag-name3;
+    /* border: 1px dashed black; */
+}
+
+
+.tag-name3 > p {
+    padding-top: 25px;
+    padding-left: 9px;
+    font-size: 13px;
+}
+
+.at3 {
+    color: grey;
+}
+
+.actual-tweet3 {
+    grid-area: actual-tweet3;
+    /* border: 1px dashed black; */
+}
+
+.actual-tweet3 > p >span{
+    font-size: 13px;
+    padding-top: 5px;
+    padding-left: 4px;
+    color: #26a7de;
+    }
+    
+    .actual-tweet3 > p {
+        font-size: 12px;
+        padding-top: 5px;
+        padding-left: 4px;
+    }
+
+.actual-tweet-icon3 {
+    grid-area: actual-tweet-icon3;
+    /* border: 1px dashed black; */
+
+
+        display: grid;
+        grid-template: "tweet-icon-one3 tweet-icon-two3 tweet-icon-three3 tweet-icon-four3";
+       grid-template-columns: repeat(4, 90px);
+        padding: 5px;
+        gap: 5px;
+}
+
+.tweet-icon-one3 {
+    grid-area:tweet-icon-one3 ;
+    /* border: 1px dashed black; */
+}
+
+.tweet-icon-one3 > img {
+    width: 15px;
+    padding-top: 20px;
+    padding-left: 35px;
+  
+}
+
+.tweet-icon-two3 {
+    grid-area:tweet-icon-two3 ;
+    /* border: 1px dashed black; */
+}
+
+.tweet-icon-two3 > img {
+    width: 15px;
+    padding-top: 20px;
+    padding-left: 35px;
+  
+}
+
+.tweet-icon-three3 {
+    grid-area:tweet-icon-three3 ;
+    /* border: 1px dashed black; */
+}
+
+.tweet-icon-three3 > img {
+    width: 15px;
+    padding-top: 20px;
+    padding-left: 35px;
+  
+}
+
+.tweet-icon-four3 {
+    grid-area:tweet-icon-four3 ;
+    /* border: 1px dashed black; */
+}
+
+.tweet-icon-four3 > img {
+    width: 15px;
+    padding-top: 20px;
+    padding-left: 35px;
+  
+}
+
+/* More Tweets */
+
+/* FOUR */
+.tweetFour-container {
+    grid-area: tweetFour-container;
+    /* border: 1px dashed black; */
+
+    display: grid;
+    grid-template: "user-posting-pic4 tweeting-container4 ";
+    grid-template-columns: 60px 1fr;
+    padding: 5px;
+    gap: 5px;
+}
+
+.user-posting-pic4 {
+    grid-area: user-posting-pic4;
+    /* border: 1px dashed black; */
+}
+
+.user-posting-pic4 > img {
+    width: 40px;
+    padding-top: 22px;
+    padding-left: 9px;
+}
+
+
+.tweeting-container4 {
+    grid-area: tweeting-container4;
+    /* border: 1px dashed black; */
+
+    display: grid;
+    grid-template: 
+    "tag-name4"
+    "actual-tweet4"
+    "actual-tweet-icon4";
+    grid-template-rows: 1fr 1fr 2fr;
+    padding: 5px;
+    gap: 5px
+}
+
+.tag-name4 {
+    grid-area: tag-name4;
+    /* border: 1px dashed black; */
+}
+
+.tag-name4 > p {
+    padding-top: 25px;
+    padding-left: 9px;
+    font-size: 13px;
+}
+
+.at4 {
+    color: grey;
+}
+
+.actual-tweet4 {
+    grid-area: actual-tweet4;
+    /* border: 1px dashed black; */
+}
+
+.actual-tweet4 > p >span{
+    font-size: 13px;
+    padding-top: 5px;
+    padding-left: 4px;
+    color: #26a7de;
+    }
+    
+    .actual-tweet4 > p {
+        font-size: 12px;
+        padding-top: 5px;
+        padding-left: 4px;
+    }
+
+/* FOUR-ICONS */
+
+.actual-tweet-icon4 {
+    grid-area: actual-tweet-icon4;
+    /* border: 1px dashed black; */
+
+
+        display: grid;
+        grid-template: "tweet-icon-one4 tweet-icon-two4 tweet-icon-three4 tweet-icon-four4";
+       grid-template-columns: repeat(4, 90px);
+        padding: 5px;
+        gap: 5px;
+}
+
+
+.tweet-icon-one4 {
+    grid-area:tweet-icon-one4 ;
+    /* border: 1px dashed black; */
+}
+
+.tweet-icon-one4 > img {
+    width: 15px;
+    padding-top: 20px;
+    padding-left: 35px;
+  
+}
+
+.tweet-icon-two4 {
+    grid-area:tweet-icon-two4 ;
+    /* border: 1px dashed black; */
+}
+
+.tweet-icon-two4 > img {
+    width: 15px;
+    padding-top: 20px;
+    padding-left: 35px;
+  
+}
+
+.tweet-icon-three4 {
+    grid-area:tweet-icon-three4 ;
+    /* border: 1px dashed black; */
+}
+
+.tweet-icon-three4 > img {
+    width: 15px;
+    padding-top: 20px;
+    padding-left: 35px;
+  
+}
+
+.tweet-icon-four4 {
+    grid-area:tweet-icon-four4 ;
+    /* border: 1px dashed black; */
+}
+
+.tweet-icon-four4 > img {
+    width: 15px;
+    padding-top: 20px;
+    padding-left: 35px;
+  
+}
+
+   
+/* FIVE */
+.tweetFive-container {
+    grid-area: tweetFive-container;
+    /* border: 1px dashed black; */
+
+    display: grid;
+    grid-template: "user-posting-pic5 tweeting-container5 ";
+    grid-template-columns: 60px 1fr;
+    padding: 5px;
+    gap: 5px;
+}
+
+.user-posting-pic5 {
+    grid-area: user-posting-pic5;
+    /* border: 1px dashed black; */
+}
+
+.user-posting-pic5 > img {
+    width: 40px;
+    padding-top: 22px;
+    padding-left: 9px;
+}
+
+
+.tweeting-container5 {
+    grid-area: tweeting-container5;
+    /* border: 1px dashed black; */
+
+    display: grid;
+    grid-template: 
+    "tag-name5"
+    "actual-tweet5"
+    "actual-tweet-icon5";
+    grid-template-rows: 1fr 1fr 2fr;
+    padding: 5px;
+    gap: 5px
+}
+
+.tag-name5 {
+    grid-area: tag-name5;
+    /* border: 1px dashed black; */
+}
+
+.tag-name5 > p {
+    padding-top: 25px;
+    padding-left: 9px;
+    font-size: 13px;
+}
+
+.at5 {
+    color: grey;
+}
+
+.actual-tweet5 {
+    grid-area: actual-tweet5;
+    /* border: 1px dashed black; */
+}
+
+.actual-tweet5 > p >span{
+    font-size: 13px;
+    padding-top: 5px;
+    padding-left: 4px;
+    color: #26a7de;
+    }
+    
+    .actual-tweet5 > p {
+        font-size: 12px;
+        padding-top: 5px;
+        padding-left: 4px;
+    }
+
+.actual-tweet-icon5 {
+    grid-area: actual-tweet-icon5;
+    /* border: 1px dashed black; */
+}
+
+/* FIVE ICONS */
+.actual-tweet-icon5 {
+    grid-area: actual-tweet-icon5;
+    /* border: 1px dashed black; */
+
+
+        display: grid;
+        grid-template: "tweet-icon-one5 tweet-icon-two5 tweet-icon-three5 tweet-icon-four5";
+       grid-template-columns: repeat(4, 90px);
+        padding: 5px;
+        gap: 5px;
+}
+
+
+.tweet-icon-one5 {
+    grid-area:tweet-icon-one5 ;
+    /* border: 1px dashed black; */
+}
+
+.tweet-icon-one5 > img {
+    width: 15px;
+    padding-top: 20px;
+    padding-left: 35px;
+  
+}
+
+.tweet-icon-two5 {
+    grid-area:tweet-icon-two5 ;
+    /* border: 1px dashed black; */
+}
+
+.tweet-icon-two5 > img {
+    width: 15px;
+    padding-top: 20px;
+    padding-left: 35px;
+  
+}
+
+.tweet-icon-three5 {
+    grid-area:tweet-icon-three5 ;
+    /* border: 1px dashed black; */
+}
+
+.tweet-icon-three5 > img {
+    width: 15px;
+    padding-top: 20px;
+    padding-left: 35px;
+  
+}
+
+.tweet-icon-four5 {
+    grid-area:tweet-icon-four5 ;
+    /* border: 1px dashed black; */
+}
+
+.tweet-icon-four5 > img {
+    width: 15px;
+    padding-top: 20px;
+    padding-left: 35px;
+  
+}
+
+/* SIX */
+.tweetSix-container {
+    grid-area: tweetSix-container;
+    /* border: 1px dashed black; */
+
+    display: grid;
+    grid-template: "user-posting-pic6 tweeting-container6 ";
+    grid-template-columns: 60px 1fr;
+    padding: 5px;
+    gap: 5px;
+}
+
+.user-posting-pic6 {
+    grid-area: user-posting-pic6;
+    /* border: 1px dashed black; */
+}
+
+.user-posting-pic6 > img {
+    width: 40px;
+    padding-top: 22px;
+    padding-left: 9px;
+}
+
+
+.tweeting-container6 {
+    grid-area: tweeting-container6;
+    /* border: 1px dashed black; */
+
+    display: grid;
+    grid-template: 
+    "tag-name6"
+    "actual-tweet6"
+    "actual-tweet-icon6";
+    grid-template-rows: 1fr 1fr 2fr;
+    padding: 5px;
+    gap: 5px
+}
+
+.tag-name6 {
+    grid-area: tag-name6;
+    /* border: 1px dashed black; */
+}
+
+.tag-name6 > p {
+    padding-top: 25px;
+    padding-left: 9px;
+    font-size: 13px;
+}
+
+.at6 {
+    color: grey;
+}
+
+.actual-tweet6 {
+    grid-area: actual-tweet6;
+    /* border: 1px dashed black; */
+}
+
+.actual-tweet6 > p >span{
+    font-size: 13px;
+    padding-top: 5px;
+    padding-left: 4px;
+    color: #26a7de;
+    }
+    
+    .actual-tweet6 > p {
+        font-size: 12px;
+        padding-top: 5px;
+        padding-left: 4px;
+    }
+
+.actual-tweet-icon6 {
+    grid-area: actual-tweet-icon6;
+    /* border: 1px dashed black; */
+}
+
+/* ICONS SIX */
+
+.actual-tweet-icon6 {
+    grid-area: actual-tweet-icon6;
+    /* border: 1px dashed black; */
+
+
+        display: grid;
+        grid-template: "tweet-icon-one6 tweet-icon-two6 tweet-icon-three6 tweet-icon-four6";
+       grid-template-columns: repeat(4, 90px);
+        padding: 5px;
+        gap: 5px;
+}
+
+
+.tweet-icon-one6 {
+    grid-area:tweet-icon-one6 ;
+    /* border: 1px dashed black; */
+}
+
+.tweet-icon-one6 > img {
+    width: 15px;
+    padding-top: 20px;
+    padding-left: 35px;
+  
+}
+
+.tweet-icon-two6 {
+    grid-area:tweet-icon-two6 ;
+    /* border: 1px dashed black; */
+}
+
+.tweet-icon-two6 > img {
+    width: 15px;
+    padding-top: 20px;
+    padding-left: 35px;
+  
+}
+
+.tweet-icon-three6 {
+    grid-area:tweet-icon-three6 ;
+    /* border: 1px dashed black; */
+}
+
+.tweet-icon-three6 > img {
+    width: 15px;
+    padding-top: 20px;
+    padding-left: 35px;
+  
+}
+
+.tweet-icon-four6 {
+    grid-area:tweet-icon-four6 ;
+    /* border: 1px dashed black; */
+}
+
+.tweet-icon-four6 > img {
+    width: 15px;
+    padding-top: 20px;
+    padding-left: 35px;
+  
+}
+
+/* RIGHTBAR */
+
+.right-bar {
+    grid-area: right-bar;
+    /* border: 1px dashed black; */
+
+    display: grid;
+    grid-template: 
+    
+    "whats-happening-right"
+    "who-to-follow-right";
+    grid-template-rows: 
+    280px 50px;
+    padding: 10px;
+    gap: 5px;
+}
+
+
+
+
+
+
+.whats-happening-right {
+    grid-area: whats-happening-right;
+    /* border: 1px dashed black;
+     */
+     border-bottom:1px solid silver;
+   
+}
+
+.whats-happening-right > p {
+    padding-left: 35px;
+    padding-top: 15px;
+    
+}
+
+
+.trending {
+    color: grey;
+    line-height: 1px;
+}
+
+
+.who-to-follow-right {
+    grid-area: who-to-follow-right;
+    /* border: 1px dashed black; */
+    border-bottom:1px solid silver;
+
+}
+
+.who-to-follow-right >p {
+    padding-left: 35px;
+    padding-top: 15px;
+}
+
+
+.footer {
+    grid-area: footer;
+    /* border: 1px dashed black; */
+    /* position: fixed;
+    bottom: 0; */
+    
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 768px) {
+ .right-bar {
+       display: none;
+   }
+}
+
+
+@media screen and (max-width: 300px) {
+    .left-bar-menu{
+        background-color: grey;
+      }
+   }
