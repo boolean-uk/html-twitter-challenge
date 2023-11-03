@@ -1,12 +1,8 @@
 # Twitter Clone
 
-For this exercise, we will be building a clone of Twitter:
+In this project, I created a Twitter clone to apply my knowledge of HTML and CSS, achieving a high level of detail in replicating the Twitter interface. The project showcased my skills in using HTML elements for content structuring, an external CSS stylesheet for styling, CSS Grid for layout design, and responsiveness for cross-device compatibility
 
-![twitter](images/twitter.png)
-
-This will put into practice everything we have learned so far about HTML & CSS. The below image shows level of detail you should replicate from Twitter:
-
-![twitter clone](images/example.png)
+I have deployed the repo on vercel and it is available to view a live demo. I would really appreciate if you viewed the work I am so proud of and see it in action. <a href="https://twitter-clone-96xtyzyzc-mannavic.vercel.app/">Link to deployed app<a/>
 
 ## Setup
 1. Fork this repository to your account.
