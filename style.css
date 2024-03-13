@@ -561,11 +561,9 @@ main {
         height: 50px;
         justify-items: center;
     }
-    .left-hand-menu .apps {
-        height: 500px;
-    }
     .left-hand-menu {
         justify-items: center;
+        width: 135px;
     }
     .left-hand-menu button {
         width: 50px;
@@ -583,6 +581,36 @@ main {
         width: 50px;
         border-radius: 50%;
         background-color: #181818;
+    }
+    .apps .home:hover {
+        width: 50px;
+    }
+    .apps .explore:hover {
+        width: 50px;
+    }
+    .apps .notifications:hover {
+        width: 50px;
+    }
+    .apps .messages:hover {
+        width: 50px;
+    }
+    .apps .lists:hover {
+        width: 50px;
+    }
+    .apps .bookmarks:hover {
+        width: 50px;
+    }
+    .apps .communities:hover {
+        width: 50px;
+    }
+    .apps .premium:hover {
+        width: 50px;
+    }
+    .apps .profile-left-hand-menu:hover {
+        width: 50px;
+    }
+    .apps .more-left-hand-menu:hover {
+        width: 50px;
     }
 }
 
@@ -606,5 +634,38 @@ main {
     }
     .right-side-bar .trends .name-trend {
         font-size: 15px;
+    }
+    .tweet-feed .feed {
+        display: grid;
+        grid-template: 
+            'post' 100px
+            'post' 100px;
+    }
+    .tweet-feed .feed .post-picture {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1129px) {
+    main {
+        display: grid;
+        height: 100vh;
+        grid-template: 
+            'left-hand-menu tweet-feed' / 180px minmax(280px, 600px);
+    }
+    .right-side-bar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 629px) {
+    main {
+        display: grid;
+        height: 100vh;
+        grid-template: 
+            'tweet-feed' minmax(450px, 1fr);
+    }
+    .left-hand-menu {
+        display: none;
     }
 }
