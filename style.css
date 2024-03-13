@@ -44,6 +44,67 @@ main {
     font-size: 20px;
 }
 
+.apps .home:hover {
+    width: 125px;
+    border-radius: 25px;
+    background-color: #202020;
+    transition: 150ms;
+}
+.apps .explore:hover {
+    width: 140px;
+    border-radius: 25px;
+    background-color: #202020;
+    transition: 150ms;
+}
+.apps .notifications:hover {
+    width: 175px;
+    border-radius: 25px;
+    background-color: #202020;
+    transition: 150ms;
+}
+.apps .messages:hover {
+    width: 160px;
+    border-radius: 25px;
+    background-color: #202020;
+    transition: 150ms;
+}
+.apps .lists:hover {
+    width: 115px;
+    border-radius: 25px;
+    background-color: #202020;
+    transition: 150ms;
+}
+.apps .bookmarks:hover {
+    width: 170px;
+    border-radius: 25px;
+    background-color: #202020;
+    transition: 150ms;
+}
+.apps .communities:hover {
+    width: 185px;
+    border-radius: 25px;
+    background-color: #202020;
+    transition: 150ms;
+}
+.apps .premium:hover {
+    width: 150px;
+    border-radius: 25px;
+    background-color: #202020;
+    transition: 150ms;
+}
+.apps .profile-left-hand-menu:hover {
+    width: 130px;
+    border-radius: 25px;
+    background-color: #202020;
+    transition: 150ms;
+}
+.apps .more-left-hand-menu:hover {
+    width: 115px;
+    border-radius: 25px;
+    background-color: #202020;
+    transition: 150ms;
+}
+
 .x-svg {
     z-index: 999;
     width: 30px;
@@ -489,4 +550,61 @@ main {
 
 .right-side-bar .trends .show-more p {
     color: #1d9bf0;
+}
+
+@media screen and (max-width: 1299px) {
+    .left-hand-menu .apps p {
+        display: none;
+    }
+    .apps div {
+        width: 50px;
+        height: 50px;
+        justify-items: center;
+    }
+    .left-hand-menu .apps {
+        height: 500px;
+    }
+    .left-hand-menu {
+        justify-items: center;
+    }
+    .left-hand-menu button {
+        width: 50px;
+    }
+    .left-hand-menu button strong {
+        display: none;
+    }
+    .left-hand-menu .profile .name, .nick, .options {
+        display: none;
+    }
+    .left-hand-menu .profile {
+        display: inline-block;
+    }
+    .apps div:hover {
+        width: 50px;
+        border-radius: 50%;
+        background-color: #181818;
+    }
+}
+
+@media screen and (max-width: 1239px) {
+    .right-side-bar .search-bar button {
+        width: 250px;
+    }
+    .right-side-bar .follow {
+        width: 250px;
+        padding-left: 20px;
+    }
+    .right-side-bar .follow .profile .nick-name {
+        display: none;
+    }
+    .right-side-bar .follow .who-follow {
+        font-size: 15px;
+    }
+    .right-side-bar .trends {
+        width: 250px;
+        padding-right: 80px;
+    }
+    .right-side-bar .trends .name-trend {
+        font-size: 15px;
+    }
 }
