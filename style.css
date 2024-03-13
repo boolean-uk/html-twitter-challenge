@@ -8,7 +8,7 @@
     display: grid;
     grid-template:
         'header main' /
-        25% 1fr
+        30% 1fr
     ;
 }
 
@@ -21,7 +21,8 @@
     background-color: #15202b;
     padding-left: 20px;
     display: grid;
-    grid-template-rows: repeat(15, 0.8fr);
+    grid-template-rows: repeat(15, 1fr);
+    /* place-items: right; */
 }
 
 .icons {
@@ -89,6 +90,7 @@
 
 .acc-options {
     grid-area: dots;
+    padding-top: 30%;
 }
 
 
@@ -96,10 +98,11 @@
 /* =========================== Main =========================== */
 
 
-
 .main {
     grid-area: main;
     background-color: #15202b;
+    display: grid;
+    grid-template-rows:  ;
 }
 
 .right {
