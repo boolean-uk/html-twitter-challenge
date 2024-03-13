@@ -7,8 +7,8 @@
     height: 100vh;
     display: grid;
     grid-template:
-        'header main right' /
-        25% 1fr 30%
+        'header main' /
+        25% 1fr
     ;
 }
 
@@ -17,6 +17,7 @@
 
 .header {
     grid-area: header;
+    height: 100vh;
     background-color: #15202b;
     padding-left: 20px;
     display: grid;
@@ -43,24 +44,56 @@
 }
 
 .post-button  button{
-    width: 147px;
+    width: 260px;
     height: 50px;
     background-color: #1a8cd8;
+    border: 3px solid #1a8cd8;
     border-radius: 50px;    
 }
 
+.header .spacer {
+    height: 100%;
+    /* margin-bottom: 70px; */
+}
 
 .user {
     display: grid;
-    grid-template-columns: 20% 1fr 20%;
-    gap: 3px;
+    height: 50%;
+    grid-template:  
+        'pic username dots'
+        'pic username dots' /
+        20% 1fr 20%
+    ;
+    margin-left: 35%;
+    margin-top: 15%;
+    
+    margin-right: 20px;
+    border: 1px solid yellow;
+    border-radius: 50px;
+}
+
+.user .profile-pic {
+    grid-area: pic;
+    width: 90%;
+    border-radius: 100%;
+    background-color: pink;
+}
+
+.user .user-name {
+    grid-area: username;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+    color: white;
+}
+
+.acc-options {
+    grid-area: dots;
 }
 
 
 
-
-
-
+/* =========================== Main =========================== */
 
 
 
