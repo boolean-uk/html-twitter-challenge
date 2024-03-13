@@ -34,48 +34,46 @@
     margin: 10px;
     display: grid;
     grid-template-columns: 20% 1fr;
-    padding-left: 30%;
+    padding-left: 45%;
 }
 
 .nav-link p {
     color: white;
     font-size: 22px;
     font-weight: bolder;
-    padding-right: 10%;
+    /* padding-right: 5%; */
 }
 
-.post-button  button{
+.post-button button {
     width: 260px;
     height: 50px;
     background-color: #1a8cd8;
     border: 3px solid #1a8cd8;
-    border-radius: 50px;    
+    border-radius: 50px;
 }
 
 .header .spacer {
     height: 100%;
-    /* margin-bottom: 70px; */
 }
 
 .user {
     display: grid;
     height: 50%;
-    grid-template:  
+    grid-template:
         'pic username dots'
         'pic username dots' /
         20% 1fr 20%
     ;
     margin-left: 35%;
     margin-top: 15%;
-    
+    padding-left: 5%;
     margin-right: 20px;
-    border: 1px solid yellow;
     border-radius: 50px;
 }
 
 .user .profile-pic {
     grid-area: pic;
-    width: 90%;
+    width: 80%;
     border-radius: 100%;
     background-color: pink;
 }
@@ -95,17 +93,322 @@
 
 
 
-/* =========================== Main =========================== */
+/* =========================== Center - Right =========================== */
 
 
 .main {
     grid-area: main;
     background-color: #15202b;
     display: grid;
-    grid-template-rows:  ;
+    grid-template:
+        'content news' / 1fr 40%
+    ;
+
 }
 
-.right {
-    grid-area: right;
-    background-color: #15202b;
+
+/* =========================== Center =========================== */
+
+.content {
+    grid-area: content;
+    border-left: 1px solid #38444d;
+    border-right: 1px solid #38444d;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 5% 15% 7% 1fr;
 }
+
+.top-bar {
+    /* height: 7%; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 15%;
+    place-items: center;
+    border-bottom: 1px solid #38444d;
+}
+
+.top-bar p {
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+
+/* =========================== Compose-new-post =========================== */
+
+.new-post {
+    /* height: 13%; */
+    display: grid;
+    grid-template:
+        'left compose'
+        'left media' /
+        10% 1fr
+    ;
+    border-bottom: 1px solid #38444d;
+}
+
+.p-pic {
+    grid-area: left;
+    padding-top: 25%;
+    padding-left: 25%;
+}
+
+.p-pic img {
+    border-radius: 100px;
+}
+
+.write {
+    grid-area: compose;
+}
+
+.write input {
+    height: 100%;
+    width: 100%;
+    padding-top: 1.5%;
+    background-color: #15202b;
+    border: 0;
+    color: #8b98a5;
+    font-size: 28px;
+}
+
+.add-media-container {
+    grid-area: media;
+    display: grid;
+    grid-template-columns: 1fr 20%;
+}
+
+.media-icons {
+    padding-top: 5%;
+    fill: #1d9bf0;
+}
+
+.media-icons svg {
+    padding-right: 5%;
+}
+
+.send button {
+    width: 55%;
+    height: 55%;
+    margin-top: 10%;
+    margin-left: 10%;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #1a8cd8;
+    border: 3px solid #1a8cd8;
+    border-radius: 50px;
+}
+
+
+/* =========================== Feed =========================== */
+
+.more-tweets {
+    height: 100%;
+    border-bottom: 1px solid #38444d;
+}
+
+.more-tweets p {
+    margin-top: 3%;
+    color: #1a8cd8;
+    font-size: large;
+    text-align: center;
+}
+
+.feed-items-container {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 250px;
+    grid-auto-flow: row;
+    border-bottom: 1px solid #38444d;
+}
+
+.post {
+    display: grid;
+    padding-top: 15px;
+    grid-template:
+        'left top' 15%
+        'left text' 1fr
+        'left bottom' 25% /
+        10% 1fr
+    ;
+    border-bottom: 1px solid #38444d;
+}
+
+.left-side {
+    grid-area: left;
+    grid-area: left;
+    padding-top: 5%;
+    padding-left: 25%;
+}
+
+.left-side img {
+    border-radius: 100%;
+}
+
+.top {
+    grid-area: top;
+    display: grid;
+    grid-template-columns: 1fr 10%;
+}
+
+.poster {
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: large;
+    color: white;
+}
+
+.actions {
+    fill: #8b98a5;
+    text-align: center;
+    padding-top: 10%;
+}
+
+.text {
+    grid-area: text;
+    color: white;
+}
+
+.post-bottom {
+    grid-area: bottom;
+    display: grid;
+    grid-template-columns: 1fr 15%;
+    margin-top: 10px;
+}
+
+.reactions {
+    fill: #8b98a5;
+}
+
+.bottom-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.bottom-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-right: 20px;
+    gap: 10px;
+}
+
+
+
+
+
+
+/* =========================== Right =========================== */
+
+.news {
+    grid-area: news;
+    display: grid;
+    grid-template-rows: 6% 30% 1fr;
+    gap: 15px;
+    place-items: center;
+}
+
+.search {
+    height: 60%;
+    width: 100%;
+    padding-left: 10%;
+   }
+
+.search input {
+    height: 100%;
+    width: 80%;
+    padding-left: 5%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #919aa2;
+    background-color: #273340;
+    border: 0;
+    border-radius: 50px;
+}
+
+.suggest {
+    width: 90%;
+    height: 100%;
+    margin: 15px;
+    background-color: #252e38;
+    border: 1px solid black;
+    border-radius: 15px;
+    display: grid;
+    grid-auto-rows: 1fr;
+}
+
+.suggest div {
+    border-top: 1px solid black;
+}
+
+.suggest p {
+    color: white;
+    font-size: 28px;
+    font-weight: bolder;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.trends {
+    width: 90%;
+    height: 100%;
+    margin: 15px;
+    background-color: #252e38;
+    border: 1px solid black;
+    border-radius: 15px;
+    display: grid;
+    grid-auto-rows: 1fr;
+}
+
+.trends div {
+    border-top: 1px solid black;
+}
+
+.trends p {
+    color: white;
+    font-size: 28px;
+    font-weight: bolder;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+/* =========================== Responsiveness =========================== */
+
+/* @media screen and (max-width: 480px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .folders,
+    .settings {
+        display: none;
+    }
+} */
+
+@media screen and (min-width: 480px) and (max-width: 720px) {
+    .container {
+        grid-template-columns: 100px 1fr;
+    }
+
+
+.nav-link p {
+        display: none;
+    }
+
+.post-button button {
+    width: 80px;
+    /* height: 50px; */
+    background-color: #1a8cd8;
+    border: 3px solid #1a8cd8;
+    border-radius: 100%;
+}
+
+}
+
+
+/* @media screen and (min-width: 720px) and (max-width: 1080px) {
+    .container {
+        
+    }
+} */
