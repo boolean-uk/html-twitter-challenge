@@ -22,7 +22,7 @@
     padding-left: 20px;
     display: grid;
     grid-template-rows: repeat(15, 1fr);
-    /* place-items: right; */
+    grid-template-columns: auto;
 }
 
 .icons {
@@ -78,7 +78,7 @@
     background-color: pink;
 }
 
-.user .user-name {
+ .user-name {
     grid-area: username;
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -116,6 +116,7 @@
     height: 100vh;
     display: grid;
     grid-template-rows: 5% 15% 7% 1fr;
+    grid-template-columns: auto;
 }
 
 .top-bar {
@@ -310,7 +311,7 @@
     height: 60%;
     width: 100%;
     padding-left: 10%;
-   }
+}
 
 .search input {
     height: 100%;
@@ -375,40 +376,46 @@
 
 /* =========================== Responsiveness =========================== */
 
-/* @media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
     .container {
         grid-template-columns: 1fr;
     }
 
-    .folders,
-    .settings {
+    .news,
+    .nav-link p,
+    .user-name,
+    .acc-options {
         display: none;
     }
-} */
+}
 
-@media screen and (min-width: 480px) and (max-width: 720px) {
-    .container {
-        grid-template-columns: 100px 1fr;
+@media screen and (min-width: 481px) and (max-width: 1020px) {
+
+    .content {
+        grid-template-columns: minmax(150px, 200px);
     }
 
+    .header {
+        grid-template-columns: minmax(150px, 200px);
+    }
 
-.nav-link p {
+    .nav-link {
+        padding-left: 20px;
+    }
+
+    .news,
+    .nav-link p,
+    .user-name,
+    .acc-options {
         display: none;
     }
 
-.post-button button {
-    width: 80px;
-    /* height: 50px; */
-    background-color: #1a8cd8;
-    border: 3px solid #1a8cd8;
-    border-radius: 100%;
-}
-
-}
-
-
-/* @media screen and (min-width: 720px) and (max-width: 1080px) {
-    .container {
-        
+    .post-button button,
+    .profile-pic {
+        width: 40px;
+        border-radius: 100%;
     }
-} */
+
+}
+
+
