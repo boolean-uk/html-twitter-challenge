@@ -31,7 +31,6 @@
 .nav-button svg {
   height: 35px;
   margin-left: 10px;
-  padding-top: 2px;
 }
 
 .nav-button .link {
@@ -42,9 +41,13 @@
   background-color: rgba(128, 128, 128, 0.578);
 }
 
+.nav-button:active {
+    background-color: rgba(128, 128, 128, 0.578);
+}
+
 .left .logo {
   font-size: 40px;
-  padding-left: 5px;
+  padding-left: 10px;
 }
 
 .main {
@@ -68,6 +71,7 @@
 
 .home-bar img {
   height: 25px;
+  padding-right: 10px;
 }
 
 .compose-tweet {
@@ -130,9 +134,7 @@
   font-weight: bold;
 }
 
-.tweet-feed {
-  margin-top: 5px;
-}
+
 
 .tweet-feed .tweet {
   display: grid;
@@ -141,9 +143,10 @@
     "avatar tweet-copy tweet-copy" auto
     "avatar engage-buttons engage-buttons" 25px/
     50px auto 1fr;
-  padding: 2px;
+  padding: 5px;
   padding-bottom: 10px;
   border-bottom: 1px solid rgba(128, 128, 128, 0.553);
+  margin-top: 8px;
 }
 
 .tweet .avatar {
@@ -170,6 +173,7 @@
 .engage-buttons .icon:hover {
   background-color: rgba(128, 128, 128, 0.578);
 }
+
 
 .engage-buttons svg {
   height: 20px;
