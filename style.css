@@ -8,7 +8,7 @@
     display: grid;
     grid-template:
         'header main' /
-        30% 1fr
+        25% 1fr
     ;
 }
 
@@ -19,66 +19,107 @@
     grid-area: header;
     height: 100vh;
     background-color: #15202b;
-    padding-left: 20px;
     display: grid;
     grid-template-rows: repeat(15, 1fr);
-    grid-template-columns: auto;
+    /* grid-template-columns: auto; */
+    gap: 5px;
 }
 
 .icons {
     fill: white;
 }
 
+.icons img {
+    color: white;
+}
+
 
 .nav-link {
-    margin: 10px;
+    /* width: 40%; */
+    margin-top: 10px;
+    margin-left: 40%;
     display: grid;
     grid-template-columns: 20% 1fr;
-    padding-left: 45%;
+    /* align-items: flex-end; */
+    /* place-items: center; */
+}
+
+.nav-link div {
+    text-align: center;
+}
+
+.nav-link:hover {
+    width: 170px;
+    height: 50px;
+    padding-left: 5px;
+    background-color: #38444d;
+    border: #38444d;
+    border-radius: 9px;
+    cursor: pointer;
 }
 
 .nav-link p {
     color: white;
     font-size: 22px;
     font-weight: bolder;
-    /* padding-right: 5%; */
+    /* padding: 5px; */
 }
 
 .post-button button {
-    width: 260px;
+    width: 200px;
     height: 50px;
+    margin-left: 40%;
+    color: white;
+    font-size: 22px;
+    font-weight: bolder;
     background-color: #1a8cd8;
     border: 3px solid #1a8cd8;
     border-radius: 50px;
 }
 
-.header .spacer {
-    height: 100%;
+.post-button button:hover {
+    background-color: #135e90;
+    cursor: pointer;
 }
+
+.spacer {
+    height: 10%;
+}
+
+.spacer:hover {
+    background-color: #15202b;
+    cursor: default;
+}
+
 
 .user {
     display: grid;
-    height: 50%;
+    height: 100%;
+    width: 70%;
     grid-template:
-        'pic username dots'
-        'pic username dots' /
-        20% 1fr 20%
+        'pic username dots' 0.5fr
+        'pic username dots' 0.5fr /
+        25% 1fr 25%
     ;
-    margin-left: 35%;
-    margin-top: 15%;
-    padding-left: 5%;
-    margin-right: 20px;
-    border-radius: 50px;
+    margin-left: 30%;
+    margin-right: 25px;
+    /* margin-top: ; */
+    
 }
 
-.user .profile-pic {
+
+.user .profile-pic img {
     grid-area: pic;
-    width: 80%;
+    width: 70%;
     border-radius: 100%;
     background-color: pink;
+    margin-top: 55%;
+    margin-left: 15%;
+    display: grid;
+    place-items: center;
 }
 
- .user-name {
+.user-name {
     grid-area: username;
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -91,6 +132,12 @@
     padding-top: 30%;
 }
 
+.user:hover {
+    background-color: #38444d;
+    border: #38444d;
+    border-radius: 9px;
+    cursor: pointer;
+}
 
 
 /* =========================== Center - Right =========================== */
@@ -120,18 +167,68 @@
 }
 
 .top-bar {
-    /* height: 7%; */
     display: grid;
-    grid-template-columns: 1fr 1fr 15%;
+    grid-template:
+        'left center right' /
+        1fr 1fr 15%
+    ;
     place-items: center;
     border-bottom: 1px solid #38444d;
 }
 
-.top-bar p {
+
+.for-you {
+    grid-area: left;
+    width: 100%;
+    height: 100%;
+    padding-top: 5%;
     color: white;
     font-size: 20px;
+    /* border-right: ; */
     font-weight: bolder;
+    text-align: center;
 }
+
+.following {
+    grid-area: center;
+    width: 100%;
+    height: 100%;
+    padding-top: 5%;
+    color: white;
+    font-size: 20px;
+    /* border-right: ; */
+    font-weight: bolder;
+    text-align: center;
+}
+
+.settings {
+    grid-area: right;
+    width: 100%;
+    height: 100%;
+    /* padding-top: 15%; */
+    text-align: center;
+
+}
+
+.settings svg {
+    margin-top: 7%;
+}
+
+
+.for-you:hover,
+.following:hover {
+    background-color: #2c3640;
+    cursor: pointer;
+}
+
+.settings svg:hover {
+    /* top: 6px; */
+    padding: 5px;
+    background-color: #2b3640;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
 
 
 /* =========================== Compose-new-post =========================== */
@@ -163,8 +260,10 @@
 
 .write input {
     height: 100%;
-    width: 100%;
+    width: 99%;
     padding-top: 1.5%;
+    margin-top: 5px;
+    margin-bottom: 5px;
     background-color: #15202b;
     border: 0;
     color: #8b98a5;
@@ -175,6 +274,7 @@
     grid-area: media;
     display: grid;
     grid-template-columns: 1fr 20%;
+    grid-template-rows: auto;
 }
 
 .media-icons {
@@ -183,13 +283,21 @@
 }
 
 .media-icons svg {
-    padding-right: 5%;
+    margin-right: 5%;
+    border-radius: 100%;
+}
+
+.media-icons svg:hover {
+    padding: 5px;
+    background-color: #2b3640;
+    border-radius: 100%;
+    cursor: pointer;
 }
 
 .send button {
     width: 55%;
     height: 55%;
-    margin-top: 10%;
+    margin-top: 15%;
     margin-left: 10%;
     color: white;
     font-size: 16px;
@@ -207,6 +315,10 @@
     border-bottom: 1px solid #38444d;
 }
 
+.more-tweets:hover {
+    background-color: #1c2732;
+}
+
 .more-tweets p {
     margin-top: 3%;
     color: #1a8cd8;
@@ -214,11 +326,16 @@
     text-align: center;
 }
 
+.more-tweets p:hover {
+    cursor: pointer;
+}
+
 .feed-items-container {
     height: 100vh;
     display: grid;
     grid-template-rows: 250px;
-    grid-auto-flow: row;
+    /* grid-auto-flow: row; */
+    grid-auto-rows: minmax(250px, 1fr);
     border-bottom: 1px solid #38444d;
 }
 
@@ -258,10 +375,8 @@
     color: white;
 }
 
-.actions {
-    fill: #8b98a5;
-    text-align: center;
-    padding-top: 10%;
+.actions svg {
+    fill: white;
 }
 
 .text {
@@ -276,8 +391,17 @@
     margin-top: 10px;
 }
 
-.reactions {
+.reactions svg {
     fill: #8b98a5;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.reactions svg:hover {
+    padding: 5px;
+    background-color: #1c3345;
+    border-radius: 100%;
+    cursor: pointer;
 }
 
 .bottom-left {
@@ -302,15 +426,17 @@
 .news {
     grid-area: news;
     display: grid;
-    grid-template-rows: 6% 30% 1fr;
+    grid-template-rows: 6% 40% 1fr;
     gap: 15px;
     place-items: center;
+    margin: 15px;
 }
 
 .search {
-    height: 60%;
+    height: 80%;
     width: 100%;
     padding-left: 10%;
+    margin-bottom: 5%;
 }
 
 .search input {
@@ -325,19 +451,22 @@
     border-radius: 50px;
 }
 
+.post:hover {
+    background-color: #1c2732;
+    cursor: pointer;
+}
+
+/* =========================== Suggestions =========================== */
+
 .suggest {
     width: 90%;
     height: 100%;
-    margin: 15px;
-    background-color: #252e38;
-    border: 1px solid black;
+    background-color: #1e2732;
     border-radius: 15px;
     display: grid;
-    grid-auto-rows: 1fr;
-}
-
-.suggest div {
-    border-top: 1px solid black;
+    /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+    grid-auto-rows: minmax(100px, 1fr);
+    /* grid-auto-flow: row; */
 }
 
 .suggest p {
@@ -349,20 +478,73 @@
     padding-bottom: 15px;
 }
 
+.people {
+    display: grid;
+    grid-template:
+        'pic name button' 0.4fr / 30% 1fr 30%
+    ;
+}
+
+
+.prof-pic {
+    grid-area: pic;
+}
+
+.prof-pic img {
+    width: 60px;
+    margin: 15%;
+    border-radius: 100%;
+}
+
+
+
+.name p {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    height: 100%;
+    line-height: 2em;
+    /* padding-left: 15px; */
+    /* padding-top: 15px; */
+    /* padding-bottom: 15px; */
+}
+
+
+
+.follow {
+    display: grid;
+    place-items: center;
+}
+
+.follow button {
+    width: 80%;
+    height: 50%;
+    border-radius: 30px;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.people:hover {
+    background-color: #252e38;
+    cursor: pointer;
+}
+
+
+/* =========================== Trends =========================== */
+
+
 .trends {
     width: 90%;
     height: 100%;
     margin: 15px;
-    background-color: #252e38;
+    background-color: #1e2732;
     border: 1px solid black;
     border-radius: 15px;
     display: grid;
     grid-auto-rows: 1fr;
 }
 
-.trends div {
-    border-top: 1px solid black;
-}
+
 
 .trends p {
     color: white;
@@ -381,11 +563,26 @@
         grid-template-columns: 1fr;
     }
 
+    .write input {
+        width: 20%;
+        margin-left: 20px;
+    }
+
     .news,
     .nav-link p,
     .user-name,
-    .acc-options {
+    .acc-options,
+    .name p {
         display: none;
+    }
+
+    .post-button button,
+    .profile-pic,
+    .follow button,
+    .send button {
+        font-size: 8px;
+        width: 40px;
+        border-radius: 100%;
     }
 }
 
@@ -403,19 +600,25 @@
         padding-left: 20px;
     }
 
-    .news,
+    .write input {
+        width: 50%;
+        margin-left: 40px;
+    }
+
     .nav-link p,
     .user-name,
-    .acc-options {
+    .acc-options,
+    .name p {
         display: none;
     }
 
     .post-button button,
-    .profile-pic {
+    .profile-pic,
+    .follow button,
+    .send button {
+        font-size: 10px;
         width: 40px;
         border-radius: 100%;
     }
 
 }
-
-
