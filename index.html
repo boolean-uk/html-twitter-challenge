@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Squawker</title>
     <link rel="stylesheet" href="style.css" />
+
   </head>
   <body>
     <div class="wrapper">
@@ -167,7 +168,7 @@
         </div>
 
         <div class="compose-tweet">
-          <p class="write-tweet">Sapnin?</p>
+            <textarea id="message"></textarea>
 
           <div class="avatar">
             <img src="/assets/imgs/IMG_0998.jpeg" alt="avatar icon" />
@@ -243,7 +244,7 @@
                 </g>
               </svg>
             </div>
-            <div class="squawk-button">Squawk</div>
+            <div class="squawk-button" id="submit-tweet">Squawk</div>
           </div>
         </div>
 
@@ -446,7 +447,7 @@
       <div class="right">
         <div class="search">
           <div class="search-bar">
-            <img src="/assets/icons/magnifying-glass-svgrepo-com.svg" alt="" />
+            <img src="/assets/icons/magnifying-glass-svgrepo-com.svg" alt=""/>
             <p>Search Squawker</p>
           </div>
         </div>
@@ -457,5 +458,6 @@
         <div class="who-to-follow"><h3>Who to Follow</h3></div>
       </div>
     </div>
+    <script type="text/javascript" src="/index.js"></script>
   </body>
 </html>

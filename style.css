@@ -9,6 +9,7 @@
   grid-template-columns: 250px 1fr 250px;
   grid-template-areas: "left main right";
   height: 100vh;
+  margin-inline: 10%
 }
 
 .left {
@@ -42,7 +43,7 @@
 }
 
 .nav-button:active {
-    background-color: rgba(128, 128, 128, 0.578);
+  background-color: rgba(128, 128, 128, 0.578);
 }
 
 .left .logo {
@@ -103,6 +104,17 @@
   margin-right: 2px;
 }
 
+.compose-tweet input {
+    margin-right: 5px;
+    border:none;
+    height: auto;
+}
+
+.compose-tweet textarea {
+    resize: none;
+    margin-right: 5px;
+  }
+
 .avatar img {
   height: 40px;
   border-radius: 50%;
@@ -132,9 +144,8 @@
   background-color: lightslategray;
   color: white;
   font-weight: bold;
+  cursor:pointer
 }
-
-
 
 .tweet-feed .tweet {
   display: grid;
@@ -193,6 +204,7 @@
 .tweet .tweet-copy {
   grid-area: tweet-copy;
   padding-bottom: 5px;
+  overflow-wrap: break-word;
 }
 
 .right {
@@ -245,10 +257,10 @@
 }
 
 
-
 @media screen and (max-width: 900px) {
   .wrapper {
     grid-template-columns: 56px 1fr 250px;
+    margin-inline: 0px;
   }
 
   .left {
@@ -264,6 +276,8 @@
   .nav-button svg {
     margin-left: 9px;
   }
+
+  
 }
 
 @media screen and (max-width: 600px) {
