@@ -531,14 +531,23 @@ img.profile-picture {
 
 .nav:hover{
     background-color: #5156596e;
+    cursor:pointer;
 }
 
+button:hover{
+    cursor: pointer;
+}
 
 .interaction:hover,
 .bookmark:hover,
 .share:hover {
     color: #1d9bf0;
     background-color: #1d9cf01c;
+    cursor: pointer;
+}
+
+svg:hover{
+    cursor: pointer;
 }
 
 .interaction.like:hover {
@@ -616,18 +625,30 @@ img.profile-picture {
 
 @media screen and (max-width: 700px) {
     .container {
-        grid-template: "selector" 50px
-        "main" 1fr /auto;
-    }
+        grid-template:
+        "selector" 50px
+        "main" 1fr ;
+}
+
     .selector{
-        width:100%
+        width:minmax(450px,700px);
     }
     .main{
-        width: auto;
+        width:minmax(450px,700px);
         display: flex;
         flex-direction: column;
     }
-    .left-bar{
+
+    .main>div{
+        width:700px;
+    }
+
+    .left-bar, .post-create{
         display: none;
     }
+
+    .interact-bar{
+        gap:0px
+    }
+
 }
