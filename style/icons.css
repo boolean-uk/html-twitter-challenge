@@ -1,0 +1,42 @@
+/****** header ******/
+
+.logo-icon {
+  width: 45px;
+}
+
+.settings-icon {
+  width: 25px;
+}
+
+.search-icon {
+  width: 20px;
+}
+
+/****** left-hand menu******/
+.nav-icon {
+  width: 35px;
+}
+
+.nav-icon:hover {
+  background-color: var(--nav-icon-hover-gb-color);
+}
+
+.post-icon {
+  width: 20px;
+}
+
+.post-icon:hover {
+  background-color: var(--post-icon-hover-bg-color);
+}
+
+.interactive-icon {
+  width: 20px;
+}
+
+.repost:hover {
+  background-color: var(--repost-icon-hover-bg-color);
+}
+
+.like {
+  background-color: var(--like-icon-hover-bg-color);
+}

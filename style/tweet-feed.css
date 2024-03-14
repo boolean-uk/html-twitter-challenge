@@ -1,0 +1,175 @@
+.tweet-feed {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows:
+    150px
+    auto;
+  grid-auto-flow: row;
+  background-color: var(--right-bar-card-bg-color);
+}
+
+.tweet-feed > * {
+  background-color: #fff;
+  border: 1px solid var(--border-color);
+  display: grid;
+  grid-template-columns: 50px 1fr 40px;
+  column-gap: 20px;
+  padding: 10px;
+}
+
+.tweet-feed > *:hover {
+  background-color: var(--right-bar-card-bg-color);
+}
+
+.tweet-feed p {
+  font-size: 15px;
+  color: var(--primary-font-color);
+}
+/****** what is happening div ******/
+
+.what-is-happening {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  column-gap: 20px;
+  border-top: none;
+  margin-bottom: 10px;
+}
+
+.what-is-happening:hover {
+  background-color: #fff;
+}
+.send-your-tweet {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.post-icon-divs {
+  display: flex;
+}
+
+.share {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.share input {
+  width: 100%;
+  height: 60px;
+  border: none;
+}
+
+.share input:focus {
+  outline: none;
+}
+
+.post-icon-divs > *,
+.interactive-icons-div > *,
+.more-icon-div {
+  width: 35px;
+  height: 35px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+}
+
+.post-icon-divs > *:hover,
+.interactive-icons-div > *:hover,
+.more-icon-div:hover {
+  background-color: var(--tweet-icon-hover-bg-color);
+  cursor: pointer;
+}
+
+.send-your-tweet button {
+  font-weight: bold;
+  color: var(--tweet-btn-color);
+  background-color: var(--share-btn-bg-color);
+
+  padding: 10px 20px;
+
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.share input::placeholder {
+  color: var(--placeholder-font-color);
+  font-weight: 600;
+}
+
+/****** Eric post******/
+
+.retweeted {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--secondary-font-color);
+
+  margin-bottom: 3px;
+}
+
+.tweet-info {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 600;
+}
+
+.tweet-info > * {
+  display: flex;
+}
+
+.time {
+  color: var(--secondary-font-color);
+}
+
+.tweet-text {
+  margin-bottom: 7px;
+}
+
+.interactive-icons-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.repost-icon:hover {
+  background-color: var(--repost-icon-hover-bg-color);
+}
+
+.like-icon:hover {
+  background-color: var(--like-icon-hover-bg-color);
+}
+
+.retweeted-div {
+  position: relative;
+  margin-bottom: 20px;
+}
+.retweeted-icon {
+  width: 15px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/******* groupdocs *******/
+
+.group-docs {
+  border-top: none;
+}
+
+.post-photo {
+  border-radius: 7px;
+  margin: 5px 0;
+}
+
+.tweet-text a {
+  color: var(--tweet-btn-bg-color);
+  text-decoration: none;
+}

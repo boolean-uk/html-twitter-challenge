@@ -1,0 +1,123 @@
+.left-hand-menu {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 600px 60px;
+  grid-auto-flow: row;
+  row-gap: 10px;
+}
+
+/****** nav menu div******/
+.nav-menu {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-auto-flow: row;
+
+  padding: 10px 0;
+}
+
+.home-icon {
+  position: relative;
+}
+
+.notification-sign {
+  width: 8px;
+  height: 8px;
+  background-color: var(--tweet-btn-bg-color);
+  border-radius: 50%;
+  position: absolute;
+  top: -3px;
+  right: 3px;
+}
+
+.home p {
+  font-weight: bold;
+}
+
+.link,
+.div-btn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+
+  padding: 10px 0;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.link:hover {
+  background-color: var(--nav-icon-hover-gb-color);
+  cursor: pointer;
+}
+
+.link:visited {
+  color: black;
+}
+
+.tweet-btn {
+  color: var(--tweet-btn-color);
+  background-color: var(--tweet-btn-bg-color);
+
+  font-weight: bold;
+  letter-spacing: 0.5px;
+
+  padding: 15px 80px;
+  border-radius: 25px;
+}
+
+.tweet-btn:hover {
+  background-color: var(--tweet-btn-hover-bg-color);
+  cursor: pointer;
+}
+
+/****** user info div ******/
+.user-info {
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-right: 10px;
+  border-radius: 25px;
+}
+
+.user-info:hover {
+  background-color: var(--nav-icon-hover-gb-color);
+  cursor: pointer;
+}
+
+.user-info div:first-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 10px;
+}
+
+.user-photo {
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.name,
+.user-id {
+  font-size: 13px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.user-id {
+  color: var(--secondary-font-color);
+}
+
+.name:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,40 @@
+html {
+  --primary-font-color: #0f141a;
+  --secondary-font-color: #546373;
+
+  --placeholder-font-color: #989797;
+
+  --border-color: #e7e7e8;
+
+  --setting-icon-hover-color: #e7e7e8;
+
+  --notification-sign-bg-color: #3d91f9;
+
+  --nav-icon-hover-gb-color: #e7e7e8;
+
+  --tweet-btn-color: #fff;
+  --tweet-btn-bg-color: #3d91f9;
+  --tweet-btn-hover-bg-color: #3684e0;
+
+  --tweet-icon-color: #3d91f9;
+  --tweet-icon-hover-bg-color: #ebf4fe;
+
+  /****** interactive ******/
+  --like-icon-hover-color: #fd419e;
+  --like-icon-hover-bg-color: #f8deeb;
+
+  --repost-icon-hover-color: #50d6a0;
+  --repost-icon-hover-bg-color: #def2ea;
+
+  --share-btn-color: #fff;
+  --share-btn-bg-color: #9ec8fc;
+
+  --tweet-hover-bg-color: #f7f7f7;
+
+  /****** right side bar ******/
+  --right-bar-card-bg-color: #f7f9f9;
+  --right-bar-card-hover-bg-color: #eff1f1;
+
+  --search-bar-bg-color: #eff3f4;
+  --search-active-active-border-color: #57a0fa;
+}
