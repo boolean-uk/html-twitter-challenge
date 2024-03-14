@@ -5,29 +5,33 @@ import Feed from "./Feed";
 import Messages from "./Messages";
 import Notifications from "./Notifications";
 import Profile from "./Profile";
-import App from "../App";
 export const APP_ROUTES = [
 	{
+		icon: <i className="fa-solid fa-house"></i>,
 		label: "Feed",
 		path: "/",
 		element: Feed,
 	},
 	{
+		icon: <i className="fa-solid fa-bell"></i>,
 		label: "Notifications",
 		path: "/notifications",
 		element: Notifications,
 	},
 	{
+		icon: <i className="fa-solid fa-envelope"></i>,
 		label: "Messages",
 		path: "/messages",
 		element: Messages,
 	},
 	{
+		icon: <i className="fa-solid fa-bookmark"></i>,
 		label: "Bookmarks",
 		path: "/bookmarks",
 		element: Bookmarks,
 	},
 	{
+		icon: <i className="fa-solid fa-user"></i>,
 		label: "Profile",
 		path: "/profile",
 		element: Profile,
@@ -42,10 +46,11 @@ export const APP_ROUTES = [
 export default function Router() {
 	return (
 		<Routes>
-			{APP_ROUTES.map((AppRoute, i) => (
+			{APP_ROUTES.map((el, i) => (
 				<Route
-					element={<AppRoute.element />}
-					path={AppRoute.path}
+					element={<RouteWrapper routeData={el} />}
+					path={el.path}
+					key={`app-route-${el.path}__${i}`}
 				/>
 			))}
 			{/* <Route
@@ -58,5 +63,14 @@ export default function Router() {
 				element={<Profile></Profile>}
 				path="/profile"></Route> */}
 		</Routes>
+	);
+}
+
+function RouteWrapper({ routeData }) {
+	return (
+		<>
+			<h1 className="page-indicator">{routeData.label}</h1>
+			<routeData.element />
+		</>
 	);
 }

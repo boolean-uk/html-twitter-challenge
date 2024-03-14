@@ -1,14 +1,97 @@
 .navbar {
-	background-color: #f005;
 	height: 100svh;
-
+	background-color: #ffe;
 	display: flex;
 	flex-direction: column;
 	padding: 1rem;
 
+	&__logo {
+		height: 10%;
+
+		display: flex;
+		// place-content: center;
+		place-items: center;
+		margin-bottom: 1em;
+
+		& img {
+			margin-left: 20%;
+			max-width: 100%;
+			max-height: 100%;
+		}
+		& p {
+			margin-top: 0.5em;
+			margin-left: 0.5em;
+			font-style: italic;
+			font-weight: bold;
+			font-size: 1.75vw;
+		}
+	}
+
+	$color: #222;
+	$active-color: #ffeb52;
 	&__link {
-		padding: 1rem;
-		font-size: 1.5rem;
+		padding: 0.5rem 1rem;
+		margin: 1rem 0rem 0.5rem 1rem;
+		font-size: 1.25rem;
 		font-weight: bold;
+		border-radius: 30px;
+
+		transition: background-color 0.35s linear, border 0.2s ease;
+
+		border: 1px solid transparent;
+
+		& i {
+			-webkit-text-stroke-width: 2px;
+			-webkit-text-stroke-color: #222;
+
+			color: #ffe;
+			margin-right: 0.75em;
+		}
+
+		&:hover {
+			border-color: #222;
+		}
+
+		&.active {
+			background-color: $active-color;
+		}
+	}
+
+	@media (min-width: 1250px) and (max-width: 1400px) {
+		// width: 5vw;
+		&__logo p,
+		&__link__text,
+		& button {
+			display: none;
+		}
+
+		&__link {
+			padding: 0.5rem 0rem;
+			margin: 1rem 0rem 0.5rem 0rem;
+			text-align: center;
+
+			& i {
+				margin: auto;
+			}
+		}
+
+		&__logo {
+			& img {
+				margin-left: 0;
+			}
+		}
+	}
+
+	@media (max-width: 1250px) {
+		flex-direction: row;
+		height: 10vh;
+
+		&__logo {
+			height: 100%;
+			padding-right: 1em;
+			& p {
+				display: none;
+			}
+		}
 	}
 }
