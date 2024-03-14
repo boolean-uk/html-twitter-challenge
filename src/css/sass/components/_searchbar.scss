@@ -1,0 +1,18 @@
+.searchbar {
+	width: 100%;
+	padding: 0.75em 0.75em;
+	font-size: 1.25rem;
+	border: none;
+	border-radius: 30px;
+	background-color: #ffeb52;
+
+	box-shadow: inset 2px 2px 20px 2px darken(#ffeb52, 17%),
+		2px 2px 5px 2px #999;
+
+        transition: all 0.15s ;
+
+	&:focus {
+		box-shadow: inset 2px 2px 20px 2px darken(#ffeb52, 27%),
+			2px 2px 5px 2px #999;
+	}
+}

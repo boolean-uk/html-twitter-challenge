@@ -1,0 +1,13 @@
+.btn {
+	padding: 0.5rem 1rem;
+	background-color: gray;
+	border-radius: 30px;
+	text-transform: capitalize;
+	font-weight: bold;
+	// box-shadow: none;
+
+	&--primary {
+		background-color: gray;
+		color: #eee;
+	}
+}

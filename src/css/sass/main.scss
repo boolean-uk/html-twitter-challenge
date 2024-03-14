@@ -1,0 +1,13 @@
+@use "./base/base";
+
+// components
+@use "./components/navbar";
+@use "./components/btn";
+@use "./components/post";
+@use "./components/searchbar";
+@use "./components/article";
+// pages
+@use "./pages/layout";
+@use "./pages/home";
+@use "./pages/feed";
+@use "./pages/rightpane";
