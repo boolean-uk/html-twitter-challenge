@@ -12,38 +12,37 @@
     grid-template: 
     'left main right'1fr
     'footer main right'70px/
-    1fr 2fr 1fr;
+    1fr minmax(600px, 2fr) 1fr;
 }
 
 .left {
     grid-area: left;
-    background-color: rgb(213, 80, 80);
+    background-color: white;
 }
 
 main {
     grid-area: main;
-    background-color: rgb(90, 184, 90);
+    background-color: white;
 }
 
 .right {
     grid-area: right;
-    background-color: rgb(89, 89, 221);
+    background-color: white;
 }
 
 footer {
     grid-area: footer;
-    background-color: rgb(227, 156, 156);
+    background-color: white;
 }
 
 .footer-container {
     grid-template-columns: 1fr 3fr;
+    border-top: 1px solid rgb(207, 207, 207);
 }
 
 
 .left-container{
-    grid-template-rows: 3fr 1fr;
-    border: 2px dotted black;
-    
+    grid-template-rows: 3fr 1fr; 
 }
 
 .headings {
@@ -52,16 +51,58 @@ footer {
 }
 
 .tweet-button {
-    border: 2px solid rgb(92, 92, 255);
+    border: 2px solid rgb(30, 143, 255);
     border-radius: 40px;
-    background-color: rgb(92, 92, 255);
+    background-color: rgb(30, 143, 255);
+    color: white;
+    font-size: larger;
+    font-weight: bold;
     margin: 20px 30px 110px 30px;
     place-content: center;
 }
 
 .menu {
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
     border: 2px dotted white;
+    gap: 5%;
+    margin-left: 100px;
+}
+
+.logo-box {
+    margin: 10px 10px 0 0;
+}
+
+.menu-box {
+    grid-template-columns: 4rem 4rem;
+    margin-right: 60px;
+    padding: 2%;
+    
+}
+
+
+.menu :hover {
+    background-color: rgb(147, 201, 255) ;
+    border-radius: 70px;
+    width: fit-content;
+}
+
+.add-icon :hover {
+    background-color: rgb(147, 201, 255);
+    border-radius: 100px;
+}
+
+.response :hover {
+    background-color: rgb(147, 201, 255);
+    border-radius: 100px;
+    padding: 2px;
+}
+
+.menu-tweet-button :hover {
+    background-color: rgb(24, 121, 218);
+}
+
+.send-button button :hover {
+    background-color: rgb(24, 121, 218);
 }
 
 .main-container {
@@ -74,16 +115,24 @@ footer {
 .header {
     grid-area: header;
     grid-template-columns: 3fr 1fr;
-    border-bottom: 2px solid rgb(176, 176, 176);
+    border-bottom: 1px solid rgb(207, 207, 207);
+    border-left: 1px solid rgb(207, 207, 207);
+    border-right: 1px solid rgb(207, 207, 207);
     padding: 5px;
+}
+
+.header .box {
+    padding: 15px;
 }
 
 .feed {
     grid-area: feed;
+    border-left: 1px solid rgb(207, 207, 207);
+    border-right: 1px solid rgb(207, 207, 207);
 }
 
 .write-tweet {
-    border-bottom: 6px solid rgb(176, 176, 176);
+    border-bottom: 5px solid rgb(207, 207, 207);
     grid-template-rows: 1fr 1fr;
 }
 
@@ -108,7 +157,8 @@ footer {
 #enter-text {
     font-size: medium;
     border: none;
-    border-bottom: 1px solid rgb(176, 176, 176);
+    height: 75%;
+    margin: 10px 10px 0 0;
 }
 
 .write-tweet .attachments {
@@ -116,20 +166,24 @@ footer {
 }
 
 .write-tweet .attachments .attachment-icons {
-    grid-template-columns: repeat(5, 5rem);
+    place-content: center;
+    grid-template-columns: repeat(5, 3rem);
+    margin-right: 150px;
 }
 
-/* .send-button {
-    border: 2px solid rgb(92, 92, 255);
+.send-button .button {
+    border: 2px solid rgb(30, 143, 255);
     border-radius: 40px;
-    background-color: rgb(92, 92, 255);
-    margin: 20px 5px;
+    background-color: rgb(30, 143, 255);
+    margin: 20px 10px;
     place-content: center;
     color: white;
-} */
+    font-size: small;
+    font-weight: bold;
+}
 
 .tweets {
-    border-bottom: 2px solid rgb(176, 176, 176);
+    border-bottom: 1px solid rgb(207, 207, 207);
     grid-template-columns: 1fr 6fr;
 }
 
@@ -143,7 +197,7 @@ footer {
     margin-left: 40px;
 }
 
-.response-icons {
+.response {
     grid-template-columns: repeat(4, 1fr);
 }
 
@@ -161,18 +215,22 @@ footer {
 
 .search-bar {
     grid-template-columns: 40px 1fr;
-    border: 1px solid rgb(141, 141, 141);
+    border: 1px solid rgb(220, 220, 220);
     border-radius: 40px;
     padding: 5px;
     margin: 5px;
-    background-color: rgb(141, 141, 141);
+    background-color: rgb(220, 220, 220);
 }
 
 #search {
-    background-color:rgb(141, 141, 141);
+    background-color:rgb(220, 220, 220);
     border-radius: 0 40px 40px 0;
     border: none;
     font-size: medium;
+}
+
+.search-icon {
+    place-content: center;
 }
 
 .explore {
@@ -184,8 +242,8 @@ footer {
     'header' 50px
     'content' 1fr/
     1fr;
-    border: 2px solid rgb(176, 176, 176);
-    background-color: rgb(176, 176, 176);
+    border: 2px solid rgb(239, 239, 239);
+    background-color: rgb(239, 239, 239);
     border-radius: 10px;
     margin: 5px;
     padding: 5px;
@@ -206,6 +264,46 @@ footer {
     margin: 10px 130px 0 0;
 }
 
+.menu-icon {
+    width: 30px;
+}
+
+.add-icon {
+    width: 28px;
+}
+.response-icon {
+    width: 20px;
+}
+
+#twitter-logo {
+    width: 40px;
+}
+
+
+
+@media screen and (max-width: 600px){
+    .container {
+        grid-template-columns: 1fr;
+    }
+    .left, .right, footer {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px){
+    .container {
+        grid-template-columns: 150px 1fr;
+    }
+    .right, footer, .menu-tweet-button {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1240px){
+    .container {
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+}
 
 
 

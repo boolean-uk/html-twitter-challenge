@@ -11,34 +11,78 @@
         <div class="left">
             <div class="left-container">
                 <div class="menu">
-                    <div class="icons">
-                        <div class="box"></div>
-                        <div class="box"></div>
-                        <div id="home"><img src="assests/icons/home.svg"></div>
-                        <div id="explore"></div>
-                        <div id="notification"></div>
-                        <div id="messages"></div>
-                        <div id="lists"></div>
-                        <div id="profile"></div>
-                        <div id="more"></div>
+                    <div class="menu-header">
+                        <div class="logo-box">
+                            <img id="twitter-logo" src="assests/icons/twitter-logo.svg" alt="twitter-logo">
+                        </div>
                     </div>
-                    <div class="headings">
-                        <div class="box"></div>
-                        <div class="box"></div>
-                        <div class="box"></div>
-                        <div class="box"><h3>Home</h3></div>
-                        <div class="box"><h3>Explore</h3></div>
-                        <div class="box"><h3>Notifications</h3></div>
-                        <div class="box"><h3>Messages</h3></div>
-                        <div class="box"><h3>Lists</h3></div>
-                        <div class="box"><h3>Profile</h3></div>
-                        <div class="box"><h3>More</h3></div>
-                        
+                    <div class="menu-box">
+                        <div class="icon-box">
+                            <img class="menu-icon" src="assests/icons/home.svg" alt="home icon">
+                        </div>
+                        <div class="heading-box">
+                            <div class="box">
+                                <h3>Home</h3>
+                            </div>
+                        </div>
                     </div>
+                    <div class="menu-box">
+                        <div class="icon-box">
+                            <img class="menu-icon" src="assests/icons/search.svg" alt="explore icon">
+                        </div>
+                        <div class="heading-box">
+                            <div class="box">
+                                <h3>Explore</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-box">
+                        <div class="icon-box">
+                            <img class="menu-icon" src="assests/icons/notification.svg" alt="notification icon">
+                        </div>
+                        <div class="heading-box">
+                            <div class="box">
+                                <h3>Notifications</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="menu-box">
+                        <div class="icon-box">
+                            <img class="menu-icon" src="assests/icons/messages.svg" alt="message icon">
+                        </div>
+                        <div class="heading-box">
+                            <h3>Messages</h3>
+                        </div>
+                    </div>
+                    <div class="menu-box">
+                        <div class="icon-box">
+                            <img class="menu-icon" src="assests/icons/lists.svg" alt="lists icon">
+                        </div>
+                        <div class="heading-box">
+                            <h3>Lists</h3>
+                        </div>
+                    </div>
+                    <div class="menu-box">
+                        <div class="icon-box">
+                            <img class="menu-icon" src="assests/icons/profile.svg" alt="profile icon">
+                        </div>
+                        <div class="heading-box">
+                            <h3>Profile</h3>
+                        </div>
+                    </div>
+                    <div class="menu-box">
+                        <div class="icon-box">
+                            <img class="menu-icon" src="assests/icons/more.svg" alt="more icon">
+                        </div>
+                        <div class="heading-box">
+                            <h3>More</h3>
+                        </div>
+                    </div>
+                    <div class="box"></div>
                 </div>
-                <div class="button">
-                    <div class="tweet-button">
-                        <div class="box"><h3>Tweet</h3></div>
+                <div>
+                    <div class="menu-tweet-button">
+                        <input class="tweet-button" type="button" value="Tweet"/>
                     </div>
                 </div>
             </div>
@@ -61,16 +105,35 @@
                         </div>
                         <div class="attachments">
                             <div class="attachment-icons">
-                                <div class="box"><img src="assests/icons/emogi.svg"/></div>
-                                <div class="box"><img src="assests/icons/gif.svg"/></div>
-                                <div class="box"><img src="assests/icons/poll.svg"/></div>
-                                <div class="box"><img src="assests/icons/emogi.svg"/></div>
-                                <div class="box"><img src="assests/icons/location.svg"/></div>
+                                <div class="add-icon"><img src="assests/icons/image.svg"/></div>
+                                <div class="add-icon"><img src="assests/icons/gif.svg"/></div>
+                                <div class="add-icon"><img src="assests/icons/poll.svg"/></div>
+                                <div class="add-icon"><img src="assests/icons/emogi.svg"/></div>
+                                <div class="add-icon"><img src="assests/icons/location.svg"/></div>
                             </div>
                             <div class="send-button-box">
                                 <div class="send-button">
-                                    <div class="box"><h4>Tweet</h4></div>
+                                    <input class="button" type="button" value="Tweet"/>
                                 </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tweets">
+                        <div class="profile-pic">
+                            <img class="user-pic" src="assests/images/Charlie-pic.png">
+                        </div>
+                        <div class="box">
+                            <div class="details">
+                                <div class="user"><h4>Charlie</h4></div>
+                                <div class="username">@fightmilk</div>
+                                <div class="time-posted">30s</div>
+                            </div>
+                            <div class="tweet-posted"><p>I eat a sticker, am I gonna die now?</p></div>
+                            <div class="response">
+                                <img class="response-icon" src="assests/icons/replies.svg">
+                                <img class="response-icon" src="assests/icons/retweets.svg">
+                                <img class="response-icon" src="assests/icons/likes.svg">
+                                <img class="response-icon" src="assests/icons/share.svg">
                             </div>
                         </div>
                     </div>
@@ -84,12 +147,12 @@
                                 <div class="username">@theArtCollector</div>
                                 <div class="time-posted">1m</div>
                             </div>
-                            <div class="tweet-posted"><p>This weekends guest artist is, Mathew Mara</p></div>
-                            <div class="response-icons">
-                                <img src="assests/icons/replies.svg">
-                                <img src="assests/icons/retweets.svg">
-                                <img src="assests/icons/likes.svg">
-                                <img src="assests/icons/share.svg">
+                            <div class="tweet-posted"><p>This weekends guest artist is, the street rat, Cricket</p></div>
+                            <div class="response">
+                                <img class="response-icon" src="assests/icons/replies.svg">
+                                <img class="response-icon" src="assests/icons/retweets.svg">
+                                <img class="response-icon" src="assests/icons/likes.svg">
+                                <img class="response-icon" src="assests/icons/share.svg">
                             </div>
                         </div>
                     </div>
@@ -103,12 +166,12 @@
                                 <div class="username">@MToboggan</div>
                                 <div class="time-posted">30m</div>
                             </div>
-                            <div class="tweet-posted"><p>What an honour to be seeing Ongo in the flesh</p></div>
-                            <div class="response-icons">
-                                <img src="assests/icons/replies.svg">
-                                <img src="assests/icons/retweets.svg">
-                                <img src="assests/icons/likes.svg">
-                                <img src="assests/icons/share.svg">
+                            <div class="tweet-posted"><p>What an honour to be seeing Ongo in the flesh @theArtCollector</p></div>
+                            <div class="response">
+                                <img class="response-icon" src="assests/icons/replies.svg">
+                                <img class="response-icon" src="assests/icons/retweets.svg">
+                                <img class="response-icon" src="assests/icons/likes.svg">
+                                <img class="response-icon" src="assests/icons/share.svg">
                             </div>
                         </div>
                     </div>
@@ -122,16 +185,55 @@
                                 <div class="username">@theArtCollector</div>
                                 <div class="time-posted">60m</div>
                             </div>
-                            <div class="tweet-posted"><p>Can't wait for the opening of the new gallery!</p></div>
-                            <div class="response-icons">
-                                <img src="assests/icons/replies.svg">
-                                <img src="assests/icons/retweets.svg">
-                                <img src="assests/icons/likes.svg">
-                                <img src="assests/icons/share.svg">
+                            <div class="tweet-posted"><p>Can't wait for the opening of the new gallery! @paddysPub</p></div>
+                            <div class="response">
+                                <img class="response-icon" src="assests/icons/replies.svg">
+                                <img class="response-icon" src="assests/icons/retweets.svg">
+                                <img class="response-icon" src="assests/icons/likes.svg">
+                                <img class="response-icon" src="assests/icons/share.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tweets">
+                        <div class="profile-pic">
+                            <img class="user-pic" src="assests/images/Charlie-pic.png">
+                        </div>
+                        <div class="box">
+                            <div class="details">
+                                <div class="user"><h4>Charlie</h4></div>
+                                <div class="username">@fightmilk</div>
+                                <div class="time-posted">2h</div>
+                            </div>
+                            <div class="tweet-posted"><p>Do wasps make honey?</p></div>
+                            <div class="response">
+                                <img class="response-icon" src="assests/icons/replies.svg">
+                                <img class="response-icon" src="assests/icons/retweets.svg">
+                                <img class="response-icon" src="assests/icons/likes.svg">
+                                <img class="response-icon" src="assests/icons/share.svg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tweets">
+                        <div class="profile-pic">
+                            <img class="user-pic" src="assests/images/Dennis-pic.png">
+                        </div>
+                        <div class="box">
+                            <div class="details">
+                                <div class="user"><h4>Dennis</h4></div>
+                                <div class="username">@GoldenGod</div>
+                                <div class="time-posted">2h</div>
+                            </div>
+                            <div class="tweet-posted"><p>Eddie Bower edition, tortoise-shell interior, super-charged twin cam, European luxury sports utility vehicle for sale. A finisher car. DM for details</p></div>
+                            <div class="response">
+                                <img class="response-icon" src="assests/icons/replies.svg">
+                                <img class="response-icon" src="assests/icons/retweets.svg">
+                                <img class="response-icon" src="assests/icons/likes.svg">
+                                <img class="response-icon" src="assests/icons/share.svg">
                             </div>
                         </div>
                     </div>
                 </div>
+                
             </div>
         </main>
         <div class="right">
@@ -139,6 +241,7 @@
                 <div class="search">
                     <div class="search-bar">
                         <div class="search-icon">
+                            <img class="response-icon" src="assests/icons/search.svg">
                         </div>
                         <div class="text-enter">
                             <input type="text" id="search" required minlength="1" maxlength="180" size="10" placeholder="Search Twitter">
