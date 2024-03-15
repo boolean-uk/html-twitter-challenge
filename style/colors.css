@@ -1,8 +1,12 @@
-html {
+:root {
   --primary-font-color: #0f141a;
   --secondary-font-color: #546373;
 
   --placeholder-font-color: #989797;
+
+  --search-bar-focus-b-color: #3d91f9;
+
+  --anchor-font-color: #3d91f9;
 
   --border-color: #e7e7e8;
 
@@ -31,7 +35,6 @@ html {
 
   --tweet-hover-bg-color: #f7f7f7;
 
-  /****** right side bar ******/
   --right-bar-card-bg-color: #f7f9f9;
   --right-bar-card-hover-bg-color: #eff1f1;
 

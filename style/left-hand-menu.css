@@ -4,9 +4,9 @@
 
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 600px 60px;
+  grid-template-rows: 650px 60px;
   grid-auto-flow: row;
-  row-gap: 10px;
+  row-gap: 15px;
 }
 
 /****** nav menu div******/
@@ -15,8 +15,22 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-auto-flow: row;
+}
 
-  padding: 10px 0;
+.nav-menu > * {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  border-radius: 25px;
+}
+
+.nav-menu > *:hover {
+  background-color: var(--nav-icon-hover-gb-color);
+  cursor: pointer;
+}
+
+.nav-menu div:last-child:hover {
+  background-color: transparent;
 }
 
 .home-icon {
@@ -44,14 +58,9 @@
   align-items: center;
   gap: 10px;
 
-  padding: 10px 0;
-  border-radius: 25px;
-  text-decoration: none;
-}
+  padding: 10px 0px;
 
-.link:hover {
-  background-color: var(--nav-icon-hover-gb-color);
-  cursor: pointer;
+  text-decoration: none;
 }
 
 .link:visited {
@@ -65,7 +74,7 @@
   font-weight: bold;
   letter-spacing: 0.5px;
 
-  padding: 15px 80px;
+  padding: 12px 70px;
   border-radius: 25px;
 }
 
@@ -76,12 +85,12 @@
 
 /****** user info div ******/
 .user-info {
-  width: 250px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   padding-right: 10px;
+
   border-radius: 25px;
 }
 
@@ -94,8 +103,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-  gap: 10px;
+  gap: 5px;
 }
 
 .user-photo {

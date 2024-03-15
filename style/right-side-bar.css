@@ -1,0 +1,109 @@
+.right-side-bar {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+
+  margin: 10px 15px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 40px 150px 100px 90px 90px 150px;
+
+  border-radius: 10px;
+
+  font-size: 15px;
+}
+
+.right-side-bar > * {
+  padding: 5px 15px;
+  border-bottom: 1px solid var(--border-color);
+  background-color: var(--right-bar-card-bg-color);
+}
+
+.right-side-bar > *:first-child {
+  border-radius: 10px 10px 0 0;
+}
+
+.right-side-bar > *:last-child {
+  border-radius: 0 0 10px 10px;
+}
+
+.right-side-bar > *:hover {
+  background-color: var(-right-bar-card-hover-bg-color);
+}
+
+/****** cards ******/
+.main-title {
+  font-weight: bold;
+}
+
+/****** card 1 ******/
+.live {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.news {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.titles {
+  display: flex;
+  gap: 3px;
+}
+
+.titles p {
+  color: var(--secondary-font-color);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.content p:first-child {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.trending {
+  color: var(--secondary-font-color);
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.content a {
+  text-decoration: none;
+  color: var(--anchor-font-color);
+}
+
+.news-photo img {
+  border-radius: 10px;
+}
+
+/****** card 2 ******/
+
+.meet p {
+  margin-bottom: 3px;
+}
+.meet p:first-child {
+  margin-bottom: 5px;
+}
+
+/******  card 3 and card 4 ******/
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.politics {
+  padding-top: 10px;
+}
+
+/******  card 5 ******/
+.flex-title {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
