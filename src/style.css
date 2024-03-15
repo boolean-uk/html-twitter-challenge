@@ -1,0 +1,337 @@
+* {
+    margin: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f1f1f1;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns:
+    minmax(250px, 1fr) minmax(500px, 3fr) minmax(250px, 1fr);
+    height: 100vh;
+}
+
+@media screen and (min-width: 1600px) {
+.grid-container {
+    margin: auto;
+    width: 80vw;
+    max-width: 2000px;
+}
+}
+
+.twitter-logo {
+    height: 50px;
+    padding-left: 40px;
+    margin: 20px;
+    margin-right: auto;
+}
+
+.column {
+    padding: 20px;
+}
+
+.left-sidebar {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+
+.nav-button-container {
+    flex: 1;
+    overflow-y: scroll;
+}
+
+.nav-button {
+    display: block;
+    width: calc(100% - 40px);
+    height: 50px;
+    background-color: #FFFFFF;
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position-x: 10px;
+    background-position-y: center;
+    margin: 40px 20px 0px 20px;
+    border-radius: 25px;
+    border: none;
+    font-weight: bolder;
+    font-size: 18px;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-align: left;
+    padding-left: 50px;
+    transition: 0.3s ease;
+}
+.nav-button:hover{
+    background-color: #76c4e2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-button[aria-selected="true"] {
+    color: #00ABEC;
+}
+
+.home-b {
+    background-image: url("/src/assets/home.svg");
+}
+
+.ex-b {
+    background-image: url("/src/assets/hashtag.svg");
+}
+
+.not-b {
+    background-image: url("/src/assets/bell.svg");
+}
+
+.mes-b {
+    background-image: url("/src/assets/messages.svg");
+}
+
+.book-b {
+    background-image: url("/src/assets/bookmark.svg");
+}
+
+.list-b {
+    background-image: url("/src/assets/bar-chart.svg");
+}
+
+.prof-b {
+    background-image: url("/src/assets/profile.svg");
+}
+
+.more-b {
+    background-image: url("/src/assets/more.svg");
+}
+
+.tweet-b{
+    font-size: 20px;
+    background-color: #00ABEC;
+    color: white;
+    text-align: center;
+    padding-left: 0;
+    transition: 0.3s ease;
+}
+.tweet-b:hover {
+    background-color: #76c4e2;
+}
+
+.profile-box {
+    background-color: #FFFFFF;
+    height: 100px;
+    padding: 10px 20px 10px 40px;
+    border-top: solid 1px #d9d9d9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+.profile-pic {
+height: 80px;
+border-radius: 100%;
+border: solid 1px #E6E6E6;
+}
+
+.main-page {
+    background-color: #FFFFFF;
+    overflow-y: scroll;
+}
+
+.main-header {
+    padding-bottom: 20px;
+}
+
+.tweet {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+.user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    object-fit: cover;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.tweet-content {
+    margin-top: 5px;
+    font-size: 15px;
+    line-height: 1.4;
+    color: #14171a;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+
+.tweet-actions {
+    margin-top: 10px;
+}
+
+.tweet-actions {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.action-btn {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: #f0f0f0;
+}
+
+.like-btn {
+    background-color: #FFFFFF;
+    color: #00ABEC;
+}
+
+.retweet-btn {
+    background-color: #FFFFFF;
+    color: #00ABEC;
+}
+
+.comment-btn {
+    background-color: #FFFFFF;
+    color: #00ABEC;
+}
+
+.whats-happening {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.whats-happening h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.whats-happening p {
+    font-size: 14px;
+    color: #888;
+}
+
+.whats-happening a {
+   text-decoration: none;
+}
+
+.tweet-vid {
+    margin: 50px auto;
+    display: block;
+    border: 3px solid black;
+ }
+ 
+ .tweet-img-c {
+ text-align: center ;
+ margin-top: 20px;
+ }
+ 
+ .whats-happening a {
+     padding-left: 30px;
+ }
+ 
+ .wh-svg-bar {
+     height: 20px;
+     width: auto;
+     padding-top: 20px;
+     padding-right: 20px;
+ }
+
+.right-sidebar {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+
+#search-bar {
+    padding: 10px;
+}
+
+#search-bar input {
+    width: calc(100% - 20px);
+    padding: 8px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+#search-bar button {
+    width: 70px;
+    margin-top: 10px;
+    padding: 8px;
+    border: none;
+    border-radius: 10px;
+    background-color: #00ABEC;
+    color: white;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    .left-sidebar {
+        display: none;
+    }
+    .right-sidebar {
+        display: none;
+    }
+    }
+    
+    .news-bar {
+        flex: 1;
+        background-color: #E6E6E6;
+        width: calc(100% - 20px);
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        letter-spacing: 3px;
+}
+
+.news-bar p {
+    padding: 0 5px;
+}
+
+    .news-bar h2, .news-bar h3 {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    .right-btn {
+        margin: 20px auto;
+        display: block;
+        font-size: 20px;
+        width: 200px;
+        height: 80px;
+        background-color: #00ABEC;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        transition: 0.3s ease;
+        cursor: pointer;
+    }
+
+
