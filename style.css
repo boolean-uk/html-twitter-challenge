@@ -169,13 +169,12 @@
     ;
     place-items: center;
     border-bottom: 1px solid #38444d;
-    /* position: sticky; */
+    position: static;
 }
 
 
 .for-you {
     grid-area: left;
-
     width: 100%;
     height: 70%;
     padding-top: 5%;
@@ -183,7 +182,7 @@
     font-size: 20px;
     font-weight: bolder;
     text-align: center;
-    /* position: sticky; */
+    position: static;
 }
 
 .following {
@@ -195,6 +194,7 @@
     font-size: 20px;
     font-weight: bolder;
     text-align: center;
+    position: static;
 }
 
 .settings {
