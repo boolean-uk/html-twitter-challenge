@@ -10,14 +10,15 @@ body {
 .grid-container {
     display: grid;
     grid-template-columns:
-    minmax(400px, 1fr) 4fr minmax(400px, 1fr);
+    minmax(250px, 1fr) minmax(500px, 3fr) minmax(250px, 1fr);
     height: 100vh;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1600px) {
 .grid-container {
     margin: auto;
     width: 80vw;
+    max-width: 2000px;
 }
 }
 
@@ -69,6 +70,10 @@ body {
 .nav-button:hover{
     background-color: #76c4e2;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-button[aria-selected="true"] {
+    color: #00ABEC;
 }
 
 .home-b {
@@ -181,7 +186,7 @@ border: solid 1px #E6E6E6;
     border: none;
     border-radius: 20px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: 0.3s ease;
 }
 
 .action-btn:hover {
@@ -256,11 +261,11 @@ border: solid 1px #E6E6E6;
     border-left: 1px solid #ccc;
 }
 
-.search-bar {
+#search-bar {
     padding: 10px;
 }
 
-.search-bar input {
+#search-bar input {
     width: calc(100% - 20px);
     padding: 8px;
     margin-right: 10px;
@@ -268,7 +273,7 @@ border: solid 1px #E6E6E6;
     border: 1px solid #ccc;
 }
 
-.search-bar button {
+#search-bar button {
     width: 70px;
     margin-top: 10px;
     padding: 8px;
@@ -278,3 +283,55 @@ border: solid 1px #E6E6E6;
     color: white;
     cursor: pointer;
 }
+
+
+@media screen and (max-width: 1200px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    .left-sidebar {
+        display: none;
+    }
+    .right-sidebar {
+        display: none;
+    }
+    }
+    
+    .news-bar {
+        flex: 1;
+        background-color: #E6E6E6;
+        width: calc(100% - 20px);
+        margin-left: 10px;
+        margin-right: 10px;
+        border-radius: 10px;
+        border: 1px solid #ccc;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+        letter-spacing: 3px;
+}
+
+.news-bar p {
+    padding: 0 5px;
+}
+
+    .news-bar h2, .news-bar h3 {
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 30px;
+        font-size: 20px;
+    }
+
+    .right-btn {
+        margin: 20px auto;
+        display: block;
+        font-size: 20px;
+        width: 200px;
+        height: 80px;
+        background-color: #00ABEC;
+        border-radius: 10px;
+        border: none;
+        color: white;
+        transition: 0.3s ease;
+        cursor: pointer;
+    }
+
+
