@@ -1,0 +1,372 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template: 
+    'left header right'70px
+    'left main right' 1fr
+    'footer main right'70px/
+    1fr minmax(600px, 2fr) 1fr;
+}
+
+.left {
+    grid-area: left;
+    background-color: white;
+}
+
+main {
+    grid-area: main;
+    background-color: white;
+}
+
+.right {
+    grid-area: right;
+    background-color: white;
+}
+
+footer {
+    grid-area: footer;
+    background-color: white;
+}
+
+.footer-container {
+    grid-template-columns: 1fr 3fr;
+    border-top: 1px solid rgb(207, 207, 207);
+}
+
+
+.left-container{
+    grid-template-rows: 3fr 1fr; 
+}
+
+#twitter-logo {
+    width: 40px;
+}
+
+.headings {
+    grid-template-rows: 50px;
+    width: 1%;
+}
+
+.tweet-button {
+    border: 2px solid rgb(30, 143, 255);
+    border-radius: 40px;
+    background-color: rgb(30, 143, 255);
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    margin: 20px 30px 110px 30px;
+    place-content: center;
+}
+
+.tweet-button:hover {
+    background-color: rgb(24, 121, 218);
+    cursor: pointer;
+}
+
+
+.menu {
+    grid-template-rows: 1fr;
+    border: 2px dotted white;
+    gap: 5%;
+    margin-left: 100px;
+}
+
+.profile-name {
+    grid-template-rows: 1fr 1fr;
+    place-content: center;
+    margin: 10px 130px 0 0;
+}
+
+.logo-box {
+    margin: 10px 10px 0 0;
+}
+
+.menu-box {
+    grid-template-columns: 4rem 4rem;
+    margin-right: 60px;
+    padding: 2%;
+}
+
+.menu-icon {
+    width: 30px;
+}
+
+.menu-box:hover {
+    background-color: rgb(147, 201, 255) ;
+    border-radius: 70px;
+    cursor: pointer;
+}
+
+.menu-box:active {
+    color: white;
+}
+
+
+.send-tweet-button:hover {
+    background-color: rgb(24, 121, 218);
+    cursor: pointer;
+}
+
+
+
+.header {
+    grid-area: header;
+    grid-template-columns: 3fr 1fr;
+    border-bottom: 1px solid rgb(207, 207, 207);
+    border-left: 1px solid rgb(207, 207, 207);
+    border-right: 1px solid rgb(207, 207, 207);
+    padding: 5px;
+}
+
+.header .box {
+    padding: 15px;
+}
+
+.feed {
+    border-left: 1px solid rgb(207, 207, 207);
+    border-right: 1px solid rgb(207, 207, 207);
+}
+
+
+.write-tweet {
+    border-bottom: 5px solid rgb(207, 207, 207);
+    grid-template-rows: 1fr 1fr;
+}
+
+.write-tweet .new-tweet {
+    grid-template-columns: 1fr 6fr;
+}
+
+.profile-pic {
+    place-content: center;
+}
+
+.user-pic {
+    width: 50px;
+    border-radius: 40px;
+}
+.user-pic-ongo {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+#enter-text {
+    font-size: medium;
+    border: none;
+    outline: none;
+    height: 75%;
+    margin: 10px 10px 0 0;
+}
+
+.write-tweet .attachments {
+    grid-template-columns: 5fr 1fr;
+}
+
+.write-tweet .attachments .attachment-icons {
+    place-content: center;
+    grid-template-columns: repeat(5, 3rem);
+    margin-right: 150px;
+}
+
+.add-icon {
+    width: 28px;
+}
+
+.add-icon:hover {
+    background-color: rgb(147, 201, 255);
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.send-tweet-button {
+    border: 2px solid rgb(30, 143, 255);
+    border-radius: 40px;
+    background-color: rgb(30, 143, 255);
+    margin: 20px 10px;
+    place-content: center;
+    color: white;
+    font-size: small;
+    font-weight: bold;
+}
+
+.tweets {
+    border-bottom: 1px solid rgb(207, 207, 207);
+    grid-template-columns: 1fr 6fr;
+}
+
+.response {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.response img {
+    width: 20px;
+}
+
+.replies:hover{
+    background-color: rgb(147, 201, 255);
+    border-radius: 100px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.likes:hover {
+    background-color: rgba(255, 62, 120, 0.723);
+    border-radius: 100px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.retweets:hover {
+    background-color: rgba(57, 255, 2, 0.599);
+    border-radius: 100px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.share:hover {
+    background-color: rgb(147, 201, 255);
+    border-radius: 100px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.details {
+    grid-template-columns: 1fr 1fr 3fr;
+    width: 50%;
+    margin-top: 10px;
+}
+
+.time-posted {
+    margin-left: 40px;
+}
+
+
+.right-container {
+    grid-template: 
+    'header' 70px
+    'explore'1fr/
+    1fr;
+}
+
+.search {
+    grid-area: header;
+}
+
+.search-bar {
+    grid-template-columns: 40px 1fr;
+    border: 1px solid rgb(220, 220, 220);
+    border-radius: 40px;
+    padding: 5px;
+    margin: 5px;
+    background-color: rgb(220, 220, 220);
+}
+
+#search {
+    background-color:rgb(220, 220, 220);
+    border-radius: 0 40px 40px 0;
+    border: none;
+    outline: none;
+    font-size: medium;
+}
+
+.search-bar-icon {
+    width: 20px;
+}
+
+.search-icon {
+    place-content: center;
+}
+
+.explore {
+    grid-area: explore;
+}
+
+.news, .recommendation {
+    grid-template: 
+    'header' 50px
+    'content' 1fr/
+    1fr;
+    border: 2px solid rgb(239, 239, 239);
+    background-color: rgb(239, 239, 239);
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+}
+.heading {
+    grid-area: header;
+    border-bottom: 2px solid rgb(201, 201, 201);
+}
+
+.content {
+    grid-area: content;
+}
+
+.mobile-menu-icon {
+    grid-template-columns: repeat(5, 1fr);
+    padding: 10px;
+    margin: 5px;
+    place-items: center;
+    cursor: pointer;
+}
+
+.mobile-menu-icon .menu-icon:hover {
+    background-color: rgb(147, 201, 255) ;
+    border-radius: 70px;
+}
+
+
+
+@media screen and (max-width: 600px){
+    .container {
+        grid-template: 
+        'main' 1fr
+        'footer' 55px/
+        1fr;
+    }
+
+    main {
+        grid-area: main;
+    }
+
+    .mobile-menu {
+        grid-area: footer;
+    }
+
+    .left, .right, footer, .header {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 900px){
+    .container {
+        grid-template-columns: 150px 1fr;
+    }
+    .right, footer, .menu-tweet-button, .mobile-menu {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1470px){
+    .container {
+        grid-template-columns: 1fr 2fr 1fr;
+    }
+    .mobile-menu {
+        display: none;
+    }
+}
+
+
+
+
+script, title {
+    display: none;
+}
