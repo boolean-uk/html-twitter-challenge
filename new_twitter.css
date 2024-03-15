@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+}
+.container{
+    display:grid;
+    height: 100vh;
+    grid-template:
+    'left-sidebar main right-sidebar'/300px 1fr 300px
+}
+.logo{
+    img{
+    height:40px;
+    width:47px;
+    padding-left:5px
+    }
+}
+.left-sidebar{
+    grid-area:left-sidebar;
+    background-color: rgb(255, 255, 255);
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right:100px
+}
+.left-buttons{
+    display:grid;
+    height:80vh;
+    gap:10px;
+    grid-template-rows: 40px 40px 40px 40px 40px 40px 40px 40px;
+    border-radius:20px;
+}
+.home-btn{
+    text-align:left ;
+    border-radius: 13px;
+    padding-left: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    img{
+        height: 25px;
+    }
+}
+.home-btn:hover{
+    background-color: rgb(77, 170, 224);
+}
+.explore-btn{
+    text-align:left ;
+    border-radius: 13px;
+    padding-left: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    img{
+        height: 25px;
+    }
+}
+.explore-btn:hover{
+    background-color: rgb(77, 170, 224);
+}
+.notif-btn{
+    text-align:left ;
+    border-radius: 13px;
+    padding-left: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    img{
+        height: 25px;
+    }
+}
+.notif-btn:hover{
+    background-color: rgb(77, 170, 224);
+}
+.messages-btn{
+    text-align:left ;
+    border-radius: 13px;
+    padding-left: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    img{
+        height: 25px;
+    }
+}
+.messages-btn:hover{
+    background-color: rgb(77, 170, 224);
+}
+.bookmarks-btn{
+    text-align:left ;
+    border-radius: 13px;
+    padding-left: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    img{
+        height: 25px;
+    }
+}
+.bookmarks-btn:hover{
+    background-color: rgb(77, 170, 224);
+}
+.profile-btn{
+    text-align:left ;
+    border-radius: 13px;
+    padding-left: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    img{
+        height: 25px;
+    }
+}
+.profile-btn:hover{
+    background-color: rgb(77, 170, 224);
+}
+.more-btn{
+    text-align:left ;
+    border-radius: 13px;
+    padding-left: 15px;
+    border: none;
+    cursor: pointer;
+    background-color: white;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    img{
+        height: 25px;
+    }
+}
+.more-btn:hover{
+    background-color: rgb(77, 170, 224);
+}
+.tweet-button{
+    color: white;
+    background-color: rgb(77, 170, 224);
+    border: none;
+    cursor: pointer;
+    border-radius: 13px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-size:19px;
+}
+.main{
+    grid-area:main;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.twitter-profile{
+    padding:10px;
+    img{
+        height:60px;
+        width: 60px;
+        padding-left: 11px;
+    }
+}
+.feed{
+    display: grid;
+    height: 80vh;
+    grid-template-rows: 100px 100px 100px;
+    
+}
+.feed div{
+    background-color: rgb(255, 255, 255);
+    /* border:1px solid lightblue; */
+}
+.tweet-message{
+    display: grid;
+    grid-template:'twitter-profile twitter-message'/100px 1fr;
+    /* padding-bottom: 80px; */
+    font-family: sans-serif;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    text-align:left;
+}
+.tweet-message div{
+    background-color: rgb(255, 252, 252);
+}
+.twitter-profile2{
+    img{
+        height: 65px;
+        width: 65px;
+        padding-left: 21px;
+    }
+}
+.tweet1{
+    display: grid;
+    grid-template:'twitter-profile2 twitter-text1'/100px 1fr;
+    /* padding-bottom:80px; */
+    font-family:sans-serif;
+    font-size: 17px;
+    color: rgb(0, 0, 0);
+    text-align: left;
+}
+.right-sidebar{
+    grid-area:right-sidebar;
+    background-color: rgb(255, 255, 255);
+    padding:20px;
+    padding-top: 20px;
+}
+.searchbar{
+    display:grid;
+    height: 5vh;
+    grid-template-rows: 40px 60px 60px;
+    gap:10px;
+    img{
+        height: 20px;
+        width:20px;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+}
+.searchbar div{
+    background-color: rgba(77, 170, 224, 0.515);
+    border-radius: 13px;
+}
+.text1{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+}
+.text2{
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+}
