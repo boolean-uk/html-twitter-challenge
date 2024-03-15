@@ -1,0 +1,197 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
+.layout-container {
+    height: 100vh;
+    /* width: 100%;  */
+    background-color: lightblue;
+    display: grid;
+    grid-template-columns: 250px minmax(400px, 1fr) 300px;
+    gap: 2px;
+}
+
+.layout-container > * {
+    background-color: white;
+}
+
+.logo {
+    /* background-color: lightblue; */
+    padding: 10px;
+}
+
+.nav-container {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    /* background-color: lightcoral; */
+    /* height: 100%; */
+    margin: 10px 20px;
+    align-items: center;
+    gap:  40px 10px;
+}
+
+img {
+    width: 40px;
+    /* color: lightblue; */
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+a:hover, a:focus {
+    color: lightblue;
+}
+
+.left > button {
+    background-color: lightblue;
+    color: white;
+    /* padding: 10px 20px; */
+    /* border-radius: ; */
+    height: 60px;
+    width: 80%;
+    margin-left: 20px;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+}
+
+.right > div {
+    background-color: lightblue;
+    height: 60px;
+    margin: 10px 20px 10px 10px;
+    border-radius: 10px;
+    
+}
+
+#search-container {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    align-items: center;
+    height: 40px;
+    border-radius: 20px;
+}
+
+#search-container img {
+    height: 25px;
+    padding-left: 10px;
+}
+
+hr {
+    background-color: grey;
+    /* padding: 0px; */
+    /* color: black; */
+    height: 1px;
+    border: none;
+}
+
+h3 {
+    padding: 5px;
+}
+
+.large-hr {
+    background-color: lightblue;
+    height: 10px
+}
+
+.home {
+    display: grid;
+    grid-template-columns: 100px 1fr 40px;
+    align-items: center;
+    border-bottom: 2px lightblue solid;
+    padding: 10px 0px 10px 10px
+}
+
+.home > img {
+    height: 30px;
+}
+
+.tweet {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+}
+
+.tweet > img, .pp {
+    width: 50px;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+.tweet-bottom {
+    /* background-color: aquamarine; */
+    display: grid;
+    grid-template-columns: 1fr 100px;
+}
+
+.tweet-text {
+    color: grey;
+    margin: 10px 0px 20px;
+    font-size: large;
+}
+
+main hr {
+    background-color: lightblue;
+    height: 2px
+}
+
+.tweet-button {
+    padding: 5px;
+    font-weight: 600;
+    color: white;
+    background-color: lightblue;
+    border: none;
+    height: 30px;
+    border-radius: 15px;
+    margin: 5px;
+}
+
+.tools > img {
+    width: 30px;
+    margin-top: 5px;
+    margin-right: 10px;
+    
+}
+
+.post {
+    border-bottom: solid lightblue 2px;
+    /* height: 140px; */
+    display: grid;
+    grid-template-columns: 70px 1fr;
+
+}
+
+
+.reactions {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.reactions > img {
+    width: 20px;
+}
+
+.grey {
+    color: grey;
+    margin: 5px 0px;
+}
+
+.name {
+    font-weight: 600;
+    color: black;
+}
+
+.blue {
+    color: lightblue
+}
+
+p {
+    margin-right: 5px;
+}
