@@ -1,180 +1,187 @@
-!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html>
+  <head>
     <title>Twitter Clone</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-        />
-</head>
+    <link rel="stylesheet" href="/blocks/layout.css" />
+    <link rel="stylesheet" href="/blocks/brand.css" />
+    <link rel="stylesheet" href="/blocks/sidebar-menu.css" />
+    <link rel="stylesheet" href="/blocks/tweet.css" />
+    <link rel="stylesheet" href="/blocks/global.css">
+    <link rel="stylesheet" href="/blocks/trends.css" />
+    <link rel="stylesheet" href="/blocks/who-to-follow.css" />
+  </head>
+  <body>
+    <div class="layout">
+        
+      <div class="layout__left-sidebar">
+        <img src="/images/twitter.svg" class="brand" />
+        <div class="sidebar-menu">
+          <div class="sidebar-menu__item sidebar-menu__item--active">
+            <img src="/images/home.svg" class="sidebar-menu__item-icon" />
+            Home
+          </div>
+          <div class="sidebar-menu__item">
+            <img src="/images/explore.svg" class="sidebar-menu__item-icon" />
+            Explore
+          </div>
 
-<body>
-    <div class="sidebar">
-      <i class="fab fa-twitter"></i>
-      <div class="sidebarOption active">
-        <span class="material-icons"> home </span>
-        <h2>Home</h2>
-      </div>
-
-      <div class="sidebarOption">
-        <span class="material-icons"> search </span>
-        <h2>Explore</h2>
-      </div>
-
-      <div class="sidebarOption">
-        <span class="material-icons"> notifications_none </span>
-        <h2>Notifications</h2>
-      </div>
-
-      <div class="sidebarOption">
-        <span class="material-icons"> mail_outline </span>
-        <h2>Messages</h2>
-      </div>
-
-      <div class="sidebarOption">
-        <span class="material-icons"> bookmark_border </span>
-        <h2>Bookmarks</h2>
-      </div>
-
-      <div class="sidebarOption">
-        <span class="material-icons"> list_alt </span>
-        <h2>Lists</h2>
-      </div>
-
-      <div class="sidebarOption">
-        <span class="material-icons"> perm_identity </span>
-        <h2>Profile</h2>
-      </div>
-
-      <div class="sidebarOption">
-        <span class="material-icons"> more_horiz </span>
-        <h2>More</h2>
-      </div>
-      <button class="sidebar__tweet">Tweet</button>
-    </div>
-    
-    <div class="feed">
-      <div class="feed__header">
-        <h2>Home</h2>
-      </div>
-
-      
-      <div class="tweetBox">
-        <form>
-          <div class="tweetbox__input">
+          <div class="sidebar-menu__item">
             <img
-              src="https://i.pinimg.com/originals/a6/58/32/a65832155622ac173337874f02b218fb.png"
-              alt=""
+              src="./images/notifications.svg"
+              class="sidebar-menu__item-icon"
             />
-            <input type="text" placeholder="What's happening?" />
+            Notifications
           </div>
-          <button class="tweetBox__tweetButton">Tweet</button>
-        </form>
-      </div>
-     
-      <div class="post">
-        <div class="post__avatar">
-          <img
-            src="https://i.pinimg.com/originals/a6/58/32/a65832155622ac173337874f02b218fb.png"
-            alt=""
-          />
-        </div>
 
-        <div class="post__body">
-          <div class="post__header">
-            <div class="post__headerText">
-              <h3>
+          <div class="sidebar-menu__item">
+            <img src="/images/messages.svg" class="sidebar-menu__item-icon" />
+            Messages
+          </div>
+
+          <div class="sidebar-menu__item">
+            <img src="/images/profile.svg" class="sidebar-menu__item-icon" />
+            Profile
+          </div>
+
+          <div class="sidebar-menu__item">
+            <img src="/images/more.svg" class="sidebar-menu__item-icon" />
+            More
+          </div>
+        </div>
+      </div>
+      <div class="layout__main">
+        <div class="tweet-bar">
+          <img class="author_image" src="/images/author logo2.jpg" width="70px" />
+
+          <p><span>What's happening?</span></p>
+
+          <div class="icons">
+            <img src="/images/media_icon_blue.svg" width="18px" />
+            <img src="/images/gif_blue.svg" width="18px" />
+            <img src="/images/polls_icon_blue.svg" width="18px" />
+            <img src="/images/smile_emoji.svg" width="18px" />
+            <img src="/images/schedule_icon_blue.svg" width="18px" />
+          </div>
+          <div class="tweet_tab">Tweet</div>
+        </div>
+        <div class="tweet">
+          <img class="tweet__author-logo" src="/images/author logo2.jpg" />
+          <div class="tweet__main">
+            <div class="tweet__header">
+              <div class="tweet__author-name">
                 Zandile Dube
-                <span class="post__headerSpecial"
-                  ><span class="material-icons post__badge"> verified </span>@zandub</span
-                >
-              </h3>
+              </div>
+              <div class="tweet__author-slug">
+                @zandiledube
+              </div>
+              <div class="tweet__publish-time">
+                55m
+              </div>
             </div>
-            <div class="post__headerDescription">
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <div class="tweet__content">
+              Siyabonga
             </div>
-          </div>
-          <img
-            src="https://www.focus2move.com/wp-content/uploads/2020/01/Tesla-Roadster-2020-1024-03.jpg"
-            alt=""
-          />
-          <div class="post__footer">
-            <span class="material-icons"> repeat </span>
-            <span class="material-icons"> favorite_border </span>
-            <span class="material-icons"> publish </span>
           </div>
         </div>
-      </div>
-      
-      <div class="post">
-        <div class="post__avatar">
-          <img
-            src="https://i.pinimg.com/originals/a6/58/32/a65832155622ac173337874f02b218fb.png"
-            alt=""
-          />
+        <div class="tweet">
+          <img class="tweet__author-logo" src="/images/afro pic1.jpg" />
+          <div class="tweet__main">
+            <div class="tweet__header">
+              <div class="tweet__author-name">
+                Aweno Retreats
+              </div>
+              <div class="tweet__author-slug">
+                @awenoretreats
+              </div>
+              <div class="tweet__publish-time">
+                8d
+              </div>
+            </div>
+            <div class="tweet__content">
+              We are delighted to extend a heartfelt invitation to join us on our 10-Day transformational wellness retreat in the breathtaking landscapes of Tanzania.  Join us for an unforgettable journey of self-discovery, rejuvenation in the motherland amidst the natural beauty of this East African paradise.
+              <a href="https://awenoretreats.com"
+                >aweno retreats</a>
+              @nolly #aweno #africa #healingwork
+            </div>
+          </div>
         </div>
 
-        <div class="post__body">
-          <div class="post__header">
-            <div class="post__headerText">
-              <h3>
-                Zandile Dube
-                <span class="post__headerSpecial"
-                  ><span class="material-icons post__badge"> verified </span>@zandub</span
-                >
-              </h3>
+        <div class="tweet">
+          <img class="tweet__author-logo" src="/images/author logo.jpg" />
+          <div class="tweet__main">
+            <div class="tweet__header">
+              <div class="tweet__author-name">
+                Astral Realms
+              </div>
+              <div class="tweet__author-slug">
+                @astralrealms
+              </div>
+              <div class="tweet__publish-time">
+                15h
+              </div>
             </div>
-            <div class="post__headerDescription">
-              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+            <div class="tweet__content">
+              "As within, so without" It means we have a divine creation inside of us and outside of us, it is our connection with nature and the universe. It is like the saying 'as you sow, so shall you reap'. This is also known as the Law of Cause and Effect or Karma. Whatever we put out in the Universe is what comes back to us. If what we want is happiness, peace, friendship, love…Then we should BE happy, peaceful, loving, a friend. Negative energy sent out to others will come back to you. --
+              <a href="https://www.facebook.com/WiccaTeachings/posts/as-above-so-below-as-within-so-without-is-a-saying-in-wicca-this-phrase-comes-fr/874655679350046/"
+                >https://www.facebook.com/WiccaTeachings/posts/as-above-so-below-as-within-so-without-is-a-saying-in-wicca-this-phrase-comes-fr/874655679350046/</a
+              >
+              <img class="tweet__image" src="/images/as above so below.jpg" />
             </div>
           </div>
-          <img
-            src="https://www.focus2move.com/wp-content/uploads/2020/01/Tesla-Roadster-2020-1024-03.jpg"
-            alt=""
-          />
-          <div class="post__footer">
-            <span class="material-icons"> repeat </span>
-            <span class="material-icons"> favorite_border </span>
-            <span class="material-icons"> publish </span>
+        </div>
+
+        
+
+        
+
+        
+      </div>
+      <div class="layout__right-sidebar-container">
+        
+        <div class="layout__right-sidebar">
+          <div class="trends-for-you">
+            <div class="trends-for-you__block">
+              <div class="trends-for-you__heading">
+                Trends for you
+              </div>
+            </div>
+            <div class="trends-for-you__block">
+              <div class="trends-for-you__meta-information">
+                Latest in Tanzania
+              </div>
+              <div class="trends-for-you__trend-name">
+                #bagamoyo
+              </div>
+              <div class="trends-for-you__meta-information">
+                200k Tweets
+              </div>
+            </div>
+            <div class="trends-for-you__block">
+              <div class="trends-for-you__meta-information">
+                Trending in Tanzania
+              </div>
+              <div class="trends-for-you__trend-name">
+                #zanzibabeach
+              </div>
+            </div>
+            <div class="trends-for-you__block">
+              <div class="trends-for-you__meta-information">
+                Trending - Trending
+              </div>
+              <div class="trends-for-you__trend-name">
+                #autos
+              </div>
+              <div class="trends-for-you__meta-information">
+                5,000 Tweets
+              </div>
+            </div>
+          </div>
+          
+          
+              
           </div>
         </div>
       </div>
-     
     </div>
-    
-    <div class="widgets">
-      <div class="widgets__input">
-        <span class="material-icons widgets__searchIcon"> search </span>
-        <input type="text" placeholder="Search Twitter" />
-      </div>
-
-      <div class="widgets__widgetContainer">
-        <h2>What's happening?</h2>
-        <blockquote class="twitter-tweet">
-          <p lang="en" dir="ltr">
-            Sunsets don&#39;t get much better than this one over
-            <a href="https://twitter.com/GrandTetonNPS?ref_src=twsrc%5Etfw">@GrandTetonNPS</a>.
-            <a href="https://twitter.com/hashtag/nature?src=hash&amp;ref_src=twsrc%5Etfw"
-              >#nature</a
-            >
-            <a href="https://twitter.com/hashtag/sunset?src=hash&amp;ref_src=twsrc%5Etfw"
-              >#sunset</a
-            >
-            <a href="http://t.co/YuKy2rcjyU">pic.twitter.com/YuKy2rcjyU</a>
-          </p>
-          &mdash; US Department of the Interior (@Interior)
-          <a href="https://twitter.com/Interior/status/463440424141459456?ref_src=twsrc%5Etfw"
-            >May 5, 2014</a
-          >
-        </blockquote>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-      </div>
-    </div>
-</body>
+  </body>
 </html>
