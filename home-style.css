@@ -80,8 +80,6 @@
 }
 .left-side-menu {
   grid-area: left-side-menu;
-  background-color: gainsboro;
-
   display: grid;
   grid-template-rows: 500px 50px 1fr 50px;
   grid-template-areas: 
@@ -134,7 +132,6 @@
     display: grid;
     grid-template-columns: 50px 1fr 50px;
     width: 100%;
-    background-color: black;
     
     .status-names {
       display :inline-block;
@@ -404,16 +401,23 @@
 .left-side-menu2{
   padding-top: 20px;
   grid-area: left-side-menu;
+  display: grid;
+  grid-template-rows: 550px 1fr 60px;
+  grid-template-areas: 
+  'menu-list2'
+  '.'
+  'my-status'
+  ;
   .menu-list2 {
     display: grid;
     grid-template-rows: repeat(auto-fill,50px);
     width: 1fr;
-    padding-left: 10px;
+    padding-left: 15px;
     gap: 20px;
     .list2{
       svg{
-        height: 35px;
-        width: 35px;
+        height: 30px;
+        width: 30px;
         fill: white;
       }
     }
@@ -428,38 +432,31 @@
    margin-top: 20px;
   }
 
+  .my-status2{
+    
+    grid-area: my-status;
+  .status-names2 {
+
+  }
+  .myProfileImage2 {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+  }
+  }
 }
 
-/* .menu-list-under1350 {
-  font-family: sans-serif;
-  display: grid;
-  grid-template-rows: repeat(auto-fill,50px);
-  padding-left: 10px;
-  gap: 15px;
-    svg {
-      align-items: stretch;
-      height: 40px;
-      width: 40px;
-      fill: white;
-    }
-} */
-
 @media screen and (max-width: 1000px) {
-  .creat-post-button ,.left-side-menu,.right-side-bar , .searchHeader {
+ .left-side-menu,.right-side-bar , .searchHeader {
     display: none;
   }
-  .main-content , .header ,.left-side-menu2{
-      grid-template-columns: 1fr ;
-  }
-  
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1350px) {
-  .left-side-menu,.creat-post-button  {
+  .left-side-menu {
     display: none;
-  }
-  .main-content , .header , .list ,.logo , .menu-list2{
-      grid-template-columns: 1fr ;
   }
 }
 
