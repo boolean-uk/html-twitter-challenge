@@ -1,0 +1,731 @@
+* {
+    margin: 0;
+}
+
+.container {
+    /* height: 100vh; */
+    display: grid;
+    grid-template:
+        'header main news' /
+        25% 1fr 30%
+    ;
+    background-color: #15202b;
+}
+
+/* =========================== Left-Side =========================== */
+
+
+.header {
+    grid-area: header;
+    height: 100vh;
+    background-color: #15202b;
+    display: grid;
+    position: fixed;
+    grid-template-rows: 5% repeat(auto, 1fr);
+    gap: 5px;
+    margin-left: 3%;
+    /* padding-right: 1.5%; */
+}
+
+.icons {
+    fill: white;
+}
+
+
+.nav-link {
+    width: 50%;
+    margin-top: 10px;
+    margin-left: 35%;
+    display: grid;
+    grid-template-columns: 20% 1fr;
+    align-content: center;
+    justify-content: center;
+}
+
+
+.nav-link:hover {
+    background-color: #38444d;
+    border: #38444d;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.nav-link p {
+    color: white;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.post-button button {
+    width: 200px;
+    height: 50px;
+    margin-left: 35%;
+    margin-top: 5px;
+    color: white;
+    font-size: 22px;
+    font-weight: bolder;
+    background-color: #1a8cd8;
+    border: 3px solid #1a8cd8;
+    border-radius: 50px;
+}
+
+.post-button button:hover {
+    background-color: #135e90;
+    border: 0;
+    cursor: pointer;
+}
+
+.spacer {
+    height: 10%;
+}
+
+.spacer:hover {
+    background-color: #15202b;
+    cursor: default;
+}
+
+
+
+
+.user {
+    display: grid;
+    grid-template:
+        'pic username dots' 0.5fr /
+        25% 1fr 25%
+    ;
+    margin-left: 30%;
+    /* margin-right: 25px; */
+    margin-bottom: 2%;
+    align-content: center;
+
+}
+
+.prof-pic {
+    grid-area: pic;
+}
+
+.profile-pic img {
+    grid-area: pic;
+    width: 70%;
+    border-radius: 100%;
+    background-color: pink;
+    margin-top: 15%;
+    margin-left: 15%;
+}
+
+.user-name {
+    grid-area: username;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+    color: white;
+    line-height: 0.1em;
+}
+
+.acc-options {
+    grid-area: dots;
+    padding-top: 30%;
+}
+
+.user:hover {
+    background-color: #38444d;
+    border: #38444d;
+    border-radius: 39px;
+    cursor: pointer;
+}
+
+
+/* =========================== Center =========================== */
+
+
+.main {
+    grid-area: main;
+    /* height: 100vh; */
+    display: grid;
+    grid-auto-rows: minmax(250px, 1fr);
+    overflow-y: scroll;
+    scrollbar-width: none;
+}
+
+
+/* =========================== Center =========================== */
+
+.content {
+    border-left: 1px solid #38444d;
+    border-right: 1px solid #38444d;
+    background-color: #15202b;
+    /* height: 100vh; */
+    /* width: 1fr; */
+    display: grid;
+    grid-template-rows: 7% 15% 7% 250px;
+
+}
+
+.top-bar {
+    display: grid;
+    grid-template:
+        'left center right' /
+        1fr 1fr 15%
+    ;
+    place-items: center;
+    border-bottom: 1px solid #38444d;
+}
+
+
+.for-you {
+    grid-area: left;
+    width: 100%;
+    height: 70%;
+    padding-top: 5%;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.following {
+    grid-area: center;
+    width: 100%;
+    height: 70%;
+    padding-top: 5%;
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    text-align: center;
+}
+
+.settings {
+    grid-area: right;
+    text-align: center;
+}
+
+.settings svg {
+    padding: 7px;
+}
+
+
+.for-you:hover,
+.following:hover {
+    background-color: #2c3640;
+    cursor: pointer;
+}
+
+.settings svg:hover {
+    background-color: #2b3640;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+
+
+/* =========================== Compose-new-post =========================== */
+
+.new-post {
+    display: grid;
+    grid-template:
+        'left compose'
+        'left media' /
+        10% 1fr
+    ;
+    border-bottom: 1px solid #38444d;
+}
+
+.p-pic {
+    grid-area: left;
+    padding-top: 25%;
+    padding-left: 25%;
+}
+
+.p-pic img {
+    border-radius: 100px;
+}
+
+.write {
+    grid-area: compose;
+}
+
+.write input {
+    height: 80%;
+    width: 99%;
+    padding-top: 1.5%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #15202b;
+    border: 0;
+    color: #8b98a5;
+    font-size: 28px;
+}
+
+.add-media-container {
+    grid-area: media;
+    display: grid;
+    grid-template-columns: 1fr 20%;
+    grid-template-rows: auto;
+}
+
+.media-icons {
+    padding-top: 5%;
+    fill: #1d9bf0;
+}
+
+.media-icons svg {
+    margin-right: 5%;
+    border-radius: 100%;
+    padding: 5px;
+}
+
+.media-icons svg:hover {
+    background-color: #2b3640;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.send button {
+    width: 55%;
+    height: 55%;
+    margin-top: 15%;
+    margin-left: 10%;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #1a8cd8;
+    border: 3px solid #1a8cd8;
+    border-radius: 50px;
+}
+
+.send button:hover {
+    cursor: pointer;
+    border: 0;
+    background-color: #135e90;
+}
+
+
+/* =========================== Feed =========================== */
+
+.more-tweets {
+    height: 100%;
+    border-bottom: 1px solid #38444d;
+}
+
+.more-tweets:hover {
+    background-color: #1c2732;
+}
+
+.more-tweets p {
+    margin-top: 3%;
+    color: #1a8cd8;
+    font-size: large;
+    text-align: center;
+}
+
+.more-tweets p:hover {
+    cursor: pointer;
+}
+
+.feed-items-container {
+
+    display: grid;
+    /* grid-template-rows: 250px; */
+
+    grid-auto-rows: minmax(250px, 1fr);
+}
+
+.main::-webkit-scrollbar {
+    display: none;
+}
+
+.post {
+    display: grid;
+    /* height: 1fr; */
+    padding-top: 15px;
+    grid-template:
+        'left top' 15%
+        'left text' auto
+        'left bottom' 25% /
+        10% 1fr
+    ;
+    border-bottom: 1px solid #38444d;
+    border-left: 1px solid #38444d;
+    border-right: 1px solid #38444d;
+}
+
+.left-side {
+    grid-area: left;
+    padding-top: 5%;
+    padding-left: 25%;
+}
+
+.left-side img {
+    border-radius: 100%;
+}
+
+.top {
+    grid-area: top;
+    display: grid;
+    grid-template-columns: 1fr 10%;
+}
+
+.poster {
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: large;
+    color: white;
+}
+
+.actions svg {
+    /* fill: white; */
+    padding: 5px;
+    fill: #8794a1;
+}
+
+.actions svg:hover {
+    fill: #1f76b2;
+    border-radius: 100%;
+    background-color: #24394a;
+}
+
+.text {
+    grid-area: text;
+    color: white;
+    margin-right: 15px;
+}
+
+.post-bottom {
+    grid-area: bottom;
+    display: grid;
+    grid-template-columns: 1fr 15%;
+    margin-top: 10px;
+}
+
+.reactions svg {
+    fill: #8b98a5;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 5px;
+}
+
+.reactions svg:hover {
+
+    background-color: #1c3345;
+    border-radius: 100%;
+    cursor: pointer;
+}
+
+.bottom-left {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.bottom-right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-right: 20px;
+    gap: 10px;
+}
+
+
+.main::-webkit-scrollbar {
+    display: none;
+}
+
+
+
+/* =========================== Right =========================== */
+
+.news {
+    grid-area: news;
+    /* overflow: hidden; */
+    height: 100%;
+    height: 100vh;
+    /* position: fixed; */
+    display: grid;
+    /* grid-template-rows: 6% 40% 1fr; */
+    grid-template-rows: auto;
+    gap: 15px;
+    place-items: center;
+    background-color: #15202b;
+    overflow-y: scroll;
+    /* margin: 15px; */
+}
+
+.news::-webkit-scrollbar {
+    display: none;
+}
+
+.search {
+    height: 80%;
+    width: 100%;
+    padding-left: 10%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.search input {
+    height: 100%;
+    width: 80%;
+    padding-left: 5%;
+    font-size: 18px;
+    font-weight: bold;
+    color: #919aa2;
+    background-color: #273340;
+    border: 0;
+    border-radius: 50px;
+}
+
+/* =========================== Suggestions =========================== */
+
+.suggest {
+    width: 90%;
+    height: 100%;
+    background-color: #1e2732;
+    border-radius: 15px;
+    display: grid;
+    grid-auto-rows: minmax(100px, 1fr);
+}
+
+.suggest p {
+    color: white;
+    line-height: 2em;
+    font-size: 26px;
+    font-weight: bolder;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.people {
+    display: grid;
+    grid-template:
+        'pic name button' 0.4fr / 30% 1fr 30%
+    ;
+}
+
+
+.prof-pic {
+    grid-area: pic;
+}
+
+.prof-pic img {
+    width: 60px;
+    margin: 15%;
+    border-radius: 100%;
+}
+
+
+
+.name p {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    height: 100%;
+    line-height: 2em;
+}
+
+
+
+.follow {
+    display: grid;
+    place-items: center;
+}
+
+.follow button {
+    width: 80%;
+    height: 50%;
+    border-radius: 30px;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.people:hover {
+    background-color: #252e38;
+    cursor: pointer;
+}
+
+
+/* =========================== Trends =========================== */
+
+
+.trends {
+    width: 90%;
+    margin: 15px;
+    background-color: #1e2732;
+    border: 1px solid black;
+    border-radius: 15px;
+    display: grid;
+    gap: 5px;
+    grid-auto-rows: minmax(50px, 1fr);
+    padding-bottom: 10px;
+}
+
+
+
+.trends-title {
+    color: white;
+    /* height: 10px; */
+    font-size: 26px;
+    font-weight: bolder;
+    line-height: 2em;
+    padding-left: 15px;
+    padding-top: 15px;
+    padding-bottom: 5%;
+}
+
+.trending {
+    height: 100%;
+    display: grid;
+    grid-template:
+        'tag options' / 1fr 10%
+    ;
+    margin-bottom: 25px;
+}
+
+.trend-options svg {
+    padding: 5px;
+    fill: #8794a1;
+}
+
+.trend-options svg:hover {
+    fill: #1f76b2;
+    border-radius: 100%;
+    background-color: #24394a;
+}
+
+.trend {
+    grid-area: tag;
+    display: grid;
+    grid-template-rows: minmax(100px 1fr);
+    /* padding: 10px; */
+}
+
+.position p,
+.count p {
+    font-size: 14px;
+    color: #8b98a5;
+    padding-left: 5%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+
+.hashtag {
+    font-size: 18px;
+    color: white;
+    padding-left: 5%;
+}
+
+
+.trending:hover {
+    cursor: pointer;
+    background-color: #252e38;
+}
+
+
+
+
+
+/* =========================== Responsiveness =========================== */
+
+@media screen and (max-width: 480px) {
+    .container {
+        height: 100%;
+        grid-template-columns: 1fr;
+    }
+
+    .write input {
+        width: 20%;
+        margin-left: 20px;
+    }
+
+    .header {
+        margin-left: 3px;
+    }
+
+    .left-side,
+    /* .news, */
+    .nav-link p,
+    .user-name,
+    .acc-options,
+    .poster,
+    .name p {
+        display: none;
+    }
+
+    .post-button button,
+    .profile-pic,
+    .follow button,
+    .send button {
+        font-size: 8px;
+        width: 40px;
+        border-radius: 100%;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1020px) {
+    .container {
+        grid-template-columns: 0.3fr, 1fr, 0.3fr;
+    }
+
+    .content {
+        grid-template-columns: minmax(150px, 450px);
+    }
+
+    .header {
+        grid-template-columns: minmax(150px, 200px);
+    }
+
+    .nav-link {
+        margin-left: 20%;
+    }
+
+    .write input {
+        width: 50%;
+        margin-left: 40px;
+    }
+
+    .header {
+        margin-left: 3px;
+    }
+
+    .post {
+        height: 1fr;
+    }
+
+    .left-side,
+    .top,
+    .bottom-left,
+    .bottom-right,
+    .nav-link p,
+    .user-name,
+    .acc-options,
+    .name p {
+        display: none;
+    }
+
+    .post-button button,
+    .profile-pic,
+    .follow button,
+    .send button {
+        font-size: 10px;
+        width: 40px;
+        border-radius: 100%;
+    }
+
+}
+
+@media screen and (min-width: 1021px) and (max-width: 1280px) {
+
+    .container {
+        grid-template-columns: 0.1fr, 1fr, 0.3fr;
+    }
+
+    .left-side img {
+        display: none;
+    }
+
+    .post {
+        height: 1fr;
+    }
+
+    .header {
+        margin-left: 5px;
+    }
+}
