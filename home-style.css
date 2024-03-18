@@ -1,18 +1,25 @@
 * {
   margin: 0;
 }
-
+body {
+  background-color: #000000;
+}
+main {
+  margin: auto;
+  box-sizing: border-box;
+  max-width: 1500px;
+  width: 100%;
+  background-color: #000000;
+}
 .container {
   display: grid;
   height: 100vh;
   grid-template-rows: 60px 1fr ;
-  grid-template-columns:1fr minmax(0,2fr) minmax(2fr,5fr) minmax(0,1fr) 1fr;
+  grid-template-columns:1fr minmax(0,1fr) minmax(2fr,5fr) minmax(0,2.5fr) 1fr;
   grid-template-areas: 
     '. logo header searchHeader .'
     '. left-side-menu main-content right-side-bar .'
   ;
-  background-color:
-   black;
 }
 
 .logo {
