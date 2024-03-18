@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Twitter clone</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" 
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- building side, it starts here -->
+    <div class="sidebar">
+        <i class="fab fa-twitter"></i>
+
+    <div class="sidebarOption active">
+        <span class="material-icons"> home </span>
+        <h2>Home</h2>
+        </div>
+
+    <div class="sidebarOption active">
+        <span class="material-icons"> search </span>
+        <h2>Explore</h2>
+        </div>   
+    
+        <div class="sidebarOption active">
+            <span class="material-icons"> notifications_none </span>
+            <h2>Notifications</h2>
+            </div>
+
+            <div class="sidebarOption active">
+                <span class="material-icons"> mail_outline </span>
+                <h2>Messages</h2>
+                </div>
+
+                <div class="sidebarOption active">
+                    <span class="material-icons"> bookmark_border </span>
+                    <h2>Bookmark</h2>
+                    </div>
+
+                    <div class="sidebarOption active">
+                        <span class="material-icons"> list_alt </span>
+                        <h2>Lists</h2>
+                        </div>
+
+                        <div class="sidebarOption active">
+                            <span class="material-icons"> perm_identity </span>
+                            <h2>Profiles</h2>
+                            </div>
+
+                            <div class="sidebarOption active">
+                                <span class="material-icons"> more_horiz </span>
+                                <h2>More</h2>
+
+    </div>
+    <button class="sidebar_tweet">Tweet </button>
+    </div>
+    <!-- my sidebar ends here -->
+
+    <!-- I start building my feeds here  -->
+            <div class="feed">
+                <div class="feed_header">
+                    <h2>Home</h2>
+                </div>
+
+                <div class="tweetBox">
+                      <form>
+                        <div class="tweetbox_input">
+                            <img 
+                            src="images/twitterr.jpg"
+                            alt=""
+                            />
+                            <input type="text" placeholder="what's happening?"/>
+                            <button class="tweetBox_tweetButton">Tweet  </button>
+                        </div>
+                      </form>
+                </div>
+
+<!-- I start buiding my post section here -->
+<div class="post">
+    <div class="post_avatar">
+        <img 
+        src="images/twitterr.jpg"
+        alt=""
+        />
+    </div>
+
+    <div class="post_body">
+        <div class="post_header">
+            <div class="post_headertext">
+                <h3>Oluwagbemi Abiodun
+                    <span class="post_headerspecial">
+                        <span class="material-icons post_badge"> verified </span>@alakowee
+                    </span>
+                </h3>
+                <div class="post_headerdescription">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                </div>
+            </div>
+            <img 
+            src="https://images.pexels.com/photos/14456608/pexels-photo-14456608.jpeg"
+            alt=""
+            />
+            <div class="post_footer">
+                <span class="material-icons"> repeat </span>
+                <span class="material-icons"> favorite_border </span>
+                <span class="material-icons"> publish </span>
+            </div>
+        </div>
+    </div>
+
+   </div>
+<!-- Post sector ends here -->
+
+
+<!-- I start buiding my post section here -->
+<div class="post">
+    <div class="post_avatar">
+        <img 
+        src="images/twitterr.jpg"
+        alt=""
+        />
+    </div>
+
+    <div class="post_body">
+        <div class="post_header">
+            <div class="post_headertext">
+                <h3>Oluwagbemi Abiodun
+                    <span class="post_headerspecial">
+                        <span class="material-icons post_badge"> verified </span>@alakowee
+                    </span>
+                </h3>
+                <div class="post_headerdescription">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+            </div>
+            <img 
+            src="https://images.pexels.com/photos/20414804/pexels-photo-20414804/free-photo-of-a-woman-with-afro-hair-smiling-in-a-yellow-dress.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt=""
+            />
+            <div class="post_footer">
+                <span class="material-icons"> repeat </span>
+                <span class="material-icons"> favorite_border </span>
+                <span class="material-icons"> publish </span>
+            </div>
+        </div>
+    </div>
+
+   </div>
+<!-- Post sector ends here -->
+
+            </div>
+    <!-- This is where I end my feeds section -->
+
+    <!-- I start my widgets here -->
+
+    <div class="widgets">
+        <div class="widgets_input">
+            <span class="material-icons widgets_searchIcon"> search </span>
+            <input type="text" placeholder="Search Twitter">
+            
+        </div>
+
+            <div class="widgets_container">
+                <h2>What's Happening</h2>
+                <a class="twitter-timeline" href="https://twitter.com/home?ref_src=twsrc%5Etfw">Tweets by home</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div>
+    </div>
+<!-- It ends here -->  
+    
+</body>
+</html>
